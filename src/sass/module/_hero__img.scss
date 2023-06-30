@@ -1,0 +1,13 @@
+@use "global" as *;
+
+.hero__img{ 
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero_img img{
+  height: 100vh;
+  width: 100vw;
+  
+}

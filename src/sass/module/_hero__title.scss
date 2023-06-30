@@ -1,0 +1,10 @@
+@use "global" as *;
+
+.hero__title{
+  font-size: rem(40);
+  display: block;
+  font-family: $second-font-family;
+  letter-spacing: rem(21.6);
+  font-weight: $regular;
+  text-align: center;
+}

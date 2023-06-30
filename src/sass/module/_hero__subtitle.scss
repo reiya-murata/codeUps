@@ -1,0 +1,9 @@
+@use "global" as *;
+
+.hero__subtitle{
+  display: block;
+  font-size: rem(20);
+  font-family: $second-font-family;
+  font-weight:$regular;
+  
+}

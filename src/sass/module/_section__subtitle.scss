@@ -1,0 +1,7 @@
+@use "global" as *;
+
+.section__subtitle{
+  font-size: rem(12);
+  font-family: $base-font-family;
+  color: $blue;
+}

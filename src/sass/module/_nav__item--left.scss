@@ -1,0 +1,25 @@
+@use "global" as *;
+
+.nav__item--left {
+  width: 40%;
+  font-family: $base-font-family;
+  font-size: rem(16);
+  color: $white;
+  padding-top: rem(104);
+  
+}
+.nav__item--left a{
+  display: block;
+}
+.nav__item--left li{
+  padding: rem(12);
+  color: $white;
+  font-weight: $regular;
+
+}
+.nav__item--left li :nth-child(1),
+.nav__item--left li :nth-child(5),
+.nav__item--left li :nth-child(6),
+.nav__item--left li :nth-child(10){
+  font-weight: $bold;
+}

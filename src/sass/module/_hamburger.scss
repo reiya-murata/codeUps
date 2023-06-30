@@ -1,0 +1,44 @@
+@use "global" as *;
+
+/* ハンバーガーアイコンのスタイル */
+.hamburger {
+  display: inline-block;
+  width: rem(30); /* rem(30) */
+  height: rem(30); /* rem(2) */
+  background-color: transparent;
+  position: relative;
+  cursor: pointer;
+  margin-top: rem(15);
+}
+
+.hamburger span {
+  position: absolute;
+  width: rem(30);
+  height: rem(2);
+  background-color: white;
+  transition: transform 0.3s ease;
+}
+
+.hamburger span:nth-child(1) {
+  top: rem(0);
+}
+
+.hamburger span:nth-child(2) {
+  top: rem(8);
+}
+
+.hamburger span:nth-child(3) {
+  top: rem(16);
+}
+
+.hamburger .active span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger .active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger .active span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}

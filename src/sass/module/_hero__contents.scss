@@ -1,0 +1,9 @@
+@use "global" as *;
+
+.hero__contents{
+  position: absolute;
+  top: 50%;
+  transform: -50%;
+  text-align: center;
+  color: $white;
+}

@@ -1,0 +1,13 @@
+@use "global" as *;
+
+.nav{
+  position: fixed;
+  display: none;
+  height: 100vh;
+  width: auto;
+  background-color: $blue;
+}
+
+.nav-active{
+  display: block;
+}
