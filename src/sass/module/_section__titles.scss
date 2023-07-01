@@ -3,3 +3,19 @@
 .section__titles{
   text-align: center;
 }
+
+.section__title{
+  font-size: rem(32);
+  font-family: $second-font-family;
+  line-height: rem(40);
+  text-transform: capitalize;
+  }
+  .section__title::first-letter{
+    color: $blue;
+  }
+
+  .section__subtitle{
+    font-size: rem(12);
+    font-family: $base-font-family;
+    color: $blue;
+  }

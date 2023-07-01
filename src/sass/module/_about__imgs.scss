@@ -1,0 +1,25 @@
+@use "global" as *;
+
+.about__imgs{
+
+}
+
+.about__img--1{
+  position:relative;
+  top: rem(30);
+  transform: -50;
+    
+  width:rem(132) ;
+  height: rem(194);
+  aspect-ratio: 132/194;
+  z-index: 10;
+}
+
+.about__img--2{
+position: relative;
+top:rem(-140);
+left: rem(70);
+width: rem(281);
+  height:rem(186) ;
+aspect-ratio: 281/186;
+}

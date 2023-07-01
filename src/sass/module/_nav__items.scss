@@ -2,8 +2,47 @@
 
 .nav__items{
   display: flex;
+  z-index: 10;
 }
 .nav_item a{
   display: block;
   
+}
+
+.nav__items--left {
+  width: 50%;
+  font-family: $base-font-family;
+  font-size: rem(16);
+  color: $white;
+  padding-top: rem(64);
+}
+.nav__items--right {
+  width: 50%;
+  font-family: $base-font-family;
+  font-size: rem(16);
+  color: $white;
+  padding-top: rem(64);
+}
+
+.nav__item a{
+  display: block;
+}
+.nav__item{
+  padding-top: rem(24);
+}
+
+
+
+
+
+
+
+.nav__items{
+  padding: rem(12) 0;
+  color: $white;
+  font-weight: $regular;
+}
+.nav__item--bold {
+  font-weight: $bold;
+  padding-top: rem(40);
 }

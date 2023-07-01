@@ -1,0 +1,47 @@
+@use "global" as *;
+
+.card__header img{
+  display: inline-block;
+  min-width: rem(301);
+  min-height: rem(201);
+  padding: rem(16);
+  aspect-ratio: 301 / 201;
+}
+
+.card__header{
+text-align: center;
+}
+
+.card__body{
+  min-width: rem(301);
+  margin: auto;
+}
+
+.card__date{
+  padding-top: rem(24);
+  font-size: rem(12);
+  padding-left: rem(16);
+}
+.card__title{
+  border-bottom: rem(1) solid $blue;
+  font-size: rem(16);
+  padding-left: rem(16);
+}
+.card__title--big{
+  border-bottom: rem(1) solid $blue;
+  font-size: rem(20);
+  padding-left: rem(16);
+}
+.card__text{
+  font-size: rem(16);
+  padding: rem(16) rem(16) rem(24);
+}
+.card{
+  box-shadow: rem(1) rem(1) rem(1) rem(3)#0000002e;
+  margin: rem(40) rem(16);
+  font-family: $base-font-family;
+}
+.card--noshadow{
+  margin: rem(40) rem(16);
+  
+}

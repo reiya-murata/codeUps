@@ -33,6 +33,14 @@
   <link rel="”icon”" href="" />
   <!-- css -->
   <link rel="stylesheet" href="./assets/css/style.css" />
+  <!-- swiper -->
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
   <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script defer src="./assets/js/script.js"></script>
@@ -42,8 +50,8 @@
       <div class="header__inner">
         <a href="#">
           <div class="logo__img">
-            <img src="../images\common\CodeUps.svg" alt="codeUpsのロゴ" />
-          </div>
+<img src="\assets\images\common\CodeUps.svg
+" alt="codeUpsの画像">          </div>
         </a>
         <div class="hamburger" id="js-hamburger">
           <span></span>
@@ -55,27 +63,27 @@
         <section class="nav--menu">
       <nav class="nav" id="js-nav">
         <ul class="nav__items">
-          <div class="nav__item--left">
-            <li class="nav__ites"><a href="">キャンペーン</a></li>
-            <li class="nav__ites"><a href="">ライセンス取得</a></li>
-            <li class="nav__ites"><a href="">貸切体験ダイビング</a></li>
-            <li class="nav__ites"><a href="">ナイトダイビング</a></li>
-            <li class="nav__ites"><a href="">私たちについて</a></li>
-            <li class="nav__ites"><a href="">ダイビング情報</a></li>
-            <li class="nav__ites"><a href="">ライセンス講習</a></li>
-            <li class="nav__ites"><a href="">体験ダイビング</a></li>
-            <li class="nav__ites"><a href="">ファンダイビング</a></li>
-            <li class="nav__ites"><a href="">ブログ</a></li>
+          <div class="nav__items--left">
+            <li class="nav__item--bold"><a href="">キャンペーン</a></li>
+            <li class="nav__item"><a href="">ライセンス取得</a></li>
+            <li class="nav__item"><a href="">貸切体験ダイビング</a></li>
+            <li class="nav__item"><a href="">ナイトダイビング</a></li>
+            <li class="nav__item--bold"><a href="">私たちについて</a></li>
+            <li class="nav__item--bold"><a href="">ダイビング情報</a></li>
+            <li class="nav__item"><a href="">ライセンス講習</a></li>
+            <li class="nav__item"><a href="">体験ダイビング</a></li>
+            <li class="nav__item"><a href="">ファンダイビング</a></li>
+            <li class="nav__item--bold"><a href="">ブログ</a></li>
           </div>
-          <div class="nav__item--right">
-            <li class="nav__ites"><a href="">お客様の声</a></li>
-            <li class="nav__ites"><a href="">料金一覧</a></li>
-            <li class="nav__ites"><a href="">ライセンス講習</a></li>
-            <li class="nav__ites"><a href="">体験ダイビング</a></li>
-            <li class="nav__ites"><a href="">ファンダイビング</a></li>
-            <li class="nav__ites"><a href="">よくある質問</a></li>
-            <li class="nav__ites"><a href="">プライバシーポリシー</a></li>
-            <li class="nav__ites"><a href="">利用規約</a></li>
+          <div class="nav__items--right">
+            <li class="nav__item--bold"><a href="">お客様の声</a></li>
+            <li class="nav__item--bold"><a href="">料金一覧</a></li>
+            <li class="nav__item"><a href="">ライセンス講習</a></li>
+            <li class="nav__item"><a href="">体験ダイビング</a></li>
+            <li class="nav__item"><a href="">ファンダイビング</a></li>
+            <li class="nav__item--bold"><a href="">よくある質問</a></li>
+            <li class="nav__item--bold"><a href="">プライバシーポリシー</a></li>
+            <li class="nav__item--bold"><a href="">利用規約</a></li>
           </div>
         </ul>
       </nav>
@@ -99,11 +107,73 @@
           <h2 class="section__title">campaign</h2>
           <h3 class="section__subtitle">キャンペーン</h3>
         </div>
+      </section>
 
-        <div class="cards">
+      <section class="about">
+        <div class="about__inner">
+        <div class="section__titles">
+          <h2 class="section__title"> About us</h2>
+          <h3 class="section__subtitle">私たちについて</h3>
+        </div>
+
+        <div class="about__imgs">
+          <img class="about__img--1" src="../assets/images/about.1.jpg" alt="屋根の画像">
+          <img class="about__img--2" src="../assets/images/about.2.jpg" alt="黄色の魚の画像">
+        </div>
+
+        <div class="about__contents">
+          <div class="about__content">
+          <h3>Dive into <br>
+            the Ocean</h3>
+          </div>
+          <div class="about__text">
+            <p>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+              ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
+          </div>
+        </div>
+        <div class="button__content">
+          <div class="button">
+            View more<a href="#"><span class="stickarrow"></span></a>
+          </div>
+        </div>
+
+      </div>
+        </section>
+
+      <section class="information">
+        <div class="section__titles">
+          <h2 class="section__title"> information</h2>
+          <h3 class="section__subtitle">ダイビング情報</h3>
+        </div>
+        
+        <div class="card--noshadow">
+          <div class="card__header">
+            <img src="../assets\images\information.jpg" alt="黄色の魚の画像">
+          </div>
+          <div class="card__body">
+            
+            <h3 class="card__title--big">ライセンス講習</h3>
+            <p class="card__text">
+              当店はダイビングライセンス（Cカード）世界最大の教育機関PADIの「正規店」として店舗登録されています。<br>
+                正規登録店として、安心安全に初めての方でも安心安全にライセンス取得をサポート致します。
+            </p>
+          </div>
+        </div>
+        <div class="button__content">
+          <div class="button">
+            View more<a href="#"><span class="stickarrow"></span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="blog">
+        <div class="section__titles">
+          <h2 class="section__title"> blog</h2>
+          <h3 class="section__subtitle">ブログ</h3>
+        </div>
           <div class="card">
             <div class="card__header">
-              <img src="" alt="" />
+              <img src="..//assets/images/blog.1.jpg" alt="サンゴの画像" />
             </div>
             <div class="card__body">
               <time class="card__date">2023.11/17</time>
@@ -116,7 +186,7 @@
           </div>
           <div class="card">
             <div class="card__header">
-              <img src="" alt="" />
+              <img src="../assets/images/blog.2.jpg" alt="ウミガメの画像" />
             </div>
             <div class="card__body">
               <time class="card__date">2023.11/17</time>
@@ -129,7 +199,7 @@
           </div>
           <div class="card">
             <div class="card__header">
-              <img src="" alt="" />
+              <img src="../assets/images/blog.3.jpg" alt="クマノミの画像" />
             </div>
             <div class="card__body">
               <time class="card__date">2023.11/17</time>
@@ -140,50 +210,39 @@
               </p>
             </div>
           </div>
-        </div>
         <div class="button__content">
           <div class="button">
             View more<a href="#"><span class="stickarrow"></span></a>
           </div>
         </div>
       </section>
-            <section class="about">
-        <div class="section__titles">
-          <h2 class="section__title">about us</h2>
-          <h3 class="section__subtitle">私たちについて</h3>
-        </div>
 
-        <div class="button__content">
-          <div class="button">
-            View more<a href="#"><span class="stickarrow"></span></a>
-          </div>
-        </div>
-      </section>
+          
   </main>
-    <footer class="foter">
+    <footer class="footer">
       <nav class="nav--bottom">
         <ul class="nav__items">
           <div class="nav__item--left">
-            <li class="nav__ites"><a href="">キャンペーン</a></li>
-            <li class="nav__ites"><a href="">ライセンス取得</a></li>
-            <li class="nav__ites"><a href="">貸切体験ダイビング</a></li>
-            <li class="nav__ites"><a href="">ナイトダイビング</a></li>
-            <li class="nav__ites"><a href="">私たちについて</a></li>
-            <li class="nav__ites"><a href="">ダイビング情報</a></li>
-            <li class="nav__ites"><a href="">ライセンス講習</a></li>
-            <li class="nav__ites"><a href="">体験ダイビング</a></li>
-            <li class="nav__ites"><a href="">ファンダイビング</a></li>
-            <li class="nav__ites"><a href="">ブログ</a></li>
+            <li class="nav__items"><a href="">キャンペーン</a></li>
+            <li class="nav__items"><a href="">ライセンス取得</a></li>
+            <li class="nav__items"><a href="">貸切体験ダイビング</a></li>
+            <li class="nav__items"><a href="">ナイトダイビング</a></li>
+            <li class="nav__items"><a href="">私たちについて</a></li>
+            <li class="nav__items"><a href="">ダイビング情報</a></li>
+            <li class="nav__items"><a href="">ライセンス講習</a></li>
+            <li class="nav__items"><a href="">体験ダイビング</a></li>
+            <li class="nav__items"><a href="">ファンダイビング</a></li>
+            <li class="nav__items"><a href="">ブログ</a></li>
           </div>
           <div class="nav__item--right">
-            <li class="nav__ites"><a href="">お客様の声</a></li>
-            <li class="nav__ites"><a href="">料金一覧</a></li>
-            <li class="nav__ites"><a href="">ライセンス講習</a></li>
-            <li class="nav__ites"><a href="">体験ダイビング</a></li>
-            <li class="nav__ites"><a href="">ファンダイビング</a></li>
-            <li class="nav__ites"><a href="">よくある質問</a></li>
-            <li class="nav__ites"><a href="">プライバシーポリシー</a></li>
-            <li class="nav__ites"><a href="">利用規約</a></li>
+            <li class="nav__items"><a href="">お客様の声</a></li>
+            <li class="nav__items"><a href="">料金一覧</a></li>
+            <li class="nav__items"><a href="">ライセンス講習</a></li>
+            <li class="nav__items"><a href="">体験ダイビング</a></li>
+            <li class="nav__items"><a href="">ファンダイビング</a></li>
+            <li class="nav__items"><a href="">よくある質問</a></li>
+            <li class="nav__items"><a href="">プライバシーポリシー</a></li>
+            <li class="nav__items"><a href="">利用規約</a></li>
           </div>
         </ul>
       </nav>

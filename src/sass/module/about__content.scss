@@ -1,0 +1,15 @@
+@use "global" as *;
+
+
+.about__content{
+  font-family: $second-font-family;
+  font-size: rem(40);
+  font-weight: $regular;
+  color: $blue;
+  
+}
+.about__text{
+  font-size: rem(16);
+  font-family: $base-font-family;
+  font-weight: normal;
+}
