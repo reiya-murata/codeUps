@@ -1,11 +1,12 @@
 @use "global" as *;
 
 
-.about__content{
+.about__content h3{
   font-family: $second-font-family;
   font-size: rem(40);
   font-weight: $regular;
   color: $blue;
+
   
 }
 .about__text{

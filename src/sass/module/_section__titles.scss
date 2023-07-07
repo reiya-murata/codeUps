@@ -9,9 +9,11 @@
   font-family: $second-font-family;
   line-height: rem(40);
   text-transform: capitalize;
+  font-weight: $regular;
   }
   .section__title::first-letter{
     color: $blue;
+    font-weight: $regular ;
   }
 
   .section__subtitle{
@@ -19,3 +21,29 @@
     font-family: $base-font-family;
     color: $blue;
   }
+
+.section__title--contact{
+  font-size: rem(80);
+  font-family: $second-font-family;
+  line-height: rem(80);
+  text-transform: capitalize;
+  font-weight: $regular;
+  padding-top: rem(40);
+}
+.section__title--contact::first-letter{
+  color: $blue;
+  font-weight: $regular ;
+}
+.section__subtitle--contact{
+  font-size: rem(12);
+  font-family: $base-font-family;
+  color: $blue;
+  line-height: rem(18);
+}
+.section__subtitle--contact2{
+  font-size: rem(14);
+  font-family: $base-font-family;
+  color: $blue;
+  line-height: rem(18);
+  padding-top: rem(8);
+}

@@ -1,0 +1,11 @@
+@use "global" as *;
+
+.contact__contents{
+  text-align: center;
+  font-size: rem(16);
+  line-height: rem(24);
+  font-family: $base-font-family;
+  padding: rem(16) rem(40);
+  border-top: 1px solid $blue;
+
+}

@@ -1,0 +1,35 @@
+@use "global" as *;
+
+.price__content{
+  display: flex;
+  justify-content: space-between;
+}
+.price__img{
+  padding: rem(24) 0 rem(40);
+  }
+
+.price__title{
+  font-size: rem(16);
+  font-family: $base-font-family;
+  line-height: rem(24);
+  font-weight: $bold;
+  border-bottom: 1px solid $blue;
+  padding:rem(40) 0 rem(4);
+}
+
+.price__item{
+  font-size: rem(14);
+  font-family: $base-font-family;
+  line-height: rem(24);
+  font-weight: $normal;
+  padding: rem(8) 0;
+}
+
+.price__price{
+  font-size: rem(14);
+  font-family: $base-font-family;
+  line-height: rem(24);
+  font-weight: $normal;
+  padding: rem(8) 0;
+text-align: right;
+}
