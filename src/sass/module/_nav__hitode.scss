@@ -1,0 +1,22 @@
+@use "global" as *;
+
+.nav__hitode{
+position: absolute;
+margin-top: rem(42);
+margin-left: rem(15);
+}
+.nav__hitode img{
+  width: rem(18);
+  height: rem(18);
+
+}
+.nav__hitode--bottom{
+position: absolute;
+margin-top: rem(42);
+margin-left: rem(15);
+}
+.nav__hitode--bottom img{
+  width: rem(18);
+  height: rem(18);
+
+}

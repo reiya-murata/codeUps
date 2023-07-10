@@ -6,6 +6,8 @@ jQuery(function ($) {// この中であればWordpressでも「$」が使用可�
 const burger=document.querySelector(".hamburger ");
 const nav=document.querySelector(".nav");
 const navItems=document.querySelectorAll(".nav__items li");
+const header = document.querySelectorAll(".header");
+
 
 burger.addEventListener("click",()=>{
   nav.classList.toggle("active");
@@ -22,7 +24,13 @@ burger.addEventListener("click",()=>{
   });
   //burger animataion
   burger.classList.toggle("active");
+  header.forEach((headerElement) => {
+    headerElement.classList.toggle("active");
+
+  });
 });
+
+
 // burger menu
 
 // swiper
@@ -34,25 +42,22 @@ const swiper = new Swiper('.swiper', {
     delay: 2500,
     disableOnInteraction: false,
   },
+  centeredSlides: true, 
   breakpoints:{
 767:{
   slidesPerView:3
 },
   },
   
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
 
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
 });
+
+
+  var mainswiper = new Swiper(".mainswiper", {
+    effect: "fade",
+    loop:true,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+  });

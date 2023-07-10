@@ -36,13 +36,18 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
-    <!-- css -->
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+      <!-- css   -->
     <link rel="stylesheet" href="./assets/css/style.css" />
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    
 
-    <!-- JavaScript -->
+  
+
+<!-- swiper -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+      <!-- JavaScript -->
     <script defer src="./assets/js/script.js"></script>
   </head>
   <body>
@@ -64,28 +69,63 @@
       <nav class="nav" id="js-nav">
         <ul class="nav__items">
           <div class="nav__items--left">
+            <div class="nav__hitode">
+              <img src="../assets\images\common\_ヒトデ.png" alt="ヒトデのアイコン">
+            </div>
             <li class="nav__item--bold"><a href="#">キャンペーン</a></li>
             <li class="nav__item"><a href="#">ライセンス取得</a></li>
             <li class="nav__item"><a href="#">貸切体験ダイビング</a></li>
             <li class="nav__item"><a href="#">ナイトダイビング</a></li>
+            <div class="nav__hitode">
+              <img src="../assets\images\common\_ヒトデ.png" alt="ヒトデのアイコン">
+            </div>
             <li class="nav__item--bold"><a href="#">私たちについて</a></li>
+            <div class="nav__hitode">
+              <img src="../assets\images\common\_ヒトデ.png" alt="ヒトデのアイコン">
+            </div>
             <li class="nav__item--bold"><a href="#">ダイビング情報</a></li>
             <li class="nav__item"><a href="#">ライセンス講習</a></li>
             <li class="nav__item"><a href="#">体験ダイビング</a></li>
             <li class="nav__item"><a href="#">ファンダイビング</a></li>
+            <div class="nav__hitode">
+              <img src="../assets\images\common\_ヒトデ.png" alt="ヒトデのアイコン">
+            </div>
             <li class="nav__item--bold"><a href="#">ブログ</a></li>
           </div>
           <div class="nav__items--right">
+            
+            <div class="nav__hitode">
+              <img src="../assets\images\common\_ヒトデ.png" alt="ヒトデのアイコン">
+            </div>
             <li class="nav__item--bold"><a href="#">お客様の声</a></li>
+            <div class="nav__hitode">
+              <img src="../assets\images\common\_ヒトデ.png" alt="ヒトデのアイコン">
+            </div>
             <li class="nav__item--bold"><a href="#">料金一覧</a></li>
             <li class="nav__item"><a href="#">ライセンス講習</a></li>
             <li class="nav__item"><a href="#">体験ダイビング</a></li>
             <li class="nav__item"><a href="#">ファンダイビング</a></li>
+            <div class="nav__hitode">
+              <img src="../assets\images\common\_ヒトデ.png" alt="ヒトデのアイコン">
+            </div>
+            <div class="nav__hitode">
+              <img src="../assets\images\common\_ヒトデ.png" alt="ヒトデのアイコン">
+            </div>
             <li class="nav__item--bold"><a href="#">よくある質問</a></li>
+            
+            <div class="nav__hitode">
+              <img src="../assets\images\common\_ヒトデ.png" alt="ヒトデのアイコン">
+            </div>
             <li class="nav__item--bold">
               <a href="#">プライバシー<br />ポリシー</a>
             </li>
+            <div class="nav__hitode">
+              <img src="../assets\images\common\_ヒトデ.png" alt="ヒトデのアイコン">
+            </div>
             <li class="nav__item--bold"><a href="#">利用規約</a></li>
+            <div class="nav__hitode">
+              <img src="../assets\images\common\_ヒトデ.png" alt="ヒトデのアイコン">
+            </div>
             <li class="nav__item--bold"><a href="#">お問い合わせ</a></li>
           </div>
         </ul>
@@ -99,11 +139,34 @@
             <h3 class="hero__subtitle">into the ocean</h3>
           </div>
         </div>
-        <div class="hero__imgs">
-          <div class="hero__img">
-            <img src="..\assets\images\common\sp _top1.jpg" alt="カメの画像" />
-          </div>
+        <div class="swiper mainswiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"> <div class="hero__imgs">
+              <div class="hero__img">
+                <img src="..\assets\images\common\mainview.1.jpg" alt="カメの画像" />
+              </div>
+            </div></div>
+            <div class="swiper-slide"> <div class="hero__imgs">
+              <div class="hero__img">
+                <img src="..\assets\images\common\mainview.2.jpg" alt="カメの画像" />
+              </div>
+            </div></div>
+            <div class="swiper-slide"> <div class="hero__imgs">
+              <div class="hero__img">
+                <img src="..\assets\images\common\mainview.3.jpg" alt="カメの画像" />
+              </div>
+            </div></div>
+            <div class="swiper-slide"> <div class="hero__imgs">
+              <div class="hero__img">
+                <img src="..\assets\images\common\mainview.4.jpg" alt="カメの画像" />
+              </div>
+            </div></div>
+          
+          <div class="swiper-pagination"></div>
         </div>
+       </div>
+
+
       </section>
       <section class="campaign">
         <div class="section__titles">
@@ -139,7 +202,7 @@
                 <div class="card__header--slider">
                   <img
                     src="..\assets\images\common\campaign.2.jpg"
-                    alt="サンゴの画像"
+                    alt="クラゲの画像"
                   />
                 </div>
                 <div class="card__body">
@@ -157,7 +220,7 @@
               <div class="card--slider">
                 <div class="card__header--slider">
                   <img
-                    src="..\assets\images\common\campaign3.jpg"
+                    src="..\assets\images\common\campaign.3.jpg"
                     alt="ビーチの画像"
                   />
                 </div>
@@ -177,7 +240,7 @@
                 <div class="card__header--slider">
                   <img
                     src="..\assets\images\common\campaign.4.jpg"
-                    alt="クラゲの画像"
+                    alt="ダイビングの画像"
                   />
                 </div>
                 <div class="card__body">
@@ -519,31 +582,62 @@
         </div>
         <ul class="nav__item--bottom">
           <div class="nav__items--left--bottom">
+            <div class="nav__hitode--bottom">
+              <img src="../assets\images\common\_ヒトデ.png" alt="ヒトデのアイコン">
+            </div>
             <li class="nav__item--bold"><a href="#">キャンペーン</a></li>
             <li class="nav__item"><a href="#">ライセンス取得</a></li>
             <li class="nav__item"><a href="#">貸切体験ダイビング</a></li>
             <li class="nav__item"><a href="#">ナイトダイビング</a></li>
+            <div class="nav__hitode--bottom">
+              <img src="../assets\images\common\_ヒトデ.png" alt="ヒトデのアイコン">
+            </div>
             <li class="nav__item--bold"><a href="#">私たちについて</a></li>
+            <div class="nav__hitode--bottom">
+              <img src="../assets\images\common\_ヒトデ.png" alt="ヒトデのアイコン">
+            </div>
             <li class="nav__item--bold"><a href="#">ダイビング情報</a></li>
             <li class="nav__item"><a href="#">ライセンス講習</a></li>
             <li class="nav__item"><a href="#">体験ダイビング</a></li>
             <li class="nav__item"><a href="#">ファンダイビング</a></li>
+            <div class="nav__hitode--bottom">
+              <img src="../assets\images\common\_ヒトデ.png" alt="ヒトデのアイコン">
+            </div>
             <li class="nav__item--bold"><a href="#">ブログ</a></li>
           </div>
           <div class="nav__items--right--botm">
+            <div class="nav__hitode--bottom">
+              <img src="../assets\images\common\_ヒトデ.png" alt="ヒトデのアイコン">
+            </div>
             <li class="nav__item--bold"><a href="#">お客様の声</a></li>
-            <li class="nav__item--bold"><a href="#">料金一覧</a></li>
+            
+            <div class="nav__hitode--bottom">
+              <img src="../assets\images\common\_ヒトデ.png" alt="ヒトデのアイコン">
+            </div><li class="nav__item--bold"><a href="#">料金一覧</a></li>
             <li class="nav__item"><a href="#">ライセンス講習</a></li>
             <li class="nav__item"><a href="#">体験ダイビング</a></li>
             <li class="nav__item"><a href="#">ファンダイビング</a></li>
+            <div class="nav__hitode--bottom">
+              <img src="../assets\images\common\_ヒトデ.png" alt="ヒトデのアイコン">
+            </div>
             <li class="nav__item--bold"><a href="#">よくある質問</a></li>
+            <div class="nav__hitode--bottom">
+              <img src="../assets\images\common\_ヒトデ.png" alt="ヒトデのアイコン">
+            </div>
             <li class="nav__item--bold">
               <a href="#"
                 >プライバシー<br />
                 ポリシー</a
               >
             </li>
+            <div class="nav__hitode--bottom">
+              <img src="../assets\images\common\_ヒトデ.png" alt="ヒトデのアイコン">
+            </div>
             <li class="nav__item--bold"><a href="#">利用規約</a></li>
+            
+            <div class="nav__hitode--bottom">
+              <img src="../assets\images\common\_ヒトデ.png" alt="ヒトデのアイコン">
+            </div>
             <li class="nav__item--bold"><a href="#">お問い合わせ</a></li>
           </div>
         </ul>
