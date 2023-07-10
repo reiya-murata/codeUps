@@ -53,11 +53,12 @@ const swiper = new Swiper('.swiper', {
 });
 
 
-  var mainswiper = new Swiper(".mainswiper", {
-    effect: "fade",
-    loop:true,
-    autoplay: {
-      delay: 4000,
-      disableOnInteraction: false,
-    },
-  });
+  // var mainswiper = new Swiper(".mainswiper", {
+  
+  //   effect: "fade",
+  //   loop:true,
+  //   autoplay: {
+  //     delay: 4000,
+  //     disableOnInteraction: false,
+  //   },
+  // });
