@@ -38,6 +38,13 @@ text-align: center;
   border-bottom: rem(1) solid $blue;
   font-size: rem(20);
   padding-left: rem(16);
+  @include mq (md){
+    font-size: rem(24);
+    font-family: $base-font-family;
+    font-weight: $bold;
+    line-height: rem(24);
+    padding-left: 0;
+  }
 }
 .card__text{
   font-size: rem(16);
@@ -47,6 +54,9 @@ text-align: center;
 
 .card--noshadow{
   margin: rem(40) rem(16);
+  @include mq (md){
+display: flex;
+  }
   
 }
 // card--voice

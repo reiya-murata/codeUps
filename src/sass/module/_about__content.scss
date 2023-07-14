@@ -1,0 +1,35 @@
+@use "global" as *;
+
+
+.about__content h3{
+
+  font-family: $second-font-family;
+  font-size: rem(40);
+  font-weight: $regular;
+  color: $blue;
+@include mq (md){
+  display: inline;
+  position: relative;
+  font-size: rem(80);
+  font-family: $second-font-family;
+  line-height: rem(100);
+  font-weight: $normal;
+  color:$white;
+  left: rem(379);
+  top: rem(-850);
+  z-index: 10;
+}
+}
+.about__text{
+  font-size: rem(16);
+  font-family: $base-font-family;
+  font-weight: normal;
+  @include mq(md){
+position: relative;
+top: rem(-1050);
+width: rem(400);
+left: rem(819);
+z-index: 10;
+color: $white;
+  }
+}

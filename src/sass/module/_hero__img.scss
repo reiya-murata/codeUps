@@ -1,30 +1,19 @@
 @use "global" as *;
 
 .hero__img{ 
-  height: 100%;
+  height: 100vh;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 }
 .hero_img img{
-  height: 100vh;
-  width: 100vw;
-  z-index: 10;
-  
+  z-index: 10; 
 }
 
-.swiper {
-  width: 100%;
-  height: 100%;
-}
 
-.swiper-slide {
-  background-position: center;
-  background-size: cover;
-}
 
-.swiper-slide img {
-  display: block;
-  width: 100%;
-}
+
+
+
 

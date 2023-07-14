@@ -45,7 +45,7 @@ const swiper = new Swiper('.swiper', {
   centeredSlides: true, 
   breakpoints:{
 767:{
-  slidesPerView:3
+  slidesPerView:4
 },
   },
   
@@ -53,12 +53,12 @@ const swiper = new Swiper('.swiper', {
 });
 
 
-  // var mainswiper = new Swiper(".mainswiper", {
+  const mainswiper = new Swiper(".mainswiper", {
   
-  //   effect: "fade",
-  //   loop:true,
-  //   autoplay: {
-  //     delay: 4000,
-  //     disableOnInteraction: false,
-  //   },
-  // });
+    effect: "fade",
+    loop:true,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+  });

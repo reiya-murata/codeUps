@@ -1,0 +1,9 @@
+@use "global" as *;
+
+.blog__cards{
+  @include mq (md){
+    display: flex;
+    padding-left: rem(180);
+    padding-right: rem(181);
+  }
+}

@@ -1,0 +1,16 @@
+@use "global" as *;
+
+.license__text{
+  font-size: rem(16);
+  font-family: $base-font-family;
+  padding: rem(16) rem(16) rem(24);
+  @include mq (md){
+    width: rem(492);
+    font-family: $base-font-family;
+    font-size: rem(16);
+    line-height: rem(24);
+    font-weight: $normal;
+  padding: rem(16) 0 0 ;
+  }
+}
+

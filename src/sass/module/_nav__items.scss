@@ -6,10 +6,11 @@
   color: $white;
   font-weight: $regular;
   padding-top: rem(64);
+  z-index: 15;
 }
+
 .nav_item a{
   display: block;
-  
 }
 
 .nav__items--left {
@@ -18,7 +19,7 @@
   font-size: rem(16);
   color: $white;
   height: 100vh;
-  
+  z-index: 15;
 }
 .nav__items--right {
   width: 50%;

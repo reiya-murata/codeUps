@@ -1,18 +1,23 @@
 @use "global" as *;
 
 .hero__contents{
+  position: absolute;
   top: 50%;
-  transform: -50%;
+  transform: translateY(50%);
   text-align: center;
   color: $white;
   max-width: rem(248);
   max-height: rem(81);
+  z-index: 5;
 }
 
 .hero__inner{
   position: absolute;
   width: 100vw;
   align-items: center;
+  top: 50%;
+  transform: translateY(-50%);
+  
   }
   
   
@@ -23,6 +28,13 @@
     letter-spacing: rem(21.6);
     font-weight: $regular;
     text-align: center;
+    @include mq (md){
+      font-size: rem(80);
+      letter-spacing: rem(43.2);
+      line-height: rem(100);
+      font-family: $second-font-family;
+    }
+    
   }
   
   .hero__subtitle {
@@ -30,6 +42,11 @@
     font-size: rem(20);
     font-family: $second-font-family;
     font-weight:$regular;
-    
+  @include mq (md) {
+    font-size: rem(20);
+    font-family: $second-font-family;
+    line-height: normal;
+
+  } 
   }
   

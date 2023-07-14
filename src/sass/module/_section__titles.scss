@@ -10,7 +10,15 @@
   line-height: rem(40);
   text-transform: capitalize;
   font-weight: $regular;
+  @include mq (md){
+font-size: rem(40);
+font-family: $second-font-family;
+line-height: rem(40);
+font-weight: $regular;
+    }
   }
+
+
   .section__title::first-letter{
     color: $blue;
     font-weight: $regular ;
@@ -20,6 +28,12 @@
     font-size: rem(12);
     font-family: $base-font-family;
     color: $blue;
+    @include mq (md){
+      font-size: rem(12);
+      font-weight: $regular;
+      font-family: $base-font-family;
+      line-height: rem(18);
+          }
   }
 
 .section__title--contact{

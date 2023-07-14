@@ -10,6 +10,9 @@
   cursor: pointer;
   margin-top: rem(15);
   z-index: 10;
+  @include mq(md){
+    display: none;
+  }
 }
 
 .hamburger span {
