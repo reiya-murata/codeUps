@@ -2,6 +2,10 @@
 
 .contact__fish {
 position: absolute;
-width: 30%;
+width: rem1(109);
+height: rem(50);
 padding-top: rem(54);
+top: 50%;
+transform: translateY(50%);
+right: rem(10);
 }

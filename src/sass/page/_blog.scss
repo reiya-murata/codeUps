@@ -2,4 +2,9 @@
 
 .blog{
   padding: rem(91) 0 0 ;
+  @include mq (md){
+    position: relative;  
+    padding: rem(100) 0 0 ;
+  }
+
 }

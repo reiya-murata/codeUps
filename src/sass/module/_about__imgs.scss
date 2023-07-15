@@ -3,7 +3,7 @@
 .about__imgs{
 width: 100%;
 height: 100%;
-position:relative;
+
 }
 
 .about__img--1{
@@ -21,7 +21,7 @@ position:relative;
 position: absolute;
 top: 50%;
 transform: translateY(-50%);
-top: rem(350);
+top: rem(400);
 }
 }
 
@@ -33,11 +33,20 @@ width: rem(281);
   height:rem(186) ;
 aspect-ratio: 281/186;
 @include mq (md){
-  position: relative;
+  position: absolute;
   top: rem(180);
   min-width: rem(880);
   min-height: rem(581);
   left: rem(320);
   
+  } 
+}
+.about__img--3{
+  @include mq (md){
+    width: rem(194);
+    height: rem(181);
+    position: relative;
+    left: rem(1163);
+    top:rem(350);
   } 
 }

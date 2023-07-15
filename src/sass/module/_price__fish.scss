@@ -1,0 +1,14 @@
+@use "global" as *;
+
+.price__fish {
+  display: none;
+  @include mq (md){
+    width: rem(437);
+    height: rem(201);
+  position: absolute;
+  top: 50%;
+  transform: translateY(50%);
+  display: block;
+  z-index: 10;
+  }
+}

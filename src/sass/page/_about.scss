@@ -3,7 +3,10 @@
 .about{
   padding-top: rem(40);
   position:relative; 
-  
+  @include mq (md) {
+    padding-bottom: rem(380);
+    
+  }
 
 }
 

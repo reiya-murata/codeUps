@@ -6,10 +6,12 @@
   @include mq (md){
   position: relative;
   display: inline;
-  
-  top: rem(-350);
-  left: rem(250);
-
+  top: 50%;
+  right: 50%;
+  transform: (50%,50%);
+  top:rem(180);
+  left: rem(916);
+  text-align: center;
   z-index: 10;
   }
 }

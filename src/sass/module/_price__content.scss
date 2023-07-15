@@ -1,11 +1,36 @@
 @use "global" as *;
 
+.price__contents{
+  @include mq (md) {
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end ;
+    padding-left: rem(181);
+    
+  }
+}
+
 .price__content{
   display: flex;
   justify-content: space-between;
+  width: 100%
 }
 .price__img{
   padding: rem(24) 0 rem(40);
+  @include mq (md){
+    display: none;
+  }
+  }
+
+  .price__img--pc img{
+  display: none;
+    @include mq (md){
+      display: block;
+      width: rem(492);
+      height: rem(746);
+    }
+    position: relative;
+    
   }
 
 .price__title{
@@ -15,6 +40,9 @@
   font-weight: $bold;
   border-bottom: 1px solid $blue;
   padding:rem(40) 0 rem(4);
+  @include mq (md){
+    padding: 0;
+  }
 }
 
 .price__item{

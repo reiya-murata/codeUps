@@ -2,4 +2,16 @@
 
 .contact{
   padding-bottom:rem(31);
+  position: relative;
+
+  @include mq (md){
+    display: flex;
+  }
+}
+
+.logo__fish--contact {
+  position: absolute;
+  width: rem(109);
+  height: rem(51);
+
 }

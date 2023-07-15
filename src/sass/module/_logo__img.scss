@@ -22,3 +22,39 @@
   width: 40%;
   padding: rem(48) 0 0 rem(15);
 }
+
+
+.blog__logo--1{
+  display: none;
+  @include mq (md){
+    display: block;
+    width: rem(437);
+    height: rem(201);
+    box-shadow: none;
+    position: relative;
+    top: rem(-100);
+    left: rem(50);
+    }
+  }
+.blog__logo--2{
+  display: none;
+  @include mq (md){
+    display: block;
+    width: rem(301);
+    height: rem(138);
+    display: block;
+  }
+}
+
+.logo__voice--ibaratatu{
+  @include mq (md){
+    width: rem(71);
+    height: rem(162);
+  }
+  position: absolute;
+  top: 50%;
+  transform: translateY(50%);
+  z-index: 10;
+  left: rem(1300);
+  top: rem(500);
+}

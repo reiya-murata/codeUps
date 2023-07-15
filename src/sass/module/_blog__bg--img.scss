@@ -1,0 +1,15 @@
+@use "global" as *;
+
+.blog__bg--img{
+  display: none;
+  @include mq (md){
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -1;
+    top: rem(255);
+    height: rem(500);
+    display: block;
+    }
+  }
+  

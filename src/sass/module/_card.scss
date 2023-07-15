@@ -1,11 +1,12 @@
 @use "global" as *;
 
-.card{
-  box-shadow: rem(1) rem(1) rem(1) rem(3)#0000002e;
+.card {
+  box-shadow: rem(1) rem(1) rem(1) rem(3) #0000002e;
   margin: rem(40) rem(16) 0;
   font-family: $base-font-family;
+  background-color: $white;
 }
-.card__header img{
+.card__header img {
   display: inline-block;
   min-width: rem(301);
   min-height: rem(201);
@@ -13,32 +14,31 @@
   aspect-ratio: 301 / 201;
 }
 
-.card__header{
-text-align: center;
+.card__header {
+  text-align: center;
 }
 
-
-.card__body{
+.card__body {
   min-width: rem(301);
   margin: auto;
 }
 
-.card__date{
+.card__date {
   padding-top: rem(24);
   font-size: rem(12);
   padding-left: rem(16);
 }
-.card__title{
+.card__title {
   border-bottom: rem(1) solid $blue;
   font-size: rem(16);
   padding-left: rem(16);
   font-family: $base-font-family;
 }
-.card__title--big{
+.card__title--big {
   border-bottom: rem(1) solid $blue;
   font-size: rem(20);
   padding-left: rem(16);
-  @include mq (md){
+  @include mq(md) {
     font-size: rem(24);
     font-family: $base-font-family;
     font-weight: $bold;
@@ -46,106 +46,140 @@ text-align: center;
     padding-left: 0;
   }
 }
-.card__text{
+.card__text {
   font-size: rem(16);
   font-family: $base-font-family;
   padding: rem(16) rem(16) rem(24);
 }
 
-.card--noshadow{
-  margin: rem(40) rem(16);
-  @include mq (md){
-display: flex;
-  }
-  
+.card--slider{
+  box-shadow: rem(1) rem(1) rem(1) rem(3) #0000002e;
+  margin: rem(40) rem(16) 0;
+  font-family: $base-font-family;
+  background-color: $white;
+  width: rem(280);
+  height: rem(366);
+  padding-bottom: rem(40);
 }
-// card--voice
 
-.card--voice{
-  box-shadow: rem(1) rem(1) rem(1) rem(3)#0000002e;
+.noshadow {
+  margin: rem(40) rem(16);
+  @include mq(md) {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding: rem(40) 0 rem(100);
+  }
+}
+
+.card__information {
+  padding: 0 rem(16);
+@include mq (md){
+  padding-left: rem(180);
+  }
+}
+
+
+.card__information img {
+  
+  @include mq (md){
+  width: rem(540);
+  height: rem(356);
+  }
+}
+
+.card__body--information {
+  padding-left: rem(48);
+  padding-top: rem(61);
+  width: rem(492);
+}
+c
+// voice
+
+.voice {
+  box-shadow: rem(1) rem(1) rem(1) rem(3) #0000002e;
   margin: rem(40) rem(16) 0;
   font-family: $base-font-family;
 }
-.card__inner--voice{
-  padding: rem(15) rem(16)rem(24);
+.card__inner--voice {
+  padding: rem(15) rem(16) rem(24);
 }
-.card__header--voice{
+.card__header--voice {
   display: flex;
 }
-.card__age{
+.card__age {
   font-size: (12);
   font-family: $base-font-family;
   line-height: rem(18);
   font-weight: $normal;
 }
-.card__icon{
+.card__icon {
   display: inline-block;
-  font-size: rem(12) ;
+  font-size: rem(12);
   color: $blue;
   border: rem(1) solid $blue;
   font-family: $base-font-family;
   padding: rem(4) rem(12);
 }
-.card__title--voice{
+.card__title--voice {
   padding-right: rem(13);
   padding-top: rem(4);
 }
-.card__title--voice{
+.card__title--voice {
   font-size: rem(16);
   font-weight: $bold;
   font-family: $base-font-family;
   border-bottom: rem(1) solid $blue;
 }
 
-.card__img img{
+.card__img img {
   min-width: rem(151);
   min-height: rem(117);
   aspect-ratio: 151/117;
   padding-top: rem(9);
 }
 
-.card--slider{
-width: 280px;
-box-shadow: rem(1) rem(1) rem(1) rem(3)#0000002e;
-margin:auto;
-font-family: $base-font-family;
-padding-bottom: rem(5);
+.slider {
+  width: 280px;
+  box-shadow: rem(1) rem(1) rem(1) rem(3) #0000002e;
+  margin: auto;
+  font-family: $base-font-family;
+  padding-bottom: rem(5);
 }
-.card__header--slider img{
-min-width: rem(280);
-min-height: rem(188);
-aspect-ratio: 280/188;
+.card__header--slider img {
+  min-width: rem(280);
+  min-height: rem(188);
+  aspect-ratio: 280/188;
 }
-.card__icon--slider{
-  margin:rem(16) ;
+.card__icon--slider {
+  margin: rem(16);
   display: inline-block;
-  font-size: rem(12) ;
+  font-size: rem(12);
   color: $blue;
   border: rem(1) solid $blue;
   font-family: $base-font-family;
-
 }
 
-.card__title--slider{
+.card__title--slider {
   border-bottom: rem(1) solid $blue;
   font-size: rem(16);
   padding-left: rem(16);
   font-family: $base-font-family;
   width: rem(248);
 }
-.card__text--slider{
+.card__text--slider {
   text-align: center;
   font-size: rem(14);
   font-family: $base-font-family;
   font-weight: $normal;
-  padding:  rem(8) 0;
+  padding: rem(8) 0;
 }
-.card__prices{
+.card__prices {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.card__price{
+.card__price {
   font-size: rem(20);
   font-family: $second-font-family;
   font-weight: $bold;
@@ -154,11 +188,20 @@ aspect-ratio: 280/188;
   padding-bottom: rem(16);
 }
 
-.card__discout{
+.card__discount {
   color: $blue;
   font-weight: $bold;
-  font-family:$second-font-family ;
+  font-family: $second-font-family;
   font-size: rem(32);
   line-height: rem(32);
-  padding:0 0 rem(24) rem(16);
+  padding: 0 0 rem(24) rem(16);
 }
+
+.cards--voice {
+  @include mq (md){
+  display: flex;
+  padding: rem(30) rem(180) rem(80);
+  }
+}
+
+
