@@ -1,35 +1,53 @@
 @use "global" as *;
 
 
-.about__content h3{
+.about__content{
 
   font-family: $second-font-family;
   font-size: rem(40);
   font-weight: $regular;
   color: $blue;
 @include mq (md){
-  display: inline;
+  display: inline-block;
   position: relative;
-  font-size: rem(80);
-  font-family: $second-font-family;
-  line-height: rem(100);
-  font-weight: $normal;
-  color:$white;
-  left: rem(379);
-  top: rem(-850);
+  top:50% ;
+  transform: translateY(-50%);  
   z-index: 10;
+  display: flex;
+  top: rem(-200) ;
+  left:rem(379) ;
+  width: rem(800);
+  }
 }
+
+.about__content h3{
+font-weight: $regular;
+font-size: rem(40);
+padding-left: rem(15);
+
+  @include mq (md){
+    display: inline-block;
+    position: relative;
+    font-size: rem(80);
+    font-family: $second-font-family;
+    line-height: rem(100);
+    font-weight: $normal;
+    color:$white;  
+    top: rem;  
+  
+  }
 }
+
 .about__text{
   font-size: rem(16);
   font-family: $base-font-family;
   font-weight: normal;
-  @include mq(md){
+  color: $black;
+  @include mq (md){
+    display: inline-block;
 position: relative;
-top: rem(-1050);
 width: rem(400);
-left: rem(819);
 z-index: 10;
 color: $white;
-  }
+  } 
 }

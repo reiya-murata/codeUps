@@ -1,0 +1,15 @@
+@use "global" as *;
+
+.about__button{
+  text-align: center;
+  padding: rem(40)0 rem(69);
+  @include mq (md){
+  position: relative;
+  display: inline;
+  
+  top: rem(-350);
+  left: rem(250);
+
+  z-index: 10;
+  }
+}

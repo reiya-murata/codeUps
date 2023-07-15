@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .hero__img{ 
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -9,6 +9,11 @@
 }
 .hero_img img{
   z-index: 10; 
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
 

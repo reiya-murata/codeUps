@@ -1,0 +1,12 @@
+@use "global" as *;
+
+.information__button{
+  text-align: center;
+  padding:rem(40) 0 rem(69) ;
+  @include mq (md){
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    top:rem(443)
+  }
+}
