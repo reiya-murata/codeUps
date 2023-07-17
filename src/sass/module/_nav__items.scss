@@ -41,13 +41,23 @@
   font-weight: $bold;
   padding-top: rem(40);
   padding-left: rem(37);
+  @include mq (md){
+    // padding-top: rem(25);
+  }
 }
 
 .nav__item--bottom{
-  display: flex;
   z-index: 10;
   color: $white;
   font-weight: $regular;
+  @include mq (md) {
+    // justify-content: space-around;
+    // margin: auto;
+  }
+}
+.nav__bottom--icons{
+  display: flex;
+  flex-direction: column;
 }
 
 .nav__items--left--bottom{

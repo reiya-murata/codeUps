@@ -7,5 +7,12 @@
   font-family: $base-font-family;
   padding: rem(16) rem(40);
   border-top: 1px solid $blue;
-
+@include mq (md){
+  display: flex;
+  padding-top: rem(24);
+  border-top: none;
+  margin-top: auto;
+  margin-bottom: auto;
+  
+}
 }

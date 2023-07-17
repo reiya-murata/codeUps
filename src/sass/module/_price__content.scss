@@ -4,9 +4,9 @@
   @include mq (md) {
     display: flex;
     flex-direction: column;
-    justify-content:flex-end ;
+    justify-content:space-b ;
     padding-left: rem(181);
-    
+    margin-top: rem(0);
   }
 }
 

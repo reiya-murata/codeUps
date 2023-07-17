@@ -35,3 +35,12 @@ padding: 0 rem(30) 0 rem(29);
 
 }
 
+.nav__bottom--flexs{
+  @include mq (md){
+    display: flex;
+    justify-content: space-around;
+    padding-top:rem(179) ;
+   width: 80%;
+   margin: auto;
+  }
+}

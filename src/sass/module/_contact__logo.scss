@@ -1,8 +1,15 @@
 @use "global" as *;
 
 .contact__logo{
-  position: relative;
-  width: 40%;
+  position: absolute;
+  width: rem(174);
+  height: rem(65);
   margin: auto;
-padding-top: rem(80);
+margin-top: rem(80);
+@include mq (md){
+  width: rem(200);
+  height: rem(75);
+  position: absolute;
+  top: 0;
+}
 }

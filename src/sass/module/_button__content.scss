@@ -3,6 +3,9 @@
 .button__content {
   text-align: center;
   padding: rem(40) 0 rem(69);
+@include mq (md){
+  padding:rem(80)0 rem(100);
+  }
 }
 
 .button {
@@ -17,6 +20,11 @@
   font-family: $second-font-family;
   width: rem(202);
   height: rem(54);
+  @include mq (md){
+width: rem(286);
+height: rem(58);
+
+  }
 }
 .button::after {
   content: "";
@@ -39,4 +47,10 @@
 }
 .button a{
   display: block;
+}
+
+.button__contact{
+@include mq (md){
+  padding: rem(40) 0 rem(99);
+}
 }

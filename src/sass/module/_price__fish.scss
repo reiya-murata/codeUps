@@ -6,9 +6,11 @@
     width: rem(437);
     height: rem(201);
   position: absolute;
-  top: 50%;
+  top: 70%;
   transform: translateY(50%);
+  
+  left: 10%;
+  z-index: 15;
   display: block;
-  z-index: 10;
   }
 }

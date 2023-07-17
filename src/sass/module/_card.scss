@@ -103,6 +103,10 @@ c
 }
 .card__inner--voice {
   padding: rem(15) rem(16) rem(24);
+  @include mq (md){
+    width: rem(520);
+    height: rem(396);
+  }
 }
 .card__header--voice {
   display: flex;
@@ -201,6 +205,7 @@ c
   @include mq (md){
   display: flex;
   padding: rem(30) rem(180) rem(80);
+  justify-content: center;
   }
 }
 

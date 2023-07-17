@@ -2,10 +2,16 @@
 
 .contact__fish {
 position: absolute;
-width: rem1(109);
+width: rem(109);
 height: rem(50);
+left: 70%;
 padding-top: rem(54);
-top: 50%;
-transform: translateY(50%);
-right: rem(10);
+  @include mq (md){  
+width: rem(301);
+height: rem(138);
+padding-top: rem(54);
+left: 70%;
+top: -100%;
+z-index: 10;
+  }
 }

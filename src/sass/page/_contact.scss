@@ -6,12 +6,15 @@
 
   @include mq (md){
     display: flex;
+    padding: rem(100) 0 rem(80);
+    align-items: center;
   }
 }
 
-.logo__fish--contact {
-  position: absolute;
-  width: rem(109);
-  height: rem(51);
-
+.logo__bottoms{
+  @include mq (md){
+    display: flex;
+    width: 30%;
+    
+  }
 }

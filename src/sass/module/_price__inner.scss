@@ -4,5 +4,6 @@
   padding: 0 rem(15);
   @include mq (md){
     display: flex;
+    justify-content: center;
   }
 }

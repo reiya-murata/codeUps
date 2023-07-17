@@ -1,32 +1,37 @@
 @use "global" as *;
 
-.logo__img {
-  position: relative;
+.logo__img--bottom {
+  position: absolute;
   display: block;
   width: inherit;
-  height: 100%;
-  align-items: center;
+  width: 102(rem);
+  height: 38(rem);
+  top: 2%;
+  
+
+@include mq (md){
+  width: rem(200);
+  height: rem(75);
+  top: 25%;
+  left: 15%;
 }
 
-.logo__img img{
-  position: relative;
+}
+
+// .logo__img img {
+//   position: relative;
+//   display: inline-block;
+  
+//   padding-top: rem(21);
+// }
+.logo__img a {
   display: inline-block;
-  // width: 102(rem);
-  // height: 38(rem);
-  padding-top: rem(21);
-}
-.logo__img a{
-  display: inline-block;
-}
-.logo__img--bottom{
-  width: 40%;
-  padding: rem(48) 0 0 rem(15);
 }
 
 
-.blog__logo--1{
+.blog__logo--1 {
   display: none;
-  @include mq (md){
+  @include mq(md) {
     display: block;
     width: rem(437);
     height: rem(201);
@@ -34,11 +39,11 @@
     position: relative;
     top: rem(-100);
     left: rem(50);
-    }
   }
-.blog__logo--2{
+}
+.blog__logo--2 {
   display: none;
-  @include mq (md){
+  @include mq(md) {
     display: block;
     width: rem(301);
     height: rem(138);
@@ -46,15 +51,16 @@
   }
 }
 
-.logo__voice--ibaratatu{
-  @include mq (md){
+.logo__voice--ibaratatu {
+  display: none;
+  @include mq(md) {
+    display: block;
     width: rem(71);
     height: rem(162);
-  }
   position: absolute;
-  top: 50%;
-  transform: translateY(50%);
+
   z-index: 10;
-  left: rem(1300);
-  top: rem(500);
+  right: 5%;
+  top: 60%;
+  }
 }

@@ -42,11 +42,13 @@ aspect-ratio: 281/186;
   } 
 }
 .about__img--3{
+  display: none;
   @include mq (md){
     width: rem(194);
     height: rem(181);
     position: relative;
     left: rem(1163);
     top:rem(350);
+    display: block;
   } 
 }

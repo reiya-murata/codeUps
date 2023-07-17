@@ -45,12 +45,15 @@
 }
 
 .section__title--contact {
-  font-size: rem(80);
+  @include mq (md){
+    font-size: rem(80);
   font-family: $second-font-family;
   line-height: rem(80);
   text-transform: capitalize;
   font-weight: $regular;
-  padding-top: rem(40);
+  padding: rem(100) rem(112) rem(6)rem(81);
+
+  }
 }
 
 .section__title--contact::first-letter {
@@ -76,16 +79,23 @@
   padding-top: rem(8);
 }
 
-.section__titles--blog {
+.section__titles--blog.section__title{
   font-size: rem(32);
   font-family: $second-font-family;
   line-height: rem(40);
   text-transform: capitalize;
   font-weight: $regular;
-
+  
   @include mq(md) {
     text-transform: capitalize $white;
     color: $white;
     text-align: center;
+  }
+}
+
+.section__titles--contact{
+  @include mq (md){
+    padding: 0 rem(112)  rem(6) rem(0);
+    
   }
 }
