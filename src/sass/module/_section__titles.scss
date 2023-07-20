@@ -46,13 +46,14 @@
 
 .section__title--contact {
   @include mq (md){
+    position: relative;
     font-size: rem(80);
   font-family: $second-font-family;
   line-height: rem(80);
   text-transform: capitalize;
   font-weight: $regular;
-  padding: rem(100) rem(112) rem(6)rem(81);
-
+  // padding: rem(100) rem(112) rem(6)rem(81);
+ 
   }
 }
 
@@ -77,6 +78,7 @@
   color: $blue;
   line-height: rem(18);
   padding-top: rem(8);
+  text-align: center;
 }
 
 .section__titles--blog.section__title{

@@ -52,5 +52,6 @@ height: rem(58);
 .button__contact{
 @include mq (md){
   padding: rem(40) 0 rem(99);
+  text-align: center;
 }
 }
