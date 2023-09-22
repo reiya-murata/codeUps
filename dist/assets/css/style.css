@@ -167,7 +167,6 @@ a {
 }
 
 .contact {
-	padding-bottom: 1.9375rem;
 	position: relative;
 }
 
@@ -193,7 +192,7 @@ a {
 	background-color: #DDF0F1;
 	padding: 5rem 0;
 	position: relative;
-	width: 100%;
+	width: 100;
 }
 
 .voice {
@@ -499,7 +498,6 @@ c .voice {
 
 .contact__fish {
 	height: 3.125rem;
-	left: 70%;
 	padding-top: 3.375rem;
 	position: absolute;
 	width: 6.8125rem;
@@ -530,7 +528,6 @@ c .voice {
 }
 
 .contact__left {
-	border-top: 1px solid #108F95;
 	font-family: "Noto Sans JP', sans-serif";
 	font-size: 1rem;
 	line-height: 1.5rem;
@@ -867,12 +864,8 @@ c .voice {
 
 .price__content {
 	display: flex;
-	justify-content: space-between;
+	justify-content: ce;
 	width: 100%;
-}
-
-.price__img {
-	padding: 1.5rem 0 2.5rem;
 }
 
 .price__img--pc img {
@@ -1045,22 +1038,13 @@ html {
 .contact {
 	align-items: center;
 	display: flex;
-	padding: 6.25rem 0 5rem;
-}
-
-.logo__bottoms {
-	display: flex;
-	width: 30%;
+	justify-content: center;
 }
 
 .information {
 	padding: 0 0 0 0;
 	padding-bottom: -18.75rem;
 	padding-top: 6.25rem;
-}
-
-.price {
-	display: inline;
 }
 
 .voice {
@@ -1139,11 +1123,10 @@ html {
 	width: 12.125rem;
 }
 
-.adrress__card {
+.address__card {
 	display: flex;
 	height: 25.9375rem;
-	justify-content: center;
-	margin: 2.5rem 8.75rem 25rem 10rem;
+	margin: 8.75rem 0 10rem;
 	width: 67.5rem;
 }
 
@@ -1216,8 +1199,11 @@ html {
 }
 
 .contact__fish {
+	bottom: 29.8125rem;
 	height: 8.625rem;
-	top: 5%;
+	left: 68.0625rem;
+	right: 3.125rem;
+	top: 6.25rem;
 	transform: translateY(-50%);
 	width: 18.8125rem;
 	z-index: 10;
@@ -1233,9 +1219,9 @@ html {
 
 .contact__logo {
 	height: 4.6875rem;
-	left: 25%;
+	left: 21.9375rem;
 	position: absolute;
-	top: 7%;
+	top: 5rem;
 	width: 12.5rem;
 }
 
@@ -1246,7 +1232,6 @@ html {
 
 .contact__left {
 	border-top: none;
-	border-top: 1px solid #108F95;
 	display: flex;
 	margin-bottom: auto;
 	margin-top: auto;
@@ -1349,9 +1334,8 @@ html {
 .price__contents {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-b;
+	justify-content: center;
 	margin-top: 0rem;
-	padding-left: 11.3125rem;
 }
 
 .price__img {
@@ -1361,6 +1345,7 @@ html {
 .price__img--pc img {
 	display: block;
 	height: 46.625rem;
+	padding: 1.5rem 0 2.5rem 5.8125rem;
 	width: 30.75rem;
 }
 

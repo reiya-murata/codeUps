@@ -1,20 +1,20 @@
 @use "global" as *;
 
 .contact{
-  padding-bottom:rem(31);
+
   position: relative;
 
   @include mq (md){
     display: flex;
-    padding: rem(100) 0 rem(80);
     align-items: center;
+    justify-content: center;
   }
 }
 
-.logo__bottoms{
-  @include mq (md){
-    display: flex;
-    width: 30%;
+// .logo__bottoms{
+//   @include mq (md){
+//     display: flex;
+//     width: 30%;
     
-  }
-}
+//   }
+// }

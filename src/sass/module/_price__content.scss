@@ -4,21 +4,20 @@
   @include mq (md) {
     display: flex;
     flex-direction: column;
-    justify-content:space-b ;
-    padding-left: rem(181);
+    justify-content:center ;
     margin-top: rem(0);
   }
 }
 
 .price__content{
   display: flex;
-  justify-content: space-between;
+  justify-content: ce;
   width: 100%
 }
 .price__img{
-  padding: rem(24) 0 rem(40);
   @include mq (md){
     display: none;
+ 
   }
   }
 
@@ -28,6 +27,7 @@
       display: block;
       width: rem(492);
       height: rem(746);
+      padding: rem(24) 0 rem(40) rem(93);
     }
     position: relative;
     

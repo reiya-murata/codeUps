@@ -1,11 +1,11 @@
 @use "global" as *;
 
-.adrress__card{
+.address__card{
   @include mq (md){
     display: flex;
-  justify-content: center;
+  
   width: rem(1080);
   height: rem(415);
-  margin: rem(40) rem(140) rem(400) rem(160);
+  margin: rem(140) 0 rem(160);
   }
 }
