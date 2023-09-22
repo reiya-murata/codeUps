@@ -3,6 +3,7 @@
 jQuery(function ($) {// この中であればWordpressでも「$」が使用可能になる
 });
 
+// burger menu
 const burger=document.querySelector(".hamburger ");
 const nav=document.querySelector(".nav");
 const navItems=document.querySelectorAll(".nav__items li");
@@ -31,20 +32,26 @@ burger.addEventListener("click",()=>{
 });
 
 
-// burger menu
 
-// swiper
+
+// swiper メインビュー
 const main__swiper = new Swiper(".main__swiper", {
   spaceBetween: 30,
   effect: "fade",
   loop: true,
   autoplay: {
     delay: 2500,
-    disableOnInteraction: false,
+    disableOnInteraction: true,
+     // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
   },
   
 });
 
+
+//スライダー 
 const swiper = new Swiper('.swiper', {
   // Optional parameters
   direction: 'horizontal',
@@ -58,6 +65,11 @@ const swiper = new Swiper('.swiper', {
 767:{
   slidesPerView:4
 },
+  },
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   },
 });
 
