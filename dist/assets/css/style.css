@@ -1,0 +1,1467 @@
+body {
+	font-family: "Noto Sans JP', sans-serif";
+}
+
+.u-desktop {
+	display: none;
+}
+
+/* リキッドレイアウト対応 */
+
+html {
+	font-size: 16px;
+}
+
+.inner {
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 20px;
+	padding-right: 20px;
+	width: 100%;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Remove default padding */
+
+ul,
+ol {
+	padding: 0;
+}
+
+/* Remove default margin */
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+figure,
+blockquote,
+dl,
+dd {
+	margin: 0;
+}
+
+/* Set core root defaults */
+
+html {
+	scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+
+body {
+	line-height: 1.5;
+	min-height: 100vh;
+	text-rendering: optimizeSpeed;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+
+ul,
+ol {
+	list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+
+a:not([class]) {
+	-webkit-text-decoration-skip: ink;
+	text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+
+img {
+	display: block;
+	max-width: 100%;
+	width: 100%;
+}
+
+/* Natural flow and rhythm in articles by default */
+
+article > * + * {
+	margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+/* Blur images when they have no alt attribute */
+
+img:not([alt]) {
+	filter: blur(10px);
+}
+
+/* フォームリセット */
+
+input,
+button,
+select,
+textarea {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background: transparent;
+	border: none;
+	border-radius: 0;
+	font: inherit;
+	outline: none;
+}
+
+textarea {
+	resize: vertical;
+}
+
+input[type=checkbox],
+input[type=radio] {
+	display: none;
+}
+
+input[type=submit],
+input[type=button],
+label,
+button,
+select {
+	cursor: pointer;
+}
+
+select::-ms-expand {
+	display: none;
+}
+
+/* ホバー */
+
+a {
+	-webkit-text-decoration: none;
+	color: inherit;
+	text-decoration: none;
+	transition: opacity 0.3s;
+}
+
+.about {
+	padding-top: 2.5rem;
+	position: relative;
+}
+
+.blog {
+	padding: 5.6875rem 0 0;
+}
+
+.campain {
+	position: relative;
+}
+
+.contact {
+	padding-bottom: 1.9375rem;
+	position: relative;
+}
+
+.footer {
+	position: relative;
+}
+
+.hero {
+	margin-bottom: 2.5rem;
+	position: relative;
+	width: 100%;
+}
+
+.information {
+	background-color: #DDF0F1;
+	box-shadow: 0.0625rem 0.0625rem 0.4375rem rgba(0, 0, 0, 0.3529411765);
+	height: 100%;
+	padding: 5.0625rem 0 4.3125rem;
+	width: 100%;
+}
+
+.price {
+	background-color: #DDF0F1;
+	padding: 5rem 0;
+	position: relative;
+	width: 100%;
+}
+
+.voice {
+	padding: 0.6875rem 0 0;
+}
+
+.about__button {
+	padding: 2.5rem 0 4.3125rem;
+	text-align: center;
+}
+
+.about__content {
+	color: #108F95;
+	font-family: "'Gotu', sans-serif";
+	font-size: 2.5rem;
+	font-weight: 300;
+}
+
+.about__content h3 {
+	font-size: 2.5rem;
+	font-weight: 300;
+	padding-left: 0.9375rem;
+}
+
+.about__text {
+	color: #111;
+	font-family: "Noto Sans JP', sans-serif";
+	font-size: 1rem;
+	font-weight: normal;
+}
+
+.about__imgs {
+	height: 100%;
+	width: 100%;
+}
+
+.about__img--1 {
+	aspect-ratio: 132/194;
+	height: 12.125rem;
+	max-height: 24.25rem;
+	max-width: 16.5rem;
+	padding-left: 0.875rem;
+	position: relative;
+	top: 1.875rem;
+	width: 8.25rem;
+	z-index: 5;
+}
+
+.about__img--2 {
+	aspect-ratio: 281/186;
+	height: 11.625rem;
+	left: 4.375rem;
+	position: relative;
+	top: -8.75rem;
+	width: 17.5625rem;
+}
+
+.about__img--3 {
+	display: none;
+}
+
+.blog__bg--img {
+	display: none;
+}
+
+.button__content {
+	padding: 2.5rem 0 4.3125rem;
+	text-align: center;
+}
+
+.button {
+	background-color: #108F95;
+	color: #fff;
+	display: inline-block;
+	font-family: "'Gotu', sans-serif";
+	font-size: 0.875rem;
+	height: 3.375rem;
+	line-height: 1.375rem;
+	padding: 1rem 2.5rem;
+	position: relative;
+	text-align: center;
+	width: 12.625rem;
+}
+
+.button::after {
+	border: 0.0625rem solid #108F95;
+	content: "";
+	height: 100%;
+	left: 0.25rem;
+	position: absolute;
+	top: 0.25rem;
+	width: 100%;
+	z-index: -10;
+}
+
+.stickarrow {
+	border-bottom: 0.0625rem solid #fff;
+	border-right: 0.0625rem solid #fff;
+	display: inline-block;
+	height: 0.375rem;
+	padding-bottom: 0.125rem;
+	transform: skew(45deg);
+	width: 2.5rem;
+}
+
+.button a {
+	display: block;
+}
+
+.card {
+	background-color: #fff;
+	box-shadow: 0.0625rem 0.0625rem 0.0625rem 0.1875rem rgba(0, 0, 0, 0.1803921569);
+	font-family: "Noto Sans JP', sans-serif";
+	margin: 2.5rem 1rem 0;
+}
+
+.card__header img {
+	aspect-ratio: 301/201;
+	display: inline-block;
+	min-height: 12.5625rem;
+	min-width: 18.8125rem;
+	padding: 1rem;
+}
+
+.card__header {
+	text-align: center;
+}
+
+.card__body {
+	margin: auto;
+	min-width: 18.8125rem;
+}
+
+.card__date {
+	font-size: 0.75rem;
+	padding-left: 1rem;
+	padding-top: 1.5rem;
+}
+
+.card__title {
+	border-bottom: 0.0625rem solid #108F95;
+	font-family: "Noto Sans JP', sans-serif";
+	font-size: 1rem;
+	padding-left: 1rem;
+}
+
+.card__title--big {
+	border-bottom: 0.0625rem solid #108F95;
+	font-size: 1.25rem;
+	padding-left: 1rem;
+}
+
+.card__text {
+	font-family: "Noto Sans JP', sans-serif";
+	font-size: 1rem;
+	padding: 1rem 1rem 1.5rem;
+}
+
+.card--slider {
+	background-color: #fff;
+	box-shadow: 0.0625rem 0.0625rem 0.0625rem 0.1875rem rgba(0, 0, 0, 0.1803921569);
+	font-family: "Noto Sans JP', sans-serif";
+	height: 22.875rem;
+	margin: 2.5rem 1rem 0;
+	padding-bottom: 2.5rem;
+	width: 17.5rem;
+}
+
+.noshadow {
+	margin: 2.5rem 1rem;
+}
+
+.card__information {
+	padding: 0 1rem;
+}
+
+.card__body--information {
+	padding-left: 3rem;
+	padding-top: 3.8125rem;
+	width: 30.75rem;
+}
+
+c .voice {
+	box-shadow: 0.0625rem 0.0625rem 0.0625rem 0.1875rem rgba(0, 0, 0, 0.1803921569);
+	font-family: "Noto Sans JP', sans-serif";
+	margin: 2.5rem 1rem 0;
+}
+
+.card__inner--voice {
+	padding: 0.9375rem 1rem 1.5rem;
+}
+
+.card__header--voice {
+	display: flex;
+}
+
+.card__age {
+	font-family: "Noto Sans JP', sans-serif";
+	font-size: 12;
+	font-weight: 400;
+	line-height: 1.125rem;
+}
+
+.card__icon {
+	border: 0.0625rem solid #108F95;
+	color: #108F95;
+	display: inline-block;
+	font-family: "Noto Sans JP', sans-serif";
+	font-size: 0.75rem;
+	padding: 0.25rem 0.75rem;
+}
+
+.card__title--voice {
+	padding-right: 0.8125rem;
+	padding-top: 0.25rem;
+}
+
+.card__title--voice {
+	border-bottom: 0.0625rem solid #108F95;
+	font-family: "Noto Sans JP', sans-serif";
+	font-size: 1rem;
+	font-weight: 700;
+}
+
+.card__img img {
+	aspect-ratio: 151/117;
+	min-height: 7.3125rem;
+	min-width: 9.4375rem;
+	padding-top: 0.5625rem;
+}
+
+.slider {
+	box-shadow: 0.0625rem 0.0625rem 0.0625rem 0.1875rem rgba(0, 0, 0, 0.1803921569);
+	font-family: "Noto Sans JP', sans-serif";
+	margin: auto;
+	padding-bottom: 0.3125rem;
+	width: 280px;
+}
+
+.card__header--slider img {
+	aspect-ratio: 280/188;
+	min-height: 11.75rem;
+	min-width: 17.5rem;
+}
+
+.card__icon--slider {
+	border: 0.0625rem solid #108F95;
+	color: #108F95;
+	display: inline-block;
+	font-family: "Noto Sans JP', sans-serif";
+	font-size: 0.75rem;
+	margin: 1rem;
+}
+
+.card__title--slider {
+	border-bottom: 0.0625rem solid #108F95;
+	font-family: "Noto Sans JP', sans-serif";
+	font-size: 1rem;
+	padding-left: 1rem;
+	width: 15.5rem;
+}
+
+.card__text--slider {
+	font-family: "Noto Sans JP', sans-serif";
+	font-size: 0.875rem;
+	font-weight: 400;
+	padding: 0.5rem 0;
+	text-align: center;
+}
+
+.card__prices {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
+.card__price {
+	-webkit-text-decoration: line-through solid red;
+	-webkit-text-decoration: line-through red 0.1875rem;
+	font-family: "'Gotu', sans-serif";
+	font-size: 1.25rem;
+	font-weight: 700;
+	line-height: 1.75rem;
+	padding-bottom: 1rem;
+	text-decoration: line-through;
+	text-decoration: line-through solid red;
+	text-decoration: line-through red 0.1875rem;
+	text-decoration-thickness: 0.1875rem;
+}
+
+.card__discount {
+	color: #108F95;
+	font-family: "'Gotu', sans-serif";
+	font-size: 2rem;
+	font-weight: 700;
+	line-height: 2rem;
+	padding: 0 0 1.5rem 1rem;
+}
+
+.contact__content {
+	width: 11.25rem;
+}
+
+.contact__fish {
+	height: 3.125rem;
+	left: 70%;
+	padding-top: 3.375rem;
+	position: absolute;
+	width: 6.8125rem;
+}
+
+.contact__right {
+	border-top: 1px solid #108F95;
+	font-family: "Noto Sans JP', sans-serif";
+	font-size: 1rem;
+	line-height: 1.5rem;
+	padding: 1rem 2.5rem;
+	text-align: center;
+}
+
+.contact__logo {
+	height: 4.0625rem;
+	margin: auto;
+	margin-top: 5rem;
+	position: relative;
+	width: 10.875rem;
+}
+
+.contact__map {
+	aspect-ratio: 295/160;
+	height: 10rem;
+	margin: 0 2.5rem;
+	width: 18.4375rem;
+}
+
+.contact__left {
+	border-top: 1px solid #108F95;
+	font-family: "Noto Sans JP', sans-serif";
+	font-size: 1rem;
+	line-height: 1.5rem;
+	padding: 1rem 2.5rem;
+	text-align: center;
+}
+
+.copyright {
+	background-color: #108F95;
+	color: #fff;
+	font-family: "'Gotu', sans-serif";
+	font-size: 0.75rem;
+	font-weight: 400;
+	line-height: 1.125rem;
+	padding: 2.5rem 0.875rem 3.5rem;
+	text-align: center;
+}
+
+.facebook__icon {
+	height: 1.5rem;
+	margin: 0 1rem 0 0.9375rem;
+	width: 1.5rem;
+}
+
+/* ハンバーガーアイコンのスタイル */
+
+.hamburger {
+	background-color: transparent;
+	cursor: pointer;
+	display: inline-block;
+	height: 1.875rem; /* rem(2) */
+	margin-top: 0.9375rem;
+	position: relative;
+	width: 1.875rem; /* rem(30) */
+	z-index: 10;
+}
+
+.hamburger span {
+	background-color: white;
+	height: 0.0625rem;
+	position: absolute;
+	transition: transform 0.3s ease;
+	width: 2rem;
+}
+
+.hamburger span:nth-child(1) {
+	top: 0rem;
+}
+
+.hamburger span:nth-child(2) {
+	top: 0.5rem;
+}
+
+.hamburger span:nth-child(3) {
+	top: 1rem;
+}
+
+.hamburger.active span:nth-child(1) {
+	transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+	opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+	transform: translateY(-8px) rotate(-45deg);
+}
+
+.header {
+	background: rgba(13, 41, 54, 0.537254902);
+	display: flex;
+	height: 5rem;
+	position: fixed;
+	width: 100vw;
+	z-index: 11;
+}
+
+.header__inner {
+	align-items: center;
+	display: flex;
+	height: 100%;
+	justify-content: space-between;
+	padding: 0 0.9375rem;
+	width: 100%;
+}
+
+.header.active {
+	background-color: transparent;
+}
+
+.hero__contents {
+	color: #fff;
+	left: 50%;
+	max-height: 5.0625rem;
+	max-width: 15.5rem;
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	transform: translateY(-50%);
+	transform: translateX(-50%);
+	z-index: 5;
+}
+
+.hero__inner {
+	align-items: center;
+	position: relative;
+}
+
+.hero__title {
+	display: block;
+	font-family: "'Gotu', sans-serif";
+	font-size: 2.5rem;
+	font-weight: 300;
+	letter-spacing: 1.35rem;
+	text-align: center;
+}
+
+.hero__subtitle {
+	display: block;
+	font-family: "'Gotu', sans-serif";
+	font-size: 1.25rem;
+	font-weight: 300;
+	text-align: center;
+}
+
+.hero__img {
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+	position: relative;
+	width: 100%;
+}
+
+.hero_img img {
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+	position: relative;
+	width: 100%;
+	z-index: 10;
+}
+
+.information__button {
+	padding: 2.5rem 0 4.3125rem;
+	text-align: center;
+}
+
+.information__text {
+	font-family: "Noto Sans JP', sans-serif";
+	font-size: 1rem;
+	padding: 1rem 1rem 1.5rem;
+}
+
+.instagram__icon {
+	height: 1.5rem;
+	width: 1.5rem;
+}
+
+.logo__img--bottom {
+	display: block;
+	height: 38 rem;
+	position: absolute;
+	top: 2%;
+	width: inherit;
+	width: 102 rem;
+}
+
+.logo__img a {
+	display: inline-block;
+}
+
+.blog__logo--1 {
+	display: none;
+}
+
+.blog__logo--2 {
+	display: none;
+}
+
+.logo__voice--ibaratatu {
+	display: none;
+}
+
+.mainvisial--1 img {
+	height: 100vh;
+	width: 100%;
+}
+
+.mainvisial--1 {
+	background-image: url(..\a ssetsimages\c ommonmainview.1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	width: 100vw;
+	z-index: 100;
+}
+
+.nav__hitode {
+	margin-left: 0.9375rem;
+	margin-top: 2.625rem;
+	position: absolute;
+}
+
+.nav__hitode img {
+	height: 1.125rem;
+	width: 1.125rem;
+}
+
+.nav__hitode--bottom {
+	margin-left: 0.9375rem;
+	margin-top: 2.625rem;
+	position: absolute;
+}
+
+.nav__hitode--bottom img {
+	height: 1.125rem;
+	width: 1.125rem;
+}
+
+.nav__items {
+	color: #fff;
+	display: flex;
+	font-weight: 300;
+	padding-top: 4rem;
+	z-index: 10;
+	z-index: 15;
+}
+
+.nav_item a {
+	display: block;
+}
+
+.nav__items--left {
+	color: #fff;
+	font-family: "Noto Sans JP', sans-serif";
+	font-size: 1rem;
+	height: 100vh;
+	width: 50%;
+	z-index: 15;
+}
+
+.nav__items--right {
+	color: #fff;
+	font-family: "Noto Sans JP', sans-serif";
+	font-size: 1rem;
+	height: 100vh;
+	width: 50%;
+}
+
+.nav__item {
+	padding-left: 2.3125rem;
+	padding-top: 1.5rem;
+}
+
+.nav__item--bold {
+	font-weight: 700;
+	padding-left: 2.3125rem;
+	padding-top: 2.5rem;
+}
+
+.nav__item--bottom {
+	color: #fff;
+	font-weight: 300;
+	z-index: 10;
+}
+
+.nav__bottom--icons {
+	display: flex;
+	flex-direction: column;
+}
+
+.nav__items--left--bottom {
+	color: #fff;
+	font-family: "Noto Sans JP', sans-serif";
+	font-size: 1rem;
+	width: 50%;
+}
+
+.nav__item--right--bottom {
+	color: #fff;
+	font-family: "Noto Sans JP', sans-serif";
+	font-size: 1rem;
+	width: 50%;
+}
+
+.nav__pc {
+	color: #fff;
+	display: none;
+	position: fixed;
+	width: 100%;
+	z-index: 11;
+}
+
+.nav__items--pc {
+	display: flex;
+	justify-content: end;
+	text-align: center;
+	width: 100%;
+}
+
+.nav__items--pc h2 {
+	font-family: "'Gotu', sans-serif";
+	font-size: 1.125rem;
+	font-weight: 300;
+	line-height: 1.125rem;
+	padding: 1.625rem 1.25rem 0 1.25rem;
+}
+
+.nav__items--pc h3 {
+	font-family: "Noto Sans JP', sans-serif";
+	font-size: 0.625rem;
+	font-weight: 300;
+	line-height: 0.9375rem;
+	padding: 0 1.875rem 0 1.8125rem;
+}
+
+.nav__bottom {
+	background-color: #108F95;
+}
+
+.nav {
+	background-color: #108F95;
+	display: none;
+	height: 100vh;
+	position: fixed;
+	width: 100%;
+	z-index: 10;
+}
+
+.nav.active {
+	display: block;
+}
+
+.price__content {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.price__img {
+	padding: 1.5rem 0 2.5rem;
+}
+
+.price__img--pc img {
+	display: none;
+	position: relative;
+}
+
+.price__title {
+	border-bottom: 1px solid #108F95;
+	font-family: "Noto Sans JP', sans-serif";
+	font-size: 1rem;
+	font-weight: 700;
+	line-height: 1.5rem;
+	padding: 2.5rem 0 0.25rem;
+}
+
+.price__item {
+	font-family: "Noto Sans JP', sans-serif";
+	font-size: 0.875rem;
+	font-weight: 400;
+	line-height: 1.5rem;
+	padding: 0.5rem 0;
+}
+
+.price__price {
+	font-family: "Noto Sans JP', sans-serif";
+	font-size: 0.875rem;
+	font-weight: 400;
+	line-height: 1.5rem;
+	padding: 0.5rem 0;
+	text-align: right;
+}
+
+.price__fish {
+	display: none;
+}
+
+.price__inner {
+	padding: 0 0.9375rem;
+}
+
+.section__titles {
+	text-align: center;
+}
+
+.section__title {
+	font-family: "'Gotu', sans-serif";
+	font-size: 2rem;
+	font-weight: 300;
+	line-height: 2.5rem;
+	text-align: center;
+	text-transform: capitalize;
+}
+
+.section__title::first-letter {
+	color: #108F95;
+	font-weight: 300;
+}
+
+.section__subtitle {
+	color: #108F95;
+	font-family: "Noto Sans JP', sans-serif";
+	font-size: 0.75rem;
+	text-align: center;
+}
+
+.section__title--contact::first-letter {
+	color: #108F95;
+	font-weight: 300;
+}
+
+.section__subtitle--contact {
+	color: #108F95;
+	font-family: "Noto Sans JP', sans-serif";
+	font-size: 0.75rem;
+	line-height: 1.125rem;
+	text-align: center;
+}
+
+.section__subtitle--contact2 {
+	color: #108F95;
+	font-family: "Noto Sans JP', sans-serif";
+	font-size: 0.875rem;
+	line-height: 1.125rem;
+	padding-top: 0.5rem;
+	text-align: center;
+}
+
+.section__titles--blog.section__title {
+	font-family: "'Gotu', sans-serif";
+	font-size: 2rem;
+	font-weight: 300;
+	line-height: 2.5rem;
+	text-transform: capitalize;
+}
+
+.sns__icons {
+	display: flex;
+	position: absolute;
+	top: 3%;
+}
+
+.swiper-container {
+	height: 100%; /* スライダーの高さを調整 */
+	width: 100%; /* スライダーの幅を調整 */
+}
+
+/* スライド要素 */
+
+.swiper-slide {
+	align-items: center; /* スライド内の要素を垂直方向に中央揃えする場合 */
+	display: flex; /* スライド内の要素を横並びに配置する場合 */
+	height: 100%; /* スライドの高さを調整 */
+	justify-content: center; /* スライド内の要素を水平方向に中央揃えする場合 */
+	width: 100%; /* スライドの幅を調整 */
+}
+
+.swiper-slide {
+	width: 17.5rem;
+}
+
+.swiper {
+	height: 100%;
+	width: 100%;
+}
+
+.swiper-slide {
+	background-position: center;
+	background-size: cover;
+}
+
+.swiper-wrapper {
+	margin-top: 1.5625rem;
+}
+
+.swiper-slide img {
+	display: block;
+	width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+
+.u-desktop {
+	display: block;
+}
+
+.u-mobile {
+	display: none;
+}
+
+html {
+	font-size: 1.4545454545vw;
+}
+
+.inner {
+	max-width: 1150px;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.about {
+	padding-bottom: 23.75rem;
+}
+
+.blog {
+	padding: 6.25rem 0 0;
+	position: relative;
+}
+
+.contact {
+	align-items: center;
+	display: flex;
+	padding: 6.25rem 0 5rem;
+}
+
+.logo__bottoms {
+	display: flex;
+	width: 30%;
+}
+
+.information {
+	padding: 0 0 0 0;
+	padding-bottom: -18.75rem;
+	padding-top: 6.25rem;
+}
+
+.price {
+	display: inline;
+}
+
+.voice {
+	display: inline;
+	padding-left: 2.5rem;
+	position: relative;
+}
+
+.about__button {
+	display: inline;
+	left: 57.25rem;
+	position: relative;
+	right: 50%;
+	text-align: center;
+	top: 50%;
+	top: 11.25rem;
+	transform: 50%, 50%;
+	z-index: 10;
+}
+
+.about__content {
+	display: inline-block;
+	display: flex;
+	left: 22.5rem;
+	position: relative;
+	top: 50%;
+	top: 18.75rem;
+	transform: translateY(-50%);
+	width: 55rem;
+	z-index: 10;
+}
+
+.about__content h3 {
+	color: #fff;
+	display: inline-block;
+	font-family: "'Gotu', sans-serif";
+	font-size: 5rem;
+	font-weight: 400;
+	line-height: 6.25rem;
+	position: relative;
+	top: rem;
+}
+
+.about__text {
+	color: #fff;
+	display: inline-block;
+	position: relative;
+	width: 25rem;
+	z-index: 10;
+}
+
+.about__img--1 {
+	left: 11.3125rem;
+	min-height: 37.875rem;
+	min-width: 24.9375rem;
+	position: absolute;
+	top: 50%;
+	top: 25rem;
+	transform: translateY(-50%);
+}
+
+.about__img--2 {
+	left: 20rem;
+	min-height: 36.3125rem;
+	min-width: 55rem;
+	position: absolute;
+	top: 11.25rem;
+}
+
+.about__img--3 {
+	display: block;
+	height: 11.3125rem;
+	left: 72.6875rem;
+	position: relative;
+	top: 21.875rem;
+	width: 12.125rem;
+}
+
+.adrress__card {
+	display: flex;
+	height: 25.9375rem;
+	justify-content: center;
+	margin: 2.5rem 8.75rem 25rem 10rem;
+	width: 67.5rem;
+}
+
+.blog__bg--img {
+	display: block;
+	height: 31.25rem;
+	position: absolute;
+	top: 50%;
+	top: 15.9375rem;
+	transform: translateY(-50%);
+	z-index: -1;
+}
+
+.cards__blog {
+	display: flex;
+	justify-content: center;
+	padding-left: 11.25rem;
+	padding-right: 11.3125rem;
+	position: relative;
+	top: -7.5rem;
+}
+
+.button__content {
+	padding: 5rem 0 6.25rem;
+}
+
+.button {
+	height: 3.625rem;
+	width: 17.875rem;
+}
+
+.button__contact {
+	padding: 2.5rem 0 6.1875rem;
+	text-align: center;
+}
+
+.card__title--big {
+	font-family: "Noto Sans JP', sans-serif";
+	font-size: 1.5rem;
+	font-weight: 700;
+	line-height: 1.5rem;
+	padding-left: 0;
+}
+
+.noshadow {
+	display: flex;
+	justify-content: center;
+	margin: 0;
+	padding: 2.5rem 0 6.25rem;
+}
+
+.card__information {
+	padding-left: 11.25rem;
+}
+
+.card__information img {
+	height: 22.25rem;
+	width: 33.75rem;
+}
+
+.card__inner--voice {
+	height: 24.75rem;
+	width: 32.5rem;
+}
+
+.cards--voice {
+	display: flex;
+	justify-content: center;
+	padding: 1.875rem 11.25rem 5rem;
+}
+
+.contact__fish {
+	height: 8.625rem;
+	top: 5%;
+	transform: translateY(-50%);
+	width: 18.8125rem;
+	z-index: 10;
+}
+
+.contact__right {
+	border-top: none;
+	display: flex;
+	margin-bottom: auto;
+	margin-top: auto;
+	padding-top: 1.5rem;
+}
+
+.contact__logo {
+	height: 4.6875rem;
+	left: 25%;
+	position: absolute;
+	top: 7%;
+	width: 12.5rem;
+}
+
+.contact__map {
+	height: 148;
+	width: 273;
+}
+
+.contact__left {
+	border-top: none;
+	border-top: 1px solid #108F95;
+	display: flex;
+	margin-bottom: auto;
+	margin-top: auto;
+	padding: 0;
+	padding-top: 1.5rem;
+}
+
+.hamburger {
+	display: none;
+}
+
+.header {
+	height: 5.625rem;
+	text-align: center;
+}
+
+.header__inner {
+	justify-content: space-between;
+}
+
+.hero__title {
+	font-family: "'Gotu', sans-serif";
+	font-size: 5rem;
+	letter-spacing: 2.7rem;
+	line-height: 6.25rem;
+}
+
+.hero__subtitle {
+	font-family: "'Gotu', sans-serif";
+	font-size: 1.25rem;
+	line-height: normal;
+}
+
+.information__button {
+	display: inline-block;
+	left: 65%;
+	position: relative;
+	top: 50%;
+	top: -9.375rem;
+	transform: translateY(-50%);
+}
+
+.information__text {
+	font-family: "Noto Sans JP', sans-serif";
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5rem;
+	padding: 1rem 0 0;
+	width: 30.75rem;
+}
+
+.logo__img--bottom {
+	height: 4.6875rem;
+	left: 15%;
+	top: 25%;
+	width: 12.5rem;
+}
+
+.blog__logo--1 {
+	box-shadow: none;
+	display: block;
+	height: 12.5625rem;
+	left: 3.125rem;
+	position: relative;
+	top: -6.25rem;
+	width: 27.3125rem;
+}
+
+.blog__logo--2 {
+	display: block;
+	display: block;
+	height: 8.625rem;
+	width: 18.8125rem;
+}
+
+.logo__voice--ibaratatu {
+	display: block;
+	height: 10.125rem;
+	position: absolute;
+	right: 5%;
+	top: 60%;
+	width: 4.4375rem;
+	z-index: 10;
+}
+
+.mainvisial--1 {
+	background-image: url(..\a ssetsimages\c ommonhero.pc.1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.nav__bottom--flexs {
+	display: flex;
+	justify-content: space-around;
+	margin: auto;
+	padding-top: 11.1875rem;
+	width: 80%;
+}
+
+.price__contents {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-b;
+	margin-top: 0rem;
+	padding-left: 11.3125rem;
+}
+
+.price__img {
+	display: none;
+}
+
+.price__img--pc img {
+	display: block;
+	height: 46.625rem;
+	width: 30.75rem;
+}
+
+.price__title {
+	padding: 0;
+}
+
+.price__fish {
+	display: block;
+	height: 12.5625rem;
+	left: 10%;
+	position: absolute;
+	top: 70%;
+	transform: translateY(50%);
+	width: 27.3125rem;
+	z-index: 15;
+}
+
+.price__inner {
+	display: flex;
+	justify-content: center;
+	padding: 0;
+}
+
+.section__title {
+	color: #111;
+	font-family: "'Gotu', sans-serif";
+	font-size: 2.5rem;
+	font-weight: 300;
+	line-height: 2.5rem;
+	text-align: center;
+}
+
+.section__title::first-letter {
+	color: #111;
+}
+
+.section__subtitle {
+	color: #111;
+	font-family: "Noto Sans JP', sans-serif";
+	font-size: 0.75rem;
+	font-weight: 300;
+	line-height: 1.125rem;
+	text-align: center;
+}
+
+.section__title--contact {
+	font-family: "'Gotu', sans-serif";
+	font-size: 5rem;
+	font-weight: 300;
+	line-height: 5rem;
+	position: relative;
+	text-transform: capitalize;
+}
+
+.section__title--contact::first-letter {
+	color: #111;
+}
+
+.section__titles--blog.section__title {
+	color: #fff;
+	text-align: center;
+	text-transform: capitalize #fff;
+}
+
+.section__titles--contact {
+	border-left: 1px solid #108F95;
+	padding: 0 7rem 0.375rem 5.0625rem;
+}
+
+.sns__icons {
+	left: 30%;
+	position: absolute;
+	top: 30%;
+}
+
+}
+
+@media (min-width: 768px) {
+
+.nav__pc {
+	display: block; /* 表示に変更 */
+}
+
+}
+
+@media (min-width: 1100px) {
+
+html {
+	font-size: 16px;
+}
+
+}
+
+@media (max-width: 375px) {
+
+html {
+	font-size: 4.2666666667vw;
+}
+
+}
+
+
+/*# sourceMappingURL=style.css.map */
