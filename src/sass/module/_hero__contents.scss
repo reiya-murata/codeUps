@@ -3,7 +3,9 @@
 .hero__contents{
   position: absolute;
   top: 50%;
-  transform: translateY(50%);
+  left: 50%;
+  transform: translateY(-50%);
+  transform: translateX(-50%);
   text-align: center;
   color: $white;
   max-width: rem(248);
@@ -12,11 +14,8 @@
 }
 
 .hero__inner{
-  position: absolute;
-  width: 100vw;
+  position: relative;
   align-items: center;
-  top: 50%;
-  transform: translateY(-50%);
   
   }
   
@@ -42,6 +41,7 @@
     font-size: rem(20);
     font-family: $second-font-family;
     font-weight:$regular;
+    text-align: center;
   @include mq (md) {
     font-size: rem(20);
     font-family: $second-font-family;

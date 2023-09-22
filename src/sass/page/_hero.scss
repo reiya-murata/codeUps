@@ -1,6 +1,7 @@
 @use "global" as *;
 
 .hero{
+  position: relative;
   width: 100%;
   margin-bottom: rem(40);
 }

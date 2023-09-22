@@ -34,6 +34,17 @@ burger.addEventListener("click",()=>{
 // burger menu
 
 // swiper
+const main__swiper = new Swiper(".main__swiper", {
+  spaceBetween: 30,
+  effect: "fade",
+  loop: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  
+});
+
 const swiper = new Swiper('.swiper', {
   // Optional parameters
   direction: 'horizontal',
@@ -48,17 +59,6 @@ const swiper = new Swiper('.swiper', {
   slidesPerView:4
 },
   },
-  
-
 });
 
 
-  const mainswiper = new Swiper(".mainswiper", {
-  
-    effect: "fade",
-    loop:true,
-    autoplay: {
-      delay: 4000,
-      disableOnInteraction: false,
-    },
-  });

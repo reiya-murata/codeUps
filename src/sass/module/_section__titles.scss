@@ -97,7 +97,8 @@
 
 .section__titles--contact{
   @include mq (md){
-    padding: 0 rem(112)  rem(6) rem(0);
+    padding: 0 rem(112)  rem(6) rem(81);
+    border-left:1px solid $blue ;
     
   }
 }
