@@ -355,10 +355,10 @@ a {
 	background-color: #fff;
 	box-shadow: 0.0625rem 0.0625rem 0.0625rem 0.1875rem rgba(0, 0, 0, 0.1803921569);
 	font-family: "Noto Sans JP', sans-serif";
-	height: 22.875rem;
+	height: 27.8125rem;
 	margin: 2.5rem 1rem 0;
 	margin-bottom: 2.5rem;
-	width: 17.5rem;
+	width: 20.8125rem;
 }
 
 .noshadow {
@@ -1018,6 +1018,7 @@ c .voice {
 
 .swiper-wrapper {
 	margin-top: 0rem;
+	transform: translate3d(0, 0, 0);
 }
 
 .swiper-slide img {
