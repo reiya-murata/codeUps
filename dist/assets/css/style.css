@@ -1,3 +1,5 @@
+/* リキッドレイアウト対応 */
+
 body {
 	font-family: "Noto Sans JP', sans-serif";
 }
@@ -5,8 +7,6 @@ body {
 .u-desktop {
 	display: none;
 }
-
-/* リキッドレイアウト対応 */
 
 html {
 	font-size: 16px;
@@ -357,7 +357,7 @@ a {
 	font-family: "Noto Sans JP', sans-serif";
 	height: 22.875rem;
 	margin: 2.5rem 1rem 0;
-	padding-bottom: 2.5rem;
+	margin-bottom: 2.5rem;
 	width: 17.5rem;
 }
 
@@ -623,7 +623,6 @@ c .voice {
 	color: #fff;
 	left: 50%;
 	max-height: 5.0625rem;
-	max-width: 15.5rem;
 	position: absolute;
 	text-align: center;
 	top: 50%;
@@ -920,6 +919,15 @@ c .voice {
 	text-transform: capitalize;
 }
 
+.section__title__blog {
+	font-family: "'Gotu', sans-serif";
+	font-size: 2rem;
+	font-weight: 300;
+	line-height: 2.5rem;
+	text-align: center;
+	text-transform: capitalize;
+}
+
 .section__title::first-letter {
 	color: #108F95;
 	font-weight: 300;
@@ -927,6 +935,13 @@ c .voice {
 
 .section__subtitle {
 	color: #108F95;
+	font-family: "Noto Sans JP', sans-serif";
+	font-size: 0.75rem;
+	text-align: center;
+}
+
+.section__subtitle__blog {
+	color: #fff;
 	font-family: "Noto Sans JP', sans-serif";
 	font-size: 0.75rem;
 	text-align: center;
@@ -973,6 +988,10 @@ c .voice {
 	width: 100%; /* スライダーの幅を調整 */
 }
 
+.swiper-container {
+	transform: translate3d(0, 0, 0);
+}
+
 /* スライド要素 */
 
 .swiper-slide {
@@ -998,7 +1017,7 @@ c .voice {
 }
 
 .swiper-wrapper {
-	margin-top: 1.5625rem;
+	margin-top: 0rem;
 }
 
 .swiper-slide img {
@@ -1379,12 +1398,30 @@ html {
 	text-align: center;
 }
 
+.section__title__blog {
+	color: #fff;
+	font-family: "'Gotu', sans-serif";
+	font-size: 2.5rem;
+	font-weight: 300;
+	line-height: 2.5rem;
+	text-align: center;
+}
+
 .section__title::first-letter {
-	color: #111;
+	color: #108F95;
 }
 
 .section__subtitle {
-	color: #111;
+	color: #108F95;
+	font-family: "Noto Sans JP', sans-serif";
+	font-size: 0.75rem;
+	font-weight: 300;
+	line-height: 1.125rem;
+	text-align: center;
+}
+
+.section__subtitle__blog {
+	color: #fff;
 	font-family: "Noto Sans JP', sans-serif";
 	font-size: 0.75rem;
 	font-weight: 300;

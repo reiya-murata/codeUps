@@ -23,7 +23,7 @@ burger.addEventListener("click",()=>{
       }s`;
     }
   });
-  //burger animataion
+  //burger animation
   burger.classList.toggle("active");
   header.forEach((headerElement) => {
     headerElement.classList.toggle("active");

@@ -20,12 +20,28 @@
     color: $black;
   }
 }
+.section__title__blog{
+  font-size: rem(32);
+  font-family: $second-font-family;
+  line-height: rem(40);
+  text-transform: capitalize;
+  font-weight: $regular;
+  text-align: center;
+  @include mq(md) {
+    font-size: rem(40);
+    font-family: $second-font-family;
+    line-height: rem(40);
+    font-weight: $regular;
+    text-align: center;
+    color: $white;
+  }
+}
 
 .section__title::first-letter {
   color: $blue;
   font-weight: $regular;
-  @include mq (md){
-    color: $black;
+  @include mq(md) {
+    color: $blue;
   }
 }
 
@@ -40,27 +56,41 @@
     font-family: $base-font-family;
     line-height: rem(18);
     text-align: center;
-    color: $black;
+    color: $blue;
+  }
+}
+
+.section__subtitle__blog {
+  font-size: rem(12);
+  font-family: $base-font-family;
+  color: $white;
+  text-align: center;
+  @include mq(md) {
+    font-size: rem(12);
+    font-weight: $regular;
+    font-family: $base-font-family;
+    line-height: rem(18);
+    text-align: center;
+    color: $white;
   }
 }
 
 .section__title--contact {
-  @include mq (md){
+  @include mq(md) {
     position: relative;
     font-size: rem(80);
-  font-family: $second-font-family;
-  line-height: rem(80);
-  text-transform: capitalize;
-  font-weight: $regular;
-  // padding: rem(100) rem(112) rem(6)rem(81);
- 
+    font-family: $second-font-family;
+    line-height: rem(80);
+    text-transform: capitalize;
+    font-weight: $regular;
+    // padding: rem(100) rem(112) rem(6)rem(81);
   }
 }
 
 .section__title--contact::first-letter {
   color: $blue;
   font-weight: $regular;
-  @include mq (md){
+  @include mq(md) {
     color: $black;
   }
 }
@@ -81,13 +111,13 @@
   text-align: center;
 }
 
-.section__titles--blog.section__title{
+.section__titles--blog.section__title {
   font-size: rem(32);
   font-family: $second-font-family;
   line-height: rem(40);
   text-transform: capitalize;
   font-weight: $regular;
-  
+
   @include mq(md) {
     text-transform: capitalize $white;
     color: $white;
@@ -95,10 +125,9 @@
   }
 }
 
-.section__titles--contact{
-  @include mq (md){
-    padding: 0 rem(112)  rem(6) rem(81);
-    border-left:1px solid $blue ;
-    
+.section__titles--contact {
+  @include mq(md) {
+    padding: 0 rem(112) rem(6) rem(81);
+    border-left: 1px solid $blue;
   }
 }

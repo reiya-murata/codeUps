@@ -18,7 +18,7 @@ burger.addEventListener("click", function () {
       link.style.animation = "navItemsFade 0.5s ease forwards ".concat(index / 7 + 0.4, "s");
     }
   });
-  //burger animataion
+  //burger animation
   burger.classList.toggle("active");
   header.forEach(function (headerElement) {
     headerElement.classList.toggle("active");
