@@ -582,7 +582,7 @@ a {
 	height: 100%;
 	justify-content: space-between;
 	padding: 0 0.9375rem 0;
-	width: 100%;
+	width: 100vh;
 }
 
 .header.active {
@@ -683,7 +683,7 @@ a {
 
 .mainvisial--1 img {
 	height: 100vh;
-	width: 100%;
+	max-width: 100vw;
 }
 
 .mainvisial--1 {
@@ -691,7 +691,7 @@ a {
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 100vh;
-	width: 100vw;
+	max-width: 100vw;
 	z-index: 100;
 }
 
@@ -1164,10 +1164,6 @@ html {
 	justify-content: center;
 	margin: 0;
 	padding: 2.5rem 0 6.25rem;
-}
-
-.card__information {
-	padding-left: 11.25rem;
 }
 
 .card__information img {

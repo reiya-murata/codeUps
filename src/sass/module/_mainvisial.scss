@@ -2,12 +2,12 @@
 
 .mainvisial--1{
 img{
-  width: 100%;
+  max-width: 100vw;
   height: 100vh;
 }
 }
 .mainvisial--1{
-  width: 100vw;
+  max-width: 100vw;
   height: 100vh;
   background-image: url(..\assets\images\common\mainview.1.jpg);
   background-repeat: no-repeat;
