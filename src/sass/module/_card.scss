@@ -73,7 +73,7 @@
 }
 
 .card__information {
-  padding: 0 rem(16);
+  padding: 0;
 @include mq (md){
   padding-left: rem(180);
   }
@@ -93,7 +93,7 @@
   padding-top: rem(61);
   width: rem(492);
 }
-c
+
 // voice
 
 .voice {

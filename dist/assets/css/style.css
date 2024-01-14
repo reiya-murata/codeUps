@@ -200,7 +200,7 @@ a {
 }
 
 .about__button {
-	padding: 2.5rem 0 4.3125rem;
+	position: relative;
 	text-align: center;
 }
 
@@ -212,9 +212,7 @@ a {
 }
 
 .about__content h3 {
-	font-size: 2.5rem;
 	font-weight: 300;
-	padding-left: 0.9375rem;
 }
 
 .about__text {
@@ -230,24 +228,15 @@ a {
 }
 
 .about__img--1 {
-	aspect-ratio: 132/194;
-	height: 12.125rem;
-	max-height: 24.25rem;
-	max-width: 16.5rem;
-	padding-left: 0.875rem;
 	position: relative;
 	top: 1.875rem;
-	width: 8.25rem;
 	z-index: 5;
 }
 
 .about__img--2 {
-	aspect-ratio: 281/186;
-	height: 11.625rem;
-	left: 4.375rem;
+	aspect-ratio: 880/581;
 	position: relative;
-	top: -8.75rem;
-	width: 17.5625rem;
+	right: 11.25rem;
 }
 
 .about__img--3 {
@@ -259,7 +248,7 @@ a {
 }
 
 .button__content {
-	padding: 2.5rem 0 4.3125rem;
+	margin: 2.5rem 0 4.3125rem;
 	text-align: center;
 }
 
@@ -285,7 +274,7 @@ a {
 	position: absolute;
 	top: 0.25rem;
 	width: 100%;
-	z-index: -10;
+	z-index: 10;
 }
 
 .stickarrow {
@@ -366,7 +355,7 @@ a {
 }
 
 .card__information {
-	padding: 0 1rem;
+	padding: 0;
 }
 
 .card__body--information {
@@ -375,7 +364,7 @@ a {
 	width: 30.75rem;
 }
 
-c .voice {
+.voice {
 	box-shadow: 0.0625rem 0.0625rem 0.0625rem 0.1875rem rgba(0, 0, 0, 0.1803921569);
 	font-family: "Noto Sans JP', sans-serif";
 	margin: 2.5rem 1rem 0;
@@ -508,16 +497,12 @@ c .voice {
 	font-family: "Noto Sans JP', sans-serif";
 	font-size: 1rem;
 	line-height: 1.5rem;
-	padding: 1rem 2.5rem;
 	text-align: center;
 }
 
 .contact__logo {
-	height: 4.0625rem;
-	margin: auto;
-	margin-top: 5rem;
+	border-bottom: 0.0625rem solid #108F95;
 	position: relative;
-	width: 10.875rem;
 }
 
 .contact__map {
@@ -528,11 +513,13 @@ c .voice {
 }
 
 .contact__left {
+	display: flex;
+	flex-direction: column;
 	font-family: "Noto Sans JP', sans-serif";
 	font-size: 1rem;
 	line-height: 1.5rem;
-	padding: 1rem 2.5rem;
 	text-align: center;
+	width: 35.75rem;
 }
 
 .copyright {
@@ -863,11 +850,11 @@ c .voice {
 
 .price__content {
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	width: 100%;
 }
 
-.price__img--pc img {
+.price__img {
 	display: none;
 	position: relative;
 }
@@ -1062,7 +1049,7 @@ html {
 }
 
 .information {
-	padding: 0 0 0 0;
+	padding: 0;
 	padding-bottom: -18.75rem;
 	padding-top: 6.25rem;
 }
@@ -1075,25 +1062,17 @@ html {
 
 .about__button {
 	display: inline;
-	left: 57.25rem;
-	position: relative;
-	right: 50%;
+	padding: 2.5rem 0 4.3125rem;
+	right: 19.875rem;
 	text-align: center;
 	top: 50%;
 	top: 11.25rem;
-	transform: translateY(50%);
 	z-index: 10;
 }
 
 .about__content {
-	display: inline-block;
 	display: flex;
-	left: 22.5rem;
-	position: relative;
-	top: 50%;
-	top: 18.75rem;
-	transform: translateY(-50%);
-	width: 55rem;
+	margin-top: 7.5rem;
 	z-index: 10;
 }
 
@@ -1116,29 +1095,29 @@ html {
 }
 
 .about__img--1 {
+	height: 37.875rem;
 	left: 11.3125rem;
-	min-height: 37.875rem;
-	min-width: 24.9375rem;
 	position: absolute;
 	top: 50%;
 	top: 25rem;
 	transform: translateY(-50%);
+	width: 24.9375rem;
 }
 
 .about__img--2 {
-	left: 20rem;
-	min-height: 36.3125rem;
-	min-width: 55rem;
+	height: 36.3125rem;
 	position: absolute;
+	right: 11.25rem;
 	top: 11.25rem;
+	width: 55rem;
 }
 
 .about__img--3 {
+	bottom: 3.125rem;
 	display: block;
 	height: 11.3125rem;
-	left: 72.6875rem;
-	position: relative;
-	top: 21.875rem;
+	position: absolute;
+	right: 5.1875rem;
 	width: 12.125rem;
 }
 
@@ -1166,10 +1145,6 @@ html {
 	padding-right: 11.3125rem;
 	position: relative;
 	top: -7.5rem;
-}
-
-.button__content {
-	padding: 5rem 0 6.25rem;
 }
 
 .button {
@@ -1220,7 +1195,6 @@ html {
 .contact__fish {
 	bottom: 29.8125rem;
 	height: 8.625rem;
-	left: 68.0625rem;
 	right: 3.125rem;
 	top: 6.25rem;
 	transform: translateY(-50%);
@@ -1231,17 +1205,14 @@ html {
 .contact__right {
 	border-top: none;
 	display: flex;
-	margin-bottom: auto;
-	margin-top: auto;
-	padding-top: 1.5rem;
+	margin: 0;
 }
 
 .contact__logo {
-	height: 4.6875rem;
-	left: 21.9375rem;
-	position: absolute;
-	top: 5rem;
-	width: 12.5rem;
+	height: 4.0625rem;
+	margin: 5rem 0 0 3.125rem;
+	padding: 0 7.4375rem 0 7.5625rem;
+	width: 27.5rem;
 }
 
 .contact__map {
@@ -1252,10 +1223,8 @@ html {
 .contact__left {
 	border-top: none;
 	display: flex;
-	margin-bottom: auto;
-	margin-top: auto;
+	margin: 0;
 	padding: 0;
-	padding-top: 1.5rem;
 }
 
 .hamburger {
@@ -1321,8 +1290,9 @@ html {
 
 .blog__logo--2 {
 	display: block;
-	display: block;
 	height: 8.625rem;
+	left: 6.25rem;
+	position: relative;
 	width: 18.8125rem;
 }
 
@@ -1355,16 +1325,13 @@ html {
 	flex-direction: column;
 	justify-content: center;
 	margin-top: 0rem;
+	width: 30.75rem;
 }
 
 .price__img {
-	display: none;
-}
-
-.price__img--pc img {
 	display: block;
 	height: 46.625rem;
-	padding: 1.5rem 0 2.5rem 5.8125rem;
+	margin: 1.5rem 0 2.5rem 5.8125rem;
 	width: 30.75rem;
 }
 

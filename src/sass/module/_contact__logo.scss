@@ -2,15 +2,20 @@
 
 .contact__logo{
   position: relative;
-  width: rem(174);
-  height: rem(65);
-  margin: auto;
-margin-top: rem(80);
+  border-bottom:rem(1) solid $blue ;
+  
+
+
 @include mq (md){
-  width: rem(200);
-  height: rem(75);
-  position: absolute;
-  top: rem(80);
-  left: rem(351);
+  // width: rem(440);
+  // height: rem(65);
+  // position: absolute;
+  // top: rem(80);
+  // left: rem(351);
+  width: rem(440);
+  height: rem(65);
+  padding: 0 rem(119) 0 rem(121) ;
+  margin: rem(80) 0 0 rem(50);
+
 }
 }

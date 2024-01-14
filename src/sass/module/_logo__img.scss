@@ -44,10 +44,11 @@
 .blog__logo--2 {
   display: none;
   @include mq(md) {
+    position: relative;
     display: block;
     width: rem(301);
     height: rem(138);
-    display: block;
+    left: rem(100);
   }
 }
 

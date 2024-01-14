@@ -2,15 +2,16 @@
 
 .about__button{
   text-align: center;
-  padding: rem(40)0 rem(69);
-  @include mq (md){
   position: relative;
+  
+  @include mq (md){
+  padding: rem(40)0 rem(69);
   display: inline;
   top: 50%;
-  right: 50%;
-  transform: translateY(50%);
+  // right: 50%;
+  // transform: translateY(50%);
   top:rem(180);
-  left: rem(916);
+  right: rem(318);
   text-align: center;
   z-index: 10;
   }
