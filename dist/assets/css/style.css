@@ -192,7 +192,7 @@ a {
 	background-color: #DDF0F1;
 	padding: 5rem 0;
 	position: relative;
-	width: 100;
+	width: 100%;
 }
 
 .voice {
@@ -361,7 +361,7 @@ a {
 	width: 20.8125rem;
 }
 
-.noshadow {
+.no-shadow {
 	margin: 2.5rem 1rem;
 }
 
@@ -391,7 +391,7 @@ c .voice {
 
 .card__age {
 	font-family: "Noto Sans JP', sans-serif";
-	font-size: 12;
+	font-size: 0.75rem;
 	font-weight: 400;
 	line-height: 1.125rem;
 }
@@ -688,11 +688,11 @@ c .voice {
 
 .logo__img--bottom {
 	display: block;
-	height: 38 rem;
+	height: 2.375rem;
 	position: absolute;
 	top: 2%;
 	width: inherit;
-	width: 102 rem;
+	width: 6.375rem;
 }
 
 .logo__img a {
@@ -863,7 +863,7 @@ c .voice {
 
 .price__content {
 	display: flex;
-	justify-content: ce;
+	justify-content: center;
 	width: 100%;
 }
 
@@ -1081,7 +1081,7 @@ html {
 	text-align: center;
 	top: 50%;
 	top: 11.25rem;
-	transform: 50%, 50%;
+	transform: translateY(50%);
 	z-index: 10;
 }
 
@@ -1105,7 +1105,6 @@ html {
 	font-weight: 400;
 	line-height: 6.25rem;
 	position: relative;
-	top: rem;
 }
 
 .about__text {
@@ -1191,7 +1190,7 @@ html {
 	padding-left: 0;
 }
 
-.noshadow {
+.no-shadow {
 	display: flex;
 	justify-content: center;
 	margin: 0;
@@ -1246,8 +1245,8 @@ html {
 }
 
 .contact__map {
-	height: 148;
-	width: 273;
+	height: 9.25rem;
+	width: 17.0625rem;
 }
 
 .contact__left {
@@ -1446,7 +1445,7 @@ html {
 .section__titles--blog.section__title {
 	color: #fff;
 	text-align: center;
-	text-transform: capitalize #fff;
+	text-transform: capitalize;
 }
 
 .section__titles--contact {

@@ -6,7 +6,7 @@
   aspect-ratio: 295/160;
   margin: 0 rem(40);
   @include mq (md){
-    width: (273);
-    height: (148);
+    width: rem(273);
+    height: rem(148);
   }
 }

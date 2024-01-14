@@ -62,7 +62,7 @@
   margin-bottom: rem(40);
 }
 
-.noshadow {
+.no-shadow {
   margin: rem(40) rem(16);
   @include mq(md) {
     margin: 0;
@@ -112,7 +112,7 @@ c
   display: flex;
 }
 .card__age {
-  font-size: (12);
+  font-size: rem(12);
   font-family: $base-font-family;
   line-height: rem(18);
   font-weight: $normal;
