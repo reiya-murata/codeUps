@@ -91,7 +91,7 @@
   color: $blue;
   font-weight: $regular;
   @include mq(md) {
-    color: $black;
+    color: $blue;
   }
 }
 
@@ -125,9 +125,9 @@
   }
 }
 
-.section__titles--contact {
+.section__title--contact {
   @include mq(md) {
-    padding: 0 rem(112) rem(6) rem(81);
-    border-left: 1px solid $blue;
+
   }
 }
+

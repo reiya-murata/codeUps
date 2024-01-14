@@ -1,17 +1,22 @@
 @use "global" as *;
 
 .card {
-  box-shadow: rem(1) rem(1) rem(1) rem(3) #0000002e;
+  box-shadow: rem(2) rem(2) rem(10) rem(0) rgba(0, 0, 0, 0.25);
   margin: rem(40) rem(16) 0;
   font-family: $base-font-family;
   background-color: $white;
 }
 .card__header img {
-  display: inline-block;
   min-width: rem(301);
   min-height: rem(201);
-  padding: rem(16);
+
+  @include mq (md){
+  display: inline-block;
+  width: rem(301);
+  height: rem(201);
+  margin: rem(16) rem(16) rem(24) ;
   aspect-ratio: 301 / 201;
+  }
 }
 
 .card__header {
@@ -53,7 +58,7 @@
 }
 
 .card--slider{
-  box-shadow: rem(1) rem(1) rem(1) rem(3) #0000002e;
+  box-shadow: rem(2) rem(2) rem(10) rem(0) rgba(0, 0, 0, 0.25);
   margin: rem(40) rem(16) 0;
   font-family: $base-font-family;
   background-color: $white;
@@ -89,17 +94,19 @@
 }
 
 .card__body--information {
+  @include mq(md){
   padding-left: rem(48);
   padding-top: rem(61);
   width: rem(492);
+  }
 }
 
 // voice
 
 .voice {
-  box-shadow: rem(1) rem(1) rem(1) rem(3) #0000002e;
   margin: rem(40) rem(16) 0;
   font-family: $base-font-family;
+  padding:0 0 rem(140);
 }
 .card__inner--voice {
   padding: rem(15) rem(16) rem(24);
@@ -126,26 +133,29 @@
   padding: rem(4) rem(12);
 }
 .card__title--voice {
-  padding-right: rem(13);
+  @include mq (md){
+  width: rem(276);
+  margin-right: rem(16);
   padding-top: rem(4);
-}
-.card__title--voice {
-  font-size: rem(16);
+  font-size: rem(24);
   font-weight: $bold;
   font-family: $base-font-family;
   border-bottom: rem(1) solid $blue;
+  }
 }
 
 .card__img img {
-  min-width: rem(151);
-  min-height: rem(117);
-  aspect-ratio: 151/117;
-  padding-top: rem(9);
+@include mq (md){
+  width: rem(180);
+  height: rem(140);
+  aspect-ratio: 180 / 140 ;
+  }
 }
+
 
 .slider {
   width: 280px;
-  box-shadow: rem(1) rem(1) rem(1) rem(3) #0000002e;
+  box-shadow: rem(2) rem(2) rem(10) rem(0) rgba(0, 0, 0, 0.25);
   margin: auto;
   font-family: $base-font-family;
   padding-bottom: rem(5);
@@ -153,7 +163,7 @@
 .card__header--slider img {
   min-width: rem(280);
   min-height: rem(188);
-  aspect-ratio: 280/188;
+  aspect-ratio: 280 /188;
 }
 .card__icon--slider {
   margin: rem(16);
@@ -204,7 +214,7 @@
 .cards--voice {
   @include mq (md){
   display: flex;
-  padding: rem(30) rem(180) rem(80);
+  padding: rem(24);
   justify-content: center;
   }
 }

@@ -182,7 +182,6 @@ a {
 
 .information {
 	background-color: #DDF0F1;
-	box-shadow: 0.0625rem 0.0625rem 0.4375rem rgba(0, 0, 0, 0.3529411765);
 	height: 100%;
 	padding: 5.0625rem 0 4.3125rem;
 	width: 100%;
@@ -243,12 +242,19 @@ a {
 	display: none;
 }
 
+.address__card {
+	box-shadow: 0.25rem 0.25rem 0.625rem 0 rgba(0, 0, 0, 0.25);
+}
+
+.contact__left--address {
+	display: flex;
+}
+
 .blog__bg--img {
 	display: none;
 }
 
 .button__content {
-	margin: 2.5rem 0 4.3125rem;
 	text-align: center;
 }
 
@@ -293,17 +299,14 @@ a {
 
 .card {
 	background-color: #fff;
-	box-shadow: 0.0625rem 0.0625rem 0.0625rem 0.1875rem rgba(0, 0, 0, 0.1803921569);
+	box-shadow: 0.125rem 0.125rem 0.625rem 0rem rgba(0, 0, 0, 0.25);
 	font-family: "Noto Sans JP', sans-serif";
 	margin: 2.5rem 1rem 0;
 }
 
 .card__header img {
-	aspect-ratio: 301/201;
-	display: inline-block;
 	min-height: 12.5625rem;
 	min-width: 18.8125rem;
-	padding: 1rem;
 }
 
 .card__header {
@@ -342,7 +345,7 @@ a {
 
 .card--slider {
 	background-color: #fff;
-	box-shadow: 0.0625rem 0.0625rem 0.0625rem 0.1875rem rgba(0, 0, 0, 0.1803921569);
+	box-shadow: 0.125rem 0.125rem 0.625rem 0rem rgba(0, 0, 0, 0.25);
 	font-family: "Noto Sans JP', sans-serif";
 	height: 27.8125rem;
 	margin: 2.5rem 1rem 0;
@@ -358,16 +361,10 @@ a {
 	padding: 0;
 }
 
-.card__body--information {
-	padding-left: 3rem;
-	padding-top: 3.8125rem;
-	width: 30.75rem;
-}
-
 .voice {
-	box-shadow: 0.0625rem 0.0625rem 0.0625rem 0.1875rem rgba(0, 0, 0, 0.1803921569);
 	font-family: "Noto Sans JP', sans-serif";
 	margin: 2.5rem 1rem 0;
+	padding: 0 0 8.75rem;
 }
 
 .card__inner--voice {
@@ -394,27 +391,8 @@ a {
 	padding: 0.25rem 0.75rem;
 }
 
-.card__title--voice {
-	padding-right: 0.8125rem;
-	padding-top: 0.25rem;
-}
-
-.card__title--voice {
-	border-bottom: 0.0625rem solid #108F95;
-	font-family: "Noto Sans JP', sans-serif";
-	font-size: 1rem;
-	font-weight: 700;
-}
-
-.card__img img {
-	aspect-ratio: 151/117;
-	min-height: 7.3125rem;
-	min-width: 9.4375rem;
-	padding-top: 0.5625rem;
-}
-
 .slider {
-	box-shadow: 0.0625rem 0.0625rem 0.0625rem 0.1875rem rgba(0, 0, 0, 0.1803921569);
+	box-shadow: 0.125rem 0.125rem 0.625rem 0rem rgba(0, 0, 0, 0.25);
 	font-family: "Noto Sans JP', sans-serif";
 	margin: auto;
 	padding-bottom: 0.3125rem;
@@ -493,16 +471,21 @@ a {
 }
 
 .contact__right {
-	border-top: 1px solid #108F95;
+	border-left: 1px solid #108F95;
 	font-family: "Noto Sans JP', sans-serif";
 	font-size: 1rem;
 	line-height: 1.5rem;
+	margin: 5rem 0;
 	text-align: center;
 }
 
 .contact__logo {
 	border-bottom: 0.0625rem solid #108F95;
 	position: relative;
+}
+
+.contact__logo img {
+	width: 12.5rem;
 }
 
 .contact__map {
@@ -598,7 +581,7 @@ a {
 	display: flex;
 	height: 100%;
 	justify-content: space-between;
-	padding: 0 0.9375rem;
+	padding: 0 0.9375rem 0;
 	width: 100%;
 }
 
@@ -1004,7 +987,7 @@ a {
 }
 
 .swiper-wrapper {
-	margin-top: 0rem;
+	margin: 0rem;
 	transform: translate3d(0, 0, 0);
 }
 
@@ -1055,7 +1038,6 @@ html {
 }
 
 .voice {
-	display: inline;
 	padding-left: 2.5rem;
 	position: relative;
 }
@@ -1147,14 +1129,26 @@ html {
 	top: -7.5rem;
 }
 
+.button__content {
+	padding: 5rem 0 0rem;
+}
+
 .button {
-	height: 3.625rem;
-	width: 17.875rem;
+	height: 3.5rem;
+	width: 12.625rem;
 }
 
 .button__contact {
 	padding: 2.5rem 0 6.1875rem;
 	text-align: center;
+}
+
+.card__header img {
+	aspect-ratio: 301/201;
+	display: inline-block;
+	height: 12.5625rem;
+	margin: 1rem 1rem 1.5rem;
+	width: 18.8125rem;
 }
 
 .card__title--big {
@@ -1181,15 +1175,37 @@ html {
 	width: 33.75rem;
 }
 
+.card__body--information {
+	padding-left: 3rem;
+	padding-top: 3.8125rem;
+	width: 30.75rem;
+}
+
 .card__inner--voice {
 	height: 24.75rem;
 	width: 32.5rem;
 }
 
+.card__title--voice {
+	border-bottom: 0.0625rem solid #108F95;
+	font-family: "Noto Sans JP', sans-serif";
+	font-size: 1.5rem;
+	font-weight: 700;
+	margin-right: 1rem;
+	padding-top: 0.25rem;
+	width: 17.25rem;
+}
+
+.card__img img {
+	aspect-ratio: 180/140;
+	height: 8.75rem;
+	width: 11.25rem;
+}
+
 .cards--voice {
 	display: flex;
 	justify-content: center;
-	padding: 1.875rem 11.25rem 5rem;
+	padding: 1.5rem;
 }
 
 .contact__fish {
@@ -1205,14 +1221,12 @@ html {
 .contact__right {
 	border-top: none;
 	display: flex;
-	margin: 0;
+	padding-left: 5.0625rem;
 }
 
 .contact__logo {
-	height: 4.0625rem;
-	margin: 5rem 0 0 3.125rem;
-	padding: 0 7.4375rem 0 7.5625rem;
-	width: 27.5rem;
+	margin: 5rem 5.125rem 1.5rem 3.125rem;
+	padding: 0 7.4375rem;
 }
 
 .contact__map {
@@ -1234,10 +1248,6 @@ html {
 .header {
 	height: 5.625rem;
 	text-align: center;
-}
-
-.header__inner {
-	justify-content: space-between;
 }
 
 .hero__title {
@@ -1297,11 +1307,11 @@ html {
 }
 
 .logo__voice--ibaratatu {
+	bottom: 4.5625rem;
 	display: block;
 	height: 10.125rem;
 	position: absolute;
-	right: 5%;
-	top: 60%;
+	right: 11.25rem;
 	width: 4.4375rem;
 	z-index: 10;
 }
@@ -1406,18 +1416,13 @@ html {
 }
 
 .section__title--contact::first-letter {
-	color: #111;
+	color: #108F95;
 }
 
 .section__titles--blog.section__title {
 	color: #fff;
 	text-align: center;
 	text-transform: capitalize;
-}
-
-.section__titles--contact {
-	border-left: 1px solid #108F95;
-	padding: 0 7rem 0.375rem 5.0625rem;
 }
 
 .sns__icons {

@@ -58,10 +58,9 @@
     display: block;
     width: rem(71);
     height: rem(162);
-  position: absolute;
-
-  z-index: 10;
-  right: 5%;
-  top: 60%;
+    position: absolute;
+    z-index: 10;
+    right: rem(180); 
+    bottom: rem(73);
   }
 }

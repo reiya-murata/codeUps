@@ -2,9 +2,9 @@
 
 .button__content {
   text-align: center;
-  margin: rem(40) 0 rem(69);
+  // margin: rem(40) 0 rem(69);
 @include mq (md){
-  // padding:rem(80)0 rem(100);
+  padding:rem(80)0 rem(0);
   }
 }
 
@@ -21,11 +21,12 @@
   width: rem(202);
   height: rem(54);
   @include mq (md){
-width: rem(286);
-height: rem(58);
+width: rem(202);
+height: rem(56);
 
   }
 }
+
 .button::after {
   content: "";
   position: absolute;

@@ -3,7 +3,7 @@
 .contact__map{
   width: rem(295);
   height: rem(160);
-  aspect-ratio: 295/160;
+  aspect-ratio: 295 /160;
   margin: 0 rem(40);
   @include mq (md){
     width: rem(273);
