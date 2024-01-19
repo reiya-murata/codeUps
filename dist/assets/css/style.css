@@ -183,7 +183,6 @@ a {
 .information {
 	background-color: #DDF0F1;
 	height: 100%;
-	padding: 5.0625rem 0 4.3125rem;
 	width: 100%;
 }
 
@@ -192,10 +191,6 @@ a {
 	padding: 5rem 0;
 	position: relative;
 	width: 100%;
-}
-
-.voice {
-	padding: 0.6875rem 0 0;
 }
 
 .about__button {
@@ -361,7 +356,6 @@ a {
 
 .voice {
 	font-family: "Noto Sans JP', sans-serif";
-	margin: 2.5rem 1rem 0;
 	padding: 0 0 8.75rem;
 }
 
@@ -396,7 +390,7 @@ a {
 }
 
 .card__header--slider img {
-	aspect-ratio: 280/188;
+	aspect-ratio: 333/223;
 }
 
 .card__icon--slider {
@@ -404,7 +398,6 @@ a {
 	color: #108F95;
 	display: inline-block;
 	font-family: "Noto Sans JP', sans-serif";
-	margin: 1rem;
 }
 
 .card__title--slider {
@@ -414,7 +407,6 @@ a {
 
 .card__text--slider {
 	font-family: "Noto Sans JP', sans-serif";
-	font-size: 0.875rem;
 	font-weight: 400;
 	text-align: center;
 }
@@ -470,9 +462,6 @@ a {
 
 .contact__map {
 	aspect-ratio: 295/160;
-	height: 10rem;
-	margin: 0 2.5rem;
-	width: 18.4375rem;
 }
 
 .contact__left {
@@ -482,7 +471,6 @@ a {
 	font-size: 1rem;
 	line-height: 1.5rem;
 	text-align: center;
-	width: 35.75rem;
 }
 
 .copyright {
@@ -539,13 +527,10 @@ a {
 }
 
 .header {
-	position: fixed !important;
-}
-
-.header {
 	background: rgba(13, 41, 54, 0.537254902);
 	display: flex;
 	justify-content: space-between;
+	position: fixed;
 	width: 100vw;
 	z-index: 10;
 }
@@ -615,9 +600,7 @@ a {
 }
 
 .information__button {
-	display: inline-block;
-	position: absolute;
-	text-align: center;
+	position: relative;
 }
 
 .information__text {
@@ -987,9 +970,7 @@ html {
 }
 
 .information {
-	padding: 0;
-	padding-bottom: -18.75rem;
-	padding-top: 6.25rem;
+	padding: 5.0625rem 0 4.3125rem;
 }
 
 .voice {
@@ -1117,7 +1098,6 @@ html {
 }
 
 .no-shadow {
-	margin: 2.5rem 1rem;
 	padding: 2.5rem 0 6.25rem;
 }
 
@@ -1159,22 +1139,25 @@ html {
 }
 
 .card__header--slider img {
-	min-height: 11.75rem;
-	min-width: 17.5rem;
+	min-height: 13.9375rem;
+	min-width: 20.8125rem;
 }
 
 .card__icon--slider {
 	font-size: 0.75rem;
+	margin: 1.5rem 1rem 0.25rem;
 }
 
 .card__title--slider {
 	font-size: 1rem;
 	margin-left: 1rem;
-	width: 15.5rem;
+	padding-bottom: 0.5rem;
+	width: 18.8125rem;
 }
 
 .card__text--slider {
-	padding: 0.5rem 0;
+	font-size: 0.875rem;
+	padding: 1rem 0 0.5rem;
 }
 
 .card__price {
@@ -1220,8 +1203,9 @@ html {
 }
 
 .contact__map {
-	height: 9.25rem;
-	width: 17.0625rem;
+	height: 10rem;
+	margin: 0 2.5rem;
+	width: 18.4375rem;
 }
 
 .contact__left {
@@ -1229,6 +1213,7 @@ html {
 	display: flex;
 	margin: 0;
 	padding: 0;
+	width: 35.75rem;
 }
 
 .copyright {
@@ -1267,8 +1252,8 @@ html {
 }
 
 .information__button {
-	right: 20.1875rem;
-	top: 0rem;
+	left: 8.9375rem;
+	top: 2.5rem;
 }
 
 .information__text {

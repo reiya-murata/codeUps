@@ -1,7 +1,6 @@
 @use "global" as *;
 
 .contact__left{
-  width: rem(572);
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -13,6 +12,7 @@
   
 @include mq (md){
   display: flex;
+  width: rem(572);
   // padding-top: rem(24);
   border-top: none;
   margin:0; 
