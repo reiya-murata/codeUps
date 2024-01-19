@@ -1,12 +1,13 @@
 @use "global" as *;
 
 .contact__map{
-  width: rem(295);
-  height: rem(160);
-  aspect-ratio: 295/160;
-  margin: 0 rem(40);
+  aspect-ratio: 295 /160;
+
   @include mq (md){
-    width: (273);
-    height: (148);
+    width: rem(295);
+    height: rem(160);
+    margin: 0 rem(40);
+    // width: rem(273);
+    // height: rem(148);
   }
 }

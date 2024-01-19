@@ -4,6 +4,10 @@
   width: 100%; /* スライダーの幅を調整 */
   height: 100%; /* スライダーの高さを調整 */
 }
+.swiper-container {
+  transform: translate3d(0, 0, 0);
+}
+
 
 /* スライド要素 */
 .swiper-slide {
@@ -11,15 +15,12 @@
   height: 100%; /* スライドの高さを調整 */
   display: flex; /* スライド内の要素を横並びに配置する場合 */
   align-items: center; /* スライド内の要素を垂直方向に中央揃えする場合 */
-  justify-content: center; /* スライド内の要素を水平方向に中央揃えする場合 */
+  justify-content: right; /* スライド内の要素を水平方向に中央揃えする場合 */
 }
 
-
-.swiper-slide{
+.swiper-slide {
   width: rem(280);
 }
-
-
 
 .swiper {
   width: 100%;
@@ -30,12 +31,12 @@
   background-position: center;
   background-size: cover;
 }
-.swiper-wrapper{
-  margin-top: rem(25);
+.swiper-wrapper {
+  margin: rem(0);
+  transform:translate3d(0,0,0);
 }
 
 .swiper-slide img {
   display: block;
   width: 100%;
 }
-

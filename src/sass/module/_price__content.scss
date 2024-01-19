@@ -2,6 +2,7 @@
 
 .price__contents{
   @include mq (md) {
+    width: rem(492);
     display: flex;
     flex-direction: column;
     justify-content:center ;
@@ -11,23 +12,18 @@
 
 .price__content{
   display: flex;
-  justify-content: ce;
+  justify-content: space-between;
   width: 100%
 }
-.price__img{
-  @include mq (md){
-    display: none;
- 
-  }
-  }
 
-  .price__img--pc img{
+
+  .price__img{
   display: none;
     @include mq (md){
       display: block;
-      width: rem(492);
-      height: rem(746);
-      padding: rem(24) 0 rem(40) rem(93);
+      max-width: rem(492);
+      max-height: rem(746);
+      margin: rem(24) 0 rem(40) rem(93);
     }
     position: relative;
     

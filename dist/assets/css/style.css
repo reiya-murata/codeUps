@@ -1,3 +1,5 @@
+/* リキッドレイアウト対応 */
+
 body {
 	font-family: "Noto Sans JP', sans-serif";
 }
@@ -5,8 +7,6 @@ body {
 .u-desktop {
 	display: none;
 }
-
-/* リキッドレイアウト対応 */
 
 html {
 	font-size: 16px;
@@ -182,9 +182,7 @@ a {
 
 .information {
 	background-color: #DDF0F1;
-	box-shadow: 0.0625rem 0.0625rem 0.4375rem rgba(0, 0, 0, 0.3529411765);
 	height: 100%;
-	padding: 5.0625rem 0 4.3125rem;
 	width: 100%;
 }
 
@@ -192,16 +190,13 @@ a {
 	background-color: #DDF0F1;
 	padding: 5rem 0;
 	position: relative;
-	width: 100;
-}
-
-.voice {
-	padding: 0.6875rem 0 0;
+	width: 100%;
 }
 
 .about__button {
-	padding: 2.5rem 0 4.3125rem;
+	position: relative;
 	text-align: center;
+	z-index: 10;
 }
 
 .about__content {
@@ -212,9 +207,7 @@ a {
 }
 
 .about__content h3 {
-	font-size: 2.5rem;
 	font-weight: 300;
-	padding-left: 0.9375rem;
 }
 
 .about__text {
@@ -230,28 +223,27 @@ a {
 }
 
 .about__img--1 {
-	aspect-ratio: 132/194;
-	height: 12.125rem;
-	max-height: 24.25rem;
-	max-width: 16.5rem;
-	padding-left: 0.875rem;
 	position: relative;
 	top: 1.875rem;
-	width: 8.25rem;
 	z-index: 5;
 }
 
 .about__img--2 {
-	aspect-ratio: 281/186;
-	height: 11.625rem;
-	left: 4.375rem;
+	aspect-ratio: 880/581;
 	position: relative;
-	top: -8.75rem;
-	width: 17.5625rem;
+	right: 11.25rem;
 }
 
 .about__img--3 {
 	display: none;
+}
+
+.address__card {
+	box-shadow: 0.25rem 0.25rem 0.625rem 0 rgba(0, 0, 0, 0.25);
+}
+
+.contact__left--address {
+	display: flex;
 }
 
 .blog__bg--img {
@@ -259,7 +251,6 @@ a {
 }
 
 .button__content {
-	padding: 2.5rem 0 4.3125rem;
 	text-align: center;
 }
 
@@ -285,7 +276,7 @@ a {
 	position: absolute;
 	top: 0.25rem;
 	width: 100%;
-	z-index: -10;
+	z-index: 10;
 }
 
 .stickarrow {
@@ -304,17 +295,14 @@ a {
 
 .card {
 	background-color: #fff;
-	box-shadow: 0.0625rem 0.0625rem 0.0625rem 0.1875rem rgba(0, 0, 0, 0.1803921569);
+	box-shadow: 0.125rem 0.125rem 0.625rem 0rem rgba(0, 0, 0, 0.25);
 	font-family: "Noto Sans JP', sans-serif";
 	margin: 2.5rem 1rem 0;
 }
 
 .card__header img {
-	aspect-ratio: 301/201;
-	display: inline-block;
 	min-height: 12.5625rem;
 	min-width: 18.8125rem;
-	padding: 1rem;
 }
 
 .card__header {
@@ -353,32 +341,22 @@ a {
 
 .card--slider {
 	background-color: #fff;
-	box-shadow: 0.0625rem 0.0625rem 0.0625rem 0.1875rem rgba(0, 0, 0, 0.1803921569);
+	box-shadow: 0.125rem 0.125rem 0.625rem 0rem rgba(0, 0, 0, 0.25);
 	font-family: "Noto Sans JP', sans-serif";
-	height: 22.875rem;
-	margin: 2.5rem 1rem 0;
-	padding-bottom: 2.5rem;
-	width: 17.5rem;
 }
 
-.noshadow {
-	margin: 2.5rem 1rem;
+.no-shadow {
+	display: flex;
+	justify-content: center;
 }
 
 .card__information {
-	padding: 0 1rem;
+	padding: 0;
 }
 
-.card__body--information {
-	padding-left: 3rem;
-	padding-top: 3.8125rem;
-	width: 30.75rem;
-}
-
-c .voice {
-	box-shadow: 0.0625rem 0.0625rem 0.0625rem 0.1875rem rgba(0, 0, 0, 0.1803921569);
+.voice {
 	font-family: "Noto Sans JP', sans-serif";
-	margin: 2.5rem 1rem 0;
+	padding: 0 0 8.75rem;
 }
 
 .card__inner--voice {
@@ -391,7 +369,7 @@ c .voice {
 
 .card__age {
 	font-family: "Noto Sans JP', sans-serif";
-	font-size: 12;
+	font-size: 0.75rem;
 	font-weight: 400;
 	line-height: 1.125rem;
 }
@@ -405,37 +383,14 @@ c .voice {
 	padding: 0.25rem 0.75rem;
 }
 
-.card__title--voice {
-	padding-right: 0.8125rem;
-	padding-top: 0.25rem;
-}
-
-.card__title--voice {
-	border-bottom: 0.0625rem solid #108F95;
-	font-family: "Noto Sans JP', sans-serif";
-	font-size: 1rem;
-	font-weight: 700;
-}
-
-.card__img img {
-	aspect-ratio: 151/117;
-	min-height: 7.3125rem;
-	min-width: 9.4375rem;
-	padding-top: 0.5625rem;
-}
-
 .slider {
-	box-shadow: 0.0625rem 0.0625rem 0.0625rem 0.1875rem rgba(0, 0, 0, 0.1803921569);
+	box-shadow: 0.125rem 0.125rem 0.625rem 0rem rgba(0, 0, 0, 0.25);
 	font-family: "Noto Sans JP', sans-serif";
 	margin: auto;
-	padding-bottom: 0.3125rem;
-	width: 280px;
 }
 
 .card__header--slider img {
-	aspect-ratio: 280/188;
-	min-height: 11.75rem;
-	min-width: 17.5rem;
+	aspect-ratio: 333/223;
 }
 
 .card__icon--slider {
@@ -443,23 +398,16 @@ c .voice {
 	color: #108F95;
 	display: inline-block;
 	font-family: "Noto Sans JP', sans-serif";
-	font-size: 0.75rem;
-	margin: 1rem;
 }
 
 .card__title--slider {
 	border-bottom: 0.0625rem solid #108F95;
 	font-family: "Noto Sans JP', sans-serif";
-	font-size: 1rem;
-	padding-left: 1rem;
-	width: 15.5rem;
 }
 
 .card__text--slider {
 	font-family: "Noto Sans JP', sans-serif";
-	font-size: 0.875rem;
 	font-weight: 400;
-	padding: 0.5rem 0;
 	text-align: center;
 }
 
@@ -475,8 +423,6 @@ c .voice {
 	font-family: "'Gotu', sans-serif";
 	font-size: 1.25rem;
 	font-weight: 700;
-	line-height: 1.75rem;
-	padding-bottom: 1rem;
 	text-decoration: line-through;
 	text-decoration: line-through solid red;
 	text-decoration: line-through red 0.1875rem;
@@ -486,10 +432,7 @@ c .voice {
 .card__discount {
 	color: #108F95;
 	font-family: "'Gotu', sans-serif";
-	font-size: 2rem;
 	font-weight: 700;
-	line-height: 2rem;
-	padding: 0 0 1.5rem 1rem;
 }
 
 .contact__content {
@@ -504,34 +447,29 @@ c .voice {
 }
 
 .contact__right {
-	border-top: 1px solid #108F95;
+	border-left: 1px solid #108F95;
 	font-family: "Noto Sans JP', sans-serif";
 	font-size: 1rem;
 	line-height: 1.5rem;
-	padding: 1rem 2.5rem;
+	margin: 5rem 0;
 	text-align: center;
 }
 
 .contact__logo {
-	height: 4.0625rem;
-	margin: auto;
-	margin-top: 5rem;
+	border-bottom: 0.0625rem solid #108F95;
 	position: relative;
-	width: 10.875rem;
 }
 
 .contact__map {
 	aspect-ratio: 295/160;
-	height: 10rem;
-	margin: 0 2.5rem;
-	width: 18.4375rem;
 }
 
 .contact__left {
+	display: flex;
+	flex-direction: column;
 	font-family: "Noto Sans JP', sans-serif";
 	font-size: 1rem;
 	line-height: 1.5rem;
-	padding: 1rem 2.5rem;
 	text-align: center;
 }
 
@@ -539,17 +477,8 @@ c .voice {
 	background-color: #108F95;
 	color: #fff;
 	font-family: "'Gotu', sans-serif";
-	font-size: 0.75rem;
 	font-weight: 400;
-	line-height: 1.125rem;
-	padding: 2.5rem 0.875rem 3.5rem;
 	text-align: center;
-}
-
-.facebook__icon {
-	height: 1.5rem;
-	margin: 0 1rem 0 0.9375rem;
-	width: 1.5rem;
 }
 
 /* ハンバーガーアイコンのスタイル */
@@ -600,10 +529,10 @@ c .voice {
 .header {
 	background: rgba(13, 41, 54, 0.537254902);
 	display: flex;
-	height: 5rem;
+	justify-content: space-between;
 	position: fixed;
 	width: 100vw;
-	z-index: 11;
+	z-index: 10;
 }
 
 .header__inner {
@@ -611,8 +540,8 @@ c .voice {
 	display: flex;
 	height: 100%;
 	justify-content: space-between;
-	padding: 0 0.9375rem;
-	width: 100%;
+	padding: 0 0.9375rem 0;
+	width: 100vw;
 }
 
 .header.active {
@@ -623,7 +552,6 @@ c .voice {
 	color: #fff;
 	left: 50%;
 	max-height: 5.0625rem;
-	max-width: 15.5rem;
 	position: absolute;
 	text-align: center;
 	top: 50%;
@@ -672,28 +600,22 @@ c .voice {
 }
 
 .information__button {
-	padding: 2.5rem 0 4.3125rem;
-	text-align: center;
+	position: relative;
 }
 
 .information__text {
 	font-family: "Noto Sans JP', sans-serif";
-	font-size: 1rem;
-	padding: 1rem 1rem 1.5rem;
-}
-
-.instagram__icon {
-	height: 1.5rem;
-	width: 1.5rem;
+	font-weight: 400;
 }
 
 .logo__img--bottom {
 	display: block;
-	height: 38 rem;
 	position: absolute;
-	top: 2%;
-	width: inherit;
-	width: 102 rem;
+}
+
+.logo__img img {
+	display: inline-block;
+	position: relative;
 }
 
 .logo__img a {
@@ -714,7 +636,7 @@ c .voice {
 
 .mainvisial--1 img {
 	height: 100vh;
-	width: 100%;
+	max-width: 100vw;
 }
 
 .mainvisial--1 {
@@ -722,7 +644,7 @@ c .voice {
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 100vh;
-	width: 100vw;
+	max-width: 100vw;
 	z-index: 100;
 }
 
@@ -738,14 +660,7 @@ c .voice {
 }
 
 .nav__hitode--bottom {
-	margin-left: 0.9375rem;
-	margin-top: 2.625rem;
 	position: absolute;
-}
-
-.nav__hitode--bottom img {
-	height: 1.125rem;
-	width: 1.125rem;
 }
 
 .nav__items {
@@ -778,15 +693,12 @@ c .voice {
 	width: 50%;
 }
 
-.nav__item {
-	padding-left: 2.3125rem;
-	padding-top: 1.5rem;
-}
-
 .nav__item--bold {
 	font-weight: 700;
-	padding-left: 2.3125rem;
-	padding-top: 2.5rem;
+}
+
+.nav__item--bold.top {
+	padding-top: 0;
 }
 
 .nav__item--bottom {
@@ -817,16 +729,12 @@ c .voice {
 .nav__pc {
 	color: #fff;
 	display: none;
-	position: fixed;
-	width: 100%;
 	z-index: 11;
 }
 
 .nav__items--pc {
 	display: flex;
-	justify-content: end;
 	text-align: center;
-	width: 100%;
 }
 
 .nav__items--pc h2 {
@@ -854,7 +762,7 @@ c .voice {
 	display: none;
 	height: 100vh;
 	position: fixed;
-	width: 100%;
+	width: 100vw;
 	z-index: 10;
 }
 
@@ -864,11 +772,11 @@ c .voice {
 
 .price__content {
 	display: flex;
-	justify-content: ce;
+	justify-content: space-between;
 	width: 100%;
 }
 
-.price__img--pc img {
+.price__img {
 	display: none;
 	position: relative;
 }
@@ -920,6 +828,15 @@ c .voice {
 	text-transform: capitalize;
 }
 
+.section__title__blog {
+	font-family: "'Gotu', sans-serif";
+	font-size: 2rem;
+	font-weight: 300;
+	line-height: 2.5rem;
+	text-align: center;
+	text-transform: capitalize;
+}
+
 .section__title::first-letter {
 	color: #108F95;
 	font-weight: 300;
@@ -927,6 +844,13 @@ c .voice {
 
 .section__subtitle {
 	color: #108F95;
+	font-family: "Noto Sans JP', sans-serif";
+	font-size: 0.75rem;
+	text-align: center;
+}
+
+.section__subtitle__blog {
+	color: #fff;
 	font-family: "Noto Sans JP', sans-serif";
 	font-size: 0.75rem;
 	text-align: center;
@@ -965,12 +889,15 @@ c .voice {
 .sns__icons {
 	display: flex;
 	position: absolute;
-	top: 3%;
 }
 
 .swiper-container {
 	height: 100%; /* スライダーの高さを調整 */
 	width: 100%; /* スライダーの幅を調整 */
+}
+
+.swiper-container {
+	transform: translate3d(0, 0, 0);
 }
 
 /* スライド要素 */
@@ -979,7 +906,7 @@ c .voice {
 	align-items: center; /* スライド内の要素を垂直方向に中央揃えする場合 */
 	display: flex; /* スライド内の要素を横並びに配置する場合 */
 	height: 100%; /* スライドの高さを調整 */
-	justify-content: center; /* スライド内の要素を水平方向に中央揃えする場合 */
+	justify-content: right; /* スライド内の要素を水平方向に中央揃えする場合 */
 	width: 100%; /* スライドの幅を調整 */
 }
 
@@ -998,7 +925,8 @@ c .voice {
 }
 
 .swiper-wrapper {
-	margin-top: 1.5625rem;
+	margin: 0rem;
+	transform: translate3d(0, 0, 0);
 }
 
 .swiper-slide img {
@@ -1042,38 +970,22 @@ html {
 }
 
 .information {
-	padding: 0 0 0 0;
-	padding-bottom: -18.75rem;
-	padding-top: 6.25rem;
+	padding: 5.0625rem 0 4.3125rem;
 }
 
 .voice {
-	display: inline;
 	padding-left: 2.5rem;
 	position: relative;
 }
 
 .about__button {
-	display: inline;
-	left: 57.25rem;
-	position: relative;
-	right: 50%;
-	text-align: center;
-	top: 50%;
+	right: 19.875rem;
 	top: 11.25rem;
-	transform: 50%, 50%;
-	z-index: 10;
 }
 
 .about__content {
-	display: inline-block;
 	display: flex;
-	left: 22.5rem;
-	position: relative;
-	top: 50%;
-	top: 18.75rem;
-	transform: translateY(-50%);
-	width: 55rem;
+	margin-top: 7.5rem;
 	z-index: 10;
 }
 
@@ -1085,7 +997,6 @@ html {
 	font-weight: 400;
 	line-height: 6.25rem;
 	position: relative;
-	top: rem;
 }
 
 .about__text {
@@ -1097,29 +1008,29 @@ html {
 }
 
 .about__img--1 {
+	height: 37.875rem;
 	left: 11.3125rem;
-	min-height: 37.875rem;
-	min-width: 24.9375rem;
 	position: absolute;
 	top: 50%;
 	top: 25rem;
 	transform: translateY(-50%);
+	width: 24.9375rem;
 }
 
 .about__img--2 {
-	left: 20rem;
-	min-height: 36.3125rem;
-	min-width: 55rem;
+	height: 36.3125rem;
 	position: absolute;
+	right: 11.25rem;
 	top: 11.25rem;
+	width: 55rem;
 }
 
 .about__img--3 {
+	bottom: 3.125rem;
 	display: block;
 	height: 11.3125rem;
-	left: 72.6875rem;
-	position: relative;
-	top: 21.875rem;
+	position: absolute;
+	right: 5.1875rem;
 	width: 12.125rem;
 }
 
@@ -1150,17 +1061,25 @@ html {
 }
 
 .button__content {
-	padding: 5rem 0 6.25rem;
+	padding: 5rem 0 0rem;
 }
 
 .button {
-	height: 3.625rem;
-	width: 17.875rem;
+	height: 3.5rem;
+	width: 12.625rem;
 }
 
 .button__contact {
 	padding: 2.5rem 0 6.1875rem;
 	text-align: center;
+}
+
+.card__header img {
+	aspect-ratio: 301/201;
+	display: inline-block;
+	height: 12.5625rem;
+	margin: 1rem 1rem 1.5rem;
+	width: 18.8125rem;
 }
 
 .card__title--big {
@@ -1171,15 +1090,15 @@ html {
 	padding-left: 0;
 }
 
-.noshadow {
-	display: flex;
-	justify-content: center;
-	margin: 0;
-	padding: 2.5rem 0 6.25rem;
+.card--slider {
+	height: 27.8125rem;
+	margin: 2.5rem 1rem 0;
+	margin-bottom: 2.5rem;
+	width: 20.8125rem;
 }
 
-.card__information {
-	padding-left: 11.25rem;
+.no-shadow {
+	padding: 2.5rem 0 6.25rem;
 }
 
 .card__information img {
@@ -1187,21 +1106,80 @@ html {
 	width: 33.75rem;
 }
 
+.card__body--information {
+	padding-left: 3rem;
+	padding-top: 3.8125rem;
+	width: 30.75rem;
+}
+
 .card__inner--voice {
 	height: 24.75rem;
 	width: 32.5rem;
 }
 
+.card__title--voice {
+	border-bottom: 0.0625rem solid #108F95;
+	font-family: "Noto Sans JP', sans-serif";
+	font-size: 1.5rem;
+	font-weight: 700;
+	margin-right: 1rem;
+	padding-top: 0.25rem;
+	width: 17.25rem;
+}
+
+.card__img img {
+	aspect-ratio: 180/140;
+	height: 8.75rem;
+	width: 11.25rem;
+}
+
+.slider {
+	padding-bottom: 0.3125rem;
+	width: 17.5rem;
+}
+
+.card__header--slider img {
+	min-height: 13.9375rem;
+	min-width: 20.8125rem;
+}
+
+.card__icon--slider {
+	font-size: 0.75rem;
+	margin: 1.5rem 1rem 0.25rem;
+}
+
+.card__title--slider {
+	font-size: 1rem;
+	margin-left: 1rem;
+	padding-bottom: 0.5rem;
+	width: 18.8125rem;
+}
+
+.card__text--slider {
+	font-size: 0.875rem;
+	padding: 1rem 0 0.5rem;
+}
+
+.card__price {
+	line-height: 1.75rem;
+	padding-bottom: 1rem;
+}
+
+.card__discount {
+	font-size: 2rem;
+	line-height: 2rem;
+	padding: 0 0 1.5rem 1rem;
+}
+
 .cards--voice {
 	display: flex;
 	justify-content: center;
-	padding: 1.875rem 11.25rem 5rem;
+	padding: 1.5rem;
 }
 
 .contact__fish {
 	bottom: 29.8125rem;
 	height: 8.625rem;
-	left: 68.0625rem;
 	right: 3.125rem;
 	top: 6.25rem;
 	transform: translateY(-50%);
@@ -1212,31 +1190,42 @@ html {
 .contact__right {
 	border-top: none;
 	display: flex;
-	margin-bottom: auto;
-	margin-top: auto;
-	padding-top: 1.5rem;
+	padding-left: 5.0625rem;
 }
 
 .contact__logo {
-	height: 4.6875rem;
-	left: 21.9375rem;
-	position: absolute;
-	top: 5rem;
+	margin: 5rem 5.125rem 1.5rem 3.125rem;
+	padding: 0 7.4375rem;
+}
+
+.contact__logo img {
 	width: 12.5rem;
 }
 
 .contact__map {
-	height: 148;
-	width: 273;
+	height: 10rem;
+	margin: 0 2.5rem;
+	width: 18.4375rem;
 }
 
 .contact__left {
 	border-top: none;
 	display: flex;
-	margin-bottom: auto;
-	margin-top: auto;
+	margin: 0;
 	padding: 0;
-	padding-top: 1.5rem;
+	width: 35.75rem;
+}
+
+.copyright {
+	font-size: 0.75rem;
+	line-height: 1.125rem;
+	padding: 0 0 3.5rem;
+}
+
+.facebook__icon {
+	height: 2rem;
+	margin: 0 1rem 0 0.9375rem;
+	width: 2rem;
 }
 
 .hamburger {
@@ -1244,12 +1233,9 @@ html {
 }
 
 .header {
+	align-items: center;
 	height: 5.625rem;
 	text-align: center;
-}
-
-.header__inner {
-	justify-content: space-between;
 }
 
 .hero__title {
@@ -1266,28 +1252,33 @@ html {
 }
 
 .information__button {
-	display: inline-block;
-	left: 65%;
-	position: relative;
-	top: 50%;
-	top: -9.375rem;
-	transform: translateY(-50%);
+	left: 8.9375rem;
+	top: 2.5rem;
 }
 
 .information__text {
 	font-family: "Noto Sans JP', sans-serif";
 	font-size: 1rem;
-	font-weight: 400;
 	line-height: 1.5rem;
-	padding: 1rem 0 0;
+	padding: 1rem 0 2.5rem;
 	width: 30.75rem;
 }
 
+.instagram__icon {
+	height: 2rem;
+	width: 2rem;
+}
+
 .logo__img--bottom {
-	height: 4.6875rem;
-	left: 15%;
-	top: 25%;
+	left: 11.25rem;
+	top: 5rem;
 	width: 12.5rem;
+}
+
+.logo__img img {
+	height: 3.125rem;
+	margin-top: 1.3125rem;
+	width: 8.3125rem;
 }
 
 .blog__logo--1 {
@@ -1302,17 +1293,18 @@ html {
 
 .blog__logo--2 {
 	display: block;
-	display: block;
 	height: 8.625rem;
+	left: 6.25rem;
+	position: relative;
 	width: 18.8125rem;
 }
 
 .logo__voice--ibaratatu {
+	bottom: 4.5625rem;
 	display: block;
 	height: 10.125rem;
 	position: absolute;
-	right: 5%;
-	top: 60%;
+	right: 11.25rem;
 	width: 4.4375rem;
 	z-index: 10;
 }
@@ -1323,12 +1315,32 @@ html {
 	background-size: cover;
 }
 
-.nav__bottom--flexs {
+.nav__hitode--bottom img {
+	height: 1.125rem;
+	width: 1.125rem;
+}
+
+.nav__item {
+	padding-top: 1.5rem;
+}
+
+.nav__item--bold {
+	padding-top: 2.5rem;
+}
+
+.nav__bottom--flexes {
 	display: flex;
 	justify-content: space-around;
 	margin: auto;
-	padding-top: 11.1875rem;
-	width: 80%;
+	padding: 11.1875rem 0rem 5rem 0rem;
+}
+
+.nav__bottom--flex {
+	width: 9.25rem;
+}
+
+.nav__bottom--flex--bold {
+	width: 10rem;
 }
 
 .price__contents {
@@ -1336,17 +1348,14 @@ html {
 	flex-direction: column;
 	justify-content: center;
 	margin-top: 0rem;
+	width: 30.75rem;
 }
 
 .price__img {
-	display: none;
-}
-
-.price__img--pc img {
 	display: block;
-	height: 46.625rem;
-	padding: 1.5rem 0 2.5rem 5.8125rem;
-	width: 30.75rem;
+	margin: 1.5rem 0 2.5rem 5.8125rem;
+	max-height: 46.625rem;
+	max-width: 30.75rem;
 }
 
 .price__title {
@@ -1379,12 +1388,30 @@ html {
 	text-align: center;
 }
 
+.section__title__blog {
+	color: #fff;
+	font-family: "'Gotu', sans-serif";
+	font-size: 2.5rem;
+	font-weight: 300;
+	line-height: 2.5rem;
+	text-align: center;
+}
+
 .section__title::first-letter {
-	color: #111;
+	color: #108F95;
 }
 
 .section__subtitle {
-	color: #111;
+	color: #108F95;
+	font-family: "Noto Sans JP', sans-serif";
+	font-size: 0.75rem;
+	font-weight: 300;
+	line-height: 1.125rem;
+	text-align: center;
+}
+
+.section__subtitle__blog {
+	color: #fff;
 	font-family: "Noto Sans JP', sans-serif";
 	font-size: 0.75rem;
 	font-weight: 300;
@@ -1402,24 +1429,19 @@ html {
 }
 
 .section__title--contact::first-letter {
-	color: #111;
+	color: #108F95;
 }
 
 .section__titles--blog.section__title {
 	color: #fff;
 	text-align: center;
-	text-transform: capitalize #fff;
-}
-
-.section__titles--contact {
-	border-left: 1px solid #108F95;
-	padding: 0 7rem 0.375rem 5.0625rem;
+	text-transform: capitalize;
 }
 
 .sns__icons {
-	left: 30%;
+	left: 26.25rem;
 	position: absolute;
-	top: 30%;
+	top: 7.375rem;
 }
 
 }
@@ -1428,6 +1450,7 @@ html {
 
 .nav__pc {
 	display: block; /* 表示に変更 */
+	height: 5.625rem;
 }
 
 }

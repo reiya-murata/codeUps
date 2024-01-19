@@ -7,23 +7,20 @@
   font-size: rem(40);
   font-weight: $regular;
   color: $blue;
+
 @include mq (md){
-  display: inline-block;
-  position: relative;
-  top:50% ;
-  transform: translateY(-50%);  
+  // top:50% ;
+  // transform: translateY(-50%);  
   z-index: 10;
   display: flex;
-  top: rem(300) ;
-  left:rem(360) ;
-  width: rem(880);
+  margin-top: rem(120) ;
+  // left:rem(360) ;
+  // width: rem(880);
   }
 }
 
 .about__content h3{
 font-weight: $regular;
-font-size: rem(40);
-padding-left: rem(15);
 
   @include mq (md){
     display: inline-block;
@@ -32,8 +29,7 @@ padding-left: rem(15);
     font-family: $second-font-family;
     line-height: rem(100);
     font-weight: $normal;
-    color:$white;  
-    top: rem;  
+    color:$white; 
   
   }
 }
