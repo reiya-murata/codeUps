@@ -12,11 +12,12 @@ margin-left: rem(15);
 }
 .nav__hitode--bottom{
 position: absolute;
-margin-top: rem(42);
-margin-left: rem(15);
+// margin-top: rem(42);
+// margin-left: rem(15);
 }
 .nav__hitode--bottom img{
-  width: rem(18);
-  height: rem(18);
-
+  @include mq (md){
+    width: rem(18);
+    height: rem(18);
+  }
 }

@@ -1,15 +1,15 @@
 @use "global" as *;
 
 .facebook__icon{
-  width: rem(24);
-  height: rem(24);
-  margin: 0 rem(16) 0 rem(15);
+  
   @include mq (md){
     // position: absolute;
     // width: rem(32);
     // height: rem(32);
     // top: 50%;
     // left: 30%;
-    
+  width: rem(32);
+  height: rem(32);
+  margin: 0 rem(16) 0 rem(15);
   }
 }

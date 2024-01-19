@@ -1,21 +1,20 @@
 @use "global" as *;
 
 .nav__pc{
-  position: fixed;
   color: $white;
   display: none;
-  width: 100%;
+  // width: 100%;
   z-index: 11;
 
   @media (min-width: 768px) {
     display: block; /* 表示に変更 */
+    height: rem(90);
   }
 }
 
 .nav__items--pc{
-  display: flex ;
-width: 100%;
-justify-content: end;
+display: flex ;
+// width: 100%;
 text-align: center;
 }
 .nav__items--pc h2{
@@ -35,12 +34,23 @@ padding: 0 rem(30) 0 rem(29);
 
 }
 
-.nav__bottom--flexs{
+.nav__bottom--flexes{
   @include mq (md){
     display: flex;
     justify-content: space-around;
-    padding-top:rem(179) ;
-  width: 80%;
+    padding:rem(179) rem(0) rem(80) rem(0);
+  // width: 80%;
   margin: auto;
+  }
+}
+
+.nav__bottom--flex{
+  @include mq (md){
+    width: rem(148);
+  }
+}
+.nav__bottom--flex--bold{
+  @include mq (md){
+    width: rem(160);
   }
 }

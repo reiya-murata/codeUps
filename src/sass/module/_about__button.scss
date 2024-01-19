@@ -3,16 +3,12 @@
 .about__button{
   text-align: center;
   position: relative;
-  
+  z-index: 10;
+
   @include mq (md){
-  padding: rem(40)0 rem(69);
-  display: inline;
-  top: 50%;
   // right: 50%;
   // transform: translateY(50%);
   top:rem(180);
   right: rem(318);
-  text-align: center;
-  z-index: 10;
   }
 }

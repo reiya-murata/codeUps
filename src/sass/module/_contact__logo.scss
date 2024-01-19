@@ -20,5 +20,8 @@
 }
 }
 .contact__logo img{
-  width: rem(200);
+  
+  @include mq (md){
+    width: rem(200);
+  } 
 }

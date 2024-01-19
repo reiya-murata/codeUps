@@ -35,25 +35,19 @@
 
   <html>
     <body>
-      <main>
-        <header class="header">
-          <div class="header__inner">
-            <a href="#">
-              <div class="logo__img">
-                <img
-                  src="\assets\images\common\CodeUps.svg"
-                  alt="codeUpsの画像"
-                />
-              </div>
-            </a>
-            <div class="hamburger" id="js-hamburger">
-              <span></span>
-              <span></span>
-              <span></span>
+      <header class="header">
+        <div class="header__inner">
+          <div class="nav__inner--logo">
+          <a href="#">
+            <div class="logo__img">
+              <img
+                src="\assets\images\common\CodeUps.svg"
+                alt="codeUpsの画像"
+              />
             </div>
-          </div>
-        </header>
-        <section class="nav--menu">
+          </a>
+        </div>
+        <div class="nav__inner--list">
           <nav class="nav" id="js-nav">
             <ul class="nav__items">
               <div class="nav__items--left">
@@ -63,7 +57,7 @@
                     alt="ヒトデのアイコン"
                   />
                 </div>
-                <li class="nav__item--bold"><a href="#">キャンペーン</a></li>
+                <li class="nav__item--bold top"><a href="#">キャンペーン</a></li>
                 <li class="nav__item"><a href="#">ライセンス取得</a></li>
                 <li class="nav__item"><a href="#">貸切体験ダイビング</a></li>
                 <li class="nav__item"><a href="#">ナイトダイビング</a></li>
@@ -80,7 +74,7 @@
                     alt="ヒトデのアイコン"
                   />
                 </div>
-                <li class="nav__item--bold"><a href="#">ダイビング情報</a></li>
+                <li class="nav__item--bold top"><a href="#">ダイビング情報</a></li>
                 <li class="nav__item"><a href="#">ライセンス講習</a></li>
                 <li class="nav__item"><a href="#">体験ダイビング</a></li>
                 <li class="nav__item"><a href="#">ファンダイビング</a></li>
@@ -99,7 +93,7 @@
                     alt="ヒトデのアイコン"
                   />
                 </div>
-                <li class="nav__item--bold"><a href="#">お客様の声</a></li>
+                <li class="nav__item--bold top"><a href="#">お客様の声</a></li>
                 <div class="nav__hitode">
                   <img
                     src="../assets\images\common\_ヒトデ.png"
@@ -122,8 +116,8 @@
                     alt="ヒトデのアイコン"
                   />
                 </div>
-                <li class="nav__item--bold"><a href="#">よくある質問</a></li>
-
+                <li class="nav__item--bold top"><a href="#">よくある質問</a></li>
+  
                 <div class="nav__hitode">
                   <img
                     src="../assets\images\common\_ヒトデ.png"
@@ -150,54 +144,65 @@
               </div>
             </ul>
           </nav>
-          <nav class="nav__pc">
-            <ul class="nav__items--pc">
-              <li>
-                <a href="#"
-                  ><h2>Campaign</h2>
-                  <h3>キャンペーン</h3></a
-                >
-              </li>
-              <li>
-                <a href="#"
-                  ><h2>About us</h2>
-                  <h3>私たちについて</h3></a
-                >
-              </li>
-              <li>
-                <a href="#"
-                  ><h2>Information</h2>
-                  <h3>ダイビング情報</h3></a
-                >
-              </li>
-              <li>
-                <a href="#"
-                  ><h2>Blog</h2>
-                  <h3>ブログ</h3></a
-                >
-              </li>
-              <li>
-                <a href="#"
-                  ><h2>Voice</h2>
-                  <h3>お客様の声</h3></a
-                >
-              </li>
-              <li>
-                <a href="#"
-                  ><h2>FAQ</h2>
-                  <h3>よくある質問</h3></a
-                >
-              </li>
-              <li>
-                <a href="#"
-                  ><h2>Contact</h2>
-                  <h3>お問合せ</h3></a
-                >
-              </li>
-            </ul>
-          </nav>
-        </section>
+        <nav class="nav__pc">
+          <ul class="nav__items--pc">
+            <li>
+              <a href="#"
+                ><h2>Campaign</h2>
+                <h3>キャンペーン</h3></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><h2>About us</h2>
+                <h3>私たちについて</h3></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><h2>Information</h2>
+                <h3>ダイビング情報</h3></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><h2>Blog</h2>
+                <h3>ブログ</h3></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><h2>Voice</h2>
+                <h3>お客様の声</h3></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><h2>FAQ</h2>
+                <h3>よくある質問</h3></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><h2>Contact</h2>
+                <h3>お問合せ</h3></a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="hamburger" id="js-hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+      
 
+
+    
+      <main>
         <section class="hero">
           <div class="hero__contents">
             <div class="hero__inner">
@@ -784,7 +789,7 @@
 
           <div class="nav__item--bottom">
             <ul>
-              <div class="nav__bottom--flexs">
+              <div class="nav__bottom--flexes">
                 <div class="nav__bottom--flex">
                   <div class="nav__hitode--bottom">
                     <img
@@ -792,7 +797,7 @@
                       alt="ヒトデのアイコン"
                     />
                   </div>
-                  <li class="nav__item--bold"><a href="#">キャンペーン</a></li>
+                  <li class="nav__item--bold top"><a href="#">キャンペーン</a></li>
                   <li class="nav__item"><a href="#">ライセンス取得</a></li>
                   <li class="nav__item"><a href="#">貸切体験ダイビング</a></li>
                   <li class="nav__item"><a href="#">ナイトダイビング</a></li>
@@ -815,7 +820,7 @@
                       alt="ヒトデのアイコン"
                     />
                   </div>
-                  <li class="nav__item--bold">
+                  <li class="nav__item--bold top">
                     <a href="#">ダイビング情報</a>
                   </li>
                   <li class="nav__item"><a href="#">ライセンス講習</a></li>
@@ -841,7 +846,7 @@
                       alt="ヒトデのアイコン"
                     />
                   </div>
-                  <li class="nav__item--bold"><a href="#">お客様の声</a></li>
+                  <li class="nav__item--bold top"><a href="#">お客様の声</a></li>
 
                   <div class="nav__hitode--bottom">
                     <img
@@ -854,14 +859,14 @@
                   <li class="nav__item"><a href="#">体験ダイビング</a></li>
                   <li class="nav__item"><a href="#">ファンダイビング</a></li>
                 </div>
-                <div class="nav__bottom--flex">
+                <div class="nav__bottom--flex--bold">
                   <div class="nav__hitode--bottom">
                     <img
                       src="../assets\images\common\_ヒトデ.png"
                       alt="ヒトデのアイコン"
                     />
                   </div>
-                  <li class="nav__item--bold"><a href="#">よくある質問</a></li>
+                  <li class="nav__item--bold top"><a href="#">よくある質問</a></li>
                   <div class="nav__hitode--bottom">
                     <img
                       src="../assets\images\common\_ヒトデ.png"
@@ -870,9 +875,7 @@
                   </div>
                   <li class="nav__item--bold">
                     <a href="#"
-                      >プライバシー<br />
-                      ポリシー</a
-                    >
+                      >プライバシーポリシー</a>
                   </li>
                   <div class="nav__hitode--bottom">
                     <img

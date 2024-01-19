@@ -1,12 +1,16 @@
 @use "global" as *;
 
 .copyright{
-  font-size: rem(12);
   font-family: $second-font-family;
   font-weight: $normal;
-  line-height: rem(18);
   text-align: center;
-  background-color: $blue;
   color: $white;
-  padding: rem(40) rem(14) rem(56);
-}
+  background-color: $blue;
+
+@include mq (md){
+  font-size: rem(12);
+  line-height: rem(18);
+  padding: 0 0 rem(56);
+  }
+} 
+  

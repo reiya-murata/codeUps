@@ -33,18 +33,27 @@
 
 
 .nav__item{
+  @include mq (md){
   padding-top: rem(24);
-  padding-left: rem(37);
+  // padding-left: rem(37);
+  }
 }
 
 .nav__item--bold {
   font-weight: $bold;
-  padding-top: rem(40);
-  padding-left: rem(37);
+  // padding-top: rem(40);
+  // padding-left: rem(37);
   @include mq (md){
     // padding-top: rem(25);
+    padding-top: rem(40);
   }
 }
+
+.nav__item--bold.top{
+padding-top: 0;
+}
+
+
 
 .nav__item--bottom{
   z-index: 10;
