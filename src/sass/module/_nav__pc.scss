@@ -37,7 +37,7 @@ padding: 0 rem(30) 0 rem(29);
 .nav__bottom--flexes{
   @include mq (md){
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding:rem(179) rem(0) rem(80) rem(0);
   // width: 80%;
   margin: auto;
@@ -49,8 +49,15 @@ padding: 0 rem(30) 0 rem(29);
     width: rem(148);
   }
 }
+.nav__bottom--flex--fast{
+  @include mq (md){
+    margin-left: rem(202);
+  }
+}
+
 .nav__bottom--flex--bold{
   @include mq (md){
     width: rem(160);
+    margin-right: rem(252);
   }
 }

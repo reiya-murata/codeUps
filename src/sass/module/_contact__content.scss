@@ -2,5 +2,12 @@
 
 
 .contact__content{
-width:rem(180) ;
+// justify-content:start ;
+font-family: $base-font-family;
+text-align: left;
+@include mq (md){
+  margin:0 rem(5) 0 rem(50);
+  font-size: rem(16);
+  // width:rem(146) ;
+  }
 }

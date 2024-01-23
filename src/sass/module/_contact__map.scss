@@ -1,13 +1,14 @@
 @use "global" as *;
 
-.contact__map{
-  aspect-ratio: 295 /160;
+.contact__map img{
+  aspect-ratio: 273 / 148;
 
   @include mq (md){
-    width: rem(295);
-    height: rem(160);
-    margin: 0 rem(40);
+    width: rem(273);
+    height: rem(148);
+    // margin: 0 rem(21)0 0;
     // width: rem(273);
     // height: rem(148);
+    right: 0;
   }
 }
