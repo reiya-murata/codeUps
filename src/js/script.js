@@ -52,26 +52,39 @@ const main__swiper = new Swiper(".main__swiper", {
 
 
 //スライダー 
-const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  direction: 'horizontal',
-  loop: true,
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
-  centeredSlides: true, 
-  breakpoints:{
-767:{
-  slidesPerView:4
-},
-  },
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-});
+// const swiper = new Swiper('.swiper', {
+//   // Optional parameters
+//   direction: 'horizontal',
+//   loop: true,
+//   autoplay: {
+//     delay: 2500,
+//     disableOnInteraction: false,
+//   },
+//   centeredSlides: true, 
+//   breakpoints:{
+// 767:{
+//   slidesPerView:4
+// },
+//   },
+//   // Navigation arrows
+//   navigation: {
+//     nextEl: '.swiper-button-next',
+//     prevEl: '.swiper-button-prev',
+//   },
+  
+// });
+
+    var swiper = new Swiper(".swiper", {
+      loop: true,
+      slidesPerView: 4,
+      // spaceBetween: 20,
+      centeredSlides: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  
 
 
 

@@ -41,23 +41,35 @@ var main__swiper = new Swiper(".main__swiper", {
 });
 
 //スライダー 
-var swiper = new Swiper('.swiper', {
-  // Optional parameters
-  direction: 'horizontal',
+// const swiper = new Swiper('.swiper', {
+//   // Optional parameters
+//   direction: 'horizontal',
+//   loop: true,
+//   autoplay: {
+//     delay: 2500,
+//     disableOnInteraction: false,
+//   },
+//   centeredSlides: true, 
+//   breakpoints:{
+// 767:{
+//   slidesPerView:4
+// },
+//   },
+//   // Navigation arrows
+//   navigation: {
+//     nextEl: '.swiper-button-next',
+//     prevEl: '.swiper-button-prev',
+//   },
+
+// });
+
+var swiper = new Swiper(".swiper", {
   loop: true,
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false
-  },
+  slidesPerView: 4,
+  // spaceBetween: 20,
   centeredSlides: true,
-  breakpoints: {
-    767: {
-      slidesPerView: 4
-    }
-  },
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev'
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true
   }
 });

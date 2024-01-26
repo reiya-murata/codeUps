@@ -11,32 +11,40 @@
 
 /* スライド要素 */
 .swiper-slide {
-  width: 100%; /* スライドの幅を調整 */
-  height: 100%; /* スライドの高さを調整 */
+  text-align: center;
+  // width: 100%; /* スライドの幅を調整 */
+  // height: 100%; /* スライドの高さを調整 */
   display: flex; /* スライド内の要素を横並びに配置する場合 */
   align-items: center; /* スライド内の要素を垂直方向に中央揃えする場合 */
-  justify-content: left; /* スライド内の要素を水平方向に中央揃えする場合 */
+  justify-content:center; /* スライド内の要素を水平方向に中央揃えする場合 */
+  @include mq (xl){
+    width: rem(330);
+  }
+}
+.swiper-wrapper.campaign{
+  margin-left: rem(173+547.5);
 }
 
-.swiper-slide {
-  width: rem(280);
-}
+// .swiper-slide {
+//   width: rem(280);
+// }
 
 .swiper {
   width: 100%;
   height: 100%;
 }
 
-.swiper-slide {
-  background-position: center;
-  background-size: cover;
-}
-.swiper-wrapper{
-  margin: rem(0);
-  transform:translate3d(0,0,0);
-}
+// .swiper-slide {
+  // background-position: center;
+  // background-size: cover;
+// }
+// .swiper-wrapper{
+//   margin: rem(0);
+//   transform:translate3d(0,0,0);
+// }
 
 .swiper-slide img {
   display: block;
   width: 100%;
+  height: 100%;
 }

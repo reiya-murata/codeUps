@@ -24,8 +24,8 @@
 }
 
 .card__body {
-  min-width: rem(301);
-  margin: auto;
+  // min-width: rem(301);
+  // margin: auto;
 }
 
 .card__date {
@@ -65,7 +65,7 @@
   background-color: $white;
 
   @include mq(md) {
-  margin: rem(40) rem(16) 0;
+  margin: rem(40) rem(20) 0;
   width: rem(333);
   height: rem(445);
   margin-bottom: rem(40);
@@ -176,18 +176,24 @@
   }
 }
 .card__icon--slider {
-  display: inline-block;
+  display: flex;
+  align-items: first baseline;
   color: $blue;
   border: rem(1) solid $blue;
   font-family: $base-font-family;
+  text-align: center;
 
-  @include mq (md){
+  @include mq (xl){
+    width: rem(116);
+    height: rem(34);
     margin: rem(24) rem(16) rem(4);
     font-size: rem(12);
   }
 }
 
 .card__title--slider {
+  display: flex;
+  align-items: baseline;
   border-bottom: rem(1) solid $blue;
   font-family: $base-font-family;
 
