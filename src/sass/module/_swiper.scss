@@ -15,7 +15,7 @@
   height: 100%; /* スライドの高さを調整 */
   display: flex; /* スライド内の要素を横並びに配置する場合 */
   align-items: center; /* スライド内の要素を垂直方向に中央揃えする場合 */
-  justify-content: right; /* スライド内の要素を水平方向に中央揃えする場合 */
+  justify-content: left; /* スライド内の要素を水平方向に中央揃えする場合 */
 }
 
 .swiper-slide {
@@ -31,7 +31,7 @@
   background-position: center;
   background-size: cover;
 }
-.swiper-wrapper {
+.swiper-wrapper{
   margin: rem(0);
   transform:translate3d(0,0,0);
 }

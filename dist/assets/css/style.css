@@ -498,6 +498,7 @@ a {
 	height: 1.875rem; /* rem(2) */
 	margin-top: 0.9375rem;
 	position: relative;
+	right: 1.25rem;
 	width: 1.875rem; /* rem(30) */
 	z-index: 10;
 }
@@ -644,7 +645,7 @@ a {
 
 .main__swiper img {
 	height: 100vh;
-	width: 100vw;
+	width: 100%;
 }
 
 .main__swiper {
@@ -680,7 +681,7 @@ a {
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 100vh;
-	max-width: 100vw;
+	width: 100vw;
 	z-index: 100;
 }
 
@@ -950,7 +951,7 @@ a {
 	align-items: center; /* スライド内の要素を垂直方向に中央揃えする場合 */
 	display: flex; /* スライド内の要素を横並びに配置する場合 */
 	height: 100%; /* スライドの高さを調整 */
-	justify-content: right; /* スライド内の要素を水平方向に中央揃えする場合 */
+	justify-content: left; /* スライド内の要素を水平方向に中央揃えする場合 */
 	width: 100%; /* スライドの幅を調整 */
 }
 
@@ -1363,8 +1364,6 @@ html {
 .mainvisial {
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 100vh;
-	max-width: 100vw;
 }
 
 .nav__hitode img {
