@@ -1,9 +1,9 @@
 @use "global" as *;
 
-.contact__map img{
+.contact__map img {
   aspect-ratio: 273 / 148;
 
-  @include mq (md){
+  @include mq(xl) {
     width: rem(273);
     height: rem(148);
     // margin: 0 rem(21)0 0;

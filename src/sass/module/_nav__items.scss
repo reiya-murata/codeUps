@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.nav__items{
+.nav__items {
   display: flex;
   z-index: 10;
   color: $white;
@@ -9,7 +9,7 @@
   z-index: 15;
 }
 
-.nav_item a{
+.nav_item a {
   display: block;
 }
 
@@ -27,15 +27,12 @@
   font-size: rem(16);
   color: $white;
   height: 100vh;
-  
 }
 
-
-
-.nav__item{
-  @include mq (md){
-  padding-top: rem(24);
-  // padding-left: rem(37);
+.nav__item {
+  @include mq(xl) {
+    padding-top: rem(24);
+    // padding-left: rem(37);
   }
 }
 
@@ -43,39 +40,37 @@
   font-weight: $bold;
   // padding-top: rem(40);
   // padding-left: rem(37);
-  @include mq (md){
+  @include mq(xl) {
     // padding-top: rem(25);
     padding-top: rem(40);
   }
 }
 
-.nav__item--bold.top{
-padding-top: 0;
+.nav__item--bold.top {
+  padding-top: 0;
 }
 
-
-
-.nav__item--bottom{
+.nav__item--bottom {
   z-index: 10;
   color: $white;
   font-weight: $regular;
-  @include mq (md) {
+  @include mq(xl) {
     // justify-content: space-around;
     // margin: auto;
   }
 }
-.nav__bottom--icons{
+.nav__bottom--icons {
   display: flex;
   flex-direction: column;
 }
 
-.nav__items--left--bottom{
+.nav__items--left--bottom {
   width: 50%;
   font-family: $base-font-family;
   font-size: rem(16);
   color: $white;
 }
-.nav__item--right--bottom{
+.nav__item--right--bottom {
   width: 50%;
   font-family: $base-font-family;
   font-size: rem(16);

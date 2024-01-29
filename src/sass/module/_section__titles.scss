@@ -11,7 +11,7 @@
   text-transform: capitalize;
   font-weight: $regular;
   text-align: center;
-  @include mq(md) {
+  @include mq(xl) {
     font-size: rem(40);
     font-family: $second-font-family;
     line-height: rem(40);
@@ -20,14 +20,14 @@
     color: $black;
   }
 }
-.section__title__blog{
+.section__title__blog {
   font-size: rem(32);
   font-family: $second-font-family;
   line-height: rem(40);
   text-transform: capitalize;
   font-weight: $regular;
   text-align: center;
-  @include mq(md) {
+  @include mq(xl) {
     font-size: rem(40);
     font-family: $second-font-family;
     line-height: rem(40);
@@ -40,7 +40,7 @@
 .section__title::first-letter {
   color: $blue;
   font-weight: $regular;
-  @include mq(md) {
+  @include mq(xl) {
     color: $blue;
   }
 }
@@ -50,7 +50,7 @@
   font-family: $base-font-family;
   color: $blue;
   text-align: center;
-  @include mq(md) {
+  @include mq(xl) {
     font-size: rem(12);
     font-weight: $regular;
     font-family: $base-font-family;
@@ -65,7 +65,7 @@
   font-family: $base-font-family;
   color: $white;
   text-align: center;
-  @include mq(md) {
+  @include mq(xl) {
     font-size: rem(12);
     font-weight: $regular;
     font-family: $base-font-family;
@@ -76,7 +76,7 @@
 }
 
 .section__title--contact {
-  @include mq(md) {
+  @include mq(xl) {
     position: relative;
     font-size: rem(80);
     font-family: $second-font-family;
@@ -90,7 +90,7 @@
 .section__title--contact::first-letter {
   color: $blue;
   font-weight: $regular;
-  @include mq(md) {
+  @include mq(xl) {
     color: $blue;
   }
 }
@@ -118,7 +118,7 @@
   text-transform: capitalize;
   font-weight: $regular;
 
-  @include mq(md) {
+  @include mq(xl) {
     text-transform: capitalize;
     color: $white;
     text-align: center;
@@ -126,8 +126,6 @@
 }
 
 .section__title--contact {
-  @include mq(md) {
-
+  @include mq(xl) {
   }
 }
-

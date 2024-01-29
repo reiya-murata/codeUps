@@ -1,11 +1,9 @@
 @use "global" as *;
 
-.price__inner{
+.price__inner {
   display: flex;
   justify-content: center;
-  @include mq (md){
+  @include mq(xl) {
     padding: 0 rem(182) 0 rem(181);
-
-
   }
 }

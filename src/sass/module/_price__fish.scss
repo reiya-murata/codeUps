@@ -2,15 +2,15 @@
 
 .price__fish {
   display: none;
-  @include mq (md){
+  @include mq(xl) {
     width: rem(437);
     height: rem(201);
-  position: absolute;
-  top: 70%;
-  transform: translateY(50%);
-  
-  left: 10%;
-  z-index: 15;
-  display: block;
+    position: absolute;
+    top: 70%;
+    transform: translateY(50%);
+
+    left: 10%;
+    z-index: 15;
+    display: block;
   }
 }

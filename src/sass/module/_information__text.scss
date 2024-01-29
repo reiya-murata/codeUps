@@ -1,9 +1,9 @@
 @use "global" as *;
 
-.information__text{
+.information__text {
   font-family: $base-font-family;
   font-weight: $normal;
-  @include mq (md){
+  @include mq(xl) {
     width: rem(492);
     font-family: $base-font-family;
     font-size: rem(16);
@@ -11,4 +11,3 @@
     padding: rem(16) 0 rem(40);
   }
 }
-

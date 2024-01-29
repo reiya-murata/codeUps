@@ -18,7 +18,7 @@ $second-font-family: "'Gotu', sans-serif";
 // ※検証ツールでしっかり反映されているか確認する
 
 body {
-  font-family: $base-font-family;
+  font-family: $base-font-family,$second-font-family;
 }
 
 // フォントウェイト

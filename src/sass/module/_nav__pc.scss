@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.nav__pc{
+.nav__pc {
   color: $white;
   display: none;
   // width: 100%;
@@ -12,51 +12,58 @@
   }
 }
 
-.nav__items--pc{
-display: flex ;
-// width: 100%;
-text-align: center;
+.nav__items--pc {
+  display: flex;
+  // width: 100%;
+  text-align: center;
 }
-.nav__items--pc h2{
-font-size: rem(18);
-font-weight: $regular;
-font-family: $second-font-family;
-line-height: rem(18);
-padding: rem(26)  rem(20) 0 rem(20);
-
-}
-.nav__items--pc h3{
-font-size: rem(10);
-font-weight: $regular;
-font-family: $base-font-family;
-line-height: rem(15);
-padding: 0 rem(30) 0 rem(29);
-
-}
-
-.nav__bottom--flexes{
-  @include mq (md){
-    display: flex;
-    justify-content: space-between;
-    padding:rem(179) rem(0) rem(80) rem(0);
-  // width: 80%;
-  margin: auto;
+.nav__items--pc li{
+  @include mq(xl) {
+  padding: rem(26) rem(21) 0 rem(20.5);
   }
 }
 
-.nav__bottom--flex{
-  @include mq (md){
+.nav__items--pc h2 {
+  font-weight: $regular;
+  font-family: $second-font-family;
+  @include mq(xl) {
+    font-size: rem(18);
+    line-height: rem(18);
+  }
+}
+.nav__items--pc h3 {
+  font-size: rem(10);
+  font-weight: $regular;
+  font-family: $base-font-family;
+  @include mq(xl) {
+  line-height: rem(15);
+  padding:  rem(4) 0 0 0;
+  }
+}
+
+.nav__bottom--flexes {
+  @include mq(xl) {
+    display: flex;
+    justify-content: space-between;
+    padding: rem(179) rem(0) rem(80) rem(0);
+    // width: 80%;
+    margin: auto;
+  }
+}
+
+.nav__bottom--flex {
+  @include mq(xl) {
     width: rem(148);
   }
 }
-.nav__bottom--flex--fast{
-  @include mq (md){
+.nav__bottom--flex--fast {
+  @include mq(xl) {
     margin-left: rem(202);
   }
 }
 
-.nav__bottom--flex--bold{
-  @include mq (md){
+.nav__bottom--flex--bold {
+  @include mq(xl) {
     width: rem(160);
     margin-right: rem(252);
   }

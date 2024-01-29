@@ -1,19 +1,19 @@
 @use "global" as *;
 
-.mainvisial{
-img{
-  max-width: 100vw;
-  height: 100vh;
+.mainvisial {
+  img {
+    max-width: 100vw;
+    height: 100%;
+  }
 }
-}
-.mainvisial{
+.mainvisial {
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   // background-image: url(..\assets\images\common\mainview.1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 100;
-  @include mq (md){
+  @include mq(xl) {
     // background-image: url(..\assets\images\common\hero.pc.1.jpg);
     background-repeat: no-repeat;
     background-size: cover;

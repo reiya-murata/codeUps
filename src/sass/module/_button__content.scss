@@ -3,8 +3,8 @@
 .button__content {
   text-align: center;
   // margin: rem(40) 0 rem(69);
-@include mq (md){
-  padding:rem(80)0 rem(0);
+  @include mq(xl) {
+    padding: rem(80) 0 rem(0);
   }
 }
 
@@ -20,10 +20,9 @@
   font-family: $second-font-family;
   width: rem(202);
   height: rem(54);
-  @include mq (md){
-width: rem(202);
-height: rem(56);
-
+  @include mq(xl) {
+    width: rem(202);
+    height: rem(56);
   }
 }
 
@@ -46,13 +45,13 @@ height: rem(56);
   transform: skew(45deg);
   padding-bottom: rem(2);
 }
-.button a{
+.button a {
   display: block;
 }
 
-.button__contact{
-@include mq (md){
-  padding: rem(40) 0 rem(99);
-  text-align: center;
-}
+.button__contact {
+  @include mq(xl) {
+    padding: rem(40) 0 rem(99);
+    text-align: center;
+  }
 }

@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.hero__contents{
+.hero__contents {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -13,40 +13,35 @@
   z-index: 5;
 }
 
-.hero__inner{
+.hero__inner {
   position: relative;
   align-items: center;
-  
-  }
-  
-  
-  .hero__title{
-    font-size: rem(40);
-    display: block;
+}
+
+.hero__title {
+  font-size: rem(40);
+  display: block;
+  font-family: $second-font-family;
+  letter-spacing: rem(21.6);
+  font-weight: $regular;
+  text-align: center;
+  @include mq(xl) {
+    font-size: rem(80);
+    letter-spacing: rem(43.2);
+    line-height: rem(100);
     font-family: $second-font-family;
-    letter-spacing: rem(21.6);
-    font-weight: $regular;
-    text-align: center;
-    @include mq (md){
-      font-size: rem(80);
-      letter-spacing: rem(43.2);
-      line-height: rem(100);
-      font-family: $second-font-family;
-    }
-    
   }
-  
-  .hero__subtitle {
-    display: block;
-    font-size: rem(20);
-    font-family: $second-font-family;
-    font-weight:$regular;
-    text-align: center;
-  @include mq (md) {
+}
+
+.hero__subtitle {
+  display: block;
+  font-size: rem(20);
+  font-family: $second-font-family;
+  font-weight: $regular;
+  text-align: center;
+  @include mq(xl) {
     font-size: rem(20);
     font-family: $second-font-family;
     line-height: normal;
-
-  } 
   }
-  
+}

@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.contact__left{
+.contact__left {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -8,14 +8,13 @@
   line-height: rem(24);
   font-family: $base-font-family;
   // padding: rem(16) rem(40);
-  
-  
-@include mq (md){
-  display: flex;
-  width: rem(572);
-  // padding-top: rem(24);
-  border-top: none;
-  margin:0; 
-  padding: 0;
+
+  @include mq(xl) {
+    display: flex;
+    width: rem(572);
+    // padding-top: rem(24);
+    border-top: none;
+    margin: 0;
+    padding: 0;
   }
 }

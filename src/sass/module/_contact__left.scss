@@ -1,18 +1,17 @@
 @use "global" as *;
 
-.contact__right{
+.contact__right {
   text-align: center;
   font-size: rem(16);
   line-height: rem(24);
   font-family: $base-font-family;
   // padding: rem(16) rem(40);
   // border-top: 1px solid $blue;
-  margin: rem(80) 0 ;
+  margin: rem(80) 0;
   border-left: 1px solid $blue;
-@include mq (md){
-  display: flex;
-  padding-left: rem(81);
-  border-top: none;
-  
+  @include mq(xl) {
+    display: flex;
+    padding-left: rem(81);
+    border-top: none;
   }
 }

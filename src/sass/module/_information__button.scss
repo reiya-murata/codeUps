@@ -1,12 +1,12 @@
 @use "global" as *;
 
-.information__button{
+.information__button {
   // text-align: center;
   position: relative;
   // display: inline-block;
   // transform: translateY(-50%);
-  @include mq (md){
-    top:rem(40);
-    left:rem(143);
+  @include mq(xl) {
+    top: rem(40);
+    left: rem(143);
   }
 }

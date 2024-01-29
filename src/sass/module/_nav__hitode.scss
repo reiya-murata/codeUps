@@ -1,42 +1,42 @@
 @use "global" as *;
 
-.nav__hitode{
-position: absolute;
-margin-top: rem(42);
-margin-left: rem(15);
+.nav__hitode {
+  position: absolute;
+  margin-top: rem(42);
+  margin-left: rem(15);
 }
-.nav__hitode img{
-  @include mq (md){
-  width: rem(18);
-  height: rem(18);
+.nav__hitode img {
+  @include mq(xl) {
+    width: rem(18);
+    height: rem(18);
   }
 }
-.nav__hitode--bottom{
-position: relative;
-// margin-top: rem(42);
-// margin-left: rem(15);
+.nav__hitode--bottom {
+  position: relative;
+  // margin-top: rem(42);
+  // margin-left: rem(15);
 }
-.nav__hitode--bottom img{
-position: relative;
-  @include mq (md){
+.nav__hitode--bottom img {
+  position: relative;
+  @include mq(xl) {
     top: rem(20);
-    left:rem(-20) ;
+    left: rem(-20);
     width: rem(18);
     height: rem(18);
   }
 }
 
-.nav__hitode--bottom--bold{
+.nav__hitode--bottom--bold {
   position: relative;
   // margin-top: rem(42);
   // margin-left: rem(15);
-  }
-  .nav__hitode--bottom--bold img{
+}
+.nav__hitode--bottom--bold img {
   position: relative;
-    @include mq (md){
-      top: rem(60);
-      left:rem(-20) ;
-      width: rem(18);
-      height: rem(18);
-    }
+  @include mq(xl) {
+    top: rem(60);
+    left: rem(-20);
+    width: rem(18);
+    height: rem(18);
   }
+}

@@ -1,10 +1,9 @@
 @use "global" as *;
 
-.contact{
-
+.contact {
   position: relative;
 
-  @include mq (md){
+  @include mq(xl) {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -12,9 +11,9 @@
 }
 
 // .logo__bottoms{
-//   @include mq (md){
+//   @include mq (xl){
 //     display: flex;
 //     width: 30%;
-    
+
 //   }
 // }

@@ -4,17 +4,17 @@
   position: absolute;
   display: block;
 
-@include mq (md){
-  width: rem(200);
-  top: rem(80);
-  left: rem(180);
+  @include mq(xl) {
+    width: rem(200);
+    top: rem(80);
+    left: rem(180);
   }
 }
 
 .logo__img img {
   position: relative;
   display: inline-block;
-  @include mq(md) {
+  @include mq(xl) {
     width: rem(133);
     height: rem(50);
     margin-top: rem(21);
@@ -24,10 +24,9 @@
   display: inline-block;
 }
 
-
 .blog__logo--1 {
   display: none;
-  @include mq(md) {
+  @include mq(xl) {
     display: block;
     width: rem(437);
     height: rem(201);
@@ -39,7 +38,7 @@
 }
 .blog__logo--2 {
   display: none;
-  @include mq(md) {
+  @include mq(xl) {
     position: relative;
     display: block;
     width: rem(301);
@@ -50,13 +49,13 @@
 
 .logo__voice--ibaratatu {
   display: none;
-  @include mq(md) {
+  @include mq(xl) {
     display: block;
     width: rem(71);
     height: rem(162);
     position: absolute;
     z-index: 10;
-    right: rem(180); 
+    right: rem(180);
     bottom: rem(73);
   }
 }

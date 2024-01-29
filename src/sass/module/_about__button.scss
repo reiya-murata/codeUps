@@ -1,14 +1,14 @@
 @use "global" as *;
 
-.about__button{
+.about__button {
   text-align: center;
   position: relative;
   z-index: 10;
 
-  @include mq (md){
-  // right: 50%;
-  // transform: translateY(50%);
-  top:rem(40);
-  right: rem(0);
+  @include mq(xl) {
+    // right: 50%;
+    // transform: translateY(50%);
+    top: rem(40);
+    right: rem(0);
   }
 }

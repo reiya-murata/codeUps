@@ -1,47 +1,45 @@
 @use "global" as *;
 
-.price__contents{
-  @include mq (md) {
+.price__contents {
+  @include mq(xl) {
     width: rem(492);
     display: flex;
     flex-direction: column;
-    justify-content:center ;
+    justify-content: center;
     margin-top: rem(0);
   }
 }
 
-.price__content{
+.price__content {
   display: flex;
   justify-content: space-between;
-  width: 100%
+  width: 100%;
 }
 
-
-  .price__img{
+.price__img {
   display: none;
-    @include mq (md){
-      display: block;
-      max-width: rem(492);
-      max-height: rem(746);
-      margin: rem(24) 0 rem(40) rem(93);
-    }
-    position: relative;
-    
+  @include mq(xl) {
+    display: block;
+    max-width: rem(492);
+    max-height: rem(746);
+    margin: rem(24) 0 rem(40) rem(93);
   }
+  position: relative;
+}
 
-.price__title{
+.price__title {
   font-size: rem(16);
   font-family: $base-font-family;
   line-height: rem(24);
   font-weight: $bold;
   border-bottom: 1px solid $blue;
-  padding:rem(40) 0 rem(4);
-  @include mq (md){
+  padding: rem(40) 0 rem(4);
+  @include mq(xl) {
     padding: 0;
   }
 }
 
-.price__item{
+.price__item {
   font-size: rem(14);
   font-family: $base-font-family;
   line-height: rem(24);
@@ -49,11 +47,11 @@
   padding: rem(8) 0;
 }
 
-.price__price{
+.price__price {
   font-size: rem(14);
   font-family: $base-font-family;
   line-height: rem(24);
   font-weight: $normal;
   padding: rem(8) 0;
-text-align: right;
+  text-align: right;
 }

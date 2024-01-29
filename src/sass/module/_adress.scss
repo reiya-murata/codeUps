@@ -1,15 +1,15 @@
 @use "global" as *;
 
-.address__card{
+.address__card {
   box-shadow: rem(4) rem(4) rem(10) 0 rgba(0, 0, 0, 0.25);
-  @include mq (md){
+  @include mq(xl) {
     display: flex;
-  
-  width: rem(1080);
-  height: rem(415);
-  margin: rem(140) 0 rem(160);
+
+    width: rem(1080);
+    height: rem(415);
+    margin: rem(140) 0 rem(160);
   }
 }
-.contact__left--address{
+.contact__left--address {
   display: flex;
 }
