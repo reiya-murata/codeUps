@@ -12,12 +12,11 @@
 }
 
 .logo__img img {
-  position: relative;
+  position:relative;
   display: inline-block;
   @include mq(xl) {
     width: rem(133);
     height: rem(50);
-    margin-top: rem(21);
   }
 }
 .logo__img a {

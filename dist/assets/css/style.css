@@ -1,7 +1,7 @@
 /* リキッドレイアウト対応 */
 
 body {
-	font-family: "Noto Sans JP', sans-serif", "'Gotu', sans-serif";
+	font-family: "Noto Sans JP", sans-serif, "Gotu", sans-serif, "Lato", sans-serif;
 }
 
 .u-desktop {
@@ -202,7 +202,7 @@ a {
 .about__content {
 	color: #108F95;
 	display: flex;
-	font-family: "'Gotu', sans-serif";
+	font-family: "Gotu", sans-serif;
 	font-weight: 300;
 	justify-content: center;
 }
@@ -223,7 +223,7 @@ a {
 
 .about__text {
 	color: #fff;
-	font-family: "Noto Sans JP', sans-serif";
+	font-family: "Noto Sans JP", sans-serif;
 	font-weight: normal;
 }
 
@@ -267,7 +267,7 @@ a {
 	background-color: #108F95;
 	color: #fff;
 	display: inline-block;
-	font-family: "'Gotu', sans-serif";
+	font-family: "Gotu", sans-serif;
 	font-size: 0.875rem;
 	height: 3.375rem;
 	line-height: 1.375rem;
@@ -305,7 +305,7 @@ a {
 .card {
 	background-color: #fff;
 	box-shadow: 0.125rem 0.125rem 0.625rem 0rem rgba(0, 0, 0, 0.25);
-	font-family: "Noto Sans JP', sans-serif";
+	font-family: "Noto Sans JP", sans-serif;
 	margin: 2.5rem 1rem 0;
 }
 
@@ -326,7 +326,7 @@ a {
 
 .card__title {
 	border-bottom: 0.0625rem solid #108F95;
-	font-family: "Noto Sans JP', sans-serif";
+	font-family: "Noto Sans JP", sans-serif;
 }
 
 .card__title--big {
@@ -336,7 +336,7 @@ a {
 }
 
 .card__text {
-	font-family: "Noto Sans JP', sans-serif";
+	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1rem;
 	padding: 1rem 1rem 1.5rem;
 }
@@ -344,7 +344,7 @@ a {
 .card--slider {
 	background-color: #fff;
 	box-shadow: 0.125rem 0.125rem 0.625rem 0rem rgba(0, 0, 0, 0.25);
-	font-family: "Noto Sans JP', sans-serif";
+	font-family: "Noto Sans JP", sans-serif;
 }
 
 .no-shadow {
@@ -357,7 +357,7 @@ a {
 }
 
 .voice {
-	font-family: "Noto Sans JP', sans-serif";
+	font-family: "Noto Sans JP", sans-serif;
 	padding: 0 0 8.75rem;
 }
 
@@ -370,7 +370,7 @@ a {
 }
 
 .card__age {
-	font-family: "Noto Sans JP', sans-serif";
+	font-family: "Noto Sans JP", sans-serif;
 	font-size: 0.75rem;
 	font-weight: 400;
 	line-height: 1.125rem;
@@ -380,14 +380,14 @@ a {
 	border: 0.0625rem solid #108F95;
 	color: #108F95;
 	display: inline-block;
-	font-family: "Noto Sans JP', sans-serif";
+	font-family: "Noto Sans JP", sans-serif;
 	font-size: 0.75rem;
 	padding: 0.25rem 0.75rem;
 }
 
 .slider {
 	box-shadow: 0.125rem 0.125rem 0.625rem 0rem rgba(0, 0, 0, 0.25);
-	font-family: "Noto Sans JP', sans-serif";
+	font-family: "Noto Sans JP", sans-serif;
 	margin: auto;
 }
 
@@ -400,7 +400,7 @@ a {
 	border: 0.0625rem solid #108F95;
 	color: #108F95;
 	display: flex;
-	font-family: "Noto Sans JP', sans-serif";
+	font-family: "Noto Sans JP", sans-serif;
 	text-align: center;
 }
 
@@ -408,11 +408,11 @@ a {
 	align-items: baseline;
 	border-bottom: 0.0625rem solid #108F95;
 	display: flex;
-	font-family: "Noto Sans JP', sans-serif";
+	font-family: "Noto Sans JP", sans-serif;
 }
 
 .card__text--slider {
-	font-family: "Noto Sans JP', sans-serif";
+	font-family: "Noto Sans JP", sans-serif;
 	font-weight: 400;
 	text-align: center;
 }
@@ -426,7 +426,7 @@ a {
 .card__price {
 	-webkit-text-decoration: line-through solid red;
 	-webkit-text-decoration: line-through red 0.1875rem;
-	font-family: "'Gotu', sans-serif";
+	font-family: "Gotu", sans-serif;
 	font-size: 1.25rem;
 	font-weight: 700;
 	text-decoration: line-through;
@@ -437,12 +437,12 @@ a {
 
 .card__discount {
 	color: #108F95;
-	font-family: "'Gotu', sans-serif";
+	font-family: "Gotu", sans-serif;
 	font-weight: 700;
 }
 
 .contact__content {
-	font-family: "Noto Sans JP', sans-serif";
+	font-family: "Noto Sans JP", sans-serif;
 	text-align: left;
 }
 
@@ -455,7 +455,7 @@ a {
 
 .contact__right {
 	border-left: 1px solid #108F95;
-	font-family: "Noto Sans JP', sans-serif";
+	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1rem;
 	line-height: 1.5rem;
 	margin: 5rem 0;
@@ -474,7 +474,7 @@ a {
 .contact__left {
 	display: flex;
 	flex-direction: column;
-	font-family: "Noto Sans JP', sans-serif";
+	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1rem;
 	line-height: 1.5rem;
 	text-align: center;
@@ -483,7 +483,7 @@ a {
 .copyright {
 	background-color: #108F95;
 	color: #fff;
-	font-family: "'Gotu', sans-serif";
+	font-family: "Gotu", sans-serif;
 	font-weight: 400;
 	text-align: center;
 }
@@ -556,34 +556,33 @@ a {
 }
 
 .hero__contents {
-	color: #fff;
-	left: 50%;
-	max-height: 5.0625rem;
+	height: 100%;
 	position: absolute;
-	text-align: center;
-	top: 50%;
-	transform: translateY(-50%);
-	transform: translateX(-50%);
+	width: 100%;
 	z-index: 5;
 }
 
 .hero__inner {
 	align-items: center;
+	color: #fff;
+	left: 50%;
 	position: relative;
+	top: 47%;
+	transform: translateY(-50%);
+	transform: translateX(-50%);
 }
 
 .hero__title {
 	display: block;
-	font-family: "'Gotu', sans-serif";
+	font-family: "Lato", sans-serif;
 	font-size: 2.5rem;
-	font-weight: 300;
-	letter-spacing: 1.35rem;
+	font-weight: 400;
 	text-align: center;
 }
 
 .hero__subtitle {
 	display: block;
-	font-family: "'Gotu', sans-serif";
+	font-family: "Gotu", sans-serif;
 	font-size: 1.25rem;
 	font-weight: 300;
 	text-align: center;
@@ -611,7 +610,7 @@ a {
 }
 
 .information__text {
-	font-family: "Noto Sans JP', sans-serif";
+	font-family: "Noto Sans JP", sans-serif;
 	font-weight: 400;
 }
 
@@ -720,7 +719,7 @@ a {
 
 .nav__items--left {
 	color: #fff;
-	font-family: "Noto Sans JP', sans-serif";
+	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1rem;
 	height: 100vh;
 	width: 50%;
@@ -729,7 +728,7 @@ a {
 
 .nav__items--right {
 	color: #fff;
-	font-family: "Noto Sans JP', sans-serif";
+	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1rem;
 	height: 100vh;
 	width: 50%;
@@ -756,14 +755,14 @@ a {
 
 .nav__items--left--bottom {
 	color: #fff;
-	font-family: "Noto Sans JP', sans-serif";
+	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1rem;
 	width: 50%;
 }
 
 .nav__item--right--bottom {
 	color: #fff;
-	font-family: "Noto Sans JP', sans-serif";
+	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1rem;
 	width: 50%;
 }
@@ -780,13 +779,12 @@ a {
 }
 
 .nav__items--pc h2 {
-	font-family: "'Gotu', sans-serif";
+	font-family: "Gotu", sans-serif;
 	font-weight: 300;
 }
 
 .nav__items--pc h3 {
-	font-family: "Noto Sans JP', sans-serif";
-	font-size: 0.625rem;
+	font-family: "Noto Sans JP", sans-serif;
 	font-weight: 300;
 }
 
@@ -820,7 +818,7 @@ a {
 
 .price__title {
 	border-bottom: 1px solid #108F95;
-	font-family: "Noto Sans JP', sans-serif";
+	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1rem;
 	font-weight: 700;
 	line-height: 1.5rem;
@@ -828,7 +826,7 @@ a {
 }
 
 .price__item {
-	font-family: "Noto Sans JP', sans-serif";
+	font-family: "Noto Sans JP", sans-serif;
 	font-size: 0.875rem;
 	font-weight: 400;
 	line-height: 1.5rem;
@@ -836,7 +834,7 @@ a {
 }
 
 .price__price {
-	font-family: "Noto Sans JP', sans-serif";
+	font-family: "Noto Sans JP", sans-serif;
 	font-size: 0.875rem;
 	font-weight: 400;
 	line-height: 1.5rem;
@@ -858,7 +856,7 @@ a {
 }
 
 .section__title {
-	font-family: "'Gotu', sans-serif";
+	font-family: "Gotu", sans-serif;
 	font-size: 2rem;
 	font-weight: 300;
 	line-height: 2.5rem;
@@ -867,7 +865,7 @@ a {
 }
 
 .section__title__blog {
-	font-family: "'Gotu', sans-serif";
+	font-family: "Gotu", sans-serif;
 	font-size: 2rem;
 	font-weight: 300;
 	line-height: 2.5rem;
@@ -882,14 +880,14 @@ a {
 
 .section__subtitle {
 	color: #108F95;
-	font-family: "Noto Sans JP', sans-serif";
+	font-family: "Noto Sans JP", sans-serif;
 	font-size: 0.75rem;
 	text-align: center;
 }
 
 .section__subtitle__blog {
 	color: #fff;
-	font-family: "Noto Sans JP', sans-serif";
+	font-family: "Noto Sans JP", sans-serif;
 	font-size: 0.75rem;
 	text-align: center;
 }
@@ -901,7 +899,7 @@ a {
 
 .section__subtitle--contact {
 	color: #108F95;
-	font-family: "Noto Sans JP', sans-serif";
+	font-family: "Noto Sans JP", sans-serif;
 	font-size: 0.75rem;
 	line-height: 1.125rem;
 	text-align: center;
@@ -909,7 +907,7 @@ a {
 
 .section__subtitle--contact2 {
 	color: #108F95;
-	font-family: "Noto Sans JP', sans-serif";
+	font-family: "Noto Sans JP", sans-serif;
 	font-size: 0.875rem;
 	line-height: 1.125rem;
 	padding-top: 0.5rem;
@@ -917,7 +915,7 @@ a {
 }
 
 .section__titles--blog.section__title {
-	font-family: "'Gotu', sans-serif";
+	font-family: "Gotu", sans-serif;
 	font-size: 2rem;
 	font-weight: 300;
 	line-height: 2.5rem;
@@ -1039,7 +1037,7 @@ html {
 
 .about__content--title h3 {
 	display: inline-block;
-	font-family: "'Gotu', sans-serif";
+	font-family: "Gotu", sans-serif;
 	font-size: 5rem;
 	font-weight: 25rem;
 	line-height: 6.25rem;
@@ -1134,7 +1132,7 @@ html {
 }
 
 .card__title--big {
-	font-family: "Noto Sans JP', sans-serif";
+	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1.5rem;
 	font-weight: 700;
 	line-height: 1.5rem;
@@ -1170,7 +1168,7 @@ html {
 
 .card__title--voice {
 	border-bottom: 0.0625rem solid #108F95;
-	font-family: "Noto Sans JP', sans-serif";
+	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1.5rem;
 	font-weight: 700;
 	margin-right: 1rem;
@@ -1301,14 +1299,15 @@ html {
 }
 
 .hero__title {
-	font-family: "'Gotu', sans-serif";
 	font-size: 5rem;
 	letter-spacing: 2.7rem;
+	letter-spacing: 2.7rem;
 	line-height: 6.25rem;
+	margin-left: 2.6875rem;
 }
 
 .hero__subtitle {
-	font-family: "'Gotu', sans-serif";
+	font-family: "Gotu", sans-serif;
 	font-size: 1.25rem;
 	line-height: normal;
 }
@@ -1319,7 +1318,7 @@ html {
 }
 
 .information__text {
-	font-family: "Noto Sans JP', sans-serif";
+	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1rem;
 	line-height: 1.5rem;
 	padding: 1rem 0 2.5rem;
@@ -1339,7 +1338,6 @@ html {
 
 .logo__img img {
 	height: 3.125rem;
-	margin-top: 1.3125rem;
 	width: 8.3125rem;
 }
 
@@ -1404,7 +1402,7 @@ html {
 }
 
 .nav__items--pc li {
-	padding: 1.625rem 1.3125rem 0 1.28125rem;
+	padding: 1.625rem 1.25rem 0 1.28125rem;
 }
 
 .nav__items--pc h2 {
@@ -1413,6 +1411,7 @@ html {
 }
 
 .nav__items--pc h3 {
+	font-size: 0.625rem;
 	line-height: 0.9375rem;
 	padding: 0.25rem 0 0 0;
 }
@@ -1473,7 +1472,7 @@ html {
 
 .section__title {
 	color: #111;
-	font-family: "'Gotu', sans-serif";
+	font-family: "Gotu", sans-serif;
 	font-size: 2.5rem;
 	font-weight: 300;
 	line-height: 2.5rem;
@@ -1482,7 +1481,7 @@ html {
 
 .section__title__blog {
 	color: #fff;
-	font-family: "'Gotu', sans-serif";
+	font-family: "Gotu", sans-serif;
 	font-size: 2.5rem;
 	font-weight: 300;
 	line-height: 2.5rem;
@@ -1495,7 +1494,7 @@ html {
 
 .section__subtitle {
 	color: #108F95;
-	font-family: "Noto Sans JP', sans-serif";
+	font-family: "Noto Sans JP", sans-serif;
 	font-size: 0.75rem;
 	font-weight: 300;
 	line-height: 1.125rem;
@@ -1504,7 +1503,7 @@ html {
 
 .section__subtitle__blog {
 	color: #fff;
-	font-family: "Noto Sans JP', sans-serif";
+	font-family: "Noto Sans JP", sans-serif;
 	font-size: 0.75rem;
 	font-weight: 300;
 	line-height: 1.125rem;
@@ -1512,7 +1511,7 @@ html {
 }
 
 .section__title--contact {
-	font-family: "'Gotu', sans-serif";
+	font-family: "Gotu", sans-serif;
 	font-size: 5rem;
 	font-weight: 300;
 	line-height: 5rem;
