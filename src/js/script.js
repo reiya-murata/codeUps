@@ -83,6 +83,13 @@ const main__swiper = new Swiper(".main__swiper", {
         el: ".swiper-pagination",
         clickable: true,
       },
+      navigation:{
+        enabled:true,
+        nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+      }
+      
+      
     });
   
 
