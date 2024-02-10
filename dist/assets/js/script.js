@@ -71,5 +71,10 @@ var swiper = new Swiper(".swiper", {
   pagination: {
     el: ".swiper-pagination",
     clickable: true
+  },
+  navigation: {
+    enabled: true,
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev'
   }
 });
