@@ -940,7 +940,7 @@ a {
 }
 
 .swiper-wrapper.campaign {
-	padding-left: 45.03125rem;
+	padding-left: 9.75rem;
 }
 
 .swiper {
@@ -1489,10 +1489,6 @@ html {
 
 .price__inner {
 	padding: 0 11.375rem 0 11.3125rem;
-}
-
-.section__titles {
-	margin-top: 8.125rem;
 }
 
 .section__title {
