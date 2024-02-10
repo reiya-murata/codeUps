@@ -2,6 +2,9 @@
 
 .section__titles {
   text-align: center;
+  @include mq (xl){
+    margin-top: rem(130);
+  }
 }
 
 .section__title {

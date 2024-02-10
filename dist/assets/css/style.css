@@ -175,7 +175,6 @@ a {
 }
 
 .hero {
-	margin-bottom: 2.5rem;
 	position: relative;
 	width: 100%;
 }
@@ -1468,6 +1467,10 @@ html {
 
 .price__inner {
 	padding: 0 11.375rem 0 11.3125rem;
+}
+
+.section__titles {
+	margin-top: 8.125rem;
 }
 
 .section__title {
