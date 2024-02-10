@@ -175,6 +175,7 @@ a {
 }
 
 .hero {
+	margin-bottom: 2.5rem;
 	position: relative;
 	width: 100%;
 }
@@ -851,14 +852,14 @@ a {
 }
 
 .section__titles {
-	margin-top: 8.1875rem;
 	text-align: center;
 }
 
 .section__title {
-	color: #111;
 	font-family: "Gotu", sans-serif;
-	font-size: 2.5rem;
+	font-size: 2rem;
+	font-weight: 300;
+	line-height: 2.5rem;
 	text-align: center;
 	text-transform: capitalize;
 }
@@ -931,10 +932,15 @@ a {
 	width: 100%; /* スライダーの幅を調整 */
 }
 
+.swiper-container {
+	transform: translate3d(0, 0, 0);
+}
+
 /* スライド要素 */
 
 .swiper-slide {
 	align-items: center; /* スライド内の要素を垂直方向に中央揃えする場合 */
+	display: flex; /* スライド内の要素を横並びに配置する場合 */
 	justify-content: center; /* スライド内の要素を水平方向に中央揃えする場合 */
 	text-align: center;
 }
@@ -945,7 +951,6 @@ a {
 
 .swiper {
 	height: 100%;
-	position: relative;
 	width: 100%;
 }
 
@@ -953,32 +958,6 @@ a {
 	display: block;
 	height: 100%;
 	width: 100%;
-}
-
-.swiper-button-next {
-	height: 5rem;
-	left: 73.3125rem;
-	position: relative;
-	top: -35.4375rem;
-	width: 5rem;
-}
-
-.swiper-button-next img {
-	height: 5rem;
-	width: 5rem;
-}
-
-.swiper-button-prev {
-	height: 5rem;
-	left: 63.25rem;
-	position: relative;
-	top: -39.0625rem;
-	width: 5rem;
-}
-
-.swiper-button-prev img {
-	height: 5rem;
-	width: 5rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -1492,10 +1471,12 @@ html {
 }
 
 .section__title {
+	color: #111;
+	font-family: "Gotu", sans-serif;
 	font-size: 2.5rem;
 	font-weight: 300;
 	line-height: 2.5rem;
-	padding-right: 0.9375rem;
+	text-align: center;
 }
 
 .section__title__blog {
@@ -1512,10 +1493,12 @@ html {
 }
 
 .section__subtitle {
+	color: #108F95;
+	font-family: "Noto Sans JP", sans-serif;
 	font-size: 0.75rem;
 	font-weight: 300;
 	line-height: 1.125rem;
-	padding: 0.375rem 0.9375rem 0 0;
+	text-align: center;
 }
 
 .section__subtitle__blog {
@@ -1553,7 +1536,6 @@ html {
 }
 
 .swiper-slide {
-	margin: 0 0rem;
 	width: 20.625rem;
 }
 

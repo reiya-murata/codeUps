@@ -2,21 +2,22 @@
 
 .section__titles {
   text-align: center;
-  margin-top: rem(131);
-
 }
 
 .section__title {
-  font-size: rem(40);
+  font-size: rem(32);
   font-family: $second-font-family;
+  line-height: rem(40);
   text-transform: capitalize;
+  font-weight: $regular;
   text-align: center;
-  color: $black;
   @include mq(xl) {
-    padding-right: rem(15);
     font-size: rem(40);
+    font-family: $second-font-family;
     line-height: rem(40);
     font-weight: $regular;
+    text-align: center;
+    color: $black;
   }
 }
 .section__title__blog {
@@ -50,10 +51,12 @@
   color: $blue;
   text-align: center;
   @include mq(xl) {
-    padding: rem(6) rem(15) 0 0;
     font-size: rem(12);
     font-weight: $regular;
+    font-family: $base-font-family;
     line-height: rem(18);
+    text-align: center;
+    color: $blue;
   }
 }
 
