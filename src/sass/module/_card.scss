@@ -23,10 +23,10 @@
   text-align: center;
 }
 
-.card__body {
-  // min-width: rem(301);
-  // margin: auto;
-}
+// .card__body {
+//   // min-width: rem(301);
+//   // margin: auto;
+// }
 
 .card__date {
   padding-top: rem(24);
@@ -61,14 +61,11 @@
 
 .card--slider {
   box-shadow: rem(2) rem(2) rem(10) rem(0) rgba(0, 0, 0, 0.25);
-  font-family: $base-font-family;
-  background-color: $white;
-
+  // background-color: $white;
   @include mq(xl) {
-    margin: rem(40) rem(20) 0;
+    margin-top: rem(40);
     width: rem(333);
     height: rem(445);
-    margin-bottom: rem(40);
   }
 }
 
@@ -174,17 +171,26 @@
 }
 .card__icon--slider {
   display: flex;
-  align-items: first baseline;
+  align-items: center;
   color: $blue;
   border: rem(1) solid $blue;
   font-family: $base-font-family;
-  text-align: center;
-
+  text-align: start;
+  justify-content: baseline;
   @include mq(xl) {
-    width: rem(116);
+    // width: rem(116);
+    width: fit-content;
     height: rem(34);
     margin: rem(24) rem(16) rem(4);
     font-size: rem(12);
+    line-height: rem(22);
+    letter-spacing: rem(-2);
+  }
+}
+.card__icon--slider h3 {
+  display: inline-block;
+  @include mq(xl) {
+    padding: 0 rem(16);
   }
 }
 
@@ -193,11 +199,11 @@
   align-items: baseline;
   border-bottom: rem(1) solid $blue;
   font-family: $base-font-family;
-
   @include mq(xl) {
     font-size: rem(16);
+    letter-spacing: rem(-2.8);
     margin-left: rem(16);
-    padding-bottom: rem(8);
+    padding-bottom: rem(6);
     width: rem(301);
   }
 }
@@ -205,38 +211,41 @@
   text-align: center;
   font-family: $base-font-family;
   font-weight: $normal;
-
   @include mq(xl) {
-    padding: rem(16) 0 rem(8);
-    font-size: rem(14);
+    padding-top: rem(16);
+    padding-right: rem(14);
+    font-size: rem(16);
   }
 }
 .card__prices {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
-.card__price {
-  font-size: rem(20);
-  font-family: $second-font-family;
+.card__price h3 {
+  font-family: $third-font-family;
   font-weight: $bold;
   text-decoration: line-through red rem(3);
-
   @include mq(xl) {
-    padding-bottom: rem(16);
+    font-size: rem(24);
+    padding: rem(18) rem(16) 0 rem(2);
     line-height: rem(28);
   }
 }
+.card__price--space {
+  padding-left: rem(20.5);
+}
 
-.card__discount {
+.card__discount h3 {
   color: $blue;
   font-weight: $bold;
-  font-family: $second-font-family;
-
+  font-family: $third-font-family;
   @include mq(xl) {
-    font-size: rem(32);
-    line-height: rem(32);
-    padding: 0 0 rem(24) rem(16);
+    font-size: rem(40);
+    line-height: rem(40);
+    padding: rem(5) 0 0 rem(12);
+    letter-spacing: rem(0);
   }
 }
 

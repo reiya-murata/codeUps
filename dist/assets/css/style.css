@@ -341,9 +341,7 @@ a {
 }
 
 .card--slider {
-	background-color: #fff;
 	box-shadow: 0.125rem 0.125rem 0.625rem 0rem rgba(0, 0, 0, 0.25);
-	font-family: "Noto Sans JP", sans-serif;
 }
 
 .no-shadow {
@@ -395,12 +393,17 @@ a {
 }
 
 .card__icon--slider {
-	align-items: first baseline;
+	align-items: center;
 	border: 0.0625rem solid #108F95;
 	color: #108F95;
 	display: flex;
 	font-family: "Noto Sans JP", sans-serif;
-	text-align: center;
+	justify-content: baseline;
+	text-align: left;
+}
+
+.card__icon--slider h3 {
+	display: inline-block;
 }
 
 .card__title--slider {
@@ -420,13 +423,13 @@ a {
 	align-items: center;
 	display: flex;
 	justify-content: center;
+	text-align: center;
 }
 
-.card__price {
+.card__price h3 {
 	-webkit-text-decoration: line-through solid red;
 	-webkit-text-decoration: line-through red 0.1875rem;
-	font-family: "Gotu", sans-serif;
-	font-size: 1.25rem;
+	font-family: "Lato", sans-serif;
 	font-weight: 700;
 	text-decoration: line-through;
 	text-decoration: line-through solid red;
@@ -434,9 +437,13 @@ a {
 	text-decoration-thickness: 0.1875rem;
 }
 
-.card__discount {
+.card__price--space {
+	padding-left: 1.28125rem;
+}
+
+.card__discount h3 {
 	color: #108F95;
-	font-family: "Gotu", sans-serif;
+	font-family: "Lato", sans-serif;
 	font-weight: 700;
 }
 
@@ -850,7 +857,7 @@ a {
 	justify-content: center;
 }
 
-.section__titles {
+.section__campaign {
 	margin-top: 8.1875rem;
 	text-align: center;
 }
@@ -939,14 +946,14 @@ a {
 	text-align: center;
 }
 
-.swiper-wrapper.campaign {
-	padding-left: 9.75rem;
-}
-
 .swiper {
 	height: 100%;
 	position: relative;
 	width: 100%;
+}
+
+.swiper__campaign {
+	height: 80%;
 }
 
 .swiper-slide img {
@@ -956,11 +963,7 @@ a {
 }
 
 .swiper-button-next {
-	height: 5rem;
-	left: 73.3125rem;
 	position: relative;
-	top: -35.4375rem;
-	width: 5rem;
 }
 
 .swiper-button-next img {
@@ -969,11 +972,7 @@ a {
 }
 
 .swiper-button-prev {
-	height: 5rem;
-	left: 63.25rem;
 	position: relative;
-	top: -39.0625rem;
-	width: 5rem;
 }
 
 .swiper-button-prev img {
@@ -1125,10 +1124,6 @@ html {
 	top: -7.5rem;
 }
 
-.button__content {
-	padding: 5rem 0 0rem;
-}
-
 .button {
 	height: 3.5rem;
 	width: 12.625rem;
@@ -1162,8 +1157,7 @@ html {
 
 .card--slider {
 	height: 27.8125rem;
-	margin: 2.5rem 1.25rem 0;
-	margin-bottom: 2.5rem;
+	margin-top: 2.5rem;
 	width: 20.8125rem;
 }
 
@@ -1216,31 +1210,42 @@ html {
 .card__icon--slider {
 	font-size: 0.75rem;
 	height: 2.125rem;
+	letter-spacing: -0.125rem;
+	line-height: 1.375rem;
 	margin: 1.5rem 1rem 0.25rem;
-	width: 7.25rem;
+	width: -moz-fit-content;
+	width: fit-content;
+}
+
+.card__icon--slider h3 {
+	padding: 0 1rem;
 }
 
 .card__title--slider {
 	font-size: 1rem;
+	letter-spacing: -0.175rem;
 	margin-left: 1rem;
-	padding-bottom: 0.5rem;
+	padding-bottom: 0.375rem;
 	width: 18.8125rem;
 }
 
 .card__text--slider {
-	font-size: 0.875rem;
-	padding: 1rem 0 0.5rem;
+	font-size: 1rem;
+	padding-right: 0.875rem;
+	padding-top: 1rem;
 }
 
-.card__price {
+.card__price h3 {
+	font-size: 1.5rem;
 	line-height: 1.75rem;
-	padding-bottom: 1rem;
+	padding: 1.125rem 1rem 0 0.125rem;
 }
 
-.card__discount {
-	font-size: 2rem;
-	line-height: 2rem;
-	padding: 0 0 1.5rem 1rem;
+.card__discount h3 {
+	font-size: 2.5rem;
+	letter-spacing: 0rem;
+	line-height: 2.5rem;
+	padding: 0.3125rem 0 0 0.75rem;
 }
 
 .cards--voice {
@@ -1553,8 +1558,26 @@ html {
 }
 
 .swiper-slide {
-	margin: 0 0rem;
+	margin: 0;
 	width: 20.625rem;
+}
+
+.swiper-wrapper.campaign {
+	padding-left: 45.75rem;
+}
+
+.swiper-button-next {
+	height: 5rem;
+	left: 73.3125rem;
+	top: -32.9375rem;
+	width: 5rem;
+}
+
+.swiper-button-prev {
+	height: 5rem;
+	left: 63.25rem;
+	top: -36.5625rem;
+	width: 5rem;
 }
 
 }

@@ -74,15 +74,20 @@ const main__swiper = new Swiper(".main__swiper", {
   
 // });
 
-    var swiper = new Swiper(".swiper", {
+    var swiper = new Swiper(".swiper__campaign", {
       loop: true,
       slidesPerView: 4,
-      spaceBetween: 0,
-      centeredSlides: false,
+      spaceBetween: 53,
+      centeredSlides: true,
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
       },
+      navigation: {
+        enabled:true,
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',  
+      }
     });
   
 
