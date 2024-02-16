@@ -24,11 +24,10 @@
   font-weight:$normal;
   text-align: center;
   @include mq(xl) {
-    margin-left: rem(43);
+    margin-left: rem(43.2);
     font-size: rem(80);
     letter-spacing: rem(43.2);
     line-height: rem(100);
-    letter-spacing: rem(43.2);
   }
 }
 

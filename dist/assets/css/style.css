@@ -1322,9 +1322,8 @@ html {
 .hero__title {
 	font-size: 5rem;
 	letter-spacing: 2.7rem;
-	letter-spacing: 2.7rem;
 	line-height: 6.25rem;
-	margin-left: 2.6875rem;
+	margin-left: 2.7rem;
 }
 
 .hero__subtitle {
@@ -1359,6 +1358,7 @@ html {
 
 .logo__img img {
 	height: 3.125rem;
+	margin-top: 0.3125rem;
 	width: 8.3125rem;
 }
 
