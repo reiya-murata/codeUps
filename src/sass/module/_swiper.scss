@@ -4,10 +4,6 @@
   width: 100%; /* スライダーの幅を調整 */
   height: 100%; /* スライダーの高さを調整 */
 }
-// .swiper-container {
-//   transform: translate3d(0, 0, 0);
-// }
-
 
 /* スライド要素 */
 .swiper-slide {
@@ -16,39 +12,31 @@
   // height: 100%; /* スライドの高さを調整 */
   // display: flex; /* スライド内の要素を横並びに配置する場合 */
   align-items: center; /* スライド内の要素を垂直方向に中央揃えする場合 */
-  justify-content:center; /* スライド内の要素を水平方向に中央揃えする場合 */
-  @include mq (xl){
+  justify-content: center; /* スライド内の要素を水平方向に中央揃えする場合 */
+  @include mq(xl) {
     width: rem(330);
-    margin: 0 ;
+    margin: 0;
   }
 }
-.swiper-wrapper.campaign{
-  @include mq(xl){
-  padding-left: rem(732);
+.swiper-wrapper.campaign {
+  // position: absolute;
+  @include mq(xl) {
+    width: 100% ;
+    padding-left: rem(732);
   }
 }
 
-// .swiper-slide {
-//   width: rem(280);
-// }
 
 .swiper {
-  position: relative;
+  // position: absolute;
   width: 100%;
   height: 100%;
 }
-.swiper__campaign{
+.swiper__campaign {
+  overflow: hidden;
   height: 80%;
 }
 
-// .swiper-slide {
-  // background-position: center;
-  // background-size: cover;
-// }
-// .swiper-wrapper{
-//   margin: rem(0);
-//   transform:translate3d(0,0,0);
-// }
 
 .swiper-slide img {
   display: block;
@@ -56,31 +44,25 @@
   height: 100%;
 }
 
-.swiper-button-next {
-  position: relative;
-  @include mq (xl){
-  top:rem(-527);
-  left: rem(1173);
-  height: rem(80);
-  width: rem(80);
-  }
-}
 
-.swiper-button-next img{
-  height: rem(80);
-  width: rem(80);
+.swiper-button-next {
+  position:absolute;
+  @include mq(xl) {
+    top: calc(50% - rem(284));
+    left: calc(50% + rem(494));
+    transform: translate(-50%, -50%);
+    height: rem(80);
+    width: rem(80);
+  }
 }
 
 .swiper-button-prev {
-  position: relative;
-  @include mq (xl){
-  top:rem(-585);
-  left: rem(1012);
-  height: rem(80);
-  width: rem(80);
+  position: absolute;
+  @include mq(xl) {
+    top: calc(50% - rem(283));
+    left: calc(50% + rem(333));
+    transform: translate(-50%, -50%);
+    height: rem(80);
+    width: rem(80);
   }
-}
-.swiper-button-prev img{
-  height: rem(80);
-  width: rem(80);
 }

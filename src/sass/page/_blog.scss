@@ -1,9 +1,11 @@
 @use "global" as *;
 
 .blog {
-  padding: rem(91) 0 0;
+  position: relative;
+}
+.section__blog{
   @include mq(xl) {
     position: relative;
-    padding: rem(100) 0 0;
+    padding: rem(110) 0 0;
   }
 }

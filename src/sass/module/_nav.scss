@@ -6,9 +6,10 @@
   height: 100vh;
   width: 100vw;
   background-color: $blue;
-  z-index: 10;
+  z-index: 20;
 }
 
 .nav.active {
+  z-index: 20;
   display: block;
 }

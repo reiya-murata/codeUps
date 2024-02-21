@@ -12,6 +12,33 @@ html {
 	font-size: 16px;
 }
 
+.information__content {
+	display: flex;
+}
+
+.information__content--title {
+	border-bottom: 0.0625rem solid #108F95;
+}
+
+.information__content--title h3 {
+	display: inline;
+	font-family: "Noto Sans JP", sans-serif;
+	font-weight: 700;
+}
+
+.information__content--text {
+	font-family: "Noto Sans JP", sans-serif;
+	font-weight: 400;
+}
+
+.information__content--img {
+	padding: 0;
+}
+
+.information__content--img img {
+	aspect-ratio: 540/356;
+}
+
 .inner {
 	margin-left: auto;
 	margin-right: auto;
@@ -154,16 +181,16 @@ a {
 }
 
 .about {
-	padding-top: 2.5rem;
 	position: relative;
 }
 
 .blog {
-	padding: 5.6875rem 0 0;
+	position: relative;
 }
 
-.campain {
-	position: relative;
+.section__campaign {
+	margin-top: 8.1875rem;
+	text-align: center;
 }
 
 .contact {
@@ -181,8 +208,10 @@ a {
 
 .information {
 	background-color: #ddf0f1;
-	height: 100%;
-	width: 100%;
+}
+
+.section__information {
+	position: relative;
 }
 
 .price {
@@ -193,7 +222,8 @@ a {
 }
 
 .about__button {
-	position: relative;
+	position: absolute;
+	position: absolute;
 	text-align: center;
 	z-index: 10;
 }
@@ -204,20 +234,17 @@ a {
 	font-family: "Gotu", sans-serif;
 	font-weight: 300;
 	justify-content: center;
+	position: relative;
 }
 
 .about__content--title {
 	color: #fff;
 	font-weight: 300;
-	font-weight: 400;
 	z-index: 20;
 }
 
 .about__content--title h3 {
-	color: #fff;
-	font-weight: 300;
-	font-weight: 400;
-	z-index: 20;
+	display: inline-block;
 }
 
 .about__text {
@@ -228,22 +255,24 @@ a {
 
 .about__imgs {
 	height: 100%;
+	position: relative;
 	width: 100%;
 }
 
 .about__img--1 {
 	aspect-ratio: 132/194;
-	position: relative;
+	position: absolute;
 	z-index: 5;
 }
 
 .about__img--2 {
 	aspect-ratio: 880/581;
-	position: relative;
+	position: absolute;
 }
 
 .about__img--3 {
 	display: none;
+	position: absolute;
 }
 
 .address__card {
@@ -276,6 +305,11 @@ a {
 	width: 12.625rem;
 }
 
+.button span {
+	margin-left: 0.3125rem;
+	margin-right: 0.125rem;
+}
+
 .button::after {
 	border: 0.0625rem solid #108F95;
 	content: "";
@@ -291,7 +325,8 @@ a {
 	border-bottom: 0.0625rem solid #fff;
 	border-right: 0.0625rem solid #fff;
 	display: inline-block;
-	height: 0.375rem;
+	height: 0.5rem;
+	margin: 0rem 0rem 0.125rem 0rem;
 	padding-bottom: 0.125rem;
 	transform: skew(45deg);
 	width: 2.5rem;
@@ -299,6 +334,10 @@ a {
 
 .button a {
 	display: block;
+}
+
+.information__button {
+	position: relative;
 }
 
 .card {
@@ -328,12 +367,6 @@ a {
 	font-family: "Noto Sans JP", sans-serif;
 }
 
-.card__title--big {
-	border-bottom: 0.0625rem solid #108F95;
-	font-size: 1.25rem;
-	padding-left: 1rem;
-}
-
 .card__text {
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1rem;
@@ -342,15 +375,6 @@ a {
 
 .card--slider {
 	box-shadow: 0.125rem 0.125rem 0.625rem 0rem rgba(0, 0, 0, 0.25);
-}
-
-.no-shadow {
-	display: flex;
-	justify-content: center;
-}
-
-.card__information {
-	padding: 0;
 }
 
 .voice {
@@ -546,7 +570,7 @@ a {
 	justify-content: space-between;
 	position: fixed;
 	width: 100vw;
-	z-index: 10;
+	z-index: 20;
 }
 
 .header__inner {
@@ -609,15 +633,6 @@ a {
 	position: relative;
 	width: 100%;
 	z-index: 10;
-}
-
-.information__button {
-	position: relative;
-}
-
-.information__text {
-	font-family: "Noto Sans JP", sans-serif;
-	font-weight: 400;
 }
 
 .logo__img--bottom {
@@ -776,7 +791,7 @@ a {
 .nav__pc {
 	color: #fff;
 	display: none;
-	z-index: 11;
+	z-index: 20;
 }
 
 .nav__items--pc {
@@ -804,11 +819,12 @@ a {
 	height: 100vh;
 	position: fixed;
 	width: 100vw;
-	z-index: 10;
+	z-index: 20;
 }
 
 .nav.active {
 	display: block;
+	z-index: 20;
 }
 
 .price__content {
@@ -857,17 +873,11 @@ a {
 	justify-content: center;
 }
 
-.section__campaign {
-	margin-top: 8.1875rem;
-	text-align: center;
-}
-
 .section__title {
 	color: #111;
 	font-family: "Gotu", sans-serif;
 	font-size: 2.5rem;
 	text-align: center;
-	text-transform: capitalize;
 }
 
 .section__title__blog {
@@ -948,12 +958,12 @@ a {
 
 .swiper {
 	height: 100%;
-	position: relative;
 	width: 100%;
 }
 
 .swiper__campaign {
 	height: 80%;
+	overflow: hidden;
 }
 
 .swiper-slide img {
@@ -963,21 +973,11 @@ a {
 }
 
 .swiper-button-next {
-	position: relative;
-}
-
-.swiper-button-next img {
-	height: 5rem;
-	width: 5rem;
+	position: absolute;
 }
 
 .swiper-button-prev {
-	position: relative;
-}
-
-.swiper-button-prev img {
-	height: 5rem;
-	width: 5rem;
+	position: absolute;
 }
 
 @media screen and (min-width: 768px) {
@@ -1021,13 +1021,52 @@ html {
 
 @media screen and (min-width: 1440px) {
 
-.about {
-	padding-bottom: 23.75rem;
+.information__content {
+	padding: 2.5rem 3rem 0 0;
 }
 
-.blog {
-	padding: 6.25rem 0 0;
+.information__content--title {
+	margin-left: 3rem;
+	margin-top: 4rem;
+	padding-bottom: 0.25rem;
+	width: 30.75rem;
+}
+
+.information__content--title h3 {
+	font-size: 1.5rem;
+	line-height: 1.5rem;
+}
+
+.information__content--text {
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	margin: 0.3125rem 0rem 0 3rem;
+	width: 30.75rem;
+}
+
+.information__content--img {
+	padding-left: 11.25rem;
+	padding-top: 0.125rem;
+}
+
+.information__content--img img {
+	height: 22.25rem;
+	width: 33.75rem;
+}
+
+.section__about {
+	margin-bottom: 25.625rem;
+	margin-top: 8.125rem;
+}
+
+.section__blog {
+	padding: 6.875rem 0 0;
 	position: relative;
+}
+
+.section__campaign h2 {
+	padding-right: 1rem;
 }
 
 .contact {
@@ -1036,8 +1075,8 @@ html {
 	justify-content: center;
 }
 
-.information {
-	padding: 5.0625rem 0 4.3125rem;
+.section__information {
+	padding: 5.625rem 0 5.5rem;
 }
 
 .voice {
@@ -1046,24 +1085,32 @@ html {
 }
 
 .about__button {
-	right: 0rem;
-	top: 2.5rem;
+	left: calc(50% + 18.5rem);
+	top: calc(50% + 14.5rem);
+	transform: translate(-50%, -50%);
 }
 
 .about__content {
-	font-size: 2.5rem;
 	padding-top: 15rem;
 }
 
-.about__content--title h3 {
+.about__content--title {
 	display: inline-block;
 	font-family: "Gotu", sans-serif;
 	font-size: 5rem;
-	font-weight: 25rem;
+	font-weight: 300;
+	line-height: 6.25rem;
+	padding-left: 10rem;
+}
+
+.about__content--title h3 {
+	font-family: "Gotu", sans-serif;
+	font-size: 5rem;
+	font-weight: 300;
 	line-height: 6.25rem;
 }
 
-.about__text {
+.about__text p {
 	display: inline-block;
 	font-size: 1rem;
 	height: 9rem;
@@ -1074,27 +1121,25 @@ html {
 
 .about__img--1 {
 	height: 37.875rem;
-	left: 11.3125rem;
-	position: absolute;
-	top: 26.875rem;
-	transform: translateY(-50%);
+	left: calc(50% - 21.25rem);
+	top: calc(50% + 21.5625rem);
+	transform: translate(-50%, -50%);
 	width: 24.9375rem;
 }
 
 .about__img--2 {
 	height: 36.3125rem;
-	position: absolute;
-	right: 11.25rem;
-	top: 11.25rem;
+	left: calc(50% + 6.25rem);
+	top: calc(50% + 25.625rem);
+	transform: translate(-50%, -50%);
 	width: 55rem;
 }
 
 .about__img--3 {
-	bottom: 3.125rem;
 	display: block;
-	height: 11.3125rem;
-	position: absolute;
-	right: 5.1875rem;
+	left: calc(50% + 33.75rem);
+	top: calc(50% + 43.75rem);
+	transform: translate(-50%, -50%);
 	width: 12.125rem;
 }
 
@@ -1124,6 +1169,11 @@ html {
 	top: -7.5rem;
 }
 
+.button__content {
+	margin: 5rem 1rem 0 0;
+	padding: 0.0625rem 0.0625rem 0 0;
+}
+
 .button {
 	height: 3.5rem;
 	width: 12.625rem;
@@ -1132,6 +1182,12 @@ html {
 .button__contact {
 	padding: 2.5rem 0 6.1875rem;
 	text-align: center;
+}
+
+.information__button {
+	left: calc(50% + 11.875rem);
+	top: calc(50% - 6.875rem);
+	transform: translate(-50%, -50%);
 }
 
 .card__header img {
@@ -1147,33 +1203,10 @@ html {
 	margin: 0 1rem;
 }
 
-.card__title--big {
-	font-family: "Noto Sans JP", sans-serif;
-	font-size: 1.5rem;
-	font-weight: 700;
-	line-height: 1.5rem;
-	padding-left: 0;
-}
-
 .card--slider {
 	height: 27.8125rem;
 	margin-top: 2.5rem;
 	width: 20.8125rem;
-}
-
-.no-shadow {
-	padding: 2.5rem 0 6.25rem;
-}
-
-.card__information img {
-	height: 22.25rem;
-	width: 33.75rem;
-}
-
-.card__body--information {
-	padding-left: 3rem;
-	padding-top: 3.8125rem;
-	width: 30.75rem;
 }
 
 .card__inner--voice {
@@ -1337,19 +1370,6 @@ html {
 	line-height: normal;
 }
 
-.information__button {
-	left: 8.9375rem;
-	top: 2.5rem;
-}
-
-.information__text {
-	font-family: "Noto Sans JP", sans-serif;
-	font-size: 1rem;
-	line-height: 1.5rem;
-	padding: 1rem 0 2.5rem;
-	width: 30.75rem;
-}
-
 .instagram__icon {
 	height: 2rem;
 	width: 2rem;
@@ -1500,7 +1520,6 @@ html {
 	font-size: 2.5rem;
 	font-weight: 300;
 	line-height: 2.5rem;
-	padding-right: 0.9375rem;
 }
 
 .section__title__blog {
@@ -1520,7 +1539,7 @@ html {
 	font-size: 0.75rem;
 	font-weight: 300;
 	line-height: 1.125rem;
-	padding: 0.375rem 0.9375rem 0 0;
+	padding: 0.5rem 0rem 0 0;
 }
 
 .section__subtitle__blog {
@@ -1564,19 +1583,22 @@ html {
 
 .swiper-wrapper.campaign {
 	padding-left: 45.75rem;
+	width: 100%;
 }
 
 .swiper-button-next {
 	height: 5rem;
-	left: 73.3125rem;
-	top: -32.9375rem;
+	left: calc(50% + 30.875rem);
+	top: calc(50% - 17.75rem);
+	transform: translate(-50%, -50%);
 	width: 5rem;
 }
 
 .swiper-button-prev {
 	height: 5rem;
-	left: 63.25rem;
-	top: -36.5625rem;
+	left: calc(50% + 20.8125rem);
+	top: calc(50% - 17.6875rem);
+	transform: translate(-50%, -50%);
 	width: 5rem;
 }
 

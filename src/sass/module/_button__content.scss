@@ -2,9 +2,9 @@
 
 .button__content {
   text-align: center;
-  // margin: rem(40) 0 rem(69);
   @include mq(xl) {
-    // padding: rem(80) 0 rem(0);
+    margin: rem(80) rem(16) 0 0;
+    padding: rem(1) rem(1) 0 0;
   }
 }
 
@@ -25,6 +25,10 @@
     height: rem(56);
   }
 }
+.button span{
+  margin-right: rem(2);
+  margin-left: rem(5);
+}
 
 .button::after {
   content: "";
@@ -39,11 +43,12 @@
 .stickarrow {
   display: inline-block;
   width: rem(40);
-  height: rem(6);
+  height: rem(8);
   border-bottom: rem(1) solid $white;
   border-right: rem(1) solid $white;
   transform: skew(45deg);
   padding-bottom: rem(2);
+  margin: rem(0) rem(0) rem(2) rem(0) ;
 }
 .button a {
   display: block;
@@ -53,5 +58,13 @@
   @include mq(xl) {
     padding: rem(40) 0 rem(99);
     text-align: center;
+  }
+}
+.information__button {
+  position: relative;
+  @include mq(xl) {
+    top:calc(50% - rem(110));
+    left: calc(50% + rem(190));
+    transform: translate(-50%,-50%);
   }
 }

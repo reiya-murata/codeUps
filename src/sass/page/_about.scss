@@ -1,9 +1,11 @@
 @use "global" as *;
 
 .about {
-  padding-top: rem(40);
   position: relative;
+}
+.section__about {
   @include mq(xl) {
-    padding-bottom: rem(380);
+    margin-top: rem(130);
+    margin-bottom: rem(410);
   }
 }

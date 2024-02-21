@@ -1,0 +1,57 @@
+@use "global" as *;
+
+.information__content {
+  display: flex;
+  @include mq(xl) {
+    padding: rem(40) rem(48) 0 0;
+  }
+}
+
+.information__content--title {
+  border-bottom: rem(1) solid $blue;
+  @include mq(xl) {
+    width: rem(492);
+    padding-bottom: rem(4);
+
+    margin-top: rem(64);
+    margin-left: rem(48);
+  }
+}
+
+.information__content--title h3 {
+  font-family: $base-font-family;
+  font-weight: $bold;
+  display: inline;
+  @include mq(xl) {
+    font-size: rem(24);
+    line-height: rem(24);
+  }
+}
+
+.information__content--text {
+  font-family: $base-font-family;
+  font-weight: $normal;
+  @include mq(xl) {
+    width: rem(492);
+    font-family: $base-font-family;
+    font-size: rem(16);
+    line-height: rem(24);
+    margin: rem(5) rem(0) 0 rem(48);
+  }
+}
+
+.information__content--img {
+  padding: 0;
+  @include mq(xl) {
+    padding-left: rem(180);
+    padding-top: rem(2);
+  }
+}
+
+.information__content--img img {
+  aspect-ratio: 540/356;
+  @include mq(xl) {
+    width: rem(540);
+    height: rem(356);
+  }
+}

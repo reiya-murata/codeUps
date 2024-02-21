@@ -4,41 +4,33 @@
   font-family: $second-font-family;
   font-weight: $regular;
   color: $blue;
+  position: relative;
   display: flex;
   justify-content: center;
-
   @include mq(xl) {
-    // top:50% ;
-    // transform: translateY(-50%);
-    font-size: rem(40);
     padding-top: rem(240);
-    // left:rem(36);
-    // width: rem(880);
   }
 }
 
 .about__content--title {
   font-weight: $regular;
-  font-weight: $normal;
   color: $white;
   z-index: 20;
-  @include mq(xl) {
-    // display: inline-block;
-    // font-size: rem(80);
-    // font-weight: rem(400);
-    // font-family: $second-font-family;
-    // line-height: rem(100);
-  }
-}
-.about__content--title h3 {
-  font-weight: $regular;
-  font-weight: $normal;
-  color: $white;
-  z-index: 20;
+  // position: absolute;
   @include mq(xl) {
     display: inline-block;
     font-size: rem(80);
-    font-weight: rem(400);
+    font-weight: $regular;
+    font-family: $second-font-family;
+    line-height: rem(100);
+    padding-left: rem(160);
+  }
+}
+.about__content--title h3 {
+  display: inline-block;
+  @include mq(xl) {
+    font-size: rem(80);
+    font-weight: $regular;
     font-family: $second-font-family;
     line-height: rem(100);
   }
@@ -48,6 +40,9 @@
   font-family: $base-font-family;
   font-weight: normal;
   color: $white;
+  // position: absolute;
+}
+.about__text p{
   @include mq(xl) {
     font-size: rem(16);
     display: inline-block;

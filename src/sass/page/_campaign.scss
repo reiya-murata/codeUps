@@ -1,5 +1,13 @@
 @use "global" as *;
 
-.campain{
-  position: relative;
+
+.section__campaign {
+  text-align: center;
+  margin-top: rem(131);
+}
+
+.section__campaign h2 {
+  @include mq(xl) {
+    padding-right: rem(16);
+  }
 }

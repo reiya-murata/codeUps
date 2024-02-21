@@ -41,18 +41,7 @@
     margin: 0 rem(16);
   }
 }
-.card__title--big {
-  border-bottom: rem(1) solid $blue;
-  font-size: rem(20);
-  padding-left: rem(16);
-  @include mq(xl) {
-    font-size: rem(24);
-    font-family: $base-font-family;
-    font-weight: $bold;
-    line-height: rem(24);
-    padding-left: 0;
-  }
-}
+
 .card__text {
   font-size: rem(16);
   font-family: $base-font-family;
@@ -66,37 +55,6 @@
     margin-top: rem(40);
     width: rem(333);
     height: rem(445);
-  }
-}
-
-.no-shadow {
-  display: flex;
-  justify-content: center;
-  @include mq(xl) {
-    // margin: rem(40) rem(16);
-    padding: rem(40) 0 rem(100);
-  }
-}
-
-.card__information {
-  padding: 0;
-  @include mq(xl) {
-    // padding-left: rem(180);
-  }
-}
-
-.card__information img {
-  @include mq(xl) {
-    width: rem(540);
-    height: rem(356);
-  }
-}
-
-.card__body--information {
-  @include mq(xl) {
-    padding-left: rem(48);
-    padding-top: rem(61);
-    width: rem(492);
   }
 }
 
