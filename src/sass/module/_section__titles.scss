@@ -32,6 +32,7 @@
 .section__title::first-letter {
   color: $blue;
   font-weight: $regular;
+  text-transform: capitalize;
   @include mq(xl) {
     color: $blue;
   }

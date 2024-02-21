@@ -6,36 +6,43 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: rem(0);
+    margin-right: rem(48);
+    margin-top: rem(-56);
   }
 }
 
 .price__content {
+  position: relative;
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
 
-.price__img {
+// .price__img{
+  
+// }
+.price__img img{
   display: none;
+  position: absolute;
   @include mq(xl) {
+    top: calc(50% + rem(20);
+    left: calc(50% + rem(500));
+    transform: translate(-50%, -50%);
     display: block;
-    max-width: rem(492);
-    max-height: rem(746);
-    margin: rem(24) 0 rem(40) rem(93);
+    width: rem(492);
+    height: rem(746);
   }
-  position: relative;
 }
 
 .price__title {
-  font-size: rem(16);
   font-family: $base-font-family;
-  line-height: rem(24);
   font-weight: $bold;
   border-bottom: 1px solid $blue;
-  padding: rem(40) 0 rem(4);
   @include mq(xl) {
     padding: 0;
+    line-height: rem(24);
+    font-size: rem(16);
+    padding: rem(0) 0 rem(4);
   }
 }
 

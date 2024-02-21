@@ -6,6 +6,6 @@
 .section__blog{
   @include mq(xl) {
     position: relative;
-    padding: rem(110) 0 0;
+    padding: rem(116) 0 rem(138);
   }
 }

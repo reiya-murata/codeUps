@@ -190,6 +190,7 @@ a {
 
 .section__campaign {
 	margin-top: 8.1875rem;
+	position: relative;
 	text-align: center;
 }
 
@@ -219,6 +220,15 @@ a {
 	padding: 5rem 0;
 	position: relative;
 	width: 100%;
+}
+
+.voice {
+	font-family: "Noto Sans JP", sans-serif;
+	position: relative;
+}
+
+.section__voice {
+	margin-bottom: 10rem;
 }
 
 .about__button {
@@ -287,8 +297,8 @@ a {
 	display: none;
 }
 
-.button__content {
-	text-align: center;
+.blog__cards {
+	position: relative;
 }
 
 .button {
@@ -336,30 +346,60 @@ a {
 	display: block;
 }
 
-.information__button {
-	position: relative;
+.button__information {
+	position: absolute;
+}
+
+.button__campaign {
+	text-align: center;
+}
+
+.button__blog {
+	text-align: center;
+}
+
+.button__voice {
+	margin: 4.5rem 0.125rem 0 0;
+	text-align: center;
+}
+
+.button__contact {
+	position: absolute;
+}
+
+.button__price {
+	text-align: center;
 }
 
 .card {
 	background-color: #fff;
 	box-shadow: 0.125rem 0.125rem 0.625rem 0rem rgba(0, 0, 0, 0.25);
 	font-family: "Noto Sans JP", sans-serif;
-	margin: 2.5rem 1rem 0;
+	position: relative;
 }
 
 .card__header img {
-	min-height: 12.5625rem;
-	min-width: 18.8125rem;
+	aspect-ratio: 301/201;
+	max-height: 12.5625rem;
+	max-width: 18.8125rem;
 }
 
 .card__header {
 	text-align: center;
 }
 
+.card__header--left {
+	display: flex;
+	flex-direction: column;
+}
+
+.card__header--left--top {
+	display: flex;
+	justify-content: space-between;
+}
+
 .card__date {
-	font-size: 0.75rem;
-	padding-left: 1rem;
-	padding-top: 1.5rem;
+	font-family: "Gotu", sans-serif;
 }
 
 .card__title {
@@ -377,33 +417,40 @@ a {
 	box-shadow: 0.125rem 0.125rem 0.625rem 0rem rgba(0, 0, 0, 0.25);
 }
 
-.voice {
-	font-family: "Noto Sans JP", sans-serif;
-	padding: 0 0 8.75rem;
-}
-
-.card__inner--voice {
-	padding: 0.9375rem 1rem 1.5rem;
-}
-
-.card__header--voice {
+.card__prices {
+	align-items: center;
 	display: flex;
+	justify-content: center;
+	text-align: center;
 }
 
-.card__age {
-	font-family: "Noto Sans JP", sans-serif;
-	font-size: 0.75rem;
-	font-weight: 400;
-	line-height: 1.125rem;
+.card__price h3 {
+	-webkit-text-decoration: line-through solid red;
+	-webkit-text-decoration: line-through red 0.1875rem;
+	font-family: "Lato", sans-serif;
+	font-weight: 700;
+	text-decoration: line-through;
+	text-decoration: line-through solid red;
+	text-decoration: line-through red 0.1875rem;
+	text-decoration-thickness: 0.1875rem;
 }
 
-.card__icon {
-	border: 0.0625rem solid #108F95;
+.card__price--space {
+	padding-left: 1.28125rem;
+}
+
+.card__discount h3 {
 	color: #108F95;
-	display: inline-block;
-	font-family: "Noto Sans JP", sans-serif;
-	font-size: 0.75rem;
-	padding: 0.25rem 0.75rem;
+	font-family: "Lato", sans-serif;
+	font-weight: 700;
+}
+
+.card__title--voice {
+	flex-direction: column;
+}
+
+.card__img img {
+	aspect-ratio: 180/140;
 }
 
 .slider {
@@ -443,32 +490,19 @@ a {
 	text-align: center;
 }
 
-.card__prices {
-	align-items: center;
+.card__inner--voice {
+	padding: 0.9375rem 1rem 1.5rem;
+}
+
+.card__header--voice {
 	display: flex;
-	justify-content: center;
-	text-align: center;
 }
 
-.card__price h3 {
-	-webkit-text-decoration: line-through solid red;
-	-webkit-text-decoration: line-through red 0.1875rem;
-	font-family: "Lato", sans-serif;
-	font-weight: 700;
-	text-decoration: line-through;
-	text-decoration: line-through solid red;
-	text-decoration: line-through red 0.1875rem;
-	text-decoration-thickness: 0.1875rem;
-}
-
-.card__price--space {
-	padding-left: 1.28125rem;
-}
-
-.card__discount h3 {
+.card__icon {
+	border: 0.0625rem solid #108F95;
 	color: #108F95;
-	font-family: "Lato", sans-serif;
-	font-weight: 700;
+	display: inline-block;
+	font-family: "Noto Sans JP", sans-serif;
 }
 
 .contact__content {
@@ -651,14 +685,18 @@ a {
 
 .blog__logo--1 {
 	display: none;
+	position: absolute;
 }
 
 .blog__logo--2 {
 	display: none;
+	z-index: 15;
 }
 
 .logo__voice--ibaratatu {
 	display: none;
+	position: absolute;
+	z-index: 10;
 }
 
 .main__swiper img {
@@ -833,18 +871,15 @@ a {
 	width: 100%;
 }
 
-.price__img {
+.price__img img {
 	display: none;
-	position: relative;
+	position: absolute;
 }
 
 .price__title {
 	border-bottom: 1px solid #108F95;
 	font-family: "Noto Sans JP", sans-serif;
-	font-size: 1rem;
 	font-weight: 700;
-	line-height: 1.5rem;
-	padding: 2.5rem 0 0.25rem;
 }
 
 .price__item {
@@ -870,7 +905,7 @@ a {
 
 .price__inner {
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
 }
 
 .section__title {
@@ -892,6 +927,7 @@ a {
 .section__title::first-letter {
 	color: #108F95;
 	font-weight: 300;
+	text-transform: capitalize;
 }
 
 .section__subtitle {
@@ -1061,7 +1097,7 @@ html {
 }
 
 .section__blog {
-	padding: 6.875rem 0 0;
+	padding: 7.25rem 0 8.625rem;
 	position: relative;
 }
 
@@ -1076,12 +1112,7 @@ html {
 }
 
 .section__information {
-	padding: 5.625rem 0 5.5rem;
-}
-
-.voice {
-	padding-left: 2.5rem;
-	position: relative;
+	padding: 5.625rem 0 5.625rem;
 }
 
 .about__button {
@@ -1160,18 +1191,13 @@ html {
 	z-index: -1;
 }
 
-.cards__blog {
+.blog__cards {
 	display: flex;
-	justify-content: center;
-	padding-left: 11.25rem;
-	padding-right: 11.3125rem;
-	position: relative;
-	top: -7.5rem;
-}
-
-.button__content {
-	margin: 5rem 1rem 0 0;
-	padding: 0.0625rem 0.0625rem 0 0;
+	justify-content: space-around;
+	padding-left: 11.3125rem;
+	padding-right: 11.25rem;
+	top: 3rem;
+	width: 100%;
 }
 
 .button {
@@ -1179,23 +1205,44 @@ html {
 	width: 12.625rem;
 }
 
-.button__contact {
-	padding: 2.5rem 0 6.1875rem;
-	text-align: center;
-}
-
-.information__button {
-	left: calc(50% + 11.875rem);
-	top: calc(50% - 6.875rem);
+.button__information {
+	left: calc(50% + 18.25rem);
+	top: calc(50% + 8.75rem);
 	transform: translate(-50%, -50%);
 }
 
+.button__campaign {
+	margin: 4.6875rem 1rem 0 0;
+}
+
+.button__blog {
+	margin: 8rem 1rem 0 0;
+	padding: 0 0 0 0.5rem;
+}
+
+.button__contact {
+	left: 50%;
+	padding: 1.875rem 0 6.1875rem;
+	text-align: center;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.card {
+	margin: 2.5rem 1.25rem 0;
+}
+
 .card__header img {
-	aspect-ratio: 301/201;
 	display: inline-block;
 	height: 12.5625rem;
-	margin: 1rem 1rem 1.5rem;
+	margin: 1rem 1rem 0.75rem;
 	width: 18.8125rem;
+}
+
+.card__date {
+	font-size: 0.75rem;
+	line-height: 1.125rem;
+	padding-left: 1rem;
 }
 
 .card__title {
@@ -1209,9 +1256,17 @@ html {
 	width: 20.8125rem;
 }
 
-.card__inner--voice {
-	height: 24.75rem;
-	width: 32.5rem;
+.card__price h3 {
+	font-size: 1.5rem;
+	line-height: 1.75rem;
+	padding: 1.125rem 1rem 0 0.125rem;
+}
+
+.card__discount h3 {
+	font-size: 2.5rem;
+	letter-spacing: 0rem;
+	line-height: 2.5rem;
+	padding: 0.3125rem 0 0 0.75rem;
 }
 
 .card__title--voice {
@@ -1220,13 +1275,14 @@ html {
 	font-size: 1.5rem;
 	font-weight: 700;
 	margin-right: 1rem;
-	padding-top: 0.25rem;
+	padding-left: 0.5rem;
+	padding-top: 0.5rem;
 	width: 17.25rem;
 }
 
 .card__img img {
-	aspect-ratio: 180/140;
 	height: 8.75rem;
+	margin: 0 0 0 0.5rem;
 	width: 11.25rem;
 }
 
@@ -1268,23 +1324,33 @@ html {
 	padding-top: 1rem;
 }
 
-.card__price h3 {
-	font-size: 1.5rem;
-	line-height: 1.75rem;
-	padding: 1.125rem 1rem 0 0.125rem;
-}
-
-.card__discount h3 {
-	font-size: 2.5rem;
-	letter-spacing: 0rem;
-	line-height: 2.5rem;
-	padding: 0.3125rem 0 0 0.75rem;
-}
-
 .cards--voice {
 	display: flex;
 	justify-content: center;
-	padding: 1.5rem;
+	padding: 0 0;
+}
+
+.card__inner--voice {
+	height: 24.75rem;
+	width: 32.5rem;
+}
+
+.card__age {
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 0.75rem;
+	font-weight: 400;
+	line-height: 1.125rem;
+	padding: 2.5rem 0 0 0.5rem;
+}
+
+.card__icon {
+	font-size: 0.75rem;
+	margin: 1.5rem 0.5rem 0 0;
+	padding: 0.375rem 0.9375rem;
+}
+
+.card__text--voice {
+	padding: 2.5rem 1rem 0 0.5rem;
 }
 
 .contact__content {
@@ -1388,31 +1454,31 @@ html {
 }
 
 .blog__logo--1 {
-	box-shadow: none;
 	display: block;
 	height: 12.5625rem;
-	left: 3.125rem;
-	position: relative;
-	top: -6.25rem;
+	left: calc(50% - 25rem);
+	top: calc(50% - 22.25rem);
+	transform: translate(-50%, -50%);
 	width: 27.3125rem;
 }
 
 .blog__logo--2 {
 	display: block;
 	height: 8.625rem;
-	left: 6.25rem;
-	position: relative;
+	left: calc(50% - 29.375rem);
+	position: absolute;
+	top: calc(50% + 27.5rem);
+	transform: translate(-50%, -50%);
 	width: 18.8125rem;
 }
 
 .logo__voice--ibaratatu {
-	bottom: 4.5625rem;
 	display: block;
 	height: 10.125rem;
-	position: absolute;
-	right: 11.25rem;
+	left: calc(50% + 31.625rem);
+	top: calc(50% + 18.875rem);
+	transform: translate(-50%, -50%);
 	width: 4.4375rem;
-	z-index: 10;
 }
 
 .mainvisial {
@@ -1486,19 +1552,22 @@ html {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	margin-top: 0rem;
+	margin-right: 3rem;
+	margin-top: -3.5rem;
 	width: 30.75rem;
 }
 
-.price__img {
+.price__img img {
 	display: block;
-	margin: 1.5rem 0 2.5rem 5.8125rem;
-	max-height: 46.625rem;
-	max-width: 30.75rem;
+	height: 46.625rem;
+	width: 30.75rem;
 }
 
 .price__title {
+	font-size: 1rem;
+	line-height: 1.5rem;
 	padding: 0;
+	padding: 0rem 0 0.25rem;
 }
 
 .price__fish {
@@ -1510,10 +1579,6 @@ html {
 	transform: translateY(50%);
 	width: 27.3125rem;
 	z-index: 15;
-}
-
-.price__inner {
-	padding: 0 11.375rem 0 11.3125rem;
 }
 
 .section__title {
@@ -1582,6 +1647,7 @@ html {
 }
 
 .swiper-wrapper.campaign {
+	padding-bottom: 0.3125rem;
 	padding-left: 45.75rem;
 	width: 100%;
 }

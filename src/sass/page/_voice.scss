@@ -1,9 +1,12 @@
 @use "global" as *;
 
 .voice {
-  // padding: rem(11) 0 0;
-  @include mq(xl) {
-    position: relative;
-    padding-left: rem(40);
-  }
+  font-family: $base-font-family;
+  position: relative;
+  // @include mq(xl) {
+  //   padding-right: rem(16);
+  // }
+}
+.section__voice{
+  margin-bottom: rem(160);
 }

@@ -2,8 +2,8 @@
 
 .price__inner {
   display: flex;
-  justify-content: center;
-  @include mq(xl) {
-    padding: 0 rem(182) 0 rem(181);
-  }
+  justify-content: space-around;
+  // @include mq(xl) {
+  //   padding: 0 rem(182) 0 rem(181);
+  // }
 }

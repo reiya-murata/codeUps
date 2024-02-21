@@ -1,12 +1,13 @@
 @use "global" as *;
 
-.cards__blog {
+.blog__cards {
+  position: relative;
   @include mq(xl) {
-    position: relative;
     display: flex;
-    padding-left: rem(180);
-    padding-right: rem(181);
-    top: rem(-120);
-    justify-content: center;
+    justify-content: space-around;
+    padding-right: rem(180);
+    padding-left: rem(181);
+    top: rem(48);
+    width: 100%;
   }
 }
