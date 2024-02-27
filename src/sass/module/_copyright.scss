@@ -6,9 +6,8 @@
   text-align: center;
   color: $white;
   background-color: $blue;
-
   @include mq(xl) {
-    font-size: rem(12);
+    font-size: rem(14);
     line-height: rem(18);
     padding: 0 0 rem(56);
   }

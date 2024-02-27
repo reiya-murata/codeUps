@@ -10,3 +10,10 @@
     // width:rem(146) ;
   }
 }
+.contact__content p {
+  @include mq(xl) {
+    margin-bottom: rem(4);
+    line-height: rem(24);
+    font-size: rem(16);
+  }
+}

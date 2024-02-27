@@ -3,10 +3,9 @@
 .voice {
   font-family: $base-font-family;
   position: relative;
-  // @include mq(xl) {
-  //   padding-right: rem(16);
-  // }
 }
 .section__voice{
-  margin-bottom: rem(160);
+  @include mq(xl) {
+  margin-bottom: rem(144);
+  }
 }

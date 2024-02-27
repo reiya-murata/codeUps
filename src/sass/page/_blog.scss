@@ -3,9 +3,10 @@
 .blog {
   position: relative;
 }
-.section__blog{
+.section__blog {
   @include mq(xl) {
     position: relative;
-    padding: rem(116) 0 rem(138);
+    padding: rem(106) 0 rem(143);
+    padding-right: rem(2);
   }
 }

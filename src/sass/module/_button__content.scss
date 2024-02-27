@@ -48,7 +48,7 @@
 .button__information {
   position: absolute;
   @include mq(xl) {
-    top: calc(50% + rem(140));
+    top: calc(50% + rem(136));
     left: calc(50% + rem(292));
     transform: translate(-50%, -50%);
   }
@@ -62,20 +62,20 @@
 .button__blog {
   text-align: center;
   @include mq(xl) {
-    margin: rem(128) rem(16) 0 0;
+    margin: rem(118) rem(14) 0 0;
     padding: 0 0 0 rem(8);
   }
 }
 
 .button__voice {
   text-align: center;
-  margin: rem(72) rem(2) 0 0;
+  margin: rem(78) rem(4) 0 0;
 }
 .button__contact {
   position: absolute;
   @include mq(xl) {
-    top: calc(50%);
-    left: calc(50%);
+    top: calc(50% + rem(103));
+    left: calc(50% + rem(268));
     transform: translate(-50%, -50%);
     padding: rem(30) 0 rem(99);
     text-align: center;
@@ -83,7 +83,8 @@
 }
 .button__price{
   text-align: center;
-  // @include mq(xl) {
-    // 
-  // }
+  @include mq(xl) {
+    margin-top: rem(864);
+    margin-right: rem(4);
+  }
 }

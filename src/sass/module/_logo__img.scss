@@ -1,17 +1,6 @@
 @use "global" as *;
 
-.logo__img--bottom {
-  position: absolute;
-  display: block;
-
-  @include mq(xl) {
-    width: rem(200);
-    top: rem(80);
-    left: rem(180);
-  }
-}
-
-.logo__img img {
+.logo__img--codeups img {
   position: relative;
   display: inline-block;
   @include mq(xl) {
@@ -19,8 +8,11 @@
     width: rem(133);
     height: rem(50);
   }
+  @include mq(sp) {
+    width: rem(102);
+    height: rem(38);
 }
-.logo__img a {
+.logo__img--codeups a {
   display: inline-block;
 }
 
@@ -44,13 +36,13 @@
     display: block;
     width: rem(301);
     height: rem(138);
-    top: calc(50% + rem(440));
+    top: calc(50% + rem(438));
     left: calc(50% - rem(470));
     transform: translate(-50%, -50%);
   }
 }
 
-.logo__voice--ibaratatu {
+.voice__logo--ibaratatu {
   display: none;
   position: absolute;
   z-index: 10;
@@ -61,5 +53,16 @@
     display: block;
     width: rem(71);
     height: rem(162);
+  }
+}
+
+.logo__img--codeups--bottom  {
+  position: absolute;
+  z-index: 15;
+  @include mq(xl) {
+    width: rem(200);
+    top: calc(50% + rem(122));
+    left: calc(50% + rem(280));
+    transform: translate(-50%, -50%);
   }
 }

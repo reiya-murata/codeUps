@@ -1,14 +1,12 @@
 @use "global" as *;
 
 .facebook__icon {
+  position:absolute;
   @include mq(xl) {
-    // position: absolute;
-    // width: rem(32);
-    // height: rem(32);
-    // top: 50%;
-    // left: 30%;
+    top: calc(50% + rem(16));
+    left: calc(50% + rem(16));
+    transform: translate(-50%, -50%);
     width: rem(32);
     height: rem(32);
-    margin: 0 rem(16) 0 rem(15);
   }
 }

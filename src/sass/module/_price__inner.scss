@@ -1,9 +1,0 @@
-@use "global" as *;
-
-.price__inner {
-  display: flex;
-  justify-content: space-around;
-  // @include mq(xl) {
-  //   padding: 0 rem(182) 0 rem(181);
-  // }
-}

@@ -2,13 +2,13 @@
 
 .contact__map img {
   aspect-ratio: 273 / 148;
-
+  position: absolute;
   @include mq(xl) {
     width: rem(273);
     height: rem(148);
-    // margin: 0 rem(21)0 0;
-    // width: rem(273);
-    // height: rem(148);
-    right: 0;
+    top: calc(50% + rem(45));
+    left: calc(50% - rem(186));
+    transform: translate(-50%, -50%);
+    
   }
 }

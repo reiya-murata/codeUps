@@ -2,9 +2,15 @@
 
 .price {
   background-color: #ddf0f1;
-  padding: rem(80) 0;
   position: relative;
-  width: 100%;
   @include mq(xl) {
+    padding: rem(100) 0 rem(102);
   }
+}
+.section__price {
+  position: relative;
+  display: flex;
+  // @include mq(xl) {
+  //   padding: 0 rem(182) 0 rem(181);
+  // }
 }

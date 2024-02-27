@@ -31,23 +31,21 @@
 
 .nav__item {
   @include mq(xl) {
-    padding-top: rem(24);
+    padding-top: rem(18);
     // padding-left: rem(37);
   }
 }
 
 .nav__item--bold {
-  font-weight: $bold;
-  // padding-top: rem(40);
-  // padding-left: rem(37);
+  position: relative;
   @include mq(xl) {
-    // padding-top: rem(25);
-    padding-top: rem(40);
+    font-weight: $bold;
+    margin-top: rem(34);
   }
 }
 
 .nav__item--bold.top {
-  padding-top: 0;
+  margin-top: 0;
 }
 
 .nav__item--bottom {
@@ -61,6 +59,7 @@
 }
 .nav__bottom--icons {
   display: flex;
+  position: absolute;
   flex-direction: column;
 }
 

@@ -1,22 +1,15 @@
 @use "global" as *;
 
-.contact__logo {
+.contact__logo--codeups {
   position: relative;
   border-bottom: rem(1) solid $blue;
   @include mq(xl) {
-    // width: rem(440);
-    // height: rem(65);
-    // position: absolute;
-    // top: rem(80);
-    // left: rem(351);
-    // width: rem(440);
-    // height: rem(65);
-    padding: 0 rem(119) 0 rem(121);
+    padding: 0 rem(119) rem(9) rem(121);
     margin: rem(80) rem(82) rem(24) rem(50);
   }
 }
 
-.contact__logo img {
+.contact__logo--codeups img {
   @include mq(xl) {
     width: rem(200);
   }

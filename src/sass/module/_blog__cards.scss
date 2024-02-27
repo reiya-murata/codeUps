@@ -4,10 +4,10 @@
   position: relative;
   @include mq(xl) {
     display: flex;
-    justify-content: space-around;
-    padding-right: rem(180);
-    padding-left: rem(181);
-    top: rem(48);
+    justify-content: center;
+    // padding-right: rem(180);
+    // padding-left: rem(181);
+    top: rem(40);
     width: 100%;
   }
 }

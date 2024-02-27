@@ -1,32 +1,37 @@
 @use "global" as *;
 
-.price__contents {
+.price__contents--left {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
   @include mq(xl) {
     width: rem(492);
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin-right: rem(48);
-    margin-top: rem(-56);
+    top: calc(50% + rem(344));
+    left: calc(50% - rem(294));
+    transform: translate(-50%, -50%);
+  }
+}
+.price__contents--right {
+  display: none;
+  @include mq(xl) {
+    display: block;
   }
 }
 
 .price__content {
-  position: relative;
   display: flex;
   justify-content: space-between;
   width: 100%;
+  font-family: $base-font-family;
 }
 
-// .price__img{
-  
-// }
-.price__img img{
-  display: none;
+.price__img img {
   position: absolute;
   @include mq(xl) {
-    top: calc(50% + rem(20);
-    left: calc(50% + rem(500));
+    top: calc(50% + rem(413));
+    left: calc(50% + rem(292));
     transform: translate(-50%, -50%);
     display: block;
     width: rem(492);
@@ -42,23 +47,27 @@
     padding: 0;
     line-height: rem(24);
     font-size: rem(16);
-    padding: rem(0) 0 rem(4);
+    padding: rem(39) 0 rem(4);
   }
 }
 
 .price__item {
-  font-size: rem(14);
   font-family: $base-font-family;
-  line-height: rem(24);
-  font-weight: $normal;
-  padding: rem(8) 0;
+  @include mq(xl) {
+    font-size: rem(16);
+    line-height: rem(24);
+    font-weight: $normal;
+    padding: rem(8) 0 0;
+  }
 }
 
 .price__price {
-  font-size: rem(14);
   font-family: $base-font-family;
-  line-height: rem(24);
-  font-weight: $normal;
-  padding: rem(8) 0;
-  text-align: right;
+  @include mq(xl) {
+    font-size: rem(16);
+    line-height: rem(24);
+    font-weight: $normal;
+    padding: rem(8) 0 0;
+    text-align: right;
+  }
 }

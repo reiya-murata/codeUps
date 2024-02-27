@@ -9,46 +9,8 @@
     margin: rem(40) rem(20) 0;
   }
 }
-.card__header img {
-  max-width: rem(301);
-  max-height: rem(201);
-  aspect-ratio: 301 / 201;
-  @include mq(xl) {
-    display: inline-block;
-    width: rem(301);
-    height: rem(201);
-    margin: rem(16) rem(16) rem(12);
-  }
-}
 
-.card__header {
-  text-align: center;
-}
-.card__header--left {
-  display: flex;
-  flex-direction: column;
-}
-.card__header--left--top {
-  display: flex;
-  justify-content: space-between;
-}
-
-.card__date {
-  font-family: $second-font-family;
-  @include mq(xl) {
-    font-size: rem(12);
-    line-height: rem(18);
-    padding-left: rem(16);
-  }
-}
-.card__title {
-  border-bottom: rem(1) solid $blue;
-  font-family: $base-font-family;
-  @include mq(xl) {
-    font-size: rem(16);
-    margin: 0 rem(16);
-  }
-}
+// campaign
 
 .card__text {
   font-size: rem(16);
@@ -65,19 +27,36 @@
   }
 }
 
-.card__prices {
+.card__campaign--prices {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
-.card__price h3 {
+.card__campaign--price h3 {
   font-family: $third-font-family;
   font-weight: $bold;
   text-decoration: line-through red rem(3);
   @include mq(xl) {
     font-size: rem(24);
     padding: rem(18) rem(16) 0 rem(2);
+    line-height: rem(28);
+  }
+}
+.card__campaign--prices--night {
+  display: flex;
+  justify-content: center;
+  @include mq(xl) {
+    margin: rem(0) rem(24) 0 rem(2);
+  }
+}
+.card__campaign--price--night h3 {
+  font-family: $third-font-family;
+  font-weight: $bold;
+  text-decoration: line-through red rem(3);
+  @include mq(xl) {
+    font-size: rem(24);
+    padding: rem(18) rem(16) 0 rem(0);
     line-height: rem(28);
   }
 }
@@ -96,15 +75,163 @@
     letter-spacing: rem(0);
   }
 }
+
+.slider {
+  font-family: $base-font-family;
+  margin: auto;
+  box-shadow: rem(2) rem(2) rem(10) rem(0) rgba(0, 0, 0, 0.25);
+  @include mq(xl) {
+    width: rem(280);
+    padding-bottom: rem(5);
+  }
+}
+
+.card__header--slider img {
+  aspect-ratio: 333 /223;
+  @include mq(xl) {
+    width: rem(333);
+    // min-height: rem(223);
+  }
+}
+
+.card__icon--slider {
+  display: flex;
+  align-items: center;
+  color: $blue;
+  border: rem(1) solid $blue;
+  font-family: $base-font-family;
+  text-align: start;
+  justify-content: baseline;
+  @include mq(xl) {
+    // width: rem(116);
+    width: fit-content;
+    height: rem(34);
+    margin: rem(24) 0 rem(2) rem(16);
+    font-size: rem(12);
+    line-height: rem(22);
+    letter-spacing: rem(-2.1);
+  }
+}
+
+.card__icon--slider h3 {
+  display: inline-block;
+  @include mq(xl) {
+    padding: 0 rem(16);
+  }
+}
+
+.card__title--campaign {
+  display: flex;
+  align-items: baseline;
+  border-bottom: rem(1) solid $blue;
+  font-family: $base-font-family;
+  @include mq(xl) {
+    font-size: rem(16);
+    letter-spacing: rem(-2.8);
+    margin-left: rem(16);
+    padding-bottom: rem(6);
+    width: rem(301);
+  }
+}
+
+.card__text--slider {
+  text-align: center;
+  font-family: $base-font-family;
+  font-weight: $normal;
+  @include mq(xl) {
+    padding-top: rem(14);
+    padding-right: rem(14);
+    font-size: rem(16);
+  }
+}
+// blog
+.card__blog {
+  box-shadow: rem(2) rem(2) rem(10) rem(0) rgba(0, 0, 0, 0.25);
+  font-family: $base-font-family;
+  background-color: $white;
+  position: relative;
+  @include mq(xl) {
+    width: rem(333);
+    margin: rem(40) rem(20) 0;
+  }
+}
+
+.card__header--blog {
+  text-align: center;
+}
+
+.card__header--blog img {
+  width: rem(301);
+  max-height: rem(201);
+  aspect-ratio: 301 / 201;
+  @include mq(xl) {
+    display: inline-block;
+    width: rem(301);
+    margin: rem(16) rem(16) rem(12);
+  }
+}
+
+.card__title--blog {
+  border-bottom: rem(1) solid $blue;
+  font-family: $base-font-family;
+  @include mq(xl) {
+    padding-bottom: rem(4);
+    font-size: rem(16);
+    margin: 0 rem(16);
+  }
+}
+
 // voice
+.cards__voice {
+  @include mq(xl) {
+    align-items: start;
+    display: flex;
+    padding: 0 0;
+    justify-content: center;
+  }
+}
+.cards__voice .card {
+  @include mq(xl) {
+    margin: rem(32) rem(20) 0;
+  }
+}
+.card__inner--voice {
+  @include mq(xl) {
+    padding: rem(22) rem(16) rem(24);
+    width: rem(520);
+    // height: rem(396);
+  }
+}
+
+.card__header--voice {
+  display: flex;
+}
+.card__header--voice--left {
+  display: flex;
+  flex-direction: column;
+}
+.card__header--voice--left--top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__date {
+  font-family: $second-font-family;
+  @include mq(xl) {
+    font-size: rem(12);
+    line-height: rem(18);
+    padding-left: rem(16);
+  }
+}
 
 .card__title--voice {
   flex-direction: column;
   @include mq(xl) {
     width: rem(276);
-    margin-right: rem(16);
+    margin-right: rem(8);
+    margin-left: rem(8);
     padding-top: rem(8);
-    padding-left: rem(8);
+    padding-bottom: rem(2);
     font-size: rem(24);
     font-weight: $bold;
     font-family: $base-font-family;
@@ -118,93 +245,9 @@
     margin: 0 0 0 rem(8);
     width: rem(180);
     height: rem(140);
-    
   }
 }
 
-.slider {
-  font-family: $base-font-family;
-  margin: auto;
-  box-shadow: rem(2) rem(2) rem(10) rem(0) rgba(0, 0, 0, 0.25);
-
-  @include mq(xl) {
-    width: rem(280);
-    padding-bottom: rem(5);
-  }
-}
-.card__header--slider img {
-  aspect-ratio: 333 /223;
-  @include mq(xl) {
-    min-width: rem(333);
-    min-height: rem(223);
-  }
-}
-.card__icon--slider {
-  display: flex;
-  align-items: center;
-  color: $blue;
-  border: rem(1) solid $blue;
-  font-family: $base-font-family;
-  text-align: start;
-  justify-content: baseline;
-  @include mq(xl) {
-    // width: rem(116);
-    width: fit-content;
-    height: rem(34);
-    margin: rem(24) rem(16) rem(4);
-    font-size: rem(12);
-    line-height: rem(22);
-    letter-spacing: rem(-2);
-  }
-}
-.card__icon--slider h3 {
-  display: inline-block;
-  @include mq(xl) {
-    padding: 0 rem(16);
-  }
-}
-
-.card__title--slider {
-  display: flex;
-  align-items: baseline;
-  border-bottom: rem(1) solid $blue;
-  font-family: $base-font-family;
-  @include mq(xl) {
-    font-size: rem(16);
-    letter-spacing: rem(-2.8);
-    margin-left: rem(16);
-    padding-bottom: rem(6);
-    width: rem(301);
-  }
-}
-.card__text--slider {
-  text-align: center;
-  font-family: $base-font-family;
-  font-weight: $normal;
-  @include mq(xl) {
-    padding-top: rem(16);
-    padding-right: rem(14);
-    font-size: rem(16);
-  }
-}
-
-.cards--voice {
-  @include mq(xl) {
-    display: flex;
-    padding:  0 0  ;
-    justify-content: center;
-  }
-}
-.card__inner--voice {
-  padding: rem(15) rem(16) rem(24);
-  @include mq(xl) {
-    width: rem(520);
-    height: rem(396);
-  }
-}
-.card__header--voice {
-  display: flex;
-}
 .card__age {
   @include mq(xl) {
     padding: rem(40) 0 0 rem(8);
@@ -214,6 +257,7 @@
     font-weight: $normal;
   }
 }
+
 .card__icon {
   display: inline-block;
   color: $blue;
@@ -225,7 +269,8 @@
     margin: rem(24) rem(8) 0 0;
   }
 }
-.card__text--voice{
+
+.card__text--voice {
   @include mq(xl) {
     padding: rem(40) rem(16) 0 rem(8);
   }
