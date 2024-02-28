@@ -3,14 +3,18 @@
 .price {
   background-color: #ddf0f1;
   position: relative;
+  padding: rem(74) 0 rem(84);
+  box-shadow: 0 rem(2) rem(5) 0 rgba(0, 0, 0, 0.5);
   @include mq(xl) {
     padding: rem(100) 0 rem(102);
+    box-shadow: none;
   }
 }
 .section__price {
   position: relative;
   display: flex;
-  // @include mq(xl) {
-  //   padding: 0 rem(182) 0 rem(181);
-  // }
+  @include mq(xl) {
+    position: relative;
+    display: flex;
+  }
 }

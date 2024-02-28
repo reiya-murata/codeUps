@@ -5,12 +5,11 @@
   font-weight: $regular;
   color: $blue;
   position: relative;
-
   padding-top: rem(240);
   @include mq(xl) {
     display: flex;
     justify-content: center;
-    padding-top: rem(240);
+    padding-top: rem(200);
   }
 }
 
@@ -46,7 +45,6 @@
 .about__text {
   font-family: $base-font-family;
   font-weight: normal;
-  
   @include mq(xl) {
     color: $white;
   }
@@ -61,6 +59,7 @@
     height: rem(144);
     z-index: 12;
     margin-left: rem(40);
+    padding:rem(40) 0 0 0;
   }
 }
 .about__text span{

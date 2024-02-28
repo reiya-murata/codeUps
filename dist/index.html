@@ -458,7 +458,8 @@
                 <p>
                   ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
                   <br />
-                  ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト <span>が入ります。</span> 
+                  ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
+                  <span>が入ります。</span>
                 </p>
               </div>
               <div class="button__about">
@@ -735,11 +736,16 @@
                 </div>
               </div>
             </div>
-
             <div class="price__contents--right">
-              <div class="price__img">
-                <img src="..\assets\images\common\price__img.1.jpg" alt="" />
-              </div>
+              <picture class="price__img">
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="..\assets\images\common\price__sp.jpg" alt="ウミガメの画像" />
+                  <source
+                    media="(min-width: 767px)"
+                    srcset="..\assets\images\common\price__img.1.jpg" alt="サンゴと赤い魚の画像" />
+                    <img src="..\assets\images\common\price__img.1.jpg" alt="サンゴと赤い魚の画像">
+                </picture>             
             </div>
           </div>
           <div class="button__price">
@@ -764,9 +770,18 @@
             <div class="address__card">
               <div class="contact__left">
                 <div class="contact__logo--codeups">
-                  <img
-                    src="../assets\images\common\cordUps_blue.svg"
-                    alt="cordUpsのロゴ" />
+                  <picture class="logo__img--codeups">
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="..\assets\images\common\CodeUps__bottom--sp.svg" />
+                    <source
+                      media="(min-width: 767px)"
+                      srcset="../assets\images\common\cordUps_blue.svg" />
+                      <img
+                      src="../assets\images\common\cordUps_blue.svg"
+                      alt="cordUpsのロゴ" />
+                  </picture>
+
                 </div>
                 <div class="contact__left--address">
                   <div class="contact__content">

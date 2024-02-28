@@ -1,5 +1,5 @@
 @use "global" as *;
-
+// header
 .logo__img--codeups img {
   position: absolute;
   display: inline-block;
@@ -12,19 +12,19 @@
     width: rem(133);
   }
 }
-
 .logo__img--codeups a {
   display: inline-block;
 }
 
+// blog
 .blog__logo--1 {
   display: none;
-  position: absolute;
   @include mq(xl) {
+    position: absolute;
     display: block;
     width: rem(437);
     height: rem(201);
-    top: calc(50% - rem(356));
+    top: calc(50% - rem(360));
     left: calc(50% - rem(400));
     transform: translate(-50%, -50%);
   }
@@ -43,6 +43,7 @@
   }
 }
 
+// voice
 .voice__logo--ibaratatu {
   display: none;
   position: absolute;
@@ -57,12 +58,67 @@
   }
 }
 
-.logo__img--codeups--bottom {
+// contact
+.contact__logo--fish {
   position: absolute;
-  z-index: 15;
+  width: rem(109);
+  height: rem(50);
+  top: calc(50% - rem(134));
+  left: calc(50% + rem(118));
+  transform: translate(-50%, -50%);
+  @include mq(xl) {
+    position: absolute;
+    width: rem(301);
+    height: rem(138);
+    top: calc(50% - rem(188));
+    left: calc(50% + rem(520));
+    transform: translate(-50%, -50%);
+    z-index: 10;
+  }
+}
+.contact__logo--codeups {
+  position: relative;
+  text-align: center;
+
+  @include mq(xl) {
+    position: relative;
+    padding: 0 rem(119) rem(9) rem(121);
+    margin: rem(80) rem(82) rem(24) rem(50);
+  }
+}
+.contact__logo--codeups source {
+  width: rem(174);
   @include mq(xl) {
     width: rem(200);
-    top: calc(50% + rem(122));
+  }
+}
+.contact__logo--codeups img {
+  z-index: 15;
+  width: rem(295);
+  top: calc(50% + rem(115));
+  left: calc(50% + rem(0));
+  transform: translate(-50%, -50%);
+  border-bottom: rem(1) solid $blue;
+  padding: 0 rem(60) rem(4);
+  @include mq(xl) {
+    width: rem(440);
+    padding: 0 rem(120) rem(8);
+    top: calc(50% + rem(38));
+    left: calc(50% + rem(0));
+    transform: translate(-50%, -50%);
+  }
+}
+
+// footer
+.logo__img--codeups--bottom {
+  position: absolute;
+  width: rem(174);
+  height: rem(65);
+  z-index: 15;
+  @include mq(xl) {
+    position: absolute;
+    width: rem(200);
+    top: calc(50% + rem(114));
     left: calc(50% + rem(280));
     transform: translate(-50%, -50%);
   }

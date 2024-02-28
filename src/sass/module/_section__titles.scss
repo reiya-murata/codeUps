@@ -50,12 +50,13 @@
 }
 
 .section__titles--blog {
-  font-size: rem(32);
   font-family: $second-font-family;
-  line-height: rem(40);
   text-transform: capitalize;
   font-weight: $regular;
+
   @include mq(xl) {
+    font-size: rem(32);
+    line-height: rem(40);
     text-transform: capitalize;
     color: $white;
     text-align: center;
@@ -79,12 +80,24 @@
   }
 }
 
+.section__titles--blog::first-letter {
+  color: $blue;
+  font-weight: $regular;
+  text-transform: capitalize;
+  @include mq(xl) {
+    color: $white;
+  }
+}
+
 .section__subtitle__blog {
   font-family: $base-font-family;
-  color: $white;
+  color: $blue;
+  font-size: rem(12);
+  margin-top: rem(5);
   text-align: center;
+  font-weight: $regular;
   @include mq(xl) {
-    padding-top: rem(8);
+    color: $white;
     font-size: rem(12);
     font-weight: $regular;
     line-height: rem(18);
@@ -92,12 +105,16 @@
 }
 
 .section__titles--price {
-  margin-right: rem(8);
+  @include mq(xl) {
+    margin-right: rem(8);
+  }
 }
 .section__title--contact {
   position: relative;
   text-transform: capitalize;
   font-family: $second-font-family;
+  font-size: rem(80);
+  margin-bottom: rem(16);
   @include mq(xl) {
     font-size: rem(80);
     line-height: rem(80);
@@ -116,20 +133,29 @@
   font-family: $base-font-family;
   color: $blue;
   text-align: center;
+  font-size: rem(12);
+  font-weight: $regular;
+  margin-bottom: rem(4);
   @include mq(xl) {
     padding: 0;
     font-size: rem(12);
     line-height: rem(18);
     padding-bottom: rem(8);
+    margin-bottom: 0;
   }
 }
 .section__subtitle--contact2 {
   font-size: rem(14);
-  font-family: $base-font-family;
+  font-weight: $regular;
   color: $blue;
-  line-height: rem(18);
-  // padding-top: rem(8);
-  text-align: center;
+  @include mq(xl) {
+    font-size: rem(14);
+    font-family: $base-font-family;
+    color: $blue;
+    line-height: rem(18);
+    // padding-top: rem(8);
+    text-align: center;
+  }
 }
 
 .section__title--contact {
