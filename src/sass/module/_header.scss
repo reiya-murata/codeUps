@@ -1,6 +1,7 @@
 @use "global" as *;
 
 .header {
+  position: relative;
   width: 100vw;
   // height: rem(80);
   background: #0d293689;
@@ -8,15 +9,16 @@
   display: flex;
   justify-content: space-between;
   z-index: 20;
+  text-align: center;
+  align-items: center;
+  height: rem(80);
   @include mq(xl) {
     height: rem(90);
-    text-align: center;
-    align-items: center;
-    // justify-content: space-around;
   }
 }
 
 .header__inner {
+  position: relative;
   display: flex;
   align-items: center;
   width: 100vw;

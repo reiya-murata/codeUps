@@ -4,8 +4,8 @@
   font-family: $base-font-family;
   position: relative;
 }
-.section__voice{
+.section__voice {
   @include mq(xl) {
-  margin-bottom: rem(144);
+    margin-bottom: rem(144);
   }
 }

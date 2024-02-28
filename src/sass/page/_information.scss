@@ -3,11 +3,11 @@
 .information {
   // position: relative;
   background-color: #ddf0f1;
+  padding: rem();
   @include mq(xl) {
     padding: rem(90) 0 rem(94);
   }
 }
-
 
 .section__information {
   position: relative;

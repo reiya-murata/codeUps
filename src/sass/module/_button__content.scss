@@ -55,8 +55,23 @@
 }
 .button__campaign {
   text-align: center;
+  margin-right: rem(4);
   @include mq(xl) {
-    margin: rem(75) rem(16) 0 0;
+    margin: rem(35) rem(16) 0 0;
+  }
+}
+.button__about {
+  text-align: center;
+  position: absolute;
+  z-index: 10;
+  position: absolute;
+  top: calc(50% + rem(328));
+  left: calc(50% - rem(2));
+  transform: translate(-50%, -50%);
+  @include mq(xl) {
+    top: calc(50% + rem(232));
+    left: calc(50% + rem(296));
+    transform: translate(-50%, -50%);
   }
 }
 .button__blog {
@@ -81,7 +96,7 @@
     text-align: center;
   }
 }
-.button__price{
+.button__price {
   text-align: center;
   @include mq(xl) {
     margin-top: rem(864);

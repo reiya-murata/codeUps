@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .facebook__icon {
-  position:absolute;
+  position: absolute;
   @include mq(xl) {
     top: calc(50% + rem(16));
     left: calc(50% + rem(16));

@@ -65,9 +65,14 @@ var main__swiper = new Swiper(".main__swiper", {
 
 var swiper = new Swiper(".swiper__campaign", {
   loop: true,
-  slidesPerView: 4,
+  slidesPerView: 1,
   spaceBetween: 53,
   centeredSlides: true,
+  breakpoints: {
+    650: {
+      slidesPerView: 4
+    }
+  },
   pagination: {
     el: ".swiper-pagination",
     clickable: true

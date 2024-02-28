@@ -1,17 +1,18 @@
 @use "global" as *;
 
 .logo__img--codeups img {
-  position: relative;
+  position: absolute;
   display: inline-block;
+  width: rem(113);
+  top: rem(21);
+  left: rem(10);
+  z-index: 25;
   @include mq(xl) {
-    margin-top: rem(5);
+    left: rem(40);
     width: rem(133);
-    height: rem(50);
   }
-  @include mq(sp) {
-    width: rem(102);
-    height: rem(38);
 }
+
 .logo__img--codeups a {
   display: inline-block;
 }
@@ -56,7 +57,7 @@
   }
 }
 
-.logo__img--codeups--bottom  {
+.logo__img--codeups--bottom {
   position: absolute;
   z-index: 15;
   @include mq(xl) {

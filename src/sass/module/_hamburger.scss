@@ -2,18 +2,18 @@
 
 /* ハンバーガーアイコンのスタイル */
 .hamburger {
+  position: absolute;
+  right: rem(32);
+  top: rem(27);
   display: inline-block;
-  width: rem(30); /* rem(30) */
-  height: rem(30); /* rem(2) */
+  width: rem(30);
+  height: rem(30);
   background-color: transparent;
-  position: relative;
   cursor: pointer;
-  margin-top: rem(15);
-  z-index: 10;
-  @include mq(xl) {
+  z-index: 20;
+  @include mq(md) {
     display: none;
   }
-  right: rem(20);
 }
 
 .hamburger span {
@@ -29,15 +29,15 @@
 }
 
 .hamburger span:nth-child(2) {
-  top: rem(8);
+  top: rem(12);
 }
 
 .hamburger span:nth-child(3) {
-  top: rem(16);
+  top: rem(24);
 }
 
 .hamburger.active span:nth-child(1) {
-  transform: translateY(8px) rotate(45deg);
+  transform: translateY(11.5px) rotate(45deg);
 }
 
 .hamburger.active span:nth-child(2) {
@@ -45,5 +45,5 @@
 }
 
 .hamburger.active span:nth-child(3) {
-  transform: translateY(-8px) rotate(-45deg);
+  transform: translateY(-11.5px) rotate(-45deg);
 }

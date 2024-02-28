@@ -1,10 +1,12 @@
 @use "global" as *;
 
-
 .section__campaign {
   position: relative;
   text-align: center;
-  margin-top: rem(131);
+  margin-top: rem(36);
+  @include mq(xl) {
+    margin-top: rem(131);
+  }
 }
 
 .section__campaign h2 {

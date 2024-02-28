@@ -143,11 +143,17 @@
         <div class="header__inner">
           <div class="nav__inner--logo">
             <a href="#">
-              <div class="logo__img--codeups">
+              <picture class="logo__img--codeups">
+                <source
+                  media="(max-width: 767px)"
+                  srcset="..\assets\images\common\CodeUps (1).svg" />
+                <source
+                  media="(min-width: 767px)"
+                  srcset="..\assets\images\common\CodeUps.svg" />
                 <img
-                  src="\assets\images\common\CodeUps.svg"
-                  alt="codeUpsの画像" sizes="($sm)"/>
-              </div>
+                  src="..\assets\images\common\CodeUps (1).svg"
+                  alt="codeUpsの画像" />
+              </picture>
             </a>
           </div>
           <div class="nav__inner--list">
@@ -287,14 +293,14 @@
             <div class="swiper__campaign">
               <div class="section__titles">
                 <h2 class="section__title">Campaign</h2>
-                <h3 class="section__subtitle--campain">キャンペーン</h3>
+                <h3 class="section__subtitle--campaign">キャンペーン</h3>
               </div>
 
               <!-- Additional required wrapper -->
               <div class="swiper-wrapper campaign">
                 <!-- Slides -->
                 <div class="swiper-slide">
-                  <div class="card--slider">
+                  <div class="card__slider">
                     <div class="card__header--slider">
                       <img
                         src="..\assets\images\common\campaign.4.jpg"
@@ -320,7 +326,7 @@
                 </div>
 
                 <div class="swiper-slide">
-                  <div class="card--slider">
+                  <div class="card__slider">
                     <div class="card__header--slider">
                       <img
                         src="..\assets\images\common\campaign.1.jpg"
@@ -344,7 +350,7 @@
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="card--slider">
+                  <div class="card__slider">
                     <div class="card-hader-slider">
                       <div class="card__header--slider">
                         <img
@@ -371,7 +377,7 @@
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="card--slider">
+                  <div class="card__slider">
                     <div class="card__header--slider">
                       <img
                         src="..\assets\images\common\campaign.3.jpg"
@@ -452,10 +458,10 @@
                 <p>
                   ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
                   <br />
-                  ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+                  ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト <span>が入ります。</span> 
                 </p>
               </div>
-              <div class="about__button">
+              <div class="button__about">
                 <div class="button">
                   <a href="#">View more<span class="stickarrow"></span></a>
                 </div>

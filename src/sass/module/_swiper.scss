@@ -20,12 +20,11 @@
 }
 .swiper-wrapper.campaign {
   @include mq(xl) {
-    width: 100% ;
-    padding-left: rem(732);
+    width: 100%;
+    padding-left: rem(716);
     padding-bottom: rem(5);
   }
 }
-
 
 .swiper {
   // position: absolute;
@@ -34,20 +33,21 @@
 }
 .swiper__campaign {
   overflow: hidden;
-  height: 80%;
+  @include mq(xl) {
+    height: 80%;
+  }
 }
-
-
 .swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
 }
 
-
 .swiper-button-next {
-  position:absolute;
+  position: absolute;
+  display: none;
   @include mq(xl) {
+    display: block;
     top: calc(50% - rem(284));
     left: calc(50% + rem(494));
     transform: translate(-50%, -50%);
@@ -58,7 +58,9 @@
 
 .swiper-button-prev {
   position: absolute;
+  display: none;
   @include mq(xl) {
+    display: block;
     top: calc(50% - rem(283));
     left: calc(50% + rem(333));
     transform: translate(-50%, -50%);

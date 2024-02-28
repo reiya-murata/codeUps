@@ -1,7 +1,8 @@
 @use "global" as *;
 
 .section__title {
-  font-size: rem(40);
+  font-size: rem(32);
+  font-weight: $regular;
   font-family: $second-font-family;
   text-align: center;
   color: $black;
@@ -24,6 +25,8 @@
 .section__subtitle {
   font-family: $base-font-family;
   color: $blue;
+  font-size: rem(12);
+  font-weight: $regular;
   text-align: center;
   @include mq(xl) {
     padding: rem(8) rem(0) 0 0;
@@ -32,9 +35,11 @@
     line-height: rem(18);
   }
 }
-.section__subtitle--campain{
+.section__subtitle--campaign {
   font-family: $base-font-family;
   color: $blue;
+  font-size: rem(12);
+  font-weight: $regular;
   text-align: center;
   @include mq(xl) {
     margin: rem(8) rem(12) 0 0;

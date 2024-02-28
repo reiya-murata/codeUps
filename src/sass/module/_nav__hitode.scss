@@ -32,7 +32,7 @@
     height: rem(18);
   }
 }
-.nav__hitode--bottom--right{
+.nav__hitode--bottom--right {
   position: absolute;
   @include mq(xl) {
     top: calc(50% + rem(2));

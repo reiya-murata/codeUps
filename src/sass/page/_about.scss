@@ -4,6 +4,8 @@
   position: relative;
 }
 .section__about {
+  margin-top: rem(80);
+  margin-bottom: rem(0);
   @include mq(xl) {
     margin-top: rem(130);
     margin-bottom: rem(410);
