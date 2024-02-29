@@ -27,6 +27,8 @@
   font-size: rem(18);
   line-height: rem(18);
   @include mq(xl) {
+    font-weight: $regular;
+    font-family: $second-font-family;
     font-size: rem(18);
     line-height: rem(18);
   }
@@ -46,31 +48,3 @@
   }
 }
 
-.nav__bottom--flexes {
-  @include mq(xl) {
-    display: flex;
-    justify-content: space-between;
-    padding: rem(176) rem(0) rem(80) rem(0);
-    // width: 80%;
-    margin: auto;
-  }
-}
-
-.nav__bottom--flex {
-  @include mq(xl) {
-    // width: rem(148);
-    margin-left: rem(2);
-  }
-}
-.nav__bottom--flex--fast {
-  @include mq(xl) {
-    margin-left: rem(202);
-  }
-}
-
-.nav__bottom--flex--bold {
-  @include mq(xl) {
-    width: rem(160);
-    margin-right: rem(252);
-  }
-}

@@ -6,7 +6,10 @@
   margin-left: rem(15);
 }
 .nav__hitode img {
+  width: rem(18);
+  height: rem(18);
   @include mq(xl) {
+    position: absolute;
     width: rem(18);
     height: rem(18);
   }
@@ -14,9 +17,12 @@
 
 .nav__hitode--bottom {
   position: absolute;
+  width: rem(18);
+  height: rem(18);
   @include mq(xl) {
-    top: calc(50% + rem(2));
-    left: calc(50% - rem(79));
+    position: absolute;
+    top: calc(50% + rem(0));
+    left: calc(50% - rem(75));
     transform: translate(-50%, -50%);
     width: rem(18);
     height: rem(18);
@@ -24,8 +30,11 @@
 }
 .nav__hitode--bottom--left {
   position: absolute;
+  width: rem(18);
+  height: rem(18);
   @include mq(xl) {
-    top: calc(50% + rem(2));
+    position: absolute;
+    top: calc(50% + rem(0));
     left: calc(50% - rem(84));
     transform: translate(-50%, -50%);
     width: rem(18);
@@ -34,36 +43,14 @@
 }
 .nav__hitode--bottom--right {
   position: absolute;
+  width: rem(18);
+  height: rem(18);
   @include mq(xl) {
-    top: calc(50% + rem(2));
-    left: calc(50% - rem(94));
+    position: absolute;
+    top: calc(50% + rem(0));
+    left: calc(50% - rem(90));
     transform: translate(-50%, -50%);
     width: rem(18);
     height: rem(18);
   }
 }
-// .nav__hitode--bottom img {
-//   position: absolute;
-//   @include mq(xl) {
-//     top: calc(50% + rem(14));
-//     left: calc(50% - rem(79));
-//     transform: translate(-50%, -50%);
-//     width: rem(18);
-//     height: rem(18);
-//   }
-// }
-
-// .nav__hitode--bottom {
-//   position: relative;
-//   margin-top: rem(18);
-// }
-// .nav__hitode--bottom img {
-//   position: absolute;
-//   @include mq(xl) {
-//     top: calc(50% + rem(15));
-//     left: calc(50% - rem(79));
-//     transform: translate(-50%, -50%);
-//     width: rem(18);
-//     height: rem(18);
-//   }
-// }

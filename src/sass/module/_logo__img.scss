@@ -63,7 +63,7 @@
   position: absolute;
   width: rem(109);
   height: rem(50);
-  top: calc(50% - rem(134));
+  top: calc(50% - rem(227));
   left: calc(50% + rem(118));
   transform: translate(-50%, -50%);
   @include mq(xl) {
@@ -99,7 +99,7 @@
   left: calc(50% + rem(0));
   transform: translate(-50%, -50%);
   border-bottom: rem(1) solid $blue;
-  padding: 0 rem(60) rem(4);
+  padding: 0 rem(60) rem(6);
   @include mq(xl) {
     width: rem(440);
     padding: 0 rem(120) rem(8);
@@ -112,14 +112,53 @@
 // footer
 .logo__img--codeups--bottom {
   position: absolute;
-  width: rem(174);
-  height: rem(65);
+  width: rem(120);
+  height: rem(45);
   z-index: 15;
+  top: calc(50% + rem(70));
+  left: calc(50% + rem(76));
+  transform: translate(-50%, -50%);
   @include mq(xl) {
     position: absolute;
     width: rem(200);
-    top: calc(50% + rem(114));
+    top: calc(50% + rem(104));
     left: calc(50% + rem(280));
     transform: translate(-50%, -50%);
+  }
+}
+
+.sns__icons {
+  display: flex;
+  position: absolute;
+  @include mq(xl) {
+    position: absolute;
+    top: rem(118);
+    left: rem(420);
+  }
+}
+.instagram__icon {
+  position: absolute;
+  z-index: 10;
+  @include mq(xl) {
+    position: absolute;
+    top: calc(50% + rem(16));
+    left: calc(50% + rem(64));
+    transform: translate(-50%, -50%);
+    width: rem(32);
+    height: rem(32);
+    z-index: 10;
+  }
+}
+.facebook__icon {
+  position: absolute;
+  z-index: 10;
+  @include mq(xl) {
+    position: absolute;
+    top: calc(50% + rem(16));
+    left: calc(50% + rem(16));
+    transform: translate(-50%, -50%);
+    width: rem(32);
+    height: rem(32);
+    z-index: 10;
   }
 }

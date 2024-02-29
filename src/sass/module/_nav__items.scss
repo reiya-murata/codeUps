@@ -5,9 +5,15 @@
   z-index: 10;
   color: $white;
   font-weight: $regular;
-  padding-top: rem(64);
+  padding-top: rem(0);
   z-index: 15;
+  @include mq(xl) {
+    padding-top: rem(0);
+    font-weight: $regular;
+    font-family: $base-font-family;
+  }
 }
+
 
 .nav_item a {
   display: block;
@@ -32,20 +38,26 @@
 .nav__item {
   @include mq(xl) {
     padding-top: rem(18);
-    // padding-left: rem(37);
   }
 }
 
 .nav__item--bold {
-  position: relative;
+  font-weight: $bold;
+  margin-top: rem(34);
   @include mq(xl) {
+    position: relative;
     font-weight: $bold;
     margin-top: rem(34);
   }
 }
 
 .nav__item--bold.top {
-  margin-top: 0;
+  margin-top: rem(34 );
+  font-weight: $bold;
+  @include mq(xl) {
+    font-weight: $bold;
+    margin-top: rem(0);
+  }
 }
 
 .nav__item--bottom {
