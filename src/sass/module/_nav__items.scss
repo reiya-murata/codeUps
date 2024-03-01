@@ -36,18 +36,19 @@
 }
 
 .nav__item {
+  padding-top: rem(24);
   @include mq(xl) {
-    padding-top: rem(18);
+    padding-top: rem(24);
   }
 }
 
 .nav__item--bold {
   font-weight: $bold;
-  margin-top: rem(34);
+  margin-top: rem(40);
   @include mq(xl) {
     position: relative;
     font-weight: $bold;
-    margin-top: rem(34);
+    margin-top: rem(40);
   }
 }
 

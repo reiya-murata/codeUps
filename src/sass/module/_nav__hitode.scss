@@ -17,12 +17,15 @@
 
 .nav__hitode--bottom {
   position: absolute;
-  width: rem(18);
-  height: rem(18);
+    top: calc(50% - rem(70));
+    left: calc(50% - rem(88));
+    transform: translate(-50%, -50%);
+    width: rem(18);
+    height: rem(18);
   @include mq(xl) {
     position: absolute;
     top: calc(50% + rem(0));
-    left: calc(50% - rem(75));
+    left: calc(50% - rem(77));
     transform: translate(-50%, -50%);
     width: rem(18);
     height: rem(18);
@@ -30,8 +33,11 @@
 }
 .nav__hitode--bottom--left {
   position: absolute;
-  width: rem(18);
-  height: rem(18);
+    top: calc(50% - rem(76));
+    left: calc(50% - rem(90));
+    transform: translate(-50%, -50%);
+    width: rem(18);
+    height: rem(18);
   @include mq(xl) {
     position: absolute;
     top: calc(50% + rem(0));
@@ -43,12 +49,15 @@
 }
 .nav__hitode--bottom--right {
   position: absolute;
-  width: rem(18);
-  height: rem(18);
+    top: calc(50% + rem(56));
+    left: calc(50% + rem(20));
+    transform: translate(-50%, -50%);
+    width: rem(18);
+    height: rem(18);
   @include mq(xl) {
     position: absolute;
     top: calc(50% + rem(0));
-    left: calc(50% - rem(90));
+    left: calc(50% - rem(94));
     transform: translate(-50%, -50%);
     width: rem(18);
     height: rem(18);

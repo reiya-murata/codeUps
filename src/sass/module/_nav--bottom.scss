@@ -3,68 +3,106 @@
 .nav__bottom {
   background-color: $blue;
   position: relative;
-  padding-bottom: rem(500);
+  padding-bottom: rem(40);
   @include mq(xl) {
     padding: 0;
   }
 }
 
 .nav__bottom--flexes {
+  position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  line-height: rem(18);
   @include mq(xl) {
     display: flex;
     flex-direction: initial;
     justify-content: center;
-    padding: rem(176) rem(0) rem(80) rem(0);
+    padding: rem(176) rem(0) rem(80) rem(40);
     // width: 80%;
-    margin-right:rem(52) ;
+    margin-right: rem(0);
+    margin-top: rem(4);
   }
 }
 
 .nav__bottom--left {
+  position: relative;
   display: flex;
   flex-direction: column;
-  margin-top: rem(138);
-  margin-left:rem(38) ;
+  margin: rem(138) 0 0 rem(0);
+  padding: 0 0 0 rem(12);
+  width: rem(168);
   @include mq(xl) {
-    margin: 0;
+    width: auto;
+    margin: 0 0 0 rem(0);
+    padding: 0 rem(16) 0 rem(0);
     display: flex;
     flex-direction: initial;
     justify-content: space-between;
   }
 }
 .nav__bottom--right {
+  position: relative;
   display: flex;
   flex-direction: column;
-  margin-top: rem(138);
-
+  margin-top: rem(140);
+  padding-left: rem(28);
+  width: rem(160);
   @include mq(xl) {
-    flex-direction: initial;
-    margin: 0;
+    width: auto;
     display: flex;
+    flex-direction: initial;
+    margin: 0 rem(80) 0 rem(0);
+    padding: 0;
     justify-content: space-between;
   }
 }
 
 .nav__bottom--flex {
+  position: relative;
+  margin: 0;
   @include mq(xl) {
     position: relative;
-    margin:0 rem(71);
+    margin: 0 rem(80);
+  }
+}
+.nav__bottom--left .nav__bottom--flex {
+  position: relative;
+  padding-top: rem(8);
+  @include mq(xl) {
+    padding: 0 rem(0) 0 rem(68);
+    margin: 0;
+  }
+}
+.nav__bottom--right .nav__bottom--flex {
+  position: relative;
+  padding: 0;
+  @include mq(xl) {
+    padding: 0 rem(60) 0 rem(130);
+    margin: 0;
   }
 }
 .nav__bottom--flex--fast {
+  position: relative;
+  margin: 0;
+  padding-left: rem(2);
   @include mq(xl) {
     position: relative;
-    margin-left: rem(0);
-    margin-right: rem(71);
+    padding: 0 0 0;
+    margin: rem(0) rem(71);
   }
 }
 
 .nav__bottom--flex--bold {
+  position: relative;
+  padding-right: rem(30);
+  padding-top: rem(6);
   @include mq(xl) {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
     position: relative;
     width: rem(160);
-    margin-left: rem(71);
+    margin: 0 rem(80);
   }
 }
