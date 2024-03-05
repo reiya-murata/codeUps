@@ -2,16 +2,24 @@
 
 .nav__items {
   display: flex;
+  justify-content: space-between;
   z-index: 10;
   color: $white;
   font-weight: $regular;
   padding-top: rem(0);
   z-index: 15;
+  padding-top: rem(64);
+  padding-left: rem(36);
+  line-height: rem(16);
   @include mq(xl) {
     padding-top: rem(0);
     font-weight: $regular;
     font-family: $base-font-family;
   }
+}
+.nav__items li{
+  text-align: start;
+  margin-top: rem(2);
 }
 
 
@@ -28,6 +36,7 @@
   z-index: 15;
 }
 .nav__items--right {
+  margin-left: rem(8);
   width: 50%;
   font-family: $base-font-family;
   font-size: rem(16);
@@ -43,6 +52,7 @@
 }
 
 .nav__item--bold {
+  position: relative;
   font-weight: $bold;
   margin-top: rem(40);
   @include mq(xl) {

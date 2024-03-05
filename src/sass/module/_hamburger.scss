@@ -37,7 +37,8 @@
 }
 
 .hamburger.active span:nth-child(1) {
-  transform: translateY(11.5px) rotate(45deg);
+  transform: translate(rem(-3), rem(14)) rotate(37deg);
+  width: rem(40);
 }
 
 .hamburger.active span:nth-child(2) {
@@ -45,5 +46,6 @@
 }
 
 .hamburger.active span:nth-child(3) {
-  transform: translateY(-11.5px) rotate(-45deg);
+  transform: translate(rem(-4), rem(-10)) rotate(-37deg);
+  width: rem(40);
 }
