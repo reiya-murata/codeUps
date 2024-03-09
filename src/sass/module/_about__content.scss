@@ -41,6 +41,58 @@
     line-height: rem(100);
   }
 }
+.about__imgs {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.about__img--1 {
+  position: absolute;
+  aspect-ratio: 132/194;
+  z-index: 5;
+  width: rem(132);
+  height: rem(194);
+  top: calc(50% + rem(128));
+  left: calc(50% - rem(110));
+  transform: translate(-50%, -50%);
+  @include mq(xl) {
+    width: rem(399);
+    height: rem(606);
+    top: calc(50% + rem(345));
+    left: calc(50% - rem(340));
+    transform: translate(-50%, -50%);
+  }
+}
+
+.about__img--2 {
+  position: absolute;
+  aspect-ratio: 880/581;
+  width: rem(281);
+  height: rem(186);
+  top: calc(50% + rem(150));
+  left: calc(50% + rem(32));
+  transform: translate(-50%, -50%);
+  
+  @include mq(xl) {
+    width: rem(880);
+    height: rem(581);
+    top: calc(50% + rem(410));
+    left: calc(50% + rem(100));
+    transform: translate(-50%, -50%);
+  }
+}
+.about__img--3 {
+  position: absolute;
+  display: none;
+  @include mq(xl) {
+    top: calc(50% + rem(700));
+    left: calc(50% + rem(540));
+    transform: translate(-50%, -50%);
+    width: rem(194);
+    display: block;
+  }
+}
 
 .about__text {
   font-family: $base-font-family;

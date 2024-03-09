@@ -45,15 +45,15 @@
     font-size: rem(16);
     line-height: rem(24);
     margin: rem(6) rem(0) 0 rem(48);
-    padding: rem(4) 0 0 ;
+    padding: rem(4) 0 0;
   }
 }
 
 .information__content--img {
-  padding: rem(24) 0 rem(24) rem(16);
+  margin: rem(24) rem(16) rem(24);
   @include mq(xl) {
-    padding-left: rem(180);
-    padding-top: rem(2);
+    margin-left: rem(180);
+    margin-top: rem(2);
   }
 }
 
@@ -66,3 +66,4 @@
     height: rem(356);
   }
 }
+

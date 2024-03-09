@@ -4,27 +4,31 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  position: absolute;
-  margin-top: rem(255);
+  // position: absolute;
+  margin-top: 0;
   padding: 0 rem(16) 0;
   width: 100%;
   @include mq(xl) {
+    justify-content: start;
     width: rem(492);
-    margin-top: rem(40);
+    margin-top: rem(4);
     display: flex;
     padding: 0;
     flex-direction: column;
-    top: calc(50% + rem(304));
-    left: calc(50% - rem(294));
-    transform: translate(-50%, -50%);
+    // top: calc(50% + rem(304));
+    // left: calc(50% - rem(294));
+    // transform: translate(-50%, -50%);
   }
 }
 .price__contents--right {
   display: block;
-  display: flex;
-  flex-direction: column;
+  margin: rem(24) rem(16) 0;
+  // display: flex;
+  // flex-direction: column;
   @include mq(xl) {
     display: block;
+    margin-top: rem(40);
+    margin-left: rem(94);
   }
 }
 
@@ -35,20 +39,18 @@
   font-family: $base-font-family;
 }
 
-.price__img  {
-  display: block;
+.price__img {
   width: rem(345);
   height: rem(227);
-  position: absolute;
-  top: calc(50% + rem(140));
-  left: calc(50% + rem(0));
-  transform: translate(-50%, -50%);
+  // position: absolute;
+  // top: calc(50% + rem(140));
+  // left: calc(50% + rem(0));
+  // transform: translate(-50%, -50%);
   @include mq(xl) {
-    position: absolute;
-    top: calc(50% + rem(0));
-    left: calc(50% + rem(0));
-    transform: translate(-50%, -50%);
-    display: block;
+    // position: absolute;
+    // top: calc(50% + rem(0));
+    // left: calc(50% + rem(0));
+    // transform: translate(-50%, -50%);
     width: rem(492);
     height: rem(746);
   }
@@ -56,11 +58,10 @@
 .price__img img {
 
   @include mq(xl) {
-    position: absolute;
-    top: calc(50% + rem(415));
-    left: calc(50% + rem(292));
-    transform: translate(-50%, -50%);
-    display: block;
+    // position: absolute;
+    // top: calc(50% + rem(415));
+    // left: calc(50% + rem(292));
+    // transform: translate(-50%, -50%);
     width: rem(492);
     height: rem(746);
   }
@@ -73,11 +74,10 @@
   padding-bottom: rem(3);
   margin-top: rem(40);
   @include mq(xl) {
-    padding: 0;
-    margin-top: 0;
+    margin: 0 0 rem(2) 0;
     line-height: rem(24);
     font-size: rem(16);
-    padding: rem(39) 0 rem(4);
+    padding: rem(38) 0 rem(3);
   }
 }
 
@@ -89,7 +89,7 @@
     font-size: rem(16);
     line-height: rem(24);
     font-weight: $normal;
-    padding: rem(8) 0 0;
+    padding: rem(4) 0 ;
   }
 }
 
@@ -97,11 +97,12 @@
   font-family: $base-font-family;
   font-size: rem(14);
   padding-top: rem(11);
+  text-align: end;
   @include mq(xl) {
     font-size: rem(16);
     line-height: rem(24);
     font-weight: $normal;
-    padding: rem(8) 0 0;
+    padding: rem(6) 0 0;
     text-align: right;
   }
 }

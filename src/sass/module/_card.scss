@@ -228,7 +228,7 @@
 }
 .cards__voice .card {
   width: rem(345);
-  margin: rem(0) rem(16) rem(39);
+  margin: rem(0) rem(16) rem(34);
   @include mq(xl) {
     width: rem(520);
     margin: rem(32) rem(20) 0;
@@ -265,7 +265,7 @@
   font-family: $base-font-family;
   border-bottom: rem(1) solid $blue;
   width: rem(149);
-  padding: rem(0) 0 rem(2);
+  padding: rem(0) 0 rem(4);
   font-size: rem(16);
   font-weight: $bold;
   @include mq(xl) {
@@ -281,14 +281,25 @@
   }
 }
 
+.card__img{
+  aspect-ratio: 140 / 180;
+  width: rem(151);
+  height: rem(117);
+  margin-top: rem(12);
+  margin-left: rem(12);
+  @include mq(xl) {
+    margin: 0 0 rem(8) rem(8);
+    width: rem(180);
+    height: rem(140);
+  }
+}
 .card__img img {
   aspect-ratio: 140 / 180;
   width: rem(151);
   height: rem(117);
-  margin-top: rem(9);
-  margin-left: rem(12);
+  margin: rem(0);
   @include mq(xl) {
-    margin: 0 0 0 rem(8);
+    margin: 0;
     width: rem(180);
     height: rem(140);
   }
@@ -325,6 +336,6 @@
   padding-top: rem(16);
   padding-bottom: rem(8);
   @include mq(xl) {
-    padding: rem(40) rem(16) 0 rem(8);
+    padding: rem(32) rem(16) 0 rem(8);
   }
 }

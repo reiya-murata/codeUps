@@ -90,10 +90,10 @@
 
 .button__voice {
   text-align: center;
-  margin-right: rem(2);
+  margin:rem(40) rem(2) 0 0;
   @include mq(xl) {
     text-align: center;
-    margin: rem(78) rem(4) 0 0;
+    margin: rem(2) rem(4) 0 0;
   }
 }
 .button__contact {
@@ -112,11 +112,11 @@
   }
 }
 .button__price {
-  margin-top: rem(982);
+  margin-top: rem(40);
   margin-right: rem(2);
   text-align: center;
   @include mq(xl) {
-    margin-top: rem(866);
+    margin-top: rem(80);
     margin-right: rem(6);
   }
 }

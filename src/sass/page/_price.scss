@@ -13,6 +13,8 @@
 .section__price {
   position: relative;
   display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
   @include mq(xl) {
     position: relative;
     display: flex;
