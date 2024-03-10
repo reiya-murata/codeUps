@@ -18,5 +18,7 @@
   @include mq(xl) {
     position: relative;
     display: flex;
+    flex-direction: inherit;
+    justify-content: center;
   }
 }

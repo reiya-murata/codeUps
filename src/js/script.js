@@ -94,30 +94,30 @@ const main__swiper = new Swiper(".main__swiper", {
   
 
     function checkInView() {
-      $('.color').each(function() {
-          var elementTop = $(this).offset().top;
-          var elementBottom = elementTop + $(this).outerHeight();
-          var viewportTop = $(window).scrollTop();
-          var viewportBottom = viewportTop + $(window).height();
-          // 要素が画面内にあるかどうかを判定
-          if (elementBottom > viewportTop && elementTop < viewportBottom) {
-              // 画面内にある場合の処理を記述
-              // 例: 背景色が画面に現れたら何か処理をする
-              $(this).trigger('inview');
-          }
-      });
-  }
-  
-  // スクロールやリサイズ時に実行する関数
-  $(window).on('scroll resize', function() {
-      checkInView();
-  });
-  
-  // ページのロード時にも実行する
-  $(document).ready(function() {
-      checkInView();
-  });
-  
+    $('.color').each(function() {
+        var elementTop = $(this).offset().top;
+        var elementBottom = elementTop + $(this).outerHeight();
+        var viewportTop = $(window).scrollTop();
+        var viewportBottom = viewportTop + $(window).height();
+        // 要素が画面内にあるかどうかを判定
+        if (elementBottom > viewportTop && elementTop < viewportBottom) {
+            // 画面内にある場合の処理を記述
+            // 例: 背景色が画面に現れたら何か処理をする
+            $(this).trigger('inview');
+        }
+    });
+}
+
+// スクロールやリサイズ時に実行する関数
+$(window).on('scroll resize', function() {
+    checkInView();
+});
+
+// ページのロード時にも実行する
+$(document).ready(function() {
+    checkInView();
+});
+
 //要素の取得とスピードの設定
 var box = $('.colorbox'),
     speed = 700;  
