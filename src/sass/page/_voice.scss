@@ -6,7 +6,7 @@
 }
 .section__voice {
   margin-bottom: rem(88);
-  @include mq(xl) {
+  @include mq(md) {
     margin-bottom: rem(144);
   }
 }

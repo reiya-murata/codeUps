@@ -1,11 +1,19 @@
 @use "global" as *;
 
+.contact__left--address {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  @include mq(md) {
+    flex-direction: initial;
+  }
+}
 .contact__content {
   // justify-content:start ;
   font-family: $base-font-family;
   text-align: center;
   margin-top: rem(168);
-  @include mq(xl) {
+  @include mq(md) {
     text-align: left;
     margin: rem(76) rem(5) 0 rem(50);
     font-size: rem(16);
@@ -13,10 +21,10 @@
   }
 }
 .contact__content p {
-  line-height:rem(24) ;
+  line-height: rem(24);
   font-size: rem(16);
   margin-bottom: rem(4);
-  @include mq(xl) {
+  @include mq(md) {
     margin-bottom: rem(4);
     line-height: rem(24);
     font-size: rem(16);
@@ -31,31 +39,25 @@
   line-height: rem(24);
   font-family: $base-font-family;
 
-  @include mq(xl) {
+  @include mq(md) {
     display: flex;
     width: rem(572);
-    // padding-top: rem(24);
     border-top: none;
     margin: 0;
     padding: 0;
   }
 }
 .contact__map img {
-  position: absolute;
   aspect-ratio: 273 / 148;
-  position: absolute;
   width: rem(295);
   height: rem(160);
-  top: calc(50% + rem(69));
-  left: calc(50% - rem(0));
-  transform: translate(-50%, -50%);
-  @include mq(xl) {
-    position: absolute;
+  margin-top: rem(14);
+  margin-left: rem(40);
+  @include mq(md) {
     width: rem(273);
     height: rem(148);
-    top: calc(50% + rem(45));
-    left: calc(50% - rem(186));
-    transform: translate(-50%, -50%);
+    margin-top: rem(76);
+    margin-left: rem(16);
   }
 }
 .contact__right {
@@ -65,13 +67,13 @@
   font-family: $base-font-family;
   // padding: rem(16) rem(40);
   // border-top: 1px solid $blue;
-  margin: rem(240) 0 0;
+  margin: rem(68) 0 0;
   border: none;
-  @include mq(xl) {
+  @include mq(md) {
     border-left: 1px solid $blue;
     display: flex;
-    padding-left: rem(81);
+    padding: 0 rem(112) 0 rem(80);
     border-top: none;
-    margin: rem(80) 0;
+    margin: rem(80) 0 rem(80) 0;
   }
 }

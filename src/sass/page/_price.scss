@@ -5,7 +5,7 @@
   position: relative;
   padding: rem(74) 0 rem(84);
   box-shadow: 0 rem(2) rem(5) 0 rgba(0, 0, 0, 0.5);
-  @include mq(xl) {
+  @include mq(md) {
     padding: rem(100) 0 rem(102);
     box-shadow: none;
   }
@@ -15,7 +15,8 @@
   display: flex;
   flex-direction: column-reverse;
   justify-content: center;
-  @include mq(xl) {
+  align-items: center;
+  @include mq(md) {
     position: relative;
     display: flex;
     flex-direction: inherit;

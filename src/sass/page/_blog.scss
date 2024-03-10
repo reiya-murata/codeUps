@@ -4,8 +4,8 @@
   position: relative;
 }
 .section__blog {
-  padding:rem(90) 0 rem(79);
-  @include mq(xl) {
+  padding: rem(90) 0 rem(82);
+  @include mq(md) {
     position: relative;
     padding: rem(106) 0 rem(143);
     padding-right: rem(2);

@@ -6,7 +6,7 @@
   font-family: $second-font-family;
   text-align: center;
   color: $black;
-  @include mq(xl) {
+  @include mq(md) {
     font-size: rem(40);
     line-height: rem(40);
     font-weight: $regular;
@@ -17,7 +17,7 @@
   color: $blue;
   font-weight: $regular;
   text-transform: capitalize;
-  @include mq(xl) {
+  @include mq(md) {
     color: $blue;
   }
 }
@@ -28,7 +28,7 @@
   font-size: rem(12);
   font-weight: $regular;
   text-align: center;
-  @include mq(xl) {
+  @include mq(md) {
     padding: rem(8) rem(0) 0 0;
     font-size: rem(12);
     font-weight: $regular;
@@ -41,7 +41,7 @@
   font-size: rem(12);
   font-weight: $regular;
   text-align: center;
-  @include mq(xl) {
+  @include mq(md) {
     margin: rem(8) rem(12) 0 0;
     font-size: rem(12);
     font-weight: $regular;
@@ -54,7 +54,7 @@
   text-transform: capitalize;
   font-weight: $regular;
 
-  @include mq(xl) {
+  @include mq(md) {
     font-size: rem(32);
     line-height: rem(40);
     text-transform: capitalize;
@@ -70,7 +70,7 @@
   text-transform: capitalize;
   font-weight: $regular;
   text-align: center;
-  @include mq(xl) {
+  @include mq(md) {
     font-size: rem(40);
     font-family: $second-font-family;
     line-height: rem(40);
@@ -84,7 +84,7 @@
   color: $blue;
   font-weight: $regular;
   text-transform: capitalize;
-  @include mq(xl) {
+  @include mq(md) {
     color: $white;
   }
 }
@@ -96,7 +96,7 @@
   margin-top: rem(5);
   text-align: center;
   font-weight: $regular;
-  @include mq(xl) {
+  @include mq(md) {
     color: $white;
     font-size: rem(12);
     font-weight: $regular;
@@ -105,7 +105,7 @@
 }
 
 .section__titles--price {
-  @include mq(xl) {
+  @include mq(md) {
     margin-right: rem(8);
   }
 }
@@ -115,7 +115,7 @@
   font-family: $second-font-family;
   font-size: rem(80);
   margin-bottom: rem(16);
-  @include mq(xl) {
+  @include mq(md) {
     font-size: rem(80);
     line-height: rem(80);
     font-weight: $regular;
@@ -136,7 +136,7 @@
   font-size: rem(12);
   font-weight: $regular;
   margin-bottom: rem(4);
-  @include mq(xl) {
+  @include mq(md) {
     padding: 0;
     font-size: rem(12);
     line-height: rem(18);
@@ -148,7 +148,7 @@
   font-size: rem(14);
   font-weight: $regular;
   color: $blue;
-  @include mq(xl) {
+  @include mq(md) {
     font-size: rem(14);
     font-family: $base-font-family;
     color: $blue;
@@ -159,6 +159,6 @@
 }
 
 .section__title--contact {
-  @include mq(xl) {
+  @include mq(md) {
   }
 }

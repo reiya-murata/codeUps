@@ -13,7 +13,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 100;
-  @include mq(xl) {
+  @include mq(md) {
     // background-image: url(..\assets\images\common\hero.pc.1.jpg);
     background-repeat: no-repeat;
     background-size: cover;

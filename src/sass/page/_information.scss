@@ -5,8 +5,8 @@
   background-color: #ddf0f1;
   padding: rem(88) 0 rem(72);
   box-shadow: 0 rem(2) rem(4) 0 rgba(0, 0, 0, 0.5);
-  @include mq(xl) {
-    padding: rem(90) 0 rem(72);
+  @include mq(md) {
+    padding: rem(98) 0 rem(72);
     box-shadow: none;
   }
 }

@@ -14,7 +14,7 @@
   top: calc(50% + rem(330));
   left: 50%;
   transform: translate(-50%, -50%);
-  @include mq(xl) {
+  @include mq(md) {
     top: calc(50% + rem(424));
     left: 50%;
     transform: translate(-50%, -50%);
@@ -29,7 +29,7 @@
   font-weight: $regular;
   text-align: center;
   margin-left: rem(22);
-  @include mq(xl) {
+  @include mq(md) {
     font-weight: $normal;
     font-size: rem(40);
     margin-left: rem(43.2);
@@ -45,7 +45,7 @@
   font-family: $second-font-family;
   font-weight: $regular;
   text-align: center;
-  @include mq(xl) {
+  @include mq(md) {
     font-size: rem(20);
     font-family: $second-font-family;
     line-height: normal;

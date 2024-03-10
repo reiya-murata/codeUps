@@ -12,7 +12,7 @@
   font-family: $second-font-family;
   width: rem(202);
   height: rem(54);
-  @include mq(xl) {
+  @include mq(md) {
     width: rem(202);
     height: rem(56);
   }
@@ -50,7 +50,7 @@
   text-align: center;
   margin-top: rem(40);
   margin-right: rem(2);
-  @include mq(xl) {
+  @include mq(md) {
     position: absolute;
     top: calc(50% + rem(88));
     left: calc(50% + rem(292));
@@ -61,7 +61,7 @@
 .button__campaign {
   text-align: center;
   margin-right: rem(4);
-  @include mq(xl) {
+  @include mq(md) {
     margin: rem(35) rem(16) 0 0;
   }
 }
@@ -73,7 +73,7 @@
   top: calc(50% + rem(328));
   left: calc(50% - rem(2));
   transform: translate(-50%, -50%);
-  @include mq(xl) {
+  @include mq(md) {
     top: calc(50% + rem(232));
     left: calc(50% + rem(296));
     transform: translate(-50%, -50%);
@@ -82,7 +82,8 @@
 .button__blog {
   text-align: center;
   margin-right: rem(2);
-  @include mq(xl) {
+  margin-top: rem(24);
+  @include mq(md) {
     margin: rem(118) rem(14) 0 0;
     padding: 0 0 0 rem(8);
   }
@@ -90,8 +91,8 @@
 
 .button__voice {
   text-align: center;
-  margin:rem(40) rem(2) 0 0;
-  @include mq(xl) {
+  margin: rem(6) rem(2) 0 0;
+  @include mq(md) {
     text-align: center;
     margin: rem(80) rem(4) 0 0;
   }
@@ -99,10 +100,10 @@
 .button__contact {
   position: absolute;
   position: absolute;
-    top: calc(50% + rem(370));
-    left: calc(50% - rem(2));
-    transform: translate(-50%, -50%);
-  @include mq(xl) {
+  top: calc(50% + rem(370));
+  left: calc(50% - rem(2));
+  transform: translate(-50%, -50%);
+  @include mq(md) {
     position: absolute;
     top: calc(50% + rem(103));
     left: calc(50% + rem(268));
@@ -115,7 +116,7 @@
   margin-top: rem(40);
   margin-right: rem(2);
   text-align: center;
-  @include mq(xl) {
+  @include mq(md) {
     margin-top: rem(80);
     margin-right: rem(6);
   }

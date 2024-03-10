@@ -48,28 +48,6 @@ const main__swiper = new Swiper(".main__swiper", {
 });
 
 
-//スライダー 
-// const swiper = new Swiper('.swiper', {
-//   // Optional parameters
-//   direction: 'horizontal',
-//   loop: true,
-//   autoplay: {
-//     delay: 2500,
-//     disableOnInteraction: false,
-//   },
-//   centeredSlides: true, 
-//   breakpoints:{
-// 767:{
-//   slidesPerView:4
-// },
-//   },
-//   // Navigation arrows
-//   navigation: {
-//     nextEl: '.swiper-button-next',
-//     prevEl: '.swiper-button-prev',
-//   },
-  
-// });
 
     var swiper = new Swiper(".swiper__campaign", {
       loop: true,
@@ -77,7 +55,7 @@ const main__swiper = new Swiper(".main__swiper", {
       spaceBetween: 53,
       centeredSlides: true,
       breakpoints: {
-        650: {
+        675: {
           slidesPerView: 4,
         },
       },

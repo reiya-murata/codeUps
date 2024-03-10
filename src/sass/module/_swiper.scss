@@ -13,13 +13,13 @@
   // display: flex; /* スライド内の要素を横並びに配置する場合 */
   align-items: center; /* スライド内の要素を垂直方向に中央揃えする場合 */
   justify-content: center; /* スライド内の要素を水平方向に中央揃えする場合 */
-  @include mq(xl) {
+  @include mq(md) {
     width: rem(330);
     margin: 0;
   }
 }
 .swiper-wrapper.campaign {
-  @include mq(xl) {
+  @include mq(md) {
     width: 100%;
     padding-left: rem(716);
     padding-bottom: rem(5);
@@ -33,7 +33,7 @@
 }
 .swiper__campaign {
   overflow: hidden;
-  @include mq(xl) {
+  @include mq(md) {
     height: 80%;
   }
 }
@@ -46,7 +46,7 @@
 .swiper-button-next {
   position: absolute;
   display: none;
-  @include mq(xl) {
+  @include mq(md) {
     display: block;
     top: calc(50% - rem(284));
     left: calc(50% + rem(494));
@@ -59,7 +59,7 @@
 .swiper-button-prev {
   position: absolute;
   display: none;
-  @include mq(xl) {
+  @include mq(md) {
     display: block;
     top: calc(50% - rem(283));
     left: calc(50% + rem(333));
