@@ -11,7 +11,7 @@
   @include mq(md) {
     justify-content: start;
     width: rem(492);
-    margin: rem(4) rem(15) 0 rem(16);
+    margin: rem(-94) rem(15) 0 rem(16);
     display: flex;
     padding: 0;
     flex-direction: column;
@@ -42,26 +42,16 @@
 .price__img {
   width: rem(345);
   height: rem(227);
-  // position: absolute;
-  // top: calc(50% + rem(140));
-  // left: calc(50% + rem(0));
-  // transform: translate(-50%, -50%);
   margin: 0;
   @include mq(md) {
-    // position: absolute;
-    // top: calc(50% + rem(0));
-    // left: calc(50% + rem(0));
-    // transform: translate(-50%, -50%);
     width: rem(492);
     height: rem(746);
   }
 }
 .price__img img {
+  width: rem(345);
+  height: rem(227);
   @include mq(md) {
-    // position: absolute;
-    // top: calc(50% + rem(415));
-    // left: calc(50% + rem(292));
-    // transform: translate(-50%, -50%);
     width: rem(492);
     height: rem(746);
   }

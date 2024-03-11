@@ -14,11 +14,11 @@
   position: relative;
   display: flex;
   flex-direction: column-reverse;
-  justify-content: center;
+  align-items: center;
   @include mq(md) {
     position: relative;
     display: flex;
-    flex-direction: inherit;
+    flex-direction: initial;
     justify-content: center;
   }
 }

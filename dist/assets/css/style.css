@@ -215,9 +215,9 @@ a {
 }
 
 .section__price {
+	align-items: center;
 	display: flex;
 	flex-direction: column-reverse;
-	justify-content: center;
 	position: relative;
 }
 
@@ -305,10 +305,6 @@ a {
 }
 
 .about__text span {
-	display: none;
-}
-
-.blog__bg--img {
 	display: none;
 }
 
@@ -453,7 +449,7 @@ a {
 }
 
 .button__voice {
-	margin: 2.5rem 0.125rem 0 0;
+	margin: 0.5rem 0.125rem 0 0;
 	text-align: center;
 }
 
@@ -497,7 +493,6 @@ a {
 	display: flex;
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 0.75rem;
-	justify-content: baseline;
 	margin: 1rem 0 0.25rem 1rem;
 	text-align: left;
 	width: -moz-fit-content;
@@ -611,6 +606,9 @@ a {
 }
 
 .cards__voice {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
 	margin-top: 2.5rem;
 }
 
@@ -972,11 +970,16 @@ div.colorbox img {
 	z-index: 10;
 }
 
+.logo__price {
+	display: none;
+	position: absolute;
+}
+
 .contact__logo--fish {
 	height: 3.125rem;
 	left: calc(50% + 7.375rem);
 	position: absolute;
-	top: calc(50% - 19.1875rem);
+	top: calc(50% - 17.375rem);
 	transform: translate(-50%, -50%);
 	width: 6.8125rem;
 }
@@ -1016,12 +1019,22 @@ div.colorbox img {
 }
 
 .instagram__icon {
+	height: 1.5rem;
+	left: calc(50% + 4.25rem);
 	position: absolute;
+	top: calc(50% + 7.5rem);
+	transform: translate(-50%, -50%);
+	width: 1.5rem;
 	z-index: 10;
 }
 
 .facebook__icon {
+	height: 1.5rem;
+	left: calc(50% + 1.75rem);
 	position: absolute;
+	top: calc(50% + 7.5rem);
+	transform: translate(-50%, -50%);
+	width: 1.5rem;
 	z-index: 10;
 }
 
@@ -1392,6 +1405,11 @@ div.colorbox img {
 	width: 21.5625rem;
 }
 
+.price__img img {
+	height: 14.1875rem;
+	width: 21.5625rem;
+}
+
 .price__title {
 	border-bottom: 1px solid #108F95;
 	font-family: "Noto Sans JP", sans-serif;
@@ -1411,11 +1429,6 @@ div.colorbox img {
 	font-size: 0.875rem;
 	padding-top: 0.6875rem;
 	text-align: right;
-}
-
-.logo__price {
-	display: none;
-	position: absolute;
 }
 
 .section__title {
@@ -1630,7 +1643,7 @@ html {
 
 .section__price {
 	display: flex;
-	flex-direction: inherit;
+	flex-direction: initial;
 	justify-content: center;
 	position: relative;
 }
@@ -1703,16 +1716,6 @@ html {
 
 .about__text span {
 	display: inline-block;
-}
-
-.blog__bg--img {
-	display: block;
-	height: 31.25rem;
-	position: absolute;
-	top: 50%;
-	top: 15.9375rem;
-	transform: translateY(-50%);
-	z-index: -1;
 }
 
 .blog__cards {
@@ -1891,6 +1894,7 @@ html {
 .cards__voice {
 	align-items: start;
 	display: flex;
+	flex-direction: initial;
 	justify-content: center;
 	margin: 0;
 	padding: 0 0;
@@ -1962,7 +1966,6 @@ html {
 	height: 25.9375rem;
 	margin: 8.75rem 0 10rem;
 	max-width: 67.5rem;
-	padding: -31.25rem;
 }
 
 .address__card {
@@ -2063,7 +2066,7 @@ html {
 
 .information__content {
 	display: flex;
-	flex-direction: inherit;
+	flex-direction: initial;
 	justify-content: center;
 	padding: 2.5rem 3rem 0 0;
 }
@@ -2146,6 +2149,16 @@ html {
 	top: calc(50% + 18.875rem);
 	transform: translate(-50%, -50%);
 	width: 4.4375rem;
+}
+
+.logo__price {
+	display: block;
+	height: 12.5625rem;
+	left: calc(50% - 25.125rem);
+	top: calc(50% + 27.1875rem);
+	transform: translate(-50%, -50%);
+	width: 27.3125rem;
+	z-index: 15;
 }
 
 .contact__logo--fish {
@@ -2369,7 +2382,7 @@ html {
 	display: flex;
 	flex-direction: column;
 	justify-content: start;
-	margin: 0.25rem 0.9375rem 0 1rem;
+	margin: -5.875rem 0.9375rem 0 1rem;
 	padding: 0;
 	width: 30.75rem;
 }
@@ -2410,16 +2423,6 @@ html {
 	line-height: 1.5rem;
 	padding: 0.25rem 0;
 	text-align: right;
-}
-
-.logo__price {
-	display: block;
-	height: 12.5625rem;
-	left: calc(50% - 25.125rem);
-	top: calc(50% + 27.1875rem);
-	transform: translate(-50%, -50%);
-	width: 27.3125rem;
-	z-index: 15;
 }
 
 .section__title {
@@ -2485,7 +2488,6 @@ html {
 	line-height: 5rem;
 	margin-bottom: -0.4375rem;
 	margin-top: 1.25rem;
-	padding-top: -5rem;
 	text-shadow: none;
 }
 

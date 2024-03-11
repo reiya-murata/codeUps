@@ -70,13 +70,29 @@
     height: rem(162);
   }
 }
+// price
+
+.logo__price {
+  position: absolute;
+  display: none;
+  @include mq(md) {
+    width: rem(437);
+    height: rem(201);
+    top: calc(50% + rem(435));
+    left: calc(50% - rem(402));
+    transform: translate(-50%, -50%);
+    z-index: 15;
+    display: block;
+  }
+}
+
 
 // contact
 .contact__logo--fish {
   position: absolute;
   width: rem(109);
   height: rem(50);
-  top: calc(50% - rem(307));
+  top: calc(50% - rem(278));
   left: calc(50% + rem(118));
   transform: translate(-50%, -50%);
   @include mq(md) {
@@ -152,6 +168,11 @@
 .instagram__icon {
   position: absolute;
   z-index: 10;
+  top: calc(50% + rem(120));
+    left: calc(50% + rem(68));
+    transform: translate(-50%, -50%);
+    width: rem(24);
+    height: rem(24);
   @include mq(md) {
     position: absolute;
     top: calc(50% + rem(16));
@@ -165,6 +186,11 @@
 .facebook__icon {
   position: absolute;
   z-index: 10;
+  top: calc(50% + rem(120));
+    left: calc(50% + rem(28));
+    transform: translate(-50%, -50%);
+    width: rem(24);
+    height: rem(24);
   @include mq(md) {
     position: absolute;
     top: calc(50% + rem(16));

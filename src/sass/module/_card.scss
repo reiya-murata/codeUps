@@ -27,18 +27,14 @@
   @include mq(md) {
     margin: rem(40) 0 0 0;
     width: rem(333);
-    // width: 100%;
     height: rem(445);
   }
 }
 
 .card__header--slider img {
   aspect-ratio: 333 /223;
-  // width: rem(280);
   @include mq(md) {
     width: 100%;
-    // width: rem(333);
-    // min-height: rem(223);
   }
 }
 
@@ -50,7 +46,6 @@
   font-family: $base-font-family;
   text-align: start;
   width: fit-content;
-  justify-content: baseline;
   font-size: rem(12);
   margin: rem(16) 0 rem(4) rem(16);
   @include mq(md) {
@@ -219,10 +214,14 @@
 
 // voice
 .cards__voice {
+  display: flex;
+  flex-direction: column;
   margin-top: rem(40);
+  align-items: center;
   @include mq(md) {
     align-items: start;
     display: flex;
+    flex-direction: initial;
     padding: 0 0;
     justify-content: center;
     margin: 0;
@@ -357,7 +356,6 @@
     max-width: rem(1080);
     height: rem(415);
     margin: rem(140) 0 rem(160);
-    padding: rem(-500);
   }
 }
 
