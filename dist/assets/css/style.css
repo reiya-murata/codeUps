@@ -310,10 +310,6 @@ a {
 	display: none;
 }
 
-.blog__bg--img {
-	display: none;
-}
-
 .blog__cards {
 	align-items: center;
 	display: flex;
@@ -530,6 +526,7 @@ a {
 .card__campaign--prices {
 	align-items: center;
 	display: flex;
+	font-family: "Lato", sans-serif;
 	justify-content: center;
 	margin: 0 calc(50% - 50vw);
 	text-align: center;
@@ -1591,7 +1588,7 @@ html {
 }
 
 .section__blog {
-	padding: 6.25rem 0 8.9375rem;
+	padding: 6.125rem 0 8.625rem;
 	padding-right: 0.125rem;
 	position: relative;
 }
@@ -1713,16 +1710,6 @@ html {
 	z-index: -1;
 }
 
-.blog__bg--img {
-	display: block;
-	height: 31.25rem;
-	position: absolute;
-	top: 50%;
-	top: 15.9375rem;
-	transform: translateY(-50%);
-	z-index: -1;
-}
-
 .blog__cards {
 	display: flex;
 	flex-direction: initial;
@@ -1759,7 +1746,7 @@ html {
 }
 
 .button__blog {
-	margin: 7.375rem 0.875rem 0 0;
+	margin: 7.5rem 0.875rem 0 0;
 	padding: 0 0 0 0.5rem;
 }
 
@@ -1834,6 +1821,7 @@ html {
 }
 
 .card__campaign--price h3 {
+	font-family: "Lato", sans-serif;
 	font-size: 1.5rem;
 	line-height: 1.75rem;
 	padding: 1.125rem 1rem 0 0.125rem;
@@ -1844,12 +1832,14 @@ html {
 }
 
 .card__campaign--price--night h3 {
+	font-family: "Lato", sans-serif;
 	font-size: 1.5rem;
 	line-height: 1.75rem;
 	padding: 1.125rem 1rem 0 0rem;
 }
 
 .card__discount h3 {
+	font-family: "Lato", sans-serif;
 	font-size: 2.5rem;
 	letter-spacing: 0rem;
 	line-height: 2.5rem;
@@ -2472,6 +2462,7 @@ html {
 }
 
 .section__subtitle--contact {
+	font-family: "Noto Sans JP", sans-serif;
 	font-size: 0.75rem;
 	line-height: 1.125rem;
 	margin-bottom: 0;
