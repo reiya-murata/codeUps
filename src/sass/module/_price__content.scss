@@ -8,7 +8,7 @@
   margin: 0 rem(16);
   padding: 0 rem(0) 0;
   width: rem(345);
-  @include mq(xl) {
+  @include mq(md) {
     justify-content: start;
     width: rem(492);
     margin: rem(4) rem(15) 0 rem(16);
@@ -22,10 +22,10 @@
 }
 .price__contents--right {
   display: block;
-  margin: rem(24) rem(18) 0;
+  margin: rem(28) rem(18) 0;
   // display: flex;
   // flex-direction: column;
-  @include mq(xl) {
+  @include mq(md) {
     display: block;
     margin-top: rem(40);
     margin-left: rem(80);
@@ -47,7 +47,7 @@
   // left: calc(50% + rem(0));
   // transform: translate(-50%, -50%);
   margin: 0;
-  @include mq(xl) {
+  @include mq(md) {
     // position: absolute;
     // top: calc(50% + rem(0));
     // left: calc(50% + rem(0));
@@ -57,7 +57,7 @@
   }
 }
 .price__img img {
-  @include mq(xl) {
+  @include mq(md) {
     // position: absolute;
     // top: calc(50% + rem(415));
     // left: calc(50% + rem(292));
@@ -73,7 +73,7 @@
   border-bottom: 1px solid $blue;
   padding-bottom: rem(3);
   margin-top: rem(40);
-  @include mq(xl) {
+  @include mq(md) {
     margin: 0 0 rem(2) 0;
     line-height: rem(24);
     font-size: rem(16);
@@ -85,7 +85,7 @@
   font-family: $base-font-family;
   font-size: rem(14);
   padding-top: rem(11);
-  @include mq(xl) {
+  @include mq(md) {
     font-size: rem(16);
     line-height: rem(24);
     font-weight: $normal;
@@ -98,7 +98,7 @@
   font-size: rem(14);
   padding-top: rem(11);
   text-align: end;
-  @include mq(xl) {
+  @include mq(md) {
     font-size: rem(16);
     line-height: rem(24);
     font-weight: $normal;

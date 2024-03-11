@@ -68,11 +68,6 @@ var swiper = new Swiper(".swiper__campaign", {
   slidesPerView: "auto",
   spaceBetween: 44,
   centeredSlides: true,
-  // breakpoints: {
-  //   650: {
-
-  //   },
-  // },
   pagination: {
     el: ".swiper-pagination",
     clickable: true

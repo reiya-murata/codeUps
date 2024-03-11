@@ -6,10 +6,12 @@
   font-family: $second-font-family;
   text-align: center;
   color: $black;
+  text-shadow: rem(2) rem(2) rem(4) rgba(0, 0, 0, 0.5);
   @include mq(md) {
     font-size: rem(40);
     line-height: rem(40);
     font-weight: $regular;
+    text-shadow: none;
   }
 }
 .information .section__title {
@@ -23,7 +25,7 @@
   color: $blue;
   font-weight: $regular;
   text-transform: capitalize;
-  @include mq(xl) {
+  @include mq(md) {
     color: $blue;
   }
 }
@@ -69,7 +71,7 @@
   text-transform: capitalize;
   font-weight: $regular;
 
-  @include mq(xl) {
+  @include mq(md) {
     font-size: rem(32);
     line-height: rem(40);
     text-transform: capitalize;
@@ -100,7 +102,7 @@
   color: $blue;
   font-weight: $regular;
   text-transform: capitalize;
-  @include mq(xl) {
+  @include mq(md) {
     color: $white;
   }
 }
@@ -122,7 +124,7 @@
 }
 
 .section__titles--price {
-  @include mq(xl) {
+  @include mq(md) {
     margin-right: rem(8);
   }
 }
@@ -132,13 +134,15 @@
   font-family: $second-font-family;
   font-size: rem(80);
   margin-bottom: rem(16);
-  @include mq(xl) {
+  text-shadow: rem(2) rem(2) rem(4) rgba(0, 0, 0, 0.5);
+  @include mq(md) {
     font-size: rem(80);
     line-height: rem(80);
     font-weight: $regular;
     padding-top: rem(-80);
     margin-top: rem(20);
     margin-bottom: rem(-7);
+    text-shadow: none;
   }
 }
 
@@ -154,6 +158,7 @@
   font-size: rem(12);
   font-weight: $regular;
   margin-bottom: rem(4);
+  text-shadow: rem(2) rem(2) rem(4) rgba(0, 0, 0, 0.5);
   @include mq(md) {
     font-family: $base-font-family;
     padding: 0;
@@ -161,18 +166,20 @@
     line-height: rem(18);
     padding-bottom: rem(8);
     margin-bottom: 0;
+    text-shadow: none;
   }
 }
 .section__subtitle--contact2 {
   font-size: rem(14);
   font-weight: $regular;
   color: $blue;
-  @include mq(xl) {
+  text-shadow: rem(2) rem(2) rem(4) rgba(0, 0, 0, 0.5);
+  @include mq(md) {
     font-size: rem(14);
     font-family: $base-font-family;
     color: $blue;
     line-height: rem(18);
-    // padding-top: rem(8);
     text-align: center;
+    text-shadow: none;
   }
 }

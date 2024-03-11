@@ -4,10 +4,9 @@
   position: relative;
 }
 .section__about {
-  margin-top: rem(80);
-  margin-bottom: rem(168);
-  @include mq(xl) {
-    margin-top: rem(130);
-    margin-bottom: rem(400);
+  padding: rem(78) 0 rem(168);
+  @include mq(md) {
+    padding: rem(130) 0 rem(400);
+    overflow: hidden;
   }
 }

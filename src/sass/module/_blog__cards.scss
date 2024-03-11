@@ -2,7 +2,7 @@
 
 .blog__cards {
   position: relative;
-  @include mq(xl) {
+  @include mq(md) {
     display: flex;
     justify-content: center;
     // padding-right: rem(180);

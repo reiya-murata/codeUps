@@ -2,7 +2,7 @@
 
 .blog__bg--img {
   display: none;
-  @include mq(xl) {
+  @include mq(md) {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);

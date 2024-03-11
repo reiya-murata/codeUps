@@ -3,7 +3,7 @@
 .logo__price {
   position: absolute;
   display: none;
-  @include mq(xl) {
+  @include mq(md) {
     width: rem(437);
     height: rem(201);
     top: calc(50% + rem(435));

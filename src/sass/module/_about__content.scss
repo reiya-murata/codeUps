@@ -6,7 +6,7 @@
   color: $blue;
   position: relative;
   padding-top: rem(240);
-  @include mq(xl) {
+  @include mq(md) {
     display: flex;
     justify-content: center;
     padding-top: rem(200);
@@ -20,7 +20,7 @@
   padding-top: rem(40);
   padding-left: rem(16);
   line-height: rem(40);
-  @include mq(xl) {
+  @include mq(md) {
     color: $white;
     display: inline-block;
     font-size: rem(80);
@@ -34,7 +34,7 @@
   display: inline-block;
   font-size: rem(40);
   font-weight: $regular;
-  text-shadow: rem(2) rem(2) rem(4) rgba(0, 0, 0, 0.5); 
+  text-shadow: rem(2) rem(2) rem(4) rgba(0, 0, 0, 0.5);
   @include mq(md) {
     font-size: rem(80);
     font-weight: $regular;
@@ -55,10 +55,10 @@
   width: rem(132);
   height: rem(194);
   padding-right: rem(4);
-  top: calc(50% + rem(128));
+  top: calc(50% + rem(124));
   left: calc(50% - rem(108));
   transform: translate(-50%, -50%);
-  @include mq(xl) {
+  @include mq(md) {
     padding: 0;
     width: rem(399);
     height: rem(606);
@@ -73,10 +73,10 @@
   aspect-ratio: 880/581;
   width: rem(281);
   height: rem(186);
-  top: calc(50% + rem(50));
-  left: calc(50% + rem(0));
+  top: calc(50% + rem(148));
+  left: calc(50% + rem(30));
   transform: translate(-50%, -50%);
-  @include mq(xl) {
+  @include mq(md) {
     width: rem(880);
     height: rem(581);
     top: calc(50% + rem(408));
@@ -84,7 +84,7 @@
     transform: translate(-50%, -50%);
   }
 }
-.about__img--2 img{
+.about__img--2 img {
   position: absolute;
   top: calc(50% + rem(100));
   left: calc(50% + rem(32));
@@ -93,7 +93,7 @@
 .about__img--3 {
   position: absolute;
   display: none;
-  @include mq(xl) {
+  @include mq(md) {
     top: calc(50% + rem(700));
     left: calc(50% + rem(540));
     transform: translate(-50%, -50%);
@@ -105,24 +105,24 @@
 .about__text {
   font-family: $base-font-family;
   font-weight: normal;
-  @include mq(xl) {
+  @include mq(md) {
     color: $white;
   }
 }
 .about__text p {
   font-size: rem(16);
   padding: rem(10) rem(16) rem(0) rem(14);
-  @include mq(xl) {
+  @include mq(md) {
     font-size: rem(16);
     display: inline-block;
     width: rem(400);
     height: rem(144);
     z-index: 12;
     margin-left: rem(40);
-    padding:rem(40) 0 0 0;
+    padding: rem(38) 0 0 0;
   }
 }
-.about__text span{
+.about__text span {
   display: none;
   @include mq(md) {
     display: inline-block;

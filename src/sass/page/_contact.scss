@@ -3,10 +3,11 @@
 .contact {
   position: relative;
 
-  @include mq(xl) {
+  @include mq(md) {
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
   }
 }
 .section__contact {

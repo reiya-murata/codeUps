@@ -13,7 +13,7 @@
   top: calc(50% + rem(8));
   left: calc(50% - rem(88));
   transform: translate(-50%, -50%);
-  @include mq(xl) {
+  @include mq(md) {
     position: absolute;
     top: calc(50% + rem(0));
     left: calc(50% - rem(8));
@@ -30,7 +30,7 @@
   left: calc(50% - rem(96));
   transform: translate(-50%, -50%);
 }
-.nav__items .nav__hitode--top{
+.nav__items .nav__hitode--top {
   position: relative;
 }
 .nav__items .nav__hitode--top img {
@@ -55,7 +55,7 @@
   transform: translate(-50%, -50%);
   width: rem(18);
   height: rem(18);
-  @include mq(xl) {
+  @include mq(md) {
     position: absolute;
     top: calc(50% + rem(8));
     left: calc(50% - rem(77));
@@ -71,7 +71,7 @@
   transform: translate(-50%, -50%);
   width: rem(18);
   height: rem(18);
-  @include mq(xl) {
+  @include mq(md) {
     position: absolute;
     top: calc(50% + rem(8));
     left: calc(50% - rem(77));
@@ -91,7 +91,7 @@
   transform: translate(-50%, -50%);
   width: rem(18);
   height: rem(18);
-  @include mq(xl) {
+  @include mq(md) {
     position: absolute;
     top: calc(50% + rem(8));
     left: calc(50% - rem(84));
@@ -110,7 +110,7 @@
   transform: translate(-50%, -50%);
   width: rem(18);
   height: rem(18);
-  @include mq(xl) {
+  @include mq(md) {
     position: absolute;
     top: calc(50% + rem(8));
     left: calc(50% - rem(94));

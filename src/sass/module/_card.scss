@@ -5,14 +5,14 @@
   font-family: $base-font-family;
   background-color: $white;
   position: relative;
-  @include mq(xl) {
+  @include mq(md) {
     margin: rem(40) rem(20) 0;
   }
 }
 
 .card__text {
   padding: rem(16) 0 0;
-  @include mq(xl) {
+  @include mq(md) {
     font-size: rem(16);
     font-family: $base-font-family;
     padding: rem(16) 0 0;
@@ -31,7 +31,6 @@
     height: rem(445);
   }
 }
-
 
 .card__header--slider img {
   aspect-ratio: 333 /223;
@@ -54,7 +53,7 @@
   justify-content: baseline;
   font-size: rem(12);
   margin: rem(16) 0 rem(4) rem(16);
-  @include mq(xl) {
+  @include mq(md) {
     // width: rem(116);
     width: fit-content;
     height: rem(34);
@@ -69,11 +68,11 @@
   display: inline-block;
   padding: rem(4) rem(11.5);
   letter-spacing: rem(-2.5);
-  @include mq(xl) {
+  @include mq(md) {
     padding: 0 rem(16);
   }
 }
-.card__body{
+.card__body {
   // width: rem(280);
   @include mq(md) {
     width: 100%;
@@ -90,12 +89,10 @@
   padding-bottom: rem(6);
   letter-spacing: rem(-2.8);
   @include mq(md) {
-    
     font-size: rem(16);
     letter-spacing: rem(-2.8);
     margin: 0 rem(16);
     padding-bottom: rem(6);
-    
   }
 }
 .card__text--slider {
@@ -104,7 +101,7 @@
   font-weight: $normal;
   padding-top: rem(8);
   font-size: rem(14);
-  @include mq(xl) {
+  @include mq(md) {
     padding-top: rem(14);
     padding-right: rem(14);
     font-size: rem(16);
@@ -135,7 +132,7 @@
   display: flex;
   justify-content: center;
   margin: rem(0) rem(16) 0 rem(2);
-  @include mq(xl) {
+  @include mq(md) {
     margin: rem(0) rem(24) 0 rem(2);
   }
 }
@@ -173,9 +170,9 @@
   font-family: $base-font-family;
   background-color: $white;
   width: rem(333);
-  margin: rem(27) rem(22) rem(40);
+  margin: rem(27) rem(22) rem(12);
   padding: rem(16) rem(16) rem(24) rem(16);
-  @include mq(xl) {
+  @include mq(md) {
     width: rem(333);
     margin: rem(40) rem(20) 0;
   }
@@ -190,11 +187,11 @@
   width: rem(301);
   height: rem(201);
   margin-bottom: rem(17);
-  @include mq(xl) {
+  @include mq(md) {
     width: rem(301);
     height: rem(201);
     display: inline-block;
-    margin-bottom: rem(15);
+    margin-bottom: rem(13);
     // margin: rem(16) rem(16) rem(12);
   }
 }
@@ -202,7 +199,7 @@
   font-family: $second-font-family;
   font-size: rem(12);
   margin-top: rem(16);
-  @include mq(xl) {
+  @include mq(md) {
     font-size: rem(12);
     line-height: rem(18);
     padding: 0;
@@ -213,7 +210,7 @@
   font-family: $base-font-family;
   font-size: rem(16);
   padding-bottom: rem(4);
-  @include mq(xl) {
+  @include mq(md) {
     font-size: rem(16);
     margin: 0;
     padding: 0 0 rem(2);
@@ -223,7 +220,7 @@
 // voice
 .cards__voice {
   margin-top: rem(40);
-  @include mq(xl) {
+  @include mq(md) {
     align-items: start;
     display: flex;
     padding: 0 0;
@@ -233,15 +230,15 @@
 }
 .cards__voice .card {
   width: rem(345);
-  margin: rem(0) rem(16) rem(34);
-  @include mq(xl) {
+  margin: rem(0) rem(16) rem(36);
+  @include mq(md) {
     width: rem(520);
     margin: rem(32) rem(20) 0;
   }
 }
 .card__inner--voice {
   padding: rem(16) rem(16) rem(16) rem(16);
-  @include mq(xl) {
+  @include mq(md) {
     padding: rem(22) rem(16) rem(24);
     width: rem(520);
     // height: rem(396);
@@ -258,7 +255,7 @@
 .card__header--voice--left--top {
   display: flex;
   flex-direction: column;
-  @include mq(xl) {
+  @include mq(md) {
     display: flex;
     flex-direction: initial;
     justify-content: space-between;
@@ -270,10 +267,10 @@
   font-family: $base-font-family;
   border-bottom: rem(1) solid $blue;
   width: rem(149);
-  padding: rem(0) 0 rem(4);
+  padding: rem(2) 0 rem(4);
   font-size: rem(16);
   font-weight: $bold;
-  @include mq(xl) {
+  @include mq(md) {
     width: rem(276);
     margin-right: rem(8);
     margin-left: rem(8);
@@ -286,13 +283,13 @@
   }
 }
 
-.card__img{
+.card__img {
   aspect-ratio: 140 / 180;
   width: rem(151);
   height: rem(117);
   margin-top: rem(12);
   margin-left: rem(12);
-  @include mq(xl) {
+  @include mq(md) {
     margin: 0 0 rem(8) rem(8);
     width: rem(180);
     height: rem(140);
@@ -303,7 +300,7 @@
   width: rem(151);
   height: rem(117);
   margin: rem(0);
-  @include mq(xl) {
+  @include mq(md) {
     margin: 0;
     width: rem(180);
     height: rem(140);
@@ -313,7 +310,7 @@
 .card__age {
   font-size: rem(12);
   padding-top: rem(2);
-  @include mq(xl) {
+  @include mq(md) {
     padding: rem(40) 0 0 rem(8);
     font-size: rem(12);
     font-family: $base-font-family;
@@ -330,7 +327,7 @@
   font-family: $base-font-family;
   border: rem(1) solid $blue;
   width: fit-content;
-  @include mq(xl) {
+  @include mq(md) {
     font-size: rem(12);
     padding: rem(6) rem(15);
     margin: rem(24) rem(8) 0 0;
@@ -338,9 +335,9 @@
 }
 
 .card__text--voice {
-  padding-top: rem(16);
+  padding-top: rem(14);
   padding-bottom: rem(8);
-  @include mq(xl) {
+  @include mq(md) {
     padding: rem(32) rem(16) 0 rem(8);
   }
 }
@@ -349,7 +346,7 @@
   display: flex;
   flex-direction: column;
   box-shadow: none;
-  margin-bottom: rem(196);
+  margin-bottom: rem(98);
   text-align: center;
   align-items: center;
   @include mq(md) {
@@ -366,8 +363,8 @@
 
 .address__card {
   box-shadow: none;
-  margin-bottom:rem(196);
-  @include mq(xl) {
+  margin-bottom: rem(196);
+  @include mq(md) {
     display: flex;
     box-shadow: rem(4) rem(4) rem(10) 0 rgba(0, 0, 0, 0.25);
     width: rem(1080);
@@ -379,7 +376,7 @@
   display: flex;
   text-align: center;
   flex-direction: column;
-  @include mq(xl) {
+  @include mq(md) {
     flex-direction: initial;
   }
 }

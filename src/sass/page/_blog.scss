@@ -4,10 +4,10 @@
   position: relative;
 }
 .section__blog {
-  padding: rem(88) 0 rem(80);
+  padding: rem(88) 0 rem(84);
   @include mq(md) {
     position: relative;
-    padding: rem(104) 0 rem(138);
+    padding: rem(104) 0 rem(144);
     padding-right: rem(2);
   }
 }

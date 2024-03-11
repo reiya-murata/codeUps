@@ -3,10 +3,10 @@
 .information {
   position: relative;
   background-color: #ddf0f1;
-  padding: rem(88) 0 rem(72);
+  padding: rem(82) 0 rem(70);
   box-shadow: 0 rem(2) rem(4) 0 rgba(0, 0, 0, 0.5);
   @include mq(md) {
-    padding: rem(92) 0 rem(76);
+    padding: rem(94) 0 rem(76);
     box-shadow: none;
   }
 }

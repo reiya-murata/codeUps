@@ -76,12 +76,6 @@ const main__swiper = new Swiper(".main__swiper", {
       slidesPerView: "auto",
       spaceBetween: 44,
       centeredSlides: true,
-      // breakpoints: {
-      //   650: {
-
-          
-      //   },
-      // },
       pagination: {
         el: ".swiper-pagination",
         clickable: true,

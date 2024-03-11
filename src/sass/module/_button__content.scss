@@ -12,7 +12,7 @@
   font-family: $second-font-family;
   width: rem(202);
   height: rem(54);
-  @include mq(xl) {
+  @include mq(md) {
     width: rem(202);
     height: rem(56);
     z-index: 11;
@@ -97,7 +97,7 @@
   text-align: center;
   margin-top: rem(40);
   margin-right: rem(2);
-  @include mq(xl) {
+  @include mq(md) {
     position: absolute;
     top: calc(50% + rem(88));
     left: calc(50% + rem(292));
@@ -138,24 +138,21 @@
 
 .button__voice {
   text-align: center;
-  margin:rem(40) rem(2) 0 0;
-  @include mq(xl) {
+  margin: rem(40) rem(2) 0 0;
+  @include mq(md) {
     text-align: center;
     margin: rem(80) rem(4) 0 0;
   }
 }
 .button__contact {
-  position: absolute;
-  position: absolute;
-  top: calc(50% + rem(270));
-  left: calc(50% - rem(2));
-  transform: translate(-50%, -50%);
+  margin-top: rem(36);
+  padding: 0;
   @include mq(md) {
     position: absolute;
-    top: calc(50% + rem(103));
+    top: calc(50% + rem(72));
     left: calc(50% + rem(268));
     transform: translate(-50%, -50%);
-    padding: rem(30) 0 rem(99);
+    margin: 0;
     text-align: center;
   }
 }
@@ -163,7 +160,7 @@
   margin-top: rem(40);
   margin-right: rem(2);
   text-align: center;
-  @include mq(xl) {
+  @include mq(md) {
     margin-top: rem(80);
     margin-right: rem(6);
   }

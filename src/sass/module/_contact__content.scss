@@ -5,7 +5,7 @@
   font-family: $base-font-family;
   text-align: center;
   margin-top: rem(168);
-  @include mq(xl) {
+  @include mq(md) {
     text-align: left;
     margin: rem(76) rem(5) 0 rem(50);
     font-size: rem(16);
@@ -13,10 +13,10 @@
   }
 }
 .contact__content p {
-  line-height:rem(24) ;
+  line-height: rem(24);
   font-size: rem(16);
   margin-bottom: rem(4);
-  @include mq(xl) {
+  @include mq(md) {
     margin-bottom: rem(4);
     line-height: rem(24);
     font-size: rem(16);
@@ -31,7 +31,7 @@
   line-height: rem(24);
   font-family: $base-font-family;
 
-  @include mq(xl) {
+  @include mq(md) {
     display: flex;
     width: rem(572);
     // padding-top: rem(24);
@@ -40,24 +40,22 @@
     padding: 0;
   }
 }
-.contact__map{
-  position: absolute;
+.contact__map {
   width: rem(295);
   height: rem(160);
   text-align: center;
+  margin: rem(14) 0 0;
   @include mq(md) {
     width: rem(273);
     height: rem(148);
-    top: calc(50% + rem(45));
-    left: calc(50% - rem(186));
-    transform: translate(-50%, -50%);
+    margin: rem(78) 0 0 rem(16);
   }
 }
 .contact__map img {
   aspect-ratio: 273 / 148;
   width: rem(295);
   height: rem(160);
-  
+
   @include mq(md) {
     width: rem(273);
     height: rem(148);
@@ -67,7 +65,7 @@
   aspect-ratio: 273 / 148;
   width: rem(295);
   height: rem(160);
-  
+
   @include mq(md) {
     width: rem(273);
     height: rem(148);
@@ -80,12 +78,12 @@
   font-family: $base-font-family;
   // padding: rem(16) rem(40);
   // border-top: 1px solid $blue;
-  margin: rem(240) 0 0;
+  margin: rem(68) 0 0;
   border: none;
-  @include mq(xl) {
+  @include mq(md) {
     border-left: 1px solid $blue;
     display: flex;
-    padding: rem(0) rem(112) rem(0) rem(80);
+    padding: rem(2) rem(112) rem(0) rem(80);
     border-top: none;
     margin: rem(80) 0;
     margin: rem(80) 0;

@@ -11,16 +11,15 @@
   padding-top: rem(70);
   padding-left: rem(36);
   line-height: rem(16);
-  @include mq(xl) {
+  @include mq(md) {
     padding-top: rem(0);
     font-weight: $regular;
     font-family: $base-font-family;
   }
 }
-.nav__items li{
+.nav__items li {
   text-align: start;
 }
-
 
 .nav_item a {
   display: block;
@@ -43,12 +42,12 @@
   height: 100vh;
 }
 
-.nav__items .nav__item{
-padding-top: rem(26);
+.nav__items .nav__item {
+  padding-top: rem(26);
 }
 .nav__item {
   padding-top: rem(24);
-  @include mq(xl) {
+  @include mq(md) {
     padding-top: rem(24);
   }
 }
@@ -68,9 +67,9 @@ padding-top: rem(26);
 }
 
 .nav__item--bold.top {
-  margin-top: rem(34 );
+  margin-top: rem(34);
   font-weight: $bold;
-  @include mq(xl) {
+  @include mq(md) {
     font-weight: $bold;
     margin-top: rem(0);
   }
@@ -80,7 +79,7 @@ padding-top: rem(26);
   z-index: 10;
   color: $white;
   font-weight: $regular;
-  @include mq(xl) {
+  @include mq(md) {
     // justify-content: space-around;
     // margin: auto;
   }
