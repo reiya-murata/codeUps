@@ -158,7 +158,8 @@ a {
 }
 
 .section__about {
-	padding: 4.75rem 0 10.375rem;
+	margin-bottom: 10.5rem;
+	margin-top: 5rem;
 }
 
 .blog {
@@ -166,7 +167,6 @@ a {
 }
 
 .section__blog {
-	padding: 5.625rem 0 4.9375rem;
 	padding: 5.5rem 0 5rem;
 }
 
@@ -308,15 +308,12 @@ a {
 	display: none;
 }
 
-.address__card {
-	box-shadow: none;
-	margin-bottom: 12.25rem;
+.blog__bg--img {
+	display: none;
 }
 
-.contact__left--address {
-	display: flex;
-	flex-direction: column;
-	text-align: center;
+.blog__cards {
+	position: relative;
 }
 
 .blog__bg--img {
@@ -324,6 +321,10 @@ a {
 }
 
 .blog__cards {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	position: relative;
 }
 
@@ -447,6 +448,7 @@ a {
 
 .button__blog {
 	margin-right: 0.125rem;
+	margin-top: 1.5rem;
 	text-align: center;
 }
 
@@ -533,6 +535,7 @@ a {
 .card__campaign--prices {
 	align-items: center;
 	display: flex;
+	font-family: "Lato", sans-serif;
 	justify-content: center;
 	margin: 0 calc(50% - 50vw);
 	text-align: center;
@@ -692,6 +695,17 @@ a {
 	text-align: center;
 }
 
+.address__card {
+	box-shadow: none;
+	margin-bottom: 12.25rem;
+}
+
+.contact__left--address {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
 div.colorbox {
 	position: relative;
 }
@@ -733,7 +747,14 @@ div.colorbox img {
 
 .contact__map {
 	height: 10rem;
-	margin: 0.875rem 0 0rem 0;
+	position: absolute;
+	text-align: center;
+	width: 18.4375rem;
+}
+
+.contact__map img {
+	aspect-ratio: 273/148;
+	height: 10rem;
 	width: 18.4375rem;
 }
 
@@ -933,6 +954,10 @@ div.colorbox img {
 
 .logo__img--codeups a {
 	display: inline-block;
+}
+
+.about__logo {
+	display: none;
 }
 
 .blog__logo--1 {
@@ -1404,6 +1429,14 @@ div.colorbox img {
 	text-align: center;
 }
 
+.information .section__title {
+	text-shadow: none;
+}
+
+.price .section__title {
+	text-shadow: none;
+}
+
 .section__title::first-letter {
 	color: #108F95;
 	font-weight: 300;
@@ -1416,6 +1449,15 @@ div.colorbox img {
 	font-size: 0.75rem;
 	font-weight: 300;
 	text-align: center;
+	text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.5);
+}
+
+.information .section__subtitle {
+	text-shadow: none;
+}
+
+.price .section__subtitle {
+	text-shadow: none;
 }
 
 .section__subtitle--campaign {
@@ -1424,6 +1466,7 @@ div.colorbox img {
 	font-size: 0.75rem;
 	font-weight: 300;
 	text-align: center;
+	text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.5);
 }
 
 .section__titles--blog {
@@ -1438,6 +1481,7 @@ div.colorbox img {
 	font-weight: 300;
 	line-height: 2.5rem;
 	text-align: center;
+	text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.5);
 	text-transform: capitalize;
 }
 
@@ -1454,6 +1498,7 @@ div.colorbox img {
 	font-weight: 300;
 	margin-top: 0.3125rem;
 	text-align: center;
+	text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.5);
 }
 
 .section__title--contact {
@@ -1546,13 +1591,204 @@ html {
 	padding-right: 25px;
 }
 
+.section__blog {
+	padding: 6.5rem 0 8.625rem;
+	padding-right: 0.125rem;
+	position: relative;
+}
+
+.information {
+	box-shadow: none;
+	padding: 5.75rem 0 4.75rem;
+}
+
+.price {
+	box-shadow: none;
+	padding: 5.625rem 0 6rem;
+}
+
+.about__text span {
+	display: inline-block;
+}
+
+.blog__bg--img {
+	display: block;
+	height: 31.25rem;
+	position: absolute;
+	top: 50%;
+	top: 15.9375rem;
+	transform: translateY(-50%);
+	z-index: -1;
+}
+
+.blog__cards {
+	display: flex;
+	flex-direction: initial;
+	justify-content: center;
+	top: 2.5rem;
+	width: 100%;
+}
+
+.button__campaign {
+	margin: 4.75rem 1rem 0 0;
+}
+
+.button__about {
+	left: calc(50% + 18.5rem);
+	top: calc(50% + 14.375rem);
+	transform: translate(-50%, -50%);
+}
+
+.button__blog {
+	margin: 7.5rem 0.875rem 0 0;
+	padding: 0 0 0 0.5rem;
+}
+
+.button__contact {
+	left: calc(50% + 16.75rem);
+	padding: 1.875rem 0 6.1875rem;
+	position: absolute;
+	text-align: center;
+	top: calc(50% + 6.4375rem);
+	transform: translate(-50%, -50%);
+}
+
+.card__slider {
+	height: 27.8125rem;
+	margin: 2.5rem 0 0 0;
+	width: 20.8125rem;
+}
+
+.card__header--slider img {
+	width: 100%;
+}
+
+.card__body {
+	width: 100%;
+}
+
+.card__title--campaign {
+	font-size: 1rem;
+	letter-spacing: -0.175rem;
+	margin: 0 1rem;
+	padding-bottom: 0.375rem;
+}
+
+.card__campaign--price h3 {
+	font-family: "Lato", sans-serif;
+	font-size: 1.5rem;
+	line-height: 1.75rem;
+	padding: 1.125rem 1rem 0 0.125rem;
+}
+
+.card__campaign--price--night h3 {
+	font-family: "Lato", sans-serif;
+	font-size: 1.5rem;
+	line-height: 1.75rem;
+	padding: 1.125rem 1rem 0 0rem;
+}
+
+.card__discount h3 {
+	font-family: "Lato", sans-serif;
+	font-size: 2.5rem;
+	letter-spacing: 0rem;
+	line-height: 2.5rem;
+	padding: 0.3125rem 0 0 0.75rem;
+}
+
+.contact__card {
+	align-items: normal;
+	box-shadow: 0.25rem 0.25rem 0.625rem 0 rgba(0, 0, 0, 0.25);
+	display: flex;
+	flex-direction: initial;
+	height: 25.9375rem;
+	margin: 8.75rem 0 10rem;
+	max-width: 67.5rem;
+	padding: -31.25rem;
+}
+
+.contact__map {
+	height: 9.25rem;
+	left: calc(50% - 11.625rem);
+	top: calc(50% + 2.8125rem);
+	transform: translate(-50%, -50%);
+	width: 17.0625rem;
+}
+
+.contact__map img {
+	height: 9.25rem;
+	width: 17.0625rem;
+}
+
+.contact__map img {
+	height: 9.25rem;
+	width: 17.0625rem;
+}
+
 .hamburger {
 	display: none;
+}
+
+.information__content--img {
+	height: 22.25rem;
+	margin-left: 3.125rem;
+	margin-top: 0.125rem;
+	width: 33.75rem;
+}
+
+.nav__item--bold {
+	font-weight: 700;
+	margin-top: 2.5rem;
 }
 
 .nav__pc {
 	display: block; /* 表示に変更 */
 	height: 5.625rem;
+}
+
+.section__subtitle {
+	font-size: 0.75rem;
+	font-weight: 300;
+	line-height: 1.125rem;
+	padding: 0.5rem 0rem 0 0;
+}
+
+.section__subtitle--campaign {
+	font-size: 0.75rem;
+	font-weight: 300;
+	line-height: 1.125rem;
+	margin: 0.5rem 0.75rem 0 0;
+}
+
+.section__title--blog {
+	color: #fff;
+	font-family: "Gotu", sans-serif;
+	font-size: 2.5rem;
+	font-weight: 300;
+	line-height: 2.5rem;
+	text-align: center;
+}
+
+.section__subtitle__blog {
+	color: #fff;
+	font-size: 0.75rem;
+	font-weight: 300;
+	line-height: 1.125rem;
+}
+
+.section__subtitle--contact {
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 0.75rem;
+	line-height: 1.125rem;
+	margin-bottom: 0;
+	padding: 0;
+	padding-bottom: 0.5rem;
+}
+
+.swiper-wrapper.campaign {
+	padding-bottom: 0.3125rem;
+	padding-left: 46.125rem;
+	width: 100%;
 }
 
 }
@@ -1568,14 +1804,8 @@ html {
 @media screen and (min-width: 1440px) {
 
 .section__about {
-	overflow: hidden;
-	padding: 7.875rem 0 9.875rem;
-}
-
-.section__blog {
-	padding: 6.25rem 0 8.9375rem;
-	padding-right: 0.125rem;
-	position: relative;
+	margin-bottom: 25rem;
+	margin-top: 8.125rem;
 }
 
 .section__campaign {
@@ -1590,16 +1820,6 @@ html {
 	align-items: center;
 	display: flex;
 	justify-content: center;
-}
-
-.information {
-	box-shadow: none;
-	padding: 5.75rem 0 4.75rem;
-}
-
-.price {
-	box-shadow: none;
-	padding: 6rem 0 6rem;
 }
 
 .section__price {
@@ -1640,15 +1860,15 @@ html {
 	height: 37.875rem;
 	left: calc(50% - 21.25rem);
 	padding: 0;
-	top: calc(50% + 21.5625rem);
+	top: calc(50% + 21.25rem);
 	transform: translate(-50%, -50%);
 	width: 24.9375rem;
 }
 
 .about__img--2 {
 	height: 36.3125rem;
-	left: calc(50% + 4.25rem);
-	top: calc(50% + 19.375rem);
+	left: calc(50% + 6.25rem);
+	top: calc(50% + 25.5rem);
 	transform: translate(-50%, -50%);
 	width: 55rem;
 }
@@ -1673,22 +1893,6 @@ html {
 	padding: 2.5rem 0 0 0;
 	width: 25rem;
 	z-index: 12;
-}
-
-.about__text span {
-	display: inline-block;
-}
-
-.address__card {
-	box-shadow: 0.25rem 0.25rem 0.625rem 0 rgba(0, 0, 0, 0.25);
-	display: flex;
-	height: 25.9375rem;
-	margin: 8.75rem 0 10rem;
-	width: 67.5rem;
-}
-
-.contact__left--address {
-	flex-direction: initial;
 }
 
 .blog__bg--img {
@@ -1721,33 +1925,9 @@ html {
 	transform: translate(-50%, -50%);
 }
 
-.button__campaign {
-	margin: 4.75rem 1rem 0 0;
-}
-
-.button__about {
-	left: calc(50% + 18.5rem);
-	top: calc(50% + 6.875rem);
-	transform: translate(-50%, -50%);
-}
-
-.button__blog {
-	margin: 7.375rem 0.875rem 0 0;
-	padding: 0 0 0 0.5rem;
-}
-
 .button__voice {
 	margin: 5rem 0.25rem 0 0;
 	text-align: center;
-}
-
-.button__contact {
-	left: calc(50% + 16.75rem);
-	padding: 1.875rem 0 6.1875rem;
-	position: absolute;
-	text-align: center;
-	top: calc(50% + 6.4375rem);
-	transform: translate(-50%, -50%);
 }
 
 .button__price {
@@ -1765,16 +1945,6 @@ html {
 	padding: 1rem 0 0;
 }
 
-.card__slider {
-	height: 27.8125rem;
-	margin: 2.5rem 0 0 0;
-	width: 20.8125rem;
-}
-
-.card__header--slider img {
-	width: 100%;
-}
-
 .card__icon--slider {
 	font-size: 0.75rem;
 	height: 2.125rem;
@@ -1789,44 +1959,14 @@ html {
 	padding: 0 1rem;
 }
 
-.card__body {
-	width: 100%;
-}
-
-.card__title--campaign {
-	font-size: 1rem;
-	letter-spacing: -0.175rem;
-	margin: 0 1rem;
-	padding-bottom: 0.375rem;
-}
-
 .card__text--slider {
 	font-size: 1rem;
 	padding-right: 0.875rem;
 	padding-top: 0.875rem;
 }
 
-.card__campaign--price h3 {
-	font-size: 1.5rem;
-	line-height: 1.75rem;
-	padding: 1.125rem 1rem 0 0.125rem;
-}
-
 .card__campaign--prices--night {
 	margin: 0rem 1.5rem 0 0.125rem;
-}
-
-.card__campaign--price--night h3 {
-	font-size: 1.5rem;
-	line-height: 1.75rem;
-	padding: 1.125rem 1rem 0 0rem;
-}
-
-.card__discount h3 {
-	font-size: 2.5rem;
-	letter-spacing: 0rem;
-	line-height: 2.5rem;
-	padding: 0.3125rem 0 0 0.75rem;
 }
 
 .card__blog {
@@ -1919,15 +2059,12 @@ html {
 	padding: 2rem 1rem 0 0.5rem;
 }
 
-.contact__card {
-	align-items: normal;
+.address__card {
 	box-shadow: 0.25rem 0.25rem 0.625rem 0 rgba(0, 0, 0, 0.25);
 	display: flex;
-	flex-direction: initial;
 	height: 25.9375rem;
 	margin: 8.75rem 0 10rem;
-	max-width: 67.5rem;
-	padding: -31.25rem;
+	width: 67.5rem;
 }
 
 .contact__left--address {
@@ -1954,29 +2091,11 @@ html {
 	width: 35.75rem;
 }
 
-.contact__map {
-	height: 9.25rem;
-	left: calc(50% - 11.625rem);
-	position: absolute;
-	top: calc(50% + 2.8125rem);
-	transform: translate(-50%, -50%);
-	width: 17.0625rem;
-}
-
-.contact__map {
-	height: 9.25rem;
-	width: 17.0625rem;
-}
-
-.contact__map img {
-	height: 9.25rem;
-	width: 17.0625rem;
-}
-
 .contact__right {
 	border-left: 1px solid #108F95;
 	border-top: none;
 	display: flex;
+	margin: 5rem 0;
 	margin: 5rem 0;
 	padding: 0rem 7rem 0rem 5rem;
 }
@@ -2019,6 +2138,7 @@ html {
 .information__content {
 	display: flex;
 	flex-direction: inherit;
+	justify-content: center;
 	padding: 2.5rem 3rem 0 0;
 }
 
@@ -2046,13 +2166,6 @@ html {
 	width: 30.75rem;
 }
 
-.information__content--img {
-	height: 22.25rem;
-	margin-left: 3.125rem;
-	margin-top: 0.125rem;
-	width: 33.75rem;
-}
-
 .information__content--img img {
 	height: 22.25rem;
 	width: 33.75rem;
@@ -2061,6 +2174,16 @@ html {
 .logo__img--codeups img {
 	left: 2.5rem;
 	width: 8.3125rem;
+}
+
+.about__logo {
+	display: block;
+	height: 11.3125rem;
+	left: calc(50% - 25rem);
+	position: absolute;
+	top: calc(50% - 22.5rem);
+	transform: translate(-50%, -50%);
+	width: 12.125rem;
 }
 
 .blog__logo--1 {
@@ -2212,11 +2335,6 @@ html {
 
 .nav__item {
 	padding-top: 1.5rem;
-}
-
-.nav__item--bold {
-	font-weight: 700;
-	margin-top: 2.5rem;
 }
 
 .nav__item--bold.top {
@@ -2371,20 +2489,6 @@ html {
 	color: #108F95;
 }
 
-.section__subtitle {
-	font-size: 0.75rem;
-	font-weight: 300;
-	line-height: 1.125rem;
-	padding: 0.5rem 0rem 0 0;
-}
-
-.section__subtitle--campaign {
-	font-size: 0.75rem;
-	font-weight: 300;
-	line-height: 1.125rem;
-	margin: 0.5rem 0.75rem 0 0;
-}
-
 .section__titles--blog {
 	color: #fff;
 	font-size: 2rem;
@@ -2393,24 +2497,8 @@ html {
 	text-transform: capitalize;
 }
 
-.section__title--blog {
-	color: #fff;
-	font-family: "Gotu", sans-serif;
-	font-size: 2.5rem;
-	font-weight: 300;
-	line-height: 2.5rem;
-	text-align: center;
-}
-
 .section__titles--blog::first-letter {
 	color: #fff;
-}
-
-.section__subtitle__blog {
-	color: #fff;
-	font-size: 0.75rem;
-	font-weight: 300;
-	line-height: 1.125rem;
 }
 
 .section__titles--price {
@@ -2426,14 +2514,6 @@ html {
 	padding-top: -5rem;
 }
 
-.section__subtitle--contact {
-	font-size: 0.75rem;
-	line-height: 1.125rem;
-	margin-bottom: 0;
-	padding: 0;
-	padding-bottom: 0.5rem;
-}
-
 .section__subtitle--contact2 {
 	color: #108F95;
 	font-family: "Noto Sans JP", sans-serif;
@@ -2445,12 +2525,6 @@ html {
 .swiper-slide {
 	margin: 0;
 	width: 20.625rem;
-}
-
-.swiper-wrapper.campaign {
-	padding-bottom: 0.3125rem;
-	padding-left: 46.125rem;
-	width: 100%;
 }
 
 .swiper__campaign {

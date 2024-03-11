@@ -6,6 +6,7 @@
   @include mq(xl) {
     display: flex;
     flex-direction: inherit;
+    justify-content: center;
     padding: rem(40) rem(48) 0 0;
   }
 }

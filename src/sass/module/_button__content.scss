@@ -121,7 +121,7 @@
   left: calc(50% - rem(2));
   transform: translate(-50%, -50%);
   @include mq(md) {
-    top: calc(50% + rem(110));
+    top: calc(50% + rem(230));
     left: calc(50% + rem(296));
     transform: translate(-50%, -50%);
   }

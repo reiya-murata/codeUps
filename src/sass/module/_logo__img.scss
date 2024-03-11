@@ -15,6 +15,21 @@
 .logo__img--codeups a {
   display: inline-block;
 }
+// about
+.about__logo{ 
+  display: none;
+  @include mq(xl) {
+  position: absolute;
+  display: block;
+  width: rem(194);
+  height: rem(181);
+  top: calc(50% - rem(360));
+  left: calc(50% - rem(400));
+  transform: translate(-50%, -50%);
+}
+}
+
+
 
 // blog
 .blog__logo--1 {
