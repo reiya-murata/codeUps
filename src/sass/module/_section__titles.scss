@@ -6,12 +6,10 @@
   font-family: $second-font-family;
   text-align: center;
   color: $black;
-  text-shadow: rem(2) rem(2) rem(4) rgba(0, 0, 0, 0.5);
   @include mq(md) {
     font-size: rem(40);
     line-height: rem(40);
     font-weight: $regular;
-    text-shadow: none;
   }
 }
 .information .section__title {
@@ -42,7 +40,6 @@
     font-size: rem(12);
     font-weight: $regular;
     line-height: rem(18);
-    text-shadow: none;
   }
 }
 .information .section__subtitlee {
@@ -64,7 +61,6 @@
     font-size: rem(12);
     font-weight: $regular;
     line-height: rem(18);
-    text-shadow: none;
   }
 }
 
@@ -97,7 +93,6 @@
     font-weight: $regular;
     text-align: center;
     color: $white;
-    text-shadow: none;
   }
 }
 
@@ -123,7 +118,6 @@
     font-size: rem(12);
     font-weight: $regular;
     line-height: rem(18);
-    text-shadow: none;
   }
 }
 
