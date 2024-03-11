@@ -15,13 +15,13 @@
   @include mq(md) {
     width: rem(202);
     height: rem(56);
+    z-index: 11;
   }
 }
-.button span {
-  margin-right: rem(2);
-  margin-left: rem(5);
+.button p {
+  z-index: 10;
+  position: absolute;
 }
-
 .button::after {
   content: "";
   position: absolute;
@@ -30,8 +30,14 @@
   width: 100%;
   height: 100%;
   border: rem(1) solid $blue;
-  z-index: 10;
+  z-index: 2;
 }
+
+.button span {
+  margin-right: rem(2);
+  margin-left: rem(5);
+}
+
 .stickarrow {
   display: inline-block;
   width: rem(40);
@@ -44,6 +50,47 @@
 }
 .button a {
   display: block;
+  z-index: 15;
+}
+.buttonslide {
+  position: absolute;
+  width: rem(202);
+  height: rem(54);
+  top: calc(50% + rem(0));
+  left: calc(50% + rem(0));
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+.buttonslide::after {
+  background: gray;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  transform: scale(0, 1);
+  transform-origin: left top;
+  transition: 0.2s cubic-bezier(0.45, 0, 0.55, 1);
+  z-index: -1;
+}
+.buttonslide:hover {
+  color: $white;
+  z-index: 5;
+}
+.buttonslide:hover::after {
+  transform: scale(1, 1);
+}
+.buttonslide:hover + p {
+  z-index: 6; /* .button p の z-index を増やす */
+}
+.buttonslide:hover .button::after {
+  transform: scale(1, 1);
+}
+
+.buttonslide:hover {
+  color: $white;
+  z-index: 5;
 }
 
 .button__information {
@@ -62,7 +109,7 @@
   text-align: center;
   margin-right: rem(4);
   @include mq(md) {
-    margin: rem(35) rem(16) 0 0;
+    margin: rem(76) rem(16) 0 0;
   }
 }
 .button__about {
@@ -74,7 +121,7 @@
   left: calc(50% - rem(2));
   transform: translate(-50%, -50%);
   @include mq(md) {
-    top: calc(50% + rem(232));
+    top: calc(50% + rem(110));
     left: calc(50% + rem(296));
     transform: translate(-50%, -50%);
   }
@@ -100,7 +147,7 @@
 .button__contact {
   position: absolute;
   position: absolute;
-  top: calc(50% + rem(370));
+  top: calc(50% + rem(270));
   left: calc(50% - rem(2));
   transform: translate(-50%, -50%);
   @include mq(md) {

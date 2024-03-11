@@ -56,7 +56,7 @@
         <nav class="nav" id="js-nav">
           <ul class="nav__items">
             <div class="nav__items--left">
-              <div class="nav__hitode">
+              <div class="nav__hitode--top">
                 <img
                   src="../assets\images\common\_ヒトデ.png"
                   alt="ヒトデのアイコン" />
@@ -76,7 +76,7 @@
                   src="../assets\images\common\_ヒトデ.png"
                   alt="ヒトデのアイコン" />
               </div>
-              <li class="nav__item--bold top">
+              <li class="nav__item--bold">
                 <a href="#">ダイビング情報</a>
               </li>
               <li class="nav__item"><a href="#">ライセンス講習</a></li>
@@ -90,7 +90,7 @@
               <li class="nav__item--bold"><a href="#">ブログ</a></li>
             </div>
             <div class="nav__items--right">
-              <div class="nav__hitode">
+              <div class="nav__hitode--top">
                 <img
                   src="../assets\images\common\_ヒトデ.png"
                   alt="ヒトデのアイコン" />
@@ -115,7 +115,7 @@
                   src="../assets\images\common\_ヒトデ.png"
                   alt="ヒトデのアイコン" />
               </div>
-              <li class="nav__item--bold top"><a href="#">よくある質問</a></li>
+              <li class="nav__item--bold"><a href="#">よくある質問</a></li>
 
               <div class="nav__hitode">
                 <img
@@ -145,10 +145,10 @@
             <a href="#">
               <picture class="logo__img--codeups">
                 <source
-                  media="(max-width: 767px)"
+                  media="(max-width: rem(767))"
                   srcset="..\assets\images\common\CodeUps (1).svg" />
                 <source
-                  media="(min-width: 767px)"
+                  media="(min-width: rem(767))"
                   srcset="..\assets\images\common\CodeUps.svg" />
                 <img
                   src="..\assets\images\common\CodeUps (1).svg"
@@ -234,10 +234,10 @@
                   <div class="swiper-slide">
                     <picture class="mainvisial">
                       <source
-                        media="(max-width: 767px)"
+                        media="(max-width: rem(767))"
                         srcset="../assets\images\common\main-view.1.jpg" />
                       <source
-                        media="(min-width: 767px)"
+                        media="(min-width: rem(767))"
                         srcset="../assets\images\common\main-view.pc.1.jpg" />
                       <img
                         src="../assets\images\common\main-view.pc.1.jpg"
@@ -247,10 +247,10 @@
                   <div class="swiper-slide">
                     <picture class="mainvisial">
                       <source
-                        media="(max-width: 767px)"
+                        media="(max-width: rem(767))"
                         srcset="../assets\images\common\main-view.2.jpg" />
                       <source
-                        media="(min-width: 767px)"
+                        media="(min-width: rem(767))"
                         srcset="../assets\images\common\main-view.pc.2.jpg" />
                       <img
                         src="../assets\images\common\main-view.pc.2.jpg"
@@ -260,10 +260,10 @@
                   <div class="swiper-slide">
                     <picture class="mainvisial">
                       <source
-                        media="(max-width: 767px)"
+                        media="(max-width: rem(767))"
                         srcset="../assets\images\common\main-view.3.jpg" />
                       <source
-                        media="(min-width: 767px)"
+                        media="(min-width: rem(767))"
                         srcset="../assets\images\common\main-view.pc.3.jpg" />
                       <img
                         src="../assets\images\common\main-view.pc.3.jpg"
@@ -273,7 +273,7 @@
                   <div class="swiper-slide">
                     <picture class="mainvisial">
                       <source
-                        media="(max-width: 767px)"
+                        media="(max-width: rem(767))"
                         srcset="../assets\images\common\main-view.4.jpg" />
                       <source
                         media="(min-width: 767px)"
@@ -417,9 +417,12 @@
             </div>
 
             <div class="button__campaign">
-              <div class="button">
-                <a href="#">View more<span class="stickarrow"></span></a>
-              </div>
+              <a href="#">
+                <div class="button">
+                  <p>View more<span class="stickarrow"></span></p>
+                  <div class="buttonslide"></div>
+                </div>
+              </a>
             </div>
           </div>
         </section>
@@ -472,9 +475,12 @@
                 </p>
               </div>
               <div class="button__about">
-                <div class="button">
-                  <a href="#">View more<span class="stickarrow"></span></a>
-                </div>
+                <a href="#">
+                  <div class="button">
+                    <p>View more<span class="stickarrow"></span></p>
+                    <div class="buttonslide"></div>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
@@ -501,9 +507,12 @@
                   正規登録店として、安心安全に初めての方でも安心安全にライセンス取得をサポート致します。
                 </p>
                 <div class="button__information">
-                  <div class="button">
-                    <a href="#">View more<span class="stickarrow"></span></a>
-                  </div>
+                  <a href="#">
+                    <div class="button">
+                      <p>View more<span class="stickarrow"></span></p>
+                      <div class="buttonslide"></div>
+                    </div>
+                  </a>
                 </div>
               </div>
             </div>
@@ -577,9 +586,12 @@
               </div>
             </div>
             <div class="button__blog">
-              <div class="button">
-                <a href="#">View more<span class="stickarrow"></span></a>
-              </div>
+              <a href="#">
+                <div class="button">
+                  View more<span class="stickarrow"> </span>
+                  <div class="buttonslide"></div>
+                </div>
+              </a>
             </div>
             <div class="blog__logo--2">
               <img
@@ -657,9 +669,12 @@
               </div>
             </div>
             <div class="button__voice">
-              <div class="button">
-                <a href="#">View more<span class="stickarrow"></span></a>
-              </div>
+              <a href="#">
+                <div class="button">
+                  <p>View more<span class="stickarrow"></span></p>
+                  <div class="buttonslide"></div>
+                </div>
+              </a>
             </div>
             <div class="voice__logo--ibaratatu">
               <img
@@ -763,9 +778,12 @@
             </div>
           </div>
           <div class="button__price">
-            <div class="button">
-              <a href="#">View more<span class="stickarrow"></span></a>
-            </div>
+            <a href="#">
+              <div class="button">
+                <p>View more<span class="stickarrow"></span></p>
+                <div class="buttonslide"></div>
+              </div>
+            </a>
           </div>
           <div class="logo__price">
             <img
@@ -821,9 +839,12 @@
                     ご予約・お問い合わせはコチラ
                   </h4>
                   <div class="button__contact">
-                    <div class="button">
-                      <a href="#">Contact us<span class="stickarrow"></span></a>
-                    </div>
+                    <a href="#">
+                      <div class="button">
+                        <p>Contact us<span class="stickarrow"></span></p>
+                        <div class="buttonslide"></div>
+                      </div>
+                    </a>
                   </div>
                 </div>
               </div>

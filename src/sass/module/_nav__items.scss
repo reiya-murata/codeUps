@@ -8,7 +8,7 @@
   font-weight: $regular;
   padding-top: rem(0);
   z-index: 15;
-  padding-top: rem(64);
+  padding-top: rem(70);
   padding-left: rem(36);
   line-height: rem(16);
   @include mq(md) {
@@ -19,7 +19,6 @@
 }
 .nav__items li {
   text-align: start;
-  margin-top: rem(2);
 }
 
 .nav_item a {
@@ -43,6 +42,9 @@
   height: 100vh;
 }
 
+.nav__items .nav__item{
+padding-top: rem(26);
+}
 .nav__item {
   padding-top: rem(24);
   @include mq(md) {
@@ -50,12 +52,15 @@
   }
 }
 
+.nav__items .nav__item--bold {
+  font-weight: $bold;
+  margin-top: rem(42);
+}
+
 .nav__item--bold {
-  position: relative;
   font-weight: $bold;
   margin-top: rem(40);
   @include mq(md) {
-    position: relative;
     font-weight: $bold;
     margin-top: rem(40);
   }

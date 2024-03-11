@@ -158,8 +158,7 @@ a {
 }
 
 .section__about {
-	margin-bottom: 10.5rem;
-	margin-top: 5rem;
+	padding: 4.75rem 0 10.375rem;
 }
 
 .blog {
@@ -167,7 +166,7 @@ a {
 }
 
 .section__blog {
-	padding: 5.625rem 0 5.125rem;
+	padding: 5.5rem 0 5rem;
 }
 
 .section__campaign {
@@ -214,7 +213,7 @@ a {
 .price {
 	background-color: #ddf0f1;
 	box-shadow: 0 0.125rem 0.3125rem 0 rgba(0, 0, 0, 0.5);
-	padding: 4.625rem 0 5.25rem;
+	padding: 4.25rem 0 5rem;
 	position: relative;
 }
 
@@ -336,9 +335,9 @@ a {
 	width: 12.625rem;
 }
 
-.button span {
-	margin-left: 0.3125rem;
-	margin-right: 0.125rem;
+.button p {
+	position: absolute;
+	z-index: 10;
 }
 
 .button::after {
@@ -349,7 +348,12 @@ a {
 	position: absolute;
 	top: 0.25rem;
 	width: 100%;
-	z-index: 10;
+	z-index: 2;
+}
+
+.button span {
+	margin-left: 0.3125rem;
+	margin-right: 0.125rem;
 }
 
 .stickarrow {
@@ -365,6 +369,53 @@ a {
 
 .button a {
 	display: block;
+	z-index: 15;
+}
+
+.buttonslide {
+	height: 3.375rem;
+	left: calc(50% + 0rem);
+	position: absolute;
+	top: calc(50% + 0rem);
+	transform: translate(-50%, -50%);
+	width: 12.625rem;
+	z-index: 3;
+}
+
+.buttonslide::after {
+	background: gray;
+	content: "";
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	transform: scale(0, 1);
+	transform-origin: left top;
+	transition: 0.2s cubic-bezier(0.45, 0, 0.55, 1);
+	width: 100%;
+	z-index: -1;
+}
+
+.buttonslide:hover {
+	color: #fff;
+	z-index: 5;
+}
+
+.buttonslide:hover::after {
+	transform: scale(1, 1);
+}
+
+.buttonslide:hover + p {
+	z-index: 6; /* .button p の z-index を増やす */
+}
+
+.buttonslide:hover .button::after {
+	transform: scale(1, 1);
+}
+
+.buttonslide:hover {
+	color: #fff;
+	z-index: 5;
 }
 
 .button__information {
@@ -403,7 +454,7 @@ a {
 	left: calc(50% - 0.125rem);
 	position: absolute;
 	position: absolute;
-	top: calc(50% + 23.125rem);
+	top: calc(50% + 16.875rem);
 	transform: translate(-50%, -50%);
 }
 
@@ -429,12 +480,6 @@ a {
 	height: 22.875rem;
 	margin: 1.6875rem 0 2.5rem 1rem;
 	width: 17.5rem;
-}
-
-.slider {
-	box-shadow: 0.125rem 0.125rem 0.625rem 0rem rgba(0, 0, 0, 0.25);
-	font-family: "Noto Sans JP", sans-serif;
-	margin: auto;
 }
 
 .card__header--slider img {
@@ -468,9 +513,8 @@ a {
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1rem;
 	letter-spacing: -0.175rem;
-	margin-left: 0.875rem;
+	margin: 0 0.875rem;
 	padding-bottom: 0.375rem;
-	width: 15.5rem;
 }
 
 .card__text--slider {
@@ -485,6 +529,7 @@ a {
 	align-items: center;
 	display: flex;
 	justify-content: center;
+	margin: 0 calc(50% - 50vw);
 	text-align: center;
 }
 
@@ -637,8 +682,12 @@ a {
 }
 
 .contact__card {
+	align-items: center;
 	box-shadow: none;
+	display: flex;
+	flex-direction: column;
 	margin-bottom: 12.25rem;
+	text-align: center;
 }
 
 div.colorbox {
@@ -686,11 +735,15 @@ div.colorbox img {
 	text-align: center;
 }
 
+.contact__map {
+	height: 10rem;
+	margin: 0.875rem 0 0rem 0;
+	width: 18.4375rem;
+}
+
 .contact__map img {
 	aspect-ratio: 273/148;
 	height: 10rem;
-	margin-left: 2.5rem;
-	margin-top: 0.875rem;
 	width: 18.4375rem;
 }
 
@@ -862,7 +915,9 @@ div.colorbox img {
 }
 
 .information__content--img {
+	height: 14.1875rem;
 	margin: 1.5rem 1rem 1.5rem;
+	width: 21.5625rem;
 }
 
 .information__content--img img {
@@ -908,7 +963,7 @@ div.colorbox img {
 	height: 3.125rem;
 	left: calc(50% + 7.375rem);
 	position: absolute;
-	top: calc(50% - 14.1875rem);
+	top: calc(50% - 20.4375rem);
 	transform: translate(-50%, -50%);
 	width: 6.8125rem;
 }
@@ -1000,12 +1055,6 @@ div.colorbox img {
 }
 
 .nav__hitode {
-	margin-left: 0.9375rem;
-	margin-top: 2.625rem;
-	position: absolute;
-}
-
-.nav__hitode {
 	position: relative;
 }
 
@@ -1020,9 +1069,22 @@ div.colorbox img {
 
 .nav__items .nav__hitode img {
 	height: 1.125rem;
-	left: calc(50% - 6.375rem);
+	left: calc(50% - 6rem);
 	position: absolute;
-	top: calc(50% + 0.5rem);
+	top: calc(50% + 3.125rem);
+	transform: translate(-50%, -50%);
+	width: 1.125rem;
+}
+
+.nav__items .nav__hitode--top {
+	position: relative;
+}
+
+.nav__items .nav__hitode--top img {
+	height: 1.125rem;
+	left: calc(50% - 6rem);
+	position: absolute;
+	top: calc(50% + 2.75rem);
 	transform: translate(-50%, -50%);
 	width: 1.125rem;
 }
@@ -1087,13 +1149,12 @@ div.colorbox img {
 	line-height: 1rem;
 	padding-left: 2.25rem;
 	padding-top: 0rem;
-	padding-top: 4rem;
+	padding-top: 4.375rem;
 	z-index: 10;
 	z-index: 15;
 }
 
 .nav__items li {
-	margin-top: 0.125rem;
 	text-align: left;
 }
 
@@ -1119,14 +1180,22 @@ div.colorbox img {
 	width: 50%;
 }
 
+.nav__items .nav__item {
+	padding-top: 1.625rem;
+}
+
 .nav__item {
 	padding-top: 1.5rem;
+}
+
+.nav__items .nav__item--bold {
+	font-weight: 700;
+	margin-top: 2.625rem;
 }
 
 .nav__item--bold {
 	font-weight: 700;
 	margin-top: 2.5rem;
-	position: relative;
 }
 
 .nav__item--bold.top {
@@ -1173,6 +1242,24 @@ div.colorbox img {
 
 .nav__items--pc li {
 	padding: 1.625rem 0.9375rem 0 1.28125rem;
+	position: relative;
+}
+
+.nav__items--pc a::after {
+	background: #fff;
+	bottom: 0;
+	content: "";
+	height: 2px;
+	left: 10%; /*絶対配置で線の位置を決める*/
+	position: absolute;
+	transform: scale(0, 1); /*X方向0、Y方向1*/
+	transform-origin: center top; /*上部中央基点*/ /*アニメーションの指定*/
+	transition: all 0.3s; /*線の形状*/
+	width: 80%;
+}
+
+.nav__items--pc li a:hover::after {
+	transform: scale(1, 1); /*X方向にスケール拡大*/
 }
 
 .nav__items--pc h2 {
@@ -1425,6 +1512,10 @@ div.colorbox img {
 	text-align: center;
 }
 
+.swiper-wrapper.campaign {
+	padding: 0;
+}
+
 .swiper {
 	height: 100%;
 	width: 100%;
@@ -1471,14 +1562,12 @@ html {
 }
 
 .section__about {
-	margin: 5rem 0 2.125rem;
 	overflow: hidden;
-	padding-bottom: 7.5rem;
-	padding-top: 3.125rem;
+	padding: 7.875rem 0 9.875rem;
 }
 
 .section__blog {
-	padding: 6.625rem 0 8.9375rem;
+	padding: 6.25rem 0 8.9375rem;
 	padding-right: 0.125rem;
 	position: relative;
 }
@@ -1506,12 +1595,12 @@ html {
 
 .information {
 	box-shadow: none;
-	padding: 6.125rem 0 4.5rem;
+	padding: 5.75rem 0 4.75rem;
 }
 
 .price {
 	box-shadow: none;
-	padding: 6.25rem 0 6.375rem;
+	padding: 6rem 0 6rem;
 }
 
 .section__price {
@@ -1586,7 +1675,7 @@ html {
 }
 
 .about__text span {
-	display: block;
+	display: inline-block;
 }
 
 .blog__bg--img {
@@ -1620,6 +1709,7 @@ html {
 .button {
 	height: 3.5rem;
 	width: 12.625rem;
+	z-index: 11;
 }
 
 .button__information {
@@ -1630,12 +1720,12 @@ html {
 }
 
 .button__campaign {
-	margin: 2.1875rem 1rem 0 0;
+	margin: 4.75rem 1rem 0 0;
 }
 
 .button__about {
 	left: calc(50% + 18.5rem);
-	top: calc(50% + 14.5rem);
+	top: calc(50% + 6.875rem);
 	transform: translate(-50%, -50%);
 }
 
@@ -1675,17 +1765,12 @@ html {
 
 .card__slider {
 	height: 27.8125rem;
-	margin-top: 2.5rem;
+	margin: 2.5rem 0 0 0;
 	width: 20.8125rem;
-}
-
-.slider {
-	padding-bottom: 0.3125rem;
-	width: 17.5rem;
 }
 
 .card__header--slider img {
-	width: 20.8125rem;
+	width: 100%;
 }
 
 .card__icon--slider {
@@ -1702,12 +1787,15 @@ html {
 	padding: 0 1rem;
 }
 
+.card__body {
+	width: 100%;
+}
+
 .card__title--campaign {
 	font-size: 1rem;
 	letter-spacing: -0.175rem;
-	margin-left: 1rem;
+	margin: 0 1rem;
 	padding-bottom: 0.375rem;
-	width: 18.8125rem;
 }
 
 .card__text--slider {
@@ -1760,7 +1848,7 @@ html {
 .card__title--blog {
 	font-size: 1rem;
 	margin: 0;
-	padding: 0;
+	padding: 0 0 0.125rem;
 }
 
 .cards__voice {
@@ -1831,11 +1919,14 @@ html {
 }
 
 .contact__card {
+	align-items: normal;
 	box-shadow: 0.25rem 0.25rem 0.625rem 0 rgba(0, 0, 0, 0.25);
 	display: flex;
+	flex-direction: initial;
 	height: 25.9375rem;
 	margin: 8.75rem 0 10rem;
 	max-width: 67.5rem;
+	padding: -31.25rem;
 }
 
 .contact__left--address {
@@ -1862,10 +1953,15 @@ html {
 	width: 35.75rem;
 }
 
-.contact__map img {
+.contact__map {
 	height: 9.25rem;
 	margin-left: 1rem;
 	margin-top: 4.75rem;
+	width: 17.0625rem;
+}
+
+.contact__map img {
+	height: 9.25rem;
 	width: 17.0625rem;
 }
 
@@ -1873,8 +1969,8 @@ html {
 	border-left: 1px solid #108F95;
 	border-top: none;
 	display: flex;
-	margin: 5rem 0 5rem 0;
-	padding: 0 7rem 0 5rem;
+	margin: 5rem 0;
+	padding: 0rem 7rem 0rem 5rem;
 }
 
 .copyright {
@@ -1948,8 +2044,10 @@ html {
 }
 
 .information__content--img {
+	height: 22.25rem;
 	margin-left: 3.125rem;
 	margin-top: 0.125rem;
+	width: 33.75rem;
 }
 
 .information__content--img img {
@@ -2124,7 +2222,6 @@ html {
 .nav__item--bold {
 	font-weight: 700;
 	margin-top: 2.5rem;
-	position: relative;
 }
 
 .nav__item--bold.top {
@@ -2335,7 +2432,8 @@ html {
 	font-weight: 300;
 	line-height: 5rem;
 	margin-bottom: -0.4375rem;
-	margin-top: 1.375rem;
+	margin-top: 1.25rem;
+	padding-top: -5rem;
 }
 
 .section__subtitle--contact {
@@ -2361,7 +2459,7 @@ html {
 
 .swiper-wrapper.campaign {
 	padding-bottom: 0.3125rem;
-	padding-left: 44.75rem;
+	padding-left: 46.125rem;
 	width: 100%;
 }
 

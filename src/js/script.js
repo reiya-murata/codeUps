@@ -51,14 +51,15 @@ const main__swiper = new Swiper(".main__swiper", {
 
     var swiper = new Swiper(".swiper__campaign", {
       loop: true,
-      slidesPerView: 1,
-      spaceBetween: 53,
+      slidesPerView: "auto",
+      spaceBetween: 44,
       centeredSlides: true,
-      breakpoints: {
-        675: {
-          slidesPerView: 4,
-        },
-      },
+      // breakpoints: {
+      //   650: {
+
+          
+      //   },
+      // },
       pagination: {
         el: ".swiper-pagination",
         clickable: true,

@@ -25,26 +25,20 @@
   height: rem(366);
   margin: rem(27) 0 rem(40) rem(16);
   @include mq(md) {
-    margin-top: rem(40);
+    margin: rem(40) 0 0 0;
     width: rem(333);
+    // width: 100%;
     height: rem(445);
   }
 }
 
-.slider {
-  font-family: $base-font-family;
-  margin: auto;
-  box-shadow: rem(2) rem(2) rem(10) rem(0) rgba(0, 0, 0, 0.25);
-  @include mq(md) {
-    width: rem(280);
-    padding-bottom: rem(5);
-  }
-}
 
 .card__header--slider img {
   aspect-ratio: 333 /223;
+  // width: rem(280);
   @include mq(md) {
-    width: rem(333);
+    width: 100%;
+    // width: rem(333);
     // min-height: rem(223);
   }
 }
@@ -79,6 +73,12 @@
     padding: 0 rem(16);
   }
 }
+.card__body{
+  // width: rem(280);
+  @include mq(md) {
+    width: 100%;
+  }
+}
 
 .card__title--campaign {
   display: flex;
@@ -86,16 +86,16 @@
   border-bottom: rem(1) solid $blue;
   font-family: $base-font-family;
   font-size: rem(16);
-  margin-left: rem(14);
+  margin: 0 rem(14);
   padding-bottom: rem(6);
   letter-spacing: rem(-2.8);
-  width: rem(248);
   @include mq(md) {
+    
     font-size: rem(16);
     letter-spacing: rem(-2.8);
-    margin-left: rem(16);
+    margin: 0 rem(16);
     padding-bottom: rem(6);
-    width: rem(301);
+    
   }
 }
 .card__text--slider {
@@ -115,6 +115,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin: 0 calc(50% - 50vw);
 }
 .card__campaign--price h3 {
   font-family: $third-font-family;
@@ -211,7 +212,7 @@
   @include mq(md) {
     font-size: rem(16);
     margin: 0;
-    padding: 0;
+    padding: 0 0 rem(2);
   }
 }
 
@@ -345,14 +346,21 @@
 }
 // contact
 .contact__card {
+  display: flex;
+  flex-direction: column;
   box-shadow: none;
   margin-bottom: rem(196);
+  text-align: center;
+  align-items: center;
   @include mq(md) {
+    align-items: normal;
     display: flex;
+    flex-direction: initial;
     box-shadow: rem(4) rem(4) rem(10) 0 rgba(0, 0, 0, 0.25);
     // width: rem(1080);
     max-width: rem(1080);
     height: rem(415);
     margin: rem(140) 0 rem(160);
+    padding: rem(-500);
   }
 }
