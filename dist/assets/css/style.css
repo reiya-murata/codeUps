@@ -1466,7 +1466,6 @@ div.colorbox img {
 	font-size: 0.75rem;
 	font-weight: 300;
 	text-align: center;
-	text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.5);
 }
 
 .section__titles--blog {
@@ -1481,7 +1480,6 @@ div.colorbox img {
 	font-weight: 300;
 	line-height: 2.5rem;
 	text-align: center;
-	text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.5);
 	text-transform: capitalize;
 }
 
@@ -1498,7 +1496,6 @@ div.colorbox img {
 	font-weight: 300;
 	margin-top: 0.3125rem;
 	text-align: center;
-	text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.5);
 }
 
 .section__title--contact {

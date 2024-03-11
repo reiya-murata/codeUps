@@ -29,7 +29,7 @@
   font-weight: $regular;
   text-align: center;
   margin-left: rem(22);
-  @include mq(xl) {
+  @include mq(md) {
     font-weight: $normal;
     font-size: rem(40);
     margin-left: rem(43.2);
