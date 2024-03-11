@@ -48,18 +48,12 @@ const main__swiper = new Swiper(".main__swiper", {
 });
 
 
-
+// swiper campaign
     var swiper = new Swiper(".swiper__campaign", {
       loop: true,
       slidesPerView: "auto",
       spaceBetween: 44,
       centeredSlides: true,
-      // breakpoints: {
-      //   650: {
-
-          
-      //   },
-      // },
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
@@ -71,7 +65,7 @@ const main__swiper = new Swiper(".main__swiper", {
       }
     });
   
-
+// 画像アニメーション
     function checkInView() {
     $('.color').each(function() {
         var elementTop = $(this).offset().top;
