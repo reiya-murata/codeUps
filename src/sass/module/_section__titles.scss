@@ -6,11 +6,19 @@
   font-family: $second-font-family;
   text-align: center;
   color: $black;
+  text-shadow: rem(2) rem(2) rem(4) rgba(0, 0, 0, 0.5); 
   @include mq(md) {
     font-size: rem(40);
     line-height: rem(40);
     font-weight: $regular;
+    text-shadow: none;
   }
+}
+.information .section__title{
+  text-shadow: none;
+}
+.price .section__title{
+  text-shadow: none;
 }
 
 .section__title::first-letter {
@@ -28,24 +36,35 @@
   font-size: rem(12);
   font-weight: $regular;
   text-align: center;
+  text-shadow: rem(2) rem(2) rem(4) rgba(0, 0, 0, 0.5); 
   @include mq(md) {
     padding: rem(8) rem(0) 0 0;
     font-size: rem(12);
     font-weight: $regular;
     line-height: rem(18);
+    text-shadow: none;
   }
 }
+.information .section__subtitlee{
+  text-shadow: none;
+}
+.price .section__subtitle{
+  text-shadow: none;
+}
+
 .section__subtitle--campaign {
   font-family: $base-font-family;
   color: $blue;
   font-size: rem(12);
   font-weight: $regular;
   text-align: center;
+  text-shadow: rem(2) rem(2) rem(4) rgba(0, 0, 0, 0.5); 
   @include mq(md) {
     margin: rem(8) rem(12) 0 0;
     font-size: rem(12);
     font-weight: $regular;
     line-height: rem(18);
+    text-shadow: none;
   }
 }
 
@@ -70,6 +89,7 @@
   text-transform: capitalize;
   font-weight: $regular;
   text-align: center;
+  text-shadow: rem(2) rem(2) rem(4) rgba(0, 0, 0, 0.5); 
   @include mq(md) {
     font-size: rem(40);
     font-family: $second-font-family;
@@ -77,6 +97,7 @@
     font-weight: $regular;
     text-align: center;
     color: $white;
+    text-shadow: none;
   }
 }
 
@@ -96,11 +117,13 @@
   margin-top: rem(5);
   text-align: center;
   font-weight: $regular;
+  text-shadow: rem(2) rem(2) rem(4) rgba(0, 0, 0, 0.5); 
   @include mq(md) {
     color: $white;
     font-size: rem(12);
     font-weight: $regular;
     line-height: rem(18);
+    text-shadow: none;
   }
 }
 

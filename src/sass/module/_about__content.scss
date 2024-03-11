@@ -35,11 +35,13 @@
   display: inline-block;
   font-size: rem(40);
   font-weight: $regular;
+  text-shadow: rem(2) rem(2) rem(4) rgba(0, 0, 0, 0.5); 
   @include mq(md) {
     font-size: rem(80);
     font-weight: $regular;
     font-family: $second-font-family;
     line-height: rem(100);
+    text-shadow: none;
   }
 }
 .about__imgs {

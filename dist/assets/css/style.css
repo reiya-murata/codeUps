@@ -255,6 +255,7 @@ a {
 	display: inline-block;
 	font-size: 2.5rem;
 	font-weight: 300;
+	text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.5);
 }
 
 .about__imgs {
@@ -342,13 +343,14 @@ a {
 
 .button::after {
 	border: 0.0625rem solid #108F95;
+	box-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.209);
 	content: "";
 	height: 100%;
 	left: 0.25rem;
 	position: absolute;
 	top: 0.25rem;
 	width: 100%;
-	z-index: 2;
+	z-index: 0;
 }
 
 .button span {
@@ -864,6 +866,7 @@ div.colorbox img {
 	letter-spacing: 1.34375rem;
 	margin-left: 1.375rem;
 	text-align: center;
+	text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.5);
 }
 
 .hero__subtitle {
@@ -1417,6 +1420,15 @@ div.colorbox img {
 	font-size: 2rem;
 	font-weight: 300;
 	text-align: center;
+	text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.5);
+}
+
+.information .section__title {
+	text-shadow: none;
+}
+
+.price .section__title {
+	text-shadow: none;
 }
 
 .section__title::first-letter {
@@ -1431,6 +1443,15 @@ div.colorbox img {
 	font-size: 0.75rem;
 	font-weight: 300;
 	text-align: center;
+	text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.5);
+}
+
+.information .section__subtitlee {
+	text-shadow: none;
+}
+
+.price .section__subtitle {
+	text-shadow: none;
 }
 
 .section__subtitle--campaign {
@@ -1439,6 +1460,7 @@ div.colorbox img {
 	font-size: 0.75rem;
 	font-weight: 300;
 	text-align: center;
+	text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.5);
 }
 
 .section__titles--blog {
@@ -1453,6 +1475,7 @@ div.colorbox img {
 	font-weight: 300;
 	line-height: 2.5rem;
 	text-align: center;
+	text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.5);
 	text-transform: capitalize;
 }
 
@@ -1469,6 +1492,7 @@ div.colorbox img {
 	font-weight: 300;
 	margin-top: 0.3125rem;
 	text-align: center;
+	text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.5);
 }
 
 .section__title--contact {
@@ -1636,6 +1660,7 @@ html {
 	font-size: 5rem;
 	font-weight: 300;
 	line-height: 6.25rem;
+	text-shadow: none;
 }
 
 .about__img--1 {
@@ -1710,6 +1735,10 @@ html {
 	height: 3.5rem;
 	width: 12.625rem;
 	z-index: 11;
+}
+
+.button::after {
+	box-shadow: none;
 }
 
 .button__information {
@@ -2004,6 +2033,7 @@ html {
 	letter-spacing: 2.7rem;
 	line-height: 6.25rem;
 	margin-left: 2.7rem;
+	text-shadow: none;
 }
 
 .hero__subtitle {
@@ -2375,6 +2405,7 @@ html {
 	font-size: 2.5rem;
 	font-weight: 300;
 	line-height: 2.5rem;
+	text-shadow: none;
 }
 
 .section__title::first-letter {
@@ -2386,6 +2417,7 @@ html {
 	font-weight: 300;
 	line-height: 1.125rem;
 	padding: 0.5rem 0rem 0 0;
+	text-shadow: none;
 }
 
 .section__subtitle--campaign {
@@ -2393,6 +2425,7 @@ html {
 	font-weight: 300;
 	line-height: 1.125rem;
 	margin: 0.5rem 0.75rem 0 0;
+	text-shadow: none;
 }
 
 .section__titles--blog {
@@ -2410,6 +2443,7 @@ html {
 	font-weight: 300;
 	line-height: 2.5rem;
 	text-align: center;
+	text-shadow: none;
 }
 
 .section__titles--blog::first-letter {
@@ -2421,6 +2455,7 @@ html {
 	font-size: 0.75rem;
 	font-weight: 300;
 	line-height: 1.125rem;
+	text-shadow: none;
 }
 
 .section__titles--price {
