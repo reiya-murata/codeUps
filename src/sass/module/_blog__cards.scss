@@ -1,14 +1,13 @@
 @use "global" as *;
 
-.contact {
+.blog__cards {
   position: relative;
-
   @include mq(xl) {
     display: flex;
-    align-items: center;
     justify-content: center;
+    // padding-right: rem(180);
+    // padding-left: rem(181);
+    top: rem(40);
+    width: 100%;
   }
-}
-.section__contact {
-  position: relative;
 }

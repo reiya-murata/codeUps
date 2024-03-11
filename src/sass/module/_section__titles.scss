@@ -6,7 +6,7 @@
   font-family: $second-font-family;
   text-align: center;
   color: $black;
-  @include mq(md) {
+  @include mq(xl) {
     font-size: rem(40);
     line-height: rem(40);
     font-weight: $regular;
@@ -23,7 +23,7 @@
   color: $blue;
   font-weight: $regular;
   text-transform: capitalize;
-  @include mq(md) {
+  @include mq(xl) {
     color: $blue;
   }
 }
@@ -69,7 +69,7 @@
   text-transform: capitalize;
   font-weight: $regular;
 
-  @include mq(md) {
+  @include mq(xl) {
     font-size: rem(32);
     line-height: rem(40);
     text-transform: capitalize;
@@ -100,7 +100,7 @@
   color: $blue;
   font-weight: $regular;
   text-transform: capitalize;
-  @include mq(md) {
+  @include mq(xl) {
     color: $white;
   }
 }
@@ -122,7 +122,7 @@
 }
 
 .section__titles--price {
-  @include mq(md) {
+  @include mq(xl) {
     margin-right: rem(8);
   }
 }
@@ -132,7 +132,7 @@
   font-family: $second-font-family;
   font-size: rem(80);
   margin-bottom: rem(16);
-  @include mq(md) {
+  @include mq(xl) {
     font-size: rem(80);
     line-height: rem(80);
     font-weight: $regular;
@@ -167,7 +167,7 @@
   font-size: rem(14);
   font-weight: $regular;
   color: $blue;
-  @include mq(md) {
+  @include mq(xl) {
     font-size: rem(14);
     font-family: $base-font-family;
     color: $blue;

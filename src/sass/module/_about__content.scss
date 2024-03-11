@@ -6,7 +6,7 @@
   color: $blue;
   position: relative;
   padding-top: rem(240);
-  @include mq(md) {
+  @include mq(xl) {
     display: flex;
     justify-content: center;
     padding-top: rem(200);
@@ -20,7 +20,7 @@
   padding-top: rem(40);
   padding-left: rem(16);
   line-height: rem(40);
-  @include mq(md) {
+  @include mq(xl) {
     color: $white;
     display: inline-block;
     font-size: rem(80);
@@ -28,14 +28,13 @@
     font-family: $second-font-family;
     line-height: rem(100);
     padding-left: rem(160);
-    margin-bottom: rem(250);
   }
 }
 .about__content--title h3 {
   display: inline-block;
   font-size: rem(40);
   font-weight: $regular;
-  @include mq(md) {
+  @include mq(xl) {
     font-size: rem(80);
     font-weight: $regular;
     font-family: $second-font-family;
@@ -58,7 +57,7 @@
   top: calc(50% + rem(128));
   left: calc(50% - rem(108));
   transform: translate(-50%, -50%);
-  @include mq(md) {
+  @include mq(xl) {
     padding: 0;
     width: rem(399);
     height: rem(606);
@@ -73,48 +72,56 @@
   aspect-ratio: 880/581;
   width: rem(281);
   height: rem(186);
-  top: calc(50% + rem(148));
-  left: calc(50% + rem(30));
+  top: calc(50% + rem(50));
+  left: calc(50% + rem(0));
   transform: translate(-50%, -50%);
-  @include mq(md) {
+  @include mq(xl) {
     width: rem(880);
     height: rem(581);
-    top: calc(50% + rem(410));
-    left: calc(50% + rem(100));
+    top: calc(50% + rem(310));
+    left: calc(50% + rem(68));
     transform: translate(-50%, -50%);
   }
 }
-.about__img--2 img {
-  aspect-ratio: 880/581;
-  width: rem(281);
-  height: rem(186);
-  @include mq(md) {
-    width: rem(880);
-    height: rem(581);
+.about__img--2 img{
+  position: absolute;
+  top: calc(50% + rem(100));
+  left: calc(50% + rem(32));
+  transform: translate(-50%, -50%);
+}
+.about__img--3 {
+  position: absolute;
+  display: none;
+  @include mq(xl) {
+    top: calc(50% + rem(700));
+    left: calc(50% + rem(540));
+    transform: translate(-50%, -50%);
+    width: rem(194);
+    display: block;
   }
 }
 
 .about__text {
   font-family: $base-font-family;
   font-weight: normal;
-  @include mq(md) {
+  @include mq(xl) {
     color: $white;
   }
 }
 .about__text p {
   font-size: rem(16);
   padding: rem(10) rem(16) rem(0) rem(14);
-  @include mq(md) {
+  @include mq(xl) {
     font-size: rem(16);
     display: inline-block;
     width: rem(400);
     height: rem(144);
     z-index: 12;
     margin-left: rem(40);
-    padding: rem(40) 0 0 0;
+    padding:rem(40) 0 0 0;
   }
 }
-.about__text span {
+.about__text span{
   display: none;
   @include mq(md) {
     display: inline-block;

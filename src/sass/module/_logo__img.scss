@@ -7,7 +7,7 @@
   top: rem(21);
   left: rem(10);
   z-index: 25;
-  @include mq(md) {
+  @include mq(xl) {
     left: rem(40);
     width: rem(133);
   }
@@ -19,7 +19,7 @@
 // blog
 .blog__logo--1 {
   display: none;
-  @include mq(md) {
+  @include mq(xl) {
     position: absolute;
     display: block;
     width: rem(437);
@@ -32,7 +32,7 @@
 .blog__logo--2 {
   display: none;
   z-index: 15;
-  @include mq(md) {
+  @include mq(xl) {
     position: absolute;
     display: block;
     width: rem(301);
@@ -42,25 +42,13 @@
     transform: translate(-50%, -50%);
   }
 }
-// about
-.about__logo {
-  position: absolute;
-  display: none;
-  @include mq(md) {
-    top: calc(50% + rem(700));
-    left: calc(50% + rem(540));
-    transform: translate(-50%, -50%);
-    width: rem(194);
-    display: block;
-  }
-}
 
 // voice
 .voice__logo--ibaratatu {
   display: none;
   position: absolute;
   z-index: 10;
-  @include mq(md) {
+  @include mq(xl) {
     top: calc(50% + rem(302));
     left: calc(50% + rem(506));
     transform: translate(-50%, -50%);
@@ -78,7 +66,7 @@
   top: calc(50% - rem(327));
   left: calc(50% + rem(118));
   transform: translate(-50%, -50%);
-  @include mq(md) {
+  @include mq(xl) {
     position: absolute;
     width: rem(301);
     height: rem(138);
@@ -92,7 +80,7 @@
   position: relative;
   text-align: center;
 
-  @include mq(md) {
+  @include mq(xl) {
     position: relative;
     padding: 0 rem(119) rem(9) rem(121);
     margin: rem(80) rem(82) rem(24) rem(50);
@@ -100,7 +88,7 @@
 }
 .contact__logo--codeups source {
   width: rem(174);
-  @include mq(md) {
+  @include mq(xl) {
     width: rem(200);
   }
 }
@@ -112,7 +100,7 @@
   transform: translate(-50%, -50%);
   border-bottom: rem(1) solid $blue;
   padding: 0 rem(60) rem(6);
-  @include mq(md) {
+  @include mq(xl) {
     width: rem(440);
     padding: 0 rem(120) rem(8);
     top: calc(50% + rem(38));
@@ -130,7 +118,7 @@
   top: calc(50% + rem(70));
   left: calc(50% + rem(76));
   transform: translate(-50%, -50%);
-  @include mq(md) {
+  @include mq(xl) {
     position: absolute;
     width: rem(200);
     top: calc(50% + rem(104));
@@ -142,7 +130,7 @@
 .sns__icons {
   display: flex;
   position: absolute;
-  @include mq(md) {
+  @include mq(xl) {
     position: absolute;
     top: rem(118);
     left: rem(420);
@@ -151,7 +139,7 @@
 .instagram__icon {
   position: absolute;
   z-index: 10;
-  @include mq(md) {
+  @include mq(xl) {
     position: absolute;
     top: calc(50% + rem(16));
     left: calc(50% + rem(64));
@@ -164,7 +152,7 @@
 .facebook__icon {
   position: absolute;
   z-index: 10;
-  @include mq(md) {
+  @include mq(xl) {
     position: absolute;
     top: calc(50% + rem(16));
     left: calc(50% + rem(16));
