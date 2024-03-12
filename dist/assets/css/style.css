@@ -295,6 +295,7 @@ a {
 }
 
 .about__text {
+	color: #111;
 	font-family: "Noto Sans JP", sans-serif;
 	font-weight: normal;
 }

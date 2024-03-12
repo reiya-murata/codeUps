@@ -105,6 +105,7 @@
 .about__text {
   font-family: $base-font-family;
   font-weight: normal;
+  color: $black;
   @include mq(md) {
     color: $white;
   }
