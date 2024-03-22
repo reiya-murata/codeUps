@@ -1,30 +1,46 @@
 @use "global" as *;
 
 .main__swiper img {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
+  aspect-ratio: 375 / 667;
+  @include mq(md) {
+    width: 100vw;
+    height: 100vh;
+    aspect-ratio: 1440 / 768;
+  }
 }
 
 .main__swiper {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   overflow: hidden;
 }
 
-.main__swiper-wraper{
-  width: 100%;
+.main__swiper-wraper {
+  width: 100vw;
   height: 100vh;
 }
 
 .main__swiper-slide {
   background-position: center;
   background-size: cover;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
+  aspect-ratio: 375 / 667;
+  @include mq(md) {
+    aspect-ratio: 1440 / 768;
+  }
 }
 
 .main__swiper-slide img {
   display: block;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
+  aspect-ratio: 375 / 667;
+  @include mq(md) {
+    width: 100vw;
+    height: 100vh;
+    aspect-ratio: 1440 / 768;
+  }
 }

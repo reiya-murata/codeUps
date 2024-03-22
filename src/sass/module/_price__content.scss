@@ -65,7 +65,7 @@
   margin-top: rem(40);
   @include mq(md) {
     margin: 0 0 rem(2) 0;
-    line-height: rem(24);
+    line-height: 1;
     font-size: rem(16);
     padding: rem(38) 0 rem(3);
   }
@@ -77,7 +77,7 @@
   padding-top: rem(11);
   @include mq(md) {
     font-size: rem(16);
-    line-height: rem(24);
+    line-height: 1;
     font-weight: $normal;
     padding: rem(4) 0;
   }
@@ -90,7 +90,7 @@
   text-align: end;
   @include mq(md) {
     font-size: rem(16);
-    line-height: rem(24);
+    line-height: 1;
     font-weight: $normal;
     padding: rem(4) 0;
     text-align: right;

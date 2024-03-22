@@ -18,7 +18,7 @@
   @include mq(md) {
     border-bottom: rem(1) solid $blue;
     width: rem(492);
-    padding-bottom: rem(6);
+    padding-bottom: rem(8);
     margin-top: rem(64);
     margin-left: rem(32);
   }
@@ -32,7 +32,7 @@
     font-family: $base-font-family;
     font-weight: $bold;
     font-size: rem(24);
-    line-height: rem(24);
+    line-height: 1;
   }
 }
 
@@ -44,7 +44,7 @@
     width: rem(492);
     font-family: $base-font-family;
     font-size: rem(16);
-    line-height: rem(24);
+    line-height: 1.5;
     margin: rem(6) rem(0) 0 rem(32);
     padding: rem(4) 0 0;
   }

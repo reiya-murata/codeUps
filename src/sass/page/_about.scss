@@ -6,7 +6,8 @@
 .section__about {
   padding: rem(78) 0 rem(168);
   @include mq(md) {
-    padding: rem(130) 0 rem(400);
+    margin: auto;
+    padding: rem(130) 0 rem(390);
     overflow: hidden;
   }
 }

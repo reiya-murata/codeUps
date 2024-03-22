@@ -9,12 +9,14 @@
 .mainvisial {
   width: 100vw;
   height: 100%;
-  // background-image: url(./assets\images\common\mainview.1.jpg);
+  // background-image: url(./assets/images/common/mainview.1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 100;
   @include mq(md) {
-    // background-image: url(./assets\images\common\hero.pc.1.jpg);
+    width: 100vw;
+    height: auto;
+    aspect-ratio: 1440 / 768;
     background-repeat: no-repeat;
     background-size: cover;
   }

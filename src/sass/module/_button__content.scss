@@ -3,7 +3,7 @@
 .button {
   position: relative;
   display: inline-block;
-  line-height: rem(22);
+  line-height: 1.5;
   font-size: rem(14);
   color: $white;
   background-color: $blue;
@@ -13,16 +13,14 @@
   width: rem(202);
   height: rem(54);
   @include mq(md) {
+    line-height: 1.5;
     width: rem(202);
-    height: rem(56);
-    z-index: 11;
+    height: rem(52);
+    z-index: 1;
   }
 }
-.button p {
-  z-index: 10;
-  position: absolute;
-}
-.button::after {
+
+.button::before {
   content: "";
   position: absolute;
   top: rem(4);
@@ -30,12 +28,15 @@
   width: 100%;
   height: 100%;
   border: rem(1) solid $blue;
-  z-index: 2;
+  z-index: -2;
+  display: inline;
 }
 
 .button span {
   margin-right: rem(2);
   margin-left: rem(5);
+  z-index: -2;
+  display: inline-block;
 }
 
 .stickarrow {
@@ -48,21 +49,10 @@
   padding-bottom: rem(2);
   margin: rem(0) rem(0) rem(2) rem(0);
 }
-.button a {
-  display: block;
-  z-index: 15;
-}
-.buttonslide {
-  position: absolute;
-  width: rem(202);
-  height: rem(54);
-  top: calc(50% + rem(0));
-  left: calc(50% + rem(0));
-  transform: translate(-50%, -50%);
-  z-index: 3;
-}
-.buttonslide::after {
-  background: gray;
+
+.button::after {
+  background-color: $white;
+  border: rem(1) solid $blue;
   position: absolute;
   top: 0;
   left: 0;
@@ -72,25 +62,20 @@
   transform: scale(0, 1);
   transform-origin: left top;
   transition: 0.2s cubic-bezier(0.45, 0, 0.55, 1);
+  z-index: 1;
+}
+.button:hover::after {
+  transform: scale(1, 1);
   z-index: -1;
 }
-.buttonslide:hover {
-  color: $white;
-  z-index: 5;
+.button:hover  {
+  display: inline-block;
+  z-index: 1;
+  color: $blue;
 }
-.buttonslide:hover::after {
-  transform: scale(1, 1);
-}
-.buttonslide:hover + p {
-  z-index: 6; /* .button p の z-index を増やす */
-}
-.buttonslide:hover .button::after {
-  transform: scale(1, 1);
-}
-
-.buttonslide:hover {
-  color: $white;
-  z-index: 5;
+.button:hover span {
+  z-index: 2;
+  border-color: $blue;
 }
 
 .button__information {

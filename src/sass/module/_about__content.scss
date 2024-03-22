@@ -19,14 +19,13 @@
   z-index: 20;
   padding-top: rem(40);
   padding-left: rem(16);
-  line-height: rem(40);
   @include mq(md) {
     color: $white;
     display: inline-block;
+    padding: rem(50) 0 0 rem(16);
     font-size: rem(80);
     font-weight: $regular;
     font-family: $second-font-family;
-    line-height: rem(100);
     padding-left: rem(160);
   }
 }
@@ -34,12 +33,14 @@
   display: inline-block;
   font-size: rem(40);
   font-weight: $regular;
+  line-height: 1;
   text-shadow: rem(2) rem(2) rem(4) rgba(0, 0, 0, 0.5);
   @include mq(md) {
     font-size: rem(80);
     font-weight: $regular;
     font-family: $second-font-family;
-    line-height: rem(100);
+    line-height: 1.25;
+    text-shadow: none;
   }
 }
 .about__imgs {
@@ -62,7 +63,7 @@
     padding: 0;
     width: rem(399);
     height: rem(606);
-    top: calc(50% + rem(340));
+    top: calc(50% + rem(348));
     left: calc(50% - rem(340));
     transform: translate(-50%, -50%);
   }
@@ -79,28 +80,13 @@
   @include mq(md) {
     width: rem(880);
     height: rem(581);
-    top: calc(50% + rem(408));
+    top: calc(50% + rem(416));
     left: calc(50% + rem(100));
     transform: translate(-50%, -50%);
   }
 }
-.about__img--2 img {
-  position: absolute;
-  top: calc(50% + rem(100));
-  left: calc(50% + rem(32));
-  transform: translate(-50%, -50%);
-}
-.about__img--3 {
-  position: absolute;
-  display: none;
-  @include mq(md) {
-    top: calc(50% + rem(700));
-    left: calc(50% + rem(540));
-    transform: translate(-50%, -50%);
-    width: rem(194);
-    display: block;
-  }
-}
+
+
 
 .about__text {
   font-family: $base-font-family;
@@ -120,7 +106,7 @@
     height: rem(144);
     z-index: 12;
     margin-left: rem(40);
-    padding: rem(38) 0 0 0;
+    padding: rem(46) 0 0 0;
   }
 }
 .about__text span {

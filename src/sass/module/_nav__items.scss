@@ -10,7 +10,7 @@
   z-index: 15;
   padding-top: rem(70);
   padding-left: rem(36);
-  line-height: rem(16);
+  line-height: 1;
   @include mq(md) {
     padding-top: rem(0);
     font-weight: $regular;
@@ -84,6 +84,10 @@
     // margin: auto;
   }
 }
+.nav__item--bottom li:hover {
+  opacity: 0.5;
+}
+
 .nav__bottom--icons {
   display: flex;
   position: absolute;

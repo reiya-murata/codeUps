@@ -7,9 +7,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
+    // max-width: $inner + strip-unit($padding-pc) * 2;
+    // padding-right: $padding-pc;
+    // padding-left: $padding-pc;
+    margin: auto;
   }
 }
 .section__contact {
   position: relative;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }

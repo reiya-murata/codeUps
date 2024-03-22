@@ -23,7 +23,7 @@
     display: block;
     width: rem(194);
     height: rem(181);
-    top: calc(50% + rem(696));
+    top: calc(50% + rem(708));
     left: calc(50% + rem(540));
     transform: translate(-50%, -50%);
   }
@@ -37,7 +37,7 @@
     display: block;
     width: rem(437);
     height: rem(201);
-    top: calc(50% - rem(360));
+    top: calc(50% - rem(350));
     left: calc(50% - rem(400));
     transform: translate(-50%, -50%);
   }
@@ -85,7 +85,6 @@
     display: block;
   }
 }
-
 
 // contact
 .contact__logo--fish {
@@ -169,10 +168,10 @@
   position: absolute;
   z-index: 10;
   top: calc(50% + rem(120));
-    left: calc(50% + rem(68));
-    transform: translate(-50%, -50%);
-    width: rem(24);
-    height: rem(24);
+  left: calc(50% + rem(68));
+  transform: translate(-50%, -50%);
+  width: rem(24);
+  height: rem(24);
   @include mq(md) {
     position: absolute;
     top: calc(50% + rem(16));
@@ -187,10 +186,10 @@
   position: absolute;
   z-index: 10;
   top: calc(50% + rem(120));
-    left: calc(50% + rem(28));
-    transform: translate(-50%, -50%);
-    width: rem(24);
-    height: rem(24);
+  left: calc(50% + rem(28));
+  transform: translate(-50%, -50%);
+  width: rem(24);
+  height: rem(24);
   @include mq(md) {
     position: absolute;
     top: calc(50% + rem(16));

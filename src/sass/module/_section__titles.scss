@@ -9,7 +9,7 @@
   text-shadow: rem(2) rem(2) rem(4) rgba(0, 0, 0, 0.5);
   @include mq(md) {
     font-size: rem(40);
-    line-height: rem(40);
+    line-height: 1;
     font-weight: $regular;
     text-shadow: none;
   }
@@ -41,7 +41,8 @@
     padding: rem(8) rem(0) 0 0;
     font-size: rem(12);
     font-weight: $regular;
-    line-height: rem(18);
+    line-height: 1;
+    text-shadow: none;
   }
 }
 .information .section__subtitle {
@@ -62,7 +63,7 @@
     margin: rem(8) rem(12) 0 0;
     font-size: rem(12);
     font-weight: $regular;
-    line-height: rem(18);
+    line-height: 1;
   }
 }
 
@@ -70,10 +71,9 @@
   font-family: $second-font-family;
   text-transform: capitalize;
   font-weight: $regular;
-
   @include mq(md) {
     font-size: rem(32);
-    line-height: rem(40);
+    line-height: 1;
     text-transform: capitalize;
     color: $white;
     text-align: center;
@@ -83,7 +83,7 @@
 .section__title--blog {
   font-size: rem(32);
   font-family: $second-font-family;
-  line-height: rem(40);
+  line-height: 1;
   text-transform: capitalize;
   font-weight: $regular;
   text-align: center;
@@ -91,7 +91,7 @@
   @include mq(md) {
     font-size: rem(40);
     font-family: $second-font-family;
-    line-height: rem(40);
+    line-height: 1;
     font-weight: $regular;
     text-align: center;
     color: $white;
@@ -119,7 +119,8 @@
     color: $white;
     font-size: rem(12);
     font-weight: $regular;
-    line-height: rem(18);
+    line-height: 1;
+    padding-top: rem(8);
   }
 }
 
@@ -137,7 +138,7 @@
   text-shadow: rem(2) rem(2) rem(4) rgba(0, 0, 0, 0.5);
   @include mq(md) {
     font-size: rem(80);
-    line-height: rem(80);
+    line-height: 1;
     font-weight: $regular;
     margin-top: rem(20);
     margin-bottom: rem(-7);
@@ -162,7 +163,7 @@
     font-family: $base-font-family;
     padding: 0;
     font-size: rem(12);
-    line-height: rem(18);
+    line-height: 1;
     padding-bottom: rem(8);
     margin-bottom: 0;
     text-shadow: none;
@@ -177,7 +178,7 @@
     font-size: rem(14);
     font-family: $base-font-family;
     color: $blue;
-    line-height: rem(18);
+    line-height: 1;
     text-align: center;
     text-shadow: none;
   }

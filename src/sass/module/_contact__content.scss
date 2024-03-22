@@ -1,7 +1,6 @@
 @use "global" as *;
 
 .contact__content {
-  // justify-content:start ;
   font-family: $base-font-family;
   text-align: center;
   margin-top: rem(168);
@@ -9,16 +8,15 @@
     text-align: left;
     margin: rem(76) rem(5) 0 rem(50);
     font-size: rem(16);
-    // width:rem(146) ;
   }
 }
 .contact__content p {
-  line-height: rem(24);
   font-size: rem(16);
-  margin-bottom: rem(4);
+  line-height: 1.5;
+  margin-top: rem(4);
   @include mq(md) {
-    margin-bottom: rem(4);
-    line-height: rem(24);
+    margin-top: rem(4);
+    line-height: 1.5;
     font-size: rem(16);
   }
 }
@@ -28,13 +26,13 @@
   flex-direction: column;
   text-align: center;
   font-size: rem(16);
-  line-height: rem(24);
+  line-height: 1.5;
   font-family: $base-font-family;
 
   @include mq(md) {
     display: flex;
+    line-height: 1.5;
     width: rem(572);
-    // padding-top: rem(24);
     border-top: none;
     margin: 0;
     padding: 0;
@@ -74,13 +72,12 @@
 .contact__right {
   text-align: center;
   font-size: rem(16);
-  line-height: rem(24);
+  line-height: 1;
   font-family: $base-font-family;
-  // padding: rem(16) rem(40);
-  // border-top: 1px solid $blue;
   margin: rem(68) 0 0;
   border: none;
   @include mq(md) {
+    line-height: 1;
     border-left: 1px solid $blue;
     display: flex;
     padding: rem(2) rem(112) rem(0) rem(80);
