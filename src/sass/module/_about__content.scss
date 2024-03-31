@@ -6,8 +6,11 @@
   color: $blue;
   position: relative;
   padding-top: rem(240);
+  max-width: rem(600);
+  margin: auto;
   @include mq(md) {
     display: flex;
+    max-width: none;
     justify-content: center;
     padding-top: rem(200);
   }

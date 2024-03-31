@@ -3,10 +3,13 @@
 .information__content {
   display: flex;
   flex-direction: column;
+  max-width: rem(600);
+  margin: auto;
   @include mq(md) {
     display: flex;
     flex-direction: initial;
     justify-content: center;
+    max-width: none;
     padding: rem(40) 0 0 0;
   }
 }

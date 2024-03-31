@@ -267,6 +267,8 @@ a {
 	color: #108F95;
 	font-family: "Gotu", sans-serif;
 	font-weight: 300;
+	margin: auto;
+	max-width: 37.5rem;
 	padding-top: 15rem;
 	position: relative;
 }
@@ -926,6 +928,8 @@ div.colorbox img {
 .information__content {
 	display: flex;
 	flex-direction: column;
+	margin: auto;
+	max-width: 37.5rem;
 }
 
 .information__content--title {
@@ -998,7 +1002,7 @@ div.colorbox img {
 	height: 3.125rem;
 	left: calc(50% + 7.375rem);
 	position: absolute;
-	top: calc(50% - 18rem);
+	top: calc(50% - 17rem);
 	transform: translate(-50%, -50%);
 	width: 6.8125rem;
 }
@@ -1066,7 +1070,7 @@ div.colorbox img {
 .main__swiper {
 	height: 100vh;
 	overflow: hidden;
-	width: 100vw;
+	width: 100%;
 }
 
 .main__swiper-wraper {
@@ -1379,7 +1383,7 @@ div.colorbox img {
 
 .price__contents--right {
 	display: block;
-	margin: 1.75rem 1.25rem 0;
+	margin: 1.75rem 0 0;
 }
 
 .price__content {
@@ -1547,6 +1551,8 @@ div.colorbox img {
 }
 
 .swiper-wrapper.campaign {
+	margin: auto;
+	max-width: 37.5rem;
 	padding: 0.25rem 0 0;
 }
 
@@ -1674,6 +1680,7 @@ html {
 .about__content {
 	display: flex;
 	justify-content: center;
+	max-width: none;
 	padding-top: 12.5rem;
 }
 
@@ -2133,6 +2140,7 @@ html {
 	display: flex;
 	flex-direction: initial;
 	justify-content: center;
+	max-width: none;
 	padding: 2.5rem 0 0 0;
 }
 
@@ -2571,7 +2579,6 @@ html {
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 0.75rem;
 	line-height: 1;
-	margin-bottom: 0;
 	margin-top: -0.25rem;
 	padding: 0;
 	text-shadow: none;
@@ -2593,6 +2600,7 @@ html {
 }
 
 .swiper-wrapper.campaign {
+	max-width: none;
 	padding-bottom: 0.3125rem;
 	padding-left: 46.125rem;
 	width: 100%;
