@@ -5,9 +5,16 @@
 }
 .section__about {
   padding: rem(78) 0 rem(168);
+  padding-right: $padding-sp;
+  padding-left: $padding-sp;
+  margin-right: auto;
+  margin-left: auto;
   @include mq(md) {
     margin: auto;
-    padding: rem(130) 0 rem(390);
+    padding: rem(138) 0 rem(384);
     overflow: hidden;
+    width: 100%;
+    padding-right: $padding-pc;
+    padding-left: $padding-pc;
   }
 }

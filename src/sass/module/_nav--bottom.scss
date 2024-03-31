@@ -2,11 +2,8 @@
 
 .nav__bottom {
   position: relative;
-  padding-bottom: rem(40);
+  padding-bottom: rem(44);
   @include mq(md) {
-    max-width: $inner + strip-unit($padding-pc) * 2;
-    padding-right: $padding-pc;
-    padding-left: $padding-pc;
     margin: auto;
     padding: 0;
   }
@@ -18,13 +15,10 @@
   justify-content: center;
   line-height: 1;
   @include mq(md) {
-    max-width: $inner + strip-unit($padding-pc) * 2;
-    padding-right: $padding-pc;
-    padding-left: $padding-pc;
     display: flex;
     flex-direction: initial;
-    justify-content: space-between;
-    padding: rem(176) rem(0) rem(80) rem(40);
+    justify-content: center;
+    padding: rem(178) rem(0) rem(90) 0;
     margin: auto;
   }
 }
@@ -34,12 +28,14 @@
   display: flex;
   flex-direction: column;
   margin: rem(138) 0 0 rem(0);
-  padding: 0 0 0 rem(12);
+  margin-left: rem(20);
+  padding-left: rem(8);
+  min-width: rem(168);
   width: rem(168);
   @include mq(md) {
-    width: 40%;
+    width: 50%;
     margin: 0;
-    // padding: 0 rem(16) 0 rem(0);
+    padding: 0;
     display: flex;
     flex-direction: initial;
     justify-content: space-between;
@@ -50,10 +46,11 @@
   display: flex;
   flex-direction: column;
   margin-top: rem(140);
-  padding-left: rem(28);
-  width: rem(160);
+  margin-left: rem(24);
+  min-width: rem(150);
+  width: rem(150);
   @include mq(md) {
-    width: 40%;
+    width: 50%;
     display: flex;
     flex-direction: initial;
     margin: 0;
@@ -67,7 +64,7 @@
   margin: 0;
   @include mq(md) {
     position: relative;
-    margin: 0;
+    width: rem(150);
   }
 }
 .nav__bottom--left .nav__bottom--flex {
@@ -75,7 +72,7 @@
   padding-top: rem(8);
   @include mq(md) {
     padding: 0;
-    margin: 0;
+    margin: 0 rem(80) 0 0;
   }
 }
 .nav__bottom--right .nav__bottom--flex {
@@ -83,7 +80,7 @@
   padding: 0;
   @include mq(md) {
     padding: 0;
-    margin: 0;
+    margin: 0 0 0 rem(40);
   }
 }
 .nav__bottom--flex--fast {
@@ -91,21 +88,22 @@
   margin: 0;
   padding-left: rem(2);
   @include mq(md) {
+    width: rem(150);
     position: relative;
-    padding: 0 0 0;
-    margin:0;
+    padding: 0;
+    margin: 0 rem(0) 0 rem(20);
   }
 }
 
 .nav__bottom--flex--bold {
   position: relative;
-  padding-right: rem(30);
   padding-top: rem(6);
+  padding-right: rem(40);
   @include mq(md) {
     display: flex;
     flex-direction: column;
     padding: 0;
     position: relative;
-    margin: 0 ;
+    margin: 0 rem(72) 0 0;
   }
 }

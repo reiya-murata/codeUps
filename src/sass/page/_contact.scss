@@ -2,21 +2,25 @@
 
 .contact {
   position: relative;
-
+  overflow: hidden;
   @include mq(md) {
     display: flex;
     align-items: center;
     justify-content: center;
-    // max-width: $inner + strip-unit($padding-pc) * 2;
-    // padding-right: $padding-pc;
-    // padding-left: $padding-pc;
-    margin: auto;
+    margin-top: rem(16);
   }
 }
 .section__contact {
-  position: relative;
-  overflow: hidden;
   width: 100%;
   display: flex;
   justify-content: center;
+  padding-right: $padding-sp;
+  padding-left: $padding-sp;
+  margin: auto;
+  @include mq(md) {
+    max-width: $inner + strip-unit($padding-pc) * 2;
+    padding-right: $padding-pc;
+    padding-left: $padding-pc;
+    margin: auto;
+  }
 }

@@ -5,12 +5,23 @@
   background-color: #ddf0f1;
   padding: rem(82) 0 rem(70);
   box-shadow: 0 rem(2) rem(4) 0 rgba(0, 0, 0, 0.5);
+  margin-right: auto;
+  margin-left: auto;
   @include mq(md) {
-    padding: rem(100) 0 rem(76);
+    padding: rem(105) 0 rem(100);
     box-shadow: none;
   }
 }
 
 .section__information {
   position: relative;
+  padding-right: $padding-sp;
+  padding-left: $padding-sp;
+  margin: auto;
+  @include mq(md) {
+    max-width: $inner + strip-unit($padding-pc) * 2;
+    padding-right: $padding-pc;
+    padding-left: $padding-pc;
+    margin: auto;
+  }
 }

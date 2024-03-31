@@ -1,18 +1,26 @@
 @use "global" as *;
 
-.nav{
-  position: fixed;
-  display: none;
-  height: 100vh;
+.nav {
+  /* 初期状態 */
+  z-index: -1; /* 初期状態では要素を画面外に配置 */
+  display: none; /* 初期状態では非表示 */
+  height: 0; /* 初期状態では高さ0 */
   width: 100vw;
-  background-color: $blue;
-  z-index: 20;
+  background: $blue;
+  top: -100%; /* 初期状態では上に隠れている */
+  position: fixed; /* 画面固定 */
+  overflow: hidden; /* オーバーフローを隠す */
+  transition: transform 0.5s ease; /* transformプロパティの変化を0.5秒かけて行う */
 }
 
 .nav.active {
-  z-index: 20;
-  display: block;
-  height: 100vh;
-  width: 100vw;
-  top: 0%;
+  /* active状態 */
+  z-index: 20; /* 要素を他の要素の上に配置 */
+  display: block; /* 要素を表示 */
+  height: 100vh; /* 画面の高さまで展開 */
+  top: 0; /* 画面上部に表示 */
+  transition: transform 0.5s ease; /* transformプロパティの変化を0.5秒かけて行う */
+  @include mq (md){
+    display: none;
+  }
 }

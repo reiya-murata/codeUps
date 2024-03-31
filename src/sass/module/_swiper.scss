@@ -49,7 +49,7 @@
   display: none;
   @include mq(md) {
     display: block;
-    top: calc(50% - rem(284));
+    top: calc(50% - rem(280));
     left: calc(50% + rem(494));
     transform: translate(-50%, -50%);
     height: rem(80);
@@ -62,7 +62,7 @@
   display: none;
   @include mq(md) {
     display: block;
-    top: calc(50% - rem(283));
+    top: calc(50% - rem(279));
     left: calc(50% + rem(333));
     transform: translate(-50%, -50%);
     height: rem(80);

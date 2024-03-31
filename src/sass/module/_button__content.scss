@@ -84,7 +84,7 @@
   margin-right: rem(2);
   @include mq(md) {
     position: absolute;
-    top: calc(50% + rem(88));
+    top: calc(50% + rem(96));
     left: calc(50% + rem(292));
     transform: translate(-50%, -50%);
   }
@@ -114,27 +114,27 @@
 .button__blog {
   text-align: center;
   margin-right: rem(2);
-  margin-top: rem(24);
+  margin-top: rem(20);
   @include mq(md) {
-    margin: rem(120) rem(14) 0 0;
+    margin: rem(80) rem(14) 0 0;
     padding: 0 0 0 rem(8);
   }
 }
 
 .button__voice {
   text-align: center;
-  margin: rem(8) rem(2) 0 0;
+  margin: rem(4) rem(2) 0 0;
   @include mq(md) {
     text-align: center;
     margin: rem(80) rem(4) 0 0;
   }
 }
 .button__contact {
-  margin-top: rem(36);
+  margin-top: rem(40);
   padding: 0;
   @include mq(md) {
     position: absolute;
-    top: calc(50% + rem(72));
+    top: calc(50% + rem(66));
     left: calc(50% + rem(268));
     transform: translate(-50%, -50%);
     margin: 0;

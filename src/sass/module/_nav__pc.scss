@@ -13,19 +13,24 @@
 .nav__items--pc {
   display: flex;
   text-align: center;
+  height: rem(90);
 }
 .nav__items--pc a {
-  padding: rem(24) 0 rem(40);
+  position: relative;
+  display: inline-block;
+  height: rem(90);
+  padding:0;
+  padding: rem(26) rem(20) 0 rem(20);
 }
 .nav__items--pc li {
   position: relative;
-  padding: rem(26) rem(15) 0 rem(20.5);
+  // padding: rem(26) rem(15) 0 rem(20.5);
   @include mq(md) {
-    padding: rem(26) rem(20) 0 rem(20);
+    // padding: rem(26) rem(20) 0 rem(20);
   }
 }
 
-.nav__items--pc a::after {
+.nav__items--pc li a::after {
   content: "";
   /*絶対配置で線の位置を決める*/
   position: absolute;
@@ -39,8 +44,9 @@
   transition: all 0.3s;
   transform: scale(0, 1); /*X方向0、Y方向1*/
   transform-origin: center top; /*上部中央基点*/
+  margin: 0 0 rem(20) 0;
 }
-.nav__items--pc li a:hover::after {
+.nav__items--pc li :hover::after {
   transform: scale(1, 1); /*X方向にスケール拡大*/
 }
 

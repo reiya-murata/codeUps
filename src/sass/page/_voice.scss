@@ -5,12 +5,15 @@
   position: relative;
 }
 .section__voice {
-  margin-bottom: rem(84);
+  padding-right: $padding-sp;
+  padding-left: $padding-sp;
+  margin: auto;
+  margin-top: rem(84);
   @include mq(md) {
-    margin-bottom: rem(144);
     max-width: $inner + strip-unit($padding-pc) * 2;
     padding-right: $padding-pc;
     padding-left: $padding-pc;
     margin: auto;
+    margin-top: rem(144);
   }
 }

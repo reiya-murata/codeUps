@@ -1,12 +1,21 @@
 @use "global" as *;
 
-.footer{
-    position: relative;
-
+.footer {
+  position: relative;
+  background-color: $blue;
 }
 
-.section__footer{
-    background-color: $blue;
-    position: relative;
-    width: 100%;
+.section__footer {
+
+  width: 100%;
+  margin: auto;
+  margin-top: rem(105);
+  padding-right: $padding-sp;
+  padding-left: $padding-sp;
+  @include mq(md) {
+    max-width: $inner + strip-unit($padding-pc) * 2;
+    padding-right: $padding-pc;
+    padding-left: $padding-pc;
+    margin: auto;
+  }
 }

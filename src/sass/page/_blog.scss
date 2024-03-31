@@ -4,9 +4,9 @@
   position: relative;
 }
 .section__blog {
-  padding: rem(88) 0 rem(84);
+  padding: rem(96) 0 0;
   @include mq(md) {
     position: relative;
-    padding: rem(104) rem(2) rem(144) 0;
+    padding: rem(100) rem(2) 0 0;
   }
 }

@@ -8,7 +8,6 @@
     transform: translateY(-50%);
     z-index: -1;
     top: rem(255);
-    width: 100vw;
     display: block;
   }
 }
@@ -35,9 +34,19 @@
     max-width: $inner + strip-unit($padding-pc) * 2;
     padding-right: $padding-pc;
     padding-left: $padding-pc;
-    top: rem(40);
+    margin-top: rem(40);
     margin: auto;
     // width: 100%;
+  }
+}
+.blog__cards a{
+  width: rem(333);
+  margin: rem(27) rem(22) rem(12);
+  
+  @include mq(md) {
+    max-width: rem(333);
+    width: rem(333);
+    margin: rem(40) rem(20) 0;
   }
 }
 

@@ -2,14 +2,16 @@
 
 .nav__items {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   z-index: 10;
   color: $white;
   font-weight: $regular;
   padding-top: rem(0);
   z-index: 15;
   padding-top: rem(70);
-  padding-left: rem(36);
+  padding-right: $padding-sp;
+  padding-left: $padding-sp;
+  margin: auto;
   line-height: 1;
   @include mq(md) {
     padding-top: rem(0);
@@ -19,6 +21,7 @@
 }
 .nav__items li {
   text-align: start;
+  position: relative;
 }
 
 .nav_item a {
@@ -26,29 +29,45 @@
 }
 
 .nav__items--left {
-  width: 50%;
+  width: rem(166);
+  min-width: rem(166);
   font-family: $base-font-family;
   font-size: rem(16);
   color: $white;
   height: 100vh;
   z-index: 15;
+  padding-left: rem(20);
+  @include mq(md) {
+    width: 50%;
+    font-family: $base-font-family;
+    font-size: rem(16);
+    color: $white;
+    height: 100vh;
+    z-index: 15;
+  }
 }
 .nav__items--right {
-  margin-left: rem(8);
-  width: 50%;
+  margin-left: rem(30);
+  width: rem(150);
+  min-width: rem(150);
   font-family: $base-font-family;
   font-size: rem(16);
   color: $white;
   height: 100vh;
+  @include mq(md) {
+    width: 50%;
+    font-family: $base-font-family;
+    font-size: rem(16);
+    color: $white;
+    height: 100vh;
+    z-index: 15;
+  }
 }
 
-.nav__items .nav__item {
-  padding-top: rem(26);
-}
 .nav__item {
-  padding-top: rem(24);
+  padding-top: rem(26);
   @include mq(md) {
-    padding-top: rem(24);
+    padding-top: rem(25);
   }
 }
 
@@ -59,15 +78,15 @@
 
 .nav__item--bold {
   font-weight: $bold;
-  margin-top: rem(40);
+  margin-top: rem(42);
   @include mq(md) {
     font-weight: $bold;
-    margin-top: rem(40);
+    margin-top: rem(42);
   }
 }
 
 .nav__item--bold.top {
-  margin-top: rem(34);
+  margin-top: rem(35);
   font-weight: $bold;
   @include mq(md) {
     font-weight: $bold;
