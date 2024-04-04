@@ -71,10 +71,11 @@ const main__swiper = new Swiper(".main__swiper", {
   
 // });
 
+//swiper__campaign 
     var swiper = new Swiper(".swiper__campaign", {
       loop: true,
       slidesPerView: "auto",
-      spaceBetween: 44,
+      spaceBetween: 40,
       centeredSlides: true,
       pagination: {
         el: ".swiper-pagination",
@@ -87,7 +88,7 @@ const main__swiper = new Swiper(".main__swiper", {
       }
     });
   
-
+// color-box
     function checkInView() {
     $('.color').each(function() {
         var elementTop = $(this).offset().top;

@@ -8,12 +8,12 @@
   padding-right: $padding-sp;
   padding-left: $padding-sp;
   margin: auto;
-  margin-top: rem(84);
+  margin-top: rem(80);
   @include mq(md) {
     max-width: $inner + strip-unit($padding-pc) * 2;
     padding-right: $padding-pc;
     padding-left: $padding-pc;
     margin: auto;
-    margin-top: rem(144);
+    margin-top: rem(146);
   }
 }

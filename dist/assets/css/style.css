@@ -199,7 +199,7 @@ a {
 }
 
 .footer {
-	background-color: #108F95;
+	background-color: #408f95;
 	position: relative;
 }
 
@@ -236,7 +236,7 @@ a {
 .price {
 	background-color: #ddf0f1;
 	box-shadow: 0 0.125rem 0.3125rem 0 rgba(0, 0, 0, 0.5);
-	margin-top: 5.625rem;
+	margin-top: 5.75rem;
 	padding: 4.25rem 0 5.25rem;
 	position: relative;
 }
@@ -258,13 +258,13 @@ a {
 
 .section__voice {
 	margin: auto;
-	margin-top: 5.25rem;
+	margin-top: 5rem;
 	padding-left: 15px;
 	padding-right: 15px;
 }
 
 .about__content {
-	color: #108F95;
+	color: #408f95;
 	font-family: "Gotu", sans-serif;
 	font-weight: 300;
 	margin: auto;
@@ -274,7 +274,7 @@ a {
 }
 
 .about__content--title {
-	color: #108F95;
+	color: #408f95;
 	font-weight: 300;
 	padding-left: 0;
 	padding-right: 0;
@@ -291,16 +291,15 @@ a {
 }
 
 .about__imgs {
-	height: 100%;
 	position: relative;
 	width: 100%;
 }
 
 .about__img--1 {
 	aspect-ratio: 132/194;
-	height: 12.125rem;
 	left: calc(50% - 6.75rem);
-	padding-right: 0.25rem;
+	max-width: -moz-fit-content;
+	max-width: fit-content;
 	position: absolute;
 	top: calc(50% + 7.75rem);
 	transform: translate(-50%, -50%);
@@ -308,13 +307,28 @@ a {
 	z-index: 5;
 }
 
+.about__img--1 img {
+	aspect-ratio: 132/194;
+	max-width: -moz-fit-content;
+	max-width: fit-content;
+	padding-right: 0.25rem;
+	width: 8.25rem;
+	z-index: 5;
+}
+
 .about__img--2 {
 	aspect-ratio: 880/581;
-	height: 11.625rem;
 	left: calc(50% + 1.875rem);
 	position: absolute;
 	top: calc(50% + 9.25rem);
 	transform: translate(-50%, -50%);
+	width: 17.5625rem;
+}
+
+.about__img--2 img {
+	aspect-ratio: 880/581;
+	max-width: -moz-fit-content;
+	max-width: fit-content;
 	width: 17.5625rem;
 }
 
@@ -342,12 +356,16 @@ a {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	margin: auto;
+	max-width: 37.5rem;
+	padding-left: 15px;
+	padding-right: 15px;
 	position: relative;
 }
 
 .blog__cards a {
 	margin: 1.6875rem 1.375rem 0.75rem;
-	width: 20.8125rem;
+	max-width: 37.5rem;
 }
 
 .blog__cards :hover {
@@ -355,7 +373,7 @@ a {
 }
 
 .button {
-	background-color: #108F95;
+	background-color: #408f95;
 	color: #fff;
 	display: inline-block;
 	font-family: "Gotu", sans-serif;
@@ -369,7 +387,7 @@ a {
 }
 
 .button::before {
-	border: 0.0625rem solid #108F95;
+	border: 0.0625rem solid #408f95;
 	content: "";
 	display: inline;
 	height: 100%;
@@ -400,7 +418,7 @@ a {
 
 .button::after {
 	background-color: #fff;
-	border: 0.0625rem solid #108F95;
+	border: 0.0625rem solid #408f95;
 	content: "";
 	height: 100%;
 	left: 0;
@@ -419,13 +437,13 @@ a {
 }
 
 .button:hover {
-	color: #108F95;
+	color: #408f95;
 	display: inline-block;
 	z-index: 1;
 }
 
 .button:hover span {
-	border-color: #108F95;
+	border-color: #408f95;
 	z-index: 2;
 }
 
@@ -452,7 +470,7 @@ a {
 
 .button__blog {
 	margin-right: 0.125rem;
-	margin-top: 1.25rem;
+	margin-top: 1.875rem;
 	text-align: center;
 }
 
@@ -486,7 +504,7 @@ a {
 .card__slider {
 	box-shadow: 0.125rem 0.125rem 0.625rem 0rem rgba(0, 0, 0, 0.25);
 	height: 22.875rem;
-	margin: 1.6875rem 0 2.5rem 1rem;
+	margin: 1.6875rem 0 2.5rem 0;
 	width: 17.5rem;
 }
 
@@ -496,8 +514,8 @@ a {
 
 .card__icon--slider {
 	align-items: center;
-	border: 0.0625rem solid #108F95;
-	color: #108F95;
+	border: 0.0625rem solid #408f95;
+	color: #408f95;
 	display: flex;
 	font-family: "Noto Sans JP", sans-serif;
 	margin: 1rem 0 0.25rem 1rem;
@@ -523,7 +541,7 @@ a {
 
 .card__title--campaign {
 	align-items: baseline;
-	border-bottom: 0.0625rem solid #108F95;
+	border-bottom: 0.0625rem solid #408f95;
 	display: flex;
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1rem;
@@ -545,7 +563,6 @@ a {
 	display: flex;
 	font-family: "Lato", sans-serif;
 	justify-content: center;
-	margin: 0 calc(50% - 50vw);
 	text-align: center;
 }
 
@@ -564,7 +581,7 @@ a {
 }
 
 .card__discount h3 {
-	color: #108F95;
+	color: #408f95;
 	font-family: "Lato", sans-serif;
 	font-size: 2rem;
 	font-weight: 700;
@@ -592,7 +609,7 @@ a {
 }
 
 .card__discount--night h3 {
-	color: #108F95;
+	color: #408f95;
 	font-family: "Lato", sans-serif;
 	font-size: 2rem;
 	font-weight: 700;
@@ -605,9 +622,9 @@ a {
 	box-shadow: 0.125rem 0.125rem 0.625rem 0rem rgba(0, 0, 0, 0.25);
 	font-family: "Noto Sans JP", sans-serif;
 	margin: 0;
-	max-width: 20.8125rem;
+	max-width: -moz-fit-content;
+	max-width: fit-content;
 	padding: 1.25rem 1rem 1.5rem 1rem;
-	width: 20.8125rem;
 }
 
 .card__header--blog {
@@ -616,8 +633,8 @@ a {
 
 .card__header--blog img {
 	aspect-ratio: 301/201;
-	height: 12.5625rem;
-	width: 18.8125rem;
+	max-width: -moz-fit-content;
+	max-width: fit-content;
 }
 
 .card__date {
@@ -627,7 +644,7 @@ a {
 }
 
 .card__title--blog {
-	border-bottom: 0.0625rem solid #108F95;
+	border-bottom: 0.0625rem solid #408f95;
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1rem;
 	padding-bottom: 0.25rem;
@@ -637,7 +654,9 @@ a {
 	align-items: center;
 	display: flex;
 	flex-direction: column;
+	margin: auto;
 	margin-top: 2.5rem;
+	max-width: 37.5rem;
 }
 
 .cards__voice .card {
@@ -646,7 +665,7 @@ a {
 }
 
 .card__inner--voice {
-	padding: 1.125rem 1rem 1rem 1rem;
+	padding: 1rem 1rem 1rem 1rem;
 }
 
 .card__header--voice {
@@ -664,7 +683,7 @@ a {
 }
 
 .card__title--voice {
-	border-bottom: 0.0625rem solid #108F95;
+	border-bottom: 0.0625rem solid #408f95;
 	flex-direction: column;
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1rem;
@@ -691,12 +710,12 @@ a {
 .card__age {
 	font-size: 0.75rem;
 	line-height: 1;
-	padding-top: 0.25rem;
+	padding-top: 0.375rem;
 }
 
 .card__icon {
-	border: 0.0625rem solid #108F95;
-	color: #108F95;
+	border: 0.0625rem solid #408f95;
+	color: #408f95;
 	display: inline-block;
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 0.75rem;
@@ -715,6 +734,7 @@ a {
 	box-shadow: none;
 	display: flex;
 	flex-direction: column;
+	max-width: 37.5rem;
 	text-align: center;
 }
 
@@ -748,7 +768,7 @@ div.colorbox img {
 
 .contact__content {
 	font-family: "Noto Sans JP", sans-serif;
-	margin-top: 10.25rem;
+	margin-top: 10.125rem;
 	text-align: center;
 }
 
@@ -764,6 +784,7 @@ div.colorbox img {
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1rem;
 	line-height: 1.5;
+	max-width: 37.5rem;
 	text-align: center;
 }
 
@@ -792,11 +813,12 @@ div.colorbox img {
 	font-size: 1rem;
 	line-height: 1;
 	margin: 2.5rem 0 0;
+	max-width: 37.5rem;
 	text-align: center;
 }
 
 .copyright {
-	background-color: #108F95;
+	background-color: #408f95;
 	color: #fff;
 	font-family: "Gotu", sans-serif;
 	font-size: 0.74375rem;
@@ -933,7 +955,7 @@ div.colorbox img {
 }
 
 .information__content--title {
-	border-bottom: 0.0625rem solid #108F95;
+	border-bottom: 0.0625rem solid #408f95;
 	padding-top: 1.375rem;
 }
 
@@ -950,15 +972,15 @@ div.colorbox img {
 }
 
 .information__content--img {
-	height: 14.1875rem;
-	margin: 2rem 1.25rem 0 0;
-	width: 21.5625rem;
+	margin: 2rem 0 0 0;
+	max-width: -moz-fit-content;
+	max-width: fit-content;
 }
 
 .information__content--img img {
 	aspect-ratio: 540/356;
-	height: 14.1875rem;
-	width: 21.5625rem;
+	max-width: -moz-fit-content;
+	max-width: fit-content;
 }
 
 .logo__img--codeups img {
@@ -1017,7 +1039,7 @@ div.colorbox img {
 }
 
 .contact__logo--codeups img {
-	border-bottom: 0.0625rem solid #108F95;
+	border-bottom: 0.0625rem solid #408f95;
 	left: calc(50% + 0rem);
 	padding: 0 3.75rem 0.375rem;
 	top: calc(50% + 7.1875rem);
@@ -1353,7 +1375,7 @@ div.colorbox img {
 }
 
 .nav {
-	background: #108F95;
+	background: #408f95;
 	display: none; /* 初期状態では非表示 */
 	height: 0; /* 初期状態では高さ0 */
 	overflow: hidden; /* オーバーフローを隠す */
@@ -1367,6 +1389,7 @@ div.colorbox img {
 .nav.active {
 	display: block; /* 要素を表示 */
 	height: 100vh; /* 画面の高さまで展開 */
+	overflow-y: auto;
 	top: 0; /* 画面上部に表示 */
 	transition: transform 0.5s ease; /* transformプロパティの変化を0.5秒かけて行う */ /* active状態 */
 	z-index: 20; /* 要素を他の要素の上に配置 */
@@ -1377,13 +1400,15 @@ div.colorbox img {
 	flex-direction: column;
 	justify-content: center;
 	margin: 0;
+	max-width: 37.5rem;
 	padding: 0;
-	width: 21.5625rem;
+	width: 100%;
 }
 
 .price__contents--right {
 	display: block;
 	margin: 1.75rem 0 0;
+	max-width: 37.5rem;
 }
 
 .price__content {
@@ -1394,9 +1419,9 @@ div.colorbox img {
 }
 
 .price__img {
-	height: 14.1875rem;
 	margin: 0;
-	width: 21.5625rem;
+	width: -moz-fit-content;
+	width: fit-content;
 }
 
 .price__img img {
@@ -1405,11 +1430,11 @@ div.colorbox img {
 }
 
 .price__title {
-	border-bottom: 1px solid #108F95;
+	border-bottom: 1px solid #408f95;
 	font-family: "Noto Sans JP", sans-serif;
 	font-weight: 700;
 	margin-top: 2.5rem;
-	padding-bottom: 0.1875rem;
+	padding-bottom: 0.25rem;
 }
 
 .price__item {
@@ -1443,13 +1468,13 @@ div.colorbox img {
 }
 
 .section__title::first-letter {
-	color: #108F95;
+	color: #408f95;
 	font-weight: 300;
 	text-transform: capitalize;
 }
 
 .section__subtitle {
-	color: #108F95;
+	color: #408f95;
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 0.75rem;
 	font-weight: 300;
@@ -1466,7 +1491,7 @@ div.colorbox img {
 }
 
 .section__subtitle--campaign {
-	color: #108F95;
+	color: #408f95;
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 0.75rem;
 	font-weight: 300;
@@ -1491,13 +1516,13 @@ div.colorbox img {
 }
 
 .section__titles--blog::first-letter {
-	color: #108F95;
+	color: #408f95;
 	font-weight: 300;
 	text-transform: capitalize;
 }
 
 .section__subtitle__blog {
-	color: #108F95;
+	color: #408f95;
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 0.75rem;
 	font-weight: 300;
@@ -1515,12 +1540,12 @@ div.colorbox img {
 }
 
 .section__title--contact::first-letter {
-	color: #108F95;
+	color: #408f95;
 	font-weight: 300;
 }
 
 .section__subtitle--contact {
-	color: #108F95;
+	color: #408f95;
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 0.75rem;
 	font-weight: 300;
@@ -1530,7 +1555,7 @@ div.colorbox img {
 }
 
 .section__subtitle--contact2 {
-	color: #108F95;
+	color: #408f95;
 	font-size: 0.875rem;
 	font-weight: 300;
 	margin-top: 0.75rem;
@@ -1547,13 +1572,16 @@ div.colorbox img {
 .swiper-slide {
 	align-items: center; /* スライド内の要素を垂直方向に中央揃えする場合 */
 	justify-content: center; /* スライド内の要素を水平方向に中央揃えする場合 */
+	margin: 0;
 	text-align: center;
+	width: 17.5rem;
 }
 
 .swiper-wrapper.campaign {
 	margin: auto;
 	max-width: 37.5rem;
-	padding: 0.25rem 0 0;
+	padding: 0.25rem 0 0 0;
+	right: 2rem;
 }
 
 .swiper {
@@ -1579,6 +1607,14 @@ div.colorbox img {
 .swiper-button-prev {
 	display: none;
 	position: absolute;
+}
+
+.swiper-button-next :hover {
+	opacity: 0.5;
+}
+
+.swiper-button-prev :hover {
+	opacity: 0.5;
 }
 
 @media screen and (min-width: 768px) {
@@ -1671,7 +1707,7 @@ html {
 
 .section__voice {
 	margin: auto;
-	margin-top: 9rem;
+	margin-top: 9.125rem;
 	max-width: 1130px;
 	padding-left: 25px;
 	padding-right: 25px;
@@ -1702,6 +1738,11 @@ html {
 	text-shadow: none;
 }
 
+.about__imgs {
+	height: 100%;
+	width: 100%;
+}
+
 .about__img--1 {
 	height: 37.875rem;
 	left: calc(50% - 21.25rem);
@@ -1712,12 +1753,25 @@ html {
 	width: 24.9375rem;
 }
 
+.about__img--1 img {
+	height: 37.875rem;
+	max-width: 24.9375rem;
+	padding: 0;
+	width: 24.9375rem;
+}
+
 .about__img--2 {
 	height: 36.3125rem;
 	left: calc(50% + 6.25rem);
 	max-width: 55rem;
 	top: calc(50% + 26rem);
 	transform: translate(-50%, -50%);
+	width: 55rem;
+}
+
+.about__img--2 img {
+	height: 36.3125rem;
+	max-width: 55rem;
 	width: 55rem;
 }
 
@@ -1763,6 +1817,7 @@ html {
 	margin: auto;
 	margin-top: 2.5rem;
 	max-width: 1130px;
+	max-width: none;
 	padding-left: 25px;
 	padding-right: 25px;
 }
@@ -1972,7 +2027,7 @@ html {
 }
 
 .card__title--voice {
-	border-bottom: 0.0625rem solid #108F95;
+	border-bottom: 0.0625rem solid #408f95;
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1.5rem;
 	font-weight: 700;
@@ -2073,7 +2128,7 @@ html {
 }
 
 .contact__right {
-	border-left: 1px solid #108F95;
+	border-left: 1px solid #408f95;
 	border-top: none;
 	display: flex;
 	line-height: 1;
@@ -2139,15 +2194,17 @@ html {
 .information__content {
 	display: flex;
 	flex-direction: initial;
+	gap: 1.125rem;
 	justify-content: center;
 	max-width: none;
 	padding: 2.5rem 0 0 0;
 }
 
 .information__content--title {
-	border-bottom: 0.0625rem solid #108F95;
+	border-bottom: 0.0625rem solid #408f95;
 	margin-left: 1.75rem;
-	margin-top: 2.75rem;
+	margin-top: 4.125rem;
+	padding: 0;
 	padding-bottom: 0.5rem;
 }
 
@@ -2470,9 +2527,15 @@ html {
 
 .price__contents--right {
 	display: block;
-	margin: 0;
-	margin-top: 2.875rem;
+	margin-top: 2.8125rem;
 	width: 30.75rem;
+}
+
+.price__content {
+	display: flex;
+	justify-content: space-between;
+	max-width: 100%;
+	width: 100%;
 }
 
 .price__img {
@@ -2515,7 +2578,7 @@ html {
 }
 
 .section__title::first-letter {
-	color: #108F95;
+	color: #408f95;
 }
 
 .section__subtitle {
@@ -2585,7 +2648,7 @@ html {
 }
 
 .section__subtitle--contact2 {
-	color: #108F95;
+	color: #408f95;
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 0.875rem;
 	line-height: 1;
@@ -2596,13 +2659,14 @@ html {
 
 .swiper-slide {
 	margin: 0;
-	width: 20.625rem;
+	width: 20.8125rem;
 }
 
 .swiper-wrapper.campaign {
 	max-width: none;
 	padding-bottom: 0.3125rem;
 	padding-left: 46.125rem;
+	right: 0;
 	width: 100%;
 }
 

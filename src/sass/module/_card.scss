@@ -23,7 +23,7 @@
   box-shadow: rem(2) rem(2) rem(10) rem(0) rgba(0, 0, 0, 0.25);
   width: rem(280);
   height: rem(366);
-  margin: rem(27) 0 rem(40) rem(16);
+  margin: rem(27) 0 rem(40) 0;
   @include mq(md) {
     margin: rem(40) 0 0 0;
     width: rem(333);
@@ -65,11 +65,11 @@
     line-height: 1;
   }
 }
-.card__slider .card__body{
+.card__slider .card__body {
   padding-top: rem(0);
   @include mq(md) {
     width: 100%;
-    padding-top: rem(14);;
+    padding-top: rem(14);
   }
 }
 
@@ -77,7 +77,7 @@
   padding-top: rem(16);
   @include mq(md) {
     width: 100%;
-    padding-top: rem(14);;
+    padding-top: rem(14);
   }
 }
 
@@ -114,7 +114,6 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 0 calc(50% - 50vw);
   font-family: $third-font-family;
 }
 .card__campaign--price h3 {
@@ -186,8 +185,7 @@
   box-shadow: rem(2) rem(2) rem(10) rem(0) rgba(0, 0, 0, 0.25);
   font-family: $base-font-family;
   background-color: $white;
-  max-width: rem(333);
-  width: rem(333);
+  max-width: fit-content;
   margin: 0;
   padding: rem(20) rem(16) rem(24) rem(16);
   @include mq(md) {
@@ -197,19 +195,17 @@
   }
 }
 
-
 .card__header--blog {
   text-align: center;
 }
 
 .card__header--blog img {
   aspect-ratio: 301 / 201;
-  width: rem(301);
-  height: rem(201);
+  max-width: fit-content;
   @include mq(md) {
     width: rem(301);
     height: rem(201);
-    display: inline-block;  
+    display: inline-block;
     // margin: rem(16) rem(16) rem(12);
   }
 }
@@ -240,14 +236,16 @@
 .cards__voice {
   display: flex;
   flex-direction: column;
+  margin: auto;
   margin-top: rem(40);
   align-items: center;
+  max-width: rem(600);
   @include mq(md) {
     align-items: start;
     display: flex;
     flex-direction: initial;
     justify-content: center;
-    margin: auto; 
+    margin: auto;
     max-width: $inner + strip-unit($padding-pc) * 2;
     padding-right: $padding-pc;
     padding-left: $padding-pc;
@@ -263,11 +261,11 @@
   }
 }
 .card__inner--voice {
-  padding: rem(18) rem(16) rem(16) rem(16);
+  padding: rem(16) rem(16) rem(16) rem(16);
   @include mq(md) {
     padding: rem(28) rem(16) rem(24);
-    max-width: rem(520);
     width: rem(520);
+    max-width: rem(520);
   }
 }
 
@@ -339,7 +337,7 @@
 
 .card__age {
   font-size: rem(12);
-  padding-top: rem(4);
+  padding-top: rem(6);
   line-height: 1;
   @include mq(md) {
     padding: rem(42) 0 0 rem(8);
@@ -379,6 +377,7 @@
   box-shadow: none;
   text-align: center;
   align-items: center;
+  max-width: rem(600);
   @include mq(md) {
     align-items: normal;
     display: flex;

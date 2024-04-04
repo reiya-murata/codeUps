@@ -11,6 +11,7 @@
     justify-content: center;
     max-width: none;
     padding: rem(40) 0 0 0;
+    gap: rem(18);
   }
 }
 
@@ -18,9 +19,10 @@
   padding-top: rem(22);
   border-bottom: rem(1) solid $blue;
   @include mq(md) {
+    padding: 0;
     border-bottom: rem(1) solid $blue;
     padding-bottom: rem(8);
-    margin-top: rem(44);
+    margin-top: rem(66);
     margin-left: rem(28);
   }
 }
@@ -52,9 +54,9 @@
 }
 
 .information__content--img {
-  margin: rem(32) rem(20) 0 0;
-  width: rem(345);
-  height: rem(227);
+  margin: rem(32) 0 0 0;
+  // width: rem(345);
+  max-width: fit-content;
   @include mq(md) {
     width: rem(540);
     height: rem(356);
@@ -64,8 +66,8 @@
 
 .information__content--img img {
   aspect-ratio: 540/356;
-  width: rem(345);
-  height: rem(227);
+  // width: rem(345);
+  max-width: fit-content;
   @include mq(md) {
     width: rem(540);
     height: rem(356);
