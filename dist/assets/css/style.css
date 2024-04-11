@@ -158,9 +158,10 @@ a {
 }
 
 .section__about {
+	height: 42.5rem;
+	margin: 4.875rem 0 4.625rem;
 	margin-left: auto;
 	margin-right: auto;
-	padding: 4.875rem 0 10.5rem;
 	padding-left: 15px;
 	padding-right: 15px;
 }
@@ -265,12 +266,14 @@ a {
 
 .about__content {
 	color: #408f95;
+	display: block;
 	font-family: "Gotu", sans-serif;
 	font-weight: 300;
 	margin: auto;
 	max-width: 37.5rem;
-	padding-top: 15rem;
 	position: relative;
+	top: calc(50% + 2.5rem);
+	transform: translateY(-50%);
 }
 
 .about__content--title {
@@ -292,23 +295,28 @@ a {
 }
 
 .about__imgs {
+	height: 100%;
+	left: 50%;
 	margin: auto;
 	max-width: 37.5rem;
-	position: relative;
+	position: absolute;
+	transform: translate(-50%, 0);
 	width: 100%;
 }
 
 .about__img--1 {
 	aspect-ratio: 132/194;
-	margin-top: 1.625rem;
+	left: 0.75rem;
 	max-width: 24.9375rem;
 	position: absolute;
-	width: 38%;
+	top: 1.625rem;
+	width: 36%;
 	z-index: 5;
 }
 
 .about__img--1 img {
 	aspect-ratio: 132/194;
+	display: block;
 	padding-right: 0.25rem;
 	width: 100%;
 	z-index: 5;
@@ -316,14 +324,15 @@ a {
 
 .about__img--2 {
 	aspect-ratio: 880/581;
-	margin-left: 3.875rem;
-	margin-top: 3.4375rem;
 	position: absolute;
-	width: 82%;
+	right: 1.0625rem;
+	top: 3.4375rem;
+	width: 75%;
 }
 
 .about__img--2 img {
 	aspect-ratio: 880/581;
+	display: block;
 	width: 100%;
 }
 
@@ -458,19 +467,19 @@ a {
 	position: absolute;
 	position: absolute;
 	text-align: center;
-	top: calc(50% + 20.5rem);
+	top: calc(50% + 13rem);
 	transform: translate(-50%, -50%);
 	z-index: 10;
 }
 
 .button__blog {
 	margin-right: 0.125rem;
-	margin-top: 1.875rem;
+	margin-top: 1.625rem;
 	text-align: center;
 }
 
 .button__voice {
-	margin: 0.25rem 0.125rem 0 0;
+	margin: 0.125rem 0.125rem 0 0;
 	text-align: center;
 }
 
@@ -617,8 +626,8 @@ a {
 	box-shadow: 0.125rem 0.125rem 0.625rem 0rem rgba(0, 0, 0, 0.25);
 	font-family: "Noto Sans JP", sans-serif;
 	margin: 0;
-	max-width: -moz-fit-content;
-	max-width: fit-content;
+	max-width: 37.5rem;
+	min-width: 20.8125rem;
 	padding: 1.25rem 1rem 1.5rem 1rem;
 }
 
@@ -655,8 +664,9 @@ a {
 }
 
 .cards__voice .card {
-	margin: 0rem 1rem 2.125rem;
+	margin: 0.125rem 1rem 2.125rem;
 	max-width: 37.5rem;
+	min-width: 21.5625rem;
 }
 
 .card__inner--voice {
@@ -671,9 +681,7 @@ a {
 }
 
 .card__header--voice--left {
-	display: grid;
-	grid-column: 1;
-	grid-row: 1;
+	max-width: 37.5rem;
 }
 
 .card__header--voice--left--top {
@@ -688,14 +696,14 @@ a {
 	font-size: 1rem;
 	font-weight: 700;
 	max-width: 25rem;
-	padding: 0.125rem 0 0.25rem;
+	padding: 0.25rem 0 0.125rem;
 }
 
 .card__img {
-	aspect-ratio: 140/180;
+	aspect-ratio: 180/140;
 	height: 7.3125rem;
 	margin-left: 0.75rem;
-	margin-top: 0.75rem;
+	margin-top: 0.375rem;
 	width: 9.4375rem;
 }
 
@@ -709,7 +717,7 @@ a {
 .card__age {
 	font-size: 0.75rem;
 	line-height: 1;
-	padding-top: 0.375rem;
+	padding-top: 0.125rem;
 }
 
 .card__icon {
@@ -725,7 +733,7 @@ a {
 }
 
 .card__text--voice {
-	padding: 0 0 0.5rem;
+	padding: 0rem 0 0.75rem;
 }
 
 .contact__card {
@@ -1439,13 +1447,14 @@ div.colorbox img {
 .price__item {
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 0.875rem;
-	padding-top: 0.6875rem;
+	padding-bottom: 0.15625rem;
+	padding-top: 0.5rem;
 }
 
 .price__price {
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 0.875rem;
-	padding-top: 0.6875rem;
+	padding-top: 0.625rem;
 	text-align: right;
 }
 
@@ -1637,12 +1646,13 @@ html {
 }
 
 .section__about {
+	height: 56.25rem;
 	margin: auto;
+	margin: 8.625rem 0 0;
 	overflow: hidden;
-	padding: 8.625rem 0 24rem;
 	padding-left: 25px;
 	padding-right: 25px;
-	width: 100%;
+	position: relative;
 }
 
 .section__blog {
@@ -1678,7 +1688,7 @@ html {
 .information {
 	box-shadow: none;
 	margin-top: 0.5rem;
-	padding: 6.5625rem 0 6.25rem;
+	padding: 6.125rem 0 6.25rem;
 }
 
 .section__information {
@@ -1716,8 +1726,10 @@ html {
 .about__content {
 	display: flex;
 	justify-content: center;
-	max-width: none;
-	padding-top: 12.5rem;
+	max-width: 1130px;
+	position: relative;
+	top: calc(50% - 8.125rem);
+	transform: translateY(-50%);
 }
 
 .about__content--title {
@@ -1740,16 +1752,20 @@ html {
 }
 
 .about__imgs {
+	height: 46.3125rem;
+	left: 50%;
 	margin: auto;
-	max-width: 1080px;
+	max-width: 1130px;
+	transform: translate(-50%, 0);
 	width: 100%;
 }
 
 .about__img--1 {
 	height: 37.875rem;
-	margin-top: 2.625rem;
+	left: 1.625rem;
 	max-width: 24.9375rem;
 	padding: 0;
+	top: 2.625rem;
 	width: 24.9375rem;
 }
 
@@ -1762,9 +1778,9 @@ html {
 
 .about__img--2 {
 	height: 36.3125rem;
-	margin-left: 12.5rem;
-	margin-top: 7.625rem;
 	max-width: 55rem;
+	right: 1.625rem;
+	top: 7.625rem;
 	width: 55rem;
 }
 
@@ -1816,7 +1832,6 @@ html {
 	margin: auto;
 	margin-top: 2.5rem;
 	max-width: 1130px;
-	max-width: none;
 	padding-left: 25px;
 	padding-right: 25px;
 }
@@ -1847,7 +1862,7 @@ html {
 
 .button__about {
 	left: calc(50% + 18.5rem);
-	top: calc(50% + 14.375rem);
+	top: calc(50% + 8.125rem);
 	transform: translate(-50%, -50%);
 }
 
@@ -1969,7 +1984,8 @@ html {
 
 .card__blog {
 	margin: 0;
-	max-width: 20.8125rem;
+	max-width: 37.5rem;
+	padding: 1.25rem 1rem 1.5rem 1rem;
 	width: 20.8125rem;
 }
 
@@ -2038,7 +2054,7 @@ html {
 }
 
 .card__img {
-	aspect-ratio: 140/180;
+	aspect-ratio: 180/140;
 	height: 8.75rem;
 	margin: 0 0.5rem 0.5rem 0rem;
 	width: 11.25rem;
@@ -2244,11 +2260,11 @@ html {
 .about__logo {
 	display: block;
 	height: 11.3125rem;
-	left: calc(50% + 33.75rem);
 	position: absolute;
-	top: calc(50% + 44.25rem);
-	transform: translate(-50%, -50%);
+	right: -4.5rem;
+	top: 38.375rem;
 	width: 12.125rem;
+	z-index: 20;
 }
 
 .blog__logo--1 {

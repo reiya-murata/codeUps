@@ -23,9 +23,9 @@
     display: block;
     width: rem(194);
     height: rem(181);
-    top: calc(50% + rem(708));
-    left: calc(50% + rem(540));
-    transform: translate(-50%, -50%);
+    top: rem(614);
+    right: rem(-72);
+    z-index: 20;
   }
 }
 
