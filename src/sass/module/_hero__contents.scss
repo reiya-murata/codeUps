@@ -72,15 +72,19 @@
     line-height: 1;
   }
 }
+
 .hero__img {
   height: 100%;
   width: 100%;
   background-repeat: no-repeat;
-  // background-size: cover;
+  object-fit: cover;
   position: relative;
+  aspect-ratio: 375 / 667;
   @include mq(md) {
+    object-fit: cover;
     height: 100%;
     width: 100%;
+    aspect-ratio: 1440 / 768;
   }
 }
 .hero__img img {

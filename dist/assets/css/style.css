@@ -661,6 +661,8 @@ a {
 	margin: auto;
 	margin-top: 2.5rem;
 	max-width: 37.5rem;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
 .cards__voice .card {
@@ -671,6 +673,7 @@ a {
 
 .card__inner--voice {
 	max-width: 37.5rem;
+	min-width: 21.5625rem;
 	padding: 1rem 1rem 1rem 1rem;
 }
 
@@ -681,7 +684,7 @@ a {
 }
 
 .card__header--voice--left {
-	max-width: 37.5rem;
+	max-width: 25rem;
 }
 
 .card__header--voice--left--top {
@@ -939,8 +942,11 @@ div.colorbox img {
 }
 
 .hero__img {
+	-o-object-fit: cover;
+	aspect-ratio: 375/667;
 	background-repeat: no-repeat;
 	height: 100%;
+	object-fit: cover;
 	position: relative;
 	width: 100%;
 }
@@ -2012,15 +2018,15 @@ html {
 	align-items: start;
 	display: flex;
 	flex-direction: initial;
-	justify-content: center;
+	gap: 1.25rem;
+	justify-content: space-between;
 	margin: auto;
 	max-width: 1130px;
-	padding-left: 25px;
-	padding-right: 25px;
+	padding: 0;
 }
 
 .cards__voice .card {
-	margin: 2rem 1.25rem 0;
+	margin: 2rem 0 0 0;
 	max-width: 32.5rem;
 	width: 32.5rem;
 }
@@ -2028,10 +2034,10 @@ html {
 .card__inner--voice {
 	max-width: 32.5rem;
 	padding: 1.75rem 1rem 1.5rem;
-	width: 32.5rem;
 }
 
 .card__header--voice {
+	min-width: 29.5rem;
 	padding: 0;
 }
 
@@ -2082,7 +2088,7 @@ html {
 }
 
 .card__text--voice {
-	padding: 1.125rem 1rem 0 0.5rem;
+	padding: 1.125rem 0.5rem 0 0.5rem;
 }
 
 .contact__card {
@@ -2198,7 +2204,10 @@ html {
 }
 
 .hero__img {
+	-o-object-fit: cover;
+	aspect-ratio: 1440/768;
 	height: 100%;
+	object-fit: cover;
 	width: 100%;
 }
 
