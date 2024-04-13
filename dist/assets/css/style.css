@@ -359,7 +359,7 @@ a {
 	align-items: center;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: space-between;
 	margin: auto;
 	max-width: 37.5rem;
 	padding-left: 15px;
@@ -368,7 +368,7 @@ a {
 }
 
 .blog__cards a {
-	margin: 1.6875rem 1.375rem 0.75rem;
+	margin: 1.6875rem 1.25rem 0.75rem;
 	max-width: 37.5rem;
 }
 
@@ -484,7 +484,7 @@ a {
 }
 
 .button__contact {
-	margin-top: 2.5rem;
+	margin-top: 2.75rem;
 	padding: 0;
 }
 
@@ -625,7 +625,6 @@ a {
 	background-color: #fff;
 	box-shadow: 0.125rem 0.125rem 0.625rem 0rem rgba(0, 0, 0, 0.25);
 	font-family: "Noto Sans JP", sans-serif;
-	margin: 0;
 	max-width: 37.5rem;
 	min-width: 20.8125rem;
 	padding: 1.25rem 1rem 1.5rem 1rem;
@@ -776,6 +775,11 @@ div.colorbox img {
 	display: block;
 }
 
+.contact__inner {
+	margin: auto;
+	width: auto;
+}
+
 .contact__content {
 	font-family: "Noto Sans JP", sans-serif;
 	margin-top: 10.125rem;
@@ -846,6 +850,7 @@ div.colorbox img {
 	height: 1.875rem;
 	position: absolute;
 	right: 2rem;
+	right: 1.125rem;
 	top: 1.6875rem;
 	width: 1.875rem;
 	z-index: 20;
@@ -860,14 +865,17 @@ div.colorbox img {
 }
 
 .hamburger span:nth-child(1) {
+	left: 0;
 	top: 0rem;
 }
 
 .hamburger span:nth-child(2) {
+	left: 0;
 	top: 0.75rem;
 }
 
 .hamburger span:nth-child(3) {
+	left: 0;
 	top: 1.5rem;
 }
 
@@ -916,10 +924,10 @@ div.colorbox img {
 	color: #fff;
 	display: flex;
 	flex-direction: column;
-	height: 100%;
+	height: 100vh;
 	justify-content: center;
 	position: absolute;
-	width: 100%;
+	width: 100vw;
 	z-index: 5;
 }
 
@@ -943,20 +951,20 @@ div.colorbox img {
 
 .hero__img {
 	-o-object-fit: cover;
-	aspect-ratio: 375/667;
 	background-repeat: no-repeat;
-	height: 100%;
+	height: 100vh;
 	object-fit: cover;
 	position: relative;
 	width: 100%;
 }
 
 .hero__img img {
+	-o-object-fit: cover;
 	aspect-ratio: 375/667;
 	background-repeat: no-repeat;
-	height: 100%;
+	background-size: cover;
+	object-fit: cover;
 	position: relative;
-	width: 100%;
 	z-index: 10;
 }
 
@@ -1662,7 +1670,7 @@ html {
 }
 
 .section__blog {
-	padding: 6.25rem 0.125rem 0 0;
+	padding-top: 6.25rem;
 	position: relative;
 }
 
@@ -1832,20 +1840,19 @@ html {
 }
 
 .blog__cards {
+	align-items: start;
 	display: flex;
 	flex-direction: initial;
-	justify-content: center;
+	justify-content: space-between;
 	margin: auto;
-	margin-top: 2.5rem;
 	max-width: 1130px;
 	padding-left: 25px;
 	padding-right: 25px;
 }
 
 .blog__cards a {
-	margin: 2.5rem 1.25rem 0;
+	margin: 2.5rem 0 0;
 	max-width: 20.8125rem;
-	width: 20.8125rem;
 }
 
 .button {
@@ -1989,7 +1996,7 @@ html {
 }
 
 .card__blog {
-	margin: 0;
+	margin: 2.5rem 0 0;
 	max-width: 37.5rem;
 	padding: 1.25rem 1rem 1.5rem 1rem;
 	width: 20.8125rem;
@@ -2113,6 +2120,11 @@ html {
 	flex-direction: initial;
 }
 
+.contact__inner {
+	max-width: 1130px;
+	width: 100%;
+}
+
 .contact__content {
 	font-size: 1rem;
 	margin: 4.375rem 0.3125rem 0 3.125rem;
@@ -2181,7 +2193,7 @@ html {
 	align-items: center;
 	display: flex;
 	flex-direction: column;
-	height: 100%;
+	height: 100vh;
 	justify-content: center;
 	width: 100%;
 }
@@ -2205,16 +2217,15 @@ html {
 
 .hero__img {
 	-o-object-fit: cover;
-	aspect-ratio: 1440/768;
-	height: 100%;
+	height: 100vh;
 	object-fit: cover;
 	width: 100%;
 }
 
 .hero__img img {
+	-o-object-fit: cover;
 	aspect-ratio: 1440/768;
-	height: 100%;
-	width: 100%;
+	object-fit: cover;
 }
 
 .information__content {
@@ -2253,11 +2264,6 @@ html {
 .information__content--img {
 	height: 22.25rem;
 	margin-top: 0.125rem;
-	width: 33.75rem;
-}
-
-.information__content--img img {
-	height: 22.25rem;
 	width: 33.75rem;
 }
 

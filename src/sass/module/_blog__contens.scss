@@ -25,7 +25,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding-right: $padding-sp;
   padding-left: $padding-sp;
@@ -34,23 +34,24 @@
   @include mq(md) {
     display: flex;
     flex-direction: initial;
-    justify-content: center;
+    justify-content: space-between;
     max-width: $inner + strip-unit($padding-pc) * 2;
     padding-right: $padding-pc;
     padding-left: $padding-pc;
-    margin-top: rem(40);
+    // margin-top: rem(40);
     // max-width: none;
     margin: auto;
     // width: 100%;
+    align-items: start;
   }
 }
 .blog__cards a{
   max-width: rem(600);
-  margin: rem(27) rem(22) rem(12);
+  margin: rem(27) rem(20) rem(12);
   @include mq(md) {
     max-width: rem(333);
-    width: rem(333);
-    margin: rem(40) rem(20) 0;
+    // width: rem(333);
+    margin: rem(40) 0 0;
   }
 }
 

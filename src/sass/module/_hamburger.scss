@@ -11,6 +11,7 @@
   background-color: transparent;
   cursor: pointer;
   z-index: 20;
+  right: rem(18);
   @include mq(md) {
     display: none;
   }
@@ -26,14 +27,17 @@
 
 .hamburger span:nth-child(1) {
   top: rem(0);
+  left: 0;
 }
 
 .hamburger span:nth-child(2) {
   top: rem(12);
+  left: 0;
 }
 
 .hamburger span:nth-child(3) {
   top: rem(24);
+  left: 0;
 }
 
 .hamburger.active span:nth-child(1) {

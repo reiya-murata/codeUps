@@ -68,8 +68,8 @@
   aspect-ratio: 540/356;
   // width: rem(345);
   max-width: fit-content;
-  @include mq(md) {
-    width: rem(540);
-    height: rem(356);
-  }
+  // @include mq(md) {
+  //   width: rem(540);
+  //   height: rem(356);
+  // }
 }

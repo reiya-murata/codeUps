@@ -1,5 +1,16 @@
 @use "global" as *;
-
+.contact__inner {
+  width: auto;
+  // padding-right: $padding-sp;
+  // padding-left: $padding-sp;
+  margin: auto;
+    @include mq("md") {
+      width: 100%;
+    max-width: $inner + strip-unit($padding-pc) * 2;
+    // padding-right: $padding-pc;
+    // padding-left: $padding-pc;
+  }
+}
 .contact__content {
   font-family: $base-font-family;
   text-align: center;
