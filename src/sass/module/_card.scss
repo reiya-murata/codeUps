@@ -22,12 +22,12 @@
 .card__slider {
   box-shadow: rem(2) rem(2) rem(10) rem(0) rgba(0, 0, 0, 0.25);
   width: rem(280);
-  height: rem(366);
-  margin: rem(27) 0 rem(40) 0;
+  min-height: rem(366);
+  margin: rem(25) 0 rem(40) 0;
   @include mq(md) {
     margin: rem(40) 0 0 0;
     width: rem(333);
-    height: rem(445);
+    min-height: rem(445);
   }
 }
 
@@ -239,7 +239,7 @@
   display: flex;
   flex-direction: column;
   margin: auto;
-  margin-top: rem(40);
+  margin-top: rem(42);
   align-items: center;
   max-width: rem(600);
   padding-right: $padding-sp;
@@ -268,53 +268,55 @@
   }
 }
 .card__inner--voice {
-  padding: rem(16) rem(16) rem(16) rem(16);
+  display: grid;
+  grid-template-rows: auto 1fr;
+  row-gap: rem(16);
+  padding: rem(16) rem(16) rem(26) rem(16);
   min-width: rem(345);
   max-width: rem(600);
   @include mq(md) {
-    padding: rem(28) rem(16) rem(24);
+    row-gap: rem(38);
+    padding: rem(28) rem(24) rem(24);
     max-width: rem(520);
     // width: rem(520);
   }
 }
 
 .card__header--voice {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  column-gap: rem(13);
+  grid-row: 1;
+  grid-template-columns: auto rem(151);
   max-width: rem(600);
   @include mq(md) {
+    column-gap: rem(16);
     padding: 0;
     min-width: rem(472);
+    grid-template-columns: auto rem(180);
     // height: rem(396);
   }
 }
 .card__header--voice--left {
-  max-width: rem(400);
-}
-.card__header--voice--left--top {
-  display: flex;
-  flex-direction: column;
-  @include mq(md) {
-    display: flex;
-    flex-direction: initial;
-    justify-content: space-between;
-  }
+  grid-row: 1;
+  grid-column: 1;
+  // max-width: rem(400);
+  column-gap: rem(40);
+  display: grid;
 }
 
 .card__title--voice {
-  flex-direction: column;
+  grid-row: 3;
   font-family: $base-font-family;
   border-bottom: rem(1) solid $blue;
   //  width: rem(149);
-  max-width: rem(400);
+  // max-width: rem(400);
   padding: rem(4) 0 rem(2);
   font-size: rem(16);
   font-weight: $bold;
   @include mq(md) {
-    width: rem(276);
-    margin-right: rem(8);
-    margin-left: rem(8);
-    padding-top: rem(8);
+    grid-row: 2;
+    grid-column: 1/3;
+    padding-top: rem(10);
     padding-bottom: rem(4);
     font-size: rem(24);
     font-weight: $bold;
@@ -324,14 +326,15 @@
 }
 
 .card__img {
+  align-self: end;
+  grid-row: 1;
+  grid-column: 2;
   aspect-ratio: 180 / 140;
   width: rem(151);
   height: rem(117);
-  margin-top: rem(6);
-  margin-left: rem(12);
   @include mq(md) {
     aspect-ratio: 180 / 140;
-    margin: 0 rem(8) rem(8) rem(0);
+    margin-right: rem(16);
     width: rem(180);
     height: rem(140);
   }
@@ -350,11 +353,13 @@
 }
 
 .card__age {
+  grid-row: 1;
+  grid-column: 1;
   font-size: rem(12);
   padding-top: rem(2);
   line-height: 1;
   @include mq(md) {
-    padding: rem(42) 0 0 rem(8);
+    padding: rem(42) 0 0 ;
     font-size: rem(12);
     font-family: $base-font-family;
     line-height: 1;
@@ -363,8 +368,10 @@
 }
 
 .card__icon {
+  grid-row: 2;
   display: inline-block;
   color: $blue;
+  align-self: center;
   font-size: rem(12);
   padding: rem(5) rem(11);
   margin-top: rem(2);
@@ -372,16 +379,20 @@
   border: rem(1) solid $blue;
   width: fit-content;
   @include mq(md) {
+    justify-self:end;
+    grid-row: 1;
     font-size: rem(12);
     padding: rem(6) rem(15);
-    margin: rem(24) rem(8) 0 0;
+    margin: rem(24) 0 0 0;
   }
 }
-
+.card__voice--body {
+  grid-row: 2;
+}
 .card__text--voice {
-  padding: rem(0) 0 rem(12);
+  padding: rem(0) 0 ;
   @include mq(md) {
-    padding: rem(18) rem(8) 0 rem(8);
+    padding: 0 ;
   }
 }
 // contact

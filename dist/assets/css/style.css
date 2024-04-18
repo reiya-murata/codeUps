@@ -171,7 +171,7 @@ a {
 }
 
 .section__blog {
-	padding: 6rem 0 0;
+	padding: 5.5rem 0 0;
 }
 
 .campaign {
@@ -206,7 +206,7 @@ a {
 
 .section__footer {
 	margin: auto;
-	margin-top: 6.5625rem;
+	margin-top: 6.75rem;
 	padding-left: 15px;
 	padding-right: 15px;
 	width: 100%;
@@ -223,7 +223,7 @@ a {
 	box-shadow: 0 0.125rem 0.25rem 0 rgba(0, 0, 0, 0.5);
 	margin-left: auto;
 	margin-right: auto;
-	padding: 5.125rem 0 4.375rem;
+	padding: 5.375rem 0 4.875rem;
 	position: relative;
 }
 
@@ -309,8 +309,8 @@ a {
 	left: 0.75rem;
 	max-width: 24.9375rem;
 	position: absolute;
-	top: 1.625rem;
-	width: 36%;
+	top: 1.8125rem;
+	width: 35.5%;
 	z-index: 5;
 }
 
@@ -479,12 +479,12 @@ a {
 }
 
 .button__voice {
-	margin: 0.125rem 0.125rem 0 0;
+	margin: 0.25rem 0.125rem 0 0;
 	text-align: center;
 }
 
 .button__contact {
-	margin-top: 2.75rem;
+	margin-top: 2.5rem;
 	padding: 0;
 }
 
@@ -507,8 +507,8 @@ a {
 
 .card__slider {
 	box-shadow: 0.125rem 0.125rem 0.625rem 0rem rgba(0, 0, 0, 0.25);
-	height: 22.875rem;
-	margin: 1.6875rem 0 2.5rem 0;
+	margin: 1.5625rem 0 2.5rem 0;
+	min-height: 22.875rem;
 	width: 17.5rem;
 }
 
@@ -658,7 +658,7 @@ a {
 	display: flex;
 	flex-direction: column;
 	margin: auto;
-	margin-top: 2.5rem;
+	margin-top: 2.625rem;
 	max-width: 37.5rem;
 	padding-left: 15px;
 	padding-right: 15px;
@@ -671,41 +671,49 @@ a {
 }
 
 .card__inner--voice {
+	grid-row-gap: 1rem;
+	display: grid;
+	grid-template-rows: auto 1fr;
 	max-width: 37.5rem;
 	min-width: 21.5625rem;
-	padding: 1rem 1rem 1rem 1rem;
+	padding: 1rem 1rem 1.625rem 1rem;
+	row-gap: 1rem;
 }
 
 .card__header--voice {
-	display: flex;
-	justify-content: space-between;
+	grid-column-gap: 0.8125rem;
+	-moz-column-gap: 0.8125rem;
+	column-gap: 0.8125rem;
+	display: grid;
+	grid-row: 1;
+	grid-template-columns: auto 9.4375rem;
 	max-width: 37.5rem;
 }
 
 .card__header--voice--left {
-	max-width: 25rem;
-}
-
-.card__header--voice--left--top {
-	display: flex;
-	flex-direction: column;
+	grid-column-gap: 2.5rem;
+	-moz-column-gap: 2.5rem;
+	column-gap: 2.5rem;
+	display: grid;
+	grid-column: 1;
+	grid-row: 1;
 }
 
 .card__title--voice {
 	border-bottom: 0.0625rem solid #408f95;
-	flex-direction: column;
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1rem;
 	font-weight: 700;
-	max-width: 25rem;
+	grid-row: 3;
 	padding: 0.25rem 0 0.125rem;
 }
 
 .card__img {
+	align-self: end;
 	aspect-ratio: 180/140;
+	grid-column: 2;
+	grid-row: 1;
 	height: 7.3125rem;
-	margin-left: 0.75rem;
-	margin-top: 0.375rem;
 	width: 9.4375rem;
 }
 
@@ -718,24 +726,32 @@ a {
 
 .card__age {
 	font-size: 0.75rem;
+	grid-column: 1;
+	grid-row: 1;
 	line-height: 1;
 	padding-top: 0.125rem;
 }
 
 .card__icon {
+	align-self: center;
 	border: 0.0625rem solid #408f95;
 	color: #408f95;
 	display: inline-block;
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 0.75rem;
+	grid-row: 2;
 	margin-top: 0.125rem;
 	padding: 0.3125rem 0.6875rem;
 	width: -moz-fit-content;
 	width: fit-content;
 }
 
+.card__voice--body {
+	grid-row: 2;
+}
+
 .card__text--voice {
-	padding: 0rem 0 0.75rem;
+	padding: 0rem 0;
 }
 
 .contact__card {
@@ -973,6 +989,7 @@ div.colorbox img {
 	flex-direction: column;
 	margin: auto;
 	max-width: 37.5rem;
+	padding: 0;
 }
 
 .information__content--title {
@@ -993,7 +1010,7 @@ div.colorbox img {
 }
 
 .information__content--img {
-	margin: 2rem 0 0 0;
+	margin: 1.75rem 0 0 0;
 	max-width: -moz-fit-content;
 	max-width: fit-content;
 }
@@ -1071,7 +1088,7 @@ div.colorbox img {
 
 .logo__img--codeups--bottom {
 	height: 2.8125rem;
-	left: calc(50% + 3.75rem);
+	left: calc(50% - 6.875rem);
 	position: absolute;
 	top: calc(50% + 4.375rem);
 	transform: translate(-50%, -50%);
@@ -1081,7 +1098,8 @@ div.colorbox img {
 
 .sns__icons {
 	display: flex;
-	position: absolute;
+	left: -10.625rem;
+	position: relative;
 }
 
 .instagram__icon {
@@ -1261,7 +1279,9 @@ div.colorbox img {
 .nav__bottom--icons {
 	display: flex;
 	flex-direction: column;
-	position: absolute;
+	margin: auto;
+	max-width: 37.5rem;
+	position: relative;
 }
 
 .nav__items--left--bottom {
@@ -1402,7 +1422,7 @@ div.colorbox img {
 	overflow: hidden; /* オーバーフローを隠す */
 	position: fixed; /* 画面固定 */
 	top: -100%; /* 初期状態では上に隠れている */
-	transition: transform 0.5s ease; /* transformプロパティの変化を0.5秒かけて行う */
+	transition: transform 0.5s ease, height 0.5s ease; /* transformプロパティとheightプロパティの変化を0.5秒かけて行う */
 	width: 100vw; /* 初期状態 */
 	z-index: -1; /* 初期状態では要素を画面外に配置 */
 }
@@ -1410,9 +1430,10 @@ div.colorbox img {
 .nav.active {
 	display: block; /* 要素を表示 */
 	height: 100vh; /* 画面の高さまで展開 */
-	overflow-y: auto;
+	overflow-y: scroll;
 	top: 0; /* 画面上部に表示 */
-	transition: transform 0.5s ease; /* transformプロパティの変化を0.5秒かけて行う */ /* active状態 */
+	transform: translate(0); /* transformプロパティによる移動 */
+	transition: transform 0.5s ease, height 0.5s ease; /* transformプロパティとheightプロパティの変化を0.5秒かけて行う */ /* active状態 */
 	z-index: 20; /* 要素を他の要素の上に配置 */
 }
 
@@ -1461,7 +1482,7 @@ div.colorbox img {
 .price__item {
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 0.875rem;
-	padding-bottom: 0.15625rem;
+	padding-bottom: 0.175rem;
 	padding-top: 0.5rem;
 }
 
@@ -1616,9 +1637,8 @@ div.colorbox img {
 }
 
 .swiper-slide img {
+	aspect-ratio: 280/188;
 	display: block;
-	height: 100%;
-	width: 100%;
 }
 
 .swiper-button-next {
@@ -1918,8 +1938,8 @@ html {
 }
 
 .card__slider {
-	height: 27.8125rem;
 	margin: 2.5rem 0 0 0;
+	min-height: 27.8125rem;
 	width: 20.8125rem;
 }
 
@@ -2040,18 +2060,16 @@ html {
 
 .card__inner--voice {
 	max-width: 32.5rem;
-	padding: 1.75rem 1rem 1.5rem;
+	padding: 1.75rem 1.5rem 1.5rem;
+	row-gap: 2.375rem;
 }
 
 .card__header--voice {
+	-moz-column-gap: 1rem;
+	column-gap: 1rem;
+	grid-template-columns: auto 11.25rem;
 	min-width: 29.5rem;
 	padding: 0;
-}
-
-.card__header--voice--left--top {
-	display: flex;
-	flex-direction: initial;
-	justify-content: space-between;
 }
 
 .card__title--voice {
@@ -2059,17 +2077,16 @@ html {
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1.5rem;
 	font-weight: 700;
-	margin-left: 0.5rem;
-	margin-right: 0.5rem;
+	grid-column: 1/3;
+	grid-row: 2;
 	padding-bottom: 0.25rem;
-	padding-top: 0.5rem;
-	width: 17.25rem;
+	padding-top: 0.625rem;
 }
 
 .card__img {
 	aspect-ratio: 180/140;
 	height: 8.75rem;
-	margin: 0 0.5rem 0.5rem 0rem;
+	margin-right: 1rem;
 	width: 11.25rem;
 }
 
@@ -2085,17 +2102,19 @@ html {
 	font-size: 0.75rem;
 	font-weight: 400;
 	line-height: 1;
-	padding: 2.625rem 0 0 0.5rem;
+	padding: 2.625rem 0 0;
 }
 
 .card__icon {
 	font-size: 0.75rem;
-	margin: 1.5rem 0.5rem 0 0;
+	grid-row: 1;
+	justify-self: end;
+	margin: 1.5rem 0 0 0;
 	padding: 0.375rem 0.9375rem;
 }
 
 .card__text--voice {
-	padding: 1.125rem 0.5rem 0 0.5rem;
+	padding: 0;
 }
 
 .contact__card {
@@ -2350,7 +2369,7 @@ html {
 }
 
 .logo__img--codeups--bottom {
-	left: calc(50% + 6.25rem);
+	left: calc(50% - 27.5rem);
 	position: absolute;
 	top: calc(50% + 6.5rem);
 	transform: translate(-50%, -50%);
@@ -2358,8 +2377,8 @@ html {
 }
 
 .sns__icons {
-	left: 26.25rem;
-	position: absolute;
+	left: -7.5rem;
+	position: relative;
 	top: 7.375rem;
 }
 
@@ -2461,6 +2480,10 @@ html {
 .nav__item--bold.top {
 	font-weight: 700;
 	margin-top: 0rem;
+}
+
+.nav__bottom--icons {
+	max-width: none;
 }
 
 .nav__pc {
@@ -2694,23 +2717,32 @@ html {
 	width: 20.8125rem;
 }
 
+.campaign__swiper--inner {
+	align-items: center;
+	margin: auto;
+	max-width: 1130px;
+	width: 100%;
+}
+
 .swiper-wrapper.campaign {
+	margin-left: 41.25rem;
 	max-width: none;
 	padding-bottom: 0.3125rem;
-	padding-left: 46.125rem;
 	right: 0;
+	top: 0;
 	width: 100%;
 }
 
 .swiper__campaign {
 	height: 85%;
+	margin-right: calc(50% - 50vw);
 }
 
 .swiper-button-next {
 	display: block;
 	height: 5rem;
 	left: calc(50% + 30.875rem);
-	top: calc(50% - 17.5rem);
+	top: 3.75rem;
 	transform: translate(-50%, -50%);
 	width: 5rem;
 }
@@ -2719,7 +2751,7 @@ html {
 	display: block;
 	height: 5rem;
 	left: calc(50% + 20.8125rem);
-	top: calc(50% - 17.4375rem);
+	top: 3.75rem;
 	transform: translate(-50%, -50%);
 	width: 5rem;
 }

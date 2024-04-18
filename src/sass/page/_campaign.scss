@@ -1,5 +1,5 @@
 @use "global" as *;
-.campaign{
+.campaign {
   position: relative;
 }
 
@@ -10,8 +10,5 @@
   margin: auto;
   @include mq(md) {
     margin-top: rem(131);
-    
   }
 }
-
-

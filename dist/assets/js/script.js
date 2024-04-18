@@ -4,21 +4,21 @@ jQuery(function ($) {// この中であればWordpressでも「$」が使用可�
 });
 
 // burger menu
-var burger = document.querySelector(".hamburger ");
+var burger = document.querySelector(".hamburger");
 var nav = document.querySelector(".nav");
-var navItems = document.querySelectorAll(".nav__items li");
 var header = document.querySelectorAll(".header");
 burger.addEventListener("click", function () {
   nav.classList.toggle("active");
-  navItems.forEach(function (link, index) {
-    if (link.style.animation) {
-      link.style.animation = "";
-    } else {
-      // console.log(index);
-      link.style.animation = "navItemsFade 0.5s ease forwards ".concat(index / 7 + 0.4, "s");
-    }
-  });
-  //burger animation
+  if (nav.classList.contains("active")) {
+    // .nav.activeの場合
+    setTimeout(function () {
+      nav.style.height = "100vh"; // 100vhまでの高さに変化
+    }, 50); // 50ミリ秒後に実行（適宜調整してください）
+  } else {
+    nav.style.height = "0"; // 高さを0に変化させて非表示
+  }
+
+  // burger animation
   burger.classList.toggle("active");
   header.forEach(function (headerElement) {
     headerElement.classList.toggle("active");
@@ -66,6 +66,7 @@ var main__swiper = new Swiper(".main__swiper", {
 //swiper__campaign 
 var swiper = new Swiper(".swiper__campaign", {
   loop: true,
+  loopedSlides: 2,
   slidesPerView: "auto",
   spaceBetween: 40,
   centeredSlides: true,

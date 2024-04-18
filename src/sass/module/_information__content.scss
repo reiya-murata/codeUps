@@ -5,6 +5,7 @@
   flex-direction: column;
   max-width: rem(600);
   margin: auto;
+  padding: 0;
   @include mq(md) {
     display: flex;
     flex-direction: initial;
@@ -54,7 +55,7 @@
 }
 
 .information__content--img {
-  margin: rem(32) 0 0 0;
+  margin: rem(28) 0 0 0;
   // width: rem(345);
   max-width: fit-content;
   @include mq(md) {

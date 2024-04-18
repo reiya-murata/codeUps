@@ -108,9 +108,14 @@
 }
 
 .nav__bottom--icons {
+  max-width: rem(600);
+  margin: auto;
   display: flex;
-  position: absolute;
+  position: relative;
   flex-direction: column;
+  @include mq(md) {
+    max-width: none;
+  }
 }
 
 .nav__items--left--bottom {
