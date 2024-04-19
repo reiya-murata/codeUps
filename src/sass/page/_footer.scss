@@ -16,6 +16,7 @@
     max-width: $inner + strip-unit($padding-pc) * 2;
     padding-right: $padding-pc;
     padding-left: $padding-pc;
+    margin-top: rem(4);
     margin: auto;
   }
 }

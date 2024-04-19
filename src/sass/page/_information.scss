@@ -7,9 +7,10 @@
   box-shadow: 0 rem(2) rem(4) 0 rgba(0, 0, 0, 0.5);
   margin-right: auto;
   margin-left: auto;
+  margin-top: rem(316);
   @include mq(md) {
     margin-top: rem(8);
-    padding: rem(98) 0 rem(100);
+    padding: rem(98) 0 rem(94);
     box-shadow: none;
   }
 }

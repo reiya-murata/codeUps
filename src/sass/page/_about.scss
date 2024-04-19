@@ -5,11 +5,12 @@
 }
 .section__about {
   margin: rem(78) 0 rem(74);
-  height: rem(680);
+  // height: rem(680);
+  max-height: rem(900);
   padding-right: $padding-sp;
   padding-left: $padding-sp;
-  margin-right: auto;
-  margin-left: auto;
+  // margin-right: auto;
+  // margin-left: auto;
   @include mq(md) {
     position: relative;
     margin: auto;
@@ -17,6 +18,6 @@
     padding-left: $padding-pc;
     padding-right: $padding-pc;
     overflow: hidden;
-    height: rem(900);
+    padding-bottom: rem(180);
   }
 }

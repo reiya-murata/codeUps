@@ -14,7 +14,7 @@ burger.addEventListener("click", () => {
     // .nav.activeの場合
     setTimeout(() => {
       nav.style.height = "100vh"; // 100vhまでの高さに変化
-    }, 50); // 50ミリ秒後に実行（適宜調整してください）
+    }, 0); // 50ミリ秒後に実行（適宜調整してください）
   } else {
     nav.style.height = "0"; // 高さを0に変化させて非表示
   }

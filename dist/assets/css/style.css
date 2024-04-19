@@ -158,10 +158,8 @@ a {
 }
 
 .section__about {
-	height: 42.5rem;
 	margin: 4.875rem 0 4.625rem;
-	margin-left: auto;
-	margin-right: auto;
+	max-height: 56.25rem;
 	padding-left: 15px;
 	padding-right: 15px;
 }
@@ -223,6 +221,7 @@ a {
 	box-shadow: 0 0.125rem 0.25rem 0 rgba(0, 0, 0, 0.5);
 	margin-left: auto;
 	margin-right: auto;
+	margin-top: 19.75rem;
 	padding: 5.375rem 0 4.875rem;
 	position: relative;
 }
@@ -271,9 +270,11 @@ a {
 	font-weight: 300;
 	margin: auto;
 	max-width: 37.5rem;
+	padding: 0;
 	position: relative;
-	top: calc(50% + 2.5rem);
-	transform: translateY(-50%);
+	right: 0;
+	top: 15rem;
+	width: 100%;
 }
 
 .about__content--title {
@@ -283,7 +284,7 @@ a {
 	padding-right: 0;
 	padding-top: 2.5rem;
 	position: relative;
-	z-index: 20;
+	z-index: 15;
 }
 
 .about__content--title h3 {
@@ -296,11 +297,13 @@ a {
 
 .about__imgs {
 	height: 100%;
+	height: 21.5625rem;
+	left: 0;
 	left: 50%;
 	margin: auto;
 	max-width: 37.5rem;
 	position: absolute;
-	transform: translate(-50%, 0);
+	transform: translate(-50%);
 	width: 100%;
 }
 
@@ -344,6 +347,7 @@ a {
 
 .about__text p {
 	font-size: 1rem;
+	max-width: 37.5rem;
 	padding-top: 1rem;
 }
 
@@ -356,7 +360,6 @@ a {
 }
 
 .blog__cards {
-	align-items: center;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -368,7 +371,6 @@ a {
 }
 
 .blog__cards a {
-	margin: 1.6875rem 1.25rem 0.75rem;
 	max-width: 37.5rem;
 }
 
@@ -463,12 +465,10 @@ a {
 }
 
 .button__about {
-	left: calc(50% - 0.125rem);
-	position: absolute;
-	position: absolute;
+	left: 0rem;
+	margin-top: 2.5rem;
+	position: relative;
 	text-align: center;
-	top: calc(50% + 13rem);
-	transform: translate(-50%, -50%);
 	z-index: 10;
 }
 
@@ -517,12 +517,11 @@ a {
 }
 
 .card__icon--slider {
-	align-items: center;
 	border: 0.0625rem solid #408f95;
 	color: #408f95;
 	display: flex;
 	font-family: "Noto Sans JP", sans-serif;
-	margin: 1rem 0 0.25rem 1rem;
+	margin: 1rem 0 0 0;
 	text-align: left;
 	width: -moz-fit-content;
 	width: fit-content;
@@ -536,7 +535,7 @@ a {
 }
 
 .card__slider .card__body {
-	padding-top: 0rem;
+	padding: 0rem 0.875rem;
 }
 
 .card__body {
@@ -544,13 +543,12 @@ a {
 }
 
 .card__title--campaign {
-	align-items: baseline;
 	border-bottom: 0.0625rem solid #408f95;
 	display: flex;
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1rem;
 	letter-spacing: -0.18em;
-	margin: 0 0.875rem;
+	margin: 0;
 	padding-bottom: 0.375rem;
 }
 
@@ -563,7 +561,6 @@ a {
 }
 
 .card__campaign--prices {
-	align-items: center;
 	display: flex;
 	font-family: "Lato", sans-serif;
 	justify-content: center;
@@ -590,6 +587,7 @@ a {
 	font-size: 2rem;
 	font-weight: 700;
 	line-height: 1;
+	padding: 0.625rem 0 0 0.375rem;
 }
 
 .card__campaign--prices--night {
@@ -625,6 +623,7 @@ a {
 	background-color: #fff;
 	box-shadow: 0.125rem 0.125rem 0.625rem 0rem rgba(0, 0, 0, 0.25);
 	font-family: "Noto Sans JP", sans-serif;
+	margin: 1.6875rem 0.375rem 0.75rem;
 	max-width: 37.5rem;
 	min-width: 20.8125rem;
 	padding: 1.25rem 1rem 1.5rem 1rem;
@@ -654,18 +653,19 @@ a {
 }
 
 .cards__voice {
-	align-items: center;
 	display: flex;
 	flex-direction: column;
 	margin: auto;
 	margin-top: 2.625rem;
 	max-width: 37.5rem;
-	padding-left: 15px;
-	padding-right: 15px;
+}
+
+.cards__voice a:hover {
+	opacity: 0.5;
 }
 
 .cards__voice .card {
-	margin: 0.125rem 1rem 2.125rem;
+	margin: 0.125rem 0rem 2.125rem;
 	max-width: 37.5rem;
 	min-width: 21.5625rem;
 }
@@ -1421,7 +1421,7 @@ div.colorbox img {
 	height: 0; /* 初期状態では高さ0 */
 	overflow: hidden; /* オーバーフローを隠す */
 	position: fixed; /* 画面固定 */
-	top: -100%; /* 初期状態では上に隠れている */
+	top: 0; /* 初期状態では上に隠れている */
 	transition: transform 0.5s ease, height 0.5s ease; /* transformプロパティとheightプロパティの変化を0.5秒かけて行う */
 	width: 100vw; /* 初期状態 */
 	z-index: -1; /* 初期状態では要素を画面外に配置 */
@@ -1429,7 +1429,7 @@ div.colorbox img {
 
 .nav.active {
 	display: block; /* 要素を表示 */
-	height: 100vh; /* 画面の高さまで展開 */
+	height: 0; /* 画面の高さまで展開 */
 	overflow-y: scroll;
 	top: 0; /* 画面上部に表示 */
 	transform: translate(0); /* transformプロパティによる移動 */
@@ -1612,8 +1612,7 @@ div.colorbox img {
 
 /* スライド要素 */
 
-.swiper-slide {
-	align-items: center; /* スライド内の要素を垂直方向に中央揃えする場合 */
+.swiper-slide { /* スライド内の要素を垂直方向に中央揃えする場合 */
 	justify-content: center; /* スライド内の要素を水平方向に中央揃えする場合 */
 	margin: 0;
 	text-align: center;
@@ -1634,6 +1633,10 @@ div.colorbox img {
 
 .swiper__campaign {
 	overflow: hidden;
+}
+
+.swiper-slide a:hover {
+	opacity: 0.5;
 }
 
 .swiper-slide img {
@@ -1680,10 +1683,10 @@ html {
 }
 
 .section__about {
-	height: 56.25rem;
 	margin: auto;
 	margin: 8.625rem 0 0;
 	overflow: hidden;
+	padding-bottom: 11.25rem;
 	padding-left: 25px;
 	padding-right: 25px;
 	position: relative;
@@ -1714,6 +1717,7 @@ html {
 
 .section__footer {
 	margin: auto;
+	margin-top: 0.25rem;
 	max-width: 1130px;
 	padding-left: 25px;
 	padding-right: 25px;
@@ -1722,7 +1726,7 @@ html {
 .information {
 	box-shadow: none;
 	margin-top: 0.5rem;
-	padding: 6.125rem 0 6.25rem;
+	padding: 6.125rem 0 5.875rem;
 }
 
 .section__information {
@@ -1761,9 +1765,11 @@ html {
 	display: flex;
 	justify-content: center;
 	max-width: 1130px;
+	padding: 0;
 	position: relative;
-	top: calc(50% - 8.125rem);
-	transform: translateY(-50%);
+	right: -5rem;
+	top: -33.875rem;
+	z-index: 15;
 }
 
 .about__content--title {
@@ -1772,8 +1778,8 @@ html {
 	font-family: "Gotu", sans-serif;
 	font-size: 5rem;
 	font-weight: 300;
-	padding: 3rem 0 0 1rem;
-	padding-left: 10rem;
+	padding: 3rem 0 0 0;
+	width: 25rem;
 }
 
 .about__content--title h3 {
@@ -1786,11 +1792,13 @@ html {
 }
 
 .about__imgs {
+	align-items: center;
 	height: 46.3125rem;
-	left: 50%;
+	left: 0rem;
 	margin: auto;
 	max-width: 1130px;
-	transform: translate(-50%, 0);
+	position: relative;
+	transform: translate(0);
 	width: 100%;
 }
 
@@ -1813,9 +1821,9 @@ html {
 .about__img--2 {
 	height: 36.3125rem;
 	max-width: 55rem;
-	right: 1.625rem;
+	right: 3.75rem;
 	top: 7.625rem;
-	width: 55rem;
+	width: 75%;
 }
 
 .about__img--2 img {
@@ -1831,9 +1839,8 @@ html {
 .about__text p {
 	display: inline-block;
 	font-size: 1rem;
-	height: 9rem;
 	margin-left: 2.5rem;
-	padding: 2.875rem 0 0 0;
+	padding: 3rem 0 0 0;
 	width: 25rem;
 	z-index: 12;
 }
@@ -1860,11 +1867,10 @@ html {
 }
 
 .blog__cards {
-	align-items: start;
-	display: flex;
 	flex-direction: initial;
 	justify-content: space-between;
 	margin: auto;
+	margin-top: 2.625rem;
 	max-width: 1130px;
 	padding-left: 25px;
 	padding-right: 25px;
@@ -1883,20 +1889,20 @@ html {
 }
 
 .button__information {
-	left: calc(50% + 18.25rem);
-	position: absolute;
-	top: calc(50% + 6rem);
+	left: calc(50% + 0.75rem);
+	position: relative;
+	top: calc(50% - 9.375rem);
 	transform: translate(-50%, -50%);
 }
 
 .button__campaign {
-	margin: 4.75rem 1rem 0 0;
+	margin: 4.625rem 1rem 0 0;
 }
 
 .button__about {
-	left: calc(50% + 18.5rem);
-	top: calc(50% + 8.125rem);
-	transform: translate(-50%, -50%);
+	left: 1.125rem;
+	margin-top: 2.5rem;
+	top: 0;
 }
 
 .button__blog {
@@ -1938,6 +1944,7 @@ html {
 }
 
 .card__slider {
+	display: flex;
 	margin: 2.5rem 0 0 0;
 	min-height: 27.8125rem;
 	width: 20.8125rem;
@@ -1948,8 +1955,8 @@ html {
 }
 
 .card__icon--slider {
-	height: 2.125rem;
-	margin: 0.75rem 0 0.125rem 1rem;
+	margin: 0.75rem 0 0.125rem 0;
+	padding: 0.5rem 0;
 	width: -moz-fit-content;
 	width: fit-content;
 }
@@ -1961,7 +1968,7 @@ html {
 }
 
 .card__slider .card__body {
-	padding-top: 0.875rem;
+	padding: 0.875rem 1rem 2.5rem;
 	width: 100%;
 }
 
@@ -1973,7 +1980,7 @@ html {
 .card__title--campaign {
 	font-size: 1rem;
 	letter-spacing: -0.18em;
-	margin: 0 1rem;
+	margin: 0;
 	padding-bottom: 0.375rem;
 }
 
@@ -1994,7 +2001,7 @@ html {
 	font-family: "Lato", sans-serif;
 	font-size: 2.5rem;
 	line-height: 1;
-	padding: 0.3125rem 0 0 0.75rem;
+	padding: 0.5rem 0 0 0.75rem;
 }
 
 .card__campaign--prices--night {
@@ -2042,7 +2049,6 @@ html {
 }
 
 .cards__voice {
-	align-items: start;
 	display: flex;
 	flex-direction: initial;
 	gap: 1.25rem;
@@ -2079,7 +2085,7 @@ html {
 	font-weight: 700;
 	grid-column: 1/3;
 	grid-row: 2;
-	padding-bottom: 0.25rem;
+	padding-bottom: 0rem;
 	padding-top: 0.625rem;
 }
 
@@ -2713,18 +2719,24 @@ html {
 }
 
 .swiper-slide {
+	align-items: stretch;
+	display: flex;
+	flex-grow: 1; /* スライド内の各要素を均等に伸縮 */
+	height: 100%; /* スライド内の各要素の高さを100%に設定 */
 	margin: 0;
 	width: 20.8125rem;
 }
 
 .campaign__swiper--inner {
-	align-items: center;
+	height: 100%;
 	margin: auto;
 	max-width: 1130px;
 	width: 100%;
 }
 
 .swiper-wrapper.campaign {
+	display: flex;
+	height: 100%;
 	margin-left: 41.25rem;
 	max-width: none;
 	padding-bottom: 0.3125rem;
@@ -2734,6 +2746,7 @@ html {
 }
 
 .swiper__campaign {
+	display: flex;
 	height: 85%;
 	margin-right: calc(50% - 50vw);
 }

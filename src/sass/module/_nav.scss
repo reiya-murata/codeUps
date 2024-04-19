@@ -7,7 +7,7 @@
   height: 0; /* 初期状態では高さ0 */
   width: 100vw;
   background: $blue;
-  top: -100%; /* 初期状態では上に隠れている */
+  top: 0; /* 初期状態では上に隠れている */
   position: fixed; /* 画面固定 */
   overflow: hidden; /* オーバーフローを隠す */
   transition: transform 0.5s ease, height 0.5s ease; /* transformプロパティとheightプロパティの変化を0.5秒かけて行う */
@@ -17,7 +17,7 @@
   /* active状態 */
   z-index: 20; /* 要素を他の要素の上に配置 */
   display: block; /* 要素を表示 */
-  height: 100vh; /* 画面の高さまで展開 */
+  height: 0; /* 画面の高さまで展開 */
   overflow-y: scroll;
   top: 0; /* 画面上部に表示 */
   transition: transform 0.5s ease, height 0.5s ease; /* transformプロパティとheightプロパティの変化を0.5秒かけて行う */
