@@ -11,7 +11,7 @@
     flex-direction: initial;
     justify-content: center;
     max-width: none;
-    padding: rem(40) 0 0 0;
+    padding: rem(44) 0 0 0;
     gap: rem(18);
   }
 }
@@ -28,7 +28,7 @@
   }
 }
 
-.information__content--title h3 {
+.information__content--title h2 {
   font-family: $base-font-family;
   font-weight: $bold;
   font-size: rem(20);

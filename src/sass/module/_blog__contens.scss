@@ -33,11 +33,12 @@
   @include mq(md) {
     // flex-direction: initial;
     grid-template-columns: repeat(3,1fr);
-    justify-content: space-between;
+    gap: rem(38);
+    justify-content: center;
     max-width: $inner + strip-unit($padding-pc) * 2;
     padding-right: $padding-pc;
     padding-left: $padding-pc;
-    margin-top: rem(42);
+    margin-top: rem(38);
     // max-width: none;
     margin: auto;
     // width: 100%;

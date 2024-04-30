@@ -1016,7 +1016,7 @@ div.colorbox img {
 	padding-top: 1.375rem;
 }
 
-.information__content--title h3 {
+.information__content--title h2 {
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1.25rem;
 	font-weight: 700;
@@ -1718,7 +1718,7 @@ html {
 }
 
 .section__blog {
-	padding-top: 6.25rem;
+	padding-top: 6.75rem;
 	position: relative;
 }
 
@@ -1846,7 +1846,7 @@ html {
 .about__img--2 {
 	height: 36.3125rem;
 	max-width: 55rem;
-	right: 3.75rem;
+	right: 1.5625rem;
 	top: 7.625rem;
 	width: 75%;
 }
@@ -1892,10 +1892,11 @@ html {
 }
 
 .blog__cards {
+	gap: 2.375rem;
 	grid-template-columns: repeat(3, 1fr);
-	justify-content: space-between;
+	justify-content: center;
 	margin: auto;
-	margin-top: 2.625rem;
+	margin-top: 2.375rem;
 	max-width: 1130px;
 	padding-left: 25px;
 	padding-right: 25px;
@@ -1931,7 +1932,7 @@ html {
 }
 
 .button__blog {
-	margin: 5rem 0.875rem 0 0;
+	margin: 5.25rem 0.875rem 0 0;
 	padding: 0 0 0 0.5rem;
 }
 
@@ -2006,7 +2007,7 @@ html {
 	font-size: 0.75rem;
 	letter-spacing: -0.18em;
 	margin: 0;
-	padding-bottom: 0.375rem;
+	padding-bottom: 0.5rem;
 }
 
 .card__text--slider {
@@ -2050,7 +2051,7 @@ html {
 .card__blog {
 	margin: 2.5rem 0 0;
 	max-width: 37.5rem;
-	padding: 1.25rem 1rem 1.5rem 1rem;
+	padding: 1rem 1rem 1.5rem 1rem;
 	width: 20.8125rem;
 }
 
@@ -2074,12 +2075,12 @@ html {
 }
 
 .cards__voice {
-	grid-gap: 1.25rem;
+	grid-gap: 2.5rem;
 	display: grid;
 	flex-direction: initial;
-	gap: 1.25rem;
+	gap: 2.5rem;
 	grid-template-columns: repeat(2, 1fr);
-	justify-content: space-between;
+	justify-content: center;
 	margin: auto;
 	max-width: 1130px;
 	padding: 0;
@@ -2291,7 +2292,7 @@ html {
 	gap: 1.125rem;
 	justify-content: center;
 	max-width: none;
-	padding: 2.5rem 0 0 0;
+	padding: 2.75rem 0 0 0;
 }
 
 .information__content--title {
@@ -2302,7 +2303,7 @@ html {
 	padding-bottom: 0.5rem;
 }
 
-.information__content--title h3 {
+.information__content--title h2 {
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1.5rem;
 	font-weight: 700;
