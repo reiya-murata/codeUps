@@ -11,9 +11,10 @@
   @include mq(md) {
     justify-content: start;
     width: rem(494);
-    margin: rem(-88) rem(0) 0 rem(0);
+    margin: rem(50) rem(0) 0 rem(0);
     display: flex;
     padding: 0;
+    align-self: start;
     flex-direction: column;
   }
 }
@@ -22,6 +23,7 @@
   margin: rem(28) 0 0;
   max-width: rem(600);
   @include mq(md) {
+    align-self: start;
     width: rem(492);
     display: block;
     margin-top: rem(45);
@@ -30,15 +32,17 @@
 }
 
 .price__content {
-  display: flex;
-  justify-content: space-between;
+  // display: flex;
+  // justify-content: space-between;
   width: 100%;
   font-family: $base-font-family;
+
   @include mq(md) {
-    display: flex;
-    justify-content: space-between;
+    // display: flex;
+    // justify-content: space-between;
     width: 100%;
     max-width: 100%;
+    margin: rem(40) 0 0 ;
   }
 }
 
@@ -69,16 +73,25 @@
     margin: 0 0 rem(3) 0;
     line-height: 1;
     font-size: rem(16);
-    padding: rem(40) 0 rem(8) rem(2);
+    padding: 0 0 rem(8) rem(2);
   }
 }
 
-.price__item {
+.price__item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.price__item--name {
   font-family: $base-font-family;
   font-size: rem(14);
   padding-top: rem(8);
   padding-bottom: rem(2.8);
+  max-width: rem(280);
   @include mq(md) {
+    max-width: rem(300);
     font-size: rem(16);
     line-height: 1;
     font-weight: $normal;
@@ -90,12 +103,11 @@
   font-family: $base-font-family;
   font-size: rem(14);
   padding-top: rem(10);
-  text-align: end;
+  
   @include mq(md) {
     font-size: rem(16);
     line-height: 1;
     font-weight: $normal;
     padding: rem(8) 0;
-    text-align: right;
   }
 }

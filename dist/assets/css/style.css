@@ -287,7 +287,7 @@ a {
 	z-index: 15;
 }
 
-.about__content--title h3 {
+.about__content--title h2 {
 	display: inline-block;
 	font-size: 2.5rem;
 	font-weight: 300;
@@ -308,9 +308,11 @@ a {
 }
 
 .about__img--1 {
+	-o-object-fit: cover;
 	aspect-ratio: 132/194;
 	left: 0.75rem;
 	max-width: 24.9375rem;
+	object-fit: cover;
 	position: absolute;
 	top: 1.8125rem;
 	width: 35.5%;
@@ -318,15 +320,19 @@ a {
 }
 
 .about__img--1 img {
+	-o-object-fit: cover;
 	aspect-ratio: 132/194;
 	display: block;
+	object-fit: cover;
 	padding-right: 0.25rem;
 	width: 100%;
 	z-index: 5;
 }
 
 .about__img--2 {
+	-o-object-fit: cover;
 	aspect-ratio: 880/581;
+	object-fit: cover;
 	position: absolute;
 	right: 1.0625rem;
 	top: 3.4375rem;
@@ -334,8 +340,9 @@ a {
 }
 
 .about__img--2 img {
-	aspect-ratio: 880/581;
+	-o-object-fit: cover;
 	display: block;
+	object-fit: cover;
 	width: 100%;
 }
 
@@ -360,8 +367,7 @@ a {
 }
 
 .blog__cards {
-	display: flex;
-	flex-direction: column;
+	display: grid;
 	justify-content: space-between;
 	margin: auto;
 	max-width: 37.5rem;
@@ -513,7 +519,9 @@ a {
 }
 
 .card__header--slider img {
+	-o-object-fit: cover;
 	aspect-ratio: 333/223;
+	object-fit: cover;
 }
 
 .card__icon--slider {
@@ -527,7 +535,7 @@ a {
 	width: fit-content;
 }
 
-.card__icon--slider h3 {
+.card__icon--slider h2 {
 	display: inline-block;
 	font-size: 0.75rem;
 	line-height: 1.7;
@@ -634,9 +642,11 @@ a {
 }
 
 .card__header--blog img {
+	-o-object-fit: cover;
 	aspect-ratio: 301/201;
 	max-width: -moz-fit-content;
 	max-width: fit-content;
+	object-fit: cover;
 }
 
 .card__date {
@@ -653,7 +663,7 @@ a {
 }
 
 .cards__voice {
-	display: flex;
+	display: grid;
 	flex-direction: column;
 	margin: auto;
 	margin-top: 2.625rem;
@@ -709,18 +719,22 @@ a {
 }
 
 .card__img {
+	-o-object-fit: cover;
 	align-self: end;
 	aspect-ratio: 180/140;
 	grid-column: 2;
 	grid-row: 1;
 	height: 7.3125rem;
+	object-fit: cover;
 	width: 9.4375rem;
 }
 
 .card__img img {
+	-o-object-fit: cover;
 	aspect-ratio: 140/180;
 	height: 7.3125rem;
 	margin: 0rem;
+	object-fit: cover;
 	width: 9.4375rem;
 }
 
@@ -826,14 +840,18 @@ div.colorbox img {
 }
 
 .contact__map img {
+	-o-object-fit: cover;
 	aspect-ratio: 273/148;
 	height: 10rem;
+	object-fit: cover;
 	width: 18.4375rem;
 }
 
 .contact__map img {
+	-o-object-fit: cover;
 	aspect-ratio: 273/148;
 	height: 10rem;
+	object-fit: cover;
 	width: 18.4375rem;
 }
 
@@ -979,6 +997,7 @@ div.colorbox img {
 	aspect-ratio: 375/667;
 	background-repeat: no-repeat;
 	background-size: cover;
+	object-fit: cover;
 	object-fit: cover;
 	position: relative;
 	z-index: 10;
@@ -1319,6 +1338,8 @@ div.colorbox img {
 }
 
 .nav__items--pc li {
+	font-size: 1.125rem;
+	font-weight: 300;
 	position: relative;
 }
 
@@ -1347,7 +1368,7 @@ div.colorbox img {
 	line-height: 1;
 }
 
-.nav__items--pc h3 {
+.nav__items--pc p {
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 0.625rem;
 	font-weight: 300;
@@ -1454,9 +1475,7 @@ div.colorbox img {
 }
 
 .price__content {
-	display: flex;
 	font-family: "Noto Sans JP", sans-serif;
-	justify-content: space-between;
 	width: 100%;
 }
 
@@ -1480,8 +1499,15 @@ div.colorbox img {
 }
 
 .price__item {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+}
+
+.price__item--name {
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 0.875rem;
+	max-width: 17.5rem;
 	padding-bottom: 0.175rem;
 	padding-top: 0.5rem;
 }
@@ -1490,7 +1516,6 @@ div.colorbox img {
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 0.875rem;
 	padding-top: 0.625rem;
-	text-align: right;
 }
 
 .section__title {
@@ -1782,7 +1807,7 @@ html {
 	width: 25rem;
 }
 
-.about__content--title h3 {
+.about__content--title h2 {
 	display: block;
 	font-family: "Gotu", sans-serif;
 	font-size: 5rem;
@@ -1867,7 +1892,7 @@ html {
 }
 
 .blog__cards {
-	flex-direction: initial;
+	grid-template-columns: repeat(3, 1fr);
 	justify-content: space-between;
 	margin: auto;
 	margin-top: 2.625rem;
@@ -1961,14 +1986,14 @@ html {
 	width: fit-content;
 }
 
-.card__icon--slider h3 {
+.card__icon--slider h2 {
 	font-size: 0.75rem;
 	line-height: 1;
 	padding: 0 1rem;
 }
 
 .card__slider .card__body {
-	padding: 0.875rem 1rem 2.5rem;
+	padding: 0.875rem 1rem 1.875rem;
 	width: 100%;
 }
 
@@ -1978,7 +2003,7 @@ html {
 }
 
 .card__title--campaign {
-	font-size: 1rem;
+	font-size: 0.75rem;
 	letter-spacing: -0.18em;
 	margin: 0;
 	padding-bottom: 0.375rem;
@@ -2049,9 +2074,11 @@ html {
 }
 
 .cards__voice {
-	display: flex;
+	grid-gap: 1.25rem;
+	display: grid;
 	flex-direction: initial;
 	gap: 1.25rem;
+	grid-template-columns: repeat(2, 1fr);
 	justify-content: space-between;
 	margin: auto;
 	max-width: 1130px;
@@ -2090,16 +2117,20 @@ html {
 }
 
 .card__img {
+	-o-object-fit: cover;
 	aspect-ratio: 180/140;
 	height: 8.75rem;
 	margin-right: 1rem;
+	object-fit: cover;
 	width: 11.25rem;
 }
 
 .card__img img {
+	-o-object-fit: cover;
 	aspect-ratio: 140/180;
 	height: 8.75rem;
 	margin: 0;
+	object-fit: cover;
 	width: 11.25rem;
 }
 
@@ -2250,6 +2281,7 @@ html {
 .hero__img img {
 	-o-object-fit: cover;
 	aspect-ratio: 1440/768;
+	object-fit: cover;
 	object-fit: cover;
 }
 
@@ -2504,7 +2536,7 @@ html {
 	line-height: 1;
 }
 
-.nav__items--pc h3 {
+.nav__items--pc p {
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 0.625rem;
 	font-weight: 300;
@@ -2578,23 +2610,24 @@ html {
 }
 
 .price__contents--left {
+	align-self: start;
 	display: flex;
 	flex-direction: column;
 	justify-content: start;
-	margin: -5.5rem 0rem 0 0rem;
+	margin: 3.125rem 0rem 0 0rem;
 	padding: 0;
 	width: 30.875rem;
 }
 
 .price__contents--right {
+	align-self: start;
 	display: block;
 	margin-top: 2.8125rem;
 	width: 30.75rem;
 }
 
 .price__content {
-	display: flex;
-	justify-content: space-between;
+	margin: 2.5rem 0 0;
 	max-width: 100%;
 	width: 100%;
 }
@@ -2613,13 +2646,14 @@ html {
 	font-size: 1rem;
 	line-height: 1;
 	margin: 0 0 0.1875rem 0;
-	padding: 2.5rem 0 0.5rem 0.125rem;
+	padding: 0 0 0.5rem 0.125rem;
 }
 
-.price__item {
+.price__item--name {
 	font-size: 1rem;
 	font-weight: 400;
 	line-height: 1;
+	max-width: 18.75rem;
 	padding: 0.5rem 0 0.5rem 0.125rem;
 }
 
@@ -2628,7 +2662,6 @@ html {
 	font-weight: 400;
 	line-height: 1;
 	padding: 0.5rem 0;
-	text-align: right;
 }
 
 .section__title {

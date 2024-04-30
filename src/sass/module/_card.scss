@@ -34,6 +34,7 @@
 
 .card__header--slider img {
   aspect-ratio: 333 /223;
+  object-fit: cover;
   @include mq(md) {
     width: 100%;
   }
@@ -54,7 +55,7 @@
   }
 }
 
-.card__icon--slider h3 {
+.card__icon--slider h2 {
   display: inline-block;
   padding: rem(4) rem(11.5);
   font-size: rem(12);
@@ -69,7 +70,7 @@
   padding: rem(0) rem(14);
   @include mq(md) {
     width: 100%;
-    padding: rem(14)rem(16) rem(40);
+    padding: rem(14)rem(16) rem(30);
   }
 }
 
@@ -90,7 +91,7 @@
   padding-bottom: rem(6);
   letter-spacing: -0.18em;
   @include mq(md) {
-    font-size: rem(16);
+    font-size: rem(12);
     letter-spacing: -0.18em;
     margin: 0 ;
     padding-bottom: rem(6);
@@ -206,6 +207,7 @@
 .card__header--blog img {
   aspect-ratio: 301 / 201;
   max-width: fit-content;
+  object-fit: cover;
   @include mq(md) {
     width: rem(301);
     height: rem(201);
@@ -238,7 +240,7 @@
 
 // voice
 .cards__voice {
-  display: flex;
+  display: grid;
   flex-direction: column;
   margin: auto;
   margin-top: rem(42);
@@ -246,7 +248,8 @@
   // padding-right: $padding-sp;
   // padding-left: $padding-sp;
   @include mq(md) {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
     gap: rem(20);
     flex-direction: initial;
     justify-content: space-between;
@@ -333,10 +336,12 @@
   grid-row: 1;
   grid-column: 2;
   aspect-ratio: 180 / 140;
+  object-fit: cover;
   width: rem(151);
   height: rem(117);
   @include mq(md) {
     aspect-ratio: 180 / 140;
+    object-fit: cover;
     margin-right: rem(16);
     width: rem(180);
     height: rem(140);
@@ -344,11 +349,13 @@
 }
 .card__img img {
   aspect-ratio: 140 / 180;
+  object-fit: cover;
   width: rem(151);
   height: rem(117);
   margin: rem(0);
   @include mq(md) {
     aspect-ratio: 140 / 180;
+    object-fit: cover;
     margin: 0;
     width: rem(180);
     height: rem(140);

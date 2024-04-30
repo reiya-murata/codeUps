@@ -23,15 +23,16 @@
 
 .blog__cards {
   position: relative;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  // flex-direction: column;
   justify-content: space-between;
   padding-right: $padding-sp;
   padding-left: $padding-sp;
   max-width: rem(600);
   margin: auto;
   @include mq(md) {
-    flex-direction: initial;
+    // flex-direction: initial;
+    grid-template-columns: repeat(3,1fr);
     justify-content: space-between;
     max-width: $inner + strip-unit($padding-pc) * 2;
     padding-right: $padding-pc;

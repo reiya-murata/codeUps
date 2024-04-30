@@ -24,6 +24,8 @@
 }
 .nav__items--pc li {
   position: relative;
+  font-weight: $regular;
+  font-size: rem(18);
   // padding: rem(26) rem(15) 0 rem(20.5);
   @include mq(md) {
     // padding: rem(26) rem(20) 0 rem(20);
@@ -62,7 +64,8 @@
     line-height: 1;
   }
 }
-.nav__items--pc h3 {
+
+.nav__items--pc p {
   font-weight: $regular;
   font-family: $base-font-family;
   font-size: rem(10);

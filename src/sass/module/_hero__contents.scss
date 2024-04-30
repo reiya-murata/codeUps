@@ -96,10 +96,12 @@
   background-size: cover;
   position: relative;
   aspect-ratio: 375 / 667;
+  object-fit: cover;
   @include mq(md) {
     object-fit: cover;
     // height: 100%;
     // width: 100%;
     aspect-ratio: 1440 / 768;
+    object-fit: cover;
   }
 }
