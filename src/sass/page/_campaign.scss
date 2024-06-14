@@ -19,3 +19,72 @@
     margin: rem(74) rem(16) 0 0;
   }
 }
+.card__title--campaign {
+  display: flex;
+  border-bottom: rem(1) solid $blue;
+  font-family: $base-font-family;
+  font-size: rem(12);
+  margin: 0 ;
+  padding-bottom: rem(6);
+  letter-spacing: -0.18em;
+  @include mq(md) {
+    font-size: rem(12);
+    letter-spacing: -0.18em;
+    margin: 0 ;
+    padding-bottom: rem(8);
+  }
+}
+.card__text--slider {
+  text-align: center;
+  font-family: $base-font-family;
+  font-weight: $normal;
+  padding-top: rem(10);
+  font-size: rem(14);
+  @include mq(md) {
+    padding-top: rem(14);
+    padding-right: rem(14);
+    font-size: rem(16);
+  }
+}
+.card__campaign--prices {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: $third-font-family;
+}
+.card__campaign--price--price{
+  font-family: $third-font-family;
+  font-weight: $bold;
+  text-decoration: line-through red rem(3);
+  padding: rem(8) rem(16) 0 rem(2);
+  font-size: rem(20);
+  line-height: 2;
+  @include mq(md) {
+    font-family: $third-font-family;
+    font-size: rem(24);
+    padding: rem(12) rem(16) 0 rem(2);
+    line-height: 1.8;
+  }
+}
+.card__discount--discout {
+  color: $blue;
+  font-weight: $bold;
+  font-family: $third-font-family;
+  font-size: rem(32);
+  line-height: 1;
+  padding: rem(10) 0 0 rem(6);
+  @include mq(md) {
+    font-family: $third-font-family;
+    font-size: rem(40);
+    line-height: 1;
+    padding: rem(8) 0 0 rem(12);
+  }
+}
+.card__campaign--prices--night {
+  display: flex;
+  justify-content: center;
+  margin: rem(0) rem(16) 0 rem(2);
+  @include mq(md) {
+    margin: rem(0) rem(24) 0 rem(2);
+  }
+}

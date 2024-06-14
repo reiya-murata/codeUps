@@ -52,6 +52,49 @@
     margin: rem(40) 0 0;
   }
 }
+.card__blog {
+  box-shadow: rem(2) rem(2) rem(10) rem(0) rgba(0, 0, 0, 0.25);
+  font-family: $base-font-family;
+  background-color: $white;
+  min-width: rem(333);
+  max-width: rem(600);
+  padding: rem(20) rem(16) rem(24) rem(16);
+
+  margin: rem(27) rem(6) rem(12);
+  @include mq(md) {
+    
+    padding: rem(16) rem(16) rem(24) rem(16);
+    max-width: rem(600);
+    width: rem(333);
+    margin: rem(40) 0 0;
+    // margin: 0;
+  }
+}
+.card__header--blog {
+  text-align: center;
+}
+.card__header--blog {
+  aspect-ratio: 301 / 201;
+  max-width: fit-content;
+  object-fit: cover;
+  @include mq(md) {
+    width: rem(301);
+    height: rem(201);
+    display: inline-block;
+    // margin: rem(16) rem(16) rem(12);
+  }
+}
+.card__title--blog {
+  border-bottom: rem(1) solid $blue;
+  font-family: $base-font-family;
+  font-size: rem(16);
+  padding-bottom: rem(4);
+  @include mq(md) {
+    font-size: rem(16);
+    margin: 0;
+    padding: 0 0 rem(2);
+  }
+}
 
 .blog__cards :hover {
   opacity: 0.7;

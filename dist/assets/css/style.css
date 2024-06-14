@@ -188,6 +188,60 @@ a {
 	text-align: center;
 }
 
+.card__title--campaign {
+	border-bottom: 0.0625rem solid #408f95;
+	display: flex;
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 0.75rem;
+	letter-spacing: -0.18em;
+	margin: 0;
+	padding-bottom: 0.375rem;
+}
+
+.card__text--slider {
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 0.875rem;
+	font-weight: 400;
+	padding-top: 0.625rem;
+	text-align: center;
+}
+
+.card__campaign--prices {
+	display: flex;
+	font-family: "Lato", sans-serif;
+	justify-content: center;
+	text-align: center;
+}
+
+.card__campaign--price--price {
+	-webkit-text-decoration: line-through solid red;
+	-webkit-text-decoration: line-through red 0.1875rem;
+	font-family: "Lato", sans-serif;
+	font-size: 1.25rem;
+	font-weight: 700;
+	line-height: 2;
+	padding: 0.5rem 1rem 0 0.125rem;
+	text-decoration: line-through;
+	text-decoration: line-through solid red;
+	text-decoration: line-through red 0.1875rem;
+	text-decoration-thickness: 0.1875rem;
+}
+
+.card__discount--discout {
+	color: #408f95;
+	font-family: "Lato", sans-serif;
+	font-size: 2rem;
+	font-weight: 700;
+	line-height: 1;
+	padding: 0.625rem 0 0 0.375rem;
+}
+
+.card__campaign--prices--night {
+	display: flex;
+	justify-content: center;
+	margin: 0rem 1rem 0 0.125rem;
+}
+
 .contact {
 	overflow: hidden;
 	position: relative;
@@ -297,6 +351,70 @@ a {
 .button__voice {
 	margin: 0.25rem 0.125rem 0 0;
 	text-align: center;
+}
+
+.cards__voice {
+	display: grid;
+	flex-direction: column;
+	margin: auto;
+	margin-top: 2.625rem;
+	max-width: 37.5rem;
+}
+
+.cards__voice a:hover {
+	opacity: 0.5;
+}
+
+.cards__voice .card {
+	margin: 0.125rem 0rem 2.125rem;
+	max-width: 37.5rem;
+	min-width: 21.5625rem;
+}
+
+.card__inner--voice {
+	grid-row-gap: 1rem;
+	display: grid;
+	grid-template-rows: auto 1fr;
+	max-width: 37.5rem;
+	min-width: 21.5625rem;
+	padding: 1rem 1rem 1.625rem 1rem;
+	row-gap: 1rem;
+}
+
+.card__header--voice {
+	grid-column-gap: 0.8125rem;
+	-moz-column-gap: 0.8125rem;
+	column-gap: 0.8125rem;
+	display: grid;
+	grid-row: 1;
+	grid-template-columns: auto 9.4375rem;
+	max-width: 37.5rem;
+}
+
+.card__header--voice--left {
+	grid-column-gap: 2.5rem;
+	-moz-column-gap: 2.5rem;
+	column-gap: 2.5rem;
+	display: grid;
+	grid-column: 1;
+	grid-row: 1;
+}
+
+.card__title--voice {
+	border-bottom: 0.0625rem solid #408f95;
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 1rem;
+	font-weight: 700;
+	grid-row: 3;
+	padding: 0.25rem 0 0.125rem;
+}
+
+.card__voice--body {
+	grid-row: 2;
+}
+
+.card__text--voice {
+	padding: 0rem 0;
 }
 
 .voice__logo--ibaratatu {
@@ -432,6 +550,35 @@ a {
 
 .blog__cards a {
 	max-width: 37.5rem;
+}
+
+.card__blog {
+	background-color: #fff;
+	box-shadow: 0.125rem 0.125rem 0.625rem 0rem rgba(0, 0, 0, 0.25);
+	font-family: "Noto Sans JP", sans-serif;
+	margin: 1.6875rem 0.375rem 0.75rem;
+	max-width: 37.5rem;
+	min-width: 20.8125rem;
+	padding: 1.25rem 1rem 1.5rem 1rem;
+}
+
+.card__header--blog {
+	text-align: center;
+}
+
+.card__header--blog {
+	-o-object-fit: cover;
+	aspect-ratio: 301/201;
+	max-width: -moz-fit-content;
+	max-width: fit-content;
+	object-fit: cover;
+}
+
+.card__title--blog {
+	border-bottom: 0.0625rem solid #408f95;
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 1rem;
+	padding-bottom: 0.25rem;
 }
 
 .blog__cards :hover {
@@ -584,149 +731,10 @@ a {
 	padding-top: 1rem;
 }
 
-.card__title--campaign {
-	border-bottom: 0.0625rem solid #408f95;
-	display: flex;
-	font-family: "Noto Sans JP", sans-serif;
-	font-size: 0.75rem;
-	letter-spacing: -0.18em;
-	margin: 0;
-	padding-bottom: 0.375rem;
-}
-
-.card__text--slider {
-	font-family: "Noto Sans JP", sans-serif;
-	font-size: 0.875rem;
-	font-weight: 400;
-	padding-top: 0.625rem;
-	text-align: center;
-}
-
-.card__campaign--prices {
-	display: flex;
-	font-family: "Lato", sans-serif;
-	justify-content: center;
-	text-align: center;
-}
-
-.card__campaign--price--price {
-	-webkit-text-decoration: line-through solid red;
-	-webkit-text-decoration: line-through red 0.1875rem;
-	font-family: "Lato", sans-serif;
-	font-size: 1.25rem;
-	font-weight: 700;
-	line-height: 2;
-	padding: 0.5rem 1rem 0 0.125rem;
-	text-decoration: line-through;
-	text-decoration: line-through solid red;
-	text-decoration: line-through red 0.1875rem;
-	text-decoration-thickness: 0.1875rem;
-}
-
-.card__discount--discout {
-	color: #408f95;
-	font-family: "Lato", sans-serif;
-	font-size: 2rem;
-	font-weight: 700;
-	line-height: 1;
-	padding: 0.625rem 0 0 0.375rem;
-}
-
-.card__campaign--prices--night {
-	display: flex;
-	justify-content: center;
-	margin: 0rem 1rem 0 0.125rem;
-}
-
-.card__blog {
-	background-color: #fff;
-	box-shadow: 0.125rem 0.125rem 0.625rem 0rem rgba(0, 0, 0, 0.25);
-	font-family: "Noto Sans JP", sans-serif;
-	margin: 1.6875rem 0.375rem 0.75rem;
-	max-width: 37.5rem;
-	min-width: 20.8125rem;
-	padding: 1.25rem 1rem 1.5rem 1rem;
-}
-
-.card__header--blog {
-	text-align: center;
-}
-
-.card__header--blog img {
-	-o-object-fit: cover;
-	aspect-ratio: 301/201;
-	max-width: -moz-fit-content;
-	max-width: fit-content;
-	object-fit: cover;
-}
-
 .card__date {
 	font-family: "Gotu", sans-serif;
 	font-size: 0.75rem;
 	line-height: 1;
-}
-
-.card__title--blog {
-	border-bottom: 0.0625rem solid #408f95;
-	font-family: "Noto Sans JP", sans-serif;
-	font-size: 1rem;
-	padding-bottom: 0.25rem;
-}
-
-.cards__voice {
-	display: grid;
-	flex-direction: column;
-	margin: auto;
-	margin-top: 2.625rem;
-	max-width: 37.5rem;
-}
-
-.cards__voice a:hover {
-	opacity: 0.5;
-}
-
-.cards__voice .card {
-	margin: 0.125rem 0rem 2.125rem;
-	max-width: 37.5rem;
-	min-width: 21.5625rem;
-}
-
-.card__inner--voice {
-	grid-row-gap: 1rem;
-	display: grid;
-	grid-template-rows: auto 1fr;
-	max-width: 37.5rem;
-	min-width: 21.5625rem;
-	padding: 1rem 1rem 1.625rem 1rem;
-	row-gap: 1rem;
-}
-
-.card__header--voice {
-	grid-column-gap: 0.8125rem;
-	-moz-column-gap: 0.8125rem;
-	column-gap: 0.8125rem;
-	display: grid;
-	grid-row: 1;
-	grid-template-columns: auto 9.4375rem;
-	max-width: 37.5rem;
-}
-
-.card__header--voice--left {
-	grid-column-gap: 2.5rem;
-	-moz-column-gap: 2.5rem;
-	column-gap: 2.5rem;
-	display: grid;
-	grid-column: 1;
-	grid-row: 1;
-}
-
-.card__title--voice {
-	border-bottom: 0.0625rem solid #408f95;
-	font-family: "Noto Sans JP", sans-serif;
-	font-size: 1rem;
-	font-weight: 700;
-	grid-row: 3;
-	padding: 0.25rem 0 0.125rem;
 }
 
 .card__img {
@@ -769,33 +777,6 @@ a {
 	padding: 0.3125rem 0.6875rem;
 	width: -moz-fit-content;
 	width: fit-content;
-}
-
-.card__voice--body {
-	grid-row: 2;
-}
-
-.card__text--voice {
-	padding: 0rem 0;
-}
-
-.contact__card {
-	align-items: center;
-	box-shadow: none;
-	display: flex;
-	flex-direction: column;
-	max-width: 37.5rem;
-	text-align: center;
-}
-
-.address__card {
-	box-shadow: none;
-}
-
-.contact__left--address {
-	display: flex;
-	flex-direction: column;
-	text-align: center;
 }
 
 div.colorbox {
@@ -858,12 +839,10 @@ div.colorbox {
 	width: 18.4375rem;
 }
 
-.contact__map {
-	-o-object-fit: cover;
-	aspect-ratio: 273/148;
-	height: 10rem;
-	object-fit: cover;
-	width: 18.4375rem;
+.contact__left--address {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
 }
 
 .contact__right {
@@ -872,6 +851,19 @@ div.colorbox {
 	font-size: 1rem;
 	line-height: 1;
 	margin: 2.5rem 0 0;
+	max-width: 37.5rem;
+	text-align: center;
+}
+
+.address__card {
+	box-shadow: none;
+}
+
+.contact__card {
+	align-items: center;
+	box-shadow: none;
+	display: flex;
+	flex-direction: column;
 	max-width: 37.5rem;
 	text-align: center;
 }
@@ -1697,6 +1689,37 @@ html {
 	margin: 4.625rem 1rem 0 0;
 }
 
+.card__title--campaign {
+	font-size: 0.75rem;
+	letter-spacing: -0.18em;
+	margin: 0;
+	padding-bottom: 0.5rem;
+}
+
+.card__text--slider {
+	font-size: 1rem;
+	padding-right: 0.875rem;
+	padding-top: 0.875rem;
+}
+
+.card__campaign--price--price {
+	font-family: "Lato", sans-serif;
+	font-size: 1.5rem;
+	line-height: 1.8;
+	padding: 0.75rem 1rem 0 0.125rem;
+}
+
+.card__discount--discout {
+	font-family: "Lato", sans-serif;
+	font-size: 2.5rem;
+	line-height: 1;
+	padding: 0.5rem 0 0 0.75rem;
+}
+
+.card__campaign--prices--night {
+	margin: 0rem 1.5rem 0 0.125rem;
+}
+
 .contact {
 	align-items: center;
 	display: flex;
@@ -1779,6 +1802,53 @@ html {
 .button__voice {
 	margin: 5rem 0.25rem 0 0;
 	text-align: center;
+}
+
+.cards__voice {
+	grid-gap: 2.5rem;
+	display: grid;
+	flex-direction: initial;
+	gap: 2.5rem;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	margin: auto;
+	max-width: 1130px;
+	padding: 0;
+}
+
+.cards__voice .card {
+	margin: 2rem 0 0 0;
+	max-width: 32.5rem;
+	width: 32.5rem;
+}
+
+.card__inner--voice {
+	max-width: 32.5rem;
+	padding: 1.75rem 1.5rem 1.5rem;
+	row-gap: 2.375rem;
+}
+
+.card__header--voice {
+	-moz-column-gap: 1rem;
+	column-gap: 1rem;
+	grid-template-columns: auto 11.25rem;
+	min-width: 29.5rem;
+	padding: 0;
+}
+
+.card__title--voice {
+	border-bottom: 0.0625rem solid #408f95;
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 1.5rem;
+	font-weight: 700;
+	grid-column: 1/3;
+	grid-row: 2;
+	padding-bottom: 0rem;
+	padding-top: 0.625rem;
+}
+
+.card__text--voice {
+	padding: 0;
 }
 
 .voice__logo--ibaratatu {
@@ -1927,6 +1997,25 @@ html {
 	max-width: 20.8125rem;
 }
 
+.card__blog {
+	margin: 2.5rem 0 0;
+	max-width: 37.5rem;
+	padding: 1rem 1rem 1.5rem 1rem;
+	width: 20.8125rem;
+}
+
+.card__header--blog {
+	display: inline-block;
+	height: 12.5625rem;
+	width: 18.8125rem;
+}
+
+.card__title--blog {
+	font-size: 1rem;
+	margin: 0;
+	padding: 0 0 0.125rem;
+}
+
 .button__blog {
 	margin: 5.25rem 0.875rem 0 0;
 	padding: 0 0 0 0.5rem;
@@ -2007,104 +2096,11 @@ html {
 	width: 100%;
 }
 
-.card__title--campaign {
-	font-size: 0.75rem;
-	letter-spacing: -0.18em;
-	margin: 0;
-	padding-bottom: 0.5rem;
-}
-
-.card__text--slider {
-	font-size: 1rem;
-	padding-right: 0.875rem;
-	padding-top: 0.875rem;
-}
-
-.card__campaign--price--price {
-	font-family: "Lato", sans-serif;
-	font-size: 1.5rem;
-	line-height: 1.8;
-	padding: 0.75rem 1rem 0 0.125rem;
-}
-
-.card__discount--discout {
-	font-family: "Lato", sans-serif;
-	font-size: 2.5rem;
-	line-height: 1;
-	padding: 0.5rem 0 0 0.75rem;
-}
-
-.card__campaign--prices--night {
-	margin: 0rem 1.5rem 0 0.125rem;
-}
-
-.card__blog {
-	margin: 2.5rem 0 0;
-	max-width: 37.5rem;
-	padding: 1rem 1rem 1.5rem 1rem;
-	width: 20.8125rem;
-}
-
-.card__header--blog img {
-	display: inline-block;
-	height: 12.5625rem;
-	width: 18.8125rem;
-}
-
 .card__date {
 	font-size: 0.75rem;
 	line-height: 1;
 	margin-top: 0.8125rem;
 	padding: 0;
-}
-
-.card__title--blog {
-	font-size: 1rem;
-	margin: 0;
-	padding: 0 0 0.125rem;
-}
-
-.cards__voice {
-	grid-gap: 2.5rem;
-	display: grid;
-	flex-direction: initial;
-	gap: 2.5rem;
-	grid-template-columns: repeat(2, 1fr);
-	justify-content: center;
-	margin: auto;
-	max-width: 1130px;
-	padding: 0;
-}
-
-.cards__voice .card {
-	margin: 2rem 0 0 0;
-	max-width: 32.5rem;
-	width: 32.5rem;
-}
-
-.card__inner--voice {
-	max-width: 32.5rem;
-	padding: 1.75rem 1.5rem 1.5rem;
-	row-gap: 2.375rem;
-}
-
-.card__header--voice {
-	-moz-column-gap: 1rem;
-	column-gap: 1rem;
-	grid-template-columns: auto 11.25rem;
-	min-width: 29.5rem;
-	padding: 0;
-}
-
-.card__title--voice {
-	border-bottom: 0.0625rem solid #408f95;
-	font-family: "Noto Sans JP", sans-serif;
-	font-size: 1.5rem;
-	font-weight: 700;
-	grid-column: 1/3;
-	grid-row: 2;
-	padding-bottom: 0rem;
-	padding-top: 0.625rem;
 }
 
 .card__img {
@@ -2139,32 +2135,6 @@ html {
 	justify-self: end;
 	margin: 1.5rem 0 0 0;
 	padding: 0.375rem 0.9375rem;
-}
-
-.card__text--voice {
-	padding: 0;
-}
-
-.contact__card {
-	align-items: normal;
-	box-shadow: 0.25rem 0.25rem 0.625rem 0 rgba(0, 0, 0, 0.25);
-	display: flex;
-	flex-direction: initial;
-	height: 25.9375rem;
-	margin: 8.75rem 0 10rem;
-	max-width: 67.5rem;
-}
-
-.address__card {
-	box-shadow: 0.25rem 0.25rem 0.625rem 0 rgba(0, 0, 0, 0.25);
-	display: flex;
-	height: 25.9375rem;
-	margin: 8.75rem 0 10rem;
-	width: 67.5rem;
-}
-
-.contact__left--address {
-	flex-direction: initial;
 }
 
 .contact__inner {
@@ -2203,9 +2173,8 @@ html {
 	width: 17.0625rem;
 }
 
-.contact__map {
-	height: 9.25rem;
-	width: 17.0625rem;
+.contact__left--address {
+	flex-direction: initial;
 }
 
 .contact__right {
@@ -2215,6 +2184,24 @@ html {
 	line-height: 1;
 	margin: 5rem 0;
 	padding: 0.125rem 7rem 0rem 5rem;
+}
+
+.address__card {
+	box-shadow: 0.25rem 0.25rem 0.625rem 0 rgba(0, 0, 0, 0.25);
+	display: flex;
+	height: 25.9375rem;
+	margin: 8.75rem 0 10rem;
+	width: 67.5rem;
+}
+
+.contact__card {
+	align-items: normal;
+	box-shadow: 0.25rem 0.25rem 0.625rem 0 rgba(0, 0, 0, 0.25);
+	display: flex;
+	flex-direction: initial;
+	height: 25.9375rem;
+	margin: 8.75rem 0 10rem;
+	max-width: 67.5rem;
 }
 
 .button__contact {

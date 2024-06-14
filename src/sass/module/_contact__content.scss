@@ -69,14 +69,12 @@
     height: rem(148);
   }
 }
-.contact__map  {
-  aspect-ratio: 273 / 148;
-  object-fit: cover;
-  width: rem(295);
-  height: rem(160);
+.contact__left--address {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
   @include mq(md) {
-    width: rem(273);
-    height: rem(148);
+    flex-direction: initial;
   }
 }
 .contact__right {
@@ -97,6 +95,34 @@
   }
 }
 
+.address__card {
+  box-shadow: none;
+
+  @include mq(md) {
+    display: flex;
+    box-shadow: rem(4) rem(4) rem(10) 0 rgba(0, 0, 0, 0.25);
+    width: rem(1080);
+    height: rem(415);
+    margin: rem(140) 0 rem(160);
+  }
+}
+.contact__card {
+  display: flex;
+  flex-direction: column;
+  box-shadow: none;
+  text-align: center;
+  align-items: center;
+  max-width: rem(600);
+  @include mq(md) {
+    align-items: normal;
+    display: flex;
+    flex-direction: initial;
+    box-shadow: rem(4) rem(4) rem(10) 0 rgba(0, 0, 0, 0.25);
+    max-width: rem(1080);
+    height: rem(415);
+    margin: rem(140) 0 rem(160);
+  }
+}
 .button__contact {
   margin-top: rem(40);
   padding: 0;
@@ -110,7 +136,6 @@
   }
 }
 
-// contact
 .contact__logo--fish {
   position: absolute;
   width: rem(109);
