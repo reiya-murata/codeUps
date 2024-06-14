@@ -16,7 +16,7 @@
   }
 }
 
-.information__content--title {
+.information__content--titles {
   padding-top: rem(22);
   border-bottom: rem(1) solid $blue;
   @include mq(md) {
@@ -28,7 +28,7 @@
   }
 }
 
-.information__content--title h2 {
+.information__content--title {
   font-family: $base-font-family;
   font-weight: $bold;
   font-size: rem(20);
@@ -65,7 +65,7 @@
   }
 }
 
-.information__content--img img {
+.information__content--img  {
   aspect-ratio: 540/356;
   // width: rem(345);
   max-width: fit-content;
@@ -73,4 +73,15 @@
   //   width: rem(540);
   //   height: rem(356);
   // }
+}
+.button__information {
+  text-align: center;
+  margin-top: rem(40);
+  margin-right: rem(2);
+  @include mq(md) {
+    position: relative;
+    top: calc(50% - rem(150));
+    left: calc(50% + rem(12));
+    transform: translate(-50%, -50%);
+  }
 }

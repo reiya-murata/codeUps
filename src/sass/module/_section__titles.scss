@@ -125,11 +125,7 @@
   }
 }
 
-.section__titles--price {
-  @include mq(md) {
-    margin-right: rem(8);
-  }
-}
+
 .section__title--contact {
   position: relative;
   text-transform: capitalize;

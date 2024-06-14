@@ -54,10 +54,11 @@
     height: rem(746);
   }
 }
-.price__img img {
+.price__img  {
   width: rem(345);
   height: rem(227);
   @include mq(md) {
+    aspect-ratio: 746 /492 ;
     width: rem(492);
     height: rem(746);
   }
@@ -109,5 +110,19 @@
     line-height: 1;
     font-weight: $normal;
     padding: rem(8) 0;
+  }
+}
+
+.logo__price {
+  position: absolute;
+  display: none;
+  @include mq(md) {
+    width: rem(437);
+    height: rem(201);
+    top: calc(50% + rem(440));
+    left: calc(50% - rem(402));
+    transform: translate(-50%, -50%);
+    z-index: 15;
+    display: block;
   }
 }

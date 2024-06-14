@@ -78,67 +78,14 @@
   border-color: $blue;
 }
 
-.button__information {
-  text-align: center;
-  margin-top: rem(40);
-  margin-right: rem(2);
-  @include mq(md) {
-    position: relative;
-    top: calc(50% - rem(150));
-    left: calc(50% + rem(12));
-    transform: translate(-50%, -50%);
-  }
-}
 
-.button__campaign {
-  text-align: center;
-  margin-right: rem(4);
-  @include mq(md) {
-    margin: rem(74) rem(16) 0 0;
-  }
-}
-.button__about {
-  text-align: center;
-  z-index: 10;
-  position: relative;
-  margin-top: rem(40);
-  left: rem(0);
-  @include mq(md) {
-    top: 0;
-    margin-top: rem(40);
-    left: rem(18);
-  }
-}
-.button__blog {
-  text-align: center;
-  margin-right: rem(2);
-  margin-top: rem(26);
-  @include mq(md) {
-    margin: rem(84) rem(14) 0 0;
-    padding: 0 0 0 rem(8);
-  }
-}
 
-.button__voice {
-  text-align: center;
-  margin: rem(4) rem(2) 0 0;
-  @include mq(md) {
-    text-align: center;
-    margin: rem(80) rem(4) 0 0;
-  }
-}
-.button__contact {
-  margin-top: rem(40);
-  padding: 0;
-  @include mq(md) {
-    position: absolute;
-    top: calc(50% + rem(66));
-    left: calc(50% + rem(268));
-    transform: translate(-50%, -50%);
-    margin: 0;
-    text-align: center;
-  }
-}
+
+
+
+
+
+
 .button__price {
   margin-top: rem(40);
   margin-right: rem(2);

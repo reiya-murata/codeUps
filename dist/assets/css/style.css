@@ -157,29 +157,34 @@ a {
 	position: relative;
 }
 
-.section__about {
+.about__inner.inner {
 	margin: 4.875rem 0 4.625rem;
+	margin: auto;
 	max-height: 56.25rem;
-	padding-left: 15px;
-	padding-right: 15px;
 }
 
 .blog {
 	position: relative;
 }
 
-.section__blog {
+.blog__inner.inner {
 	padding: 5.5rem 0 0;
+	width: 100%;
 }
 
 .campaign {
 	position: relative;
 }
 
-.section__campaign {
+.campaign__inner {
 	margin: auto;
 	margin-top: 2.25rem;
 	position: relative;
+	text-align: center;
+}
+
+.button__campaign {
+	margin-right: 0.25rem;
 	text-align: center;
 }
 
@@ -188,12 +193,10 @@ a {
 	position: relative;
 }
 
-.section__contact {
+.contact__inner {
 	display: flex;
 	justify-content: center;
 	margin: auto;
-	padding-left: 15px;
-	padding-right: 15px;
 	width: 100%;
 }
 
@@ -202,12 +205,46 @@ a {
 	position: relative;
 }
 
-.section__footer {
+.footer__inner {
 	margin: auto;
 	margin-top: 6.75rem;
-	padding-left: 15px;
-	padding-right: 15px;
 	width: 100%;
+}
+
+.logo__img--codeups--bottom {
+	height: 2.8125rem;
+	left: calc(50% - 6.875rem);
+	position: absolute;
+	top: calc(50% + 4.375rem);
+	transform: translate(-50%, -50%);
+	width: 7.5rem;
+	z-index: 15;
+}
+
+.sns__icons {
+	display: flex;
+	left: -10.625rem;
+	position: relative;
+}
+
+.instagram__icon {
+	height: 1.5rem;
+	left: calc(50% + 3.25rem);
+	position: absolute;
+	top: calc(50% + 7.5rem);
+	transform: translate(-50%, -50%);
+	width: 1.5rem;
+	z-index: 10;
+}
+
+.facebook__icon {
+	height: 1.5rem;
+	left: calc(50% + 0.75rem);
+	position: absolute;
+	top: calc(50% + 7.5rem);
+	transform: translate(-50%, -50%);
+	width: 1.5rem;
+	z-index: 10;
 }
 
 .hero {
@@ -226,10 +263,8 @@ a {
 	position: relative;
 }
 
-.section__information {
+.information__inner {
 	margin: auto;
-	padding-left: 15px;
-	padding-right: 15px;
 	position: relative;
 }
 
@@ -241,13 +276,11 @@ a {
 	position: relative;
 }
 
-.section__price {
+.price__inner {
 	align-items: center;
 	display: flex;
 	flex-direction: column-reverse;
 	margin: auto;
-	padding-left: 15px;
-	padding-right: 15px;
 	position: relative;
 }
 
@@ -256,11 +289,20 @@ a {
 	position: relative;
 }
 
-.section__voice {
+.voice__inner {
 	margin: auto;
 	margin-top: 5rem;
-	padding-left: 15px;
-	padding-right: 15px;
+}
+
+.button__voice {
+	margin: 0.25rem 0.125rem 0 0;
+	text-align: center;
+}
+
+.voice__logo--ibaratatu {
+	display: none;
+	position: absolute;
+	z-index: 10;
 }
 
 .about__content {
@@ -269,15 +311,15 @@ a {
 	font-family: "Gotu", sans-serif;
 	font-weight: 300;
 	margin: auto;
+	margin-left: 0;
 	max-width: 37.5rem;
 	padding: 0;
 	position: relative;
-	right: 0;
 	top: 15rem;
 	width: 100%;
 }
 
-.about__content--title {
+.about__content--titles {
 	color: #408f95;
 	font-weight: 300;
 	padding-left: 0;
@@ -287,7 +329,7 @@ a {
 	z-index: 15;
 }
 
-.about__content--title h2 {
+.about__content--title {
 	display: inline-block;
 	font-size: 2.5rem;
 	font-weight: 300;
@@ -346,19 +388,31 @@ a {
 	width: 100%;
 }
 
-.about__text {
+.about__texts {
 	color: #111;
 	font-family: "Noto Sans JP", sans-serif;
 	font-weight: normal;
 }
 
-.about__text p {
+.about__text {
 	font-size: 1rem;
 	max-width: 37.5rem;
 	padding-top: 1rem;
 }
 
 .about__text span {
+	display: none;
+}
+
+.button__about {
+	left: 0rem;
+	margin-top: 2.5rem;
+	position: relative;
+	text-align: center;
+	z-index: 10;
+}
+
+.about__logo {
 	display: none;
 }
 
@@ -382,6 +436,21 @@ a {
 
 .blog__cards :hover {
 	opacity: 0.7;
+}
+
+.button__blog {
+	margin-right: 0.125rem;
+	margin-top: 1.625rem;
+	text-align: center;
+}
+
+.blog__logo--1 {
+	display: none;
+}
+
+.blog__logo--2 {
+	display: none;
+	z-index: 15;
 }
 
 .button {
@@ -459,41 +528,6 @@ a {
 	z-index: 2;
 }
 
-.button__information {
-	margin-right: 0.125rem;
-	margin-top: 2.5rem;
-	text-align: center;
-}
-
-.button__campaign {
-	margin-right: 0.25rem;
-	text-align: center;
-}
-
-.button__about {
-	left: 0rem;
-	margin-top: 2.5rem;
-	position: relative;
-	text-align: center;
-	z-index: 10;
-}
-
-.button__blog {
-	margin-right: 0.125rem;
-	margin-top: 1.625rem;
-	text-align: center;
-}
-
-.button__voice {
-	margin: 0.25rem 0.125rem 0 0;
-	text-align: center;
-}
-
-.button__contact {
-	margin-top: 2.5rem;
-	padding: 0;
-}
-
 .button__price {
 	margin-right: 0.125rem;
 	margin-top: 2.5rem;
@@ -535,7 +569,7 @@ a {
 	width: fit-content;
 }
 
-.card__icon--slider h2 {
+.card__icon--title {
 	display: inline-block;
 	font-size: 0.75rem;
 	line-height: 1.7;
@@ -575,7 +609,7 @@ a {
 	text-align: center;
 }
 
-.card__campaign--price h3 {
+.card__campaign--price--price {
 	-webkit-text-decoration: line-through solid red;
 	-webkit-text-decoration: line-through red 0.1875rem;
 	font-family: "Lato", sans-serif;
@@ -589,7 +623,7 @@ a {
 	text-decoration-thickness: 0.1875rem;
 }
 
-.card__discount h3 {
+.card__discount--discout {
 	color: #408f95;
 	font-family: "Lato", sans-serif;
 	font-size: 2rem;
@@ -602,29 +636,6 @@ a {
 	display: flex;
 	justify-content: center;
 	margin: 0rem 1rem 0 0.125rem;
-}
-
-.card__campaign--price--night h3 {
-	-webkit-text-decoration: line-through solid red;
-	-webkit-text-decoration: line-through red 0.1875rem;
-	font-family: "Lato", sans-serif;
-	font-size: 1.25rem;
-	font-weight: 700;
-	line-height: 1;
-	padding: 1rem 1rem 0 0rem;
-	text-decoration: line-through;
-	text-decoration: line-through solid red;
-	text-decoration: line-through red 0.1875rem;
-	text-decoration-thickness: 0.1875rem;
-}
-
-.card__discount--night h3 {
-	color: #408f95;
-	font-family: "Lato", sans-serif;
-	font-size: 2rem;
-	font-weight: 700;
-	line-height: 1;
-	padding: 0.5rem 0 0 0.75rem;
 }
 
 .card__blog {
@@ -729,7 +740,7 @@ a {
 	width: 9.4375rem;
 }
 
-.card__img img {
+.card__img {
 	-o-object-fit: cover;
 	aspect-ratio: 140/180;
 	height: 7.3125rem;
@@ -801,7 +812,7 @@ div.colorbox div.color {
 	z-index: 2;
 }
 
-div.colorbox img {
+div.colorbox {
 	display: block;
 }
 
@@ -816,7 +827,7 @@ div.colorbox img {
 	text-align: center;
 }
 
-.contact__content p {
+.contact__contents {
 	font-size: 1rem;
 	line-height: 1.5;
 	margin-top: 0.25rem;
@@ -839,7 +850,7 @@ div.colorbox img {
 	width: 18.4375rem;
 }
 
-.contact__map img {
+.contact__map {
 	-o-object-fit: cover;
 	aspect-ratio: 273/148;
 	height: 10rem;
@@ -847,7 +858,7 @@ div.colorbox img {
 	width: 18.4375rem;
 }
 
-.contact__map img {
+.contact__map {
 	-o-object-fit: cover;
 	aspect-ratio: 273/148;
 	height: 10rem;
@@ -863,6 +874,39 @@ div.colorbox img {
 	margin: 2.5rem 0 0;
 	max-width: 37.5rem;
 	text-align: center;
+}
+
+.button__contact {
+	margin-top: 2.5rem;
+	padding: 0;
+}
+
+.contact__logo--fish {
+	height: 3.125rem;
+	left: calc(50% + 7.375rem);
+	position: absolute;
+	top: calc(50% - 17rem);
+	transform: translate(-50%, -50%);
+	width: 6.8125rem;
+}
+
+.contact__logo--codeups {
+	position: relative;
+	text-align: center;
+}
+
+.contact__logo--codeups source {
+	width: 10.875rem;
+}
+
+.contact__logo--codeups img {
+	border-bottom: 0.0625rem solid #408f95;
+	left: calc(50% + 0rem);
+	padding: 0 3.75rem 0.375rem;
+	top: calc(50% + 7.1875rem);
+	transform: translate(-50%, -50%);
+	width: 18.4375rem;
+	z-index: 15;
 }
 
 .copyright {
@@ -953,6 +997,19 @@ div.colorbox img {
 	background-color: transparent;
 }
 
+.logo__img--codeups {
+	display: inline-block;
+	left: 0.625rem;
+	position: absolute;
+	top: 1.3125rem;
+	width: 7.0625rem;
+	z-index: 25;
+}
+
+.logo__img--codeups a {
+	display: inline-block;
+}
+
 .hero__contents {
 	align-items: center;
 	color: #fff;
@@ -962,7 +1019,7 @@ div.colorbox img {
 	justify-content: center;
 	position: absolute;
 	width: 100vw;
-	z-index: 5;
+	z-index: 15;
 }
 
 .hero__title {
@@ -992,7 +1049,7 @@ div.colorbox img {
 	width: 100%;
 }
 
-.hero__img img {
+.hero__img {
 	-o-object-fit: cover;
 	aspect-ratio: 375/667;
 	background-repeat: no-repeat;
@@ -1011,12 +1068,12 @@ div.colorbox img {
 	padding: 0;
 }
 
-.information__content--title {
+.information__content--titles {
 	border-bottom: 0.0625rem solid #408f95;
 	padding-top: 1.375rem;
 }
 
-.information__content--title h2 {
+.information__content--title {
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1.25rem;
 	font-weight: 700;
@@ -1034,111 +1091,16 @@ div.colorbox img {
 	max-width: fit-content;
 }
 
-.information__content--img img {
+.information__content--img {
 	aspect-ratio: 540/356;
 	max-width: -moz-fit-content;
 	max-width: fit-content;
 }
 
-.logo__img--codeups img {
-	display: inline-block;
-	left: 0.625rem;
-	position: absolute;
-	top: 1.3125rem;
-	width: 7.0625rem;
-	z-index: 25;
-}
-
-.logo__img--codeups a {
-	display: inline-block;
-}
-
-.about__logo {
-	display: none;
-}
-
-.blog__logo--1 {
-	display: none;
-}
-
-.blog__logo--2 {
-	display: none;
-	z-index: 15;
-}
-
-.voice__logo--ibaratatu {
-	display: none;
-	position: absolute;
-	z-index: 10;
-}
-
-.logo__price {
-	display: none;
-	position: absolute;
-}
-
-.contact__logo--fish {
-	height: 3.125rem;
-	left: calc(50% + 7.375rem);
-	position: absolute;
-	top: calc(50% - 17rem);
-	transform: translate(-50%, -50%);
-	width: 6.8125rem;
-}
-
-.contact__logo--codeups {
-	position: relative;
+.button__information {
+	margin-right: 0.125rem;
+	margin-top: 2.5rem;
 	text-align: center;
-}
-
-.contact__logo--codeups source {
-	width: 10.875rem;
-}
-
-.contact__logo--codeups img {
-	border-bottom: 0.0625rem solid #408f95;
-	left: calc(50% + 0rem);
-	padding: 0 3.75rem 0.375rem;
-	top: calc(50% + 7.1875rem);
-	transform: translate(-50%, -50%);
-	width: 18.4375rem;
-	z-index: 15;
-}
-
-.logo__img--codeups--bottom {
-	height: 2.8125rem;
-	left: calc(50% - 6.875rem);
-	position: absolute;
-	top: calc(50% + 4.375rem);
-	transform: translate(-50%, -50%);
-	width: 7.5rem;
-	z-index: 15;
-}
-
-.sns__icons {
-	display: flex;
-	left: -10.625rem;
-	position: relative;
-}
-
-.instagram__icon {
-	height: 1.5rem;
-	left: calc(50% + 3.25rem);
-	position: absolute;
-	top: calc(50% + 7.5rem);
-	transform: translate(-50%, -50%);
-	width: 1.5rem;
-	z-index: 10;
-}
-
-.facebook__icon {
-	height: 1.5rem;
-	left: calc(50% + 0.75rem);
-	position: absolute;
-	top: calc(50% + 7.5rem);
-	transform: translate(-50%, -50%);
-	width: 1.5rem;
-	z-index: 10;
 }
 
 .main__swiper img {
@@ -1361,14 +1323,14 @@ div.colorbox img {
 	transform: scale(1, 1); /*X方向にスケール拡大*/
 }
 
-.nav__items--pc h2 {
+.nav__items--pc--title {
 	font-family: "Gotu", sans-serif;
 	font-size: 1.125rem;
 	font-weight: 300;
 	line-height: 1;
 }
 
-.nav__items--pc p {
+.nav__items--pc--subtitle {
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 0.625rem;
 	font-weight: 300;
@@ -1485,7 +1447,7 @@ div.colorbox img {
 	width: fit-content;
 }
 
-.price__img img {
+.price__img {
 	height: 14.1875rem;
 	width: 21.5625rem;
 }
@@ -1516,6 +1478,11 @@ div.colorbox img {
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 0.875rem;
 	padding-top: 0.625rem;
+}
+
+.logo__price {
+	display: none;
+	position: absolute;
 }
 
 .section__title {
@@ -1664,7 +1631,7 @@ div.colorbox img {
 	opacity: 0.5;
 }
 
-.swiper-slide img {
+.swiper-slide {
 	aspect-ratio: 280/188;
 	display: block;
 }
@@ -1707,23 +1674,27 @@ html {
 	padding-right: 25px;
 }
 
-.section__about {
+.about__inner.inner {
 	margin: auto;
-	margin: 8.625rem 0 0;
+	margin-top: 8.625rem;
+	max-width: 100%;
 	overflow: hidden;
 	padding-bottom: 11.25rem;
-	padding-left: 25px;
-	padding-right: 25px;
 	position: relative;
 }
 
-.section__blog {
+.blog__inner.inner {
+	max-width: 100%;
 	padding-top: 6.75rem;
 	position: relative;
 }
 
-.section__campaign {
+.campaign__inner {
 	margin-top: 8.1875rem;
+}
+
+.button__campaign {
+	margin: 4.625rem 1rem 0 0;
 }
 
 .contact {
@@ -1733,19 +1704,47 @@ html {
 	margin-top: 1rem;
 }
 
-.section__contact {
+.contact__inner {
 	margin: auto;
-	max-width: 1130px;
-	padding-left: 25px;
-	padding-right: 25px;
 }
 
-.section__footer {
+.footer__inner {
 	margin: auto;
 	margin-top: 0.25rem;
-	max-width: 1130px;
-	padding-left: 25px;
-	padding-right: 25px;
+}
+
+.logo__img--codeups--bottom {
+	left: calc(50% - 27.5rem);
+	position: absolute;
+	top: calc(50% + 6.5rem);
+	transform: translate(-50%, -50%);
+	width: 12.5rem;
+}
+
+.sns__icons {
+	left: -7.5rem;
+	position: relative;
+	top: 7.375rem;
+}
+
+.instagram__icon {
+	height: 2rem;
+	left: calc(50% - 7.25rem);
+	position: absolute;
+	top: calc(50% + 1rem);
+	transform: translate(-50%, -50%);
+	width: 2rem;
+	z-index: 10;
+}
+
+.facebook__icon {
+	height: 2rem;
+	left: calc(50% - 10.25rem);
+	position: absolute;
+	top: calc(50% + 1rem);
+	transform: translate(-50%, -50%);
+	width: 2rem;
+	z-index: 10;
 }
 
 .information {
@@ -1754,11 +1753,8 @@ html {
 	padding: 6.125rem 0 5.875rem;
 }
 
-.section__information {
+.information__inner {
 	margin: auto;
-	max-width: 1130px;
-	padding-left: 25px;
-	padding-right: 25px;
 }
 
 .price {
@@ -1767,37 +1763,45 @@ html {
 	padding: 6.125rem 0 5.625rem;
 }
 
-.section__price {
+.price__inner {
 	display: flex;
 	flex-direction: initial;
 	justify-content: space-between;
 	margin: auto;
-	max-width: 1130px;
-	padding-left: 25px;
-	padding-right: 25px;
 	position: relative;
 }
 
-.section__voice {
+.voice__inner {
 	margin: auto;
 	margin-top: 9.125rem;
-	max-width: 1130px;
-	padding-left: 25px;
-	padding-right: 25px;
+}
+
+.button__voice {
+	margin: 5rem 0.25rem 0 0;
+	text-align: center;
+}
+
+.voice__logo--ibaratatu {
+	display: block;
+	height: 10.125rem;
+	left: calc(50% + 31.625rem);
+	top: calc(50% + 18.875rem);
+	transform: translate(-50%, -50%);
+	width: 4.4375rem;
 }
 
 .about__content {
 	display: flex;
 	justify-content: center;
-	max-width: 1130px;
+	margin-left: 5rem;
+	max-width: 100%;
 	padding: 0;
 	position: relative;
-	right: -5rem;
 	top: -33.875rem;
 	z-index: 15;
 }
 
-.about__content--title {
+.about__content--titles {
 	color: #fff;
 	display: inline-block;
 	font-family: "Gotu", sans-serif;
@@ -1807,7 +1811,7 @@ html {
 	width: 25rem;
 }
 
-.about__content--title h2 {
+.about__content--title {
 	display: block;
 	font-family: "Gotu", sans-serif;
 	font-size: 5rem;
@@ -1857,11 +1861,11 @@ html {
 	width: 55rem;
 }
 
-.about__text {
+.about__texts {
 	color: #fff;
 }
 
-.about__text p {
+.about__text {
 	display: inline-block;
 	font-size: 1rem;
 	margin-left: 2.5rem;
@@ -1872,6 +1876,22 @@ html {
 
 .about__text span {
 	display: inline-block;
+}
+
+.button__about {
+	left: 1.125rem;
+	margin-top: 2.5rem;
+	top: 0;
+}
+
+.about__logo {
+	display: block;
+	height: 11.3125rem;
+	position: absolute;
+	right: -4.5rem;
+	top: 38.375rem;
+	width: 12.125rem;
+	z-index: 20;
 }
 
 .blog__bg--img {
@@ -1907,6 +1927,31 @@ html {
 	max-width: 20.8125rem;
 }
 
+.button__blog {
+	margin: 5.25rem 0.875rem 0 0;
+	padding: 0 0 0 0.5rem;
+}
+
+.blog__logo--1 {
+	display: block;
+	height: 12.5625rem;
+	left: calc(50% - 25rem);
+	position: absolute;
+	top: calc(50% - 17.875rem);
+	transform: translate(-50%, -50%);
+	width: 27.3125rem;
+}
+
+.blog__logo--2 {
+	display: block;
+	height: 8.625rem;
+	left: calc(50% - 29.375rem);
+	position: absolute;
+	top: calc(50% + 31.625rem);
+	transform: translate(-50%, -50%);
+	width: 18.8125rem;
+}
+
 .button {
 	height: 3.25rem;
 	line-height: 1.5;
@@ -1914,49 +1959,9 @@ html {
 	z-index: 1;
 }
 
-.button__information {
-	left: calc(50% + 0.75rem);
-	position: relative;
-	top: calc(50% - 9.375rem);
-	transform: translate(-50%, -50%);
-}
-
-.button__campaign {
-	margin: 4.625rem 1rem 0 0;
-}
-
-.button__about {
-	left: 1.125rem;
-	margin-top: 2.5rem;
-	top: 0;
-}
-
-.button__blog {
-	margin: 5.25rem 0.875rem 0 0;
-	padding: 0 0 0 0.5rem;
-}
-
-.button__voice {
-	margin: 5rem 0.25rem 0 0;
-	text-align: center;
-}
-
-.button__contact {
-	left: calc(50% + 16.75rem);
-	margin: 0;
-	position: absolute;
-	text-align: center;
-	top: calc(50% + 4.125rem);
-	transform: translate(-50%, -50%);
-}
-
 .button__price {
 	margin-right: 0.375rem;
 	margin-top: 5rem;
-}
-
-.section__campaign h2 {
-	padding-right: 1rem;
 }
 
 .card {
@@ -1987,10 +1992,9 @@ html {
 	width: fit-content;
 }
 
-.card__icon--slider h2 {
+.card__icon--title {
 	font-size: 0.75rem;
 	line-height: 1;
-	padding: 0 1rem;
 }
 
 .card__slider .card__body {
@@ -2016,14 +2020,14 @@ html {
 	padding-top: 0.875rem;
 }
 
-.card__campaign--price h3 {
+.card__campaign--price--price {
 	font-family: "Lato", sans-serif;
 	font-size: 1.5rem;
 	line-height: 1.8;
 	padding: 0.75rem 1rem 0 0.125rem;
 }
 
-.card__discount h3 {
+.card__discount--discout {
 	font-family: "Lato", sans-serif;
 	font-size: 2.5rem;
 	line-height: 1;
@@ -2032,20 +2036,6 @@ html {
 
 .card__campaign--prices--night {
 	margin: 0rem 1.5rem 0 0.125rem;
-}
-
-.card__campaign--price--night h3 {
-	font-family: "Lato", sans-serif;
-	font-size: 1.5rem;
-	line-height: 1;
-	padding: 1.375rem 1rem 0 0rem;
-}
-
-.card__discount--night h3 {
-	font-family: "Lato", sans-serif;
-	font-size: 2.5rem;
-	line-height: 1;
-	padding: 0.5rem 0 0 0.75rem;
 }
 
 .card__blog {
@@ -2126,7 +2116,7 @@ html {
 	width: 11.25rem;
 }
 
-.card__img img {
+.card__img {
 	-o-object-fit: cover;
 	aspect-ratio: 140/180;
 	height: 8.75rem;
@@ -2178,7 +2168,6 @@ html {
 }
 
 .contact__inner {
-	max-width: 1130px;
 	width: 100%;
 }
 
@@ -2188,7 +2177,7 @@ html {
 	text-align: left;
 }
 
-.contact__content p {
+.contact__contents {
 	font-size: 1rem;
 	line-height: 1.5;
 	margin-top: 0.25rem;
@@ -2209,12 +2198,12 @@ html {
 	width: 17.0625rem;
 }
 
-.contact__map img {
+.contact__map {
 	height: 9.25rem;
 	width: 17.0625rem;
 }
 
-.contact__map img {
+.contact__map {
 	height: 9.25rem;
 	width: 17.0625rem;
 }
@@ -2228,155 +2217,13 @@ html {
 	padding: 0.125rem 7rem 0rem 5rem;
 }
 
-.copyright {
-	font-size: 0.875rem;
-	line-height: 1;
-	padding: 0 0 3.5rem;
-}
-
-.hamburger {
-	display: none;
-}
-
-.header {
-	height: 5.625rem;
-}
-
-.header__inner {
-	padding: 0 1.25rem 0 2.4375rem;
-}
-
-.hero__contents {
-	align-items: center;
-	display: flex;
-	flex-direction: column;
-	height: 100vh;
-	justify-content: center;
-	width: 100%;
-}
-
-.hero__title {
-	font-size: 2.5rem;
-	font-size: 5rem;
-	font-weight: 400;
-	letter-spacing: 0.53em;
-	line-height: 1;
-	margin-left: 2.75rem;
-	margin-top: 5.3125rem;
-}
-
-.hero__subtitle {
-	font-family: "Gotu", sans-serif;
-	font-size: 1.25rem;
-	line-height: 1;
-	padding-top: 1rem;
-}
-
-.hero__img {
-	-o-object-fit: cover;
-	height: 100vh;
-	object-fit: cover;
-	width: 100%;
-}
-
-.hero__img img {
-	-o-object-fit: cover;
-	aspect-ratio: 1440/768;
-	object-fit: cover;
-	object-fit: cover;
-}
-
-.information__content {
-	display: flex;
-	flex-direction: initial;
-	gap: 1.125rem;
-	justify-content: center;
-	max-width: none;
-	padding: 2.75rem 0 0 0;
-}
-
-.information__content--title {
-	border-bottom: 0.0625rem solid #408f95;
-	margin-left: 1.75rem;
-	margin-top: 4.125rem;
-	padding: 0;
-	padding-bottom: 0.5rem;
-}
-
-.information__content--title h2 {
-	font-family: "Noto Sans JP", sans-serif;
-	font-size: 1.5rem;
-	font-weight: 700;
-	line-height: 1;
-}
-
-.information__content--text {
-	font-family: "Noto Sans JP", sans-serif;
-	font-size: 1rem;
-	line-height: 1.5;
-	margin: 0 0 0 1.75rem;
-	padding: 0.375rem 0 0;
-	width: 30.75rem;
-}
-
-.information__content--img {
-	height: 22.25rem;
-	margin-top: 0.125rem;
-	width: 33.75rem;
-}
-
-.logo__img--codeups img {
-	left: 2.1875rem;
-	width: 9.0625rem;
-}
-
-.about__logo {
-	display: block;
-	height: 11.3125rem;
+.button__contact {
+	left: calc(50% + 16.75rem);
+	margin: 0;
 	position: absolute;
-	right: -4.5rem;
-	top: 38.375rem;
-	width: 12.125rem;
-	z-index: 20;
-}
-
-.blog__logo--1 {
-	display: block;
-	height: 12.5625rem;
-	left: calc(50% - 25rem);
-	position: absolute;
-	top: calc(50% - 17.875rem);
+	text-align: center;
+	top: calc(50% + 4.125rem);
 	transform: translate(-50%, -50%);
-	width: 27.3125rem;
-}
-
-.blog__logo--2 {
-	display: block;
-	height: 8.625rem;
-	left: calc(50% - 29.375rem);
-	position: absolute;
-	top: calc(50% + 31.625rem);
-	transform: translate(-50%, -50%);
-	width: 18.8125rem;
-}
-
-.voice__logo--ibaratatu {
-	display: block;
-	height: 10.125rem;
-	left: calc(50% + 31.625rem);
-	top: calc(50% + 18.875rem);
-	transform: translate(-50%, -50%);
-	width: 4.4375rem;
-}
-
-.logo__price {
-	display: block;
-	height: 12.5625rem;
-	left: calc(50% - 25.125rem);
-	top: calc(50% + 27.5rem);
-	transform: translate(-50%, -50%);
-	width: 27.3125rem;
-	z-index: 15;
 }
 
 .contact__logo--fish {
@@ -2407,38 +2254,114 @@ html {
 	width: 27.5rem;
 }
 
-.logo__img--codeups--bottom {
-	left: calc(50% - 27.5rem);
-	position: absolute;
-	top: calc(50% + 6.5rem);
-	transform: translate(-50%, -50%);
-	width: 12.5rem;
+.copyright {
+	font-size: 0.875rem;
+	line-height: 1;
+	padding: 0 0 3.5rem;
 }
 
-.sns__icons {
-	left: -7.5rem;
+.hamburger {
+	display: none;
+}
+
+.header {
+	height: 5.625rem;
+}
+
+.header__inner {
+	padding: 0 1.25rem 0 2.4375rem;
+}
+
+.logo__img--codeups {
+	left: 2.1875rem;
+	width: 9.0625rem;
+}
+
+.hero__contents {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	justify-content: center;
+	width: 100%;
+	z-index: 15;
+}
+
+.hero__title {
+	font-size: 2.5rem;
+	font-size: 5rem;
+	font-weight: 400;
+	letter-spacing: 0.53em;
+	line-height: 1;
+	margin-left: 2.75rem;
+	margin-top: 5.3125rem;
+}
+
+.hero__subtitle {
+	font-family: "Gotu", sans-serif;
+	font-size: 1.25rem;
+	line-height: 1;
+	padding-top: 1rem;
+}
+
+.hero__img {
+	-o-object-fit: cover;
+	height: 100vh;
+	object-fit: cover;
+	width: 100%;
+}
+
+.hero__img {
+	-o-object-fit: cover;
+	aspect-ratio: 1440/768;
+	object-fit: cover;
+	object-fit: cover;
+}
+
+.information__content {
+	display: flex;
+	flex-direction: initial;
+	gap: 1.125rem;
+	justify-content: center;
+	max-width: none;
+	padding: 2.75rem 0 0 0;
+}
+
+.information__content--titles {
+	border-bottom: 0.0625rem solid #408f95;
+	margin-left: 1.75rem;
+	margin-top: 4.125rem;
+	padding: 0;
+	padding-bottom: 0.5rem;
+}
+
+.information__content--title {
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 1.5rem;
+	font-weight: 700;
+	line-height: 1;
+}
+
+.information__content--text {
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 1rem;
+	line-height: 1.5;
+	margin: 0 0 0 1.75rem;
+	padding: 0.375rem 0 0;
+	width: 30.75rem;
+}
+
+.information__content--img {
+	height: 22.25rem;
+	margin-top: 0.125rem;
+	width: 33.75rem;
+}
+
+.button__information {
+	left: calc(50% + 0.75rem);
 	position: relative;
-	top: 7.375rem;
-}
-
-.instagram__icon {
-	height: 2rem;
-	left: calc(50% - 7.25rem);
-	position: absolute;
-	top: calc(50% + 1rem);
+	top: calc(50% - 9.375rem);
 	transform: translate(-50%, -50%);
-	width: 2rem;
-	z-index: 10;
-}
-
-.facebook__icon {
-	height: 2rem;
-	left: calc(50% - 10.25rem);
-	position: absolute;
-	top: calc(50% + 1rem);
-	transform: translate(-50%, -50%);
-	width: 2rem;
-	z-index: 10;
 }
 
 .main__swiper img {
@@ -2530,14 +2453,14 @@ html {
 	height: 5.625rem;
 }
 
-.nav__items--pc h2 {
+.nav__items--pc--title {
 	font-family: "Gotu", sans-serif;
 	font-size: 1.125rem;
 	font-weight: 300;
 	line-height: 1;
 }
 
-.nav__items--pc p {
+.nav__items--pc--subtitle {
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 0.625rem;
 	font-weight: 300;
@@ -2638,7 +2561,8 @@ html {
 	width: 30.75rem;
 }
 
-.price__img img {
+.price__img {
+	aspect-ratio: 746/492;
 	height: 46.625rem;
 	width: 30.75rem;
 }
@@ -2663,6 +2587,16 @@ html {
 	font-weight: 400;
 	line-height: 1;
 	padding: 0.5rem 0;
+}
+
+.logo__price {
+	display: block;
+	height: 12.5625rem;
+	left: calc(50% - 25.125rem);
+	top: calc(50% + 27.5rem);
+	transform: translate(-50%, -50%);
+	width: 27.3125rem;
+	z-index: 15;
 }
 
 .section__title {
@@ -2719,10 +2653,6 @@ html {
 	font-weight: 300;
 	line-height: 1;
 	padding-top: 0.5rem;
-}
-
-.section__titles--price {
-	margin-right: 0.5rem;
 }
 
 .section__title--contact {

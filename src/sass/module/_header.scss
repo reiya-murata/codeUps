@@ -32,3 +32,19 @@
 .header.active {
   background-color: transparent;
 }
+
+.logo__img--codeups {
+  position: absolute;
+  display: inline-block;
+  width: rem(113);
+  top: rem(21);
+  left: rem(10);
+  z-index: 25;
+  @include mq(md) {
+    left: rem(35);
+    width: rem(145);
+  }
+}
+.logo__img--codeups a {
+  display: inline-block;
+}

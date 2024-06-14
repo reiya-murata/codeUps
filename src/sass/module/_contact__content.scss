@@ -6,7 +6,6 @@
   margin: auto;
     @include mq("md") {
       width: 100%;
-    max-width: $inner + strip-unit($padding-pc) * 2;
     // padding-right: $padding-pc;
     // padding-left: $padding-pc;
   }
@@ -21,7 +20,7 @@
     font-size: rem(16);
   }
 }
-.contact__content p {
+.contact__contents {
   font-size: rem(16);
   line-height: 1.5;
   margin-top: rem(4);
@@ -60,7 +59,7 @@
     margin: rem(70) 0 0 rem(16);
   }
 }
-.contact__map img {
+.contact__map  {
   aspect-ratio: 273 / 148;
   object-fit: cover;
   width: rem(295);
@@ -70,7 +69,7 @@
     height: rem(148);
   }
 }
-.contact__map img {
+.contact__map  {
   aspect-ratio: 273 / 148;
   object-fit: cover;
   width: rem(295);
@@ -95,5 +94,69 @@
     padding: rem(2) rem(112) rem(0) rem(80);
     border-top: none;
     margin: rem(80) 0;
+  }
+}
+
+.button__contact {
+  margin-top: rem(40);
+  padding: 0;
+  @include mq(md) {
+    position: absolute;
+    top: calc(50% + rem(66));
+    left: calc(50% + rem(268));
+    transform: translate(-50%, -50%);
+    margin: 0;
+    text-align: center;
+  }
+}
+
+// contact
+.contact__logo--fish {
+  position: absolute;
+  width: rem(109);
+  height: rem(50);
+  top: calc(50% - rem(272));
+  left: calc(50% + rem(118));
+  transform: translate(-50%, -50%);
+  @include mq(md) {
+    position: absolute;
+    width: rem(301);
+    height: rem(138);
+    top: calc(50% - rem(188));
+    left: calc(50% + rem(520));
+    transform: translate(-50%, -50%);
+    z-index: 10;
+  }
+}
+.contact__logo--codeups {
+  position: relative;
+  text-align: center;
+
+  @include mq(md) {
+    position: relative;
+    padding: 0 rem(119) rem(9) rem(121);
+    margin: rem(80) rem(82) rem(24) rem(50);
+  }
+}
+.contact__logo--codeups source {
+  width: rem(174);
+  @include mq(md) {
+    width: rem(200);
+  }
+}
+.contact__logo--codeups img {
+  z-index: 15;
+  width: rem(295);
+  top: calc(50% + rem(115));
+  left: calc(50% + rem(0));
+  transform: translate(-50%, -50%);
+  border-bottom: rem(1) solid $blue;
+  padding: 0 rem(60) rem(6);
+  @include mq(md) {
+    width: rem(440);
+    padding: 0 rem(120) rem(8);
+    top: calc(50% + rem(38));
+    left: calc(50% + rem(0));
+    transform: translate(-50%, -50%);
   }
 }

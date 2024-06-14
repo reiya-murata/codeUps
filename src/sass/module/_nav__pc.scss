@@ -52,7 +52,7 @@
   transform: scale(1, 1); /*X方向にスケール拡大*/
 }
 
-.nav__items--pc h2 {
+.nav__items--pc--title {
   font-weight: $regular;
   font-family: $second-font-family;
   font-size: rem(18);
@@ -65,7 +65,7 @@
   }
 }
 
-.nav__items--pc p {
+.nav__items--pc--subtitle {
   font-weight: $regular;
   font-family: $base-font-family;
   font-size: rem(10);

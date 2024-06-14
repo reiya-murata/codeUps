@@ -3,21 +3,17 @@
 .about {
   position: relative;
 }
-.section__about {
+.about__inner.inner{
   margin: rem(78) 0 rem(74);
   // height: rem(680);
   max-height: rem(900);
-  padding-right: $padding-sp;
-  padding-left: $padding-sp;
-  // margin-right: auto;
-  // margin-left: auto;
+  margin: auto;
   @include mq(md) {
     position: relative;
     margin: auto;
-    margin: rem(138) 0 0;
-    padding-left: $padding-pc;
-    padding-right: $padding-pc;
+    margin-top: rem(138);
     overflow: hidden;
     padding-bottom: rem(180);
+    max-width: 100%;
   }
 }

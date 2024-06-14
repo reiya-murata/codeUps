@@ -4,16 +4,34 @@
   font-family: $base-font-family;
   position: relative;
 }
-.section__voice {
-  padding-right: $padding-sp;
-  padding-left: $padding-sp;
+.voice__inner {
   margin: auto;
   margin-top: rem(80);
   @include mq(md) {
-    max-width: $inner + strip-unit($padding-pc) * 2;
-    padding-right: $padding-pc;
-    padding-left: $padding-pc;
     margin: auto;
     margin-top: rem(146);
+  }
+}
+.button__voice {
+  text-align: center;
+  margin: rem(4) rem(2) 0 0;
+  @include mq(md) {
+    text-align: center;
+    margin: rem(80) rem(4) 0 0;
+  }
+}
+
+
+.voice__logo--ibaratatu {
+  display: none;
+  position: absolute;
+  z-index: 10;
+  @include mq(md) {
+    top: calc(50% + rem(302));
+    left: calc(50% + rem(506));
+    transform: translate(-50%, -50%);
+    display: block;
+    width: rem(71);
+    height: rem(162);
   }
 }

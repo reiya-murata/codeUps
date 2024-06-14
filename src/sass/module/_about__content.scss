@@ -9,23 +9,22 @@
   max-width: rem(600);
   margin: auto;
   top: rem(240);
-  right: 0;
+  margin-left: 0;
   width: 100%;
   padding: 0 ;
   @include mq(md) {
     position: relative;
     display: flex;
-    max-width: $inner + ($padding-pc) * 2;
     justify-content: center;
     top: rem(-542);
-
-    right: rem(-80);
+    margin-left:rem(80);
     z-index: 15;
     padding: 0;
+    max-width: 100%;
   }
 }
 
-.about__content--title {
+.about__content--titles {
   position: relative;
   font-weight: $regular;
   color: $blue;
@@ -44,7 +43,7 @@
     width: rem(400);
   }
 }
-.about__content--title h2 {
+.about__content--title {
   display: inline-block;
   font-size: rem(40);
   font-weight: $regular;
@@ -140,7 +139,7 @@
   }
 }
 
-.about__text {
+.about__texts {
   font-family: $base-font-family;
   font-weight: normal;
   color: $black;
@@ -148,7 +147,7 @@
     color: $white;
   }
 }
-.about__text p {
+.about__text {
   font-size: rem(16);
   padding-top: rem(16);
   max-width: rem(600);
@@ -165,5 +164,29 @@
   display: none;
   @include mq(md) {
     display: inline-block;
+  }
+}
+.button__about {
+  text-align: center;
+  z-index: 10;
+  position: relative;
+  margin-top: rem(40);
+  left: rem(0);
+  @include mq(md) {
+    top: 0;
+    margin-top: rem(40);
+    left: rem(18);
+  }
+}
+.about__logo {
+  display: none;
+  @include mq(md) {
+    position: absolute;
+    display: block;
+    width: rem(194);
+    height: rem(181);
+    top: rem(614);
+    right: rem(-72);
+    z-index: 20;
   }
 }

@@ -15,15 +15,10 @@
   }
 }
 
-.section__information {
+.information__inner {
   position: relative;
-  padding-right: $padding-sp;
-  padding-left: $padding-sp;
   margin: auto;
   @include mq(md) {
-    max-width: $inner + strip-unit($padding-pc) * 2;
-    padding-right: $padding-pc;
-    padding-left: $padding-pc;
     margin: auto;
   }
 }

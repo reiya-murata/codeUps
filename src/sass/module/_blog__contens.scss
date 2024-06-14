@@ -56,3 +56,39 @@
 .blog__cards :hover {
   opacity: 0.7;
 }
+
+.button__blog {
+  text-align: center;
+  margin-right: rem(2);
+  margin-top: rem(26);
+  @include mq(md) {
+    margin: rem(84) rem(14) 0 0;
+    padding: 0 0 0 rem(8);
+  }
+}
+
+.blog__logo--1 {
+  display: none;
+  @include mq(md) {
+    position: absolute;
+    display: block;
+    width: rem(437);
+    height: rem(201);
+    top: calc(50% - rem(286));
+    left: calc(50% - rem(400));
+    transform: translate(-50%, -50%);
+  }
+}
+.blog__logo--2 {
+  display: none;
+  z-index: 15;
+  @include mq(md) {
+    position: absolute;
+    display: block;
+    width: rem(301);
+    height: rem(138);
+    top: calc(50% + rem(506));
+    left: calc(50% - rem(470));
+    transform: translate(-50%, -50%);
+  }
+}

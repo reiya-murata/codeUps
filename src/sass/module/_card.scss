@@ -55,14 +55,14 @@
   }
 }
 
-.card__icon--slider h2 {
+.card__icon--title {
   display: inline-block;
   padding: rem(4) rem(11.5);
   font-size: rem(12);
   line-height: 1.7;
   @include mq(md) {
     font-size: rem(12);
-    padding: 0 rem(16);
+    // padding: 0 rem(16);
     line-height: 1;
   }
 }
@@ -115,7 +115,7 @@
   text-align: center;
   font-family: $third-font-family;
 }
-.card__campaign--price h3 {
+.card__campaign--price--price{
   font-family: $third-font-family;
   font-weight: $bold;
   text-decoration: line-through red rem(3);
@@ -129,7 +129,7 @@
     line-height: 1.8;
   }
 }
-.card__discount h3 {
+.card__discount--discout {
   color: $blue;
   font-weight: $bold;
   font-family: $third-font-family;
@@ -151,34 +151,34 @@
     margin: rem(0) rem(24) 0 rem(2);
   }
 }
-.card__campaign--price--night h3 {
-  font-family: $third-font-family;
-  font-weight: $bold;
-  text-decoration: line-through red rem(3);
-  padding: rem(16) rem(16) 0 rem(0);
-  font-size: rem(20);
-  line-height: 1;
-  @include mq(md) {
-    font-family: $third-font-family;
-    font-size: rem(24);
-    padding: rem(22) rem(16) 0 rem(0);
-    line-height: 1;
-  }
-}
-.card__discount--night h3 {
-  color: $blue;
-  font-weight: $bold;
-  font-family: $third-font-family;
-  font-size: rem(32);
-  padding: rem(8) 0 0 rem(12);
-  line-height: 1;
-  @include mq(md) {
-    font-family: $third-font-family;
-    font-size: rem(40);
-    line-height: 1;
-    padding: rem(8) 0 0 rem(12);
-  }
-}
+// .card__campaign--price--night h3 {
+//   font-family: $third-font-family;
+//   font-weight: $bold;
+//   text-decoration: line-through red rem(3);
+//   padding: rem(16) rem(16) 0 rem(0);
+//   font-size: rem(20);
+//   line-height: 1;
+//   @include mq(md) {
+//     font-family: $third-font-family;
+//     font-size: rem(24);
+//     padding: rem(22) rem(16) 0 rem(0);
+//     line-height: 1;
+//   }
+// }
+// .card__discount--night h3 {
+//   color: $blue;
+//   font-weight: $bold;
+//   font-family: $third-font-family;
+//   font-size: rem(32);
+//   padding: rem(8) 0 0 rem(12);
+//   line-height: 1;
+//   @include mq(md) {
+//     font-family: $third-font-family;
+//     font-size: rem(40);
+//     line-height: 1;
+//     padding: rem(8) 0 0 rem(12);
+//   }
+// }
 
 // blog
 .card__blog {
@@ -347,7 +347,7 @@
     height: rem(140);
   }
 }
-.card__img img {
+.card__img  {
   aspect-ratio: 140 / 180;
   object-fit: cover;
   width: rem(151);
