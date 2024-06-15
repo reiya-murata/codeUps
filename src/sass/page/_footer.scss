@@ -3,14 +3,16 @@
 .footer {
   position: relative;
   background-color: $blue;
+  margin-top: rem(100);
+  @include mq(md) {
+    margin-top: rem(4);
+  }
 }
 
 .footer__inner {
   width: 100%;
   margin: auto;
-  margin-top: rem(108);
   @include mq(md) {
-    margin-top: rem(4);
     margin: auto;
   }
 }
@@ -78,4 +80,3 @@
     z-index: 10;
   }
 }
-

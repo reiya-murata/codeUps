@@ -2,18 +2,22 @@
 
 .about {
   position: relative;
-}
-.about__inner.inner{
   margin: rem(78) 0 rem(74);
-  // height: rem(680);
-  max-height: rem(900);
-  margin: auto;
   @include mq(md) {
     position: relative;
     margin: auto;
     margin-top: rem(138);
+    margin-bottom: 0;
+  }
+}
+.about__inner.inner {
+  // height: rem(680);
+  max-height: rem(900);
+  margin: auto;
+  @include mq(md) {
     overflow: hidden;
     padding-bottom: rem(180);
     max-width: 100%;
+    margin-bottom: 0;
   }
 }

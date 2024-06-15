@@ -13,20 +13,20 @@
 .contact__content {
   font-family: $base-font-family;
   text-align: center;
+  line-height: 1.7;
   margin-top: rem(162);
   @include mq(md) {
     text-align: left;
+    line-height: 1.7;
     margin: rem(70) rem(5) 0 rem(50);
     font-size: rem(16);
   }
 }
 .contact__contents {
   font-size: rem(16);
-  line-height: 1.5;
   margin-top: rem(4);
   @include mq(md) {
     margin-top: rem(4);
-    line-height: 1.5;
     font-size: rem(16);
   }
 }
@@ -97,7 +97,6 @@
 
 .address__card {
   box-shadow: none;
-
   @include mq(md) {
     display: flex;
     box-shadow: rem(4) rem(4) rem(10) 0 rgba(0, 0, 0, 0.25);
@@ -156,20 +155,22 @@
 .contact__logo--codeups {
   position: relative;
   text-align: center;
-
   @include mq(md) {
     position: relative;
     padding: 0 rem(119) rem(9) rem(121);
     margin: rem(80) rem(82) rem(24) rem(50);
   }
 }
-.contact__logo--codeups source {
-  width: rem(174);
-  @include mq(md) {
-    width: rem(200);
-  }
-}
-.contact__logo--codeups img {
+// .contact__logo--codeups source {
+//   display: block;
+//   width: rem(174);
+//   @include mq(md) {
+//     width: rem(200);
+//   }
+// }
+.contact__logo--codeups img{
+  position: absolute;
+  display: block;
   z-index: 15;
   width: rem(295);
   top: calc(50% + rem(115));
@@ -178,7 +179,10 @@
   border-bottom: rem(1) solid $blue;
   padding: 0 rem(60) rem(6);
   @include mq(md) {
+    position: absolute;
+    display: block;
     width: rem(440);
+    border-bottom: rem(1) solid $blue;
     padding: 0 rem(120) rem(8);
     top: calc(50% + rem(38));
     left: calc(50% + rem(0));

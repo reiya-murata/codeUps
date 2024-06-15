@@ -3,13 +3,14 @@
   position: relative;
 }
 
-.campaign__inner {
+.campaign__inner.inner{
   position: relative;
   text-align: center;
   margin-top: rem(36);
   margin: auto;
   @include mq(md) {
     margin-top: rem(131);
+    padding: 0;
   }
 }
 .button__campaign {
