@@ -3,11 +3,9 @@
 .blog {
   position: relative;
 }
-.blog__inner.inner{
-  width: 100%;
+.blog__inner{
   padding: rem(88) 0 0;
   @include mq(md) {
-    max-width: 100%;
     position: relative;
     padding-top: rem(108);
   }

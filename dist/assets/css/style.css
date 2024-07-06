@@ -158,7 +158,7 @@ a {
 	position: relative;
 }
 
-.about__inner.inner {
+.about__inner {
 	margin: auto;
 	max-height: 56.25rem;
 }
@@ -167,16 +167,15 @@ a {
 	position: relative;
 }
 
-.blog__inner.inner {
+.blog__inner {
 	padding: 5.5rem 0 0;
-	width: 100%;
 }
 
 .campaign {
 	position: relative;
 }
 
-.campaign__inner.inner {
+.campaign__inner {
 	margin: auto;
 	margin-top: 2.25rem;
 	position: relative;
@@ -227,7 +226,7 @@ a {
 	text-decoration-thickness: 0.1875rem;
 }
 
-.card__discount--discout {
+.card__discount--discount {
 	color: #408f95;
 	font-family: "Lato", sans-serif;
 	font-size: 2rem;
@@ -1671,22 +1670,21 @@ html {
 	position: relative;
 }
 
-.about__inner.inner {
+.about__inner {
 	margin-bottom: 0;
 	max-width: 100%;
 	overflow: hidden;
 	padding-bottom: 11.25rem;
 }
 
-.blog__inner.inner {
-	max-width: 100%;
+.blog__inner {
 	padding-top: 6.75rem;
 	position: relative;
 }
 
-.campaign__inner.inner {
+.campaign__inner {
+	margin: auto;
 	margin-top: 8.1875rem;
-	padding: 0;
 }
 
 .button__campaign {
@@ -1713,7 +1711,7 @@ html {
 	padding: 0.75rem 1rem 0 0.125rem;
 }
 
-.card__discount--discout {
+.card__discount--discount {
 	font-family: "Lato", sans-serif;
 	font-size: 2.5rem;
 	line-height: 1;
