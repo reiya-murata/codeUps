@@ -2685,7 +2685,6 @@ html {
 .campaign__swiper--inner {
 	height: 100%;
 	margin: auto;
-	max-width: 1130px;
 	width: 100%;
 }
 
@@ -2693,7 +2692,6 @@ html {
 	display: flex;
 	height: 100%;
 	margin-left: 41.25rem;
-	max-width: none;
 	padding-bottom: 0.3125rem;
 	right: 0;
 	top: 0;

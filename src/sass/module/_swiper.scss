@@ -29,9 +29,6 @@
   @include mq(md) {
     width: 100%;
     height: 100%;
-    max-width: $inner + strip-unit($padding-pc) * 2;
-    // padding-left: $padding-pc;
-    // padding-right: $padding-pc;
     margin: auto;
   }
 }
@@ -46,7 +43,7 @@
     top: 0;
     width: 100%;
     height: 100%;
-    max-width: none;
+    // max-width: none;
     margin-left: rem(660);
     padding-bottom: rem(5);
   }
@@ -56,6 +53,7 @@
   width: 100%;
   height: 100%;
 }
+
 .swiper__campaign {
   overflow: hidden;
   @include mq(md) {
