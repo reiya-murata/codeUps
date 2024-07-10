@@ -7,7 +7,7 @@
 .nav__hitode img {
   position: absolute;
   width: rem(18);
-  height: rem(18);
+  // height: rem(18);
   top: calc(50% + rem(8));
   left: calc(50% - rem(88));
   transform: translate(-50%, -50%);
@@ -17,13 +17,13 @@
     left: calc(50% - rem(90));
     transform: translate(-50%, -50%);
     width: rem(18);
-    height: rem(18);
+    // height: rem(18);
   }
 }
 .nav__bottom--flex--bold .nav__hitode img {
   position: absolute;
   width: rem(18);
-  height: rem(18);
+  // height: rem(18);
   top: calc(50% + rem(8));
   left: calc(50% - rem(68));
   transform: translate(-50%, -50%);
@@ -33,7 +33,7 @@
     left: calc(50% - rem(90));
     transform: translate(-50%, -50%);
     width: rem(18);
-    height: rem(18);
+    // height: rem(18);
   }
 }
 .nav__items{
@@ -42,7 +42,7 @@
 .nav__items .nav__hitode img {
   position: absolute;
   width: rem(18);
-  height: rem(18);
+  // height: rem(18);
   top: calc(50% + rem(8));
   left: calc(50% - rem(88));
   transform: translate(-50%, -50%);

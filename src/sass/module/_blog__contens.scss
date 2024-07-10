@@ -79,7 +79,7 @@
   object-fit: cover;
   @include mq(md) {
     width: rem(301);
-    height: rem(201);
+    // height: rem(201);
     display: inline-block;
     // margin: rem(16) rem(16) rem(12);
   }
@@ -116,7 +116,7 @@
     position: absolute;
     display: block;
     width: rem(437);
-    height: rem(201);
+    // height: rem(201);
     top: calc(50% - rem(286));
     left: calc(50% - rem(400));
     transform: translate(-50%, -50%);
@@ -129,7 +129,7 @@
     position: absolute;
     display: block;
     width: rem(301);
-    height: rem(138);
+    // height: rem(138);
     top: calc(50% + rem(506));
     left: calc(50% - rem(470));
     transform: translate(-50%, -50%);

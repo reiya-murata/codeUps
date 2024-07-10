@@ -20,7 +20,7 @@
 .logo__img--codeups--bottom {
   position: absolute;
   width: rem(120);
-  height: rem(45);
+  // height: rem(45);
   z-index: 15;
   top: calc(50% + rem(70));
   left: calc(50% - rem(110));
@@ -51,14 +51,14 @@
   left: calc(50% + rem(52));
   transform: translate(-50%, -50%);
   width: rem(24);
-  height: rem(24);
+  // height: rem(24);
   @include mq(md) {
     position: absolute;
     top: calc(50% + rem(16));
     left: calc(50% - rem(116));
     transform: translate(-50%, -50%);
     width: rem(32);
-    height: rem(32);
+    // height: rem(32);
     z-index: 10;
   }
 }
@@ -69,14 +69,14 @@
   left: calc(50% + rem(12));
   transform: translate(-50%, -50%);
   width: rem(24);
-  height: rem(24);
+  // height: rem(24);
   @include mq(md) {
     position: absolute;
     top: calc(50% + rem(16));
     left: calc(50% - rem(164));
     transform: translate(-50%, -50%);
     width: rem(32);
-    height: rem(32);
+    // height: rem(32);
     z-index: 10;
   }
 }

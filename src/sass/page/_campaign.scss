@@ -11,19 +11,61 @@
   @include mq(md) {
     margin: auto;
     margin-top: rem(131);
+  
+    padding-right: 0;
+  }
+}
+.campaign__swiper {
+  // padding-left: $padding-sp;
+  @include mq(md) {
+    display: flex;
+    width: 100%;
+    // height: 85%;
+    margin: auto;
+    margin-right: calc(50% - 50vw);
+    padding-right: 0;
   }
 }
 
+
+.swiper__campaign {
+  overflow: hidden;
+  @include mq(md) {
+    display: flex;
+    height: 100%;
+  }
+}
+
+.swiper-wrapper.campaign__slider {
+  padding: rem(4) 0 0 0;
+  max-width: rem(600);
+  margin: auto;
+  right: rem(32);
+  @include mq(md) {
+    display: flex;
+    right: 0;
+    top: 0;
+    max-width: 100%;
+    height: 100%;
+    margin-top: rem(31);
+    // max-width: none;
+    // margin-left: rem(660);
+    padding-bottom: rem(5);
+  }
+}
+
+
 .button__campaign {
   text-align: center;
-  margin-right: rem(4);
+  // margin-right: rem(4);
   @include mq(md) {
-    margin: rem(74) rem(16) 0 0;
+    margin-top: rem(74);
   }
 }
 
 .card__title--campaign {
   display: flex;
+  text-align: start;
   border-bottom: rem(1) solid $blue;
   font-family: $base-font-family;
   font-size: rem(12);

@@ -182,8 +182,18 @@ a {
 	text-align: center;
 }
 
+.swiper__campaign {
+	overflow: hidden;
+}
+
+.swiper-wrapper.campaign__slider {
+	margin: auto;
+	max-width: 37.5rem;
+	padding: 0.25rem 0 0 0;
+	right: 2rem;
+}
+
 .button__campaign {
-	margin-right: 0.25rem;
 	text-align: center;
 }
 
@@ -195,6 +205,7 @@ a {
 	letter-spacing: -0.18em;
 	margin: 0;
 	padding-bottom: 0.375rem;
+	text-align: left;
 }
 
 .card__text--slider {
@@ -265,7 +276,6 @@ a {
 }
 
 .logo__img--codeups--bottom {
-	height: 2.8125rem;
 	left: calc(50% - 6.875rem);
 	position: absolute;
 	top: calc(50% + 4.375rem);
@@ -281,7 +291,6 @@ a {
 }
 
 .instagram__icon {
-	height: 1.5rem;
 	left: calc(50% + 3.25rem);
 	position: absolute;
 	top: calc(50% + 7.5rem);
@@ -291,7 +300,6 @@ a {
 }
 
 .facebook__icon {
-	height: 1.5rem;
 	left: calc(50% + 0.75rem);
 	position: absolute;
 	top: calc(50% + 7.5rem);
@@ -432,8 +440,6 @@ a {
 	max-width: 37.5rem;
 	padding: 0;
 	position: relative;
-	top: 15rem;
-	width: 100%;
 }
 
 .about__content--titles {
@@ -456,13 +462,11 @@ a {
 
 .about__imgs {
 	height: 100%;
-	height: 21.5625rem;
 	left: 0;
 	left: 50%;
 	margin: auto;
 	max-width: 37.5rem;
-	position: absolute;
-	transform: translate(-50%);
+	position: relative;
 	width: 100%;
 }
 
@@ -693,7 +697,6 @@ a {
 
 .card__slider {
 	box-shadow: 0.125rem 0.125rem 0.625rem 0rem rgba(0, 0, 0, 0.25);
-	margin: 1.5625rem 0 2.5rem 0;
 	min-height: 22.875rem;
 	width: 17.5rem;
 }
@@ -742,7 +745,6 @@ a {
 	aspect-ratio: 180/140;
 	grid-column: 2;
 	grid-row: 1;
-	height: 7.3125rem;
 	object-fit: cover;
 	width: 9.4375rem;
 }
@@ -784,7 +786,6 @@ div.colorbox {
 
 div.colorbox div.color {
 	background-color: #408F95;
-	height: 100%;
 	position: absolute;
 	right: 0;
 	top: 0;
@@ -824,7 +825,6 @@ div.colorbox {
 }
 
 .contact__map {
-	height: 10rem;
 	margin: 1.125rem 0 0;
 	text-align: center;
 	width: 18.4375rem;
@@ -833,7 +833,6 @@ div.colorbox {
 .contact__map {
 	-o-object-fit: cover;
 	aspect-ratio: 273/148;
-	height: 10rem;
 	object-fit: cover;
 	width: 18.4375rem;
 }
@@ -873,7 +872,6 @@ div.colorbox {
 }
 
 .contact__logo--fish {
-	height: 3.125rem;
 	left: calc(50% + 7.375rem);
 	position: absolute;
 	top: calc(50% - 17rem);
@@ -1017,8 +1015,8 @@ div.colorbox {
 	font-size: 2.5rem;
 	font-weight: 300;
 	letter-spacing: 0.53em;
-	margin-left: 1.375rem;
 	text-align: center;
+	text-indent: 0.53em;
 }
 
 .hero__subtitle {
@@ -1142,7 +1140,6 @@ div.colorbox {
 }
 
 .nav__hitode img {
-	height: 1.125rem;
 	left: calc(50% - 5.5rem);
 	position: absolute;
 	top: calc(50% + 0.5rem);
@@ -1151,7 +1148,6 @@ div.colorbox {
 }
 
 .nav__bottom--flex--bold .nav__hitode img {
-	height: 1.125rem;
 	left: calc(50% - 4.25rem);
 	position: absolute;
 	top: calc(50% + 0.5rem);
@@ -1164,7 +1160,6 @@ div.colorbox {
 }
 
 .nav__items .nav__hitode img {
-	height: 1.125rem;
 	left: calc(50% - 5.5rem);
 	position: absolute;
 	top: calc(50% + 0.5rem);
@@ -1276,16 +1271,18 @@ div.colorbox {
 
 .nav__items--pc {
 	display: flex;
-	height: 5.625rem;
+	height: inherit;
 	text-align: center;
 }
 
 .nav__items--pc a {
-	display: inline-block;
+	display: flex;
+	flex-direction: column;
 	height: 5.625rem;
-	padding: 0;
-	padding: 1.625rem 1.25rem 0 1.25rem;
+	justify-content: center;
+	padding: 0 1.25rem 0 1.25rem;
 	position: relative;
+	text-align: center;
 }
 
 .nav__items--pc li {
@@ -1600,20 +1597,9 @@ div.colorbox {
 	width: 17.5rem;
 }
 
-.swiper-wrapper.campaign {
-	margin: auto;
-	max-width: 37.5rem;
-	padding: 0.25rem 0 0 0;
-	right: 2rem;
-}
-
 .swiper {
 	height: 100%;
 	width: 100%;
-}
-
-.swiper__campaign {
-	overflow: hidden;
 }
 
 .swiper-slide a:hover {
@@ -1685,10 +1671,34 @@ html {
 .campaign__inner {
 	margin: auto;
 	margin-top: 8.1875rem;
+	padding-right: 0;
+}
+
+.campaign__swiper {
+	display: flex;
+	margin: auto;
+	margin-right: calc(50% - 50vw);
+	padding-right: 0;
+	width: 100%;
+}
+
+.swiper__campaign {
+	display: flex;
+	height: 100%;
+}
+
+.swiper-wrapper.campaign__slider {
+	display: flex;
+	height: 100%;
+	margin-top: 1.9375rem;
+	max-width: 100%;
+	padding-bottom: 0.3125rem;
+	right: 0;
+	top: 0;
 }
 
 .button__campaign {
-	margin: 4.625rem 1rem 0 0;
+	margin-top: 4.625rem;
 }
 
 .card__title--campaign {
@@ -1756,7 +1766,6 @@ html {
 }
 
 .instagram__icon {
-	height: 2rem;
 	left: calc(50% - 7.25rem);
 	position: absolute;
 	top: calc(50% + 1rem);
@@ -1766,7 +1775,6 @@ html {
 }
 
 .facebook__icon {
-	height: 2rem;
 	left: calc(50% - 10.25rem);
 	position: absolute;
 	top: calc(50% + 1rem);
@@ -1872,7 +1880,6 @@ html {
 	max-width: 100%;
 	padding: 0;
 	position: relative;
-	top: -33.875rem;
 	z-index: 15;
 }
 
@@ -1897,17 +1904,14 @@ html {
 
 .about__imgs {
 	align-items: center;
-	height: 46.3125rem;
 	left: 0rem;
-	margin: auto;
-	max-width: 1130px;
+	max-height: 46.3125rem;
+	min-width: 100%;
 	position: relative;
-	transform: translate(0);
 	width: 100%;
 }
 
 .about__img--1 {
-	height: 37.875rem;
 	left: 1.625rem;
 	max-width: 24.9375rem;
 	padding: 0;
@@ -1916,14 +1920,12 @@ html {
 }
 
 .about__img--1 img {
-	height: 37.875rem;
 	max-width: 24.9375rem;
 	padding: 0;
 	width: 24.9375rem;
 }
 
 .about__img--2 {
-	height: 36.3125rem;
 	max-width: 55rem;
 	right: 1.5625rem;
 	top: 7.625rem;
@@ -1931,7 +1933,6 @@ html {
 }
 
 .about__img--2 img {
-	height: 36.3125rem;
 	max-width: 55rem;
 	width: 55rem;
 }
@@ -1961,7 +1962,6 @@ html {
 
 .about__logo {
 	display: block;
-	height: 11.3125rem;
 	position: absolute;
 	right: -4.5rem;
 	top: 38.375rem;
@@ -2011,7 +2011,6 @@ html {
 
 .card__header--blog {
 	display: inline-block;
-	height: 12.5625rem;
 	width: 18.8125rem;
 }
 
@@ -2028,7 +2027,6 @@ html {
 
 .blog__logo--1 {
 	display: block;
-	height: 12.5625rem;
 	left: calc(50% - 25rem);
 	position: absolute;
 	top: calc(50% - 17.875rem);
@@ -2038,7 +2036,6 @@ html {
 
 .blog__logo--2 {
 	display: block;
-	height: 8.625rem;
 	left: calc(50% - 29.375rem);
 	position: absolute;
 	top: calc(50% + 31.625rem);
@@ -2070,7 +2067,6 @@ html {
 
 .card__slider {
 	display: flex;
-	margin: 2.5rem 0 0 0;
 	min-height: 27.8125rem;
 	width: 20.8125rem;
 }
@@ -2168,13 +2164,11 @@ html {
 }
 
 .contact__map {
-	height: 9.25rem;
 	margin: 4.375rem 0 0 1rem;
 	width: 17.0625rem;
 }
 
 .contact__map {
-	height: 9.25rem;
 	width: 17.0625rem;
 }
 
@@ -2194,7 +2188,6 @@ html {
 .address__card {
 	box-shadow: 0.25rem 0.25rem 0.625rem 0 rgba(0, 0, 0, 0.25);
 	display: flex;
-	height: 25.9375rem;
 	margin: 8.75rem 0 10rem;
 	width: 67.5rem;
 }
@@ -2204,7 +2197,6 @@ html {
 	box-shadow: 0.25rem 0.25rem 0.625rem 0 rgba(0, 0, 0, 0.25);
 	display: flex;
 	flex-direction: initial;
-	height: 25.9375rem;
 	margin: 8.75rem 0 10rem;
 	max-width: 67.5rem;
 }
@@ -2219,7 +2211,6 @@ html {
 }
 
 .contact__logo--fish {
-	height: 8.625rem;
 	left: calc(50% + 32.5rem);
 	position: absolute;
 	top: calc(50% - 11.75rem);
@@ -2284,15 +2275,15 @@ html {
 	font-weight: 400;
 	letter-spacing: 0.53em;
 	line-height: 1;
-	margin-left: 2.75rem;
 	margin-top: 5.3125rem;
+	text-indent: 0.53em;
 }
 
 .hero__subtitle {
 	font-family: "Gotu", sans-serif;
 	font-size: 1.25rem;
 	line-height: 1;
-	padding-top: 1rem;
+	margin-top: 1rem;
 }
 
 .hero__img {
@@ -2380,7 +2371,6 @@ html {
 }
 
 .nav__hitode img {
-	height: 1.125rem;
 	left: calc(50% - 5.625rem);
 	position: absolute;
 	top: calc(50% + 0.5rem);
@@ -2389,7 +2379,6 @@ html {
 }
 
 .nav__bottom--flex--bold .nav__hitode img {
-	height: 1.125rem;
 	left: calc(50% - 5.625rem);
 	position: absolute;
 	top: calc(50% + 0.5rem);
@@ -2680,28 +2669,6 @@ html {
 	height: 100%; /* スライド内の各要素の高さを100%に設定 */
 	margin: 0;
 	width: 20.8125rem;
-}
-
-.campaign__swiper--inner {
-	height: 100%;
-	margin: auto;
-	width: 100%;
-}
-
-.swiper-wrapper.campaign {
-	display: flex;
-	height: 100%;
-	margin-left: 41.25rem;
-	padding-bottom: 0.3125rem;
-	right: 0;
-	top: 0;
-	width: 100%;
-}
-
-.swiper__campaign {
-	display: flex;
-	height: 85%;
-	margin-right: calc(50% - 50vw);
 }
 
 .swiper-button-next {
