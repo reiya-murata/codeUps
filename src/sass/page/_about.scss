@@ -11,12 +11,14 @@
   }
 }
 .about__inner{
+  position: relative;
   // height: rem(680);
-  max-height: rem(900);
+  // max-height: rem(900);
   margin: auto;
   @include mq(md) {
     overflow: hidden;
-    padding-bottom: rem(180);
+position: relative;
+    // padding-bottom: rem(180);
     max-width: 100%;
     margin-bottom: 0;
   }

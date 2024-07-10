@@ -160,7 +160,7 @@ a {
 
 .about__inner {
 	margin: auto;
-	max-height: 56.25rem;
+	position: relative;
 }
 
 .blog {
@@ -276,34 +276,21 @@ a {
 }
 
 .logo__img--codeups--bottom {
-	left: calc(50% - 6.875rem);
-	position: absolute;
-	top: calc(50% + 4.375rem);
-	transform: translate(-50%, -50%);
 	width: 7.5rem;
 	z-index: 15;
 }
 
 .sns__icons {
 	display: flex;
-	left: -10.625rem;
 	position: relative;
 }
 
 .instagram__icon {
-	left: calc(50% + 3.25rem);
-	position: absolute;
-	top: calc(50% + 7.5rem);
-	transform: translate(-50%, -50%);
 	width: 1.5rem;
 	z-index: 10;
 }
 
 .facebook__icon {
-	left: calc(50% + 0.75rem);
-	position: absolute;
-	top: calc(50% + 7.5rem);
-	transform: translate(-50%, -50%);
 	width: 1.5rem;
 	z-index: 10;
 }
@@ -465,7 +452,6 @@ a {
 	left: 0;
 	left: 50%;
 	margin: auto;
-	max-width: 37.5rem;
 	position: relative;
 	width: 100%;
 }
@@ -487,7 +473,6 @@ a {
 	aspect-ratio: 132/194;
 	display: block;
 	object-fit: cover;
-	padding-right: 0.25rem;
 	width: 100%;
 	z-index: 5;
 }
@@ -786,6 +771,7 @@ div.colorbox {
 
 div.colorbox div.color {
 	background-color: #408F95;
+	height: 100%;
 	position: absolute;
 	right: 0;
 	top: 0;
@@ -1660,7 +1646,7 @@ html {
 	margin-bottom: 0;
 	max-width: 100%;
 	overflow: hidden;
-	padding-bottom: 11.25rem;
+	position: relative;
 }
 
 .blog__inner {
@@ -1671,20 +1657,18 @@ html {
 .campaign__inner {
 	margin: auto;
 	margin-top: 8.1875rem;
-	padding-right: 0;
 }
 
 .campaign__swiper {
 	display: flex;
 	margin: auto;
-	margin-right: calc(50% - 50vw);
-	padding-right: 0;
 	width: 100%;
 }
 
 .swiper__campaign {
 	display: flex;
 	height: 100%;
+	margin-right: calc(50% - 50vw);
 }
 
 .swiper-wrapper.campaign__slider {
@@ -1752,33 +1736,22 @@ html {
 }
 
 .logo__img--codeups--bottom {
-	left: calc(50% - 27.5rem);
-	position: absolute;
-	top: calc(50% + 6.5rem);
-	transform: translate(-50%, -50%);
 	width: 12.5rem;
 }
 
 .sns__icons {
-	left: -7.5rem;
+	margin-left: 2.5rem;
+	margin-top: 2.375rem;
 	position: relative;
-	top: 7.375rem;
 }
 
 .instagram__icon {
-	left: calc(50% - 7.25rem);
-	position: absolute;
-	top: calc(50% + 1rem);
-	transform: translate(-50%, -50%);
+	margin-left: 1rem;
 	width: 2rem;
 	z-index: 10;
 }
 
 .facebook__icon {
-	left: calc(50% - 10.25rem);
-	position: absolute;
-	top: calc(50% + 1rem);
-	transform: translate(-50%, -50%);
 	width: 2rem;
 	z-index: 10;
 }
@@ -1905,23 +1878,18 @@ html {
 .about__imgs {
 	align-items: center;
 	left: 0rem;
-	max-height: 46.3125rem;
-	min-width: 100%;
 	position: relative;
-	width: 100%;
 }
 
 .about__img--1 {
 	left: 1.625rem;
 	max-width: 24.9375rem;
-	padding: 0;
 	top: 2.625rem;
 	width: 24.9375rem;
 }
 
 .about__img--1 img {
 	max-width: 24.9375rem;
-	padding: 0;
 	width: 24.9375rem;
 }
 
@@ -2180,6 +2148,8 @@ html {
 	border-left: 1px solid #408f95;
 	border-top: none;
 	display: flex;
+	display: flex;
+	flex-direction: column;
 	line-height: 1;
 	margin: 5rem 0;
 	padding: 0.125rem 7rem 0rem 5rem;
@@ -2202,12 +2172,8 @@ html {
 }
 
 .button__contact {
-	left: calc(50% + 16.75rem);
-	margin: 0;
-	position: absolute;
+	margin-top: 2.5rem;
 	text-align: center;
-	top: calc(50% + 4.125rem);
-	transform: translate(-50%, -50%);
 }
 
 .contact__logo--fish {
@@ -2425,7 +2391,10 @@ html {
 }
 
 .nav__bottom--icons {
+	display: flex;
+	flex-direction: initial;
 	max-width: none;
+	padding-top: 5rem;
 }
 
 .nav__pc {
@@ -2458,7 +2427,7 @@ html {
 	flex-direction: initial;
 	justify-content: center;
 	margin: auto;
-	padding: 11.125rem 0rem 5.625rem 0;
+	padding: 1.5rem 0rem 5.625rem 0;
 }
 
 .nav__bottom--left {

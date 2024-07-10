@@ -115,7 +115,10 @@
   position: relative;
   flex-direction: column;
   @include mq(md) {
+    padding-top: rem(80);
     max-width: none;
+    display: flex;
+    flex-direction: initial;
   }
 }
 

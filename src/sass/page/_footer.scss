@@ -18,63 +18,66 @@
 }
 // footer
 .logo__img--codeups--bottom {
-  position: absolute;
+  // position: absolute;
   width: rem(120);
   // height: rem(45);
   z-index: 15;
-  top: calc(50% + rem(70));
-  left: calc(50% - rem(110));
-  transform: translate(-50%, -50%);
+  // top: calc(50% + rem(70));
+  // left: calc(50% - rem(110));
+  // transform: translate(-50%, -50%);
   @include mq(md) {
-    position: absolute;
+    // position: absolute;
     width: rem(200);
-    top: calc(50% + rem(104));
-    left: calc(50% - rem(440));
-    transform: translate(-50%, -50%);
+    // top: calc(50% + rem(104));
+    // left: calc(50% - rem(440));
+    // transform: translate(-50%, -50%);
   }
 }
 
 .sns__icons {
   display: flex;
   position: relative;
-  left: rem(-170);
+  // left: rem(-170);
   @include mq(md) {
     position: relative;
-    top: rem(118);
-    left: rem(-120);
+    margin-top: rem(38);
+    margin-left: rem(40);
+    // top: rem(118);
+    // left: rem(-120);
   }
 }
 .instagram__icon {
-  position: absolute;
+  // position: absolute;
   z-index: 10;
-  top: calc(50% + rem(120));
-  left: calc(50% + rem(52));
-  transform: translate(-50%, -50%);
+  // top: calc(50% + rem(120));
+  // left: calc(50% + rem(52));
+  // transform: translate(-50%, -50%);
   width: rem(24);
   // height: rem(24);
   @include mq(md) {
-    position: absolute;
-    top: calc(50% + rem(16));
-    left: calc(50% - rem(116));
-    transform: translate(-50%, -50%);
+    // position: absolute;
+    // top: calc(50% + rem(16));
+    // left: calc(50% - rem(116));
+    // transform: translate(-50%, -50%);
     width: rem(32);
     // height: rem(32);
     z-index: 10;
+    margin-left: rem(16);
   }
 }
 .facebook__icon {
-  position: absolute;
+  // position: absolute;
   z-index: 10;
-  top: calc(50% + rem(120));
-  left: calc(50% + rem(12));
-  transform: translate(-50%, -50%);
+  // top: calc(50% + rem(120));
+  // left: calc(50% + rem(12));
+  // transform: translate(-50%, -50%);
   width: rem(24);
   // height: rem(24);
   @include mq(md) {
-    position: absolute;
-    top: calc(50% + rem(16));
-    left: calc(50% - rem(164));
-    transform: translate(-50%, -50%);
+    // position: absolute;
+    // top: calc(50% + rem(16));
+    // left: calc(50% - rem(164));
+    // transform: translate(-50%, -50%);
     width: rem(32);
     // height: rem(32);
     z-index: 10;
