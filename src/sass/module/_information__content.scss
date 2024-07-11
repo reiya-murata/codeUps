@@ -9,10 +9,10 @@
   @include mq(md) {
     display: flex;
     flex-direction: initial;
-    justify-content: center;
+    justify-content: space-between;
     max-width: none;
     padding: rem(44) 0 0 0;
-    gap: rem(18);
+    // gap: rem(18);
   }
 }
 

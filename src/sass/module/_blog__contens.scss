@@ -35,12 +35,10 @@
     grid-template-columns: repeat(3,1fr);
     gap: rem(38);
     justify-content: center;
-    max-width: $inner + strip-unit($padding-pc) * 2;
-    padding-right: $padding-pc;
-    padding-left: $padding-pc;
+    margin: auto;
     margin-top: rem(38);
     // max-width: none;
-    margin: auto;
+    
     // width: 100%;
   }
 }

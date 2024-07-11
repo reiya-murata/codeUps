@@ -76,7 +76,7 @@ const main__swiper = new Swiper(".main__swiper", {
       loopedSlides: 2,
       slidesPerView: "auto",
       spaceBetween: 40,
-      centeredSlides: true,
+      centeredSlides: false,
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
