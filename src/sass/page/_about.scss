@@ -1,25 +1,22 @@
 @use "global" as *;
 
 .about {
-  position: relative;
   margin: rem(78) 0 rem(74);
   @include mq(md) {
-    position: relative;
     margin: auto;
     margin-top: rem(138);
     margin-bottom: 0;
   }
 }
-.about__inner{
+
+.about__inner {
   position: relative;
   // height: rem(680);
   // max-height: rem(900);
   margin: auto;
   @include mq(md) {
-    overflow: hidden;
-position: relative;
+    // overflow: hidden;
+    position: relative;
     // padding-bottom: rem(180);
-    max-width: 100%;
-    margin-bottom: 0;
   }
 }

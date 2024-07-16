@@ -77,7 +77,6 @@
 .button__information {
   text-align: center;
   margin-top: rem(40);
-  margin-right: rem(2);
   @include mq(md) {
     position: relative;
     top: calc(50% - rem(150));

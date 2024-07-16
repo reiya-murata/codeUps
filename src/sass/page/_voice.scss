@@ -14,10 +14,10 @@
 }
 .button__voice {
   text-align: center;
-  margin: rem(4) rem(2) 0 0;
+  margin-top: rem(4);
   @include mq(md) {
     text-align: center;
-    margin: rem(80) rem(4) 0 0;
+    margin-top: rem(80);
   }
 }
 .cards__voice {

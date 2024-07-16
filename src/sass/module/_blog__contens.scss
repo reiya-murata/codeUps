@@ -100,11 +100,9 @@
 
 .button__blog {
   text-align: center;
-  margin-right: rem(2);
   margin-top: rem(26);
   @include mq(md) {
-    margin: rem(84) rem(14) 0 0;
-    padding: 0 0 0 rem(8);
+    margin-top: rem(84);
   }
 }
 
