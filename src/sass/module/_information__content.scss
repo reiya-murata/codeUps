@@ -8,11 +8,18 @@
   padding: 0;
   @include mq(md) {
     display: flex;
+    gap: rem(48);
     flex-direction: initial;
     justify-content: space-between;
     max-width: none;
     padding: rem(44) 0 0 0;
     // gap: rem(18);
+  }
+}
+.information__content--right{
+  @include mq(md) {
+    width: rem(492);
+    max-width: rem(492);
   }
 }
 
@@ -24,7 +31,6 @@
     border-bottom: rem(1) solid $blue;
     padding-bottom: rem(8);
     margin-top: rem(66);
-    margin-left: rem(28);
   }
 }
 
@@ -45,11 +51,9 @@
   font-weight: $normal;
   padding-top: rem(8);
   @include mq(md) {
-    width: rem(492);
     font-family: $base-font-family;
     font-size: rem(16);
     line-height: 1.5;
-    margin: 0 0 0 rem(28);
     padding: rem(6) 0 0;
   }
 }
@@ -78,9 +82,6 @@
   text-align: center;
   margin-top: rem(40);
   @include mq(md) {
-    position: relative;
-    top: calc(50% - rem(150));
-    left: calc(50% + rem(12));
-    transform: translate(-50%, -50%);
+  text-align: center;
   }
 }

@@ -1,31 +1,31 @@
 @use "global" as *;
 
 .main__swiper img {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   aspect-ratio: 375 / 667;
   @include mq(md) {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     aspect-ratio: 1440 / 768;
   }
 }
 
 .main__swiper {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   overflow: hidden;
 }
 
 .main__swiper-wraper {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
 }
 
 .main__swiper-slide {
   background-position: center;
   background-size: cover;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   aspect-ratio: 375 / 667;
   @include mq(md) {
@@ -35,11 +35,11 @@
 
 .main__swiper-slide img {
   display: block;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   aspect-ratio: 375 / 667;
   @include mq(md) {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     aspect-ratio: 1440 / 768;
   }
