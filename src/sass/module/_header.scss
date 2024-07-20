@@ -2,7 +2,7 @@
 
 .header {
   position: fixed;
-  width: 100vw;
+  width: 100%;
   // height: rem(80);
   background: #0d293689;
   display: flex;
@@ -21,11 +21,11 @@
   position: fixed;
   display: flex;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   height: inherit;
   justify-content: space-between;
   @include mq(md) {
-    width: 100vw;
+    width: 100%;
     height: inherit;
     padding: 0 rem(20) 0 rem(39);
   }

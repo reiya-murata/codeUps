@@ -1,6 +1,8 @@
 @use "global" as *;
 .campaign {
   position: relative;
+  overflow: hidden;
+  
 }
 
 .campaign__inner {
