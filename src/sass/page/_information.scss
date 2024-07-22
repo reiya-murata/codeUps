@@ -3,14 +3,14 @@
 .information {
   position: relative;
   background-color: #ddf0f1;
-  padding: rem(86) 0 rem(78);
+  padding-top: rem(91);
+  padding-bottom: rem(69);
+  margin-top: rem(69);
   box-shadow: 0 rem(2) rem(4) 0 rgba(0, 0, 0, 0.5);
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: rem(316);
   @include mq(md) {
-    margin-top: rem(8);
-    padding: rem(98) 0 rem(94);
+    margin-top: rem(140);
+    padding-top: rem(100);
+    padding-bottom: rem(100);
     box-shadow: none;
   }
 }

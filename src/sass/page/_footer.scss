@@ -25,9 +25,11 @@
   // top: calc(50% + rem(70));
   // left: calc(50% - rem(110));
   // transform: translate(-50%, -50%);
+  margin-top: rem(48);
   @include mq(md) {
     // position: absolute;
     width: rem(200);
+    margin-top: 0;
     // top: calc(50% + rem(104));
     // left: calc(50% - rem(440));
     // transform: translate(-50%, -50%);
@@ -38,6 +40,7 @@
   display: flex;
   position: relative;
   // left: rem(-170);
+  margin-top: rem(16);
   @include mq(md) {
     position: relative;
     margin-top: rem(38);
@@ -54,6 +57,7 @@
   // transform: translate(-50%, -50%);
   width: rem(24);
   // height: rem(24);
+  margin-left: rem(16);
   @include mq(md) {
     // position: absolute;
     // top: calc(50% + rem(16));
