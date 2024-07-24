@@ -3,13 +3,26 @@
 .voice {
   font-family: $base-font-family;
   position: relative;
+  // margin-top: rem(80);
+  @include mq(md) {
+    // margin: auto;
+    // margin-top: rem(146);
+  }
 }
-.voice__inner {
-  margin: auto;
+.l-voice{
   margin-top: rem(80);
   @include mq(md) {
-    margin: auto;
+    // margin: auto;
     margin-top: rem(146);
+  }
+}
+.voice__inner {
+  position: relative;
+  margin: auto;
+  // margin-top: rem(80);
+  @include mq(md) {
+    margin: auto;
+    // margin-top: rem(146);
   }
 }
 
@@ -28,7 +41,7 @@
      gap: rem(40);
     flex-direction: initial;
     justify-content: center;
-    margin: auto;
+    margin-top: rem(30);
     max-width: $inner + strip-unit($padding-pc) * 2;
     // padding-right: $padding-pc;
     // padding-left: $padding-pc;
@@ -120,12 +133,14 @@
   position: absolute;
   z-index: 10;
   @include mq(md) {
-    top: calc(50% + rem(302));
-    left: calc(50% + rem(506));
-    transform: translate(-50%, -50%);
+    // top: calc(50% + rem(302));
+    // left: calc(50% + rem(506));
+    // transform: translate(-50%, -50%);
+    top: rem(535);
+    right: rem(25);
     display: block;
     width: rem(71);
-    height: rem(162);
+    // height: rem(162);
   }
 }
 .button__voice {

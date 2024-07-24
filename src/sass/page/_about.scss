@@ -1,7 +1,11 @@
 @use "global" as *;
 
 .about {
-  margin: rem(78) 0 rem(74);
+}
+.l-about {
+  // overflow-x: hidden;
+  margin-top: rem(78);
+  margin-bottom: rem(74);
   @include mq(md) {
     margin: auto;
     margin-top: rem(138);

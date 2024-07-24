@@ -2,13 +2,19 @@
 
 .blog {
   position: relative;
+  // padding-top: rem(88);
+  @include mq(md) {
+    // position: relative;
+    // padding-top: rem(108);
+  }
+}
+.l-blog {
   padding-top: rem(88);
   @include mq(md) {
-    position: relative;
     padding-top: rem(108);
   }
 }
-.blog__inner{
+.blog__inner {
   // padding-top: rem(88);
   @include mq(md) {
     position: relative;

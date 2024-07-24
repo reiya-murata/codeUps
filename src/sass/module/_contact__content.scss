@@ -121,7 +121,7 @@
     box-shadow: rem(4) rem(4) rem(10) 0 rgba(0, 0, 0, 0.25);
     max-width: rem(1080);
     // height: rem(415);
-    margin: rem(140) 0 rem(160);
+    // margin: rem(140) 0 rem(160);
   }
 }
 .button__contact {
@@ -141,17 +141,16 @@
   position: absolute;
   width: rem(109);
   // height: rem(50);
-  top: calc(50% - rem(272));
-  left: calc(50% + rem(118));
-  transform: translate(-50%, -50%);
+  // top: calc(50% - rem(272));
+  // left: calc(50% + rem(118));
+  // transform: translate(-50%, -50%);
   @include mq(md) {
     position: absolute;
     width: rem(301);
     // height: rem(138);
-    top: calc(50% - rem(188));
-    left: calc(50% + rem(520));
-    transform: translate(-50%, -50%);
-    z-index: 10;
+    top: 0;
+    right: rem(60);
+    // z-index: 10;
   }
 }
 .contact__logo--codeups {

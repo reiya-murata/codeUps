@@ -186,7 +186,7 @@
     width: rem(194);
     // height: rem(181);
     bottom: rem(-91);
-    right: rem(-83);
+    right: calc(50% - min(48vw,39rem));
     z-index: 20;
   }
 }

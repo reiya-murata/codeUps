@@ -3,17 +3,28 @@
 .price {
   background-color: #ddf0f1;
   position: relative;
+  // padding-top: rem(80);
+  // padding-bottom: rem(80);
+  // margin-top: rem(80);
+  box-shadow: 0 rem(2) rem(5) 0 rgba(0, 0, 0, 0.5);
+  @include mq(md) {
+    // margin-top: rem(140);
+    // padding-top: rem(100);
+    // padding-bottom: rem(100);
+    box-shadow: none;
+  }
+}
+.l-price {
   padding-top: rem(80);
   padding-bottom: rem(80);
   margin-top: rem(80);
-  box-shadow: 0 rem(2) rem(5) 0 rgba(0, 0, 0, 0.5);
   @include mq(md) {
     margin-top: rem(140);
     padding-top: rem(100);
     padding-bottom: rem(100);
-    box-shadow: none;
   }
 }
+
 .price__inner {
   position: relative;
   display: flex;

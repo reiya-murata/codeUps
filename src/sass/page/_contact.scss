@@ -2,12 +2,20 @@
 
 .contact {
   position: relative;
-  overflow: hidden;
+  // overflow: hidden;
   @include mq(md) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: rem(16);
+    // margin-top: rem(140) ;
+    // margin-bottom:rem(160);
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    // margin-top: rem(16);
+  }
+}
+.l-contact{
+  @include mq(md) {
+    margin-top: rem(140) ;
+    margin-bottom:rem(160);
   }
 }
 .contact__inner {
