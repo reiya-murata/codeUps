@@ -79,7 +79,7 @@
 
 .nav__item--bold {
   font-weight: $bold;
-  margin-top: rem(40);
+  margin-top: rem(43);
   @include mq(md) {
     font-weight: $bold;
     margin-top: rem(40);
@@ -87,7 +87,7 @@
 }
 
 .nav__item--bold.top {
-  margin-top: rem(40);
+  margin-top: rem(36);
   font-weight: $bold;
   @include mq(md) {
     font-weight: $bold;
@@ -115,7 +115,6 @@
   position: relative;
   flex-direction: column;
   @include mq(md) {
-    padding-top: rem(80);
     max-width: none;
     display: flex;
     flex-direction: initial;

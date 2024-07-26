@@ -3,9 +3,19 @@
 .footer {
   position: relative;
   background-color: $blue;
-  margin-top: rem(100);
+  // margin-top: rem(100);
   @include mq(md) {
-    margin-top: rem(4);
+    // margin-top: rem(4);
+  }
+}
+.l-footer{
+  margin-top: rem(110);
+  padding-top: rem(48);
+  padding-bottom: rem(96);
+  @include mq(md) {
+    margin-top: rem(162);
+    padding-top: rem(80);
+    padding-bottom: rem(96);
   }
 }
 
@@ -25,7 +35,7 @@
   // top: calc(50% + rem(70));
   // left: calc(50% - rem(110));
   // transform: translate(-50%, -50%);
-  margin-top: rem(48);
+  // margin-top: rem(48);
   @include mq(md) {
     // position: absolute;
     width: rem(200);

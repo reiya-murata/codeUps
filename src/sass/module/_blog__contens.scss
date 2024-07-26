@@ -31,15 +31,15 @@
   // max-width: rem(600);
   // margin: auto;
   // margin-top: 0;
+  margin-top: rem(-8);
   @include mq(md) {
     // flex-direction: initial;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: rem(38);
     justify-content: center;
     // margin: auto;
-    margin-top: rem(80);
+    margin-top: rem(84);
     // max-width: none;
-    
     // width: 100%;
   }
 }
@@ -56,16 +56,19 @@
   font-family: $base-font-family;
   background-color: $white;
   min-width: rem(333);
+  // width: rem(333);
   max-width: rem(600);
-  padding: rem(20) rem(16) rem(24) rem(16);
-
+  padding-top: rem(16);
+  padding-right: rem(16);
+  padding-left: rem(16);
+  padding-bottom: rem(24);
   margin-top: rem(40);
   @include mq(md) {
-    
-    padding: rem(16) rem(16) rem(24) rem(16);
+    padding: rem(16) rem(18) rem(24) rem(18);
     max-width: rem(600);
-    width: rem(333);
-    margin-top:0;
+    // width: rem(333);
+    margin-top: 0;
+    min-width: auto;
     // margin: 0;
   }
 }
@@ -77,7 +80,7 @@
   max-width: fit-content;
   object-fit: cover;
   @include mq(md) {
-    width: rem(301);
+    // width: rem(301);
     // height: rem(201);
     display: inline-block;
     // margin: rem(16) rem(16) rem(12);
@@ -101,7 +104,7 @@
 
 .button__blog {
   text-align: center;
-  margin-top: rem(26);
+  margin-top: rem(40);
   @include mq(md) {
     margin-top: rem(84);
   }
@@ -113,10 +116,12 @@
     position: absolute;
     display: block;
     width: rem(437);
-    // height: rem(201);
-    top: calc(50% - rem(286));
-    left: calc(50% - rem(400));
-    transform: translate(-50%, -50%);
+    // // height: rem(201);
+    // top: calc(50% - rem(286));
+    // left: calc(50% - rem(400));
+    // transform: translate(-50%, -50%);
+    top: rem(-80);
+    left: rem(-55);
   }
 }
 .blog__logo--2 {
@@ -127,8 +132,10 @@
     display: block;
     width: rem(301);
     // height: rem(138);
-    top: calc(50% + rem(506));
-    left: calc(50% - rem(470));
-    transform: translate(-50%, -50%);
+    // top: calc(50% + rem(506));
+    // left: calc(50% - rem(470));
+    // transform: translate(-50%, -50%);
+    margin-top: rem(20);
+    margin-left: rem(-80);
   }
 }

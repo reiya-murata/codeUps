@@ -2,13 +2,13 @@
 
 .about {
 }
-.l-about {
+.l-about{
   // overflow-x: hidden;
-  margin-top: rem(78);
-  margin-bottom: rem(74);
+  margin-top: rem(80);
+  // margin-bottom: rem(74);
   @include mq(md) {
     margin: auto;
-    margin-top: rem(138);
+    margin-top: rem(140);
     margin-bottom: 0;
   }
 }

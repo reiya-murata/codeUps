@@ -9,9 +9,11 @@
   }
 }
 .l-blog {
-  padding-top: rem(88);
+  margin-top: rem(91);
+  // padding-top: rem(91);
   @include mq(md) {
-    padding-top: rem(108);
+    margin-top: 0;
+    padding-top: rem(104);
   }
 }
 .blog__inner {

@@ -4,30 +4,33 @@
   // padding-right: $padding-sp;
   // padding-left: $padding-sp;
   margin: auto;
-    @include mq("md") {
-      width: 100%;
+  @include mq("md") {
+    width: 100%;
     // padding-right: $padding-pc;
     // padding-left: $padding-pc;
   }
 }
+
+.contact__contents {
+  font-size: rem(16);
+  margin-top: rem(16);
+  @include mq(md) {
+    // margin-top: rem(4);
+    font-size: rem(16);
+  }
+}
+
 .contact__content {
   font-family: $base-font-family;
   text-align: center;
   line-height: 1.7;
-  margin-top: rem(162);
+  // margin-top: rem(162);
   @include mq(md) {
     text-align: left;
     line-height: 1.7;
-    margin: rem(70) rem(5) 0 rem(50);
+    // margin: rem(70) rem(5) 0 rem(50);
     font-size: rem(16);
-  }
-}
-.contact__contents {
-  font-size: rem(16);
-  margin-top: rem(4);
-  @include mq(md) {
-    margin-top: rem(4);
-    font-size: rem(16);
+    margin-left: rem(40);
   }
 }
 
@@ -42,9 +45,11 @@
   @include mq(md) {
     display: flex;
     line-height: 1.5;
+    border-right: 1px solid $blue;
     width: rem(572);
     border-top: none;
-    margin: 0;
+    margin-top: rem(84);
+    margin-bottom: rem(76);
     padding: 0;
   }
 }
@@ -52,14 +57,15 @@
   width: rem(295);
   // height: rem(160);
   text-align: center;
-  margin: rem(18) 0 0;
+  margin-top: rem(18);
   @include mq(md) {
     width: rem(273);
     // height: rem(148);
-    margin: rem(70) 0 0 rem(16);
+    // margin-top: rem(24) ;
+    margin-left: rem(21);
   }
 }
-.contact__map  {
+.contact__map {
   aspect-ratio: 273 / 148;
   object-fit: cover;
   width: rem(295);
@@ -75,6 +81,8 @@
   flex-direction: column;
   @include mq(md) {
     flex-direction: initial;
+    margin-top: rem(8);
+    margin-left: rem(10);
   }
 }
 .contact__right {
@@ -82,14 +90,13 @@
   font-size: rem(16);
   line-height: 1;
   font-family: $base-font-family;
-  margin: rem(40) 0 0;
+  margin-top: rem(32);
   border: none;
   max-width: rem(600);
   @include mq(md) {
     display: flex;
     flex-direction: column;
     line-height: 1;
-    border-left: 1px solid $blue;
     display: flex;
     padding: rem(2) rem(112) rem(0) rem(80);
     border-top: none;
@@ -144,22 +151,33 @@
   // top: calc(50% - rem(272));
   // left: calc(50% + rem(118));
   // transform: translate(-50%, -50%);
+  top: rem(-26);
+  right: rem(15);
   @include mq(md) {
     position: absolute;
     width: rem(301);
     // height: rem(138);
-    top: 0;
-    right: rem(60);
+    top: rem(-38);
+    right: rem(50);
     // z-index: 10;
   }
 }
 .contact__logo--codeups {
-  position: relative;
   text-align: center;
+  border-bottom: rem(1) solid $blue;
+  width: rem(295);
+  padding-right: rem(60);
+  padding-left: rem(60);
+  padding-bottom: rem(6);
   @include mq(md) {
-    position: relative;
-    padding: 0 rem(119) rem(9) rem(121);
-    margin: rem(80) rem(82) rem(24) rem(50);
+    width: rem(440);
+    // padding: 0 rem(119) rem(9) rem(121);
+    // margin: rem(80) rem(82) rem(24) rem(50);
+    padding-left: rem(120);
+    padding-right: rem(120);
+    // margin-top: rem(82);
+    margin-left: rem(50);
+    padding-bottom: rem(8);
   }
 }
 // .contact__logo--codeups source {
@@ -169,24 +187,23 @@
 //     width: rem(200);
 //   }
 // }
-.contact__logo--codeups img{
-  position: absolute;
+.contact__logo--codeups img {
+  // position: absolute;
   display: block;
   z-index: 15;
-  width: rem(295);
-  top: calc(50% + rem(115));
-  left: calc(50% + rem(0));
-  transform: translate(-50%, -50%);
-  border-bottom: rem(1) solid $blue;
-  padding: 0 rem(60) rem(6);
+  // width: rem(295);
+  // top: calc(50% + rem(115));
+  // left: calc(50% + rem(0));
+  // transform: translate(-50%, -50%);
+  // padding: 0 rem(60) ;
   @include mq(md) {
-    position: absolute;
+    // position: absolute;
     display: block;
-    width: rem(440);
-    border-bottom: rem(1) solid $blue;
-    padding: 0 rem(120) rem(8);
-    top: calc(50% + rem(38));
-    left: calc(50% + rem(0));
-    transform: translate(-50%, -50%);
+    width: 100%;
+    // border-bottom: rem(1) solid $blue;
+    // padding: 0 rem(120) rem(8);
+    // top: calc(50% + rem(38));
+    // left: calc(50% + rem(0));
+    // transform: translate(-50%, -50%);
   }
 }
