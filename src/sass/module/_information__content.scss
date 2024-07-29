@@ -5,14 +5,13 @@
   flex-direction: column;
   max-width: rem(600);
   margin: auto;
-  padding: 0;
   @include mq(md) {
     display: flex;
     gap: rem(48);
     flex-direction: initial;
     justify-content: space-between;
     max-width: none;
-    padding: rem(44) 0 0 0;
+    margin-top: rem(44);
     // gap: rem(18);
   }
 }
@@ -30,7 +29,7 @@
     padding: 0;
     border-bottom: rem(1) solid $blue;
     padding-bottom: rem(8);
-    margin-top: rem(66);
+    margin-top: rem(62);
   }
 }
 
@@ -49,12 +48,11 @@
 .information__content--text {
   font-family: $base-font-family;
   font-weight: $normal;
-  padding-top: rem(8);
+  margin-top: rem(8);
   @include mq(md) {
     font-family: $base-font-family;
     font-size: rem(16);
     line-height: 1.5;
-    padding: rem(6) 0 0;
   }
 }
 

@@ -94,7 +94,7 @@
   margin-top: rem(10);
   @include mq(md) {
     margin-top: rem(14);
-    padding-right: rem(14);
+    margin-right: rem(14);
     font-size: rem(16);
   }
 }
@@ -140,11 +140,11 @@
   }
 }
 
-.card__campaign--prices--night {
-  display: flex;
-  justify-content: center;
-  margin: rem(0) rem(16) 0 rem(2);
-  @include mq(md) {
-    margin: rem(0) rem(24) 0 rem(2);
-  }
-}
+// .card__campaign--prices--night {
+//   display: flex;
+//   justify-content: center;
+//   margin: rem(0) rem(16) 0 rem(2);
+//   @include mq(md) {
+//     margin: rem(0) rem(24) 0 rem(2);
+//   }
+// }
