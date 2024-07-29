@@ -6,7 +6,7 @@
   margin-top: rem(80);
   // margin-bottom: rem(74);
   @include mq(md) {
-    margin: auto;
+    // margin: auto;
     margin-top: rem(140);
     margin-bottom: 0;
   }
@@ -16,7 +16,7 @@
   position: relative;
   // height: rem(680);
   // max-height: rem(900);
-  margin: auto;
+  // margin: auto;
   @include mq(md) {
     // overflow: hidden;
     position: relative;

@@ -73,6 +73,7 @@
     // height: rem(581);
   }
 }
+
 .about__img--2 img {
   display: block;
   max-width: 100%;
@@ -85,7 +86,7 @@
   font-weight: $regular;
   color: $blue;
   max-width: rem(600);
-  margin: auto;
+  // margin: auto;
   // top: rem(240);
   margin-left: 0;
   // width: 100%;
@@ -170,7 +171,7 @@
   text-align: center;
   z-index: 10;
   position: relative;
-  margin-top: rem(40);
+  margin-top: rem(50);
   left: rem(0);
   @include mq(md) {
     top: 0;
