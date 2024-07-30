@@ -27,14 +27,14 @@
 
 .price__inner {
   position: relative;
-  display: flex;
-  flex-direction: column-reverse;
+  // display: flex;
+  // flex-direction: column-reverse;
   align-items: center;
   margin: auto;
   @include mq(md) {
     margin: auto;
-    position: relative;
-    display: flex;
+    // position: relative;
+    // display: flex;
     flex-direction: initial;
     justify-content: space-between;
   }

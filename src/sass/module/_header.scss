@@ -80,7 +80,9 @@
 
 
 .header.active {
-  background-color: transparent;
+  position: fixed;
+  background: $black;
+  z-index: 25;
 }
 
 .logo__img--codeups  {

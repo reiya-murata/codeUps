@@ -339,8 +339,6 @@ a {
 
 .price__inner {
 	align-items: center;
-	display: flex;
-	flex-direction: column-reverse;
 	margin: auto;
 	position: relative;
 }
@@ -363,7 +361,7 @@ a {
 	display: grid;
 	flex-direction: column;
 	gap: 2.5rem;
-	margin-top: 3.125rem;
+	margin-top: 2.5rem;
 	max-width: 37.5rem;
 }
 
@@ -543,23 +541,23 @@ a {
 	position: relative;
 }
 
+.blog__cards a {
+	display: block;
+}
+
 .card__blog {
 	background-color: #fff;
 	box-shadow: 0.125rem 0.125rem 0.625rem 0rem rgba(0, 0, 0, 0.25);
 	font-family: "Noto Sans JP", sans-serif;
-	margin: auto;
 	margin-top: 2.5rem;
-	min-width: 20.8125rem;
 	padding-bottom: 1.5rem;
 	padding-left: 1rem;
 	padding-right: 1rem;
 	padding-top: 1rem;
-	width: 20.8125rem;
 }
 
 .card__blog .card__body {
-	grid-row: 2;
-	margin-top: 0.625rem;
+	margin-top: 0.875rem;
 	padding: 0;
 }
 
@@ -568,7 +566,6 @@ a {
 	aspect-ratio: 301/201;
 	object-fit: cover;
 	text-align: center;
-	width: 18.8125rem;
 }
 
 .card__title--blog {
@@ -1010,7 +1007,9 @@ div.colorbox {
 }
 
 .header.active {
-	background-color: transparent;
+	background: #111;
+	position: fixed;
+	z-index: 25;
 }
 
 .logo__img--codeups {
@@ -1428,6 +1427,12 @@ div.colorbox {
 	z-index: 20; /* 要素を他の要素の上に配置 */
 }
 
+.price__contents {
+	display: flex;
+	flex-direction: column-reverse;
+	margin-top: 1.5rem;
+}
+
 .price__contents--left {
 	display: flex;
 	flex-direction: column;
@@ -1440,7 +1445,6 @@ div.colorbox {
 
 .price__contents--right {
 	display: block;
-	margin: 1.75rem 0 0;
 	max-width: 37.5rem;
 }
 
@@ -1800,11 +1804,9 @@ html {
 }
 
 .price__inner {
-	display: flex;
 	flex-direction: initial;
 	justify-content: space-between;
 	margin: auto;
-	position: relative;
 }
 
 .l-voice {
@@ -1974,10 +1976,8 @@ html {
 }
 
 .blog__cards {
-	flex-direction: initial;
 	gap: 2.375rem;
 	grid-template-columns: repeat(3, 1fr);
-	justify-content: center;
 	margin-top: 5.25rem;
 }
 
@@ -1988,12 +1988,8 @@ html {
 }
 
 .card__blog .card__body {
-	margin-top: 0.625rem;
+	margin-top: 0.875rem;
 	padding: 0;
-}
-
-.card__header--blog {
-	display: inline-block;
 }
 
 .card__title--blog {
@@ -2495,12 +2491,17 @@ html {
 	display: none;
 }
 
+.price__contents {
+	flex-direction: inherit;
+	justify-content: space-between;
+	margin-top: 2.875rem;
+}
+
 .price__contents--left {
 	align-self: start;
 	display: flex;
 	flex-direction: column;
 	justify-content: start;
-	margin: 3.125rem 0rem 0 0rem;
 	padding: 0;
 	width: 30.875rem;
 }
@@ -2508,7 +2509,6 @@ html {
 .price__contents--right {
 	align-self: start;
 	display: block;
-	margin-top: 2.8125rem;
 	width: 30.75rem;
 }
 
