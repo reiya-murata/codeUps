@@ -13,6 +13,27 @@
     // margin: rem(16) rem(16) rem(12);
   }
 }
+.blog__cards .card__body {
+  grid-row: 2;
+  padding-top: rem(16);
+  width: 100%;
+  @include mq(md) {
+    width: 100%;
+    padding-top: rem(14);
+  }
+}
+
+.blog__cards .card__date {
+  font-family: $second-font-family;
+  line-height: 1;
+  font-size: rem(12);
+  @include mq(md) {
+    font-size: rem(12);
+    line-height: 1;
+    margin-top: rem(13);
+    padding: 0;
+  }
+}
 .card__title--blog {
   border-bottom: rem(1) solid $blue;
   font-family: $base-font-family;
@@ -31,6 +52,8 @@
     font-family: $base-font-family;
   }
 }
+
+
 
 .blog__cards :hover {
   opacity: 0.7;
