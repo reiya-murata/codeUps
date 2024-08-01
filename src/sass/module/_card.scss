@@ -10,7 +10,7 @@
   }
 }
 
-.card__text {
+.card__text--blog {
   margin-top: rem(16);
   @include mq(md) {
     font-size: rem(16);
@@ -85,7 +85,7 @@
   }
 }
 
-.card__body {
+.blog__cards .card__body {
   grid-row: 2;
   padding-top: rem(16);
   width: 100%;
@@ -95,7 +95,7 @@
   }
 }
 
-.card__date {
+.blog__cards .card__date {
   font-family: $second-font-family;
   line-height: 1;
   font-size: rem(12);
@@ -107,7 +107,7 @@
   }
 }
 
-.card__img {
+.voice__cards .card__img {
   align-self: end;
   grid-row: 1;
   grid-column: 2;
@@ -123,7 +123,7 @@
     // height: rem(140);
   }
 }
-.card__img {
+.voice__cards .card__img {
   aspect-ratio: 140 / 180;
   object-fit: cover;
   max-width: rem(151);

@@ -54,7 +54,7 @@
     // margin: rem(40) 0 0;
   }
 }
-.card__blog {
+.blog__cards .cards__item {
   box-shadow: rem(2) rem(2) rem(10) rem(0) rgba(0, 0, 0, 0.25);
   font-family: $base-font-family;
   background-color: $white;
@@ -77,10 +77,9 @@
   }
 }
 
-
-.card__blog .card__body{
+.blog__cards .cards__item .card__body {
   margin-top: rem(14);
-    padding: 0;
+  padding: 0;
   @include mq(md) {
     margin-top: rem(14);
     padding: 0;
