@@ -7,15 +7,27 @@ jQuery(function ($) {// この中であればWordpressでも「$」が使用可�
 var burger = document.querySelector(".hamburger");
 var nav = document.querySelector(".nav");
 var header = document.querySelectorAll(".header");
+var header__inner = document.querySelectorAll(".header__inner");
 burger.addEventListener("click", function () {
   nav.classList.toggle("active");
   if (nav.classList.contains("active")) {
-    // .nav.activeの場合
+    $("body").css("overflow", "hidden");
     setTimeout(function () {
       nav.style.height = "100vh"; // 100vhまでの高さに変化
     }, 0); // 50ミリ秒後に実行（適宜調整してください）
+
+    // header__inner に active クラスを付与
+    header__inner.forEach(function (headerInnerElement) {
+      headerInnerElement.classList.add("active");
+    });
   } else {
     nav.style.height = "0"; // 高さを0に変化させて非表示
+    $("body").css("overflow", "auto");
+
+    // header__inner から active クラスを削除
+    header__inner.forEach(function (headerInnerElement) {
+      headerInnerElement.classList.remove("active");
+    });
   }
 
   // burger animation

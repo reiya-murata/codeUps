@@ -967,11 +967,13 @@ div.colorbox {
 
 .header__inner {
 	align-items: center;
+	background: transparent;
 	display: flex;
 	height: inherit;
 	justify-content: space-between;
 	padding: 0 0.9375rem;
 	width: 100%;
+	z-index: 20;
 }
 
 .header__inner--logo {
@@ -1010,6 +1012,11 @@ div.colorbox {
 	background: #111;
 	position: fixed;
 	z-index: 25;
+}
+
+.active.header__inner {
+	background: #408f95;
+	z-index: 20;
 }
 
 .logo__img--codeups {
@@ -1215,7 +1222,6 @@ div.colorbox {
 	color: #fff;
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1rem;
-	height: 100vh;
 	min-width: 10.375rem;
 	padding-left: 1.25rem;
 	width: 10.375rem;
@@ -1226,7 +1232,6 @@ div.colorbox {
 	color: #fff;
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1rem;
-	height: 100vh;
 	margin-left: 1.875rem;
 	min-width: 9.375rem;
 	width: 9.375rem;
@@ -2374,7 +2379,6 @@ html {
 	color: #fff;
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1rem;
-	height: 100vh;
 	width: 50%;
 	z-index: 15;
 }
@@ -2383,7 +2387,6 @@ html {
 	color: #fff;
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1rem;
-	height: 100vh;
 	width: 50%;
 	z-index: 15;
 }

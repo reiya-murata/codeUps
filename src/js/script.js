@@ -7,16 +7,29 @@ jQuery(function ($) {// この中であればWordpressでも「$」が使用可�
 const burger = document.querySelector(".hamburger");
 const nav = document.querySelector(".nav");
 const header = document.querySelectorAll(".header");
+const header__inner = document.querySelectorAll(".header__inner");
 
 burger.addEventListener("click", () => {
   nav.classList.toggle("active");
+  
   if (nav.classList.contains("active")) {
-    // .nav.activeの場合
+    $("body").css("overflow","hidden");
     setTimeout(() => {
       nav.style.height = "100vh"; // 100vhまでの高さに変化
     }, 0); // 50ミリ秒後に実行（適宜調整してください）
+    
+    // header__inner に active クラスを付与
+    header__inner.forEach((headerInnerElement) => {
+      headerInnerElement.classList.add("active");
+    });
   } else {
     nav.style.height = "0"; // 高さを0に変化させて非表示
+    $("body").css("overflow","auto");
+    
+    // header__inner から active クラスを削除
+    header__inner.forEach((headerInnerElement) => {
+      headerInnerElement.classList.remove("active");
+    });
   }
 
   // burger animation
@@ -25,6 +38,7 @@ burger.addEventListener("click", () => {
     headerElement.classList.toggle("active");
   });
 });
+
 
 
 
