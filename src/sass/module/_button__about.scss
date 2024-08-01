@@ -1,0 +1,13 @@
+@use "global" as *;
+.button__about {
+  text-align: center;
+  z-index: 10;
+  position: relative;
+  margin-top: rem(50);
+  left: rem(0);
+  @include mq(md) {
+    top: 0;
+    margin-top: rem(40);
+    // left: rem(18);
+  }
+}

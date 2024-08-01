@@ -131,18 +131,7 @@
     // margin: rem(140) 0 rem(160);
   }
 }
-.button__contact {
-  margin-top: rem(40);
-  padding: 0;
-  @include mq(md) {
-    // position: absolute;
-    // top: calc(50% + rem(66));
-    // left: calc(50% + rem(268));
-    // transform: translate(-50%, -50%);
-    margin-top: rem(40);
-    text-align: center;
-  }
-}
+
 
 .contact__logo--fish {
   position: absolute;

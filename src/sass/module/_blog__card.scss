@@ -1,0 +1,37 @@
+@use "global" as *;
+
+.card__header--blog {
+  aspect-ratio: 301 / 201;
+  // width: rem(301);
+  // max-width: fit-content;
+  object-fit: cover;
+  text-align: center;
+  @include mq(md) {
+    // width: rem(301);
+    // height: rem(201);
+    // display: inline-block;
+    // margin: rem(16) rem(16) rem(12);
+  }
+}
+.card__title--blog {
+  border-bottom: rem(1) solid $blue;
+  font-family: $base-font-family;
+  font-size: rem(16);
+  padding-bottom: rem(4);
+  @include mq(md) {
+    font-size: rem(16);
+    margin: 0;
+    padding-bottom: rem(2);
+  }
+}
+.card__text--blog {
+  margin-top: rem(16);
+  @include mq(md) {
+    font-size: rem(16);
+    font-family: $base-font-family;
+  }
+}
+
+.blog__cards :hover {
+  opacity: 0.7;
+}

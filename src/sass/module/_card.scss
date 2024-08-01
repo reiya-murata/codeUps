@@ -10,14 +10,6 @@
   }
 }
 
-.card__text--blog {
-  margin-top: rem(16);
-  @include mq(md) {
-    font-size: rem(16);
-    font-family: $base-font-family;
-  }
-}
-
 .card__slider {
   grid-template-columns: auto;
   grid-row: 1;

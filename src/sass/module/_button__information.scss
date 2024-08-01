@@ -1,0 +1,8 @@
+@use "global" as *;
+.button__information {
+  text-align: center;
+  margin-top: rem(40);
+  @include mq(md) {
+  text-align: center;
+  }
+}

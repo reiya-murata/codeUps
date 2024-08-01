@@ -196,11 +196,6 @@ a {
 	padding-bottom: 0.3125rem;
 }
 
-.button__campaign {
-	margin-top: 1.875rem;
-	text-align: center;
-}
-
 .card__title--campaign {
 	border-bottom: 0.0625rem solid #408f95;
 	display: flex;
@@ -425,11 +420,6 @@ a {
 	z-index: 10;
 }
 
-.button__voice {
-	margin-top: 2.5rem;
-	text-align: center;
-}
-
 .about__body {
 	display: flex;
 	flex-direction: column;
@@ -518,20 +508,30 @@ a {
 	display: none;
 }
 
-.button__about {
-	left: 0rem;
-	margin-top: 3.125rem;
-	position: relative;
-	text-align: center;
-	z-index: 10;
-}
-
 .about__logo {
 	display: none;
 }
 
-.blog__bg--img {
-	display: none;
+.card__header--blog {
+	-o-object-fit: cover;
+	aspect-ratio: 301/201;
+	object-fit: cover;
+	text-align: center;
+}
+
+.card__title--blog {
+	border-bottom: 0.0625rem solid #408f95;
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 1rem;
+	padding-bottom: 0.25rem;
+}
+
+.card__text--blog {
+	margin-top: 1rem;
+}
+
+.blog__cards :hover {
+	opacity: 0.7;
 }
 
 .blog__cards {
@@ -561,27 +561,8 @@ a {
 	padding: 0;
 }
 
-.card__header--blog {
-	-o-object-fit: cover;
-	aspect-ratio: 301/201;
-	object-fit: cover;
-	text-align: center;
-}
-
-.card__title--blog {
-	border-bottom: 0.0625rem solid #408f95;
-	font-family: "Noto Sans JP", sans-serif;
-	font-size: 1rem;
-	padding-bottom: 0.25rem;
-}
-
-.blog__cards :hover {
-	opacity: 0.7;
-}
-
-.button__blog {
-	margin-top: 2.5rem;
-	text-align: center;
+.blog__bg--img {
+	display: none;
 }
 
 .blog__logo--1 {
@@ -591,6 +572,44 @@ a {
 .blog__logo--2 {
 	display: none;
 	z-index: 15;
+}
+
+.button__about {
+	left: 0rem;
+	margin-top: 3.125rem;
+	position: relative;
+	text-align: center;
+	z-index: 10;
+}
+
+.button__blog {
+	margin-top: 2.5rem;
+	text-align: center;
+}
+
+.button__campaign {
+	margin-top: 1.875rem;
+	text-align: center;
+}
+
+.button__contact {
+	margin-top: 2.5rem;
+	padding: 0;
+}
+
+.button__information {
+	margin-top: 2.5rem;
+	text-align: center;
+}
+
+.button__price {
+	margin-top: 2.5rem;
+	text-align: center;
+}
+
+.button__voice {
+	margin-top: 2.5rem;
+	text-align: center;
 }
 
 .button {
@@ -668,20 +687,11 @@ a {
 	z-index: 2;
 }
 
-.button__price {
-	margin-top: 2.5rem;
-	text-align: center;
-}
-
 .card {
 	background-color: #fff;
 	box-shadow: 0.125rem 0.125rem 0.625rem 0rem rgba(0, 0, 0, 0.25);
 	font-family: "Noto Sans JP", sans-serif;
 	position: relative;
-}
-
-.card__text--blog {
-	margin-top: 1rem;
 }
 
 .card__slider {
@@ -863,11 +873,6 @@ div.colorbox {
 	flex-direction: column;
 	max-width: 37.5rem;
 	text-align: center;
-}
-
-.button__contact {
-	margin-top: 2.5rem;
-	padding: 0;
 }
 
 .contact__logo--fish {
@@ -1112,11 +1117,6 @@ div.colorbox {
 	aspect-ratio: 540/356;
 	max-width: -moz-fit-content;
 	max-width: fit-content;
-}
-
-.button__information {
-	margin-top: 2.5rem;
-	text-align: center;
 }
 
 .main__swiper img {
@@ -1723,10 +1723,6 @@ html {
 	top: 0;
 }
 
-.button__campaign {
-	margin-top: 5rem;
-}
-
 .card__title--campaign {
 	font-size: 0.75rem;
 	letter-spacing: -0.18em;
@@ -1874,11 +1870,6 @@ html {
 	width: 4.4375rem;
 }
 
-.button__voice {
-	margin-top: 5rem;
-	text-align: center;
-}
-
 .about__body {
 	align-items: center;
 	flex-direction: initial;
@@ -1949,11 +1940,6 @@ html {
 	display: inline-block;
 }
 
-.button__about {
-	margin-top: 2.5rem;
-	top: 0;
-}
-
 .about__logo {
 	bottom: -5.6875rem;
 	display: block;
@@ -1963,21 +1949,15 @@ html {
 	z-index: 20;
 }
 
-.blog__bg--img {
-	display: block;
-	position: absolute;
-	top: 50%;
-	top: 15.9375rem;
-	transform: translateY(-50%);
-	z-index: -1;
+.card__title--blog {
+	font-size: 1rem;
+	margin: 0;
+	padding-bottom: 0.125rem;
 }
 
-.blog__bg--img img {
-	display: block;
-	height: 31.25rem;
-	max-height: 500px;
-	width: 100vw;
-	z-index: 1;
+.card__text--blog {
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 1rem;
 }
 
 .blog__cards {
@@ -1997,14 +1977,21 @@ html {
 	padding: 0;
 }
 
-.card__title--blog {
-	font-size: 1rem;
-	margin: 0;
-	padding-bottom: 0.125rem;
+.blog__bg--img {
+	display: block;
+	position: absolute;
+	top: 50%;
+	top: 15.9375rem;
+	transform: translateY(-50%);
+	z-index: -1;
 }
 
-.button__blog {
-	margin-top: 5.25rem;
+.blog__bg--img img {
+	display: block;
+	height: 31.25rem;
+	max-height: 500px;
+	width: 100vw;
+	z-index: 1;
 }
 
 .blog__logo--1 {
@@ -2023,20 +2010,42 @@ html {
 	width: 18.8125rem;
 }
 
-.button {
-	height: 3.25rem;
-	line-height: 1.5;
-	width: 12.625rem;
-	z-index: 1;
+.button__about {
+	margin-top: 2.5rem;
+	top: 0;
+}
+
+.button__blog {
+	margin-top: 5.25rem;
+}
+
+.button__campaign {
+	margin-top: 5rem;
+}
+
+.button__contact {
+	margin-top: 2.5rem;
+	text-align: center;
+}
+
+.button__information {
+	text-align: center;
 }
 
 .button__price {
 	margin-top: 5rem;
 }
 
-.card__text--blog {
-	font-family: "Noto Sans JP", sans-serif;
-	font-size: 1rem;
+.button__voice {
+	margin-top: 5rem;
+	text-align: center;
+}
+
+.button {
+	height: 3.25rem;
+	line-height: 1.5;
+	width: 12.625rem;
+	z-index: 1;
 }
 
 .card__slider {
@@ -2173,11 +2182,6 @@ html {
 	display: flex;
 	flex-direction: initial;
 	max-width: 67.5rem;
-}
-
-.button__contact {
-	margin-top: 2.5rem;
-	text-align: center;
 }
 
 .contact__logo--fish {
@@ -2323,10 +2327,6 @@ html {
 	height: 22.25rem;
 	margin-top: 0.125rem;
 	width: 33.75rem;
-}
-
-.button__information {
-	text-align: center;
 }
 
 .main__swiper img {
