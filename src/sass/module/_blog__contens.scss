@@ -4,11 +4,10 @@
   display: none;
   @include mq(md) {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 0;
     z-index: -1;
-    top: rem(255);
     display: block;
+    margin-top: 0;
   }
 }
 .blog__bg--img img {
@@ -18,6 +17,7 @@
     max-height: 500px;
     width: 100vw;
     display: block;
+    object-fit: cover;
   }
 }
 

@@ -1,7 +1,7 @@
 @use "global" as *;
 .button__voice {
   text-align: center;
-  margin-top: rem(40);
+  margin-top: rem(36);
   @include mq(md) {
     text-align: center;
     margin-top: rem(80);

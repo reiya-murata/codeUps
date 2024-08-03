@@ -33,6 +33,22 @@
     // margin: rem(40) 0 0;
   }
 }
+
+.cards__item{
+  box-shadow: rem(2) rem(2) rem(10) rem(0) rgba(0, 0, 0, 0.25);
+  font-family: $base-font-family;
+  background-color: $white;
+  padding-top: rem(16);
+  padding-right: rem(16);
+  padding-left: rem(16);
+  padding-bottom: rem(24);
+  margin-top: rem(40);
+  @include mq(md) {
+    padding: rem(16) rem(18) rem(24) rem(18);
+    margin-top: 0;
+    min-width: auto;
+  }
+}
 .blog__cards .cards__item {
   box-shadow: rem(2) rem(2) rem(10) rem(0) rgba(0, 0, 0, 0.25);
   font-family: $base-font-family;
@@ -46,7 +62,7 @@
   padding-bottom: rem(24);
   // margin: auto;
   margin-top: rem(40);
-  width: rem(333);
+  // width: rem(333);
   @include mq(md) {
     padding: rem(16) rem(18) rem(24) rem(18);
     // max-width: rem(600);

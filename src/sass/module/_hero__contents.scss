@@ -64,13 +64,17 @@
   background-repeat: no-repeat;
   position: relative;
   object-fit: cover;
+  height: 100%;
   // aspect-ratio: 375 / 667;
   @include mq(md) {
-    object-fit: cover;
+    // object-fit: cover;
     height: 100vh;
     width: 100%;
     // aspect-ratio: 1440 / 768;
   }
+}
+.hero__img img{
+  object-fit: cover;
 }
 .hero__img  {
   z-index: 10;

@@ -58,27 +58,27 @@
 .header__home{
   position: fixed;
   display: flex;
-  color: $blue;
-  width: rem(48);
-  height: rem(48);
-  border: 1px solid;
-  border-radius: 50px;
-  align-items: center;
-  justify-content: center;
-  font-size: rem(32);
+  // color: $blue;
+  // width: rem(48);
+  // height: rem(48);
+  // border: 1px solid;
+  // border-radius: 50px;
+  // align-items: center;
+  // justify-content: center;
+  // font-size: rem(32);
   bottom: rem(16);
   right: rem(16);
   @include mq(md) {
     bottom: rem(20);
-    right: rem(20);
-    width: rem(80);
-  height: rem(80);
+    right: rem(16);
+    width: rem(90);
+  height: rem(90);
   }
 }
 .header__home a{
   width: rem(48);
   @include mq(md) {
-    width: rem(80);
+    width: rem(90);
   }
 }
 
