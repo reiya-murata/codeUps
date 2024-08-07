@@ -274,7 +274,7 @@ a {
 
 .contact::before {
 	-o-object-fit: cover;
-	background-image: url("/assets/images/common/_kingyohanadai 2.svg");
+	background-image: url("../images/common/_kingyohanadai 2.svg");
 	background-size: contain;
 	content: "";
 	display: block;
@@ -1709,7 +1709,7 @@ html {
 
 .about::before {
 	-o-object-fit: cover;
-	background-image: url("/assets/images/common/_coral.svg");
+	background-image: url("../images/common/_coral.svg");
 	background-repeat: no-repeat;
 	background-size: contain;
 	bottom: -5.6875rem;
@@ -1734,7 +1734,7 @@ html {
 
 .blog::before {
 	-o-object-fit: cover;
-	background-image: url("/assets/images/common/_kingyohanadai.svg");
+	background-image: url("../images/common/_kingyohanadai.svg");
 	background-repeat: no-repeat;
 	background-size: contain;
 	content: "";
@@ -1750,7 +1750,7 @@ html {
 
 .blog::after {
 	-o-object-fit: cover;
-	background-image: url("/assets/images/common/_kingyohanadai-right.svg");
+	background-image: url("../images/common/_kingyohanadai-right.svg");
 	background-repeat: no-repeat;
 	background-size: contain;
 	bottom: -10.3125rem;
@@ -1828,7 +1828,7 @@ html {
 
 .contact::before {
 	-o-object-fit: cover;
-	background-image: url("/assets/images/common/_kingyohanadai 2.svg");
+	background-image: url("../images/common/_kingyohanadai 2.svg");
 	background-repeat: no-repeat;
 	background-size: contain;
 	content: "";
@@ -1890,7 +1890,7 @@ html {
 
 .price::before {
 	-o-object-fit: cover;
-	background-image: url("/assets/images/common/_kingyohanadai 2.svg");
+	background-image: url("../images/common/_kingyohanadai 2.svg");
 	background-repeat: no-repeat;
 	background-size: contain;
 	bottom: 3.375rem;
@@ -1918,7 +1918,7 @@ html {
 
 .voice::before {
 	-o-object-fit: cover;
-	background-image: url("/assets/images/common/_ibaratatu.svg");
+	background-image: url("../images/common/_ibaratatu.svg");
 	background-repeat: no-repeat;
 	background-size: contain;
 	bottom: -4.625rem;
