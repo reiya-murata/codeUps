@@ -135,24 +135,24 @@
 }
 
 
-.contact__logo--fish {
-  position: absolute;
-  width: rem(109);
-  height: rem(50);
-  // top: calc(50% - rem(272));
-  // left: calc(50% + rem(118));
-  // transform: translate(-50%, -50%);
-  top: rem(-26);
-  right: rem(15);
-  @include mq(md) {
-    position: absolute;
-    width: rem(301);
-    height: rem(138);
-    top: rem(-38);
-    right: rem(50);
-    // z-index: 10;
-  }
-}
+// .contact__logo--fish {
+//   position: absolute;
+//   width: rem(109);
+//   height: rem(50);
+//   // top: calc(50% - rem(272));
+//   // left: calc(50% + rem(118));
+//   // transform: translate(-50%, -50%);
+//   top: rem(-26);
+//   right: rem(15);
+//   @include mq(md) {
+//     position: absolute;
+//     width: rem(301);
+//     height: rem(138);
+//     top: rem(-38);
+//     right: rem(50);
+//     // z-index: 10;
+//   }
+// }
 .contact__logo--codeups {
   text-align: center;
   border-bottom: rem(1) solid $blue;

@@ -48,19 +48,19 @@
 }
 
 
-.voice__logo--ibaratatu {
-  display: none;
-  position: absolute;
-  z-index: 10;
-  @include mq(md) {
-    // top: calc(50% + rem(302));
-    // left: calc(50% + rem(506));
-    // transform: translate(-50%, -50%);
-    top: rem(535);
-    right: rem(25);
-    display: block;
-    width: rem(71);
-    // height: rem(162);
-  }
-}
+// .voice__logo--ibaratatu {
+//   display: none;
+//   position: absolute;
+//   z-index: 10;
+//   @include mq(md) {
+//     // top: calc(50% + rem(302));
+//     // left: calc(50% + rem(506));
+//     // transform: translate(-50%, -50%);
+//     top: rem(535);
+//     right: rem(25);
+//     display: block;
+//     width: rem(71);
+//     // height: rem(162);
+//   }
+// }
 
