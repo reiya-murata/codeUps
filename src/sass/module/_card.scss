@@ -4,9 +4,13 @@
   box-shadow: rem(2) rem(2) rem(10) rem(0) rgba(0, 0, 0, 0.25);
   font-family: $base-font-family;
   background-color: $white;
-  position: relative;
+  padding-top: rem(16);
+  padding-right: rem(16);
+  padding-left: rem(16);
+  padding-bottom: rem(24);
   @include mq(md) {
-    // margin: rem(40) rem(20) 0;
+    padding: rem(16) rem(18) rem(24) rem(18);
+    min-width: auto;
   }
 }
 

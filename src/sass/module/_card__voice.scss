@@ -1,18 +1,22 @@
 @use "global" as *;
-.voice__cards .card {
+.card__voice {
+  box-shadow: rem(2) rem(2) rem(10) rem(0) rgba(0, 0, 0, 0.25);
   min-width: rem(345);
-  max-width: rem(600);
+  // max-width: rem(600);
   // margin-bottom:rem(40);
-  padding-top: rem(16);
+  padding-top: rem(22);
   padding-left: rem(16);
   padding-right: rem(16);
-   
+  padding-bottom: rem(24);
   @include mq(md) {
-    max-width: rem(520);
+    // max-width: rem(520);
     // width: rem(520);
     min-width: auto;
     // margin: rem(32) 0 0 0;
-    padding: rem(24);
+    padding-top: rem(24);
+    padding-left: rem(24);
+    padding-right: rem(24);
+    padding-bottom: rem(24);
   }
 }
 .card__inner--voice {
@@ -54,7 +58,7 @@
     margin-top: rem(30);
   }
 }
-.voice__cards .card__img {
+.card__voice .card__img {
   // margin-top: ;
   grid-row: 1;
   grid-column: 2;
@@ -70,14 +74,14 @@
     // height: rem(140);
   }
 }
-.voice__cards .card__img {
+.card__voice .card__img {
   aspect-ratio: 180 / 140;
   object-fit: cover;
   max-width: rem(151);
   // width: rem(151);
   // max-height: rem(117);
   height: 100%;
-  margin-top:auto;
+  margin-top: auto;
   @include mq(md) {
     aspect-ratio: 180 / 140;
     object-fit: cover;
@@ -88,7 +92,7 @@
     // max-height: rem(140);
   }
 }
-.card__img img{
+.card__img img {
   object-fit: cover;
 }
 

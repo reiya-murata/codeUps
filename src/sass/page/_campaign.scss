@@ -59,8 +59,6 @@
   }
 }
 
-
-
 .card__title--campaign {
   display: flex;
   text-align: start;
@@ -83,9 +81,10 @@
   font-family: $base-font-family;
   font-weight: $normal;
   font-size: rem(14);
-  margin-top: auto;
+  margin-top: rem(8);
   // margin-top: rem(10);
   @include mq(md) {
+    margin-top: auto;
     // margin-top: rem(14);
     margin-right: rem(14);
     font-size: rem(16);

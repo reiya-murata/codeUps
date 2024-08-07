@@ -14,6 +14,27 @@
     box-shadow: none;
   }
 }
+
+.price::before {
+  display: none;
+  @include mq(md) {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url("/assets/images/common/_kingyohanadai 2.svg");
+    width: rem(437);
+    height: rem(201);
+    background-size: contain;
+    // height: rem(181);
+    // background-position:;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    bottom: rem(54);
+    left: calc(50vw - min(48vw , 38.6rem));
+    z-index: 20;
+  }
+}
+
 .l-price {
   padding-top: rem(80);
   padding-bottom: rem(80);

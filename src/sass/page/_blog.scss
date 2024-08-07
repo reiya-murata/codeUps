@@ -8,6 +8,44 @@
     // padding-top: rem(108);
   }
 }
+.blog::before {
+  display: none;
+  @include mq(md) {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url("/assets/images/common/_kingyohanadai.svg");
+    width: rem(437);
+    height: rem(201);
+    background-size: contain;
+    // height: rem(181);
+    // background-position:;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    top: rem(24);
+    left: calc(50vw - min(48vw , 38.8rem));
+    z-index: 20;
+  }
+}
+.blog::after {
+  display: none;
+  @include mq(md) {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url("/assets/images/common/_kingyohanadai-right.svg");
+    width: rem(301);
+    height: rem(138);
+    background-size: contain;
+    // height: rem(181);
+    // background-position:;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    bottom: rem(-165);
+    left: calc(50vw - min(48vw , 38.8rem));
+    z-index: 20;
+  }
+}
 .l-blog {
   margin-top: rem(94);
   // padding-top: rem(91);

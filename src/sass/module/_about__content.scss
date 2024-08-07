@@ -168,15 +168,4 @@
   }
 }
 
-.about__logo {
-  display: none;
-  @include mq(md) {
-    position: absolute;
-    display: block;
-    width: rem(194);
-    // height: rem(181);
-    bottom: rem(-91);
-    right: calc(50% - min(48vw,40rem));
-    z-index: 20;
-  }
-}
+

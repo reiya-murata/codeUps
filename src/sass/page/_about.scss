@@ -1,7 +1,29 @@
 @use "global" as *;
+.about {
+  position: relative;
+}
 
+.about::before {
+  display: none;
+  @include mq(md) {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url("/assets/images/common/_coral.svg");
+    width: rem(194);
+    height: rem(181);
+    background-size: contain;
+    // height: rem(181);
+    // background-position:;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    bottom: rem(-91);
+    right: calc(50% - min(48vw, 40rem));
+    z-index: 20;
+  }
+}
 
-.l-about{
+.l-about {
   // overflow-x: hidden;
   margin-top: rem(80);
   // margin-bottom: rem(74);

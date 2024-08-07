@@ -9,6 +9,27 @@
     // margin-top: rem(146);
   }
 }
+
+.voice::before {
+  display: none;
+  @include mq(md) {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url("/assets/images/common/_ibaratatu.svg");
+    width: rem(71);
+    height: rem(162);
+    background-size: contain;
+    // height: rem(181);
+    // background-position:;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    bottom: rem(-74);
+    right: calc(50vw - min(48vw , 33.8rem));
+    z-index: 20;
+  }
+}
+
 .l-voice {
   margin-top: rem(80);
   @include mq(md) {

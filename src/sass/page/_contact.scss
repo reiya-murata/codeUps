@@ -12,10 +12,41 @@
     // margin-top: rem(16);
   }
 }
-.l-contact{
+
+.contact::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url("/assets/images/common/_kingyohanadai 2.svg");
+  width: rem(109);
+  height: rem(50);
+  background-size: contain;
+  object-fit: cover;
+  top: rem(-20);
+  right: calc(50vw - min(48vw, 10.8rem));
+  z-index: 20;
+  @include mq(md) {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url("/assets/images/common/_kingyohanadai 2.svg");
+    width: rem(301);
+    height: rem(138);
+    background-size: contain;
+    // height: rem(181);
+    // background-position:;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    top: rem(-36);
+    right: calc(50vw - min(48vw, 41.8rem));
+    z-index: 20;
+  }
+}
+
+.l-contact {
   margin-top: rem(80);
   @include mq(md) {
-    margin-top: rem(140) ;
+    margin-top: rem(140);
     // margin-bottom:rem(160);
   }
 }
