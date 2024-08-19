@@ -6,20 +6,18 @@
   z-index: 10;
   color: $white;
   font-weight: $regular;
-  padding-top: rem(0);
   z-index: 15;
-  padding-top: rem(70);
-  padding-bottom: rem(20);
+  margin-top: rem(70);
+  margin-bottom: rem(20);
   margin: auto;
   line-height: 1;
   @include mq(md) {
-    padding-top: rem(0);
+    margin: 0;
     font-weight: $regular;
     font-family: $base-font-family;
   }
 }
 .nav__items li {
-  
   text-align: start;
   position: relative;
 }
@@ -28,70 +26,36 @@
   display: block;
 }
 
-.nav__items--left {
-  width: rem(166);
-  min-width: rem(166);
+.nav__items-left {
   font-family: $base-font-family;
   font-size: rem(16);
   color: $white;
-  // height: 100vh;
   z-index: 15;
-  padding-left: rem(20);
-  @include mq(md) {
-    width: 50%;
-    font-family: $base-font-family;
-    font-size: rem(16);
-    color: $white;
-    // height: 100vh;
-    z-index: 15;
-  }
+  margin-left: rem(0);
+  margin-top: rem(36);
 }
-.nav__items--right {
+.nav__items-left :first-child {
+  margin-top: 0;
+}
+.nav__items-right {
   margin-left: rem(30);
-  width: rem(150);
-  min-width: rem(150);
+  margin-top: rem(36);
   font-family: $base-font-family;
   font-size: rem(16);
   color: $white;
-  // height: 100vh;
-  @include mq(md) {
-    width: 50%;
-    font-family: $base-font-family;
-    font-size: rem(16);
-    color: $white;
-    // height: 100vh;
-    z-index: 15;
-  }
+}
+
+.nav__items-right :first-child {
+  margin-top: 0;
 }
 
 .nav__item {
-  padding-top: rem(26);
-  @include mq(md) {
-    padding-top: rem(25);
-  }
+  margin-top: rem(26);
 }
 
-.nav__items .nav__item--bold {
+.nav__item-bold {
   font-weight: $bold;
   margin-top: rem(42);
-}
-
-.nav__item--bold {
-  font-weight: $bold;
-  margin-top: rem(43);
-  @include mq(md) {
-    font-weight: $bold;
-    margin-top: rem(40);
-  }
-}
-
-.nav__item--bold.top {
-  margin-top: rem(36);
-  font-weight: $bold;
-  @include mq(md) {
-    font-weight: $bold;
-    margin-top: rem(24);
-  }
 }
 
 .nav__item--bottom {
@@ -108,8 +72,6 @@
 }
 
 .nav__bottom--icons {
-  max-width: rem(600);
-  // margin: auto;
   display: flex;
   position: relative;
   flex-direction: column;
@@ -120,7 +82,7 @@
   }
 }
 
-.nav__items--left--bottom {
+.nav__items-left--bottom {
   width: 50%;
   font-family: $base-font-family;
   font-size: rem(16);
