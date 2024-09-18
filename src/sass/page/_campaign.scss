@@ -29,6 +29,7 @@
   }
 }
 
+
 .swiper__campaign {
   overflow: hidden;
   @include mq(md) {
@@ -59,7 +60,7 @@
   }
 }
 
-.card__title-campaign {
+.slide-card__title-campaign {
   display: flex;
   text-align: start;
   border-bottom: rem(1) solid $blue;
@@ -76,7 +77,7 @@
     padding-bottom: rem(8);
   }
 }
-.card__text-campaign {
+.slide-card__text-campaign {
   text-align: center;
   font-family: $base-font-family;
   font-weight: $normal;
@@ -91,7 +92,7 @@
   }
 }
 
-.card__prices {
+.slide-card__prices {
   display: flex;
   justify-content: center;
   text-align: center;
@@ -103,7 +104,7 @@
     gap: rem(24);
   }
 }
-.card__price {
+.slide-card__price {
   font-family: $third-font-family;
   font-weight: $bold;
   text-decoration: line-through red rem(3);
@@ -118,7 +119,7 @@
   }
 }
 
-.card__discount {
+.slide-card__discount {
   color: $blue;
   font-weight: $bold;
   font-family: $third-font-family;
@@ -133,7 +134,7 @@
   }
 }
 
-// .card__prices--night {
+// .slide-card__prices--night {
 //   display: flex;
 //   justify-content: center;
 //   margin: rem(0) rem(16) 0 rem(2);

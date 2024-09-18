@@ -39,14 +39,14 @@
 .blog-card__header img {
   object-fit: cover;
 }
-.blog-cards .card__body {
+.blog-cards .blog-card__body {
   grid-row: 2;
   width: 100%;
   @include mq(md) {
     width: 100%;
   }
 }
-.blog-card .card__body {
+.blog-card .blog-card__body {
   margin-top: rem(16);
   padding: 0;
   @include mq(md) {
@@ -55,7 +55,7 @@
   }
 }
 
-.blog-cards .card__date {
+.blog-cards .blog-card__date {
   font-family: $second-font-family;
   line-height: 1;
   font-size: rem(12);
@@ -77,12 +77,10 @@
     padding-bottom: rem(2);
   }
 }
-.card-blog--text {
+.blog-card--text {
   margin-top: rem(16);
   @include mq(md) {
     font-size: rem(16);
     font-family: $base-font-family;
   }
 }
-
-

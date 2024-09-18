@@ -1,5 +1,5 @@
 @use "global" as *;
-.card__slider {
+.slide-card {
   grid-template-columns: auto;
   grid-row: 1;
   box-shadow: rem(2) rem(2) rem(10) rem(0) rgba(0, 0, 0, 0.25);
@@ -13,12 +13,12 @@
     min-height: rem(445);
   }
 }
-.card__slider a {
+.slide-card a {
   display: flex;
   flex-direction: column;
 }
 
-.card__slider-header img {
+.slide-card__header img {
   aspect-ratio: 333 /223;
   object-fit: cover;
   @include mq(md) {
@@ -26,7 +26,7 @@
   }
 }
 
-.card__body-icon {
+.slide-card__body-icon {
   display: flex;
   color: $blue;
   border: rem(1) solid $blue;
@@ -42,7 +42,7 @@
   }
 }
 
-.card__icon-title {
+.slide-card__icon-title {
   display: inline-block;
   // padding: rem(4) rem(11.5);
   font-size: rem(12);
@@ -54,7 +54,7 @@
     line-height: 1;
   }
 }
-.card__slider .card__body {
+.slide-card .slide-card__body {
   padding: rem(16) rem(16) rem(24);
   display: flex;
   flex-direction: column;
