@@ -58,7 +58,7 @@
   margin-top: rem(42);
 }
 
-.nav__item--bottom {
+.nav__bottom-item {
   z-index: 10;
   color: $white;
   font-weight: $regular;
@@ -67,11 +67,11 @@
     // margin: auto;
   }
 }
-.nav__item--bottom li:hover {
+.nav__bottom-item li:hover {
   opacity: 0.5;
 }
 
-.nav__bottom--icons {
+.nav__bottom-icons {
   display: flex;
   position: relative;
   flex-direction: column;

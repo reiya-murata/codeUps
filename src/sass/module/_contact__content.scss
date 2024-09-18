@@ -75,7 +75,7 @@
     // height: rem(148);
   }
 }
-.contact__left--address {
+.contact__left-address {
   display: flex;
   text-align: center;
   flex-direction: column;
@@ -134,7 +134,6 @@
   }
 }
 
-
 // .contact__logo--fish {
 //   position: absolute;
 //   width: rem(109);
@@ -153,7 +152,7 @@
 //     // z-index: 10;
 //   }
 // }
-.contact__logo--codeups {
+.contact__logo-codeups {
   text-align: center;
   border-bottom: rem(1) solid $blue;
   max-width: rem(295);
@@ -171,14 +170,14 @@
     padding-bottom: rem(8);
   }
 }
-// .contact__logo--codeups source {
+// .contact__logo-codeups source {
 //   display: block;
 //   width: rem(174);
 //   @include mq(md) {
 //     width: rem(200);
 //   }
 // }
-.contact__logo--codeups img {
+.contact__logo-codeups img {
   // position: absolute;
   display: block;
   z-index: 15;

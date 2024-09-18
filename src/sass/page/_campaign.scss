@@ -59,7 +59,7 @@
   }
 }
 
-.card__title--campaign {
+.card__title-campaign {
   display: flex;
   text-align: start;
   border-bottom: rem(1) solid $blue;
@@ -76,7 +76,7 @@
     padding-bottom: rem(8);
   }
 }
-.card__text--slider {
+.card__text-campaign {
   text-align: center;
   font-family: $base-font-family;
   font-weight: $normal;
@@ -91,7 +91,7 @@
   }
 }
 
-.card__campaign--prices {
+.card__prices {
   display: flex;
   justify-content: center;
   text-align: center;
@@ -103,7 +103,7 @@
     gap: rem(24);
   }
 }
-.card__campaign--price--price {
+.card__price {
   font-family: $third-font-family;
   font-weight: $bold;
   text-decoration: line-through red rem(3);
@@ -118,7 +118,7 @@
   }
 }
 
-.card__discount--discount {
+.card__discount {
   color: $blue;
   font-weight: $bold;
   font-family: $third-font-family;
@@ -133,7 +133,7 @@
   }
 }
 
-// .card__campaign--prices--night {
+// .card__prices--night {
 //   display: flex;
 //   justify-content: center;
 //   margin: rem(0) rem(16) 0 rem(2);

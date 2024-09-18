@@ -38,7 +38,7 @@ burger.addEventListener("click", function () {
 });
 
 // swiper メインビュー
-var main__swiper = new Swiper(".main__swiper", {
+var hero__swiper = new Swiper(".hero__swiper", {
   spaceBetween: 30,
   effect: "fade",
   loop: true,

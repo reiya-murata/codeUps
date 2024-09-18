@@ -1,5 +1,5 @@
 @use "global" as *;
-.card__blog {
+.blog-card {
   box-shadow: rem(2) rem(2) rem(10) rem(0) rgba(0, 0, 0, 0.25);
   font-family: $base-font-family;
   background-color: $white;
@@ -23,7 +23,7 @@
   }
 }
 
-.card__header--blog {
+.blog-card__header {
   aspect-ratio: 301 / 201;
   // width: rem(301);
   // max-width: fit-content;
@@ -36,20 +36,26 @@
     // margin: rem(16) rem(16) rem(12);
   }
 }
-.card__header--blog img {
+.blog-card__header img {
   object-fit: cover;
 }
-.blog__cards .card__body {
+.blog-cards .card__body {
   grid-row: 2;
-  // padding-top: rem(16);
   width: 100%;
   @include mq(md) {
     width: 100%;
-    // padding-top: rem(14);
+  }
+}
+.blog-card .card__body {
+  margin-top: rem(16);
+  padding: 0;
+  @include mq(md) {
+    margin-top: rem(14);
+    padding: 0;
   }
 }
 
-.blog__cards .card__date {
+.blog-cards .card__date {
   font-family: $second-font-family;
   line-height: 1;
   font-size: rem(12);
@@ -60,7 +66,7 @@
     padding: 0;
   }
 }
-.card__title--blog {
+.blog-card__title {
   border-bottom: rem(1) solid $blue;
   font-family: $base-font-family;
   font-size: rem(16);
@@ -71,7 +77,7 @@
     padding-bottom: rem(2);
   }
 }
-.card__text--blog {
+.card-blog--text {
   margin-top: rem(16);
   @include mq(md) {
     font-size: rem(16);
@@ -79,6 +85,4 @@
   }
 }
 
-.blog__cards :hover {
-  opacity: 0.7;
-}
+

@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.nav__pc {
+.nav-pc {
   color: $white;
   display: none;
   z-index: 20;
@@ -10,38 +10,38 @@
   }
 }
 
-.nav__items--pc {
+.nav-pc__items {
   display: flex;
   text-align: center;
   height: inherit;
   gap: rem(40);
 }
-.nav__items--pc a {
+.nav-pc__items a {
   position: relative;
-  
+
   display: flex;
   text-align: center;
   height: rem(90);
   justify-content: center;
   flex-direction: column;
 }
-.nav__items--pc li {
+.nav-pc__items li {
   position: relative;
   font-weight: $regular;
   font-size: rem(18);
   // padding-right:rem(20);
   // padding-left: rem(20);
-  
+
   // padding: rem(26) rem(15) 0 rem(20.5);
   @include mq(md) {
     // padding: rem(26) rem(20) 0 rem(20);
   }
 }
-.nav__items--pc  :last-child{
+.nav-pc__items :last-child {
   padding-right: 0;
 }
 
-.nav__items--pc li a::after {
+.nav-pc__items li a::after {
   content: "";
   /*絶対配置で線の位置を決める*/
   position: absolute;
@@ -57,11 +57,11 @@
   transform-origin: center top; /*上部中央基点*/
   margin: 0 0 rem(20) 0;
 }
-.nav__items--pc li :hover::after {
+.nav-pc__items li :hover::after {
   transform: scale(1, 1); /*X方向にスケール拡大*/
 }
 
-.nav__items--pc--title {
+.nav-pc__item-title {
   font-weight: $regular;
   font-family: $second-font-family;
   font-size: rem(18);
@@ -74,7 +74,7 @@
   }
 }
 
-.nav__items--pc--subtitle {
+.nav-pc__items-subtitle {
   font-weight: $regular;
   font-family: $base-font-family;
   font-size: rem(10);

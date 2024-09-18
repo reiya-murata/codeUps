@@ -45,7 +45,7 @@ burger.addEventListener("click", () => {
 
 
 // swiper メインビュー
-const main__swiper = new Swiper(".main__swiper", {
+const hero__swiper = new Swiper(".hero__swiper", {
   spaceBetween: 30,
   effect: "fade",
   loop: true,

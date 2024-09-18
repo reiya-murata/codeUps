@@ -15,14 +15,14 @@
     // gap: rem(18);
   }
 }
-.information__content--right{
+.information__content-right {
   @include mq(md) {
     width: rem(492);
     max-width: rem(492);
   }
 }
 
-.information__content--titles {
+.information__content-titles {
   padding-top: rem(22);
   border-bottom: rem(1) solid $blue;
   @include mq(md) {
@@ -33,7 +33,7 @@
   }
 }
 
-.information__content--title {
+.information__content-title {
   font-family: $base-font-family;
   font-weight: $bold;
   font-size: rem(20);
@@ -45,7 +45,7 @@
   }
 }
 
-.information__content--text {
+.information__content-text {
   font-family: $base-font-family;
   font-weight: $normal;
   margin-top: rem(8);
@@ -56,7 +56,7 @@
   }
 }
 
-.information__content--img {
+.information__content-img {
   margin-top: rem(24);
   // width: rem(345);
   max-width: fit-content;
@@ -67,7 +67,7 @@
   }
 }
 
-.information__content--img  {
+.information__content-img {
   aspect-ratio: 540/356;
   // width: rem(345);
   max-width: fit-content;

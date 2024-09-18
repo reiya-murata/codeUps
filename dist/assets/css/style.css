@@ -217,7 +217,7 @@ a {
 	padding-bottom: 0.3125rem;
 }
 
-.card__title--campaign {
+.card__title-campaign {
 	border-bottom: 0.0625rem solid #408f95;
 	display: flex;
 	font-family: "Noto Sans JP", sans-serif;
@@ -229,7 +229,7 @@ a {
 	text-align: left;
 }
 
-.card__text--slider {
+.card__text-campaign {
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 0.875rem;
 	font-weight: 400;
@@ -237,7 +237,7 @@ a {
 	text-align: center;
 }
 
-.card__campaign--prices {
+.card__prices {
 	align-items: baseline;
 	display: flex;
 	font-family: "Lato", sans-serif;
@@ -247,7 +247,7 @@ a {
 	text-align: center;
 }
 
-.card__campaign--price--price {
+.card__price {
 	-webkit-text-decoration: line-through solid red;
 	-webkit-text-decoration: line-through red 0.1875rem;
 	font-family: "Lato", sans-serif;
@@ -260,7 +260,7 @@ a {
 	text-decoration-thickness: 0.1875rem;
 }
 
-.card__discount--discount {
+.card__discount {
 	color: #408f95;
 	font-family: "Lato", sans-serif;
 	font-size: 2rem;
@@ -312,7 +312,7 @@ a {
 	width: 100%;
 }
 
-.logo__img--codeups--bottom {
+.logo__img-codeups-bottom {
 	width: 7.5rem;
 	z-index: 15;
 }
@@ -406,7 +406,7 @@ a {
 	width: 100%;
 }
 
-.about__img--1 {
+.about__img-1 {
 	-o-object-fit: cover;
 	aspect-ratio: 132/194;
 	left: 0rem;
@@ -418,13 +418,13 @@ a {
 	z-index: 5;
 }
 
-.about__img--1 img {
+.about__img-1 img {
 	display: block;
 	max-width: 100%;
 	width: 100%;
 }
 
-.about__img--2 {
+.about__img-2 {
 	-o-object-fit: cover;
 	aspect-ratio: 880/581;
 	margin-left: auto;
@@ -433,7 +433,7 @@ a {
 	width: 82%;
 }
 
-.about__img--2 img {
+.about__img-2 img {
 	display: block;
 	max-width: 100%;
 	width: 100%;
@@ -451,7 +451,7 @@ a {
 	z-index: 15;
 }
 
-.about__content--titles {
+.about__content-titles {
 	color: #408f95;
 	font-weight: 300;
 	padding-left: 0;
@@ -460,7 +460,7 @@ a {
 	z-index: 15;
 }
 
-.about__content--title {
+.about__content-title {
 	display: inline-block;
 	font-size: 2.5rem;
 	font-weight: 300;
@@ -484,23 +484,25 @@ a {
 	display: none;
 }
 
-.blog__cards {
-	display: grid;
-	justify-content: center;
+.blog-cards {
 	margin-top: -0.5rem;
-	position: relative;
 }
 
-.blog__cards a {
+.blog-cards a {
 	display: block;
 }
 
-.blog__cards .card__blog .card__body {
-	margin-top: 1rem;
-	padding: 0;
+.blog-cards {
+	display: grid;
+	justify-content: center;
+	position: relative;
 }
 
-.blog__bg--img {
+.blog-cards :hover {
+	opacity: 0.7;
+}
+
+.blog__bg-img {
 	display: none;
 }
 
@@ -617,7 +619,7 @@ a {
 	z-index: 2;
 }
 
-.card__blog {
+.blog-card {
 	background-color: #fff;
 	box-shadow: 0.125rem 0.125rem 0.625rem 0rem rgba(0, 0, 0, 0.25);
 	font-family: "Noto Sans JP", sans-serif;
@@ -628,42 +630,43 @@ a {
 	padding-top: 1rem;
 }
 
-.card__header--blog {
+.blog-card__header {
 	-o-object-fit: cover;
 	aspect-ratio: 301/201;
 	object-fit: cover;
 	text-align: center;
 }
 
-.card__header--blog img {
+.blog-card__header img {
 	-o-object-fit: cover;
 	object-fit: cover;
 }
 
-.blog__cards .card__body {
+.blog-cards .card__body {
 	grid-row: 2;
 	width: 100%;
 }
 
-.blog__cards .card__date {
+.blog-card .card__body {
+	margin-top: 1rem;
+	padding: 0;
+}
+
+.blog-cards .card__date {
 	font-family: "Gotu", sans-serif;
 	font-size: 0.75rem;
 	line-height: 1;
 }
 
-.card__title--blog {
+.blog-card__title {
 	border-bottom: 0.0625rem solid #408f95;
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1rem;
 	padding-bottom: 0.25rem;
 }
 
-.card__text--blog {
+.card-blog--text {
 	margin-top: 1rem;
-}
-
-.blog__cards :hover {
-	opacity: 0.7;
 }
 
 .card__slider {
@@ -679,13 +682,13 @@ a {
 	flex-direction: column;
 }
 
-.card__header--slider img {
+.card__slider-header img {
 	-o-object-fit: cover;
 	aspect-ratio: 333/223;
 	object-fit: cover;
 }
 
-.card__icon--slider {
+.card__body-icon {
 	border: 0.0625rem solid #408f95;
 	color: #408f95;
 	display: flex;
@@ -696,7 +699,7 @@ a {
 	width: fit-content;
 }
 
-.card__icon--title {
+.card__icon-title {
 	display: inline-block;
 	font-size: 0.75rem;
 	line-height: 1.7;
@@ -710,7 +713,7 @@ a {
 	width: 100%;
 }
 
-.card__voice {
+.voice-card {
 	box-shadow: 0.125rem 0.125rem 0.625rem 0rem rgba(0, 0, 0, 0.25);
 	min-width: 21.5625rem;
 	padding-bottom: 1.5rem;
@@ -719,14 +722,14 @@ a {
 	padding-top: 1.375rem;
 }
 
-.card__inner--voice {
+.voice-card__inner {
 	grid-row-gap: 1rem;
 	display: grid;
 	grid-template-rows: auto 1fr;
 	row-gap: 1rem;
 }
 
-.card__header--voice {
+.voice-card__header {
 	grid-column-gap: 0.8125rem;
 	-moz-column-gap: 0.8125rem;
 	column-gap: 0.8125rem;
@@ -735,7 +738,7 @@ a {
 	grid-template-columns: auto 9.4375rem;
 }
 
-.card__header--voice--left {
+.voice-card__header-left {
 	grid-column-gap: 2.5rem;
 	-moz-column-gap: 2.5rem;
 	column-gap: 2.5rem;
@@ -744,7 +747,7 @@ a {
 	grid-row: 1;
 }
 
-.card__voice .card__img {
+.voice-card .card__img {
 	-o-object-fit: cover;
 	aspect-ratio: 180/140;
 	grid-column: 2;
@@ -752,7 +755,7 @@ a {
 	object-fit: cover;
 }
 
-.card__voice .card__img {
+.voice-card .card__img {
 	-o-object-fit: cover;
 	aspect-ratio: 180/140;
 	height: 100%;
@@ -766,7 +769,7 @@ a {
 	object-fit: cover;
 }
 
-.card__title--voice {
+.voice-card__title {
 	border-bottom: 0.0625rem solid #408f95;
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1rem;
@@ -775,11 +778,11 @@ a {
 	padding: 0.25rem 0 0.125rem;
 }
 
-.card__voice--body {
+.voice-card__body {
 	grid-row: 2;
 }
 
-.card__text--voice {
+.voice-card__text {
 	padding: 0rem 0;
 }
 
@@ -793,7 +796,7 @@ a {
 	padding-top: 1rem;
 }
 
-.card__age {
+.voice-card-age {
 	font-size: 0.75rem;
 	grid-column: 1;
 	grid-row: 1;
@@ -830,10 +833,6 @@ div.colorbox div.color {
 
 div.colorbox {
 	display: block;
-}
-
-.cards {
-	display: grid;
 }
 
 .contact__inner {
@@ -874,7 +873,7 @@ div.colorbox {
 	object-fit: cover;
 }
 
-.contact__left--address {
+.contact__left-address {
 	display: flex;
 	flex-direction: column;
 	text-align: center;
@@ -903,7 +902,7 @@ div.colorbox {
 	text-align: center;
 }
 
-.contact__logo--codeups {
+.contact__logo-codeups {
 	border-bottom: 0.0625rem solid #408f95;
 	max-width: 18.4375rem;
 	padding-bottom: 0.375rem;
@@ -912,7 +911,7 @@ div.colorbox {
 	text-align: center;
 }
 
-.contact__logo--codeups img {
+.contact__logo-codeups img {
 	display: block;
 	z-index: 15;
 }
@@ -1037,7 +1036,7 @@ div.colorbox {
 	z-index: 20;
 }
 
-.logo__img--codeups {
+.logo__img-codeups {
 	aspect-ratio: 133/50;
 	display: block;
 	display: flex;
@@ -1109,53 +1108,53 @@ div.colorbox {
 	max-width: 37.5rem;
 }
 
-.information__content--titles {
+.information__content-titles {
 	border-bottom: 0.0625rem solid #408f95;
 	padding-top: 1.375rem;
 }
 
-.information__content--title {
+.information__content-title {
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1.25rem;
 	font-weight: 700;
 }
 
-.information__content--text {
+.information__content-text {
 	font-family: "Noto Sans JP", sans-serif;
 	font-weight: 400;
 	margin-top: 0.5rem;
 }
 
-.information__content--img {
+.information__content-img {
 	margin-top: 1.5rem;
 	max-width: -moz-fit-content;
 	max-width: fit-content;
 }
 
-.information__content--img {
+.information__content-img {
 	aspect-ratio: 540/356;
 	max-width: -moz-fit-content;
 	max-width: fit-content;
 }
 
-.main__swiper img {
+.hero__swiper img {
 	aspect-ratio: 375/667;
 	height: 100vh;
 	width: 100%;
 }
 
-.main__swiper {
+.hero__swiper {
 	height: 100vh;
 	overflow: hidden;
 	width: 100%;
 }
 
-.main__swiper-wraper {
+.hero__swiper-wraper {
 	height: 100vh;
 	width: 100%;
 }
 
-.main__swiper-slide {
+.hero__swiper-slide {
 	aspect-ratio: 375/667;
 	background-position: center;
 	background-size: cover;
@@ -1163,7 +1162,7 @@ div.colorbox {
 	width: 100%;
 }
 
-.main__swiper-slide img {
+.hero__swiper-slide img {
 	aspect-ratio: 375/667;
 	display: block;
 	height: 100vh;
@@ -1259,17 +1258,17 @@ div.colorbox {
 	margin-top: 2.625rem;
 }
 
-.nav__item--bottom {
+.nav__bottom-item {
 	color: #fff;
 	font-weight: 300;
 	z-index: 10;
 }
 
-.nav__item--bottom li:hover {
+.nav__bottom-item li:hover {
 	opacity: 0.5;
 }
 
-.nav__bottom--icons {
+.nav__bottom-icons {
 	display: flex;
 	flex-direction: column;
 	position: relative;
@@ -1289,20 +1288,20 @@ div.colorbox {
 	width: 50%;
 }
 
-.nav__pc {
+.nav-pc {
 	color: #fff;
 	display: none;
 	z-index: 20;
 }
 
-.nav__items--pc {
+.nav-pc__items {
 	display: flex;
 	gap: 2.5rem;
 	height: inherit;
 	text-align: center;
 }
 
-.nav__items--pc a {
+.nav-pc__items a {
 	display: flex;
 	flex-direction: column;
 	height: 5.625rem;
@@ -1311,17 +1310,17 @@ div.colorbox {
 	text-align: center;
 }
 
-.nav__items--pc li {
+.nav-pc__items li {
 	font-size: 1.125rem;
 	font-weight: 300;
 	position: relative;
 }
 
-.nav__items--pc :last-child {
+.nav-pc__items :last-child {
 	padding-right: 0;
 }
 
-.nav__items--pc li a::after {
+.nav-pc__items li a::after {
 	background: #fff;
 	bottom: 0;
 	content: "";
@@ -1335,18 +1334,18 @@ div.colorbox {
 	width: 80%;
 }
 
-.nav__items--pc li :hover::after {
+.nav-pc__items li :hover::after {
 	transform: scale(1, 1); /*X方向にスケール拡大*/
 }
 
-.nav__items--pc--title {
+.nav-pc__item-title {
 	font-family: "Gotu", sans-serif;
 	font-size: 1.125rem;
 	font-weight: 300;
 	line-height: 1;
 }
 
-.nav__items--pc--subtitle {
+.nav-pc__items-subtitle {
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 0.625rem;
 	font-weight: 300;
@@ -1439,7 +1438,7 @@ div.colorbox {
 	margin-top: 1.5rem;
 }
 
-.price__contents--left {
+.price__contents-left {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -1449,7 +1448,7 @@ div.colorbox {
 	width: 100%;
 }
 
-.price__contents--right {
+.price__contents-right {
 	display: block;
 	max-width: 37.5rem;
 }
@@ -1484,7 +1483,7 @@ div.colorbox {
 	justify-content: space-between;
 }
 
-.price__item--name {
+.price__item-title {
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 0.875rem;
 	max-width: 17.5rem;
@@ -1492,13 +1491,13 @@ div.colorbox {
 	padding-top: 0.5rem;
 }
 
-.price__price {
+.price__item-price {
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 0.875rem;
 	padding-top: 0.625rem;
 }
 
-.section__title {
+.section_title__main {
 	color: #111;
 	font-family: "Gotu", sans-serif;
 	font-size: 2rem;
@@ -1507,21 +1506,21 @@ div.colorbox {
 	text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.5);
 }
 
-.information .section__title {
+.information .section_title__main {
 	text-shadow: none;
 }
 
-.price .section__title {
+.price .section_title__main {
 	text-shadow: none;
 }
 
-.section__title::first-letter {
+.section_title__main::first-letter {
 	color: #408f95;
 	font-weight: 300;
 	text-transform: capitalize;
 }
 
-.section__subtitle {
+.section_title__sub {
 	color: #408f95;
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 0.75rem;
@@ -1531,15 +1530,15 @@ div.colorbox {
 	text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.5);
 }
 
-.information .section__subtitle {
+.information .section_title__sub {
 	text-shadow: none;
 }
 
-.price .section__subtitle {
+.price .section_title__sub {
 	text-shadow: none;
 }
 
-.section__subtitle--campaign {
+.section_title__sub--campaign {
 	color: #408f95;
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 0.75rem;
@@ -1548,13 +1547,13 @@ div.colorbox {
 	text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.5);
 }
 
-.section__titles--blog {
+.section_title__blog {
 	font-family: "Gotu", sans-serif;
 	font-weight: 300;
 	text-transform: capitalize;
 }
 
-.section__title--blog {
+.section_title__main-blog {
 	font-family: "Gotu", sans-serif;
 	font-size: 2rem;
 	font-weight: 300;
@@ -1564,13 +1563,13 @@ div.colorbox {
 	text-transform: capitalize;
 }
 
-.section__titles--blog::first-letter {
+.section_title__blog::first-letter {
 	color: #408f95;
 	font-weight: 300;
 	text-transform: capitalize;
 }
 
-.section__subtitle__blog {
+.section_title__sub-blog {
 	color: #408f95;
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 0.75rem;
@@ -1580,7 +1579,7 @@ div.colorbox {
 	text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.5);
 }
 
-.section__title--contact {
+.section_title__main-contact {
 	font-family: "Gotu", sans-serif;
 	font-size: 5rem;
 	position: relative;
@@ -1588,12 +1587,12 @@ div.colorbox {
 	text-transform: capitalize;
 }
 
-.section__title--contact::first-letter {
+.section_title__main-contact::first-letter {
 	color: #408f95;
 	font-weight: 300;
 }
 
-.section__subtitle--contact {
+.section_title__sub-contact {
 	color: #408f95;
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 0.75rem;
@@ -1603,7 +1602,7 @@ div.colorbox {
 	text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.5);
 }
 
-.section__subtitle--contact2 {
+.section_title__sub-contact2 {
 	color: #408f95;
 	font-size: 0.875rem;
 	font-weight: 300;
@@ -1657,15 +1656,18 @@ div.colorbox {
 	opacity: 0.5;
 }
 
-.voice__cards {
+.voice-cards {
+	margin-top: 2.5rem;
+}
+
+.voice-cards {
 	grid-gap: 2.5rem;
 	display: grid;
 	flex-direction: column;
 	gap: 2.5rem;
-	margin-top: 2.5rem;
 }
 
-.voice__cards a:hover {
+.voice-cards a:hover {
 	opacity: 0.5;
 }
 
@@ -1779,30 +1781,30 @@ html {
 	top: 0;
 }
 
-.card__title--campaign {
+.card__title-campaign {
 	font-size: 0.75rem;
 	letter-spacing: -0.18em;
 	margin-top: 0.25rem;
 	padding-bottom: 0.5rem;
 }
 
-.card__text--slider {
+.card__text-campaign {
 	font-size: 1rem;
 	margin-right: 0.875rem;
 	margin-top: auto;
 }
 
-.card__campaign--prices {
+.card__prices {
 	gap: 1.5rem;
 }
 
-.card__campaign--price--price {
+.card__price {
 	font-family: "Lato", sans-serif;
 	font-size: 1.5rem;
 	line-height: 1.8;
 }
 
-.card__discount--discount {
+.card__discount {
 	font-family: "Lato", sans-serif;
 	font-size: 2.5rem;
 	line-height: 1;
@@ -1834,7 +1836,7 @@ html {
 	padding-top: 5rem;
 }
 
-.logo__img--codeups--bottom {
+.logo__img-codeups-bottom {
 	margin-top: 0;
 	width: 12.5rem;
 }
@@ -1926,14 +1928,14 @@ html {
 	position: relative;
 }
 
-.about__img--1 {
+.about__img-1 {
 	height: auto;
 	left: 0;
 	max-width: 24.9375rem;
 	top: 0;
 }
 
-.about__img--2 {
+.about__img-2 {
 	aspect-ratio: 880/581;
 	height: auto;
 	margin-left: auto;
@@ -1954,7 +1956,7 @@ html {
 	top: 12.5rem;
 }
 
-.about__content--titles {
+.about__content-titles {
 	color: #fff;
 	display: inline-block;
 	font-family: "Gotu", sans-serif;
@@ -1963,7 +1965,7 @@ html {
 	width: 25rem;
 }
 
-.about__content--title {
+.about__content-title {
 	display: block;
 	font-family: "Gotu", sans-serif;
 	font-size: 5rem;
@@ -1988,18 +1990,18 @@ html {
 	display: inline-block;
 }
 
-.blog__cards {
-	gap: 2.375rem;
-	grid-template-columns: repeat(3, 1fr);
+.blog-cards {
 	margin-top: 5.25rem;
 }
 
-.blog__cards .card__blog .card__body {
-	margin-top: 0.875rem;
-	padding: 0;
+.blog-cards {
+	grid-gap: 2.375rem;
+	display: grid;
+	gap: 2.375rem;
+	grid-template-columns: repeat(3, 1fr);
 }
 
-.blog__bg--img {
+.blog__bg-img {
 	display: block;
 	margin-top: 0;
 	position: absolute;
@@ -2007,7 +2009,7 @@ html {
 	z-index: -1;
 }
 
-.blog__bg--img img {
+.blog__bg-img img {
 	-o-object-fit: cover;
 	display: block;
 	height: 31.25rem;
@@ -2055,30 +2057,35 @@ html {
 	z-index: 1;
 }
 
-.card__blog {
+.blog-card {
 	margin-top: 0;
 	min-width: auto;
 	padding: 1rem 1.125rem 1.5rem 1.125rem;
 }
 
-.blog__cards .card__body {
+.blog-cards .card__body {
 	width: 100%;
 }
 
-.blog__cards .card__date {
+.blog-card .card__body {
+	margin-top: 0.875rem;
+	padding: 0;
+}
+
+.blog-cards .card__date {
 	font-size: 0.75rem;
 	line-height: 1;
 	margin-top: 0.8125rem;
 	padding: 0;
 }
 
-.card__title--blog {
+.blog-card__title {
 	font-size: 1rem;
 	margin: 0;
 	padding-bottom: 0.125rem;
 }
 
-.card__text--blog {
+.card-blog--text {
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1rem;
 }
@@ -2089,17 +2096,17 @@ html {
 	width: 20.8125rem;
 }
 
-.card__header--slider img {
+.card__slider-header img {
 	width: 100%;
 }
 
-.card__icon--slider {
+.card__body-icon {
 	padding: 0.5625rem 1rem;
 	width: -moz-fit-content;
 	width: fit-content;
 }
 
-.card__icon--title {
+.card__icon-title {
 	font-size: 0.75rem;
 	line-height: 1;
 }
@@ -2109,7 +2116,7 @@ html {
 	width: 100%;
 }
 
-.card__voice {
+.voice-card {
 	min-width: auto;
 	padding-bottom: 1.5rem;
 	padding-left: 1.5rem;
@@ -2117,29 +2124,29 @@ html {
 	padding-top: 1.5rem;
 }
 
-.card__inner--voice {
+.voice-card__inner {
 	row-gap: 2.375rem;
 }
 
-.card__header--voice {
+.voice-card__header {
 	-moz-column-gap: 1rem;
 	column-gap: 1rem;
 	grid-template-columns: auto 11.25rem;
 	padding: 0;
 }
 
-.card__header--voice--left {
+.voice-card__header-left {
 	margin-top: 1.875rem;
 }
 
-.card__voice .card__img {
+.voice-card .card__img {
 	-o-object-fit: cover;
 	aspect-ratio: 180/140;
 	margin-right: 1rem;
 	object-fit: cover;
 }
 
-.card__voice .card__img {
+.voice-card .card__img {
 	-o-object-fit: cover;
 	aspect-ratio: 180/140;
 	height: 100%;
@@ -2148,7 +2155,7 @@ html {
 	object-fit: cover;
 }
 
-.card__title--voice {
+.voice-card__title {
 	border-bottom: 0.0625rem solid #408f95;
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1.5rem;
@@ -2159,7 +2166,7 @@ html {
 	padding-top: 0.5rem;
 }
 
-.card__text--voice {
+.voice-card__text {
 	padding: 0;
 }
 
@@ -2168,7 +2175,7 @@ html {
 	padding: 1rem 1.125rem 1.5rem 1.125rem;
 }
 
-.card__age {
+.voice-card-age {
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 0.75rem;
 	font-weight: 400;
@@ -2181,13 +2188,6 @@ html {
 	grid-row: 1;
 	justify-self: end;
 	padding: 0.375rem 1rem;
-}
-
-.cards {
-	grid-gap: 2.5rem;
-	display: grid;
-	gap: 2.5rem;
-	grid-template-columns: repeat(3, 1fr);
 }
 
 .contact__inner {
@@ -2222,7 +2222,7 @@ html {
 	max-width: 17.0625rem;
 }
 
-.contact__left--address {
+.contact__left-address {
 	flex-direction: initial;
 	margin-left: 0.625rem;
 	margin-top: 0.5rem;
@@ -2254,7 +2254,7 @@ html {
 	padding: 5rem 0;
 }
 
-.contact__logo--codeups {
+.contact__logo-codeups {
 	margin-left: 3.125rem;
 	max-width: 27.5rem;
 	padding-bottom: 0.5rem;
@@ -2262,7 +2262,7 @@ html {
 	padding-right: 7.5rem;
 }
 
-.contact__logo--codeups img {
+.contact__logo-codeups img {
 	display: block;
 	width: 100%;
 }
@@ -2307,7 +2307,7 @@ html {
 	width: 5.625rem;
 }
 
-.logo__img--codeups {
+.logo__img-codeups {
 	width: 8.75rem;
 }
 
@@ -2359,48 +2359,48 @@ html {
 	max-width: none;
 }
 
-.information__content--right {
+.information__content-right {
 	max-width: 30.75rem;
 	width: 30.75rem;
 }
 
-.information__content--titles {
+.information__content-titles {
 	border-bottom: 0.0625rem solid #408f95;
 	margin-top: 3.875rem;
 	padding: 0;
 	padding-bottom: 0.5rem;
 }
 
-.information__content--title {
+.information__content-title {
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1.5rem;
 	font-weight: 700;
 	line-height: 1;
 }
 
-.information__content--text {
+.information__content-text {
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1rem;
 	line-height: 1.5;
 }
 
-.information__content--img {
+.information__content-img {
 	height: 22.25rem;
 	margin-top: 0.125rem;
 	width: 33.75rem;
 }
 
-.main__swiper img {
+.hero__swiper img {
 	aspect-ratio: 1440/768;
 	height: 100vh;
 	width: 100%;
 }
 
-.main__swiper-slide {
+.hero__swiper-slide {
 	aspect-ratio: 1440/768;
 }
 
-.main__swiper-slide img {
+.hero__swiper-slide img {
 	aspect-ratio: 1440/768;
 	height: 100vh;
 	width: 100%;
@@ -2420,25 +2420,25 @@ html {
 	margin: 0;
 }
 
-.nav__bottom--icons {
+.nav__bottom-icons {
 	display: flex;
 	flex-direction: initial;
 	max-width: none;
 }
 
-.nav__pc {
+.nav-pc {
 	display: block;
 	height: 5.625rem;
 }
 
-.nav__items--pc--title {
+.nav-pc__item-title {
 	font-family: "Gotu", sans-serif;
 	font-size: 1.125rem;
 	font-weight: 300;
 	line-height: 1;
 }
 
-.nav__items--pc--subtitle {
+.nav-pc__items-subtitle {
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 0.625rem;
 	font-weight: 300;
@@ -2515,7 +2515,7 @@ html {
 	margin-top: 2.875rem;
 }
 
-.price__contents--left {
+.price__contents-left {
 	align-self: start;
 	display: flex;
 	flex-direction: column;
@@ -2524,7 +2524,7 @@ html {
 	width: 30.875rem;
 }
 
-.price__contents--right {
+.price__contents-right {
 	align-self: start;
 	display: block;
 	width: 30.75rem;
@@ -2554,7 +2554,7 @@ html {
 	padding: 0 0 0.5rem 0.125rem;
 }
 
-.price__item--name {
+.price__item-title {
 	font-size: 1rem;
 	font-weight: 400;
 	line-height: 1;
@@ -2562,25 +2562,25 @@ html {
 	padding: 0.5rem 0 0.5rem 0.125rem;
 }
 
-.price__price {
+.price__item-price {
 	font-size: 1rem;
 	font-weight: 400;
 	line-height: 1;
 	padding: 0.5rem 0;
 }
 
-.section__title {
+.section_title__main {
 	font-size: 2.5rem;
 	font-weight: 300;
 	line-height: 1;
 	text-shadow: none;
 }
 
-.section__title::first-letter {
+.section_title__main::first-letter {
 	color: #408f95;
 }
 
-.section__subtitle {
+.section_title__sub {
 	font-size: 0.75rem;
 	font-weight: 300;
 	line-height: 1;
@@ -2588,7 +2588,7 @@ html {
 	text-shadow: none;
 }
 
-.section__subtitle--campaign {
+.section_title__sub--campaign {
 	font-size: 0.75rem;
 	font-weight: 300;
 	line-height: 1;
@@ -2596,7 +2596,7 @@ html {
 	text-shadow: none;
 }
 
-.section__titles--blog {
+.section_title__blog {
 	color: #fff;
 	font-size: 2rem;
 	line-height: 1;
@@ -2604,7 +2604,7 @@ html {
 	text-transform: capitalize;
 }
 
-.section__title--blog {
+.section_title__main-blog {
 	color: #fff;
 	font-family: "Gotu", sans-serif;
 	font-size: 2.5rem;
@@ -2613,18 +2613,18 @@ html {
 	text-align: center;
 }
 
-.section__titles--blog::first-letter {
+.section_title__blog::first-letter {
 	color: #fff;
 }
 
-.section__subtitle__blog {
+.section_title__sub-blog {
 	color: #fff;
 	font-size: 0.75rem;
 	font-weight: 300;
 	line-height: 1;
 }
 
-.section__title--contact {
+.section_title__main-contact {
 	font-size: 5rem;
 	font-weight: 300;
 	line-height: 1;
@@ -2632,7 +2632,7 @@ html {
 	text-shadow: none;
 }
 
-.section__subtitle--contact {
+.section_title__sub-contact {
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 0.75rem;
 	line-height: 1;
@@ -2641,7 +2641,7 @@ html {
 	text-shadow: none;
 }
 
-.section__subtitle--contact2 {
+.section_title__sub-contact2 {
 	color: #408f95;
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 0.875rem;
@@ -2678,15 +2678,18 @@ html {
 	width: 5rem;
 }
 
-.voice__cards {
+.voice-cards {
+	margin-top: 1.875rem;
+	padding: 0;
+}
+
+.voice-cards {
 	grid-gap: 2.5rem;
 	display: grid;
 	flex-direction: initial;
 	gap: 2.5rem;
 	grid-template-columns: repeat(2, 1fr);
 	justify-content: center;
-	margin-top: 1.875rem;
-	padding: 0;
 }
 
 }

@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.main__swiper img {
+.hero__swiper img {
   width: 100%;
   height: 100vh;
   aspect-ratio: 375 / 667;
@@ -11,18 +11,18 @@
   }
 }
 
-.main__swiper {
+.hero__swiper {
   width: 100%;
   height: 100vh;
   overflow: hidden;
 }
 
-.main__swiper-wraper {
+.hero__swiper-wraper {
   width: 100%;
   height: 100vh;
 }
 
-.main__swiper-slide {
+.hero__swiper-slide {
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -33,7 +33,7 @@
   }
 }
 
-.main__swiper-slide img {
+.hero__swiper-slide img {
   display: block;
   width: 100%;
   height: 100vh;

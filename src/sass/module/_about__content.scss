@@ -28,9 +28,7 @@
   }
 }
 
-
-
-.about__img--1 {
+.about__img-1 {
   position: absolute;
   aspect-ratio: 132/194;
   object-fit: cover;
@@ -48,13 +46,13 @@
     // height: rem(606);
   }
 }
-.about__img--1 img {
+.about__img-1 img {
   display: block;
   max-width: 100%;
   width: 100%;
 }
 
-.about__img--2 {
+.about__img-2 {
   aspect-ratio: 880/581;
   object-fit: cover;
   width: 82%;
@@ -74,7 +72,7 @@
   }
 }
 
-.about__img--2 img {
+.about__img-2 img {
   display: block;
   max-width: 100%;
   width: 100%;
@@ -107,7 +105,7 @@
   }
 }
 
-.about__content--titles {
+.about__content-titles {
   position: relative;
   font-weight: $regular;
   color: $blue;
@@ -124,7 +122,7 @@
     width: rem(400);
   }
 }
-.about__content--title {
+.about__content-title {
   display: inline-block;
   font-size: rem(40);
   font-weight: $regular;
@@ -167,5 +165,3 @@
     display: inline-block;
   }
 }
-
-
