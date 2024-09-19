@@ -33,6 +33,7 @@
     // width: rem(520);
   }
 }
+
 .voice-card__header {
   display: grid;
   column-gap: rem(13);
@@ -58,6 +59,27 @@
     margin-top: rem(30);
   }
 }
+
+.voice-card-age {
+  grid-row: 1;
+  grid-column: 1;
+  font-size: rem(12);
+  padding-top: 0;
+  line-height: 1;
+  @include mq(md) {
+    padding-top: rem(16);
+    font-size: rem(12);
+    font-family: $base-font-family;
+    line-height: 1;
+    font-weight: $normal;
+  }
+}
+.voice-card__icon{
+  justify-self: end;
+  @include mq(md) {
+  }
+}
+
 .voice-card .card__img {
   // margin-top: ;
   grid-row: 1;
