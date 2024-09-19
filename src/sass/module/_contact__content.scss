@@ -170,30 +170,12 @@
     padding-bottom: rem(8);
   }
 }
-// .contact__logo-codeups source {
-//   display: block;
-//   width: rem(174);
-//   @include mq(md) {
-//     width: rem(200);
-//   }
-// }
+
 .contact__logo-codeups img {
-  // position: absolute;
   display: block;
   z-index: 15;
-  // width: rem(295);
-  // top: calc(50% + rem(115));
-  // left: calc(50% + rem(0));
-  // transform: translate(-50%, -50%);
-  // padding: 0 rem(60) ;
   @include mq(md) {
-    // position: absolute;
     display: block;
     width: 100%;
-    // border-bottom: rem(1) solid $blue;
-    // padding: 0 rem(120) rem(8);
-    // top: calc(50% + rem(38));
-    // left: calc(50% + rem(0));
-    // transform: translate(-50%, -50%);
   }
 }

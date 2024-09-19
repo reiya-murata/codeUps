@@ -29,12 +29,7 @@
   position: relative;
   font-weight: $regular;
   font-size: rem(18);
-  // padding-right:rem(20);
-  // padding-left: rem(20);
-
-  // padding: rem(26) rem(15) 0 rem(20.5);
   @include mq(md) {
-    // padding: rem(26) rem(20) 0 rem(20);
   }
 }
 .nav-pc__items :last-child {

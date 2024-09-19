@@ -13,8 +13,6 @@
     width: rem(194);
     height: rem(181);
     background-size: contain;
-    // height: rem(181);
-    // background-position:;
     object-fit: cover;
     background-repeat: no-repeat;
     bottom: rem(-91);
@@ -24,11 +22,8 @@
 }
 
 .l-about {
-  // overflow-x: hidden;
   margin-top: rem(80);
-  // margin-bottom: rem(74);
   @include mq(md) {
-    // margin: auto;
     margin-top: rem(140);
     margin-bottom: 0;
   }
@@ -36,12 +31,7 @@
 
 .about__inner {
   position: relative;
-  // height: rem(680);
-  // max-height: rem(900);
-  // margin: auto;
   @include mq(md) {
-    // overflow: hidden;
     position: relative;
-    // padding-bottom: rem(180);
   }
 }

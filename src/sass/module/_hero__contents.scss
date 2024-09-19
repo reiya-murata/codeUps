@@ -31,12 +31,9 @@
   letter-spacing: 0.53em;
   text-indent: 0.53em;
   align-items: center;
-  // margin-left: rem(22);
   @include mq(md) {
     font-weight: $normal;
     font-size: rem(40);
-    // margin-top: rem(85);
-    // margin-left: rem(44);
     font-size: rem(80);
     letter-spacing: 0.53em;
     text-indent: 0.53em;
@@ -65,12 +62,9 @@
   position: relative;
   object-fit: cover;
   height: 100%;
-  // aspect-ratio: 375 / 667;
   @include mq(md) {
-    // object-fit: cover;
     height: 100vh;
     width: 100%;
-    // aspect-ratio: 1440 / 768;
   }
 }
 .hero__img img{
@@ -79,8 +73,6 @@
 .hero__img  {
   z-index: 10;
   object-fit: cover;
-  // height: 100%;
-  // width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -88,8 +80,6 @@
   object-fit: cover;
   @include mq(md) {
     object-fit: cover;
-    // height: 100%;
-    // width: 100%;
     aspect-ratio: 1440 / 768;
     object-fit: cover;
   }

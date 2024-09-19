@@ -25,8 +25,6 @@
     width: rem(437);
     height: rem(201);
     background-size: contain;
-    // height: rem(181);
-    // background-position:;
     object-fit: cover;
     background-repeat: no-repeat;
     bottom: rem(54);
@@ -48,14 +46,10 @@
 
 .price__inner {
   position: relative;
-  // display: flex;
-  // flex-direction: column-reverse;
   align-items: center;
   margin: auto;
   @include mq(md) {
     margin: auto;
-    // position: relative;
-    // display: flex;
     flex-direction: initial;
     justify-content: space-between;
   }

@@ -22,7 +22,6 @@
   @include mq(md) {
     justify-content: start;
     width: rem(494);
-    // margin: rem(50) rem(0) 0 rem(0);
     display: flex;
     padding: 0;
     align-self: start;
@@ -31,25 +30,18 @@
 }
 .price__contents-right {
   display: block;
-  // margin: rem(28) 0 0;
   max-width: rem(600);
   @include mq(md) {
     align-self: start;
     width: rem(492);
     display: block;
-    // margin-top: rem(45);
   }
 }
 
 .price__content {
-  // display: flex;
-  // justify-content: space-between;
   width: 100%;
   font-family: $base-font-family;
-
   @include mq(md) {
-    // display: flex;
-    // justify-content: space-between;
     width: 100%;
     max-width: 100%;
     margin: rem(40) 0 0;
@@ -122,16 +114,3 @@
   }
 }
 
-// .logo__price {
-//   position: absolute;
-//   display: none;
-//   @include mq(md) {
-//     width: rem(437);
-//     height: rem(201);
-//     top: calc(50% + rem(440));
-//     left: calc(50% - rem(402));
-//     transform: translate(-50%, -50%);
-//     z-index: 15;
-//     display: block;
-//   }
-// }

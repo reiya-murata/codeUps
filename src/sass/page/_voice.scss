@@ -3,10 +3,7 @@
 .voice {
   font-family: $base-font-family;
   position: relative;
-  // margin-top: rem(80);
   @include mq(md) {
-    // margin: auto;
-    // margin-top: rem(146);
   }
 }
 
@@ -20,8 +17,6 @@
     width: rem(71);
     height: rem(162);
     background-size: contain;
-    // height: rem(181);
-    // background-position:;
     object-fit: cover;
     background-repeat: no-repeat;
     bottom: rem(-74);
@@ -33,34 +28,12 @@
 .l-voice {
   margin-top: rem(80);
   @include mq(md) {
-    // margin: auto;
     margin-top: rem(146);
   }
 }
 .voice__inner {
   position: relative;
-  // margin: auto;
-  // margin-top: rem(80);
   @include mq(md) {
-    // margin: auto;
-    // margin-top: rem(146);
   }
 }
-
-
-// .voice__logo--ibaratatu {
-//   display: none;
-//   position: absolute;
-//   z-index: 10;
-//   @include mq(md) {
-//     // top: calc(50% + rem(302));
-//     // left: calc(50% + rem(506));
-//     // transform: translate(-50%, -50%);
-//     top: rem(535);
-//     right: rem(25);
-//     display: block;
-//     width: rem(71);
-//     // height: rem(162);
-//   }
-// }
 

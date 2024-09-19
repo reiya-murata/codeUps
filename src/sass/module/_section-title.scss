@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.section_title__main {
+.section-title__main {
   font-size: rem(32);
   font-weight: $regular;
   font-family: $second-font-family;
@@ -14,14 +14,14 @@
     text-shadow: none;
   }
 }
-.information .section_title__main {
+.information .section-title__main {
   text-shadow: none;
 }
-.price .section_title__main {
+.price .section-title__main {
   text-shadow: none;
 }
 
-.section_title__main::first-letter {
+.section-title__main::first-letter {
   color: $blue;
   font-weight: $regular;
   text-transform: capitalize;
@@ -30,7 +30,7 @@
   }
 }
 
-.section_title__sub {
+.section-title__sub {
   font-family: $base-font-family;
   color: $blue;
   font-size: rem(12);
@@ -46,14 +46,14 @@
     text-shadow: none;
   }
 }
-.information .section_title__sub {
+.information .section-title__sub {
   text-shadow: none;
 }
-.price .section_title__sub {
+.price .section-title__sub {
   text-shadow: none;
 }
 
-.section_title__sub--campaign {
+.section-title__sub--campaign {
   font-family: $base-font-family;
   color: $blue;
   font-size: rem(12);
@@ -69,7 +69,7 @@
   }
 }
 
-.section_title__blog {
+.section-title__blog {
   font-family: $second-font-family;
   text-transform: capitalize;
   font-weight: $regular;
@@ -82,7 +82,7 @@
   }
 }
 
-.section_title__main--blog {
+.section-title__main--blog {
   font-size: rem(32);
   font-family: $second-font-family;
   line-height: 1;
@@ -100,7 +100,7 @@
   }
 }
 
-.section_title__blog::first-letter {
+.section-title__blog::first-letter {
   color: $blue;
   font-weight: $regular;
   text-transform: capitalize;
@@ -109,7 +109,7 @@
   }
 }
 
-.section_title__sub--blog {
+.section-title__sub--blog {
   font-family: $base-font-family;
   color: $blue;
   font-size: rem(12);
@@ -122,11 +122,10 @@
     font-size: rem(12);
     font-weight: $regular;
     line-height: 1;
-    // padding-top: rem(8);
   }
 }
 
-.section_title__main--contact {
+.section-title__main--contact {
   position: relative;
   text-transform: capitalize;
   font-family: $second-font-family;
@@ -142,12 +141,12 @@
   }
 }
 
-.section_title__main--contact::first-letter {
+.section-title__main--contact::first-letter {
   color: $blue;
   font-weight: $regular;
 }
 
-.section_title__sub--contact {
+.section-title__sub--contact {
   font-family: $base-font-family;
   color: $blue;
   text-align: center;
@@ -165,7 +164,7 @@
   }
 }
 
-.section_title__sub--contact2 {
+.section-title__sub--contact2 {
   font-size: rem(14);
   font-weight: $regular;
   color: $blue;

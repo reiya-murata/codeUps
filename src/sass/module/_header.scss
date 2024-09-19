@@ -3,7 +3,6 @@
 .header {
   position: fixed;
   width: 100%;
-  // height: rem(80);
   background: #0d293689;
   display: flex;
   justify-content: space-between;
@@ -18,7 +17,6 @@
 }
 
 .header__inner {
-  // position: fixed;
   display: flex;
   align-items: center;
   width: 100%;
@@ -44,7 +42,6 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  // display: inline-block;
   height: inherit;
   @include mq(md) {
     height: inherit;
@@ -57,14 +54,6 @@
 .header__home {
   position: fixed;
   display: flex;
-  // color: $blue;
-  // width: rem(48);
-  // height: rem(48);
-  // border: 1px solid;
-  // border-radius: 50px;
-  // align-items: center;
-  // justify-content: center;
-  // font-size: rem(32);
   bottom: rem(16);
   right: rem(16);
   @include mq(md) {
@@ -92,18 +81,13 @@
 }
 
 .logo__img-codeups {
-  // position: absolute;
   display: block;
   display: flex;
   justify-content: center;
   width: rem(110);
-  // top: rem(21);
-  // left: rem(10);
   z-index: 25;
   aspect-ratio: 133 / 50;
   @include mq(md) {
-    // left: rem(35);
-    // height: rem(50);
     width: rem(140);
   }
 }

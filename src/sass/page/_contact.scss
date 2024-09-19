@@ -2,14 +2,7 @@
 
 .contact {
   position: relative;
-  // overflow: hidden;
   @include mq(md) {
-    // margin-top: rem(140) ;
-    // margin-bottom:rem(160);
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
-    // margin-top: rem(16);
   }
 }
 
@@ -33,8 +26,6 @@
     width: rem(301);
     height: rem(138);
     background-size: contain;
-    // height: rem(181);
-    // background-position:;
     object-fit: cover;
     background-repeat: no-repeat;
     top: rem(-36);
@@ -47,15 +38,12 @@
   margin-top: rem(80);
   @include mq(md) {
     margin-top: rem(140);
-    // margin-bottom:rem(160);
   }
 }
 .contact__inner {
   width: 100%;
   display: flex;
   justify-content: center;
-  // margin: auto;
   @include mq(md) {
-    // margin: auto;
   }
 }

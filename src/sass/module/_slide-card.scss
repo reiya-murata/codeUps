@@ -5,10 +5,8 @@
   box-shadow: rem(2) rem(2) rem(10) rem(0) rgba(0, 0, 0, 0.25);
   width: rem(280);
   min-height: rem(366);
-  // margin: rem(25) 0 rem(40) 0;
   @include mq(md) {
     display: flex;
-    // margin: rem(40) 0 0 0;
     width: rem(333);
     min-height: rem(445);
   }
