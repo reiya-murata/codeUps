@@ -14,14 +14,19 @@
   display: flex;
   justify-content: center;
   line-height: 1;
+  gap: rem(40);
+  margin-left: rem(16);
   @include mq(md) {
     display: flex;
     gap: rem(142);
     flex-direction: initial;
-    justify-content: start;
+    justify-content: center;
     margin-top: rem(24);
+    margin-left: 0;
   }
 }
+
+
 
 
 .nav-bottom__flex {
@@ -29,7 +34,23 @@
   margin: 0;
   @include mq(md) {
     position: relative;
-    // width: rem(160);
+  }
+}
+.nav-bottom__flexes--right{
+  display: flex;
+  flex-direction: column;
+  @include mq(md) {
+    flex-direction: initial;
+    gap: rem(130);
+  }
+}
+
+.nav-bottom__flexes--left{
+  display: flex;
+  flex-direction: column;
+  @include mq(md) {
+    gap: rem(130);
+    flex-direction: initial;
   }
 }
 

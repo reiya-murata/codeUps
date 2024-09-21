@@ -1154,14 +1154,26 @@ div.colorbox {
 
 .nav-bottom__flexes {
 	display: flex;
+	gap: 2.5rem;
 	justify-content: center;
 	line-height: 1;
+	margin-left: 1rem;
 	position: relative;
 }
 
 .nav-bottom__flex {
 	margin: 0;
 	position: relative;
+}
+
+.nav-bottom__flexes--right {
+	display: flex;
+	flex-direction: column;
+}
+
+.nav-bottom__flexes--left {
+	display: flex;
+	flex-direction: column;
 }
 
 .nav-pc {
@@ -2274,6 +2286,10 @@ html {
 	margin: 0;
 }
 
+.nav__item--bold br {
+	display: none;
+}
+
 .nav-bottom-icons {
 	display: flex;
 	flex-direction: initial;
@@ -2288,12 +2304,23 @@ html {
 	display: flex;
 	flex-direction: initial;
 	gap: 8.875rem;
-	justify-content: start;
+	justify-content: center;
+	margin-left: 0;
 	margin-top: 1.5rem;
 }
 
 .nav-bottom__flex {
 	position: relative;
+}
+
+.nav-bottom__flexes--right {
+	flex-direction: initial;
+	gap: 8.125rem;
+}
+
+.nav-bottom__flexes--left {
+	flex-direction: initial;
+	gap: 8.125rem;
 }
 
 .nav-pc {
