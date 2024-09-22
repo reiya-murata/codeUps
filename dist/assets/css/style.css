@@ -1068,6 +1068,11 @@ div.colorbox {
 	text-align: left;
 }
 
+.nav__item {
+	font-weight: 300;
+	margin-top: 1.625rem;
+}
+
 .nav_item a {
 	display: block;
 }
@@ -1095,10 +1100,6 @@ div.colorbox {
 
 .nav__items-right :first-child {
 	margin-top: 0;
-}
-
-.nav__item {
-	margin-top: 1.625rem;
 }
 
 .nav__item--bold {

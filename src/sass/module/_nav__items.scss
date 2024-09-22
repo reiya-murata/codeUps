@@ -17,9 +17,15 @@
     font-family: $base-font-family;
   }
 }
+
 .nav__items li {
   text-align: start;
   position: relative;
+}
+
+.nav__item {
+  font-weight: $regular;
+  margin-top: rem(26);
 }
 
 .nav_item a {
@@ -47,10 +53,6 @@
 
 .nav__items-right :first-child {
   margin-top: 0;
-}
-
-.nav__item {
-  margin-top: rem(26);
 }
 
 .nav__item--bold {
