@@ -69,38 +69,11 @@
   }
 }
 
-.section-title__blog {
-  font-family: $second-font-family;
-  text-transform: capitalize;
-  font-weight: $regular;
+.section-title--blog {
   @include mq(md) {
-    font-size: rem(32);
-    line-height: 1;
-    text-transform: capitalize;
-    color: $white;
-    text-align: center;
   }
 }
-
-.section-title__main--blog {
-  font-size: rem(32);
-  font-family: $second-font-family;
-  line-height: 1;
-  text-transform: capitalize;
-  font-weight: $regular;
-  text-align: center;
-  text-shadow: rem(2) rem(2) rem(4) rgba(0, 0, 0, 0.5);
-  @include mq(md) {
-    font-size: rem(40);
-    font-family: $second-font-family;
-    line-height: 1;
-    font-weight: $regular;
-    text-align: center;
-    color: $white;
-  }
-}
-
-.section-title__blog::first-letter {
+.section-title--blog .section-title__main::first-letter {
   color: $blue;
   font-weight: $regular;
   text-transform: capitalize;
@@ -109,74 +82,43 @@
   }
 }
 
-.section-title__sub--blog {
+.section-title--blog .section-title__main {
+  @include mq(md) {
+    color: $white;
+  }
+}
+
+
+.section-title--blog .section-title__sub {
   font-family: $base-font-family;
   color: $blue;
-  font-size: rem(12);
-  margin-top: rem(8);
-  text-align: center;
-  font-weight: $regular;
   text-shadow: rem(2) rem(2) rem(4) rgba(0, 0, 0, 0.5);
   @include mq(md) {
     color: $white;
-    font-size: rem(12);
-    font-weight: $regular;
-    line-height: 1;
   }
 }
 
-.section-title__main--contact {
+.section-title--contact .section-title__main{
   position: relative;
-  text-transform: capitalize;
-  font-family: $second-font-family;
   font-size: rem(80);
-
   text-shadow: rem(2) rem(2) rem(4) rgba(0, 0, 0, 0.5);
   @include mq(md) {
     font-size: rem(80);
-    line-height: 1;
-    font-weight: $regular;
     margin-top: rem(20);
     text-shadow: none;
   }
 }
 
-.section-title__main--contact::first-letter {
+.section-title--contact .section-title__main::first-letter {
   color: $blue;
   font-weight: $regular;
 }
 
-.section-title__sub--contact {
-  font-family: $base-font-family;
-  color: $blue;
-  text-align: center;
-  font-size: rem(12);
-  font-weight: $regular;
+.section-title--contact .section-title__sub {
   margin-top: rem(-4);
-  text-shadow: rem(2) rem(2) rem(4) rgba(0, 0, 0, 0.5);
   @include mq(md) {
-    font-family: $base-font-family;
     padding: 0;
-    font-size: rem(12);
-    line-height: 1;
     margin-top: rem(4);
-    text-shadow: none;
   }
 }
 
-.section-title__sub--contact2 {
-  font-size: rem(14);
-  font-weight: $regular;
-  color: $blue;
-  margin-top: rem(12);
-  text-shadow: rem(2) rem(2) rem(4) rgba(0, 0, 0, 0.5);
-  @include mq(md) {
-    font-size: rem(14);
-    font-family: $base-font-family;
-    color: $blue;
-    line-height: 1;
-    text-align: center;
-    text-shadow: none;
-    margin-top: rem(8);
-  }
-}

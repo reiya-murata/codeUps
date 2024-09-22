@@ -312,24 +312,24 @@ a {
 	width: 100%;
 }
 
-.logo__img-codeups-bottom {
+.nav-bottom-icons__img-codeups {
 	width: 7.5rem;
 	z-index: 15;
 }
 
-.sns__icons {
+.sns {
 	display: flex;
 	margin-top: 1rem;
 	position: relative;
 }
 
-.instagram__icon {
+.sns__instagram {
 	margin-left: 1rem;
 	width: 1.5rem;
 	z-index: 10;
 }
 
-.facebook__icon {
+.sns__facebook {
 	width: 1.5rem;
 	z-index: 10;
 }
@@ -565,7 +565,7 @@ a {
 	padding-bottom: 0.25rem;
 }
 
-.blog-card--text {
+.blog-card__text {
 	margin-top: 1rem;
 }
 
@@ -705,7 +705,6 @@ div.colorbox {
 
 .contact__content {
 	font-family: "Noto Sans JP", sans-serif;
-	line-height: 1.7;
 	text-align: center;
 }
 
@@ -775,7 +774,12 @@ div.colorbox {
 	z-index: 15;
 }
 
-.copyright {
+.contact-title__sub {
+	font-size: 0.875rem;
+	margin-top: 0.75rem;
+}
+
+.footer__copyright {
 	background-color: #408f95;
 	color: #fff;
 	font-family: "Gotu", sans-serif;
@@ -960,6 +964,19 @@ div.colorbox {
 	z-index: 10;
 }
 
+.hero__mainvisual img {
+	height: 100%;
+	max-width: 100%;
+}
+
+.hero__mainvisual {
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+	z-index: 100;
+}
+
 .hero__swiper img {
 	aspect-ratio: 375/667;
 	height: 100vh;
@@ -977,7 +994,7 @@ div.colorbox {
 	width: 100%;
 }
 
-.hero__swiper-slide {
+.hero__campaign-slide swiper-slide {
 	aspect-ratio: 375/667;
 	background-position: center;
 	background-size: cover;
@@ -985,7 +1002,7 @@ div.colorbox {
 	width: 100%;
 }
 
-.hero__swiper-slide img {
+.hero__campaign-slide swiper-slide img {
 	aspect-ratio: 375/667;
 	display: block;
 	height: 100vh;
@@ -1031,19 +1048,6 @@ div.colorbox {
 	aspect-ratio: 540/356;
 	max-width: -moz-fit-content;
 	max-width: fit-content;
-}
-
-.mainvisial img {
-	height: 100%;
-	max-width: 100%;
-}
-
-.mainvisial {
-	background-repeat: no-repeat;
-	background-size: cover;
-	height: 100%;
-	width: 100%;
-	z-index: 100;
 }
 
 .nav__items {
@@ -1370,67 +1374,31 @@ div.colorbox {
 	text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.5);
 }
 
-.section-title__blog {
-	font-family: "Gotu", sans-serif;
-	font-weight: 300;
-	text-transform: capitalize;
-}
-
-.section-title__main--blog {
-	font-family: "Gotu", sans-serif;
-	font-size: 2rem;
-	font-weight: 300;
-	line-height: 1;
-	text-align: center;
-	text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.5);
-	text-transform: capitalize;
-}
-
-.section-title__blog::first-letter {
+.section-title--blog .section-title__main::first-letter {
 	color: #408f95;
 	font-weight: 300;
 	text-transform: capitalize;
 }
 
-.section-title__sub--blog {
+.section-title--blog .section-title__sub {
 	color: #408f95;
 	font-family: "Noto Sans JP", sans-serif;
-	font-size: 0.75rem;
-	font-weight: 300;
-	margin-top: 0.5rem;
-	text-align: center;
 	text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.5);
 }
 
-.section-title__main--contact {
-	font-family: "Gotu", sans-serif;
+.section-title--contact .section-title__main {
 	font-size: 5rem;
 	position: relative;
 	text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.5);
-	text-transform: capitalize;
 }
 
-.section-title__main--contact::first-letter {
+.section-title--contact .section-title__main::first-letter {
 	color: #408f95;
 	font-weight: 300;
 }
 
-.section-title__sub--contact {
-	color: #408f95;
-	font-family: "Noto Sans JP", sans-serif;
-	font-size: 0.75rem;
-	font-weight: 300;
+.section-title--contact .section-title__sub {
 	margin-top: -0.25rem;
-	text-align: center;
-	text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.5);
-}
-
-.section-title__sub--contact2 {
-	color: #408f95;
-	font-size: 0.875rem;
-	font-weight: 300;
-	margin-top: 0.75rem;
-	text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.5);
 }
 
 .slide-card {
@@ -1788,24 +1756,24 @@ html {
 	padding-top: 5rem;
 }
 
-.logo__img-codeups-bottom {
+.nav-bottom-icons__img-codeups {
 	margin-top: 0;
 	width: 12.5rem;
 }
 
-.sns__icons {
+.sns {
 	margin-left: 2.5rem;
 	margin-top: 2.375rem;
 	position: relative;
 }
 
-.instagram__icon {
+.sns__instagram {
 	margin-left: 1rem;
 	width: 2rem;
 	z-index: 10;
 }
 
-.facebook__icon {
+.sns__facebook {
 	width: 2rem;
 	z-index: 10;
 }
@@ -2008,7 +1976,7 @@ html {
 	padding-bottom: 0.125rem;
 }
 
-.blog-card--text {
+.blog-card__text {
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1rem;
 }
@@ -2117,7 +2085,12 @@ html {
 	width: 100%;
 }
 
-.copyright {
+.contact-title__sub {
+	font-size: 0.875rem;
+	margin-top: 0.5rem;
+}
+
+.footer__copyright {
 	font-size: 0.875rem;
 	line-height: 1;
 	margin-top: 6.25rem;
@@ -2200,17 +2173,25 @@ html {
 	object-fit: cover;
 }
 
+.hero__mainvisual {
+	aspect-ratio: 1440/768;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+}
+
 .hero__swiper img {
 	aspect-ratio: 1440/768;
 	height: 100vh;
 	width: 100%;
 }
 
-.hero__swiper-slide {
+.hero__campaign-slide swiper-slide {
 	aspect-ratio: 1440/768;
 }
 
-.hero__swiper-slide img {
+.hero__campaign-slide swiper-slide img {
 	aspect-ratio: 1440/768;
 	height: 100vh;
 	width: 100%;
@@ -2258,14 +2239,6 @@ html {
 	height: 22.25rem;
 	margin-top: 0.125rem;
 	width: 33.75rem;
-}
-
-.mainvisial {
-	aspect-ratio: 1440/768;
-	background-repeat: no-repeat;
-	background-size: cover;
-	height: 100%;
-	width: 100%;
 }
 
 .nav__items {
@@ -2426,59 +2399,27 @@ html {
 	text-shadow: none;
 }
 
-.section-title__blog {
-	color: #fff;
-	font-size: 2rem;
-	line-height: 1;
-	text-align: center;
-	text-transform: capitalize;
-}
-
-.section-title__main--blog {
-	color: #fff;
-	font-family: "Gotu", sans-serif;
-	font-size: 2.5rem;
-	font-weight: 300;
-	line-height: 1;
-	text-align: center;
-}
-
-.section-title__blog::first-letter {
+.section-title--blog .section-title__main::first-letter {
 	color: #fff;
 }
 
-.section-title__sub--blog {
+.section-title--blog .section-title__main {
 	color: #fff;
-	font-size: 0.75rem;
-	font-weight: 300;
-	line-height: 1;
 }
 
-.section-title__main--contact {
+.section-title--blog .section-title__sub {
+	color: #fff;
+}
+
+.section-title--contact .section-title__main {
 	font-size: 5rem;
-	font-weight: 300;
-	line-height: 1;
 	margin-top: 1.25rem;
 	text-shadow: none;
 }
 
-.section-title__sub--contact {
-	font-family: "Noto Sans JP", sans-serif;
-	font-size: 0.75rem;
-	line-height: 1;
+.section-title--contact .section-title__sub {
 	margin-top: 0.25rem;
 	padding: 0;
-	text-shadow: none;
-}
-
-.section-title__sub--contact2 {
-	color: #408f95;
-	font-family: "Noto Sans JP", sans-serif;
-	font-size: 0.875rem;
-	line-height: 1;
-	margin-top: 0.5rem;
-	text-align: center;
-	text-shadow: none;
 }
 
 .slide-card {

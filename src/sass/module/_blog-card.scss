@@ -63,7 +63,7 @@
     padding-bottom: rem(2);
   }
 }
-.blog-card--text {
+.blog-card__text {
   margin-top: rem(16);
   @include mq(md) {
     font-size: rem(16);

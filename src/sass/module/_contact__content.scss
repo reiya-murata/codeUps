@@ -1,13 +1,8 @@
 @use "global" as *;
 .contact__inner {
   width: auto;
-  // padding-right: $padding-sp;
-  // padding-left: $padding-sp;
-  // margin: auto;
   @include mq("md") {
     width: 100%;
-    // padding-right: $padding-pc;
-    // padding-left: $padding-pc;
   }
 }
 
@@ -15,7 +10,6 @@
   font-size: rem(16);
   margin-top: rem(16);
   @include mq(md) {
-    // margin-top: rem(4);
     font-size: rem(16);
   }
 }
@@ -23,12 +17,9 @@
 .contact__content {
   font-family: $base-font-family;
   text-align: center;
-  line-height: 1.7;
-  // margin-top: rem(162);
   @include mq(md) {
     text-align: left;
     line-height: 1.7;
-    // margin: rem(70) rem(5) 0 rem(50);
     font-size: rem(16);
     margin-left: rem(40);
   }
@@ -46,22 +37,16 @@
     display: flex;
     line-height: 1.5;
     border-right: 1px solid $blue;
-    // max-width: rem(572);
     border-top: none;
-    // margin-top: rem(84);
-    // margin-bottom: rem(76);
     padding-right: rem(82);
   }
 }
 .contact__map {
   max-width: rem(295);
-  // height: rem(160);
   text-align: center;
   margin-top: rem(18);
   @include mq(md) {
     max-width: rem(273);
-    // height: rem(148);
-    // margin-top: rem(24) ;
     margin-left: rem(21);
   }
 }
@@ -69,10 +54,8 @@
   aspect-ratio: 273 / 148;
   object-fit: cover;
   max-width: rem(295);
-  // height: rem(160);
   @include mq(md) {
     max-width: rem(273);
-    // height: rem(148);
   }
 }
 .contact__left-address {
@@ -110,7 +93,6 @@
     display: flex;
     box-shadow: rem(4) rem(4) rem(10) 0 rgba(0, 0, 0, 0.25);
     width: rem(1080);
-    // height: rem(415);
     margin: rem(140) 0 rem(160);
   }
 }
@@ -121,37 +103,16 @@
   text-align: center;
   align-items: center;
   max-width: rem(600);
-  // padding: rem(33) 0;
   @include mq(md) {
     align-items: normal;
     display: flex;
     flex-direction: initial;
     box-shadow: rem(4) rem(4) rem(10) 0 rgba(0, 0, 0, 0.25);
     max-width: rem(1080);
-    // height: rem(415);
-    // margin: rem(140) 0 rem(160);
     padding: rem(80) 0;
   }
 }
 
-// .contact__logo--fish {
-//   position: absolute;
-//   width: rem(109);
-//   height: rem(50);
-//   // top: calc(50% - rem(272));
-//   // left: calc(50% + rem(118));
-//   // transform: translate(-50%, -50%);
-//   top: rem(-26);
-//   right: rem(15);
-//   @include mq(md) {
-//     position: absolute;
-//     width: rem(301);
-//     height: rem(138);
-//     top: rem(-38);
-//     right: rem(50);
-//     // z-index: 10;
-//   }
-// }
 .contact__logo-codeups {
   text-align: center;
   border-bottom: rem(1) solid $blue;
@@ -161,11 +122,8 @@
   padding-bottom: rem(6);
   @include mq(md) {
     max-width: rem(440);
-    // padding: 0 rem(119) rem(9) rem(121);
-    // margin: rem(80) rem(82) rem(24) rem(50);
     padding-left: rem(120);
     padding-right: rem(120);
-    // margin-top: rem(82);
     margin-left: rem(50);
     padding-bottom: rem(8);
   }
@@ -177,5 +135,14 @@
   @include mq(md) {
     display: block;
     width: 100%;
+  }
+}
+
+.contact-title__sub {
+  font-size: rem(14);
+  margin-top: rem(12);
+  @include mq(md) {
+    font-size: rem(14);
+    margin-top: rem(8);
   }
 }

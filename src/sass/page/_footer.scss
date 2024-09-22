@@ -25,7 +25,7 @@
   }
 }
 
-.logo__img-codeups-bottom {
+.nav-bottom-icons__img-codeups {
   width: rem(120);
   z-index: 15;
   @include mq(md) {
@@ -34,7 +34,7 @@
   }
 }
 
-.sns__icons {
+.sns {
   display: flex;
   position: relative;
   margin-top: rem(16);
@@ -44,7 +44,7 @@
     margin-left: rem(40);
   }
 }
-.instagram__icon {
+.sns__instagram {
   z-index: 10;
   width: rem(24);
   margin-left: rem(16);
@@ -54,7 +54,7 @@
     margin-left: rem(16);
   }
 }
-.facebook__icon {
+.sns__facebook {
   z-index: 10;
   width: rem(24);
   @include mq(md) {
