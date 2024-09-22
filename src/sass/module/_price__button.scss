@@ -1,5 +1,5 @@
 @use "global" as *;
-.button__price {
+.price__button {
   margin-top: rem(40);
   text-align: center;
   @include mq(md) {

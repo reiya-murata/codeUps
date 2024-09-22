@@ -1,5 +1,5 @@
 @use "global" as *;
-.button__contact {
+.contact__button {
   margin-top: rem(40);
   padding: 0;
   @include mq(md) {

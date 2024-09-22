@@ -1,9 +1,8 @@
 @use "global" as *;
-.button__voice {
+.campaign__button {
   text-align: center;
-  margin-top: rem(36);
+  margin-top: rem(30);
   @include mq(md) {
-    text-align: center;
     margin-top: rem(80);
   }
 }

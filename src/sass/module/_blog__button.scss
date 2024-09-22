@@ -1,8 +1,8 @@
 @use "global" as *;
-.button__information {
+.blog__button {
   text-align: center;
   margin-top: rem(40);
   @include mq(md) {
-  text-align: center;
+    margin-top: rem(84);
   }
 }
