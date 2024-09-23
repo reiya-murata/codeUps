@@ -29,15 +29,18 @@
   }
 }
 
-
-.swiper__campaign {
-  overflow: hidden;
+.campaign-slide {
+  width: rem(280);
+  margin: 0;
   @include mq(md) {
-    display: flex;
-    height: 100%;
-    margin-right: calc(50% - 50vw);
+    width: rem(333);  
+    align-items: stretch;
+    margin: 0;
   }
 }
+
+
+
 
 .swiper-wrapper.campaign__slider {
   // display: grid;

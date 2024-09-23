@@ -208,8 +208,9 @@ a {
 	margin-top: 1.5rem;
 }
 
-.swiper__campaign {
-	overflow: hidden;
+.campaign-slide {
+	margin: 0;
+	width: 17.5rem;
 }
 
 .swiper-wrapper.campaign__slider {
@@ -1460,6 +1461,10 @@ div.colorbox {
 	width: 17.5rem;
 }
 
+.swiper__campaign {
+	overflow: hidden;
+}
+
 .swiper-slide a:hover {
 	opacity: 0.5;
 }
@@ -1688,10 +1693,10 @@ html {
 	width: 100%;
 }
 
-.swiper__campaign {
-	display: flex;
-	height: 100%;
-	margin-right: calc(50% - 50vw);
+.campaign-slide {
+	align-items: stretch;
+	margin: 0;
+	width: 20.8125rem;
 }
 
 .swiper-wrapper.campaign__slider {
@@ -2457,6 +2462,12 @@ html {
 	height: auto; /* スライド内の各要素の高さを100%に設定 */
 	margin: 0;
 	width: 20.8125rem;
+}
+
+.swiper__campaign {
+	display: flex;
+	height: 100%;
+	margin-right: calc(50% - 50vw);
 }
 
 .swiper-button-next {
