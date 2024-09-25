@@ -1,0 +1,24 @@
+@use "global" as *;
+
+.section-title--blog .section-title__main::first-letter {
+  color: $blue;
+  font-weight: $regular;
+  text-transform: capitalize;
+  @include mq(md) {
+    color: $white;
+  }
+}
+
+.section-title--blog .section-title__main {
+  @include mq(md) {
+    color: $white;
+  }
+}
+.section-title--blog .section-title__sub {
+  font-family: $base-font-family;
+  color: $blue;
+  text-shadow: rem(2) rem(2) rem(4) rgba(0, 0, 0, 0.5);
+  @include mq(md) {
+    color: $white;
+  }
+}

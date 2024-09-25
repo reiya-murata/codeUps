@@ -45,7 +45,7 @@
   }
 }
 
-.voice-card-age {
+.voice-card__age {
   grid-row: 1;
   grid-column: 1;
   font-size: rem(12);
@@ -65,7 +65,7 @@
   }
 }
 
-.voice-card .card__img {
+.voice-card__img {
   grid-row: 1;
   grid-column: 2;
   aspect-ratio: 180 / 140;
@@ -76,7 +76,7 @@
     margin-right: rem(16);
   }
 }
-.voice-card .card__img {
+.voice-card__img {
   aspect-ratio: 180 / 140;
   object-fit: cover;
   max-width: rem(151);
@@ -89,9 +89,6 @@
     height: 100%;
     max-width: rem(180);
   }
-}
-.card__img img {
-  object-fit: cover;
 }
 
 .voice-card__title {

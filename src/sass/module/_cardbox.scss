@@ -1,9 +1,9 @@
 @use "global" as *;
 
-div.colorbox {
+.colorbox {
   position: relative;
 }
-div.colorbox div.color {
+.colorbox .color {
   position: absolute;
   top: 0;
   right: 0;
@@ -13,6 +13,6 @@ div.colorbox div.color {
   background-color: #408F95;
 
 }
-div.colorbox  {
+.colorbox  {
   display: block;
 }

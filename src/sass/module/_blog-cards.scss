@@ -1,11 +1,6 @@
 @use "global" as *;
 
-.blog__cards {
-  margin-top: rem(-8);
-  @include mq(md) {
-    margin-top: rem(84);
-  }
-}
+
 .blog-cards a {
   display: block;
   @include mq(md) {

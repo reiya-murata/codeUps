@@ -38,7 +38,7 @@ burger.addEventListener("click", function () {
 });
 
 // swiper メインビュー
-var hero__swiper = new Swiper(".hero__swiper", {
+var hero__swiper = new Swiper(".js-hero-swiper", {
   spaceBetween: 30,
   effect: "fade",
   loop: true,
@@ -52,31 +52,8 @@ var hero__swiper = new Swiper(".hero__swiper", {
   }
 });
 
-//スライダー 
-// const swiper = new Swiper('.swiper', {
-//   // Optional parameters
-//   direction: 'horizontal',
-//   loop: true,
-//   autoplay: {
-//     delay: 2500,
-//     disableOnInteraction: false,
-//   },
-//   centeredSlides: true, 
-//   breakpoints:{
-// 767:{
-//   slidesPerView:4
-// },
-//   },
-//   // Navigation arrows
-//   navigation: {
-//     nextEl: '.swiper-button-next',
-//     prevEl: '.swiper-button-prev',
-//   },
-
-// });
-
-//swiper__campaign 
-var swiper = new Swiper(".swiper__campaign", {
+//campaign__swiper
+var swiper = new Swiper(".js-campaign-swiper", {
   loop: true,
   loopedSlides: 2,
   slidesPerView: "auto",
@@ -88,8 +65,8 @@ var swiper = new Swiper(".swiper__campaign", {
   },
   navigation: {
     enabled: true,
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev'
+    nextEl: '.swiper-button__next',
+    prevEl: '.swiper-button__prev'
   }
 });
 

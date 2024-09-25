@@ -26,4 +26,150 @@
     display: none;
   }
 }
+.nav__items {
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+  color: $white;
+  font-weight: $regular;
+  z-index: 15;
+  margin-top: rem(70);
+  margin-bottom: rem(20);
+  margin: auto;
+  line-height: 1;
+  @include mq(md) {
+    margin: 0;
+    font-weight: $regular;
+    font-family: $base-font-family;
+  }
+}
+
+.nav__items li {
+  text-align: start;
+  position: relative;
+}
+
+.nav__item {
+  font-weight: $regular;
+  margin-top: rem(26);
+}
+
+.nav_item a {
+  display: block;
+}
+
+.nav__items-left {
+  font-family: $base-font-family;
+  font-size: rem(16);
+  color: $white;
+  z-index: 15;
+  margin-left: rem(0);
+  margin-top: rem(36);
+}
+.nav__items-left :first-child {
+  margin-top: 0;
+}
+.nav__items-right {
+  margin-left: rem(30);
+  margin-top: rem(36);
+  font-family: $base-font-family;
+  font-size: rem(16);
+  color: $white;
+}
+
+.nav__items-right :first-child {
+  margin-top: 0;
+}
+
+.nav__item--bold {
+  font-weight: $bold;
+  margin-top: rem(42);
+  position: relative;
+}
+
+.nav__item--bold::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url("../images/common/_hitode.svg");
+  width: rem(20);
+  height: rem(20);
+  background-repeat: no-repeat;
+  left: rem(-23);
+  top: rem(0);
+}
+
+.nav__items {
+  position: relative;
+}
+
+.nav__item--bold br{
+  @include mq(md) {
+    display: none;
+  }
+}
+
+.nav__items {
+  z-index: 10;
+  color: $white;
+  font-weight: $regular;
+  @include mq(md) {
+  }
+}
+.nav__items li:hover {
+  opacity: 0.5;
+}
+
+.nav_icons {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  @include mq(md) {
+    max-width: none;
+    display: flex;
+    flex-direction: initial;
+  }
+}
+
+.nav__flexes {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  line-height: 1;
+  gap: rem(40);
+  margin-left: rem(16);
+  @include mq(md) {
+    display: flex;
+    gap: rem(142);
+    flex-direction: initial;
+    justify-content: center;
+    margin-top: rem(24);
+    margin-left: 0;
+  }
+}
+
+.nav__flex {
+  position: relative;
+  margin: 0;
+  @include mq(md) {
+    position: relative;
+  }
+}
+.nav__flexes-right{
+  display: flex;
+  flex-direction: column;
+  @include mq(md) {
+    flex-direction: initial;
+    gap: rem(130);
+  }
+}
+
+.nav__flexes-left{
+  display: flex;
+  flex-direction: column;
+  @include mq(md) {
+    gap: rem(130);
+    flex-direction: initial;
+  }
+}
 

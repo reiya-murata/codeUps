@@ -1,0 +1,35 @@
+@use "global" as *;
+
+.swiper-button__next {
+  position: absolute;
+  display: none;
+  @include mq(md) {
+    display: block;
+    top: rem(40);
+    left: calc(50% + rem(500));
+    transform: translate(-50%, -50%);
+    height: rem(80);
+    width: rem(80);
+  }
+}
+
+.swiper-button__prev {
+  position: absolute;
+  display: none;
+  @include mq(md) {
+    display: block;
+    top: rem(40);
+    left: calc(50% + rem(340));
+    transform: translate(-50%, -50%);
+    height: rem(80);
+    width: rem(80);
+  }
+}
+
+.swiper-button__next :hover {
+  opacity: 0.5;
+}
+.swiper-button__prev :hover {
+  opacity: 0.5;
+}
+
