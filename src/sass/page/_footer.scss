@@ -16,15 +16,6 @@
   }
 }
 
-.nav-icons__icon{
-  width: rem(120);
-  z-index: 15;
-  @include mq(md) {
-    width: rem(200);
-    margin-top: 0;
-  }
-}
-
 .footer__copyright {
   font-family: $second-font-family;
   font-weight: $normal;

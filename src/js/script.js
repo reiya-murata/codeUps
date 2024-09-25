@@ -40,6 +40,32 @@ burger.addEventListener("click", () => {
 });
 
 
+//home非表示
+const heroContents = document.querySelector('.js-hero-contents');
+const headerHeight = heroContents.clientHeight*1/5;
+const headerHome = document.querySelector('.js-header-home');
+
+window.addEventListener("scroll", () => {
+
+  // hero__contents が表示されているかどうかを確認
+  let scrollPosition = document.documentElement.scrollTop;
+  // スクロールに合わせて要素をヘッダーの高さ分だけ移動（表示域から隠したり表示したり）
+  if (window.scrollY > headerHeight) {
+    headerHome.style.display = "flex";
+    console.log("a")
+  }
+  if (window.scrollY < headerHeight ) {
+    headerHome.style.display = "none";
+    console.log("b")
+  }
+});
+
+
+
+
+
+
+
 
 
 

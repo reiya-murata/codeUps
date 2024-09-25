@@ -483,11 +483,6 @@ a {
 	width: 100%;
 }
 
-.nav-icons__icon {
-	width: 7.5rem;
-	z-index: 15;
-}
-
 .footer__copyright {
 	background-color: #408f95;
 	color: #fff;
@@ -552,7 +547,7 @@ a {
 	justify-content: center;
 	position: absolute;
 	width: 100%;
-	z-index: 15;
+	z-index: 10;
 }
 
 .hero__title {
@@ -1066,13 +1061,11 @@ a {
 }
 
 .header.active {
-	background: #111;
 	position: fixed;
-	z-index: 25;
+	z-index: 15;
 }
 
 .active.header__inner {
-	background: #408f95;
 	z-index: 20;
 }
 
@@ -1083,6 +1076,11 @@ a {
 	justify-content: center;
 	width: 6.875rem;
 	z-index: 25;
+}
+
+.nav-icons__icon {
+	width: 7.5rem;
+	z-index: 15;
 }
 
 .nav-pc {
@@ -1170,6 +1168,15 @@ a {
 	transform: translate(0); /* transformプロパティによる移動 */
 	transition: transform 0.5s ease, height 0.5s ease; /* transformプロパティとheightプロパティの変化を0.5秒かけて行う */ /* active状態 */
 	z-index: 20; /* 要素を他の要素の上に配置 */
+}
+
+.nav--bottom {
+	display: block;
+	height: auto;
+	overflow: visible;
+	position: relative;
+	top: auto;
+	z-index: 0;
 }
 
 .nav__items {
@@ -1866,11 +1873,6 @@ html {
 	text-align: center;
 }
 
-.nav-icons__icon {
-	margin-top: 0;
-	width: 12.5rem;
-}
-
 .footer__copyright {
 	font-size: 0.875rem;
 	line-height: 1;
@@ -1905,7 +1907,7 @@ html {
 	justify-content: center;
 	width: 100%;
 	width: 100%;
-	z-index: 15;
+	z-index: 10;
 }
 
 .hero__title {
@@ -2231,6 +2233,11 @@ html {
 
 .logo__img-codeups {
 	width: 8.75rem;
+}
+
+.nav-icons__icon {
+	margin-top: 0;
+	width: 12.5rem;
 }
 
 .nav-pc {

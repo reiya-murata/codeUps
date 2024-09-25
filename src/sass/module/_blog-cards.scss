@@ -1,6 +1,5 @@
 @use "global" as *;
 
-
 .blog-cards a {
   display: block;
   @include mq(md) {

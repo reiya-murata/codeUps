@@ -26,6 +26,15 @@
     display: none;
   }
 }
+
+.nav--bottom{
+  display: block;
+  position: relative;
+  height: auto;
+  top: auto;
+  z-index: 0;
+  overflow: visible;
+}
 .nav__items {
   display: flex;
   justify-content: center;

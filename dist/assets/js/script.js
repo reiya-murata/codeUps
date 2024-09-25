@@ -37,6 +37,24 @@ burger.addEventListener("click", function () {
   });
 });
 
+//home非表示
+var heroContents = document.querySelector('.js-hero-contents');
+var headerHeight = heroContents.clientHeight * 1 / 5;
+var headerHome = document.querySelector('.js-header-home');
+window.addEventListener("scroll", function () {
+  // hero__contents が表示されているかどうかを確認
+  var scrollPosition = document.documentElement.scrollTop;
+  // スクロールに合わせて要素をヘッダーの高さ分だけ移動（表示域から隠したり表示したり）
+  if (window.scrollY > headerHeight) {
+    headerHome.style.display = "flex";
+    console.log("a");
+  }
+  if (window.scrollY < headerHeight) {
+    headerHome.style.display = "none";
+    console.log("b");
+  }
+});
+
 // swiper メインビュー
 var hero__swiper = new Swiper(".js-hero-swiper", {
   spaceBetween: 30,
