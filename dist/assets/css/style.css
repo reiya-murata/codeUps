@@ -1437,7 +1437,7 @@ a {
 
 .voice-card {
 	box-shadow: 0.125rem 0.125rem 0.625rem 0rem rgba(0, 0, 0, 0.25);
-	min-width: 21.5625rem;
+	min-width: auto;
 	padding-bottom: 1.5rem;
 	padding-left: 1rem;
 	padding-right: 1rem;
@@ -1516,10 +1516,14 @@ a {
 }
 
 .voice-cards {
-	grid-gap: 2.5rem;
-	display: grid;
+	display: flex;
 	flex-direction: column;
 	gap: 2.5rem;
+}
+
+.voice-cards__item {
+	display: grid;
+	flex-direction: column;
 }
 
 .voice-cards a:hover {
@@ -2448,11 +2452,16 @@ html {
 }
 
 .voice-cards {
-	grid-gap: 2.5rem;
-	display: grid;
+	display: flex;
 	flex-direction: initial;
 	gap: 2.5rem;
 	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+}
+
+.voice-cards__item {
+	display: grid;
+	flex-direction: initial;
 	justify-content: center;
 }
 
