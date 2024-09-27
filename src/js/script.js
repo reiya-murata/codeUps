@@ -42,7 +42,7 @@ burger.addEventListener("click", () => {
 
 //home非表示
 const heroContents = document.querySelector('.js-hero-contents');
-const headerHeight = heroContents.clientHeight*1/5;
+const headerHeight = heroContents.clientHeight * 1 / 5;
 const headerHome = document.querySelector('.js-header-home');
 
 window.addEventListener("scroll", () => {
@@ -54,7 +54,7 @@ window.addEventListener("scroll", () => {
     headerHome.style.display = "flex";
     console.log("a")
   }
-  if (window.scrollY < headerHeight ) {
+  if (window.scrollY < headerHeight) {
     headerHome.style.display = "none";
     console.log("b")
   }
@@ -88,7 +88,7 @@ const hero__swiper = new Swiper(".js-hero-swiper", {
 
 
 //campaign__swiper
-var swiper = new Swiper(".js-campaign-swiper", {
+var swiper = new Swiper(".js-campaign__swiper", {
   loop: true,
   loopedSlides: 2,
   slidesPerView: "auto",
@@ -100,8 +100,8 @@ var swiper = new Swiper(".js-campaign-swiper", {
   },
   navigation: {
     enabled: true,
-    nextEl: '.swiper-button__next',
-    prevEl: '.swiper-button__prev',
+    nextEl: '.campaign__swiper-next',
+    prevEl: '.campaign__swiper-prev',
   }
 });
 

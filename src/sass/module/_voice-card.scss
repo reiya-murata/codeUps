@@ -60,8 +60,9 @@
   }
 }
 .voice-card__icon{
-  justify-self: end;
+  justify-self: start;
   @include mq(md) {
+    justify-self: end;
   }
 }
 

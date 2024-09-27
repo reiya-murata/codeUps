@@ -71,7 +71,7 @@ var hero__swiper = new Swiper(".js-hero-swiper", {
 });
 
 //campaign__swiper
-var swiper = new Swiper(".js-campaign-swiper", {
+var swiper = new Swiper(".js-campaign__swiper", {
   loop: true,
   loopedSlides: 2,
   slidesPerView: "auto",
@@ -83,8 +83,8 @@ var swiper = new Swiper(".js-campaign-swiper", {
   },
   navigation: {
     enabled: true,
-    nextEl: '.swiper-button__next',
-    prevEl: '.swiper-button__prev'
+    nextEl: '.campaign__swiper-next',
+    prevEl: '.campaign__swiper-prev'
   }
 });
 
