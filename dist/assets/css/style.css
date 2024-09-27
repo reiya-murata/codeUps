@@ -252,7 +252,7 @@ a {
 	margin-top: 2.5rem;
 	max-width: 37.5rem;
 	padding: 0;
-	z-index: 15;
+	z-index: 10;
 }
 
 .about__content-titles {
