@@ -103,10 +103,6 @@ select {
 
 /* Blur images when they have no alt attribute */
 
-img:not([alt]) {
-	filter: blur(10px);
-}
-
 /* フォームリセット */
 
 input,
@@ -171,6 +167,10 @@ a {
 	padding-top: 3rem;
 }
 
+.l-gallery {
+	margin-top: 2.5rem;
+}
+
 .l-information {
 	margin-bottom: 0;
 	margin-top: 3.6875rem;
@@ -186,6 +186,135 @@ a {
 
 .l-voice {
 	margin-top: 5rem;
+}
+
+.campaign-page__contents {
+	position: relative;
+}
+
+.about-page__main-img {
+	-o-object-fit: cover;
+	object-fit: cover;
+}
+
+.about-page__main-img::before {
+	background-color: #408F95;
+	content: "";
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.about-page__main-img img {
+	-o-object-fit: cover;
+	background-position: center;
+	display: block;
+	object-fit: cover;
+	width: 100vw;
+}
+
+.about-page__inner {
+	position: relative;
+}
+
+.about-page__category::before {
+	-o-object-fit: cover;
+	background-image: url("../images/common/_kingyohanadai-right.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	content: "";
+	height: 3.4375rem;
+	left: 10;
+	object-fit: cover;
+	position: absolute;
+	top: 3.125rem;
+	width: 7.5rem;
+	z-index: 2;
+}
+
+.about-page__body {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	left: 0;
+	margin-top: 3.25rem;
+	position: relative;
+	width: 100%;
+}
+
+.about-page__img-1 {
+	display: none;
+}
+
+.about-page__img-1 img {
+	display: block;
+	max-width: 100%;
+	width: 100%;
+}
+
+.about-page__img-2 img {
+	display: block;
+	max-width: 100%;
+	width: 100%;
+}
+
+.about-page__img-2 {
+	-o-object-fit: cover;
+	aspect-ratio: 880/581;
+	margin-top: 0rem;
+	object-fit: cover;
+	width: 100%;
+}
+
+.about-page__content {
+	color: #408f95;
+	display: block;
+	font-family: "Gotu", sans-serif;
+	font-weight: 300;
+	margin-left: 0;
+	margin-top: 2.5rem;
+	max-width: 37.5rem;
+	padding: 0;
+	z-index: 7;
+}
+
+.about-page__content::after {
+	display: none;
+}
+
+.about-page__content-titles {
+	color: #fff;
+	font-weight: 300;
+	padding-left: 0;
+	padding-right: 0;
+	position: relative;
+	width: 100%;
+}
+
+.about-page__content-title {
+	display: inline-block;
+	font-size: 2.5rem;
+	font-weight: 300;
+	left: calc(50% - 1.5rem);
+	line-height: 1;
+	position: absolute;
+	text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.5);
+	top: calc(50% - 12.5rem);
+	transform: translate(-50%, -50%);
+	width: 70%;
+}
+
+.about-page__texts {
+	color: #0D2936;
+	font-family: "Noto Sans JP", sans-serif;
+	font-weight: normal;
+}
+
+.about-page__text {
+	font-size: 1rem;
+	max-width: 37.5rem;
+	padding-top: 0;
 }
 
 .about {
@@ -252,6 +381,7 @@ a {
 	margin-top: 2.5rem;
 	max-width: 37.5rem;
 	padding: 0;
+	z-index: 7;
 }
 
 .about__content-titles {
@@ -271,7 +401,7 @@ a {
 }
 
 .about__texts {
-	color: #111;
+	color: #0D2936;
 	font-family: "Noto Sans JP", sans-serif;
 	font-weight: normal;
 }
@@ -461,6 +591,94 @@ a {
 .button:hover span {
 	border-color: #408f95;
 	z-index: 2;
+}
+
+.campaign-page {
+	position: relative;
+}
+
+.campaign-page__contents {
+	height: auto;
+	position: relative;
+	width: 100%;
+}
+
+.campaign-page__main-img {
+	-o-object-fit: cover;
+	object-fit: cover;
+}
+
+.campaign-page__main-img::before {
+	background-color: #408F95;
+	content: "";
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.campaign-page__main-img img {
+	-o-object-fit: cover;
+	background-position: center;
+	display: block;
+	object-fit: cover;
+	width: 100vw;
+}
+
+.campaign-page__inner {
+	position: relative;
+}
+
+.campaign-page__category::before {
+	-o-object-fit: cover;
+	background-image: url("../images/common/_kingyohanadai-right.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	content: "";
+	height: 3.4375rem;
+	left: 10;
+	object-fit: cover;
+	position: absolute;
+	top: 3.125rem;
+	width: 7.5rem;
+	z-index: 2;
+}
+
+.campaign-page__tab-menu {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	margin-top: 3.25rem;
+}
+
+.campaign-page__tab-icon {
+	font-size: 0.875rem;
+	text-align: center;
+	width: 10.125rem;
+}
+
+.campaign-page__tab-icon.active {
+	background-color: #408f95;
+	color: #fff;
+}
+
+.campaign-page__slides {
+	display: none;
+}
+
+.campaign-page__slides.active {
+	grid-gap: 2.5rem;
+	display: grid;
+	gap: 2.5rem;
+	margin-top: 2.5rem;
+}
+
+.campaign-page__tab.active {
+	display: block;
+}
+
+.campaign-page__slide {
+	width: auto;
 }
 
 .campaign-slide {
@@ -678,6 +896,86 @@ a {
 	font-weight: 400;
 	margin-top: 2.5rem;
 	text-align: center;
+}
+
+.gallery {
+	position: relative;
+}
+
+.gallery__imgs {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	margin-top: 2.5rem;
+}
+
+.gallery__img-top {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.gallery_img1 {
+	width: 100%;
+}
+
+.gallery_img2 {
+	width: 100%;
+}
+
+.gallery_img3 {
+	width: 100%;
+}
+
+.gallery__img-bottom {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.gallery_img4 {
+	width: 100%;
+}
+
+.gallery_img5 {
+	width: 100%;
+}
+
+.gallery_img6 {
+	width: 100%;
+}
+
+.gallery__modal {
+	background-color: rgba(0, 0, 0, 0.9); /* 黒の半透明背景 */
+	display: none; /* 初期状態で非表示 */
+	height: 100%;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 30;
+}
+
+.gallery__modal-content {
+	-o-object-fit: contain;
+	display: block;
+	left: 50%;
+	margin: auto;
+	max-height: 43.75rem;
+	max-width: 50rem;
+	object-fit: contain;
+	position: fixed;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 80%;
+}
+
+.close:hover,
+.close:focus {
+	-webkit-text-decoration: none;
+	color: #bbb;
+	cursor: pointer;
+	text-decoration: none;
 }
 
 /* ハンバーガーアイコンのスタイル */
@@ -1155,6 +1453,58 @@ a {
 	flex-direction: column;
 }
 
+.page-category {
+	color: #0D2936;
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 0.875rem;
+	margin-top: 0.5rem;
+}
+
+.page-tab {
+	border: 0.0625rem solid #408f95;
+	color: #408f95;
+	display: inline-block;
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 0.875rem;
+	padding: 0.375rem 0;
+	width: 10.125rem;
+}
+
+.page-tab--all.active {
+	background-color: #408f95;
+	color: #fff;
+}
+
+.page-tab--lisence.active {
+	background-color: #408f95;
+	color: #fff;
+}
+
+.page-tab--fan.active {
+	background-color: #408f95;
+	color: #fff;
+}
+
+.page-tab--experience.active {
+	background-color: #408f95;
+	color: #fff;
+}
+
+.page-title {
+	color: #fff;
+	font-family: "Lato", sans-serif;
+	font-size: 2.5rem;
+	font-weight: 300;
+	left: 50%;
+	position: absolute;
+	top: calc(50% + 15rem);
+	transform: translate(-50%, -50%);
+}
+
+.page-title::first-letter {
+	text-transform: capitalize;
+}
+
 .price {
 	background-color: #ddf0f1;
 	box-shadow: 0 0.125rem 0.3125rem 0 rgba(0, 0, 0, 0.5);
@@ -1238,7 +1588,7 @@ a {
 }
 
 .section-title__main {
-	color: #111;
+	color: #0D2936;
 	font-family: "Gotu", sans-serif;
 	font-size: 2rem;
 	font-weight: 300;
@@ -1318,12 +1668,9 @@ a {
 	box-shadow: 0.125rem 0.125rem 0.625rem 0rem rgba(0, 0, 0, 0.25);
 	grid-row: 1;
 	grid-template-columns: auto;
-	min-height: 22.875rem;
-	width: 17.5rem;
 }
 
 .slide-card a {
-	display: flex;
 	flex-direction: column;
 }
 
@@ -1409,6 +1756,81 @@ a {
 	line-height: 1;
 }
 
+.slide-card__text-about {
+	display: none;
+	font-family: "Noto Sans JP", sans-serif;
+	line-height: 1;
+	margin-top: 1.5rem;
+}
+
+.slide-card__date {
+	color: #408f95;
+	display: none;
+	font-family: "Lato", sans-serif;
+	font-size: 1rem;
+	text-align: center;
+}
+
+.slide-card__contact {
+	color: #408f95;
+	font-size: 0.875rem;
+	text-align: center;
+}
+
+.slide-card__button {
+	display: none;
+}
+
+.slide-card__bottom {
+	display: flex;
+	justify-content: center;
+	margin-top: 5rem;
+}
+
+.slide-card__bottom-prev {
+	border: 1px solid #408f95;
+	color: #408f95;
+	margin-right: 2.5rem;
+	padding-bottom: 0.6875rem;
+	padding-left: 0.875rem;
+	padding-right: 0.875rem;
+	padding-top: 0.6875rem;
+}
+
+.slide-card__bottom-next {
+	border: 1px solid #408f95;
+	color: #408f95;
+	margin-left: 2.5rem;
+	padding-bottom: 0.6875rem;
+	padding-left: 0.875rem;
+	padding-right: 0.875rem;
+	padding-top: 0.6875rem;
+}
+
+.slide-card__numbers {
+	align-items: center;
+	display: flex;
+	gap: 0.75rem;
+}
+
+.slide-card__numbers li button {
+	align-items: center;
+	border: 1px solid #408f95;
+	color: #408f95;
+	font-family: "Lato", sans-serif;
+	font-size: 1rem;
+	font-weight: 700;
+	padding-bottom: 0.625rem;
+	padding-left: 0.875rem;
+	padding-right: 0.875rem;
+	padding-top: 0.5625rem;
+}
+
+.slide-card__numbers li button.active {
+	background-color: #408f95;
+	color: #fff;
+}
+
 .sns {
 	display: flex;
 	margin-top: 1rem;
@@ -1426,12 +1848,22 @@ a {
 	z-index: 10;
 }
 
+.sp-hidden {
+	display: none;
+}
+
 .swiper-container {
 	height: 100%; /* スライダーの高さを調整 */
 	width: 100%; /* スライダーの幅を調整 */
 }
 
 /* スライド要素 */
+
+.tab-menu {
+	display: flex;
+	gap: 2rem;
+	justify-content: center;
+}
 
 .voice-card {
 	box-shadow: 0.125rem 0.125rem 0.625rem 0rem rgba(0, 0, 0, 0.25);
@@ -1590,6 +2022,10 @@ html {
 	padding-top: 5rem;
 }
 
+.l-gallery {
+	margin-top: 7.5rem;
+}
+
 .l-information {
 	margin-top: 10.25rem;
 	padding-bottom: 4.75rem;
@@ -1604,6 +2040,119 @@ html {
 
 .l-voice {
 	margin-top: 9.125rem;
+}
+
+.about-page__main-img img {
+	height: auto;
+	width: 100vw;
+}
+
+.about-page__category::before {
+	-o-object-fit: cover;
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 8.625rem;
+	left: 0;
+	left: -5rem;
+	object-fit: cover;
+	position: absolute;
+	top: 6.75rem;
+	width: 18.8125rem;
+	z-index: -1;
+}
+
+.about-page__body {
+	align-items: center;
+	flex-direction: initial;
+	left: 0rem;
+	margin-top: 9.375rem;
+	position: relative;
+}
+
+.about-page__img-1 {
+	-o-object-fit: cover;
+	aspect-ratio: 132/194;
+	display: block;
+	height: auto;
+	left: 0;
+	max-width: 24.9375rem;
+	max-width: 24.9375rem;
+	object-fit: cover;
+	position: absolute;
+	top: 0;
+	width: 37%;
+	z-index: 5;
+}
+
+.about-page__img-2 {
+	aspect-ratio: 880/581;
+	height: auto;
+	margin-left: auto;
+	margin-top: 0;
+	max-width: 55rem;
+	padding-top: 5rem;
+}
+
+.about-page__content {
+	display: flex;
+	justify-content: space-between;
+	left: 12.5rem;
+	margin-top: 0;
+	max-width: 100%;
+	padding: 0;
+	position: absolute;
+	right: 2.5rem;
+	top: 12.5rem;
+}
+
+.about-page__content::after {
+	-o-object-fit: cover;
+	background-image: url("../images/common/_kingyohanadai 2.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	bottom: -29.375rem;
+	content: "";
+	display: block;
+	height: 8.625rem;
+	left: calc(50vw - min(48vw, 0rem));
+	object-fit: cover;
+	position: absolute;
+	width: 18.8125rem;
+	z-index: 20;
+}
+
+.about-page__content-titles {
+	color: #fff;
+	display: inline-block;
+	font-family: "Gotu", sans-serif;
+	font-size: 5rem;
+	font-weight: 300;
+	width: 25rem;
+}
+
+.about-page__content-title {
+	display: block;
+	font-family: "Gotu", sans-serif;
+	font-size: 5rem;
+	font-weight: 300;
+	left: 0;
+	line-height: 1.25;
+	text-shadow: none;
+	top: 0;
+	transform: translate(0, 0);
+	width: 100%;
+}
+
+.about-page__texts {
+	color: #fff;
+}
+
+.about-page__text {
+	display: inline-block;
+	font-size: 1rem;
+	padding-top: 1rem;
+	width: 25rem;
+	z-index: 12;
 }
 
 .about::before {
@@ -1810,6 +2359,45 @@ html {
 	z-index: 1;
 }
 
+.campaign-page__contents {
+	height: auto;
+	width: 100%;
+}
+
+.campaign-page__main-img img {
+	height: 34.25rem;
+	width: 100vw;
+}
+
+.campaign-page__category::before {
+	-o-object-fit: cover;
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 8.625rem;
+	left: -5rem;
+	object-fit: cover;
+	position: absolute;
+	top: 6.75rem;
+	width: 18.8125rem;
+	z-index: -1;
+}
+
+.campaign-page__tab-menu {
+	flex-direction: initial;
+	gap: 2rem;
+	justify-content: start;
+	margin-top: 9.375rem;
+}
+
+.campaign-page__tab-icon {
+	width: 10.125rem;
+}
+
+.campaign-page__slides.active {
+	gap: 5rem 2.5rem;
+	grid-template-columns: repeat(2, 1fr);
+}
+
 .campaign-slide {
 	align-items: stretch;
 	display: flex;
@@ -1964,6 +2552,59 @@ html {
 	font-size: 0.875rem;
 	line-height: 1;
 	margin-top: 6.25rem;
+}
+
+.gallery__imgs {
+	grid-gap: 0.5rem;
+	display: grid;
+	gap: 0.5rem;
+	margin-top: 5rem;
+}
+
+.gallery__img-top {
+	grid-gap: 0.5rem;
+	display: grid;
+	gap: 0.5rem;
+	grid-template-columns: 45.5% 53.5%;
+	grid-template-rows: 23.125rem;
+}
+
+.gallery_img1 {
+	grid-column: 1/2;
+	grid-row: 1;
+}
+
+.gallery_img2 {
+	grid-column: 2/2;
+	grid-row: 1/2;
+}
+
+.gallery_img3 {
+	grid-column: 2/2;
+	grid-row: 2/2;
+}
+
+.gallery__img-bottom {
+	grid-gap: 0.5rem;
+	display: grid;
+	gap: 0.5rem;
+	grid-template-columns: 53.5% 45.5%;
+	grid-template-rows: 23.125rem;
+}
+
+.gallery_img4 {
+	grid-column: 1/2;
+	grid-row: 1/2;
+}
+
+.gallery_img5 {
+	grid-column: 1/2;
+	grid-row: 2/2;
+}
+
+.gallery_img6 {
+	grid-column: 2/2;
+	grid-row: 1;
 }
 
 .hamburger {
@@ -2175,6 +2816,19 @@ html {
 	gap: 8.125rem;
 }
 
+.page-tab {
+	font-size: 0.875rem;
+	grid-row: 1;
+}
+
+.page-title {
+	font-size: 5rem;
+	left: 50%;
+	position: absolute;
+	top: calc(50% + 20rem);
+	transform: translate(-50%, -50%);
+}
+
 .price {
 	box-shadow: none;
 }
@@ -2310,12 +2964,6 @@ html {
 	padding: 0;
 }
 
-.slide-card {
-	display: flex;
-	min-height: 27.8125rem;
-	width: 20.8125rem;
-}
-
 .slide-card__header img {
 	width: 100%;
 }
@@ -2366,6 +3014,25 @@ html {
 	line-height: 1;
 }
 
+.slide-card__text-about {
+	display: block;
+	font-size: 1rem;
+	line-height: 1.2em;
+}
+
+.slide-card__date {
+	display: block;
+	margin-top: 2rem;
+}
+
+.slide-card__button {
+	display: flex;
+	justify-content: center;
+	margin-top: 1rem;
+	position: relative;
+	text-align: center;
+}
+
 .sns {
 	margin-left: 2.5rem;
 	margin-top: 2.375rem;
@@ -2381,6 +3048,10 @@ html {
 .sns__facebook {
 	width: 2rem;
 	z-index: 10;
+}
+
+.sp-hidden {
+	display: block;
 }
 
 .voice-card {

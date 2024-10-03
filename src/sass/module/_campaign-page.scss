@@ -1,0 +1,110 @@
+@use "global" as *;
+
+.campaign-page{
+  position: relative;
+}
+.campaign-page__contents{
+  position: relative;
+  width: 100%;
+  height: auto;
+  @include mq(md) {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.campaign-page__main-img{
+  object-fit: cover;
+}
+.campaign-page__main-img::before{
+  content: "";
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+background-color: #408F95;
+}
+
+.campaign-page__main-img img{
+  display: block;
+width: 100vw;
+object-fit: cover;
+background-position: center;
+  @include mq(md) {
+    width: 100vw;
+    height: rem(548);
+  }
+}
+.campaign-page__inner{
+  position: relative;
+}
+
+.campaign-page__category::before {
+  content: "";
+  position: absolute;
+  background-image: url("../images/common/_kingyohanadai-right.svg");
+  top: rem(50);
+  left: 10;
+  z-index: 2;
+  background-size: contain;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  width: rem(120);
+  height: rem(55);
+  @include mq(md) {
+    position: absolute;
+    width: rem(301);
+    height: rem(138);
+    background-size: contain;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    top: rem(108);
+    left: rem(-80);
+    z-index: -1;
+  }
+}
+.campaign-page__tab-menu{
+  display: flex;
+  flex-direction: column;
+  gap: rem(16);
+  margin-top: rem(52);
+  @include mq(md) {
+    justify-content: start;
+    flex-direction: initial;
+    gap: rem(32);
+    margin-top: rem(150);
+  }
+}
+
+.campaign-page__tab-icon{
+  font-size: rem(14);
+  width: rem(162);
+  text-align: center;
+  @include mq(md) {
+    width: rem(162);
+  }
+}
+.campaign-page__tab-icon.active{
+  background-color: $blue;
+  color: $white;
+}
+.campaign-page__slides{
+  display: none;
+}
+.campaign-page__slides.active{
+  display: grid;
+  gap: rem(40);
+  margin-top:rem(40);
+  @include mq(md) {
+  gap: rem(80) rem(40);
+  grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.campaign-page__tab.active{
+  display: block;
+}
+
+.campaign-page__slide{
+  width: auto;
+}

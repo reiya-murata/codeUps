@@ -47,11 +47,9 @@ window.addEventListener("scroll", function () {
   // スクロールに合わせて要素をヘッダーの高さ分だけ移動（表示域から隠したり表示したり）
   if (window.scrollY > headerHeight) {
     headerHome.style.display = "flex";
-    console.log("a");
   }
   if (window.scrollY < headerHeight) {
     headerHome.style.display = "none";
-    console.log("b");
   }
 });
 
@@ -142,6 +140,89 @@ box.each(function () {
         }, speed);
       });
       counter = 1;
+    }
+  });
+});
+
+// campaign-pageタブ
+document.addEventListener('DOMContentLoaded', function () {
+  // タブボタンをすべて取得
+  var tabButtons = document.querySelectorAll('.js-tab-menu');
+
+  // タブボタンにクリックイベントを追加
+  tabButtons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      // 全てのタブコンテンツを非表示にする（activeクラスを削除）
+      var allTabBodies = document.querySelectorAll('.js-campaign-tabbody');
+      allTabBodies.forEach(function (tabBody) {
+        tabBody.classList.remove('active'); // 全てのタブコンテンツから active クラスを削除
+      });
+
+      // 対応するタブコンテンツを表示する（activeクラスを追加）
+      var targetId = this.getAttribute('data-target'); // クリックされたボタンの data-target 属性を取得
+      var targetTabBody = document.getElementById(targetId); // 該当するタブコンテンツを取得
+      if (targetTabBody) {
+        targetTabBody.classList.add('active'); // 該当するタブコンテンツに active クラスを追加
+      }
+
+      // クリックされたボタンをアクティブ状態にする
+      tabButtons.forEach(function (btn) {
+        return btn.classList.remove('active');
+      }); // 全ボタンのアクティブ状態を解除
+      this.classList.add('active'); // クリックされたボタンをアクティブに
+    });
+  });
+});
+
+// // aboutモーダル要素を取得
+// var modal = document.querySelector('.js-gallery-img1');;
+// // モーダルを開くボタンを取得
+// var btn1 = document.querySelector('.js-gallery-img1');;
+// var btn2 = document.querySelector('.js-gallery-img2');;
+// var btn3 = document.querySelector('.js-gallery-img3');;
+// var btn4 = document.querySelector('.js-gallery-img4');;
+// var btn5 = document.querySelector('.js-gallery-img5');;
+// var btn6 = document.querySelector('.js-gallery-img6');;
+// // モーダルを閉じるアイコン（×）を取得
+// var span = document.getElementById("closeModal");
+
+// // ボタンがクリックされた時にモーダルを表示
+// btn1.onclick = function() {
+//     modal.style.display = "block"; // モーダルのdisplayスタイルを"block"にして表示
+// }
+
+// // ×（クローズアイコン）がクリックされた時にモーダルを非表示
+// span.onclick = function() {
+//     modal.style.display = "none"; // モーダルのdisplayスタイルを"none"にして非表示
+// }
+
+// // モーダルの外側がクリックされた時にモーダルを非表示
+// window.onclick = function(event) {
+//     // クリックされた箇所がモーダル自体（外側）であれば
+//     if (event.target == modal) {
+//         modal.style.display = "none"; // モーダルのdisplayスタイルを"none"にして非表示
+//     }
+// }
+
+document.addEventListener('DOMContentLoaded', function () {
+  // モーダルの要素を取得
+  var modal = document.getElementById('imageModal');
+  var modalImage = document.getElementById('modalImage');
+  // すべての画像を取得
+  var galleryImages = document.querySelectorAll('.js-gallery-img1, .js-gallery-img2, .js-gallery-img3, .js-gallery-img4, .js-gallery-img5, .js-gallery-img6');
+
+  // 各画像にクリックイベントを追加
+  galleryImages.forEach(function (img) {
+    img.addEventListener('click', function () {
+      modal.style.display = "block"; // モーダルを表示
+      modalImage.src = this.src; // クリックされた画像をモーダルに表示
+    });
+  });
+
+  // モーダル外をクリックすると閉じる
+  modal.addEventListener('click', function (event) {
+    if (event.target === modal) {
+      modal.style.display = "none";
     }
   });
 });

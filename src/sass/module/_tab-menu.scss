@@ -1,0 +1,9 @@
+@use "global" as *;
+
+.tab-menu{
+  display: flex;
+  gap:rem(32);
+  justify-content: center;
+}
+
+

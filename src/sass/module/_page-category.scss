@@ -1,0 +1,10 @@
+@use "global" as *;
+
+.page-category{
+  font-size: rem(14);
+  font-family: $base-font-family;
+  color: $black;
+  margin-top: rem(8);
+  @include mq(md) {
+  }
+}

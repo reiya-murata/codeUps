@@ -3,16 +3,15 @@
   grid-template-columns: auto;
   grid-row: 1;
   box-shadow: rem(2) rem(2) rem(10) rem(0) rgba(0, 0, 0, 0.25);
-  width: rem(280);
-  min-height: rem(366);
+  // width: rem(280);
+  // min-height: rem(366);
   @include mq(md) {
-    display: flex;
-    width: rem(333);
-    min-height: rem(445);
+  
+    // width: rem(333);
+    // min-height: rem(445);
   }
 }
 .slide-card a {
-  display: flex;
   flex-direction: column;
 }
 
@@ -137,4 +136,92 @@
     font-size: rem(40);
     line-height: 1;
   }
+}
+.slide-card__text-about{
+  margin-top: rem(24);
+  display: none;
+  font-family: $base-font-family;
+  line-height: 1;
+  @include mq(md) {
+    display: block;
+    font-size: rem(16);
+    line-height: 1.2em;
+  }
+}
+
+.slide-card__date{
+  display: none;
+text-align: center;
+font-family: $third-font-family;
+color: $blue;
+font-size: rem(16);
+@include mq(md) {
+  display: block;
+  margin-top: rem(32);
+  }
+}
+.slide-card__contact{
+  font-size: rem(14);
+  color: $blue;
+  text-align: center;
+}
+
+.slide-card__button{
+  display:none;
+  @include mq(md) {
+    text-align: center;
+    position: relative;
+    margin-top: rem(16);
+    display: flex;
+    justify-content: center;
+    }
+}
+
+.slide-card__bottom{
+  margin-top: rem(80);
+  display: flex;
+  justify-content: center;
+}
+
+.slide-card__bottom-prev{
+  padding-top: rem(11);
+  padding-bottom: rem(11);
+  padding-left: rem(14);
+  padding-right: rem(14);
+  margin-right: rem(40);
+  color: $blue;
+  border: 1px solid $blue;
+}
+
+.slide-card__bottom-next{
+  padding-top: rem(11);
+  padding-bottom: rem(11);
+  padding-left: rem(14);
+  padding-right: rem(14);
+  margin-left: rem(40);
+  color: $blue;
+  border: 1px solid $blue; 
+}
+.slide-card__numbers{
+  display: flex;
+  align-items: center;
+  gap: rem(12);
+}
+
+.slide-card__numbers li button{
+  align-items: center;
+  font-family: $third-font-family;
+  font-size: rem(16);
+  font-weight: $bold;
+  border: 1px solid $blue;
+  color: $blue;
+  padding-top: rem(9);
+  padding-bottom: rem(10);
+  padding-left: rem(14);
+  padding-right: rem(14);
+  
+}
+.slide-card__numbers li button.active{
+  color: $white;
+  background-color: $blue;
 }
