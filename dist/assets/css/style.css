@@ -157,6 +157,10 @@ a {
 	margin-top: 5.875rem;
 }
 
+.l-campaign {
+	margin-top: 2.25rem;
+}
+
 .l-contact {
 	margin-top: 5rem;
 }
@@ -697,10 +701,6 @@ a {
 .campaign {
 	overflow: hidden;
 	position: relative;
-}
-
-.l-campaign {
-	margin-top: 2.25rem;
 }
 
 .campaign__inner {
@@ -2012,6 +2012,10 @@ html {
 	padding-top: 6.5rem;
 }
 
+.l-campaign {
+	margin-top: 7.5rem;
+}
+
 .l-contact {
 	margin-top: 8.75rem;
 }
@@ -2405,10 +2409,6 @@ html {
 	height: auto; /* スライド内の各要素の高さを100%に設定 */
 	margin: 0;
 	width: 20.8125rem;
-}
-
-.l-campaign {
-	margin-top: 7.5rem;
 }
 
 .campaign__swiper-next {

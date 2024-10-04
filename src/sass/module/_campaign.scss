@@ -3,12 +3,7 @@
   position: relative;
   overflow: hidden;
 }
-.l-campaign {
-  margin-top: rem(36);
-  @include mq(md) {
-    margin-top: rem(120);
-  }
-}
+
 
 .campaign__inner {
   position: relative;
