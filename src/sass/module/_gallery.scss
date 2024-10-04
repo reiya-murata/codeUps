@@ -83,6 +83,8 @@
 }
 
 .gallery__modal {
+  display: none;
+  @include mq(md) {
   display: none; /* 初期状態で非表示 */
   position: fixed;
   z-index: 30;
@@ -91,19 +93,23 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.9); /* 黒の半透明背景 */
+  }
 }
 
 .gallery__modal-content {
+  display: none;
+  @include mq(md) {
   margin: auto;
   display: block;
   position: fixed;
   top: calc(50%);
   left: calc(50%);
   transform: translate(-50%, -50%);
-  width: 80%;
+  width: auto;
   object-fit: contain;
   max-width: rem(800);
   max-height: rem(700);
+  }
 }
 
 

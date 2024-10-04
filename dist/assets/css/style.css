@@ -192,7 +192,7 @@ a {
 	margin-top: 5rem;
 }
 
-.campaign-page__contents {
+.about-page__contents {
 	position: relative;
 }
 
@@ -220,21 +220,6 @@ a {
 
 .about-page__inner {
 	position: relative;
-}
-
-.about-page__category::before {
-	-o-object-fit: cover;
-	background-image: url("../images/common/_kingyohanadai-right.svg");
-	background-repeat: no-repeat;
-	background-size: contain;
-	content: "";
-	height: 3.4375rem;
-	left: 10;
-	object-fit: cover;
-	position: absolute;
-	top: 3.125rem;
-	width: 7.5rem;
-	z-index: 2;
 }
 
 .about-page__body {
@@ -597,6 +582,56 @@ a {
 	z-index: 2;
 }
 
+.campaign-slide__bottom {
+	display: flex;
+	justify-content: center;
+	margin-top: 5rem;
+}
+
+.campaign-slide__bottom-prev {
+	border: 1px solid #408f95;
+	color: #408f95;
+	margin-right: 2.5rem;
+	padding-bottom: 0.6875rem;
+	padding-left: 0.875rem;
+	padding-right: 0.875rem;
+	padding-top: 0.6875rem;
+}
+
+.campaign-slide__bottom-next {
+	border: 1px solid #408f95;
+	color: #408f95;
+	margin-left: 2.5rem;
+	padding-bottom: 0.6875rem;
+	padding-left: 0.875rem;
+	padding-right: 0.875rem;
+	padding-top: 0.6875rem;
+}
+
+.campaign-slide__numbers {
+	align-items: center;
+	display: flex;
+	gap: 0.75rem;
+}
+
+.campaign-slide__numbers li button {
+	align-items: center;
+	border: 1px solid #408f95;
+	color: #408f95;
+	font-family: "Lato", sans-serif;
+	font-size: 1rem;
+	font-weight: 700;
+	padding-bottom: 0.625rem;
+	padding-left: 0.875rem;
+	padding-right: 0.875rem;
+	padding-top: 0.5625rem;
+}
+
+.campaign-slide__numbers li button.active {
+	background-color: #408f95;
+	color: #fff;
+}
+
 .campaign-page {
 	position: relative;
 }
@@ -633,21 +668,6 @@ a {
 	position: relative;
 }
 
-.campaign-page__category::before {
-	-o-object-fit: cover;
-	background-image: url("../images/common/_kingyohanadai-right.svg");
-	background-repeat: no-repeat;
-	background-size: contain;
-	content: "";
-	height: 3.4375rem;
-	left: 10;
-	object-fit: cover;
-	position: absolute;
-	top: 3.125rem;
-	width: 7.5rem;
-	z-index: 2;
-}
-
 .campaign-page__tab-menu {
 	display: flex;
 	flex-direction: column;
@@ -681,10 +701,6 @@ a {
 	display: block;
 }
 
-.campaign-page__slide {
-	width: auto;
-}
-
 .campaign-slide {
 	display: block;
 	height: auto; /* スライド内の要素を垂直方向に中央揃えする場合 */
@@ -696,6 +712,37 @@ a {
 
 .campaign-slide a:hover {
 	opacity: 0.5;
+}
+
+.campaign-tab {
+	display: flex;
+	flex-direction: column;
+	margin-top: 1rem;
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+	padding-top: 1.5rem;
+}
+
+.campaign-tab__left {
+	width: 18.5625rem;
+}
+
+.campaign-tab__title {
+	border-bottom: 1px solid #408f95;
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+
+.campaign-tab__text {
+	font-family: "Noto Sans JP", sans-serif;
+	padding-bottom: 0.5rem;
+	padding-right: 0.5rem;
+	padding-top: 0.5rem;
+}
+
+.campaign-tab__right img {
+	width: 18.5625rem;
 }
 
 .campaign {
@@ -946,28 +993,11 @@ a {
 }
 
 .gallery__modal {
-	background-color: rgba(0, 0, 0, 0.9); /* 黒の半透明背景 */
-	display: none; /* 初期状態で非表示 */
-	height: 100%;
-	left: 0;
-	position: fixed;
-	top: 0;
-	width: 100%;
-	z-index: 30;
+	display: none;
 }
 
 .gallery__modal-content {
-	-o-object-fit: contain;
-	display: block;
-	left: 50%;
-	margin: auto;
-	max-height: 43.75rem;
-	max-width: 50rem;
-	object-fit: contain;
-	position: fixed;
-	top: 50%;
-	transform: translate(-50%, -50%);
-	width: 80%;
+	display: none;
 }
 
 .close:hover,
@@ -1176,6 +1206,47 @@ a {
 .hero__img img {
 	-o-object-fit: cover;
 	object-fit: cover;
+}
+
+.information-page {
+	position: relative;
+}
+
+.information-page__contents {
+	height: auto;
+	position: relative;
+	width: 100%;
+}
+
+.information-page__inner {
+	position: relative;
+}
+
+.information-page__tab-menu {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 7.5625rem;
+}
+
+.information-page__tab-icon {
+	background-color: #DDF0F1;
+	color: #408f95;
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 0.875rem;
+	font-weight: 300;
+	padding-bottom: 0.625rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	padding-top: 0.625rem;
+	position: relative;
+	text-align: center;
+	width: 6.375rem;
+}
+
+.information-page__tab-icon.active {
+	stroke: #fff;
+	background-color: #408f95;
+	color: #fff;
 }
 
 .information {
@@ -1458,6 +1529,21 @@ a {
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 0.875rem;
 	margin-top: 0.5rem;
+}
+
+.page-category::before {
+	-o-object-fit: cover;
+	background-image: url("../images/common/_kingyohanadai-right.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	content: "";
+	height: 3.4375rem;
+	left: 10;
+	object-fit: cover;
+	position: absolute;
+	top: 3.125rem;
+	width: 7.5rem;
+	z-index: 2;
 }
 
 .page-tab {
@@ -1781,56 +1867,6 @@ a {
 	display: none;
 }
 
-.slide-card__bottom {
-	display: flex;
-	justify-content: center;
-	margin-top: 5rem;
-}
-
-.slide-card__bottom-prev {
-	border: 1px solid #408f95;
-	color: #408f95;
-	margin-right: 2.5rem;
-	padding-bottom: 0.6875rem;
-	padding-left: 0.875rem;
-	padding-right: 0.875rem;
-	padding-top: 0.6875rem;
-}
-
-.slide-card__bottom-next {
-	border: 1px solid #408f95;
-	color: #408f95;
-	margin-left: 2.5rem;
-	padding-bottom: 0.6875rem;
-	padding-left: 0.875rem;
-	padding-right: 0.875rem;
-	padding-top: 0.6875rem;
-}
-
-.slide-card__numbers {
-	align-items: center;
-	display: flex;
-	gap: 0.75rem;
-}
-
-.slide-card__numbers li button {
-	align-items: center;
-	border: 1px solid #408f95;
-	color: #408f95;
-	font-family: "Lato", sans-serif;
-	font-size: 1rem;
-	font-weight: 700;
-	padding-bottom: 0.625rem;
-	padding-left: 0.875rem;
-	padding-right: 0.875rem;
-	padding-top: 0.5625rem;
-}
-
-.slide-card__numbers li button.active {
-	background-color: #408f95;
-	color: #fff;
-}
-
 .sns {
 	display: flex;
 	margin-top: 1rem;
@@ -1858,6 +1894,42 @@ a {
 }
 
 /* スライド要素 */
+
+.tab-icon--1::before {
+	content: "";
+	display: none;
+}
+
+.tab-icon--1.active::before {
+	content: "";
+	display: none;
+}
+
+.tab-icon--2 {
+	padding-right: 0.9375rem;
+}
+
+.tab-icon--2::before {
+	content: "";
+	display: none;
+	position: absolute;
+}
+
+.tab-icon--2.active::before {
+	content: "";
+	display: none;
+	position: absolute;
+}
+
+.tab-icon--3::before {
+	content: "";
+	display: none;
+}
+
+.tab-icon--3.active::before {
+	content: "";
+	display: none;
+}
 
 .tab-menu {
 	display: flex;
@@ -2049,20 +2121,6 @@ html {
 .about-page__main-img img {
 	height: auto;
 	width: 100vw;
-}
-
-.about-page__category::before {
-	-o-object-fit: cover;
-	background-repeat: no-repeat;
-	background-size: contain;
-	height: 8.625rem;
-	left: 0;
-	left: -5rem;
-	object-fit: cover;
-	position: absolute;
-	top: 6.75rem;
-	width: 18.8125rem;
-	z-index: -1;
 }
 
 .about-page__body {
@@ -2373,19 +2431,6 @@ html {
 	width: 100vw;
 }
 
-.campaign-page__category::before {
-	-o-object-fit: cover;
-	background-repeat: no-repeat;
-	background-size: contain;
-	height: 8.625rem;
-	left: -5rem;
-	object-fit: cover;
-	position: absolute;
-	top: 6.75rem;
-	width: 18.8125rem;
-	z-index: -1;
-}
-
 .campaign-page__tab-menu {
 	flex-direction: initial;
 	gap: 2rem;
@@ -2409,6 +2454,29 @@ html {
 	height: auto; /* スライド内の各要素の高さを100%に設定 */
 	margin: 0;
 	width: 20.8125rem;
+}
+
+.campaign-tab {
+	border: 1px solid #408f95;
+	flex-direction: inherit;
+	justify-content: space-between;
+	margin-left: 0;
+	margin-right: 0;
+	padding-bottom: 1.5rem;
+}
+
+.campaign-tab__left {
+	margin-top: 4.0625rem;
+	width: 30.75rem;
+}
+
+.campaign-tab__title {
+	font-size: 1.5rem;
+	width: 30.75rem;
+}
+
+.campaign-tab__right img {
+	width: 30.75rem;
 }
 
 .campaign__swiper-next {
@@ -2607,6 +2675,31 @@ html {
 	grid-row: 1;
 }
 
+.gallery__modal {
+	background-color: rgba(0, 0, 0, 0.9); /* 黒の半透明背景 */
+	display: none; /* 初期状態で非表示 */
+	height: 100%;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 30;
+}
+
+.gallery__modal-content {
+	-o-object-fit: contain;
+	display: block;
+	left: 50%;
+	margin: auto;
+	max-height: 43.75rem;
+	max-width: 50rem;
+	object-fit: contain;
+	position: fixed;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: auto;
+}
+
 .hamburger {
 	display: none;
 }
@@ -2694,6 +2787,24 @@ html {
 	height: 100vh;
 	object-fit: cover;
 	width: 100%;
+}
+
+.information-page__contents {
+	height: auto;
+	width: 100%;
+}
+
+.information-page__tab-menu {
+	margin-top: 9.375rem;
+}
+
+.information-page__tab-icon {
+	font-size: 1.5rem;
+	padding-bottom: 1.625rem;
+	padding-right: 1.875rem;
+	padding-top: 1.8125rem;
+	text-align: right;
+	width: 18.75rem;
 }
 
 .information {
@@ -2814,6 +2925,20 @@ html {
 .nav__flexes-left {
 	flex-direction: initial;
 	gap: 8.125rem;
+}
+
+.page-category::before {
+	-o-object-fit: cover;
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 8.625rem;
+	left: 0;
+	left: -5rem;
+	object-fit: cover;
+	position: absolute;
+	top: 6.75rem;
+	width: 18.8125rem;
+	z-index: -1;
 }
 
 .page-tab {
@@ -3052,6 +3177,104 @@ html {
 
 .sp-hidden {
 	display: block;
+}
+
+.tab-icon--1::before {
+	-o-object-fit: cover;
+	background-image: url("../images/common/whale-right-blue.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: block;
+	height: 4rem;
+	left: 1.875rem;
+	object-fit: cover;
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	width: 4rem;
+	z-index: 1;
+}
+
+.tab-icon--1.active::before {
+	-o-object-fit: cover;
+	background-image: url("../images/common/whale-right-white.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: block;
+	height: 4rem;
+	left: 1.875rem;
+	object-fit: cover;
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	width: 4rem;
+	z-index: 1;
+}
+
+.tab-icon--2 {
+	padding-right: 0.9375rem;
+}
+
+.tab-icon--2::before {
+	-o-object-fit: cover;
+	background-image: url("../images/common/whale-left-blue.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: block;
+	height: 4rem;
+	left: 1.125rem;
+	object-fit: cover;
+	top: 50%;
+	transform: translate(0, -50%);
+	width: 4rem;
+	z-index: 1;
+}
+
+.tab-icon--2.active::before {
+	-o-object-fit: cover;
+	background-image: url("../images/common/whale-right-white.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: block;
+	height: 4rem;
+	left: 1.125rem;
+	object-fit: cover;
+	top: 50%;
+	transform: translate(0, -50%);
+	width: 4rem;
+	z-index: 1;
+}
+
+.tab-icon--3::before {
+	-o-object-fit: cover;
+	background-image: url("../images/common/fish-left-blue.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: block;
+	height: 4rem;
+	left: 1.875rem;
+	object-fit: cover;
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	width: 4rem;
+	z-index: 1;
+}
+
+.tab-icon--3.active::before {
+	-o-object-fit: cover;
+	background-image: url("../images/common/whale-right-white.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: block;
+	height: 4rem;
+	left: 1.875rem;
+	object-fit: cover;
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	width: 4rem;
+	z-index: 1;
 }
 
 .voice-card {
