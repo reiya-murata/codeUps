@@ -1805,6 +1805,8 @@ a {
 .sidebar-popularity-card {
 	background-color: #fff;
 	box-shadow: 0.125rem 0.125rem 0.625rem 0rem rgba(0, 0, 0, 0.25);
+	display: flex;
+	flex-direction: column;
 	font-family: "Noto Sans JP", sans-serif;
 	margin-top: 2.5rem;
 	padding-bottom: 1.5rem;
