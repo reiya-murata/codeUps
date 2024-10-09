@@ -151,8 +151,7 @@ box.each(function () {
 // campaign-pageタブ
 document.addEventListener('DOMContentLoaded', function () {
   // タブボタンをすべて取得
-  const tabButtons = document.querySelectorAll('.js-tab-menu');
-
+  const tabButtons = document.querySelectorAll('.js-tab-menu1');
   // タブボタンにクリックイベントを追加
   tabButtons.forEach(button => {
     button.addEventListener('click', function () {
@@ -191,11 +190,11 @@ document.addEventListener('DOMContentLoaded', function() {
       modalImage.src = this.src; // クリックされた画像をモーダルに表示
     });
   });
-  
   // モーダル外をクリックすると閉じる
   modal.addEventListener('click', function(event) {
+    // クリックされた要素がモーダル自身であれば閉じる
     if (event.target === modal) {
-      modal.style.display = "none";
+        modal.style.display = "none";
     }
   });
 });
@@ -203,14 +202,14 @@ document.addEventListener('DOMContentLoaded', function() {
 // information-pageタブ
 document.addEventListener('DOMContentLoaded', function () {
   // タブボタンをすべて取得
-  // const tabButtons = document.querySelectorAll('.js-tab-menu');
+  const tabButtons2 = document.querySelectorAll('.js-tab-menu2');
 
   // タブボタンにクリックイベントを追加
-  tabButtons.forEach(button => {
+  tabButtons2.forEach(button => {
     button.addEventListener('click', function () {
       // 全てのタブコンテンツを非表示にする（activeクラスを削除）
-      const allTabBodies = document.querySelectorAll('.js-information-tabbody');
-      allTabBodies.forEach(tabBody => {
+      const informationTabBodies = document.querySelectorAll('.js-information-tabbody');
+      informationTabBodies.forEach(tabBody => {
         tabBody.classList.remove('active'); // 全てのタブコンテンツから active クラスを削除
       });
 
@@ -222,8 +221,9 @@ document.addEventListener('DOMContentLoaded', function () {
       }
 
       // クリックされたボタンをアクティブ状態にする
-      tabButtons.forEach(btn => btn.classList.remove('active')); // 全ボタンのアクティブ状態を解除
+      tabButtons2.forEach(btn => btn.classList.remove('active')); // 全ボタンのアクティブ状態を解除
       this.classList.add('active'); // クリックされたボタンをアクティブに
     });
   });
 });
+

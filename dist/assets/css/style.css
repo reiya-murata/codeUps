@@ -192,7 +192,7 @@ a {
 	margin-top: 5rem;
 }
 
-.about-page__contents {
+.about-page__hero {
 	position: relative;
 }
 
@@ -477,6 +477,50 @@ a {
 	opacity: 0.7;
 }
 
+.blog-page-cards a {
+	display: block;
+}
+
+.blog-page-cards {
+	display: grid;
+	justify-content: center;
+	position: relative;
+}
+
+.blog-page-cards :hover {
+	opacity: 0.7;
+}
+
+.blog-page-sidebar__popularity {
+	position: relative;
+}
+
+.blog-page-sidebar__review {
+	margin-top: 5rem;
+	position: relative;
+}
+
+.blog-page {
+	position: relative;
+}
+
+.blog-page__hero {
+	position: relative;
+}
+
+.blog-page__inner {
+	position: relative;
+}
+
+.blog-page__sidebar {
+	grid-row: 2;
+	margin-top: 5rem;
+}
+
+.blog-page__cards {
+	margin-top: 3.25rem;
+}
+
 .blog {
 	position: relative;
 }
@@ -636,7 +680,7 @@ a {
 	position: relative;
 }
 
-.campaign-page__contents {
+.campaign-page__hero {
 	height: auto;
 	position: relative;
 	width: 100%;
@@ -1212,7 +1256,7 @@ a {
 	position: relative;
 }
 
-.information-page__contents {
+.information-page__hero {
 	height: auto;
 	position: relative;
 	width: 100%;
@@ -1247,6 +1291,14 @@ a {
 	stroke: #fff;
 	background-color: #408f95;
 	color: #fff;
+}
+
+.information-page__tabs {
+	display: none;
+}
+
+.information-page__tabs.active {
+	display: block;
 }
 
 .information {
@@ -1748,6 +1800,76 @@ a {
 
 .section-title--contact .section-title__sub {
 	margin-top: -0.25rem;
+}
+
+.sidebar-popularity-card {
+	background-color: #fff;
+	box-shadow: 0.125rem 0.125rem 0.625rem 0rem rgba(0, 0, 0, 0.25);
+	font-family: "Noto Sans JP", sans-serif;
+	margin-top: 2.5rem;
+	padding-bottom: 1.5rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	padding-top: 1rem;
+}
+
+.sidebar-popularity-card__header {
+	-o-object-fit: cover;
+	aspect-ratio: 301/201;
+	object-fit: cover;
+	text-align: center;
+}
+
+.sidebar-popularity-card__header img {
+	-o-object-fit: cover;
+	object-fit: cover;
+}
+
+.sidebar-popularity-card__body {
+	width: 100%;
+}
+
+.sidebar-popularity-card__date {
+	font-family: "Gotu", sans-serif;
+	font-size: 0.75rem;
+	line-height: 1;
+}
+
+.sidebar-popularity-card__title {
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 1rem;
+}
+
+.sidebar__title {
+	border-left: 8px solid #408f95;
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 1.5rem;
+	font-weight: 300;
+	padding-left: 4.625rem;
+}
+
+.sidebar__title::before {
+	-o-object-fit: cover;
+	background-image: url("../images/common/whale-right-blue.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	content: "";
+	display: block;
+	height: 3.125rem;
+	left: 1rem;
+	object-fit: cover;
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	width: 3.125rem;
+	z-index: 20;
+}
+
+.sidebar__popularity-cards {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+	margin-top: 1.5rem;
 }
 
 .slide-card {
@@ -2352,6 +2474,35 @@ html {
 	grid-template-columns: repeat(3, 1fr);
 }
 
+.blog-page-cards {
+	grid-gap: 5rem 2.5rem;
+	display: grid;
+	gap: 5rem 2.5rem;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.blog-page-sidebar__popularity {
+	margin-top: 9.375rem;
+}
+
+.blog-page__contents {
+	grid-gap: 5rem;
+	display: grid;
+	gap: 5rem;
+	grid-row: 1;
+	grid-template-columns: 44.125rem 1fr;
+}
+
+.blog-page__sidebar {
+	grid-column: 2;
+	grid-row: 1;
+	margin-top: 0;
+}
+
+.blog-page__cards {
+	margin-top: 9.375rem;
+}
+
 .blog::before {
 	-o-object-fit: cover;
 	background-image: url("../images/common/_kingyohanadai.svg");
@@ -2421,7 +2572,7 @@ html {
 	z-index: 1;
 }
 
-.campaign-page__contents {
+.campaign-page__hero {
 	height: auto;
 	width: 100%;
 }
@@ -2789,7 +2940,7 @@ html {
 	width: 100%;
 }
 
-.information-page__contents {
+.information-page__hero {
 	height: auto;
 	width: 100%;
 }
@@ -3087,6 +3238,30 @@ html {
 .section-title--contact .section-title__sub {
 	margin-top: 0.25rem;
 	padding: 0;
+}
+
+.sidebar-popularity-card {
+	grid-gap: 1rem;
+	display: grid;
+	gap: 1rem;
+	grid-template-columns: 7.5625rem auto;
+	margin-top: 0;
+	padding: 1rem 1rem 1rem 1rem;
+}
+
+.sidebar-popularity-card__body {
+	width: 100%;
+}
+
+.sidebar-popularity-card__date {
+	font-size: 0.75rem;
+	line-height: 1;
+	padding: 0;
+}
+
+.sidebar-popularity-card__title {
+	font-size: 1rem;
+	margin: 0;
 }
 
 .slide-card__header img {

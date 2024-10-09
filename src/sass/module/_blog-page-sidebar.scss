@@ -1,0 +1,17 @@
+@use "global" as *;
+
+
+
+.blog-page-sidebar__popularity {
+  position: relative;
+
+  @include mq(md) {
+    margin-top: rem(150);
+  }
+}
+
+.blog-page-sidebar__review {
+  position: relative;
+  margin-top: rem(80);
+  @include mq(md) {}
+}

@@ -1,0 +1,42 @@
+@use "global" as *;
+
+.blog-page {
+  position: relative;
+}
+
+.blog-page__hero {
+  position: relative;
+}
+
+.blog-page__inner {
+  position: relative;
+}
+
+
+.blog-page__contents{
+  @include mq(md) {
+    display: grid;
+    grid-row: 1;
+    grid-template-columns: rem(706) 1fr;
+    gap: rem(80);
+  }
+}
+
+.blog-page__sidebar{
+  grid-row: 2;
+  margin-top: rem(80);
+  @include mq(md) {
+    grid-row: 1;
+    grid-column: 2;
+    margin-top: 0;
+  }
+}
+
+.blog-page__cards {
+  margin-top: rem(52);
+
+  @include mq(md) {
+    margin-top: rem(150);
+  }
+}
+
