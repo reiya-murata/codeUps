@@ -1803,12 +1803,13 @@ a {
 }
 
 .sidebar-popularity-card {
+	grid-gap: 1rem;
 	background-color: #fff;
 	box-shadow: 0.125rem 0.125rem 0.625rem 0rem rgba(0, 0, 0, 0.25);
-	display: flex;
-	flex-direction: column;
+	display: grid;
 	font-family: "Noto Sans JP", sans-serif;
-	margin-top: 2.5rem;
+	gap: 1rem;
+	grid-template-columns: 7.5625rem auto;
 	padding-bottom: 1.5rem;
 	padding-left: 1rem;
 	padding-right: 1rem;
@@ -3243,9 +3244,7 @@ html {
 }
 
 .sidebar-popularity-card {
-	grid-gap: 1rem;
 	display: grid;
-	gap: 1rem;
 	grid-template-columns: 7.5625rem auto;
 	margin-top: 0;
 	padding: 1rem 1rem 1rem 1rem;
