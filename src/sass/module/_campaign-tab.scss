@@ -3,6 +3,7 @@
 .campaign-tab {
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin-top: rem(16);
   padding-top: rem(24);
   padding-left: rem(24);
@@ -10,7 +11,7 @@
   @include mq(md) {
     border: 1px solid $blue;
     flex-direction: inherit;
-    justify-content: space-between;
+    align-items: center;
     padding-bottom: rem(24);
     margin-left: 0;
     margin-right: 0;
@@ -19,7 +20,6 @@
 
 .campaign-tab__left {
   width: rem(297);
-
   @include mq(md) {
     width: rem(492);
     margin-top: rem(65);

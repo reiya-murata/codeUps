@@ -9,10 +9,11 @@
   padding-top: rem(16);
   padding-right: rem(16);
   padding-left: rem(16);
-  padding-bottom: rem(24);
+  padding-bottom: rem(16);
   gap: rem(16);
   display: grid;
   grid-template-columns: rem(121) auto;
+
   @include mq(md) {
     display: grid;
     grid-template-columns: rem(121) auto;

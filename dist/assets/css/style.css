@@ -492,6 +492,10 @@ a {
 	transform: scale(1.5);
 }
 
+.blog-page-sidebar {
+	width: 100%;
+}
+
 .blog-page-sidebar__popularity {
 	position: relative;
 }
@@ -530,6 +534,7 @@ a {
 
 .blog-page__cards {
 	margin-top: 3.25rem;
+	position: relative;
 }
 
 .blog {
@@ -639,6 +644,7 @@ a {
 
 .campaign-slide__bottom {
 	display: flex;
+	grid-template-columns: 2;
 	justify-content: center;
 	margin-top: 5rem;
 }
@@ -770,6 +776,7 @@ a {
 }
 
 .campaign-tab {
+	align-items: center;
 	display: flex;
 	flex-direction: column;
 	margin-top: 1rem;
@@ -1817,6 +1824,44 @@ a {
 	color: #408f95;
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+.sidebar-archive a {
+	padding-left: 2rem;
+	position: relative;
+}
+
+.sidebar-archive a::before {
+	-o-object-fit: cover;
+	background-image: url("../images/common/polygon1.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	content: "";
+	display: block;
+	height: 1.5rem;
+	left: 0;
+	object-fit: cover;
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	width: 1.5rem;
+	z-index: 1;
+}
+
+.sidebar-archive ul {
+	cursor: pointer;
+}
+
+.sidebar-archive li {
+	cursor: pointer;
+	display: none;
+	padding-left: 2rem;
+	position: relative;
+}
+
+.sidebar-archive.open li {
+	display: block;
 }
 
 .sidebar-campaign-card {
@@ -1910,7 +1955,7 @@ a {
 	font-family: "Noto Sans JP", sans-serif;
 	gap: 1rem;
 	grid-template-columns: 7.5625rem auto;
-	padding-bottom: 1.5rem;
+	padding-bottom: 1rem;
 	padding-left: 1rem;
 	padding-right: 1rem;
 	padding-top: 1rem;
@@ -1947,7 +1992,7 @@ a {
 	background-color: #fff;
 	box-shadow: 0.125rem 0.125rem 0.625rem 0rem rgba(0, 0, 0, 0.25);
 	font-family: "Noto Sans JP", sans-serif;
-	padding-bottom: 1.5rem;
+	padding-bottom: 1rem;
 	padding-left: 1rem;
 	padding-right: 1rem;
 	padding-top: 1rem;
@@ -2648,7 +2693,7 @@ html {
 	display: grid;
 	gap: 5rem;
 	grid-row: 1;
-	grid-template-columns: 44.125rem 1fr;
+	grid-template-columns: 65% 27%;
 }
 
 .blog-page__sidebar {
@@ -2766,9 +2811,9 @@ html {
 }
 
 .campaign-tab {
+	align-items: center;
 	border: 1px solid #408f95;
 	flex-direction: inherit;
-	justify-content: space-between;
 	margin-left: 0;
 	margin-right: 0;
 	padding-bottom: 1.5rem;

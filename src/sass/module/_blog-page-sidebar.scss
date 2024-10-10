@@ -1,6 +1,8 @@
 @use "global" as *;
 
-
+.blog-page-sidebar{
+  width: 100%;
+}
 
 .blog-page-sidebar__popularity {
   position: relative;

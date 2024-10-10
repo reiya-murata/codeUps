@@ -17,7 +17,7 @@
   @include mq(md) {
     display: grid;
     grid-row: 1;
-    grid-template-columns: rem(706) 1fr;
+    grid-template-columns: 65% 27%;
     gap: rem(80);
   }
 }
@@ -33,6 +33,7 @@
 }
 
 .blog-page__cards {
+  position: relative;
   margin-top: rem(52);
   @include mq(md) {
     margin-top: rem(150);

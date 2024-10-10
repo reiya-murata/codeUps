@@ -226,3 +226,14 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
+// js-sidevar-archiveクラスの要素を取得
+var sidevarArchive1 = document.querySelector('.js-sidevar-archive1');
+var sidevarArchive2 = document.querySelector('.js-sidevar-archive2');
+// 要素がクリックされたときにopenクラスをトグル（開閉機能）
+sidevarArchive1.addEventListener('click', function () {
+  sidevarArchive1.classList.toggle('open'); // クラスを追加/削除
+});
+sidevarArchive2.addEventListener('click', function () {
+  sidevarArchive2.classList.toggle('open'); // クラスを追加/削除
+});
