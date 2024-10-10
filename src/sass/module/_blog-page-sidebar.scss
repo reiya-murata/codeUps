@@ -15,3 +15,13 @@
   margin-top: rem(80);
   @include mq(md) {}
 }
+
+.blog-page-sidebar__campaign{
+  position: relative;
+  margin-top:rem(80);
+}
+
+.blog-page-sidebar__archive{
+  position: relative;
+  margin-top: rem(80);
+}
