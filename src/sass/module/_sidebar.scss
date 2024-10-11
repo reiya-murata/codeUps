@@ -11,6 +11,7 @@
 }
 
 .sidebar-title {
+  position: relative;
   font-size: rem(24);
   font-family: $base-font-family;
   font-weight: $regular;
@@ -41,7 +42,7 @@
   margin-top: rem(24);
 }
 
-.slidebar__review-cards {
+.sidebar__review-cards {
   margin-top: rem(24);
 }
 

@@ -1,0 +1,11 @@
+@use "global" as *;
+
+.blog-page-detail-title {
+  position: relative;
+  font-size: rem(24);
+  border-bottom: 1px solid $blue;
+  @include mq(md) {
+    font-size: rem(32);
+    width: 65%;
+  }
+}
