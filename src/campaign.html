@@ -190,25 +190,21 @@
           <p><a href="./index.html">TOP > キャンペーン</a></p>
         </div>
 
-        <div class="campaign-page__tab-menu">
-          <div class="campaign-page__tab-top tab-menu">
-            <button class="campaign-page__tab-icon active page-tab js-tab-menu1"
-              data-target="campaign-page__slide1">ALL</button>
-            <button class="campaign-page__tab-icon  page-tab js-tab-menu1"
-              data-target="campaign-page__slide2">ライセンス講習</button>
+        <div class="campaign-page__tab-menu tab-menus">
+          <div class="tab-menu-top tab-menu">
+            <button class="tab-menu__icon active page-tab js-tab-menu1" data-target="tab-all">ALL</button>
+            <button class="tab-menu__icon  page-tab js-tab-menu1" data-target="tab-license">ライセンス講習</button>
           </div>
-          <div class="campaign-page__tab-bottom tab-menu">
-            <button class="campaign-page__tab-icon  page-tab js-tab-menu1"
-              data-target="campaign-page__slide3">ファンダイビング</button>
-            <button class="campaign-page__tab-icon  page-tab js-tab-menu1"
-              data-target="campaign-page__slide4">体験ダイビング</button>
+          <div class="tab-menu-bottom tab-menu">
+            <button class="tab-menu__icon  page-tab js-tab-menu1" data-target="tab-fan">ファンダイビング</button>
+            <button class="tab-menu__icon  page-tab js-tab-menu1" data-target="tab-diving">体験ダイビング</button>
           </div>
         </div>
         <!-- Slides -->
 
-        <div class="campaign-page__tab ">
+        <div class="tab-menu ">
 
-          <div class="campaign-page__slides active js-campaign-tabbody" id="campaign-page__slide1">
+          <div class="campaign-page__slides active js-campaign-tabbody" id="tab-all">
             <div class="campaign-page__slide">
               <div class="slide-card">
                 <div class="slide-card__header">
@@ -394,7 +390,7 @@
             </div>
           </div>
 
-          <div class="campaign-page__slides js-campaign-tabbody" id="campaign-page__slide2">
+          <div class="campaign-page__slides js-campaign-tabbody" id="tab-license">
             <div class="campaign-page__slide">
               <div class="slide-card">
                 <div class="slide-card__header">
@@ -439,7 +435,7 @@
             </div>
           </div>
 
-          <div class="campaign-page__slides js-campaign-tabbody" id="campaign-page__slide3">
+          <div class="campaign-page__slides js-campaign-tabbody" id="tab-fan">
             <div class="campaign-page__slide">
               <div class="slide-card">
                 <a href="#">
@@ -489,7 +485,7 @@
             </div>
           </div>
 
-          <div class="campaign-page__slides js-campaign-tabbody" id="campaign-page__slide4">
+          <div class="campaign-page__slides js-campaign-tabbody" id="tab-diving">
 
             <div class="campaign-page__slide">
               <div class="slide-card">
@@ -586,7 +582,7 @@
           </div>
         </div>
 
-        <div class="slide-button">
+        <div class="campaign-page__button slide-button">
           <button class="slide-button__prev">＜</button>
           <ul class="slide-button__numbers">
             <li><button class="active">1</button></li>

@@ -173,91 +173,222 @@
   </header>
 
   <main>
-    <section class="information-page">
+    <section class="voice-page">
 
-      <div class="information-page__hero">
-        <h1 class="information-page__titles page-title">information</h1>
+      <div class="voice-page__hero">
+        <h1 class="voice-page__titles page-title">voice</h1>
       </div>
-      <div class="information-page__main-img js-hero-contents">
+      <div class="voice-page__main-img js-hero-contents">
         <picture>
-          <source media="(max-width: 767px)" srcset="./assets/images/common/information-page-sp.jpg">
-          <source media="(min-width: 767px)" srcset="./assets/images/common/information-page-pc.jpg">
-          <img src="./assets/images/common/information-page-pc.jpg" alt=" ダイビングの画像">
+          <source media="(max-width: 767px)" srcset="./assets/images/common/blog-page-sp.jpg">
+          <source media="(min-width: 767px)" srcset="./assets/images/common/blog-page-pc.jpg">
+          <img src="./assets/images/common/blog-page-pc.jpg" alt=" 魚の群れの画像">
         </picture>
       </div>
 
-
-      <div class="information-page__inner inner">
-        <div class="information-page__category page-category">
-          <p><a href="./index.html">TOP > ダイビング情報</a></p>
+      <div class="voice-page__inner inner">
+        <div class="voice-page__category page-category">
+          <p><a href="./index.html">TOP > お客様の声</a></p>
         </div>
 
-        <div class="information-page__tab-menu">
-          <button class="information-page__tab-icon tab-icon--1 active js-tab-menu2"
-            data-target="information-page__tab1">ライセンス講習</button>
-          <button class="information-page__tab-icon tab-icon--2 js-tab-menu2"
-            data-target="information-page__tab2">ファンダイビング</button>
-          <button class="information-page__tab-icon tab-icon--3 js-tab-menu2"
-            data-target="information-page__tab3">体験ダイビング</button>
-        </div>
+        <div class="voice-page__contents">
 
-        <div class="information-page__tabs active js-information-tabbody" id="information-page__tab1">
-          <div class="tab-menu">
-            <div class="campaign-tab">
-              <div class="campaign-tab__left">
-                <div class="campaign-tab__title">
-                  <p>ライセンス講習</p>
-                </div>
-                <div class="campaign-tab__text">
-                  <p>
-                    泳げない人も、ちょっと水が苦手な人も、ダイビングを「安全に」楽しんでいただけるよう、スタッフがサポートいたします！スキューバダイビングを楽しむためには最低限の知識とスキルが要求されます。知識やスキルと言ってもそんなに難しい事ではなく、安全に楽しむ事を目的としたものです。プロダイバーの指導のもと知識とスキルを習得しCカードを取得して、ダイバーになろう！
-                  </p>
-                </div>
-              </div>
-              <div class="campaign-tab__right">
-                <img src="./assets/images/common/license.jpg" alt="">
-              </div>
+          <div class="voice-page__tab-menu tab-menus">
+            <div class="tab-menu-top tab-menu">
+              <button class="tab-menu__icon active page-tab js-tab-menu2" data-target="tab-all">ALL</button>
+              <button class="tab-menu__icon  page-tab js-tab-menu2" data-target="tab-license">ライセンス講習</button>
+            </div>
+            <div class="tab-menu-bottom tab-menu">
+              <button class="tab-menu__icon  page-tab js-tab-menu2" data-target="tab-fan">ファンダイビング</button>
+              <button class="tab-menu__icon  page-tab js-tab-menu2" data-target="tab-diving">体験ダイビング</button>
             </div>
           </div>
-        </div>
 
-        <div class="information-page__tabs js-information-tabbody" id="information-page__tab2">
-          <div class="tab-menu">
-            <div class="campaign-tab">
-              <div class="campaign-tab__left">
-                <div class="campaign-tab__title">
-                  <p>ファンダイビング</p>
+          <div class="voice--page__cards voice-cards">
+            
+            <div class="voice-cards__item tab-all tab-license js-information-tabbody">
+              <a href="#" class="voice-card">
+                <div class="voice-card__inner">
+                  <div class="voice-card__header">
+                    <div class="voice-card__header-left">
+                      <div class="voice-card__age">20代(女性)</div>
+                      <div class="voice-card__icon card-icon">ライセンス講習</div>
+                      <div class="voice-card__title">
+                        ここにタイトルが入ります。ここにタイトル
+                      </div>
+                    </div>
+                    <div class="voice-card__img colorbox">
+                      <img src=".//assets/images/common/voice.1.jpg" alt="女性の画像" />
+                    </div>
+                  </div>
+                  <div class="voice-card__body">
+                    <p class="voice-card__text">
+                      ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+                      <br />
+                      ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+                      <br />
+                      ここにテキストが入ります。ここにテキストが入ります。
+                    </p>
+                  </div>
                 </div>
-                <div class="campaign-tab__text">
-                  <p>ブランクダイバー、ライセンスを取り立ての方も安心！沖縄本島を代表する「青の洞窟」（真栄田岬）やケラマ諸島などメジャーなポイントはモチロンのこと、最北端「辺戸岬」や最南端の「大渡海岸」等もご用意！
-                  </p>
+              </a>
+            </div>
+
+            <div class="voice-cards__item tab-all tab-diving js-information-tabbody">
+              <a href="#" class="voice-card">
+                <div class="voice-card__inner">
+                  <div class="voice-card__header">
+                    <div class="voice-card__header-left">
+                      <div class="voice-card__age">30代(男性)</div>
+                      <div class="voice-card__icon card-icon">ファンダイビング</div>
+                      <div class="voice-card__title">
+                        ここにタイトルが入ります。ここにタイトル
+                      </div>
+                    </div>
+                    <div class="voice-card__img colorbox">
+                      <img src=".//assets/images/common/voice.2.jpg" alt="男性の画像" />
+                    </div>
+                  </div>
+                  <div class="voice-card__body">
+                    <p class="voice-card__text">
+                      ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+                      <br />
+                      ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
+                      ここにテキストが入ります。ここにテキストが入ります。
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div class="campaign-tab__right">
-                <img src="./assets/images/common/fundiving.jpg" alt="">
-              </div>
+              </a>
+            </div>
+
+            <div class="voice-cards__item tab-all js-information-tabbody" >
+              <a href="#" class="voice-card">
+                <div class="voice-card__inner">
+                  <div class="voice-card__header">
+                    <div class="voice-card__header-left">
+                      <div class="voice-card__age">20代(女性)</div>
+                      <div class="voice-card__icon card-icon">体験ダイビング</div>
+                      <div class="voice-card__title">
+                        ここにタイトルが入ります。ここにタイトル
+                      </div>
+                    </div>
+                    <div class="voice-card__img colorbox">
+                      <img src=".//assets/images/common/voice3.jpg" alt="女性の画像" />
+                    </div>
+                  </div>
+                  <div class="voice-card__body">
+                    <p class="voice-card__text">
+                      ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+                      <br />
+                      ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+                      <br />
+                      ここにテキストが入ります。ここにテキストが入ります。
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="voice-cards__item tab-all tab-diving js-information-tabbody" >
+              <a href="#" class="voice-card">
+                <div class="voice-card__inner">
+                  <div class="voice-card__header">
+                    <div class="voice-card__header-left">
+                      <div class="voice-card__age">30代(男性)</div>
+                      <div class="voice-card__icon card-icon">体験ダイビング</div>
+                      <div class="voice-card__title">
+                        ここにタイトルが入ります。ここにタイトル
+                      </div>
+                    </div>
+                    <div class="voice-card__img colorbox">
+                      <img src=".//assets/images/common/voice4.jpg" alt="男性の画像" />
+                    </div>
+                  </div>
+                  <div class="voice-card__body">
+                    <p class="voice-card__text">
+                      ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+                      <br />
+                      ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
+                      ここにテキストが入ります。ここにテキストが入ります。
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            
+            <div class="voice-cards__item tab-all tab-fan js-information-tabbody">
+              <a href="#" class="voice-card">
+                <div class="voice-card__inner">
+                  <div class="voice-card__header">
+                    <div class="voice-card__header-left">
+                      <div class="voice-card__age">20代(女性)</div>
+                      <div class="voice-card__icon card-icon">ファンダイビング</div>
+                      <div class="voice-card__title">
+                        ここにタイトルが入ります。ここにタイトル
+                      </div>
+                    </div>
+                    <div class="voice-card__img colorbox">
+                      <img src=".//assets/images/common/voice5.jpg" alt="女性の画像" />
+                    </div>
+                  </div>
+                  <div class="voice-card__body">
+                    <p class="voice-card__text">
+                      ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+                      <br />
+                      ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+                      <br />
+                      ここにテキストが入ります。ここにテキストが入ります。
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="voice-cards__item tab-all tab-license js-information-tabbody">
+              <a href="#" class="voice-card">
+                <div class="voice-card__inner">
+                  <div class="voice-card__header">
+                    <div class="voice-card__header-left">
+                      <div class="voice-card__age">30代(男性)</div>
+                      <div class="voice-card__icon card-icon">ライセンス講習</div>
+                      <div class="voice-card__title">
+                        ここにタイトルが入ります。ここにタイトル
+                      </div>
+                    </div>
+                    <div class="voice-card__img colorbox">
+                      <img src=".//assets/images/common/voice6.jpg" alt="男性の画像" />
+                    </div>
+                  </div>
+                  <div class="voice-card__body">
+                    <p class="voice-card__text">
+                      ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+                      <br />
+                      ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
+                      ここにテキストが入ります。ここにテキストが入ります。
+                    </p>
+                  </div>
+                </div>
+              </a>
             </div>
           </div>
-        </div>
 
 
-        <div class="information-page__tabs js-information-tabbody" id="information-page__tab3">
-          <div class="tab-menu">
-            <div class="campaign-tab">
-              <div class="campaign-tab__left">
-                <div class="campaign-tab__title">
-                  <p>体験ダイビング</p>
-                </div>
-                <div class="campaign-tab__text">
-                  <p>ブランクダイバー、ライセンスを取り立ての方も安心！沖縄本島を代表する「青の洞窟」（真栄田岬）やケラマ諸島などメジャーなポイントはモチロンのこと、最北端「辺戸岬」や最南端の「大渡海岸」等もご用意！
-                  </p>
-                </div>
-              </div>
-              <div class="campaign-tab__right">
-                <img src="./assets/images/common/diving.jpg" alt="">
-              </div>
-            </div>
+          <div class="voice-page__slide-button slide-button">
+            <button class="slide-button__prev">＜</button>
+            <ul class="slide-button__numbers">
+              <li><button class="active">1</button></li>
+              <li><button>2</button></li>
+              <li><button>3</button></li>
+              <li><button>4</button></li>
+              <li class="sp-hidden"><button>5</button></li>
+              <li class="sp-hidden"><button>6</button></li>
+            </ul>
+            <button class="slide-button__next">＞</button>
           </div>
+
+
+
+
         </div>
 
       </div>

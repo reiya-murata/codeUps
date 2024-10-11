@@ -59,21 +59,6 @@
   }
 }
 
-.campaign-page__tab-icon {
-  font-size: rem(14);
-  width: rem(162);
-  text-align: center;
-
-  @include mq(md) {
-    width: rem(162);
-  }
-}
-
-.campaign-page__tab-icon.active {
-  background-color: $blue;
-  color: $white;
-}
-
 .campaign-page__slides {
   display: none;
 }
@@ -89,6 +74,12 @@
   }
 }
 
-.campaign-page__tab.active {
-  display: block;
+
+
+.campaign-page__button {
+  margin-top: rem(80);
+
+  @include mq(md) {
+    margin-top: rem(80);
+  }
 }

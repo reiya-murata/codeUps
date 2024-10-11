@@ -206,7 +206,7 @@ document.addEventListener('DOMContentLoaded', function () {
   tabButtons2.forEach(function (button) {
     button.addEventListener('click', function () {
       // 全てのタブコンテンツを非表示にする（activeクラスを削除）
-      var informationTabBodies = document.querySelectorAll('.js-information-tabbody');
+      var informationTabBodies = document.querySelectorAll('.js-voice-tabbody');
       informationTabBodies.forEach(function (tabBody) {
         tabBody.classList.remove('active'); // 全てのタブコンテンツから active クラスを削除
       });
@@ -227,7 +227,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-// js-sidevar-archiveクラスの要素を取得
+// サイドバーアコーディオン
 var sidevarArchive1 = document.querySelector('.js-sidevar-archive1');
 var sidevarArchive2 = document.querySelector('.js-sidevar-archive2');
 // 要素がクリックされたときにopenクラスをトグル（開閉機能）
@@ -236,4 +236,43 @@ sidevarArchive1.addEventListener('click', function () {
 });
 sidevarArchive2.addEventListener('click', function () {
   sidevarArchive2.classList.toggle('open'); // クラスを追加/削除
+});
+
+// voiceタブメニュー
+var tabButtons3 = document.querySelectorAll('.js-tab-menu3');
+// タブコンテンツ要素をすべて取得
+var tabContents3 = document.querySelectorAll('.voice-cards__item');
+
+// ボタンがクリックされたときの処理
+tabButtons3.forEach(function (button) {
+  button.addEventListener('click', function () {
+    // すべてのボタンからactiveクラスを削除
+    tabButtons3.forEach(function (btn) {
+      return btn.classList.remove('active');
+    });
+
+    // クリックされたボタンにactiveクラスを追加
+    button.classList.add('active');
+
+    // すべてのタブコンテンツを非表示にする
+    tabContents3.forEach(function (content) {
+      content.style.display = 'none';
+    });
+
+    // クリックされたボタンのdata-target属性の値を取得
+    var targetVoice = button.getAttribute('data-target');
+
+    // 対応するタブコンテンツを表示する
+    var activeTabs = document.querySelectorAll(".".concat(targetVoice));
+    activeTabs.forEach(function (tab) {
+      tab.style.display = 'block';
+    });
+
+    // "tab-all"がクリックされた場合はすべてのタブを表示
+    if (targetVoice === 'tab-all') {
+      tabContents3.forEach(function (content) {
+        content.style.display = 'block';
+      });
+    }
+  });
 });

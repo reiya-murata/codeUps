@@ -56,23 +56,27 @@
   margin-top: rem(40);
 }
 
-.blog-page-detail__list li {
+.blog-page-detail__list li{
   position: relative;
+  margin-left: rem(27);
 }
 
 .blog-page-detail__list li::before {
-  position: absolute;
-  display: block;
   content: "";
-  background-image: url("../images/common/_hitode.svg");
-  width: rem(18);
-  height: rem(18);
+  display: block;
+  position: absolute;
+  background-image: url("../images/common/hitode.svg");
+  width: rem(16);
+  height: rem(16);
   background-repeat: no-repeat;
+  left: rem(-23);
   top: 50%;
-  left: 0;
   transform: translate(0 , -50%);
 }
 
-.blog-page-detail__slide-button {
+.blog-page-detail__button {
+  margin-top: rem(40);
+  @include mq(md) {
   margin-top: rem(80);
-}
+  }
+} 

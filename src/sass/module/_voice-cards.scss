@@ -5,8 +5,8 @@
   flex-direction: column;
   gap: rem(40);
   @include mq(md) {
-    display: flex;
-    gap: rem(40);
+    display: grid;
+    gap: rem(80) rem(40);
     grid-template-columns: repeat(2, 1fr);
     flex-direction: initial;
     justify-content: center;
