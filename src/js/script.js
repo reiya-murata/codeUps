@@ -242,41 +242,45 @@ sidevarArchive2.addEventListener('click', function() {
 
 
 // voiceタブメニュー
-const tabButtons3 = document.querySelectorAll('.js-tab-menu3');
-// タブコンテンツ要素をすべて取得
-const tabContents3 = document.querySelectorAll('.voice-cards__item');
 
-// ボタンがクリックされたときの処理
-tabButtons3.forEach(button => {
-  button.addEventListener('click', () => {
-    // すべてのボタンからactiveクラスを削除
-    tabButtons3.forEach(btn => btn.classList.remove('active'));
+// const tabButtons3 = document.querySelectorAll('.js-tab-menu1'); 
+// // タブコンテンツ要素をすべて取得
+// const tabContents3 = document.querySelectorAll('.js-voice-tab');
 
-    // クリックされたボタンにactiveクラスを追加
-    button.classList.add('active');
+// // ボタンがクリックされたときの処理
+// tabButtons3.forEach(button => {
+//   button.addEventListener('click', () => {
+//     // すべてのボタンからactiveクラスを削除
+//     tabButtons3.forEach(btn => btn.classList.remove('active'));
 
-    // すべてのタブコンテンツを非表示にする
-    tabContents3.forEach(content => {
-      content.style.display = 'none';
-    });
+//     // クリックされたボタンにactiveクラスを追加
+//     button.classList.add('active');
 
-    // クリックされたボタンのdata-target属性の値を取得
-    const targetVoice = button.getAttribute('data-target');
+//     // すべてのタブコンテンツを非表示にする
+//     tabContents3.forEach(content => {
+//       content.style.display = 'none';
+//     });
 
-    // 対応するタブコンテンツを表示する
-    const activeTabs = document.querySelectorAll(`.${targetVoice}`);
-    activeTabs.forEach(tab => {
-      tab.style.display = 'block';
-    });
+//     // クリックされたボタンのdata-target属性の値を取得
+//     const targetVoice = button.getAttribute('data-target');
 
-    // "tab-all"がクリックされた場合はすべてのタブを表示
-    if (targetVoice === 'tab-all') {
-      tabContents3.forEach(content => {
-        content.style.display = 'block';
-      });
-    }
-  });
-});
+//     // 対応するタブコンテンツを表示する
+//     if (targetVoice === 'tab-all') {
+//       // "tab-all"の場合はすべてのタブコンテンツを表示
+//       tabContents3.forEach(content => {
+//         content.style.display = 'block';
+//       });
+//     } else {
+//       // "tab-all"以外の場合は対応するタブだけを表示
+//       const activeTabs = document.querySelectorAll(`.${targetVoice}`);
+//       activeTabs.forEach(tab => {
+//         tab.style.display = 'block';
+//       });
+//     }
+//   });
+// });
+
+
 
 
 
