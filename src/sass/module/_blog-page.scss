@@ -23,11 +23,8 @@
 }
 
 .blog-page__sidebar{
-  grid-row: 2;
   margin-top: rem(80);
   @include mq(md) {
-    grid-row: 1;
-    grid-column: 2;
     margin-top: 0;
   }
 }

@@ -1,6 +1,16 @@
 @use "global" as *;
 
-.sidebar__title{
+.sidebar {
+  grid-row: 2;
+
+  @include mq(md) {
+    grid-row: 1;
+    grid-column: 2;
+    margin-top: 0;
+  }
+}
+
+.sidebar-title {
   font-size: rem(24);
   font-family: $base-font-family;
   font-weight: $regular;
@@ -8,7 +18,7 @@
   border-left: 8px solid $blue;
 }
 
-.sidebar__title::before{
+.sidebar-title::before {
   content: "";
   display: block;
   position: absolute;
@@ -24,18 +34,18 @@
   z-index: 20;
 }
 
-.sidebar__popularity-cards{
+.sidebar__popularity-cards {
   display: flex;
   flex-direction: column;
-  gap:rem(24);
+  gap: rem(24);
   margin-top: rem(24);
 }
 
-.slidebar__review-cards{
+.slidebar__review-cards {
   margin-top: rem(24);
 }
 
-.sidebar__campaign-cards{
+.sidebar__campaign-cards {
   display: flex;
   flex-direction: column;
   margin-top: rem(24);

@@ -528,7 +528,6 @@ a {
 }
 
 .blog-page__sidebar {
-	grid-row: 2;
 	margin-top: 5rem;
 }
 
@@ -1832,7 +1831,46 @@ a {
 	position: relative;
 }
 
+.sidebar-archive button {
+	padding-left: 2rem;
+	position: relative;
+}
+
 .sidebar-archive a::before {
+	-o-object-fit: cover;
+	background-image: url("../images/common/polygon1.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	content: "";
+	display: block;
+	height: 1.5rem;
+	left: 0;
+	object-fit: cover;
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	width: 1.5rem;
+	z-index: 1;
+}
+
+.sidebar-archive.open button:before {
+	-o-object-fit: cover;
+	background-image: url("../images/common/polygon2.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	content: "";
+	display: block;
+	height: 1.5rem;
+	left: 0;
+	object-fit: cover;
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	width: 1.5rem;
+	z-index: 1;
+}
+
+.sidebar-archive button:before {
 	-o-object-fit: cover;
 	background-image: url("../images/common/polygon1.svg");
 	background-repeat: no-repeat;
@@ -2032,7 +2070,11 @@ a {
 	text-align: center;
 }
 
-.sidebar__title {
+.sidebar {
+	grid-row: 2;
+}
+
+.sidebar-title {
 	border-left: 8px solid #408f95;
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1.5rem;
@@ -2040,7 +2082,7 @@ a {
 	padding-left: 4.625rem;
 }
 
-.sidebar__title::before {
+.sidebar-title::before {
 	-o-object-fit: cover;
 	background-image: url("../images/common/whale-right-blue.svg");
 	background-repeat: no-repeat;
@@ -2697,8 +2739,6 @@ html {
 }
 
 .blog-page__sidebar {
-	grid-column: 2;
-	grid-row: 1;
 	margin-top: 0;
 }
 
@@ -3521,6 +3561,12 @@ html {
 .sidebar-review-card__title {
 	font-size: 1.5rem;
 	margin: 0;
+}
+
+.sidebar {
+	grid-column: 2;
+	grid-row: 1;
+	margin-top: 0;
 }
 
 .slide-card__header img {
