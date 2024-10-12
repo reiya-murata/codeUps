@@ -1679,6 +1679,92 @@ a {
 	text-transform: capitalize;
 }
 
+.price-page-content {
+	display: grid;
+	grid-template-columns: auto;
+	justify-content: center;
+	text-align: center;
+}
+
+.price-page {
+	position: relative;
+}
+
+.price-page__hero {
+	height: auto;
+	position: relative;
+	width: 100%;
+}
+
+.price-page__inner {
+	position: relative;
+}
+
+.price-page__contents {
+	display: flex;
+	flex-direction: column;
+	gap: 2.5rem;
+	margin-top: 3.25rem;
+}
+
+.price-page__category {
+	align-items: center;
+	background-color: #408f95;
+	color: #fff;
+	font-family: "Noto Sans JP", sans-serif;
+	font-weight: 700;
+	grid-column: 1/span 2;
+	grid-row: 1/2;
+	padding-bottom: 0.5rem;
+	padding-left: 1rem;
+	padding-top: 0.5rem;
+	position: relative;
+}
+
+.price-page__category p {
+	display: inline;
+	position: relative;
+}
+
+.price-page__category p::before {
+	-o-object-fit: cover;
+	background-image: url("../images/common/whale-right-white-sp.svg");
+	content: "";
+	display: inline-block;
+	height: 1.5rem;
+	left: -15%;
+	object-fit: cover;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 1.5rem;
+}
+
+.price-page__menu li {
+	align-items: center;
+	border: 1px solid #408f95;
+	display: grid;
+	grid-column: 1;
+	grid-row: inherit;
+	grid-row: 2;
+	grid-template-columns: 15rem;
+	grid-template-rows: 4rem;
+	text-align: center;
+}
+
+.price-page__price li {
+	align-items: center;
+	border: 1px solid #408f95;
+	display: grid;
+	grid-column: 2;
+	grid-row: 2;
+	grid-template-columns: auto;
+	grid-template-rows: 4rem;
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+	text-align: center;
+}
+
 .price {
 	background-color: #ddf0f1;
 	box-shadow: 0 0.125rem 0.3125rem 0 rgba(0, 0, 0, 0.5);
@@ -3505,6 +3591,59 @@ html {
 	position: absolute;
 	top: calc(50% + 20rem);
 	transform: translate(-50%, -50%);
+}
+
+.price-page-content {
+	grid-template-columns: 12.5rem 21.25rem 10.125rem;
+}
+
+.price-page__hero {
+	height: auto;
+	width: 100%;
+}
+
+.price-page__contents {
+	gap: 5rem;
+	margin-top: 9.75rem;
+}
+
+.price-page__category {
+	grid-column: 1;
+	padding-bottom: 0;
+	padding-left: 0;
+	padding-top: 2.5625rem;
+}
+
+.price-page__category p::before {
+	background-image: url("../images/common/whale-right-white.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 4rem;
+	left: 50%;
+	top: calc(50% + 3.5rem);
+	transform: translate(-50%, -50%);
+	width: 4rem;
+}
+
+.price-page__menu li {
+	grid-column: 2;
+	grid-row: 1;
+	grid-template-rows: 3.75rem;
+	padding-left: 1rem;
+	text-align: left;
+}
+
+.price-page__menu br {
+	display: none;
+}
+
+.price-page__price li {
+	display: grid;
+	grid-column: 3;
+	grid-row: 1;
+	grid-template-rows: 3.75rem;
+	padding-left: 1rem;
+	text-align: right;
 }
 
 .price {
