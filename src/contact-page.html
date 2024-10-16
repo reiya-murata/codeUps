@@ -53,11 +53,11 @@
             <li class="nav__item"><a href="#">ナイトダイビング</a></li>
 
             <li class="nav__item nav__item--bold">
-              <a href="./about/html">私たちについて</a>
+              <a href="./about.html">私たちについて</a>
             </li>
 
             <li class="nav__item nav__item--bold">
-              <a href="#">ダイビング情報</a>
+              <a href="./information.html">ダイビング情報</a>
             </li>
             <li class="nav__item"><a href="#">ライセンス講習</a></li>
             <li class="nav__item"><a href="#">体験ダイビング</a></li>
@@ -80,7 +80,7 @@
             <li class="nav__item"><a href="#">ファンダイビング</a></li>
 
             <li class="nav__item nav__item--bold">
-              <a href="#">よくある質問</a>
+              <a href="./FAQ.html">よくある質問</a>
             </li>
 
             <li class="nav__item nav__item--bold">
@@ -136,19 +136,19 @@
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="./voice.html">
               <h2 class="nav-pc__item-title">Voice</h2>
               <p class="nav-pc__items-subtitle">お客様の声</p>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="./price.html">
               <h2 class="nav-pc__item-title">Price</h2>
               <p class="nav-pc__items-subtitle">料金一覧</p>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="./FAQ.html">
               <h2 class="nav-pc__item-title">FAQ</h2>
               <p class="nav-pc__items-subtitle">よくある質問</p>
             </a>
@@ -173,78 +173,57 @@
   </header>
 
   <main>
-    <section class="about-page">
-      <div class="about-page__hero">
-        <h1 class="about-page__titles page-title">about us</h1>
+    <section class="contact-page">
+      <div class="contact-page__hero">
+        <h1 class="contact-page__titles page-title">contact</h1>
       </div>
-      <div class="about-page__main-img js-hero-contents">
+      <div class="contact-page__main-img js-hero-contents">
         <picture>
-          <source media="(max-width: 767px)" srcset="./assets/images/common/aboutus-img-sp.jpg">
-          <source media="(min-width: 767px)" srcset="./assets/images/common/aboutus-img.jpg">
-          <img src="./assets/images/common/aboutus-img.jpg" alt="シーサーの画像">
+          <source media="(max-width: 767px)" srcset="./assets/images/common/contact-sp.jpg">
+          <source media="(min-width: 767px)" srcset="./assets/images/common/contact-pc.jpg">
+          <img src="./assets/images/common/contact-pc.jpg" alt=" 砂浜の画像">
         </picture>
       </div>
-      <div class="about-page__inner inner">
-        <div class="about-page__category page-category">
-          <p><a href="./index.html">TOP > 私たちについて</a></p>
-        </div>
-        <div class="about-page__body">
-          <div class="about-page__img-1">
-            <img src="./assets/images/common/about.1.jpg" alt="屋根の画像" />
-          </div>
-          <div class="about-page__img-2">
-            <picture>
-              <source media="(max-width: 767px)" srcset="./assets/images/common/about.pc2.jpg">
-              <source media="(min-width: 767px)" srcset="./assets/images/common/about.pc2.jpg">
 
-              <img src="./assets/images/common/about.pc2.jpg" alt="黄色の魚の画像" />
-            </picture>
-          </div>
-          <div class="about-page__content">
-            <div class="about-page__content-titles">
-              <h2 class="about-page__content-title">
-                Dive into
-                <br />
-                the Ocean
-              </h2>
-            </div>
-            <div class="about-page__texts">
-              <p class="about-page__text">
-                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
-                <br />
-                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト<span>が入ります。</span>
-              </p>
-            </div>
-          </div>
+      <div class="contact-page__inner inner">
+        <div class="contact-page__category page-category">
+          <p><a href="./index.html">TOP > お問い合わせ</a></p>
         </div>
+        <div class="contact-page__contents contact-page-contents">
+          <form action="" class="contactform inner">
+            <label for="name" class="contactform__item">お名前<span class="contactform__required">必須</span></label>
+            <input type="text">
+
+            <label for="address" class="contactform__item">メールアドレス
+              <span class="contactform__required">必須</span></label>
+            <input type="text">
+
+            <label for="number" class="contactform__item">電話番号<span class="contactform__required">必須</span></label>
+            <input type="text">
+
+            <label for="kinds" class="contactform__item">お問合せ項目<span class="contactform__required">必須</span></label>
+
+            <input type="radio" id="diving" name="content-choice1">
+            <label for="content-choice1">ダイビング講習について</label>
+           
+            <input type="radio" id="fandiving" name="content-choice2">
+            <label for="content-choice2">ファンデイビングについて</label>
+            
+            <input type="radio" id="experiencediving" name="content-choice3">
+            <label for="content-choice3">ファンデイビングについて</label>体験ダイビングについて
+
+            <label for="campaign" class="contactform__item">キャンペーン</label>
+            <select name="campaign">
+              <option value="select">キャンペーン内容を選択</option>
+            </select>
+            <label for="Content" class="contactform__item"><span class="contactform__required">必須</span>お問合せ内容</label>
+            <input type="text-md-start">
+
+          </form>
+        </div>
+
       </div>
-    </section>
 
-    <section class="gallery l-gallery">
-      <div class="gallery__inner inner">
-        <div class="section-title">
-          <p class="section-title__main">gallery</p>
-          <h2 class="section-title__sub">フォト</h2>
-        </div>
-        <div class="gallery__imgs">
-          <div class="gallery__img-top">
-            <img class="gallery_img1 js-gallery-img1" src="./assets/images/common/gallery1.jpg" alt="サンゴと赤い魚の画像">
-            <img class="gallery_img2 js-gallery-img2" src="./assets/images/common/gallery2.jpg" alt="浜辺とボートの画像">
-            <img class="gallery_img3 js-gallery-img3" src="./assets/images/common/gallery3.jpg" alt="二匹の魚の画像">
-          </div>
-          <div class="gallery__img-bottom">
-            <img class="gallery_img4 js-gallery-img4" src="./assets/images/common/gallery4.jpg" alt="黄色い魚の画像">
-            <img class="gallery_img5 js-gallery-img5" src="./assets/images/common/gallery5.jpg" alt="小魚の群れの画像">
-            <img class="gallery_img6 js-gallery-img6" src="./assets/images/common/gallery6.jpg" alt="黄色い魚とサンゴの画像">
-            <div id="imageModal" class="gallery__modal">
-
-              <img class="gallery__modal-content" id="modalImage">
-              <div id="caption"></div>
-            </div>
-
-          </div>
-        </div>
-      </div>
     </section>
 
     <section class="contact l-contact">
@@ -275,11 +254,13 @@
           </div>
 
           <div class="contact__right">
-            <div class="contact__title section-title--contact">
-              <p class="section-title__main">contact</p>
-              <h2 class="section-title__sub">お問い合わせ</h2>
+            <div class="contact__title">
+              <div class="section-title section-title--contact">
+                <p class="section-title__main">contact</p>
+                <h2 class="section-title__sub">お問い合わせ</h2>
+              </div>
             </div>
-            <h3 class="section-title__sub contact__sub">
+            <h3 class="contact__sub section-title__sub">
               ご予約・お問い合わせはコチラ
             </h3>
             <div class="contact__button">
@@ -308,7 +289,7 @@
         </div>
       </div>
       <nav class="footer__nav nav nav--bottom">
-        <div class="nav__items">
+        <div class="nav__items-bottom">
           <div class="nav__flexes">
             <div class="nav__flexes-right">
               <ul class="nav__flex ">
@@ -365,7 +346,7 @@
 
               <ul class="nav__flex">
                 <li class="nav__item nav__item--bold">
-                  <a href="#">よくある質問</a>
+                  <a href="./FAQ.html">よくある質問</a>
                 </li>
                 <li class="nav__item nav__item--bold">
                   <a href="#">プライバシー<br>ポリシー</a>

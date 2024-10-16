@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.blog-page-detail-content {
+.blog-detail-content {
   @include mq(md) {
     display: grid;
     grid-row: 1;

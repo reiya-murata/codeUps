@@ -1,23 +1,23 @@
 @use "global" as *;
 
-.blog-page-detail {
+.blog-detail {
   position: relative;
 }
 
-.blog-page-detail__inner {
+.blog-detail__inner {
   position: relative;
 }
 
-.blog-page-detail__hero {
+.blog-detail__hero {
   position: relative;
 }
 
 
-.blog-page-detail__title {
+.blog-detail__title {
   margin-top: rem(8);
 }
 
-.blog-page-detail__contents {
+.blog-detail__contents {
   margin-top: rem(52);
 
   @include mq(md) {
@@ -25,7 +25,7 @@
   }
 }
 
-.blog-page-detail__content {
+.blog-detail__content {
   display: flex;
   flex-direction: column;
 
@@ -35,7 +35,7 @@
   }
 }
 
-.blog-page-detail__img {
+.blog-detail__img {
   margin-top: rem(24);
 
   @include mq(md) {
@@ -43,25 +43,25 @@
   }
 }
 
-.blog-page-detail__img img {
+.blog-detail__img img {
   object-fit: cover;
 }
 
-.blog-page-detail__text {
+.blog-detail__text {
   margin-top: rem(40);
   font-size: rem(16);
 }
 
-.blog-page-detail__list {
+.blog-detail__list {
   margin-top: rem(40);
 }
 
-.blog-page-detail__list li{
+.blog-detail__list li {
   position: relative;
   margin-left: rem(27);
 }
 
-.blog-page-detail__list li::before {
+.blog-detail__list li::before {
   content: "";
   display: block;
   position: absolute;
@@ -71,12 +71,13 @@
   background-repeat: no-repeat;
   left: rem(-23);
   top: 50%;
-  transform: translate(0 , -50%);
+  transform: translate(0, -50%);
 }
 
-.blog-page-detail__button {
+.blog-detail__button {
   margin-top: rem(40);
+
   @include mq(md) {
-  margin-top: rem(80);
+    margin-top: rem(80);
   }
-} 
+}
