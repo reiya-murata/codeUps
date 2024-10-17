@@ -1,5 +1,4 @@
 @use "global" as *;
-
 .sp-hidden {
  display: none;
   @include mq(md) {
