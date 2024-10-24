@@ -22,7 +22,9 @@
     padding-left: $padding-pc;
   }
 }
-
+.FAQ__category{
+  margin-top: rem(8);
+}
 .FAQ__contents{
   margin-top: rem(52);
   @include mq("md") {

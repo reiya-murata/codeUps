@@ -10,6 +10,10 @@
 .voice-page__hero{
   position: relative;
 }
+
+.voice-page__category{
+  margin-top: rem(8);
+}
 .voice-page__contents{
   margin-top: rem(52);
   @include mq(md) {

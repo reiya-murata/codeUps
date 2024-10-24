@@ -18,7 +18,9 @@
 .information-page__inner {
   position: relative;
 }
-
+.information-page__category{
+  margin-top: rem(8);
+}
 .information-page__tab-menu {
   display: flex;
   justify-content: space-between;

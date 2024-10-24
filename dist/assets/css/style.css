@@ -125,7 +125,7 @@ textarea {
 
 input[type=checkbox],
 input[type=radio] {
-	display: none;
+	display: inline-block;
 }
 
 input[type=submit],
@@ -147,6 +147,10 @@ a {
 	color: inherit;
 	text-decoration: none;
 	transition: opacity 0.3s;
+}
+
+.l-404-footer {
+	padding-top: 5rem;
 }
 
 .l-about {
@@ -254,6 +258,10 @@ a {
 	margin-top: 0rem;
 	object-fit: cover;
 	width: 100%;
+}
+
+.about-page__category {
+	margin-top: 0.5rem;
 }
 
 .about-page__content {
@@ -512,6 +520,10 @@ a {
 	position: relative;
 }
 
+.blog-detail__category {
+	margin-top: 0.5rem;
+}
+
 .blog-detail__hero {
 	position: relative;
 }
@@ -608,6 +620,10 @@ a {
 	position: relative;
 }
 
+.blog-page__category {
+	margin-top: 0.5rem;
+}
+
 .blog-page__sidebar {
 	margin-top: 5rem;
 }
@@ -661,8 +677,25 @@ a {
 	width: 12.625rem;
 }
 
+.button--white {
+	background-color: #fff;
+	color: #408f95;
+}
+
 .button::before {
 	border: 0.0625rem solid #408f95;
+	content: "";
+	display: inline;
+	height: 100%;
+	left: 0.25rem;
+	position: absolute;
+	top: 0.25rem;
+	width: 100%;
+	z-index: -2;
+}
+
+.button--white::before {
+	border: 0.0625rem solid #fff;
 	content: "";
 	display: inline;
 	height: 100%;
@@ -689,6 +722,11 @@ a {
 	padding-bottom: 0.125rem;
 	transform: skew(45deg);
 	width: 2.5rem;
+}
+
+.button__stickarrow--white {
+	border-bottom: 1px solid #408f95;
+	border-right: 1px solid #408f95;
 }
 
 .button::after {
@@ -756,6 +794,10 @@ a {
 
 .campaign-page__inner {
 	position: relative;
+}
+
+.campaign-page__category {
+	margin-top: 0.5rem;
 }
 
 .campaign-page__tab-menu {
@@ -915,6 +957,10 @@ a {
 	position: relative;
 }
 
+.contact-page__category {
+	margin-top: 0.5rem;
+}
+
 .contact-page__contents {
 	margin-top: 3.25rem;
 }
@@ -1033,11 +1079,81 @@ a {
 	width: 100%;
 }
 
-.contactform label {
+.contactform__field {
+	border: none;
+	padding: 0;
+}
+
+.contactform__item {
 	border-bottom: 1px dotted #408f95;
-	display: inline;
+	display: flex;
 	font-size: 1rem;
 	font-weight: 700;
+	justify-content: space-between;
+	padding-bottom: 1.5rem;
+	padding-top: 1rem;
+}
+
+.contactform__item--radio {
+	justify-content: start;
+}
+
+.contactform__text {
+	width: 21.5625rem;
+}
+
+.contactform__item {
+	align-items: start;
+	display: flex;
+}
+
+.contactform input {
+	border: 1px solid #408f95;
+	display: flex;
+	padding-bottom: 0.5rem;
+	padding-left: 1rem;
+	padding-top: 0.5rem;
+	text-align: left;
+}
+
+.contactform input::-moz-placeholder {
+	color: #DDF0F1;
+}
+
+.contactform input::placeholder {
+	color: #DDF0F1;
+}
+
+.contactform select {
+	border: 1px solid #408f95;
+	display: flex;
+	font-size: 0.75rem;
+	padding-bottom: 0.5rem;
+	padding-left: 0.5rem;
+	padding-top: 0.5rem;
+	position: relative;
+	text-align: left;
+	width: 21.5625rem;
+}
+
+.contactform__radios {
+	display: flex;
+	flex-direction: column;
+	gap: 0.25rem;
+	justify-content: start;
+}
+
+.contactform__radio {
+	grid-gap: 0.5rem;
+	display: grid;
+	gap: 0.5rem;
+	grid-template-columns: 1.25rem 1fr;
+	margin-left: 3.125rem;
+}
+
+.contactform__item textarea {
+	align-items: start;
+	border: 1px solid #408f95;
 }
 
 .contactform__required {
@@ -1106,6 +1222,10 @@ a {
 	padding-right: 15px;
 	position: relative;
 	width: 100%;
+}
+
+.FAQ__category {
+	margin-top: 0.5rem;
 }
 
 .FAQ__contents {
@@ -1406,6 +1526,10 @@ a {
 
 .information-page__inner {
 	position: relative;
+}
+
+.information-page__category {
+	margin-top: 0.5rem;
 }
 
 .information-page__tab-menu {
@@ -1720,11 +1844,66 @@ a {
 	z-index: 15;
 }
 
+.page-404 {
+	position: relative;
+}
+
+.page-404__hero {
+	background-color: #408f95;
+	height: 29.375rem;
+	position: relative;
+	width: 100vw;
+}
+
+.page-404__hero::before {
+	background-image: url("../images/common/whale-big.svg");
+	content: "";
+	display: block;
+	position: absolute;
+}
+
+.page-404__inner {
+	position: relative;
+}
+
+.page--404__category {
+	padding-top: 5.625rem;
+}
+
+.page-404__title {
+	color: #fff;
+	font-family: "Lato", sans-serif;
+	font-size: 5rem;
+	font-weight: 300;
+	letter-spacing: 3.125rem;
+	margin-top: 5rem;
+	text-align: center;
+	text-indent: 3.125rem;
+	z-index: 2;
+}
+
+.page-404__text {
+	color: #fff;
+	font-family: "Lato", sans-serif;
+	font-size: 1rem;
+	text-align: center;
+}
+
+.page-404__button {
+	margin-top: 2.5rem;
+	text-align: center;
+}
+
 .page-category {
 	color: #0D2936;
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 0.875rem;
-	margin-top: 0.5rem;
+}
+
+.page-category--404 {
+	color: #fff;
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 0.875rem;
 }
 
 .page-category::before {
@@ -2848,6 +3027,10 @@ a {
 	position: relative;
 }
 
+.voice-page__category {
+	margin-top: 0.5rem;
+}
+
 .voice-page__contents {
 	margin-top: 3.25rem;
 }
@@ -2900,6 +3083,10 @@ html {
 	max-width: 1130px;
 	padding-left: 25px;
 	padding-right: 25px;
+}
+
+.l-404-footer {
+	padding-top: 8.75rem;
 }
 
 .l-about {
@@ -3515,6 +3702,19 @@ html {
 	padding-right: 25px;
 }
 
+.contactform__item {
+	padding-bottom: 3.625rem;
+	padding-top: 2.5rem;
+}
+
+.contactform__text {
+	width: 30rem;
+}
+
+.contactform select {
+	width: 30rem;
+}
+
 .FAQ-contents {
 	gap: 2.5rem;
 }
@@ -3868,6 +4068,36 @@ html {
 	font-family: "Noto Sans JP", sans-serif;
 	font-weight: 300;
 	margin-top: 1.5rem;
+}
+
+.page-404__hero {
+	height: 100vh;
+}
+
+.page-404__hero::before {
+	-o-object-fit: cover;
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 43.625rem;
+	left: 40%;
+	object-fit: cover;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 43.625rem;
+	z-index: 1;
+}
+
+.page--404__category {
+	padding-top: 6.75rem;
+}
+
+.page-404__title {
+	font-size: 10rem;
+	margin-top: 2.5rem;
+}
+
+.page-404__button {
+	margin-top: 5rem;
 }
 
 .page-category::before {
