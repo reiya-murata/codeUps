@@ -150,6 +150,7 @@ a {
 }
 
 .l-404-footer {
+	margin-top: 0;
 	padding-top: 5rem;
 }
 
@@ -691,7 +692,7 @@ a {
 	position: absolute;
 	top: 0.25rem;
 	width: 100%;
-	z-index: -2;
+	z-index: 0;
 }
 
 .button--white::before {
@@ -703,7 +704,7 @@ a {
 	position: absolute;
 	top: 0.25rem;
 	width: 100%;
-	z-index: -2;
+	z-index: 0;
 }
 
 .button span {
@@ -755,8 +756,20 @@ a {
 	z-index: 1;
 }
 
+.button--white:hover {
+	background-color: #408f95;
+	color: #0D2936;
+	display: inline-block;
+	z-index: 1;
+}
+
 .button:hover span {
 	border-color: #408f95;
+	z-index: 2;
+}
+
+.button--white:hover span {
+	color: #0D2936;
 	z-index: 2;
 }
 
