@@ -12,7 +12,7 @@
   padding-left: rem(32);
   position: relative;
 }
-.sidebar-archive button {
+.sidebar-archive p {
   padding-left: rem(32);
   position: relative;
 }
@@ -35,7 +35,7 @@
   @include mq(md) {}
 }
 
-.sidebar-archive.open button:before {
+.sidebar-archive.open p:before {
   content: "";
   display: block;
   position: absolute;
@@ -51,7 +51,7 @@
   z-index: 1;
   @include mq(md) {}
 }
-.sidebar-archive button:before {
+.sidebar-archive p:before {
   content: "";
   display: block;
   position: absolute;

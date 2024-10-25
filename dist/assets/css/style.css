@@ -2382,7 +2382,7 @@ input[type=checkbox]:checked {
 	position: relative;
 }
 
-.sidebar-archive button {
+.sidebar-archive p {
 	padding-left: 2rem;
 	position: relative;
 }
@@ -2404,7 +2404,7 @@ input[type=checkbox]:checked {
 	z-index: 1;
 }
 
-.sidebar-archive.open button:before {
+.sidebar-archive.open p:before {
 	-o-object-fit: cover;
 	background-image: url("../images/common/polygon2.svg");
 	background-repeat: no-repeat;
@@ -2421,7 +2421,7 @@ input[type=checkbox]:checked {
 	z-index: 1;
 }
 
-.sidebar-archive button:before {
+.sidebar-archive p:before {
 	-o-object-fit: cover;
 	background-image: url("../images/common/polygon1.svg");
 	background-repeat: no-repeat;
