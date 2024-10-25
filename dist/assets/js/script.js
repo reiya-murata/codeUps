@@ -178,23 +178,28 @@ document.addEventListener('DOMContentLoaded', function () {
   // モーダルの要素を取得
   var modal = document.getElementById('imageModal');
   var modalImage = document.getElementById('modalImage');
-  // すべての画像を取得
-  var galleryImages = document.querySelectorAll('.js-gallery-img1, .js-gallery-img2, .js-gallery-img3, .js-gallery-img4, .js-gallery-img5, .js-gallery-img6');
 
-  // 各画像にクリックイベントを追加
-  galleryImages.forEach(function (img) {
-    img.addEventListener('click', function () {
-      modal.style.display = "block"; // モーダルを表示
-      modalImage.src = this.src; // クリックされた画像をモーダルに表示
+  // モーダル要素が存在する場合のみ処理を行う
+  if (modal && modalImage) {
+    // すべての画像を取得
+    var galleryImages = document.querySelectorAll('.js-gallery-img1, .js-gallery-img2, .js-gallery-img3, .js-gallery-img4, .js-gallery-img5, .js-gallery-img6');
+
+    // 各画像にクリックイベントを追加
+    galleryImages.forEach(function (img) {
+      img.addEventListener('click', function () {
+        modal.style.display = "block"; // モーダルを表示
+        modalImage.src = this.src; // クリックされた画像をモーダルに表示
+      });
     });
-  });
-  // モーダル外をクリックすると閉じる
-  modal.addEventListener('click', function (event) {
-    // クリックされた要素がモーダル自身であれば閉じる
-    if (event.target === modal) {
-      modal.style.display = "none";
-    }
-  });
+
+    // モーダル外をクリックすると閉じる
+    modal.addEventListener('click', function (event) {
+      // クリックされた要素がモーダル自身であれば閉じる
+      if (event.target === modal) {
+        modal.style.display = "none";
+      }
+    });
+  }
 });
 
 // information-pageタブ
@@ -206,7 +211,7 @@ document.addEventListener('DOMContentLoaded', function () {
   tabButtons2.forEach(function (button) {
     button.addEventListener('click', function () {
       // 全てのタブコンテンツを非表示にする（activeクラスを削除）
-      var informationTabBodies = document.querySelectorAll('.js-voice-tabbody');
+      var informationTabBodies = document.querySelectorAll('.js-information-tabbody');
       informationTabBodies.forEach(function (tabBody) {
         tabBody.classList.remove('active'); // 全てのタブコンテンツから active クラスを削除
       });
@@ -230,49 +235,85 @@ document.addEventListener('DOMContentLoaded', function () {
 // サイドバーアコーディオン
 var sidevarArchive1 = document.querySelector('.js-sidevar-archive1');
 var sidevarArchive2 = document.querySelector('.js-sidevar-archive2');
-// 要素がクリックされたときにopenクラスをトグル（開閉機能）
-sidevarArchive1.addEventListener('click', function () {
-  sidevarArchive1.classList.toggle('open'); // クラスを追加/削除
+
+// 要素が存在する場合のみ、クリックイベントを追加する
+if (sidevarArchive1) {
+  sidevarArchive1.addEventListener('click', function () {
+    sidevarArchive1.classList.toggle('open'); // クラスを追加/削除
+  });
+}
+if (sidevarArchive2) {
+  sidevarArchive2.addEventListener('click', function () {
+    sidevarArchive2.classList.toggle('open'); // クラスを追加/削除
+  });
+}
+
+// コンタクトフォーム
+document.addEventListener('DOMContentLoaded', function () {
+  // フォーム要素を取得
+  var form = document.querySelector('#form');
+  var note = document.querySelector('.contactform__note');
+  console.log("DOMContentLoaded triggered"); // ページの読み込み完了確認
+
+  // フォームが見つからなかった場合の処理
+  if (!form) {
+    console.warn("Form element not found. This script will not run on this page."); // 警告メッセージ
+    return; // フォームが見つからなかったら以降の処理を中止
+  }
+  console.log("Form element found:", form); // formが取得されたことを確認
+
+  var submitButton = form.querySelector('button[type="submit"]'); // 送信ボタンを取得
+  if (!submitButton) {
+    console.error("Submit button not found. Please ensure the form has a submit button.");
+    return; // エラー時は以降の処理を中止
+  }
+
+  // 送信ボタンのclickイベントの設定
+  submitButton.addEventListener('click', function (event) {
+    event.preventDefault(); // フォーム送信を止める
+    console.log("Submit button clicked"); // 送信ボタンがクリックされた確認
+    var isValid = true;
+
+    // 必須項目を選択
+    var requiredFields = document.querySelectorAll('input[required], textarea[required], input[type="radio"][required]');
+    console.log("Required fields selected:", requiredFields);
+
+    // すべての必須フィールドのチェック
+    requiredFields.forEach(function (field) {
+      var parent = field.closest('.contactform__item') || field.closest('.contact__checkbox');
+      if (field.type === 'radio') {
+        // ラジオボタンの必須チェック
+        var radioGroup = document.querySelector("input[name=\"".concat(field.name, "\"]:checked"));
+        if (!radioGroup) {
+          parent.classList.add('active');
+          isValid = false;
+        } else {
+          parent.classList.remove('active');
+        }
+      } else if (!field.value.trim()) {
+        // その他の必須フィールドの未入力チェック
+        parent.classList.add('active');
+        isValid = false;
+      } else {
+        parent.classList.remove('active');
+      }
+    });
+
+    // エラーメッセージの表示制御
+    if (!isValid) {
+      console.log("Validation failed");
+      form.classList.add('active');
+      if (note) {
+        note.classList.add('active');
+      }
+    } else {
+      console.log("Validation passed, redirecting to thanks.html");
+      form.classList.remove('active');
+      if (note) {
+        note.classList.remove('active');
+      }
+      // バリデーションを通過した場合、リダイレクト
+      window.location.href = './thanks.html';
+    }
+  });
 });
-sidevarArchive2.addEventListener('click', function () {
-  sidevarArchive2.classList.toggle('open'); // クラスを追加/削除
-});
-
-// voiceタブメニュー
-
-// const tabButtons3 = document.querySelectorAll('.js-tab-menu1'); 
-// // タブコンテンツ要素をすべて取得
-// const tabContents3 = document.querySelectorAll('.js-voice-tab');
-
-// // ボタンがクリックされたときの処理
-// tabButtons3.forEach(button => {
-//   button.addEventListener('click', () => {
-//     // すべてのボタンからactiveクラスを削除
-//     tabButtons3.forEach(btn => btn.classList.remove('active'));
-
-//     // クリックされたボタンにactiveクラスを追加
-//     button.classList.add('active');
-
-//     // すべてのタブコンテンツを非表示にする
-//     tabContents3.forEach(content => {
-//       content.style.display = 'none';
-//     });
-
-//     // クリックされたボタンのdata-target属性の値を取得
-//     const targetVoice = button.getAttribute('data-target');
-
-//     // 対応するタブコンテンツを表示する
-//     if (targetVoice === 'tab-all') {
-//       // "tab-all"の場合はすべてのタブコンテンツを表示
-//       tabContents3.forEach(content => {
-//         content.style.display = 'block';
-//       });
-//     } else {
-//       // "tab-all"以外の場合は対応するタブだけを表示
-//       const activeTabs = document.querySelectorAll(`.${targetVoice}`);
-//       activeTabs.forEach(tab => {
-//         tab.style.display = 'block';
-//       });
-//     }
-//   });
-// });

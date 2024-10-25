@@ -1,7 +1,6 @@
 @use "global" as *;
 
 .l-404-footer {
-
   padding-top: rem(80);
   @include mq(md) {
     padding-top: rem(140);

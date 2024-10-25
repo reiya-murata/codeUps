@@ -84,15 +84,15 @@
             </li>
 
             <li class="nav__item nav__item--bold">
-              <a href="#">プライバシー<br />ポリシー</a>
+              <a href="./price.html">プライバシー<br />ポリシー</a>
             </li>
 
             <li class="nav__item nav__item--bold">
-              <a href="#">利用規約</a>
+              <a href="./terms.html">利用規約</a>
             </li>
 
             <li class="nav__item nav__item--bold">
-              <a href="./contact.html">お問い合わせ</a>
+              <a href="./contact-page.html">お問い合わせ</a>
             </li>
           </ul>
         </div>
@@ -154,7 +154,7 @@
             </a>
           </li>
           <li>
-            <a href="./contact.html">
+            <a href="./contact-page.html">
               <h2 class="nav-pc__item-title">Contact</h2>
               <p class="nav-pc__items-subtitle">お問合せ</p>
             </a>
@@ -189,113 +189,86 @@
         <div class="contact-page__category page-category">
           <p><a href="./index.html">TOP > お問い合わせ</a></p>
         </div>
-        <div class="contact-page__contents contact-page-contents">
-          <form action="" class="contactform inner">
+        <div class="contact-page__contents contactforms">
+          <form action="" method="post" class="contactform" id="form">
             <fieldset class="contactform__field">
+              <p class="contactform__note">※必須項目が入力されていません。<br class="pc-hidden"> 入力してください。</p>
+
+              <!-- お名前フィールド（必須） -->
               <div class="contactform__item">
                 <label for="name" class="contactform__name">お名前<span class="contactform__required">必須</span></label>
-                <input type="text"  class="contactform__text" placeholder="沖縄　太郎" id="name">
+                <input type="text" class="contactform__text" placeholder="沖縄　太郎" id="name" required>
               </div>
 
+              <!-- メールアドレスフィールド（必須） -->
               <div class="contactform__item">
                 <label for="address" class="contactform__mail">メールアドレス
                   <span class="contactform__required">必須</span></label>
-                <input type="text" class="contactform__text" placeholder="aaa000@ggmail.com" id="address">
+                <input type="email" class="contactform__text" placeholder="aaa000@ggmail.com" id="address" required>
               </div>
 
+              <!-- 電話番号フィールド（必須） -->
               <div class="contactform__item">
                 <label for="number" class="contactform__tell">電話番号<span class="contactform__required">必須</span></label>
-                <input type="text" class="contactform__text" placeholder="000-0000-0000" id="number">
+                <input type="tel" class="contactform__text" placeholder="000-0000-0000" id="number" required>
               </div>
 
+              <!-- ラジオボタン（必須） -->
               <div class="contactform__item contactform__item--radio">
                 <p class="contactform__list">お問合せ項目<span class="contactform__required">必須</span></p>
                 <div class="contactform__radios">
-                <div class="contactform__radio">
-                  <input type="radio" id="diving" name="content-choice" value="diving">
-                  <label for="diving">ダイビング講習について</label>
-                </div>
-                <div class="contactform__radio">
-                  <input type="radio" id="fandiving" name="content-choice" value="fandiving">
-                  <label for="fandiving">ファンデイビングについて</label>
-                </div>
-                <div class="contactform__radio">
-                <input type="radio" id="experiencediving" name="content-choice" value="experiencediving">
-                <label for="experiencediving">体験ダイビングについて</label>
+                  <div class="contactform__radio">
+                    <input type="radio" id="diving" name="content-choice" value="diving" required>
+                    <label for="diving">ダイビング講習について</label>
+                  </div>
+                  <div class="contactform__radio">
+                    <input type="radio" id="fandiving" name="content-choice" value="fandiving">
+                    <label for="fandiving">ファンデイビングについて</label>
+                  </div>
+                  <div class="contactform__radio">
+                    <input type="radio" id="experiencediving" name="content-choice" value="experiencediving">
+                    <label for="experiencediving">体験ダイビングについて</label>
+                  </div>
                 </div>
               </div>
-            </div>
 
-
-              <div class="contactform__item">
+              <!-- キャンペーン -->
+              <div class="contactform__item contactform-togle">
                 <p class="contactform__campaign">キャンペーン</p>
-
-
                 <select name="campaign">
                   <option value="select" class="contactform__text">キャンペーン内容を選択</option>
-                    
                 </select>
               </div>
 
+              <!-- お問合せ内容フィールド（必須） -->
               <div class="contactform__item">
                 <label for="content" class="contactform__content">お問合せ内容<span
                     class="contactform__required">必須</span></label>
-                <textarea name="content" id="content" rows="5" class="contactform__text"></textarea>
+                <textarea name="content" id="content" rows="8" class="contactform__text" required></textarea>
               </div>
+
+              <!-- 同意チェックボックス -->
+              <div class="contact__checkbox">
+                <input type="checkbox" required>
+                <p>個人情報の取り扱いについて同意のうえ送信します。</p>
+              </div>
+
+              <!-- 送信ボタン -->
+              <div class="contactform__button">
+                <button type="submit" class="button">
+                  Send<span class="button__stickarrow"></span></button>
+              </div>
+
             </fieldset>
           </form>
+
         </div>
 
       </div>
 
     </section>
 
-    <section class="contact l-contact">
-      <div class="contact__inner inner">
-        <div class="contact__card">
-          <div class="contact__left">
-            <div class="contact__logo-codeups">
-              <picture class="logo__contact-codeups">
-                <source media="(max-width: 767px)" srcset="./assets/images/common/CodeUps__bottom-sp.svg" />
-                <source media="(min-width: 767px)" srcset="./assets/images/common/cordUps_blue.svg" />
-                <img src="./assets/images/common/cordUps_blue.svg" alt="cordUpsのロゴ" />
-              </picture>
-            </div>
-            <div class="contact__left-address">
-              <div class="contact__contents">
-                <p class="contact__content">
-                  沖縄県那覇市1-1 <br />
-                  TEL:0120-000-0000 <br />
-                  営業時間:8:30-19:00 <br />
-                  定休日:毎週火曜日
-                </p>
-              </div>
 
-              <div class="contact__map">
-                <img src="./assets/images/common/contact.1.jpg" alt="地図の画像" />
-              </div>
-            </div>
-          </div>
-
-          <div class="contact__right">
-            <div class="contact__title">
-              <div class="section-title section-title--contact">
-                <p class="section-title__main">contact</p>
-                <h2 class="section-title__sub">お問い合わせ</h2>
-              </div>
-            </div>
-            <h3 class="contact__sub section-title__sub">
-              ご予約・お問い合わせはコチラ
-            </h3>
-            <div class="contact__button">
-              <a href="./contact.html" class="button">
-                Contact us<span class="button__stickarrow"></span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
   </main>
   <footer class="footer l-footer">
     <div class="footer__inner inner">
@@ -373,13 +346,13 @@
                   <a href="./FAQ.html">よくある質問</a>
                 </li>
                 <li class="nav__item nav__item--bold">
-                  <a href="#">プライバシー<br>ポリシー</a>
+                  <a href="./privacy.html">プライバシー<br>ポリシー</a>
                 </li>
                 <li class="nav__item nav__item--bold">
-                  <a href="#">利用規約</a>
+                  <a href="./terms.html">利用規約</a>
                 </li>
                 <li class="nav__item nav__item--bold">
-                  <a href="./contact.html">お問い合わせ</a>
+                  <a href="./contact-page.html">お問い合わせ</a>
                 </li>
               </ul>
             </div>
