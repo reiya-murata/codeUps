@@ -3,8 +3,8 @@
 .FAQ-contents{
   display: flex;
   flex-direction: column;
-  gap: rem(44);
+  gap: rem(31);
   @include mq(md) {
-    gap: rem(40);
+    gap: rem(31);
   }
 }

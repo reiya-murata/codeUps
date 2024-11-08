@@ -20,6 +20,7 @@
 }
 .privacy__inner {
   position: relative;
+  margin-bottom: rem(-20);
 }
 
 .privacy__contents {
@@ -30,7 +31,10 @@
     max-width: rem(850);
   }
 }
-
+.privacy__contents ul {
+  padding-left: rem(8);
+  padding-right: rem(8);
+}
 .privacy__title {
   font-style: $base-font-family;
   font-size: rem(24);

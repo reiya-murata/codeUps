@@ -17,13 +17,19 @@
 
 .site-map__inner {
   position: relative;
+
   @include mq(md) {
-   position: static;
+    position: static;
   }
 }
 
+.site-map__category {
+  margin-top: rem(8);
+}
+
 .site-map__contents {
-  margin-top: rem(0);
+  margin-top: rem(10);
+
   @include mq(md) {
     margin-top: rem(150);
   }

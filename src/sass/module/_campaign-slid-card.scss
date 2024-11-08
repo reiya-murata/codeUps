@@ -30,7 +30,7 @@
   padding: rem(16) rem(24) rem(13);
   display: grid;
   grid-template-rows: subgrid;
-  grid-row: span 4;
+  grid-row: span 6;
   grid-auto-rows: min-content;
   width: 100%;
 
@@ -38,6 +38,11 @@
     grid-row: span 8;
     width: 100%;
     padding: rem(24) rem(24) rem(44);
+  }
+}
+.campaign-slide-card__body--night{
+  @include mq(md) {
+    margin-top: rem(0);
   }
 }
 
@@ -59,11 +64,7 @@
   }
 }
 
-.campaign-slide-card__icon--night {
-  @include mq(md) {
-    margin-top: rem(40);
-  }
-}
+
 
 .campaign-slide-card__icon-title {
   display: inline-block;

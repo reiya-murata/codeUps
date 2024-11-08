@@ -46,10 +46,14 @@
 }
 .price-page__category p{
   position: relative;
+  padding-top: rem(8);
+  padding-bottom: rem(8);
+  @include mq(md) {
   left: 50%;
   top:calc(50% - rem(34));
   transform: translate(-50% , -50%);
   display: block;
+  }
 }
 .price-page__category ::before{
   display: inline-block;
@@ -60,9 +64,10 @@
   width: rem(24);
   height: rem(24);
   top: 50%;
-  left: -15%;
+  left: 22%;
   transform: translate(-50%, -50%);
   @include mq(md) {
+    position: absolute;
     background-image: url("../images/common/whale-right-white.svg");
     width: rem(64);
     height: rem(64);

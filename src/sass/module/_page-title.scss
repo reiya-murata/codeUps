@@ -9,6 +9,7 @@
   font-size: rem(40);
   color: $white;
   font-family: $third-font-family;
+  width: max-content;
   @include mq(md) {
     position: absolute;
     font-size: rem(80);
