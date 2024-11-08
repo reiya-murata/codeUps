@@ -8,7 +8,7 @@
   position: relative;
 
   @include mq(md) {
-    margin-top: rem(150);
+    margin-top: rem(160);
   }
 }
 
@@ -21,17 +21,17 @@
 
 .blog-page-sidebar__review {
   position: relative;
-  margin-top: rem(80);
+  margin-top: rem(86);
 
   @include mq(md) {}
 }
 
 .blog-page-sidebar__campaign {
   position: relative;
-  margin-top: rem(80);
+  margin-top: rem(100);
 }
 
 .blog-page-sidebar__archive {
   position: relative;
-  margin-top: rem(80);
+  margin-top: rem(92);
 }

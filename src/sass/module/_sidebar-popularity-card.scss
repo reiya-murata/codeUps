@@ -8,7 +8,7 @@
   background-color: $white;
   padding-top: rem(16);
   padding-right: rem(16);
-  padding-left: rem(16);
+  padding-left: rem(18);
   padding-bottom: rem(16);
   gap: rem(16);
   display: grid;
@@ -18,7 +18,7 @@
     display: grid;
     grid-template-columns: rem(121) auto;
     padding: rem(16) rem(16) rem(16) rem(16);
-    margin-top: 0;
+    margin-top: rem(5);
   }
 }
 
@@ -26,7 +26,6 @@
   aspect-ratio: 301 / 201;
   object-fit: cover;
   text-align: center;
-
   @include mq(md) {}
 }
 

@@ -2,6 +2,7 @@
 
 .campaign-page {
   position: relative;
+  
 }
 
 .campaign-page__hero {
@@ -64,25 +65,32 @@
 
 .campaign-page__slides {
   display: none;
+  justify-content: center;
 }
 
 .campaign-page__slides.active {
   display: grid;
   gap: rem(40);
+  grid-row: auto;
   margin-top: rem(40);
-
   @include mq(md) {
     gap: rem(80) rem(40);
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat( 2, 1fr);
   }
+}
+.campaign-page__slide{
+  display: grid;
 }
 
 
 
-.campaign-page__button {
-  margin-top: rem(80);
 
+.campaign-page__button {
+  text-align: center;
+  margin-top: rem(80);
+  margin-bottom: rem(100);
   @include mq(md) {
     margin-top: rem(80);
+    margin-bottom: 0;
   }
 }

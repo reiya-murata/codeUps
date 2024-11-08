@@ -48,6 +48,7 @@
   margin: auto;
   line-height: 1;
   @include mq(md) {
+    justify-content: space-between;
     margin-top: rem(24);
     font-weight: $regular;
     font-family: $base-font-family;
@@ -140,10 +141,9 @@
   margin-left: rem(16);
   @include mq(md) {
     display: flex;
-    gap: rem(142);
+    gap: rem(150);
     flex-direction: initial;
-    justify-content: center;
-    margin-top: rem(24);
+    justify-content: space-between;
     margin-left: 0;
   }
 }
@@ -165,7 +165,7 @@
   flex-direction: column;
   @include mq(md) {
     flex-direction: initial;
-    gap: rem(130);
+    gap: rem(140);
   }
 }
 
@@ -188,7 +188,9 @@
   margin: auto;
   line-height: 1;
   @include mq(md) {
-    margin-top: rem(24);
+    justify-content: space-between;
+    margin-top: rem(20);
+    margin-left: rem(20);
     font-weight: $regular;
     font-family: $base-font-family;
   }

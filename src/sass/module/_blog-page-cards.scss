@@ -11,9 +11,10 @@
   display: grid;
   position: relative;
   justify-content: center;
+  gap: rem(46);
   @include mq(md) {
     display: grid;
-    gap: rem(80) rem(40);
+    gap: rem(84) rem(40);
     grid-template-columns: repeat(2, 1fr);
   }
 }

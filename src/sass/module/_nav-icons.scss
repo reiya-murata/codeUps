@@ -1,4 +1,10 @@
 @use "global" as *;
+.nav-icons{
+  @include mq(md) {
+    display: flex
+  }
+  ;
+}
 
 .nav-icons__icon{
   width: rem(120);

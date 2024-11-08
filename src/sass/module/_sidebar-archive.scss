@@ -9,7 +9,7 @@
 }
 
 .sidebar-archive a {
-  padding-left: rem(32);
+  padding-left: rem(20);
   position: relative;
 }
 .sidebar-archive button {
@@ -24,7 +24,7 @@
   position: absolute;
   background-image: url("../images/common/polygon1.svg");
   top: 50%;
-  left: 0;
+  left: rem(-5);
   transform: translate(0, -50%);
   width: rem(24);
   height: rem(24);

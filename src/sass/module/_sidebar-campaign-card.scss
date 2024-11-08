@@ -48,7 +48,7 @@
   @include mq(md) {
     font-size: rem(16);
     letter-spacing: -0.18em;
-    margin-top: rem(4);
+    margin-top: rem(0);
     padding-bottom: rem(8);
   }
 }
@@ -64,7 +64,7 @@
   align-items: center;
   font-family: $third-font-family;
   @include mq(md) {
-    gap: rem(24);
+    // gap: rem(24);
   }
 }
 .sidebar-campaign-card__price {
@@ -100,12 +100,13 @@
   line-height: 1;
   font-size: rem(16);
   @include mq(md) {
+    margin-top: rem(8);
     display: block;
     line-height: 1.2em;
   }
 }
 
 .sidebar-campaign-card__button{
-  margin-top: rem(40);
+  margin-top: rem(16);
   text-align: center;
 }

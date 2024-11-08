@@ -141,7 +141,7 @@
     object-fit: cover;
     background-repeat: no-repeat;
     bottom: rem(-470);
-    left: calc(50vw - min(48vw, 0rem));
+    left: calc(50vw - min(48vw, 2.5rem));
     z-index: 20;
   }
 }
@@ -211,6 +211,6 @@
     display: inline-block;
     width: rem(400);
     z-index: 12;
-    padding-top: rem(16);
+    margin-top: rem(24);
   }
 }

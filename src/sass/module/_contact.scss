@@ -54,9 +54,9 @@
 .contact__content {
   font-family: $base-font-family;
   text-align: center;
+  line-height: 1.7;
   @include mq(md) {
     text-align: left;
-    line-height: 1.7;
     font-size: rem(16);
     margin-left: rem(40);
   }
@@ -161,9 +161,9 @@
   }
 }
 
-.contact__sub {
+.contact__sub.section-title__sub {
   font-size: rem(14);
-  margin-top: rem(12);
+  margin-top: rem(16);
   @include mq(md) {
     font-size: rem(14);
     margin-top: rem(8);

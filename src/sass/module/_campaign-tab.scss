@@ -4,17 +4,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: rem(16);
+  margin-top: rem(12);
   padding-top: rem(24);
   padding-left: rem(24);
   padding-right: rem(24);
+  margin-bottom: rem(20);
   @include mq(md) {
+    gap: rem(40);
+    margin-top: rem(24);
     border: 1px solid $blue;
     flex-direction: inherit;
     align-items: center;
     padding-bottom: rem(24);
     margin-left: 0;
     margin-right: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -22,7 +26,7 @@
   width: rem(297);
   @include mq(md) {
     width: rem(492);
-    margin-top: rem(65);
+    margin-top: rem(16);
   }
 }
 

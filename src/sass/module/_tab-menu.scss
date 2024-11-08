@@ -2,8 +2,11 @@
 
 .tab-menu{
   display: flex;
-  gap:rem(32);
+ gap: rem(20);
   justify-content: center;
+  @include mq(md) {
+    gap:rem(32);
+  }
 }
 
 .tab-menu__icon {

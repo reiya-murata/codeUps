@@ -57,6 +57,7 @@
 }
 
 .campaign__slide {
+  display: grid;
   width: rem(280);
   margin: 0;
   @include mq(md) {

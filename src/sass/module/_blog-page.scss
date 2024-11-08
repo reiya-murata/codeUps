@@ -16,12 +16,14 @@
 }
 
 
+
 .blog-page__contents{
   @include mq(md) {
     display: grid;
     grid-row: 1;
-    grid-template-columns: 65% 27%;
-    gap: rem(80);
+    grid-template-columns: 65.5% 27%;
+    gap: rem(82);
+    margin-bottom: rem(-15);
   }
 }
 

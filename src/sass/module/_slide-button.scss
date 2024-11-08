@@ -7,13 +7,22 @@
 }
 
 .slide-button__prev {
-  padding-top: rem(11);
-  padding-bottom: rem(11);
-  padding-left: rem(14);
+  padding-top: rem(8);
+  padding-bottom: rem(8);
+  padding-left: rem(6);
   padding-right: rem(14);
+  margin-left: rem(10);
   margin-right: rem(40);
   color: $blue;
   border: 1px solid $blue;
+  @include mq(md) {
+    padding-top: rem(8);
+    padding-bottom: rem(8);
+    padding-left: rem(11);
+    padding-right: rem(11);
+    margin-right: rem(40);
+    margin-left: 0;
+  }
 }
 
 .slide-button__prev:hover {
@@ -22,13 +31,20 @@
 }
 
 .slide-button__next {
-  padding-top: rem(11);
-  padding-bottom: rem(11);
+  padding-top: rem(8);
   padding-left: rem(14);
-  padding-right: rem(14);
-  margin-left: rem(40);
+  padding-right: rem(11);
+  padding-bottom: rem(8);
   color: $blue;
   border: 1px solid $blue;
+  margin-left: rem(40);
+  @include mq(md) {
+    padding-top: rem(8);
+    padding-bottom: rem(8);
+    padding-left: rem(11);
+    padding-right: rem(11);
+    margin-left: rem(40);
+  }
 }
 
 .slide-button__next:hover {
@@ -39,21 +55,27 @@
 .slide-button__numbers {
   display: flex;
   align-items: center;
-  gap: rem(12);
+  gap: rem(11);
 }
 
 .slide-button__numbers li button {
   align-items: center;
   font-family: $third-font-family;
-  font-size: rem(16);
   font-weight: $bold;
   border: 1px solid $blue;
   color: $blue;
-  padding-top: rem(9);
-  padding-bottom: rem(10);
-  padding-left: rem(14);
-  padding-right: rem(14);
-
+  font-size: rem(16);
+    padding-top: rem(8);
+    padding-bottom: rem(4);
+    padding-left: rem(14);
+    padding-right: rem(14);
+  @include mq(md) {
+    font-size: rem(16);
+    padding-top: rem(8);
+    padding-bottom: rem(8);
+    padding-left: rem(14);
+    padding-right: rem(14);
+  }
 }
 
 .slide-button__numbers li button.active {

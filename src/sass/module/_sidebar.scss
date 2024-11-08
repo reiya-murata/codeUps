@@ -38,8 +38,8 @@
 .sidebar__popularity-cards {
   display: flex;
   flex-direction: column;
-  gap: rem(24);
-  margin-top: rem(24);
+  gap: rem(36);
+  margin-top: rem(32);
 }
 
 .sidebar__review-cards {
@@ -50,5 +50,5 @@
   display: flex;
   flex-direction: column;
   margin-top: rem(24);
-  gap: rem(40);
+  gap: rem(20);
 }
